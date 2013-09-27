@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import time
 
 AUTHOR = u'Leonardo Uieda'
-SITENAME = u'Earth, in a computer'
+SITENAME = u'~$ Unique it is not'
+SITETAGLINE = u'Geophysics, inverse problems, and software'
 SITEURL = ''
 
 TIMEZONE = 'Brazil'
@@ -11,21 +13,30 @@ TIMEZONE = 'Brazil'
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
+# This will be
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 THEME = 'theme'
 
-# Blogroll
-LINKS =  (('About', '/about.html'),
-        ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+MENUITEMS = (
+    ('About', '/about.html'),
+)
+SOCIAL = (
+    ('Github', '#'),
+    ('Twitter', '#'),
+)
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+STATIC_PATHS = ['images']
+
+COPYRIGHT_NOTICE = """
+Contents &copy; {date} {author} -
+Except where otherwise noted, all content is
+avilable under a
+<a href="http://creativecommons.org/licenses/by/3.0/legalcode">CC-BY
+license</a>
+<img class="CCBY" src="/static/img/cc-by.jpg" width="90px">
+""".format(author=AUTHOR, date=time.gmtime().tm_year)
