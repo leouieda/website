@@ -48,7 +48,7 @@
     {% endif %}
     <!--Get the device width-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="theme/css/style.css">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -57,9 +57,9 @@
 
 <body>
     <header>
-        <h1><a href="{{ SITEURL }}">{{ SITENAME }}
-                <strong>{{ SITESUBTITLE }}</strong></a></h1>
+        <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
         <p>{{ SITETAGLINE }}</p>
+        <p>by {{ AUTHOR }}</p>
         <nav id="menu"><ul>
             {% for title, link in MENUITEMS %}
                 <li><a href="{{ link }}">{{ title }}</a></li>

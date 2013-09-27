@@ -6,7 +6,7 @@ import time
 AUTHOR = u'Leonardo Uieda'
 SITENAME = u'~$ Unique it is not'
 SITETAGLINE = u'Geophysics, inverse problems, and software'
-SITEURL = ''
+SITEURL = '/'
 
 TIMEZONE = 'Brazil'
 
@@ -22,6 +22,7 @@ THEME = 'theme'
 
 MENUITEMS = (
     ('About', '/about.html'),
+    ('Archives', '/archives.html'),
 )
 SOCIAL = (
     ('Github', '#'),
@@ -38,5 +39,5 @@ Except where otherwise noted, all content is
 avilable under a
 <a href="http://creativecommons.org/licenses/by/3.0/legalcode">CC-BY
 license</a>
-<img class="CCBY" src="/static/img/cc-by.jpg" width="90px">
+<img class="CCBY" src="/static/images/cc-by.jpg" width="90px">
 """.format(author=AUTHOR, date=time.gmtime().tm_year)
