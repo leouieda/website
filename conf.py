@@ -4,9 +4,9 @@ from __future__ import unicode_literals
 import time
 
 AUTHOR = u'Leonardo Uieda'
-SITENAME = u'~$ Unique it is not'
+SITENAME = u'/home/leo'
 SITETAGLINE = u'Geophysics, inverse problems, and software'
-SITEURL = '/'
+SITEURL = ''
 
 TIMEZONE = 'Brazil'
 
