@@ -25,8 +25,11 @@ STATIC_PATHS = ['images']
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
 
-
-FEED_RSS = 'rss.xml'
+FEED_ALL_RSS = 'rss.xml'
+FEED_RSS = None
+FEED_ATOM = None
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
 
 THEME = 'theme/pelican-bootstrap3'
 GITHUB_USER = 'leouieda'
