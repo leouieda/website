@@ -25,12 +25,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 
 DEFAULT_LANG = u'en'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-FEED_ATOM = None
-FEED_RSS = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
+FEED_RSS = 'rss.xml'
 
 THEME = 'theme/pelican-bootstrap3'
 GITHUB_USER = 'leouieda'
@@ -42,6 +37,7 @@ SOCIAL = (
     ('twitter', 'https://twitter.com/leouieda'),
     ('google-plus', 'https://plus.google.com/+LeonardoUieda'),
     ('linkedin', 'http://www.linkedin.com/in/uieda'),
+    ('rss', '/rss.xml'),
     ('figshare', 'http://figshare.com/authors/Leonardo%20Uieda/97471'),
     ('orcid', 'http://orcid.org/0000-0001-6123-9515'),
     ('google-scholar',

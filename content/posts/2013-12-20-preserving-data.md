@@ -3,26 +3,26 @@ Date: 2013-12-20
 Tags: science, data, figshare
 Slug: preserving-data
 Author: Leonardo Uieda
-Summary: Sharing and preserving data is easy in the digital era! I provide some
-         links to online resources that make a scientists life easier.
 
 Today, I read
-[this artiticle](
+[this article](
 http://www.nature.com/news/scientists-losing-data-at-a-rapid-rate-1.14416)
 on Nature News
 about a study
 on the availability of scientific data.
-The study found that
+The thing that alarmed me the most
+was that
+the study found that
 only 20% of data
 from published articles in 1990s
 could be found
-**by the own authors**!
+**by their own authors**!
 And from my experience,
 this is not an exaggeration.
 
 Organizing and preserving data
 is not an easy task.
-There are people who
+There are even people who
 [study and specialize](http://en.wikipedia.org/wiki/Information_science)
 in this.
 If you need a Bachelor's degree
@@ -33,26 +33,61 @@ is already difficult,
 so imagine the trouble of doing that
 for data on paper!
 Madness!
-
 But don't despair!
+There are people working on
+making things tractable for us mere mortals.
 
+The team at
+[Software Carpentry](http://software-carpentry.org/)
+teaches basic computer literacy.
+Little things that
+are not covered in introductory (or advanced) classes
+but make all the difference.
+I recommend the lectures on
+[data management](http://software-carpentry.org/v4/data/index.html)
+and
+[version control](http://software-carpentry.org/v4/vc/index.html)
+(probably the most important of all).
+There are also great essays on
+[saving and loading data](http://software-carpentry.org/v4/essays/persist.html)
+and the importance of recording the
+[provenance of the data](
+http://software-carpentry.org/v4/essays/provenance.html).
 
+Once you have your data tidy on your hard-drive,
+services like [Dryad](http://datadryad.org/)
+and [figshare](http://figshare.com/)
+provide online archiving, sharing, and citing.
+Each publication on figshare gets a
+[DOI](http://en.wikipedia.org/wiki/Digital_object_identifier),
+like [10.6084/m9.figshare.91469](http://dx.doi.org/10.6084/m9.figshare.91469).
+Views and shares are tracked,
+so you get immediate feedback.
+You can even embed the publications on websites:
 
-É pra evitar esse tipo de acontecimento que serviços como http://figshare.com/
-e http://datadryad.org/ existem. Eles permitem publicar dados, figuras, fotos,
-etc online. A preservação dos dados é garantida e essas publicações ganham DOIs
-para facilitar a citação em artigos.
+<iframe src="http://wl.figshare.com/articles/91469/embed?show_title=0"
+width="375" height="300" frameborder="0" style="padding-bottom:10px"></iframe>
 
-Hoje em dia não há desculpa para não disponibilizar os dados relacionados a um
-artigo. É só colocar online e citá-lo no artigo. Futuramente, esses dados podem
-ser uma enorme fonte de citações.
+To me, the challenge of
+preserving, archiving, sharing, and making data discoverable
+online is pretty much solved.
+The main obstacle now is not technology, it's people.
+**So help make people aware such tools and services exist.**
+Talk to your friends, colleagues, co-workers, advisors, parents,
+random people at conferences.
+Demand that policy makers
+enforce openness and sharing.
+Advisors,
+demand publication of your students data.
+Students,
+get informed and help shape the future of science!
 
-O figshare em particular rastreia o número de visualizações de suas publicações
-e também de compartilhamento em redes sociais. Para um exemplo, vejam meu
-perfil http://figshare.com/authors/Leonardo%20Uieda/97471 e da Valeria
-http://figshare.com/authors/Valeria_C._F._Barbosa/97165
+The move toward openness is inevitable.
+Scientists,
+specially PhD students and post-docs,
+must be at the front-line of change
+or risk getting left behind.
 
-Me perguntem se tiverem dúvidas e estou aqui para ajudar se alguém quiser
-começar a usar esses serviços. É fácil e rápido. Compartilhem!
+--
 
 Leo
