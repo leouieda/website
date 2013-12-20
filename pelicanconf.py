@@ -8,6 +8,8 @@ SITESUBTITLE = u'Geophysics, inverse problems, science, and software'
 SITENAME = u'&lt;insert witty geoscience title&gt;'
 #SITEURL = 'http://leouieda.github.io'
 SITEURL = ''
+DEFAULT_LANG = u'en'
+TIMEZONE = u'America/Sao_Paulo'
 COPYRIGHT_NOTICE = """
 Contents &copy; {date} {author} -
 Except where otherwise noted, all content is
@@ -23,7 +25,6 @@ STATIC_PATHS = ['images']
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
 
-DEFAULT_LANG = u'en'
 
 FEED_RSS = 'rss.xml'
 
