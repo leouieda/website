@@ -5,7 +5,7 @@ import time
 
 AUTHOR = u'Leonardo Uieda'
 SITESUBTITLE = u'Geophysics, inverse problems, science, and software'
-SITENAME = u'&lt;insert witty geoscience title&gt; - {}'.format(SITESUBTITLE)
+SITENAME = u'&lt;insert witty geoscience title&gt;'
 #SITEURL = 'http://leouieda.github.io'
 SITEURL = ''
 COPYRIGHT_NOTICE = """
@@ -32,7 +32,7 @@ FEED_RSS = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-THEME = '../pelican-themes/pelican-bootstrap3'
+THEME = 'theme/pelican-bootstrap3'
 GITHUB_USER = 'leouieda'
 GITHUB_REPO_COUNT = 10
 
