@@ -23,9 +23,11 @@ This work is licensed under a
 >Creative Commons Attribution 4.0 International License</a>.
 """
 
-# File formats
+# Where to put generated files
 ARTICLE_URL = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
 
 STATIC_PATHS = ['images', 'notebooks']
 
