@@ -6,7 +6,7 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
-    <link href="theme/css/style.css" type="text/css" rel="stylesheet">
+    <link href="/theme/css/style.css" type="text/css" rel="stylesheet">
 
     <!-- Feeds -->
     {% if FEED_ALL_ATOM %}
@@ -23,10 +23,8 @@
 
 <body>
     <header>
-        <div id="header-title">
-            <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
-            <aside>{{ SITESUBTITLE }}</aside>
-        </div>
+        <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+        <aside>{{ SITESUBTITLE }}</aside>
         <nav><ul>
             {% for title, link in MENUITEMS %}
                 <li><a href="{{ link }}">{{ title }}</a></li>

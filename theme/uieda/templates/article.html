@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block head %}
+    {{ super() }}
     {% for keyword in article.keywords %}
         <meta name="keywords" contents="{{keyword}}" />
     {% endfor %}
@@ -21,10 +22,13 @@
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(article) }}
 
-    Posted on {{ article.locale_date }}
-    {% if article.author %}
-        by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-    {% endif %}
+    <abbr title="{{ article.date.isoformat() }}">
+        Posted on {{ article.locale_date }}
+        {% if article.author %}
+            by <a href="{{ SITEURL }}/{{ article.author.url }}">
+            {{ article.author }}</a>
+        {% endif %}
+    </abbr>
 
     {{ article.content }}
 

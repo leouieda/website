@@ -44,14 +44,15 @@ THEME = 'theme/uieda'
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('about', '/about.html'),
-    ('github', 'https://github.com/leouieda'),
-    ('twitter', 'https://twitter.com/leouieda'),
-    ('google+', 'https://plus.google.com/+LeonardoUieda'),
-    ('linkedin', 'http://www.linkedin.com/in/uieda'),
+    ('Home', '/'),
+    ('About', '/about.html'),
+    ('Blog', '/archives.html'),
+    ('GitHub', 'https://github.com/leouieda'),
+    ('Twitter', 'https://twitter.com/leouieda'),
+    ('Google+', 'https://plus.google.com/+LeonardoUieda'),
     ('figshare', 'http://figshare.com/authors/Leonardo%20Uieda/97471'),
-    ('orcid', 'http://orcid.org/0000-0001-6123-9515'),
-    ('rss', '/rss.xml'),
+    ('ORCID', 'http://orcid.org/0000-0001-6123-9515'),
+    ('RSS', '/rss.xml'),
 ]
 
 PLUGIN_PATH = os.path.join(os.environ.get('HOME'), 'src/pelican-plugins')
