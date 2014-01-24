@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h2>Recent posts:</h2>
+
+<ul class="post-list">
+{% for article in articles[0:ARTICLES_FRONT_PAGE] %}
+    <li>
+    <h3><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+        title="Permalink to {{ article.title|striptags }}">{{ article.title
+        }}</a></h3>
+    <abbr title="{{ article.date.isoformat() }}">
+        Posted on {{ article.locale_date }}
+        {% if article.author %}
+            by <a href="{{ SITEURL }}/{{ article.author.url }}">
+            {{ article.author }}</a>
+        {% endif %}
+    </abbr>
+    <div> {{ article.summary }} </div>
+    </li>
+{% endfor %}</ul>
+
+<a href="{{ SITEURL }}/archives.html" alt="More posts in the archives.">More
+posts</a>
+
+{% endblock content %}

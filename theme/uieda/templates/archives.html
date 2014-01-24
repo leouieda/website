@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Blog posts:</h2>
+
+<ul>
+{% for article in articles %}
+    <li>
+    {{ article.date|strftime('%d %b %Y') }}:
+    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}

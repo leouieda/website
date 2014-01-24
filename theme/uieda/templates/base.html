@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <link href="/theme/css/style.css" type="text/css" rel="stylesheet">
+
+    <!-- Feeds -->
+    {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+    {% endif %}
+
+    <!-- Google Analytics -->
+    {{ GOOGLE_ANALYTICS }}
+{% endblock head %}
+</head>
+
+<body>
+    <header>
+        <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+        <aside>{{ SITESUBTITLE }}</aside>
+        <nav><ul>
+            {% for title, link in MENUITEMS %}
+                <li><a href="{{ link }}">{{ title }}</a></li>
+            {% endfor %}
+            {% if DISPLAY_PAGES_ON_MENU %}
+                {% for p in PAGES %}
+                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                {% endfor %}
+            {% else %}
+                {% if DISPLAY_CATEGORIES_ON_MENU %}
+                    {% for cat, null in categories %}
+                        <li{% if cat == category %}
+                        class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+        </ul></nav>
+    </header>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+        {{ COPYRIGHT_NOTICE }}
+        <br/>
+        Powered by <a href="http://getpelican.com/">Pelican</a>
+        and <a href="http://python.org">Python</a>.
+    </footer>
+</div>
+</body>
+</html>

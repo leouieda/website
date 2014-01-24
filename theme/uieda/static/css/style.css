@@ -1,0 +1,102 @@
+body {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    color: #333;
+    font-size: 12pt;
+    font-family: "museo-sans", sans-serif;
+}
+a {
+    color: #5ace23;
+    text-decoration: none;
+}
+h2 {
+    font-size: 18pt;
+    margin-bottom: 5px;
+}
+h2 > a {
+    color: #333;
+}
+h3 {
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+h3 > a {
+    color: #333;
+}
+abbr {
+    font-size: 10pt;
+    border: none;
+}
+.content {
+    margin-top: 20px;
+}
+
+/* POST LIST ON FRONT PAGE */
+/* **************************************************************** */
+.post-list {
+    list-style-type: none;
+}
+.post-list li {
+    border-bottom: 1px solid #d0d0d0;
+}
+/* **************************************************************** */
+
+/* HEADER */
+/* **************************************************************** */
+header h1 {
+    font-size: 20pt;
+    margin-bottom: 5px;
+}
+header aside {
+    font-size: 12pt;
+    /*text-transform: lowercase;*/
+}
+header h1 > a {
+    color: black;
+}
+header nav {
+    margin-top: 20px;
+    background: #5ace23;
+    height:100%;
+}
+header ul {
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+header li {
+    font-size: 10pt;
+    display: inline;
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+header a {
+    color: #ffffff;
+}
+header a:hover {
+    color: #333;
+}
+/* **************************************************************** */
+
+/* FOOTER */
+/* **************************************************************** */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 10pt;
+}
+/* **************************************************************** */
+
+/* MEDIA QUERIES */
+/* **************************************************************** */
+@media screen and (max-width: 800px) {
+    body {
+        width: 95%;
+    }
+}
+/* **************************************************************** */
