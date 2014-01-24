@@ -1,0 +1,64 @@
+body {
+    width: 96%;
+    margin: auto;
+    padding: 2%;
+    background: #323232;
+    color: #ffffff;
+    font-size: 12pt;
+}
+a {
+    color: #5ace23;
+    text-decoration: none;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+/* HEADER */
+#header-title {
+    float: left;
+}
+header {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    overflow:auto;
+    background: #636363;
+    /*height: 70px;*/
+}
+header h1 {
+    font-size: 16pt;
+    text-transform: lowercase;
+    margin-bottom: 0px;
+}
+header aside {
+    font-size: 12pt;
+    text-transform: lowercase;
+}
+header h1 > a {
+    color: black;
+}
+header nav {
+    float: right;
+    /*width: 50%;*/
+}
+header li {
+    display: inline;
+}
+header a {
+    color: #ffffff;
+}
+header a:hover {
+    color: #5ace23;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
