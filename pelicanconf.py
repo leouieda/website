@@ -1,5 +1,4 @@
 from __future__ import unicode_literals
-import time
 import os
 
 AUTHOR = u'Leonardo Uieda'
@@ -14,13 +13,15 @@ TIMEZONE = u'America/Sao_Paulo'
 
 # This goes at the footer of the site
 COPYRIGHT_NOTICE = """
-Contents &copy; {date} {author} -
-Except where otherwise noted, all content is
-avilable under a
-<a href="http://creativecommons.org/licenses/by/3.0/legalcode">CC-BY
-license</a>
-<img class="CCBY" src="/static/images/cc-by.jpg" width="90px">
-""".format(author=AUTHOR, date=time.gmtime().tm_year)
+<a rel="license"
+ href="http://creativecommons.org/licenses/by/4.0/deed.en_US"
+><img alt="Creative Commons License" style="border-width:0"
+ src="http://i.creativecommons.org/l/by/4.0/88x31.png"
+/></a><br />
+This work is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"
+>Creative Commons Attribution 4.0 International License</a>.
+"""
 
 # File formats
 ARTICLE_URL = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
@@ -33,12 +34,9 @@ DISPLAY_CATEGORIES_ON_MENU = False
 
 # Feeds
 FEED_ALL_RSS = 'rss.xml'
-FEED_RSS = None
-FEED_ATOM = None
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
+FEED_ALL_ATOM = False
 
-THEME = 'theme/pelican-bootstrap3'
+THEME = 'theme/uieda'
 
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
