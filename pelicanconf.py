@@ -29,7 +29,8 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
 
 STATIC_PATHS = ['images', 'notebooks']
 
-DEFAULT_PAGINATION = 10
+ARTICLES_FRONT_PAGE = 3
+DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # Feeds
