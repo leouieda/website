@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 
-{% block head %}
-    {{ super() }}
+{% block meta %}
     {% for keyword in article.keywords %}
         <meta name="keywords" contents="{{keyword}}" />
     {% endfor %}
-
     {% for description in article.description %}
         <meta name="description" contents="{{description}}" />
     {% endfor %}
-
     {% for tag in article.tags %}
         <meta name="tags" contents="{{tag}}" />
     {% endfor %}
+    {% if article.author %}
+        <meta name="author" content="{{ article.author }}"/>
+    {% endif %}
 {% endblock %}
 
 {% block content %}

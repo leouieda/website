@@ -5,6 +5,7 @@ AUTHOR = u'Leonardo Uieda'
 
 SITENAME = u'Leonardo Uieda'
 SITESUBTITLE = u'Geophysics, inverse problems, science, and software'
+SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss'
 SITEURL = ''
 
 # Language and time
