@@ -6,8 +6,8 @@ body {
     font-size: 12pt;
     font-family: "museo-sans", sans-serif;
 }
-p {
-    line-height: 30px;
+p, li {
+    line-height: 25px;
 }
 a {
     color: #5ace23;
@@ -35,6 +35,7 @@ abbr {
     margin-top: 20px;
 }
 
+
 /* POST LIST ON FRONT PAGE */
 /* **************************************************************** */
 .post-list {
@@ -53,7 +54,6 @@ header h1 {
 }
 header aside {
     font-size: 12pt;
-    /*text-transform: lowercase;*/
 }
 header h1 > a {
     color: black;
@@ -75,6 +75,7 @@ header li {
     display: inline;
     text-transform: uppercase;
     padding: 10px;
+    line-height: 15px;
 
 }
 header a {
