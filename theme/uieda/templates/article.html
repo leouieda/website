@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block meta %}
-    {% for keyword in article.keywords %}
-        <meta name="keywords" contents="{{keyword}}" />
-    {% endfor %}
+    {% if article.keywords %}
+        <meta name="keywords" contents="{{article.keywords}}" />
+    {% endif %}
     {% for description in article.description %}
         <meta name="description" contents="{{description}}" />
     {% endfor %}
