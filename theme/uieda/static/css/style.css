@@ -6,6 +6,9 @@ body {
     font-size: 12pt;
     font-family: "museo-sans", sans-serif;
 }
+p {
+    line-height: 30px;
+}
 a {
     color: #5ace23;
     text-decoration: none;
