@@ -4,8 +4,8 @@ import os
 AUTHOR = u'Leonardo Uieda'
 
 SITENAME = u'Metageophysics'
-SITESUBTITLE = u'Geophysics, inverse problems, science, and software'
-SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss'
+SITESUBTITLE = u'Demystifying geophysics, science, and software'
+SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
 SITEURL = ''
 
 # Language and time
