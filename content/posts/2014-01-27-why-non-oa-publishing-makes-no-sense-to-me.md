@@ -1,0 +1,112 @@
+Title: Why non-OA publishing makes no sense to me
+Date: 2014-01-27
+Tags: science, publishing, open-access
+Keywords: open-access, scientific publishing
+Slug: why-non-oa-publishing-makes-no-sense-to-me
+Author: Leonardo Uieda
+
+I first encountered the reality of scientific publishing back in 2011.
+At the time,
+I was finishing my Masters degree
+at the [Observatório Nacional](http://www.on.br)
+and was writing [the paper that would be my
+dissertation](http://fatiando.org/blog/first-publication/index.html).
+That was the first time I realised
+that authors actually pay to publish.
+Never mind that reviewers are practically slave labor
+(and are expected to be happy about it)
+and publishers charge money for access to articles.
+What shocked me the most is that
+the journal not only didn't even bother
+to send me an e-mail saying that my paper was published,
+but I (the author!) wouldn't even have a copy
+if my institution didn't have access.
+That is completely insane!
+
+Lets imagine the following scenario:
+I am a musician.
+I write songs for a living.
+They are the fruit of inspiration,
+creativity, and
+hours upon hours of hard work.
+When I finish a new song,
+and want to release it to the world,
+I go looking for a record company.
+I look hard and try to find the one
+that I think would better represent and expose my song.
+After I've found one,
+I go into recording and
+have a bunch of talented people (technicians, musicians, etc)
+critique and tweak my song to make it the best it can be.
+The end product is a recorded single,
+with a nice cover and mixing.
+(OK, I probably got a lot of that process wrong, but bear with me)
+
+Now imagine that the technicians, musicians, etc that review my song
+all work for the pure joy of it.
+They are completely voluntary.
+And instead of getting a nice pay check
+from my record sales,
+I have to pay the company
+for the privilege of having their name and prestige on my record.
+As a bonus,
+if I want to hear the finished product
+I have to go out and buy the CD.
+
+That doesn't seem like
+a very smart thing for musicians to do,
+does it?
+And I doubt that record companies would still exist
+if they adopted this kind of business model.
+
+So why do scientists,
+the creators of the things that publishers sell,
+pay to publish?
+That only makes sense to me
+if the publisher makes money
+from the authors exclusively
+and provides the articles for free
+(i.e., [open access](http://en.wikipedia.org/wiki/Open_access)).
+In that case,
+scientists are paying
+for the dissemination of
+the knowledge they generated.
+That is the service
+that the publishers provide.
+And I would pay for that.
+
+However, if they intend to sell my article
+for a profit
+then I sure as hell don't want to
+give it to them for free,
+let alone pay for it.
+What is the service they provide
+that makes it worth it for me
+to give them my article,
+my baby,
+the fruit of my creativity,
+inspiration, and
+years of hard work?
+Copy editing and putting it on the internet?
+No thanks, I have
+[LaTeX](http://www.latex-project.org/),
+[arXiv](http://arxiv.org/), and
+[figshare](http://figshare.com/) for that.
+Peer review?
+Besides the whole discussion
+on [whether or not peer-review is actually effective](
+http://blogs.berkeley.edu/2013/10/04/open-access-is-not-the-problem/),
+there are new services that aim
+to take peer-review out of publishers hands,
+like [Peerage of Science](http://www.peerageofscience.org/).
+I fail to see the real unique value
+that subscription based publishers provide.
+
+So, to me, the move to open-access publishing
+makes complete sense.
+I just wonder why it took so long in the first place.
+
+--
+
+Leo
+
