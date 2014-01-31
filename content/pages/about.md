@@ -22,3 +22,15 @@ You'll find me around the internet as
 [@leouieda](https://twitter.com/leouieda) on Twitter
 and
 [+Leonardo Uieda](https://plus.google.com/u/0/+LeonardoUieda) on Google+.
+
+<img src="/images/pinga-banner.png"
+ alt="Logo for the PINGA lab"
+ title="Logo for the PINGA lab. Any resemblance to a bottle of cachaça is not a mere coincidence."
+ width="250px" style="float: left; margin-right: 20px;">
+
+I am a member of the [PINGA](https://github.com/pinga-lab) lab,
+a research group for inverse problems in geophysics.
+In the group page,
+we provide repositories
+with the source code for the papers we publish
+and other things we are working on.
