@@ -8,7 +8,7 @@ slug: about
  src="/images/torres-del-paine.jpg"
  width="100%">
 
-Hello, my name is **Leonardo Uieda** and
+Hello. My name is **Leonardo Uieda**.
 I'm a geophysicist  working mainly on potential field inverse problems.
 At the moment I'm a PhD student
 at the [Observatório Nacional](http://www.on.br), Rio de Janeiro, Brazil.

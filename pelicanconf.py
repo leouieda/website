@@ -3,7 +3,7 @@ import os
 
 AUTHOR = u'Leonardo Uieda'
 
-SITENAME = u'Metageophysics'
+SITENAME = u"Leo Uieda | Metageophysics"
 SITESUBTITLE = u'Demystifying geophysics, science, and software'
 SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
 SITEURL = ''
