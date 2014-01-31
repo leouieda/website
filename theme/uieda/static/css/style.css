@@ -4,13 +4,17 @@ body {
     margin-top: 20px;
     color: #333;
     font-size: 12pt;
-    font-family: "museo-sans", sans-serif;
+    font-family: sans-serif;
 }
 p, li {
     line-height: 25px;
 }
+code {
+    background: #ececec;
+}
 a {
-    color: #5ace23;
+    /*color: #5ace23;*/
+    color: #2da005;
     text-decoration: none;
 }
 h2 {
@@ -60,7 +64,8 @@ header h1 > a {
 }
 header nav {
     margin-top: 20px;
-    background: #5ace23;
+    /*background: #5ace23;*/
+    background: #2da005;
     height:100%;
 }
 header ul {
@@ -80,6 +85,7 @@ header li {
 }
 header a {
     color: #ffffff;
+    font-weight: bold;
 }
 header a:hover {
     color: #333;
