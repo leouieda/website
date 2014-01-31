@@ -30,7 +30,7 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
-STATIC_PATHS = ['images', 'notebooks']
+STATIC_PATHS = ['images', 'notebooks', 'pdf']
 
 ARTICLES_FRONT_PAGE = 3
 DEFAULT_PAGINATION = 0
@@ -46,13 +46,11 @@ THEME = 'theme/uieda'
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
     ('Home', '/'),
-    ('About', '/about.html'),
     ('Blog', '/archives.html'),
-    ('GitHub', 'https://github.com/leouieda'),
-    ('Twitter', 'https://twitter.com/leouieda'),
-    ('Google+', 'https://plus.google.com/+LeonardoUieda'),
-    ('figshare', 'http://figshare.com/authors/Leonardo%20Uieda/97471'),
-    ('ORCID', 'http://orcid.org/0000-0001-6123-9515'),
+    ('About', '/about.html'),
+    ('Software', '/software.html'),
+    ('Publications', '/publications.html'),
+    ('pinga-lab', 'https://github.com/pinga-lab'),
     ('RSS', '/rss.xml'),
 ]
 
