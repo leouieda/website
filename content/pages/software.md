@@ -2,10 +2,15 @@ title: Open-source software
 date: 31/01/2014
 slug: software
 
-I'm not a programmer by trait,
+I'm not a programmer by trait or training,
 but during my bachelor's
 I learned to love computers and
 making them work for me.
+I learned most of the skills
+that make my life so much easier
+from the excellent [Software Carpentry](http://software-carpentry.org/).
+If you haven't yet, you should go watch their lessons right now!
+
 I am the main developer of the open-source packages:
 
 * [Fatiando a Terra](http://www.fatiando.org): a
