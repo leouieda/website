@@ -49,6 +49,14 @@ doi:[10.1190/geo2012-0515.1](http://dx.doi.org/10.1190/geo2012-0515.1).
 [[pdf](/pdf/paper-euler-plateau-2013.pdf)]
 [[supplement](http://dx.doi.org/10.6084/m9.figshare.649433)]
 
+[Oliveira Jr, V. C.][birocoles], [V. C. F. Barbosa][valeria], and
+*L. Uieda* (2013),
+Polynomial equivalent layer, Geophysics, 78(1), G1–G13,
+doi:[10.1190/geo2012-0196.1](http://library.seg.org/doi/abs/10.1190/geo2012-0196.1).
+[[pdf](/pdf/paper-polynomial-eqlayer-2013.pdf)]
+[[source code](
+https://github.com/leouieda/fatiando/blob/master/fatiando/gravmag/eqlayer.py)]
+
 *Uieda, L.*, and [V. C. F. Barbosa][valeria] (2012),
 Robust 3D gravity gradient inversion by planting anomalous densities,
 Geophysics, 77(4), G55-G66,
@@ -57,14 +65,6 @@ doi:[10.1190/geo2011-0388.1](http://library.seg.org/doi/abs/10.1190/geo2011-0388
 [[supplement](http://dx.doi.org/10.6084/m9.figshare.91574)]
 [[animation](http://dx.doi.org/10.6084/m9.figshare.91469)]
 [[source code](https://github.com/pinga-lab/paper-planting-densities)]
-
-[Oliveira Jr, V. C.][birocoles], [V. C. F. Barbosa][valeria], and
-*L. Uieda* (2012),
-Polynomial equivalent layer, Geophysics, 78(1), G1–G13,
-doi:[10.1190/geo2012-0196.1](http://library.seg.org/doi/abs/10.1190/geo2012-0196.1).
-[[pdf](/pdf/paper-polynomail-eqlayer-2012.pdf)]
-[[source code](
-https://github.com/leouieda/fatiando/blob/master/fatiando/gravmag/eqlayer.py)]
 
 <h3 id="proceedings">Conference proceedings</h3>
 
