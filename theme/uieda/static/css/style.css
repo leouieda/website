@@ -13,8 +13,7 @@ code {
     background: #ececec;
 }
 a {
-    /*color: #5ace23;*/
-    color: #2da005;
+    color: #5ace23;
     text-decoration: none;
 }
 h2 {
@@ -44,6 +43,7 @@ abbr {
 /* **************************************************************** */
 .post-list {
     list-style-type: none;
+    padding: 0;
 }
 .post-list li {
     border-bottom: 1px solid #d0d0d0;
@@ -64,8 +64,7 @@ header h1 > a {
 }
 header nav {
     margin-top: 20px;
-    /*background: #5ace23;*/
-    background: #2da005;
+    background: #5ace23;
     height:100%;
 }
 header ul {
@@ -85,7 +84,6 @@ header li {
 }
 header a {
     color: #ffffff;
-    font-weight: bold;
 }
 header a:hover {
     color: #333;
