@@ -9,6 +9,9 @@ body {
 p, li {
     line-height: 25px;
 }
+blockquote {
+    font-style: italic;
+}
 code {
     background: #ececec;
 }
