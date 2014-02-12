@@ -32,7 +32,7 @@ PAGE_SAVE_AS = '{slug}.html'
 
 STATIC_PATHS = ['images', 'notebooks', 'pdf']
 
-ARTICLES_FRONT_PAGE = 3
+ARTICLES_FRONT_PAGE = 5
 DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
 
