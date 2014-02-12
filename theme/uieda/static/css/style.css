@@ -20,14 +20,14 @@ a {
     text-decoration: none;
 }
 h2 {
-    font-size: 16pt;
+    font-size: 20pt;
     margin-bottom: 5px;
 }
 h2 > a {
     color: #333;
 }
 h3 {
-    font-size: 14pt;
+    font-size: 16pt;
     margin-bottom: 5px;
 }
 h3 > a {
@@ -40,7 +40,6 @@ abbr {
 .content {
     margin-top: 20px;
 }
-
 
 /* POST LIST ON FRONT PAGE */
 /* **************************************************************** */
@@ -109,5 +108,65 @@ footer {
     body {
         width: 95%;
     }
+}
+/* **************************************************************** */
+
+/* FIGURES AND IMAGES */
+/* **************************************************************** */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 1em 1em 0;
+}
+img.align-right {
+    float: right;
+    margin: 1em 0 1em 1em;
+}
+img.align-left {
+    float: left;
+    margin: 1em 1em 1em 0;
+}
+
+.figure {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+    padding: 0px;
+    float: left;
+    margin: 0 1em 1em 0;
+}
+.figure.align-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.figure.align-left {
+    float: left;
+}
+.figure img {
+    max-width: 95%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 10px;
+    box-shadow: none;
+    float: left;
+}
+.figure p.caption {
+    margin: 0;
+    font-size: 90%;
+    padding: 10px;
+    float: left;
+    text-align: left;
+    font-style: italic;
+}
+.figure div.legend {
+    padding: 10px;
+    font-size: 90%;
+    color: #aaa;
+    font-style: italic;
+    float: left;
 }
 /* **************************************************************** */
