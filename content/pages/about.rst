@@ -6,14 +6,12 @@
     :alt: Me at Torres del Paine, Chile.
 
 Hello. My name is **Leonardo Uieda**.
-I'm a geophysicist  working mainly on potential field inverse problems.
-At the moment I'm a PhD student
-at the `Observatório Nacional`_, Rio de Janeiro, Brazil.
-My main interests include, but are not limited to:
-`inverse problems`_,
-`open-source software`_,
-and
-`Northern Shaolin Kung Fu`_.
+I'm an **Assistant Professor of Geophysics**
+at the `Universidade do Estado do Rio de Janeiro`_, Brasil.
+My research focuses on inverse problems in gravity and magnetic methods
+and development of `open-source software for geophysics`_.
+At the moment I'm also a PhD student
+at the `Observatório Nacional`_.
 
 You'll find me around the internet as
 `@leouieda`_ on **Twitter**
@@ -21,7 +19,7 @@ and
 `+Leonardo Uieda`_ on **Google+**.
 
 I am a member of the PINGA_ lab,
-a research group for inverse problems in geophysics.
+a **research group** for inverse problems in geophysics.
 In the group page,
 we provide repositories
 with the source code for the papers we publish
@@ -58,6 +56,8 @@ You can view the
 *Hint*: Use the arrow keys.
 
 
+.. _Universidade do Estado do Rio de Janeiro: http://www.fgel.uerj.br/index.htm
+.. _open-source software for geophysics: /software.html
 .. _Observatório Nacional: http://www.on.br
 .. _inverse problems: https://en.wikipedia.org/wiki/Inverse_problem
 .. _open-source software: https://github.com/leouieda
