@@ -3,8 +3,8 @@ import os
 
 AUTHOR = u'Leonardo Uieda'
 
-SITENAME = u"Leo Uieda | Metageophysics"
-SITESUBTITLE = u'Demystifying geophysics, science, and software'
+SITENAME = u"Leonardo Uieda"
+SITESUBTITLE = u'Geophysics, science, and open-source software'
 SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
 SITEURL = ''
 
@@ -50,6 +50,7 @@ MENUITEMS = [
     ('About', '/about.html'),
     ('Software', '/software.html'),
     ('Publications', '/publications.html'),
+    ('@leouieda', 'https://twitter.com/leouieda'),
     ('pinga-lab', 'https://github.com/pinga-lab'),
     ('RSS', '/rss.xml'),
 ]
