@@ -39,6 +39,14 @@ The main ones include:
 
 <h3 id="articles">Journal articles</h3>
 
+[Carlos, D. U.][dio], *L. Uieda*, and [V. C. F. Barbosa][valeria] (2014),
+Imaging iron ore from the Quadrilátero Ferrífero (Brazil) using geophysical
+inversion and drill hole data,
+Ore Geology Reviews, 61, 268-285,
+doi:[10.1016/j.oregeorev.2014.02.011](http://dx.doi.org/10.1016/j.oregeorev.2014.02.011).
+[[pdf](/pdf/paper-quadrilatero-2014.pdf)]
+[[blog post](/posts/2014-03-17-new-paper-quadrilatero.html)]
+
 [Melo, F. F.][figura], [V. C. F. Barbosa][valeria], *L. Uieda*,
 [V. C. Oliveira Jr][birocoles],
 and [J. B. C. Silva][jb] (2013),
@@ -168,3 +176,4 @@ using tesseroids, Eos Trans. AGU, Meet. Am. Suppl., vol. 91, Abstract G22A–04.
 [jb]: http://lattes.cnpq.br/1870725463184491
 [figura]: http://lattes.cnpq.br/6001771792254742
 [carla]: http://www2.units.it/geodin/biobraitenberg.html
+[dio]: http://lattes.cnpq.br/2302002033171923
