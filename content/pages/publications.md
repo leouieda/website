@@ -39,6 +39,16 @@ The main ones include:
 
 <h3 id="articles">Journal articles</h3>
 
+*Uieda, L.*, [V. C. Oliveira Jr][birocoles], and [V. C. F. Barbosa][valeria]
+(2014),
+Geophysical tutorial: Euler deconvolution of potential-field data,
+The Leading Edge, 33(4), 448-450,
+doi:[10.1190/tle33040448.1](http://library.seg.org/doi/abs/10.1190/tle33040448.1).
+[[pdf](/pdf/paper-euler-tutorial-2014.pdf)]
+[[text (wiki)](http://wiki.seg.org/wiki/Euler_deconvolution_of_potential_field_data_%28tutorial%29)]
+[[source code](https://github.com/pinga-lab/paper-tle-euler-tutorial)]
+[[data](http://dx.doi.org/10.6084/m9.figshare.923450)]
+
 [Carlos, D. U.][dio], *L. Uieda*, and [V. C. F. Barbosa][valeria] (2014),
 Imaging iron ore from the Quadrilátero Ferrífero (Brazil) using geophysical
 inversion and drill hole data,
