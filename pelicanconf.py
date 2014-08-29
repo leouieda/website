@@ -56,7 +56,7 @@ MENUITEMS = [
     ('RSS', '/rss.xml'),
 ]
 
-PLUGIN_PATH = os.path.join(os.environ.get('HOME'), 'src/pelican-plugins')
+PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
 # Include plugins by jakevdp. See the PR for examples
 # (https://github.com/getpelican/pelican-plugins/pull/21)
 PLUGINS = ['summary',
@@ -65,7 +65,6 @@ PLUGINS = ['summary',
            'better_figures_and_images',
            'html_rst_directive',
            'latex',
-           'pelican_youtube',
            ]
 RESPONSIVE_IMAGES = False
 FIGURE_NUMBERS = True
