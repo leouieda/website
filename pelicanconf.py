@@ -4,7 +4,7 @@ import os
 AUTHOR = u'Leonardo Uieda'
 
 SITENAME = u"Leonardo Uieda"
-SITESUBTITLE = u'Geophysics, science, and open-source software'
+SITESUBTITLE = u'Assistant Professor of Geophysics'
 SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
 SITEURL = ''
 
@@ -46,16 +46,19 @@ THEME = 'theme/uieda'
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
     ('Home', '/'),
-    ('Blog', '/archives.html'),
     ('About', '/about.html'),
-    ('Software', '/software.html'),
+    ('Blog', '/archives.html'),
+    ('Research', '/research.html'),
     ('Publications', '/publications.html'),
-    ('@leouieda', 'https://twitter.com/leouieda'),
+    ('Talks-posters-slides', '/talks.html'),
+    ('Software', '/software.html'),
     ('pinga-lab', 'https://github.com/pinga-lab'),
-    ('RSS', '/rss.xml'),
+    ('<i class="fa fa-twitter fa-lg"></i>', 'https://twitter.com/leouieda'),
+    ('<i class="fa fa-github fa-lg"></i>', 'https://github.com/leouieda'),
+    ('<e class="fa fa-rss fa-lg"></i>', '/rss.xml'),
 ]
 
-PLUGIN_PATH = os.path.join(os.environ.get('HOME'), 'src/pelican-plugins')
+PLUGIN_PATH = '../pelican-plugins'
 # Include plugins by jakevdp. See the PR for examples
 # (https://github.com/getpelican/pelican-plugins/pull/21)
 PLUGINS = ['summary',
@@ -64,7 +67,6 @@ PLUGINS = ['summary',
            'better_figures_and_images',
            'html_rst_directive',
            'latex',
-           'pelican_youtube',
            ]
 RESPONSIVE_IMAGES = False
 FIGURE_NUMBERS = True
