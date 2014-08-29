@@ -51,7 +51,7 @@ MENUITEMS = [
     ('Home', '/'),
     ('About', '/about.html'),
     ('Blog', '/archives.html'),
-    ('Research', '/research.html'),
+    #('Research', '/research.html'),
     ('Publications', '/publications.html'),
     ('Talks', '/talks.html'),
     ('Software', '/software.html'),
