@@ -2,7 +2,8 @@ body {
     width: 70%;
     margin: auto;
     margin-top: 20px;
-    color: #333;
+    color: #424242;
+    background: #fafafa;
     font-size: 12pt;
     font-family: sans-serif;
 }
@@ -16,7 +17,7 @@ code {
     background: #ececec;
 }
 a {
-    color: #5ace23;
+    color: #0571b0;
     text-decoration: none;
 }
 h2 {
@@ -24,14 +25,14 @@ h2 {
     margin-bottom: 5px;
 }
 h2 > a {
-    color: #333;
+    color: #424242;
 }
 h3 {
     font-size: 16pt;
     margin-bottom: 5px;
 }
 h3 > a {
-    color: #333;
+    color: #424242;
 }
 abbr {
     font-size: 10pt;
@@ -66,7 +67,7 @@ header h1 > a {
 }
 header nav {
     margin-top: 20px;
-    background: #5ace23;
+    background: #0571b0;
     height:100%;
 }
 header ul {
@@ -104,9 +105,13 @@ footer {
 
 /* MEDIA QUERIES */
 /* **************************************************************** */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     body {
         width: 95%;
+    }
+    header nav {
+        margin-left: -2.5%;
+        width: 105%;
     }
 }
 /* **************************************************************** */
