@@ -65,7 +65,19 @@ PLUGINS = ['summary',
            'better_figures_and_images',
            'html_rst_directive',
            'latex',
-           ]
+           'sitemap']
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5},
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'}
+}
+
 RESPONSIVE_IMAGES = False
 FIGURE_NUMBERS = True
 
