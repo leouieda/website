@@ -13,7 +13,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     git config --global github.user "leouieda"
     echo -e "Cloning project"
     # Clone the project, using the secret token. Uses /dev/null to avoid leaking decrypted key
-    git clone --quiet --branch=master --single-branch https://${GH_TOKEN}@github.com/leouieda/test.git leouieda.com > /dev/null
+    git clone --quiet --branch=master --single-branch https://${GH_TOKEN}@github.com/leouieda/leouieda.github.com.git leouieda.com > /dev/null
     cd leouieda.com
     # Move the old branch out of the way and create a new one:
     git branch -m master-old
