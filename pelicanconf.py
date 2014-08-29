@@ -55,9 +55,9 @@ MENUITEMS = [
     ('Talks', '/talks.html'),
     ('Software', '/software.html'),
     ('pinga-lab', 'https://github.com/pinga-lab'),
-    ('<i class="fa fa-twitter fa-lg"></i>', 'https://twitter.com/leouieda'),
-    ('<i class="fa fa-github fa-lg"></i>', 'https://github.com/leouieda'),
-    ('<e class="fa fa-rss fa-lg"></i>', '/rss.xml'),
+    ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>', 'https://twitter.com/leouieda'),
+    ('<i class="fa fa-github fa-lg" title="Github"></i>', 'https://github.com/leouieda'),
+    ('<e class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
 ]
 
 PLUGIN_PATH = '../pelican-plugins'

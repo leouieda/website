@@ -13,13 +13,6 @@ inverse problems in geophysics,
 with an emphasis on gravity and magnetic methods,
 and the development of `open-source software`_.
 
-You'll find me around the internet as
-`@leouieda`_ on Twitter
-and
-`+Leonardo Uieda`_ on Google+.
-
 .. _Universidade do Estado do Rio de Janeiro: http://www.fgel.uerj.br/index.htm
 .. _research: /research.html
 .. _open-source software: /software.html
-.. _@leouieda: https://twitter.com/leouieda
-.. _+Leonardo Uieda: https://plus.google.com/u/0/+LeonardoUieda
