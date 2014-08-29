@@ -3,7 +3,7 @@
 # http://sleepycoders.blogspot.com.au/2013/03/sharing-travis-ci-generated-files.html
 # and https://github.com/richfitz/wood
 echo -e "Preparing to copy generated files to leouieda.com"
-if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
+if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     echo -e "Starting to update website\n"
     cp -R output $HOME/keep
     # Go to home and setup git
