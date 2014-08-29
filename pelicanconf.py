@@ -30,7 +30,8 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
-STATIC_PATHS = ['images', 'notebooks', 'pdf']
+STATIC_PATHS = ['images', 'notebooks', 'pdf', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 ARTICLES_FRONT_PAGE = 5
 DEFAULT_PAGINATION = 0
@@ -55,7 +56,7 @@ MENUITEMS = [
     ('RSS', '/rss.xml'),
 ]
 
-PLUGIN_PATH = os.path.join(os.environ.get('HOME'), 'src/pelican-plugins')
+PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
 # Include plugins by jakevdp. See the PR for examples
 # (https://github.com/getpelican/pelican-plugins/pull/21)
 PLUGINS = ['summary',
@@ -64,8 +65,19 @@ PLUGINS = ['summary',
            'better_figures_and_images',
            'html_rst_directive',
            'latex',
-           'pelican_youtube',
-           ]
+           'sitemap']
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5},
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'}
+}
+
 RESPONSIVE_IMAGES = False
 FIGURE_NUMBERS = True
 
