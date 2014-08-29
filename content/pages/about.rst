@@ -5,7 +5,6 @@
 .. image:: {filename}/images/torres-del-paine.jpg
     :alt: Me at Torres del Paine, Chile.
 
-Hello. My name is **Leonardo Uieda**.
 I'm an **Assistant Professor of Geophysics**
 at the `Universidade do Estado do Rio de Janeiro`_, Brasil.
 My research focuses on inverse problems in gravity and magnetic methods
@@ -13,12 +12,7 @@ and development of `open-source software for geophysics`_.
 At the moment I'm also a PhD student
 at the `Observatório Nacional`_.
 
-You'll find me around the internet as
-`@leouieda`_ on **Twitter**
-and
-`+Leonardo Uieda`_ on **Google+**.
-
-I am a member of the PINGA_ lab,
+I am a researcher of the PINGA_ lab,
 a **research group** for inverse problems in geophysics.
 In the group page,
 we provide repositories
@@ -49,7 +43,7 @@ Latest talks
 
 *SciPy 2013*
 
-.. youtube:: Ec38h1oB8cc
+.... youtube:: Ec38h1oB8cc
 
 You can view the
 `slideshow in your browser`_.
@@ -62,8 +56,6 @@ You can view the
 .. _inverse problems: https://en.wikipedia.org/wiki/Inverse_problem
 .. _open-source software: https://github.com/leouieda
 .. _Northern Shaolin Kung Fu: https://en.wikipedia.org/wiki/Chan_Kowk_Wai
-.. _@leouieda: https://twitter.com/leouieda
-.. _+Leonardo Uieda: https://plus.google.com/u/0/+LeonardoUieda
 .. _PINGA: https://github.com/pinga-lab
 .. _slideshow in your browser: http://leouieda.github.io/scipy2013/?theme=night#
 .. _York University: http://www.yorku.ca/esse/

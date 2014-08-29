@@ -8,13 +8,21 @@
 
 <h2>Blog posts:</h2>
 
-<ul>
+<ul class="post-list">
 {% for article in articles %}
     <li>
-    {{ article.date|strftime('%d %b %Y') }}:
-    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+    <h3><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+        title="Permalink to {{ article.title|striptags }}">{{ article.title
+        }}</a></h3>
+    <abbr title="{{ article.date.isoformat() }}">
+        Posted on {{ article.locale_date }}
+        {% if article.author %}
+            by <a href="{{ SITEURL }}/{{ article.author.url }}">
+            {{ article.author }}</a>
+        {% endif %}
+    </abbr>
+    <div> {{ article.summary }} </div>
     </li>
-{% endfor %}
-</ul>
+{% endfor %}</ul>
 
 {% endblock %}

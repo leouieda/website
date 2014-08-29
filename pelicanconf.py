@@ -32,7 +32,9 @@ PAGE_SAVE_AS = '{slug}.html'
 
 STATIC_PATHS = ['images', 'notebooks', 'pdf']
 
-ARTICLES_FRONT_PAGE = 5
+# Blog articles display
+ARTICLES_FRONT_PAGE = 3
+SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
 
