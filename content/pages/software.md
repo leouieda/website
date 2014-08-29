@@ -2,21 +2,23 @@ title: Open-source software
 date: 31/01/2014
 slug: software
 
-I'm not a programmer by trait or training,
-but during my bachelor's
-I learned to love computers and
-making them work for me.
-I learned most of the skills
-that make my life so much easier
+I'm not a programmer by trait or training.
+I learned most of the computing skills
+that make my life much easier
 from the excellent [Software Carpentry](http://software-carpentry.org/).
-If you haven't yet, you should go watch their lessons right now!
+If you haven't yet, I highly recommend that you go study their lessons or
+sign-up for a bootcamp.
 
-I am the main developer of the open-source packages:
+I develop a few open-source packages. I'm the main (or sole) developer for some
+of them.
 
-* [Fatiando a Terra](http://www.fatiando.org): a
-  [Python](http://www.python.org) package for geophysical modeling and
+## Fatiando a Terra
+
+A [Python](http://www.python.org) package for geophysical modeling and
   inversion
-* [Tesseroids](http://leouieda.github.io/tesseroids/): a command-line toolkit
+
+
+[Fatiando a Terra](http://www.fatiando.org): * [Tesseroids](http://leouieda.github.io/tesseroids/): a command-line toolkit
   for the forward modeling of gravity fields in spherical coordinates
 
 You'll find other open-source code by me on
