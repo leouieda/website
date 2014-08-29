@@ -36,6 +36,22 @@ Contact
     </li>
     </ul>
 
+Around the internet
+-------------------
+
+You can find my research outputs on various sites around the internet.
+The main ones include:
+
+* figshare_: view and download data, presentations, posters, and supplementary
+  material
+* Impactstory_: altmetrics for my research outputs
+* ORCID_: tracks a list of my publications
+* ResearcherID_: another tracking site for publications and citations from Web
+  of Science
+* `Google Scholar`_: a list of publications with some (sketchy) citation
+  metrics
+* `Curriculo Lattes`_: Brazilian academic resume by CNPq_
+* LinkedIn_: another professional of my CV
 
 Education
 ---------
@@ -52,22 +68,14 @@ Education
   `Universidade de São Paulo`_, Brazil |
   Advisor: `Naomi Ussami`_
 
-Latest talks
-------------
-
-*SciPy 2013*
-
-.. raw:: html
-
-    <iframe width="560" height="315"
-    src="//www.youtube.com/embed/Ec38h1oB8cc?rel=0" frameborder="0"
-    allowfullscreen></iframe>
-
-You can view the
-`slideshow in your browser`_.
-*Hint*: Use the arrow keys.
-
-
+.. _LinkedIn: http://www.linkedin.com/in/uieda
+.. _CNPq: http://www.cnpq.br/
+.. _Curriculo Lattes: http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4267185H6
+.. _Google Scholar: http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ
+.. _ResearcherID: http://www.researcherid.com/rid/G-3258-2012
+.. _ORCID: http://orcid.org/0000-0001-6123-9515
+.. _Impactstory: http://impactstory.org/leouieda
+.. _figshare: http://figshare.com/authors/Leonardo%20Uieda/97471
 .. _Universidade do Estado do Rio de Janeiro: http://www.fgel.uerj.br/index.htm
 .. _open-source software for geophysics: /software.html
 .. _Observatório Nacional: http://www.on.br

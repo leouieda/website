@@ -5,10 +5,9 @@
 :save_as: index.html
 
 
-My name is Leonardo Uieda and
 I'm Assistant Professor of Geophysics
 at the `Universidade do Estado do Rio de Janeiro`_, Brasil.
-My research_ focuses on
+My research focuses on
 inverse problems in geophysics,
 with an emphasis on gravity and magnetic methods,
 and the development of `open-source software`_.

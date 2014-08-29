@@ -34,7 +34,7 @@ STATIC_PATHS = ['images', 'notebooks', 'pdf', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 # Blog articles display
-ARTICLES_FRONT_PAGE = 3
+ARTICLES_FRONT_PAGE = 2
 SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
