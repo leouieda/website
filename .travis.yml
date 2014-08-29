@@ -1,0 +1,12 @@
+language: python
+script:
+  - make publish
+before_install:
+  - git clone --depth=20 --recursive git@github.com:getpelican/pelican-plugins.git $HOME/pelican-plugins
+install:
+  - pip install pelican
+after_success:
+  - ./.update-website.sh
+env:
+  global:
+    secure: EG9V+ITvORiIk68ZziZPqPibUxyf8pIMJD8vbWl7adJ/SuwZ/L0kEAIz30YTgtihrbanrk+0tDfm0s7CRJofnjeOjNT9144bYQENob9rMkZbF9n/jd6O5gIJ9cWBzUh7oNRB9noee3dBNeikD6qWkx73PTWdM1c5WX7pOuHeCfs=

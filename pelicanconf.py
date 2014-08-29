@@ -30,7 +30,8 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
-STATIC_PATHS = ['images', 'notebooks', 'pdf']
+STATIC_PATHS = ['images', 'notebooks', 'pdf', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 ARTICLES_FRONT_PAGE = 5
 DEFAULT_PAGINATION = 0
