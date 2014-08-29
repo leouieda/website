@@ -2,7 +2,8 @@ body {
     width: 70%;
     margin: auto;
     margin-top: 20px;
-    color: #333;
+    color: #424242;
+    background: #fafafa;
     font-size: 12pt;
     font-family: sans-serif;
 }
@@ -16,22 +17,22 @@ code {
     background: #ececec;
 }
 a {
-    color: #5ace23;
+    color: #0571b0;
     text-decoration: none;
 }
 h2 {
-    font-size: 20pt;
-    margin-bottom: 5px;
-}
-h2 > a {
-    color: #333;
-}
-h3 {
     font-size: 16pt;
     margin-bottom: 5px;
 }
+h2 > a {
+    color: #424242;
+}
+h3 {
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
 h3 > a {
-    color: #333;
+    color: #424242;
 }
 abbr {
     font-size: 10pt;
@@ -62,16 +63,16 @@ header aside {
     font-size: 12pt;
 }
 header h1 > a {
-    color: black;
+    color: #424242;
 }
 header nav {
     margin-top: 20px;
-    background: #5ace23;
+    background: #0571b0;
     height:100%;
 }
 header ul {
-    width: 80%;
-    padding-left: 10%;
+    width: 96%;
+    padding-left: 2%;
     padding-top: 10px;
     padding-bottom: 10px;
     list-style-type: none;
@@ -104,9 +105,13 @@ footer {
 
 /* MEDIA QUERIES */
 /* **************************************************************** */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     body {
         width: 95%;
+    }
+    header nav {
+        margin-left: -2.5%;
+        width: 105%;
     }
 }
 /* **************************************************************** */

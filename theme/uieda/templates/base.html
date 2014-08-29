@@ -12,9 +12,13 @@
     {% endblock %}
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
 
-    <title>{% block title %}{{ SITENAME }} - {{ SITESUBTITLE }}{% endblock title %}</title>
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
     <link href="/theme/css/style.css" type="text/css" rel="stylesheet">
+
+    <!--Include the Font Awesome CSS-->
+    <link rel="stylesheet" href="theme/font-awesome/css/font-awesome.min.css">
+
 
     <!-- Feeds -->
     {% if FEED_ALL_ATOM %}

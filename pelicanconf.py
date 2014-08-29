@@ -4,7 +4,7 @@ import os
 AUTHOR = u'Leonardo Uieda'
 
 SITENAME = u"Leonardo Uieda"
-SITESUBTITLE = u'Geophysics, science, and open-source software'
+SITESUBTITLE = u'Assistant Professor of Geophysics'
 SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
 SITEURL = ''
 
@@ -33,7 +33,9 @@ PAGE_SAVE_AS = '{slug}.html'
 STATIC_PATHS = ['images', 'notebooks', 'pdf', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
-ARTICLES_FRONT_PAGE = 5
+# Blog articles display
+ARTICLES_FRONT_PAGE = 2
+SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
 
@@ -47,13 +49,16 @@ THEME = 'theme/uieda'
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
     ('Home', '/'),
-    ('Blog', '/archives.html'),
     ('About', '/about.html'),
-    ('Software', '/software.html'),
+    ('Blog', '/archives.html'),
+    #('Research', '/research.html'),
     ('Publications', '/publications.html'),
-    ('@leouieda', 'https://twitter.com/leouieda'),
+    ('Talks', '/talks.html'),
+    ('Software', '/software.html'),
     ('pinga-lab', 'https://github.com/pinga-lab'),
-    ('RSS', '/rss.xml'),
+    ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>', 'https://twitter.com/leouieda'),
+    ('<i class="fa fa-github fa-lg" title="Github"></i>', 'https://github.com/leouieda'),
+    ('<e class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
 ]
 
 PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
