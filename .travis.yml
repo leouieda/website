@@ -4,7 +4,7 @@ script:
 before_install:
     - git clone --depth=20 --recursive https://github.com/getpelican/pelican-plugins.git ../pelican-plugins
 install:
-    - pip install pelican markdown
+    - pip install pelican markdown ipython pillow beautifulsoup4
 after_success:
     - bash .update-website.sh
 env:
