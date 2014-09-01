@@ -48,7 +48,7 @@ THEME = 'theme/uieda'
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('Home', '/'),
+    ('<i class="fa fa-home fa-lg" title="Home"></i>', '/'),
     ('About', '/about.html'),
     ('Blog', '/archives.html'),
     #('Research', '/research.html'),
@@ -57,7 +57,7 @@ MENUITEMS = [
     ('Software', '/software.html'),
     ('pinga-lab', 'https://github.com/pinga-lab'),
     ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>', 'https://twitter.com/leouieda'),
-    ('<i class="fa fa-github fa-lg" title="Github"></i>', 'https://github.com/leouieda'),
+    ('<i class="fa fa-github-square fa-lg" title="Github"></i>', 'https://github.com/leouieda'),
     ('<e class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
 ]
 
