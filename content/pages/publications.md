@@ -15,6 +15,16 @@ in the publication.
 ### 2014
 
 <i class="fa fa-unlock-alt"></i>
+[Oliveira Jr, V. C.][birocoles], D. P. Sales, [V. C. F. Barbosa][valeria],
+and **L. Uieda**
+(2014),
+Estimation of the total magnetization direction of approximately spherical
+bodies,
+Nonlinear Processes in Geophysics,
+[Under open review](http://dx.doi.org/10.5194/npgd-1-1465-2014).
+[[discussion paper](http://dx.doi.org/10.5194/npgd-1-1465-2014)]
+
+<i class="fa fa-unlock-alt"></i>
 **Uieda, L.**, [V. C. Oliveira Jr][birocoles], and [V. C. F. Barbosa][valeria]
 (2014),
 Geophysical tutorial: Euler deconvolution of potential-field data,
