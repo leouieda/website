@@ -42,6 +42,10 @@ abbr {
     margin-top: 20px;
 }
 
+.fa-ul li {
+    padding-bottom: 10px;
+}
+
 /* POST LIST ON FRONT PAGE */
 /* **************************************************************** */
 .post-list {

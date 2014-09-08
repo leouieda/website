@@ -19,26 +19,6 @@ we provide repositories
 with the source code for the papers we publish
 and other things we are working on.
 
-Contact
--------
-
-.. raw:: html
-
-    <ul class="fa-ul">
-    <li><i class="fa-li fa fa-envelope" title="e-mail"></i>
-        <a href="mailto:leouieda@gmail.com"
-         title="leouieda at gmail">leouieda at gmail</a>
-    </li>
-    <li><i class="fa-li fa fa-twitter fa-lg" title="Twitter"></i>
-        <a class="external reference"
-         href="https://twitter.com/leouieda">@leouieda</a>
-    </li>
-    <li><i class="fa-li fa fa-google-plus fa-lg" title="Google+"></i>
-        <a class="external reference"
-         href="https://plus.google.com/u/0/+LeonardoUieda">+Leonardo Uieda</a>
-    </li>
-    </ul>
-
 Around the internet
 -------------------
 
