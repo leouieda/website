@@ -41,9 +41,39 @@ abbr {
 .content {
     margin-top: 20px;
 }
+hr {
+    color: #d0d0d0;
+}
 
-.fa-ul li {
-    padding-bottom: 10px;
+/* Color for fontawesome icons */
+i.fa {
+    color: #424242;
+}
+
+/* THE CONTACT LIST ON THE FRONT PAGE */
+/* **************************************************************** */
+.contact-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.contact-list li {
+    padding-bottom: 5px;
+}
+
+/* EDUCATION LISTS (UNIVERSITY, ADVISOR, THESIS) */
+/* **************************************************************** */
+.edu-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -10px;
+    padding-left: 10px;
+}
+.edu-list li {
+    padding-bottom: 2px;
 }
 
 /* POST LIST ON FRONT PAGE */
@@ -55,7 +85,19 @@ abbr {
 .post-list li {
     border-bottom: 1px solid #d0d0d0;
 }
+
+/* THE PUBLICATION LIST */
 /* **************************************************************** */
+.pub-legend ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.pub-legend li {
+    display: inline-block;
+    padding-right: 20px;
+    line-height: 30px;
+}
 
 /* HEADER */
 /* **************************************************************** */
@@ -86,12 +128,17 @@ header li {
     text-transform: uppercase;
     padding: 10px;
     line-height: 15px;
-
 }
 header a {
     color: #ffffff;
 }
 header a:hover {
+    color: #333;
+}
+header i.fa {
+    color: #ffffff;
+}
+header i.fa:hover {
     color: #333;
 }
 /* **************************************************************** */

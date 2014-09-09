@@ -17,7 +17,7 @@ Contact
 
 .. raw:: html
 
-    <ul class="fa-ul">
+    <ul class="contact-list">
     <li><i class="fa fa-envelope fa-fw" title="e-mail"></i>
         <a href="mailto:leouieda@gmail.com"
          title="My personal e-mail.">leouieda@gmail.com</a>
