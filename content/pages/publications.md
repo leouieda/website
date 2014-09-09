@@ -2,6 +2,7 @@ title: Publications
 date: 31/01/2014
 slug: publications
 
+Legend:
 <ul class="pub-legend">
 <li><i class="fa fa-unlock-alt fa-fw"></i> Open access</li>
 <li><i class="fa fa-comments fa-fw"></i> Link to Open Review</li>
