@@ -5,7 +5,7 @@ body {
     color: #424242;
     background: #fafafa;
     font-size: 12pt;
-    font-family: sans-serif;
+    font-family: Verdana, sans-serif;
 }
 p, li {
     line-height: 25px;
@@ -72,7 +72,6 @@ header h1 > a {
 header nav {
     margin-top: 20px;
     background: #0571b0;
-    height:100%;
 }
 header ul {
     width: 96%;
