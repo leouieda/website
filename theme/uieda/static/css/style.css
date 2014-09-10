@@ -49,6 +49,9 @@ hr {
 i.fa {
     color: #424242;
 }
+a i.fa:hover {
+    color: #0571b0;
+}
 
 /* THE CONTACT LIST ON THE FRONT PAGE */
 /* **************************************************************** */
