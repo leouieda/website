@@ -52,7 +52,7 @@ The main ones include:
     Advisor: [Valéria C. F. Barbosa][valeria]
 </li>
 <li><i class="fa fa-book fa-fw"></i>
-    Modelagem e inversão de campos potenciais em coordenadas esféricas
+    Inversão 3D de campos pontenciais em coordenadas esféricas
 </li>
 </ul>
 
