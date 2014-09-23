@@ -68,7 +68,7 @@ PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
 PLUGINS = ['summary',
            'better_figures_and_images',
            'html_rst_directive',
-           'latex',
+           'render_math',
            'sitemap']
 SITEMAP = {
     'format': 'xml',
