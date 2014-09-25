@@ -30,10 +30,17 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
-STATIC_PATHS = ['images', 'notebooks', 'pdf', 'extra/CNAME',
-                'extra/favicon.ico']
+STATIC_PATHS = ['images',
+                'notebooks',
+                'pdf',
+                'extra/CNAME',
+                'extra/favicon.ico',
+                'extra/favicon.png',
+                ]
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
-                       'extra/favicon.ico': {'path': 'favicon.ico'},}
+                       'extra/favicon.ico': {'path': 'favicon.ico'},
+                       'extra/favicon.png': {'path': 'favicon.png'},
+                       }
 
 
 # Blog articles display
@@ -64,7 +71,7 @@ MENUITEMS = [
     ('<i class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
 ]
 
-PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
+PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['summary',
            'better_figures_and_images',
            'html_rst_directive',
