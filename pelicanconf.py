@@ -64,6 +64,7 @@ MENUITEMS = [
     #('Research', '/research.html'),
     ('Publications', '/publications.html'),
     ('Talks', '/talks.html'),
+    ('Teaching', '/teaching.html'),
     ('Software', '/software.html'),
     ('pinga-lab', 'https://github.com/pinga-lab'),
     ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>', 'https://twitter.com/leouieda'),
