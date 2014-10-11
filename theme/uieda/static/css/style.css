@@ -24,6 +24,9 @@ h2 {
     font-size: 16pt;
     margin-bottom: 5px;
 }
+h1 > a {
+    color: #424242;
+}
 h2 > a {
     color: #424242;
 }
