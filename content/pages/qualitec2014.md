@@ -21,9 +21,9 @@ incluindo-se, os laboratórios de alta complexidade*".
 A duração da bolsa será de 36 meses.
 O valor da bolsa será:
 
-* R$ 4300 para Bolsista Superior com título de Mestre ou Especialista de
+* R$ 4.300,00 para Bolsista Superior com título de Mestre ou Especialista de
   Mercado com experiência comprovada de 5 anos.
-* R$ 4700 para Bolsista Sênior com título de Doutor ou Especialista de
+* R$ 4.700,00 para Bolsista Sênior com título de Doutor ou Especialista de
   Mercado com experiência comprovada de 10 anos.
 
 ## O LAGEX
@@ -42,8 +42,11 @@ A pesquisa feita no LAGEX envolve:
   adquiridos em atividades de campo são muitas vezes
   processados utilizando os computadores e programas do LAGEX.
   ![Anomalia Bouguer da Terra]({filename}/images/bouguer-anomaly-global.png)
-* **Modelagem e inversão geofísica**: geração de modelos computacionais de
-  estruturas geológicas que estão de acordo com os dados geofísicos.
+* **Modelagem e inversão geofísica**:
+  simulação computacional de processos geofísicos, como a propagação de ondas
+  sísmicas (figura da direita abaixo).
+  Geração de modelos de estruturas geológicas a partir de dados geofísicos
+  (figura da esquerda abaixo).
   O desenvolvimento de novas metodologias de modelagem envolve programação,
   cálculo numérico e computação de alto desempenho.
   ![Exemplos de (esquerda) modelagem gravimétrica e (direita) modelagem de ondas sísmicas.]({filename}/images/exemplos-modelagem-geofisica.png)
@@ -66,12 +69,8 @@ Recentemente, o Fatiando a Terra foi tema de
 que foi coberta pelo site de notícias
 [GeofísicaBrasil](http://geofisicabrasil.com/noticias/61-software-livre/6567-fatiando-a-terra-modelagem-e-inversao-geofisica.html).
 Também foi tema de uma apresentação no congresso internacional
-[Scipy 2013](https://conference.scipy.org/scipy2013/):
-
-<iframe width="560" height="315"
- src="//www.youtube.com/embed/Ec38h1oB8cc?rel=0" frameborder="0"
- allowfullscreen></iframe>
-
+[Scipy 2013](https://conference.scipy.org/scipy2013/).
+Veja o [vídeo da apresentação no Youtube](http://youtu.be/Ec38h1oB8cc).
 
 ## A atuação do bolsista
 
@@ -80,7 +79,8 @@ incluindo programação na linguagem Python.
 
 Algumas das atividades realizadas serão:
 
-* Manutenção dos computadores do LAGEX.
+* Pesquisa de ponta na área de geofísica, com participação nos artigos
+  científicos publicados pelo laboratório.
 * Processamento de dados geofísicos.
 * Desenvolvimento dos softwares livre do laboratório, com ênfase no projeto
   Fatiando a Terra. O bolsista auxiliará na implementação de metodologias novas
@@ -88,6 +88,7 @@ Algumas das atividades realizadas serão:
 * Utilização do *cluster* do departamento (que se encontra subutilizado)
   para computação de alto desempenho,
   possibilitando a interpretação de grandes conjuntos de dados.
+* Manutenção dos computadores do LAGEX.
 * Desenvolvimento e atualização de uma página na internet para o LAGEX, crucial
   para a divulgação de nosso trabalho para o público geral e captação de novos
   alunos.
@@ -96,8 +97,8 @@ Algumas das atividades realizadas serão:
 * Desenvolvimento de material didático de
   [acesso livre](http://pt.wikipedia.org/wiki/Acesso_livre), incluindo
   apostilas, software, páginas na internet, etc.
-* Pesquisa de ponta na área de geofísica, com participação nos artigos
-  científicos publicados pelo laboratório.
+
+O bolsista deverá cumprir a **carga horária de 40 horas semanais**.
 
 Veja o
 [projeto submetido](https://docs.google.com/document/d/1zzk37gyESH9uUQ4jp7-Hmeut1T0A3BEcgT1_mOOacOY/edit?usp=sharing)
@@ -108,7 +109,8 @@ para mais informações.
 
 * **Data limite para inscrição: 22 de Outubro de 2014**
 * Entrevistas com os candidatos: 23 e 24 de Outubro de 2014
-* Início: 1º de Dezembro de 2014
+* Entrega dos documentos do candidato selecionado: até 31 de Outubro de 2014
+* Início das atividades: 1º de Dezembro de 2014
 * Duração da bolsa: 3 anos
 
 ## Requisitos
@@ -117,16 +119,17 @@ O candidato deve possuir:
 
 * Graduação em
   geofísica, física, engenharia, computação, oceanografia, geologia
-  e áreas afins.
+  ou áreas afins.
 * Conhecimentos básicos de matemática, física, computação e métodos numéricos.
-* Noções básicas de alguma linguagem de programação (e.g. Python, C, Fortran,
+* Noções básicas de alguma linguagem de programação (e.g., Python, C, Fortran,
   Matlab).
-* Mestrado (ou 5 anos de experiência) ou Doutorado (ou 10 anos de experiência)
+* Mestrado ou Doutorado (ou mínimo 5 anos de experiência profissional
+  comprovada)
 
 ## Inscrição
 
 Enviar o currículo,
-de preferência com link para o [currículo Lattes](http://lattes.cnpq.br/),
+CV ou [currículo Lattes](http://lattes.cnpq.br/),
 por e-mail para Leonardo Uieda:
 [leouieda@gmail.com](mailto:leouieda@gmail.com)
 
@@ -134,9 +137,15 @@ A **seleção** será feita por análise do currículo e entrevista,
 em pessoa ou por Skype/Google Hangouts.
 As entrevistas serão feitas nos dias **23 e 24 de Outubro de 2014**.
 O horário das entrevistas será combinado por e-mail.
+
+O candidato selecionado
+deverá entregar os documentos exigidos
+(ver [o edital](http://www.sr2.uerj.br/inovuerj/Noticias/edital_qualitec_2014.pdf))
+**até dia 31 de Outubro de 2014**.
+
 Entrevistas em pessoa serão realizadas no endereço:
 
-Rua São Francisco Xavier, 524 Sala 2029A. CEP 20550-900, Rio de Janeiro - RJ.
+> Rua São Francisco Xavier, 524 Sala 2029A. CEP 20550-900, Rio de Janeiro - RJ.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.045758915984!2d-43.23638599999997!3d-22.911682999999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x104d47eaa9f32cb9!2sUniversidade+do+Estado+do+Rio+de+Janeiro+(UERJ)!5e0!3m2!1sen!2sbr!4v1413060935604"
 width="400" height="300" frameborder="0" style="border:0"></iframe>
