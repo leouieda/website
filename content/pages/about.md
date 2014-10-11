@@ -18,7 +18,7 @@ we provide repositories
 with the source code for the papers we publish
 and other things we are working on.
 
-### Around the internet
+## Around the internet
 
 You can find my research outputs on various sites around the internet.
 The main ones include:
@@ -41,7 +41,7 @@ The main ones include:
 * [LinkedIn](http://www.linkedin.com/in/uieda):
   another professional of my CV
 
-### Education
+## Education
 
 **PhD** in Geophysics (2011-*ongoing*):
 <ul class="edu-list">

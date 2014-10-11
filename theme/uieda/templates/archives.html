@@ -6,14 +6,14 @@
 
 {% block content %}
 
-<h2>Blog posts:</h2>
+<h1>Blog posts:</h1>
 
 <ul class="post-list">
 {% for article in articles %}
     <li>
-    <h3><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+    <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
         title="Permalink to {{ article.title|striptags }}">{{ article.title
-        }}</a></h3>
+        }}</a></h2>
     <abbr title="{{ article.date.isoformat() }}">
         Posted on {{ article.locale_date }}
         {% if article.author %}
