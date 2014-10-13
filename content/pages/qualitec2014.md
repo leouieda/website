@@ -98,7 +98,8 @@ Algumas das atividades realizadas serão:
   [acesso livre](http://pt.wikipedia.org/wiki/Acesso_livre), incluindo
   apostilas, software, páginas na internet, etc.
 
-O bolsista deverá cumprir a **carga horária de 40 horas semanais**.
+O bolsista deverá cumprir a **carga horária de 40 horas semanais**
+e não poderá receber outras bolsas ou auxílios.
 
 Veja o
 [projeto submetido](https://docs.google.com/document/d/1zzk37gyESH9uUQ4jp7-Hmeut1T0A3BEcgT1_mOOacOY/edit?usp=sharing)
