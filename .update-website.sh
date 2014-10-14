@@ -8,7 +8,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     cp -R output $HOME/keep
     # Go to home and setup git
     cd $HOME
-    git config --global user.email "leouieda@gmail.co "
+    git config --global user.email "leouieda@gmail.com"
     git config --global user.name "Leonardo Uieda"
     git config --global github.user "leouieda"
     echo -e "Cloning project"
@@ -20,7 +20,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     git checkout --orphan master
     # Delete all the files and replace with our good set
     git rm -rf .
-    cp -Rf $HOME/keep/* .
+    cp -Rf $HOME/keep/. $HOME/leouieda.com
     # add, commit and push files
     git add -f .
     git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to leouieda.github.com"
