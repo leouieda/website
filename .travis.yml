@@ -6,7 +6,7 @@ before_install:
 install:
 - sudo apt-get update
 - sudo apt-get install nodejs
-- pip install pelican==3.4.0 markdown==2.4 ipython pillow beautifulsoup4
+- pip install pelican markdown==2.4 ipython pillow beautifulsoup4
 after_success:
 - bash .update-website.sh
 env:
