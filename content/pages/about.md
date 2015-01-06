@@ -74,8 +74,8 @@ The main ones include:
 <li><i class="fa fa-file-pdf-o fa-fw"></i>
     [Article PDF](http://127.0.0.1:8001/pdf/paper-planting-anomalous-densities-2012.pdf)
 </li>
-<li><i class="fa fa-archive fa-fw"></i>
-    [github.com/pinga-lab/paper-planting-densities](https://github.com/pinga-lab/paper-planting-densities)
+<li><i class="fa fa-github-square fa-fw"></i>
+    [pinga-lab/paper-planting-densities](https://github.com/pinga-lab/paper-planting-densities)
 </li>
 </ul>
 
@@ -100,8 +100,8 @@ International Exchange Program (2008-2009):
 <li><i class="fa fa-link fa-fw"></i>
     doi:[10.6084/m9.figshare.963547](http://dx.doi.org/10.6084/m9.figshare.963547)
 </li>
-<li><i class="fa fa-archive fa-fw"></i>
-    [github.com/leouieda/barchelor-thesis](https://github.com/leouieda/barchelor-thesis)
+<li><i class="fa fa-github-square fa-fw"></i>
+    [leouieda/barchelor-thesis](https://github.com/leouieda/barchelor-thesis)
 </li>
 </ul>
 

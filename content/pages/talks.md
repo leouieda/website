@@ -17,7 +17,7 @@ Legend:
 </ul>
 
 ----
-### 2014
+## 2014
 
 **Uieda, L.**, [V. C. Oliveira Jr][birocoles] and [V. C. F. Barbosa][valeria]
 (2014),
@@ -38,7 +38,7 @@ Geophysical Research Abstracts, 2014, v. 16. p. EGU2014-10898-1.
 
 ----
 
-### 2013
+## 2013
 
 **Uieda, L.**, [V. C. Oliveira Jr][birocoles] and [V. C. F. Barbosa][valeria]
 (2013),
@@ -59,7 +59,7 @@ AGU Meeting of the Americas, Abstract GP22A-01.
 
 ----
 
-### 2012
+## 2012
 
 **Uieda, L.**, and [V. C. F. Barbosa][valeria] (2012),
 Use of the "shape-of-anomaly" data misfit in 3D inversion by planting
@@ -104,7 +104,7 @@ doi:[10.1190/1.3628219](http://library.seg.org/doi/abs/10.1190/1.3628219).
 
 ----
 
-### 2011
+## 2011
 
 **Uieda, L.**, E. P. Bomfim, [C. Braitenberg][carla], and E. Molina (2011),
 Optimal forward calculation method of the Marussi tensor due to a geologic
@@ -140,7 +140,7 @@ SBGf 2011 Expanded Abstracts, pp. 1–5.
 
 ----
 
-### 2010
+## 2010
 
 **Uieda, L.**, N. Ussami, and [C. Braitenberg][carla] (2010),
 Computation of the gravity gradient tensor due to topographic masses

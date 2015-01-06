@@ -82,13 +82,35 @@ a i.fa:hover {
     padding-bottom: 2px;
 }
 
-/* POST LIST ON FRONT PAGE */
+/* POST LIST (BLOG ARCHIVE) */
 /* **************************************************************** */
 .post-list {
     list-style-type: none;
     padding: 0;
 }
 .post-list li {
+    padding-bottom: 15px;
+    border: none;
+}
+.post-list li span {
+    color: #a6a6a6;
+    padding-right: 10px;
+    float: right;
+}
+.post-list li a {
+    color: #0571b0;
+}
+.post-list li a:hover {
+    color: #0571b0;
+}
+
+/* RECENT POSTS LIST ON FRONT PAGE */
+/* **************************************************************** */
+.recent-posts {
+    list-style-type: none;
+    padding: 0;
+}
+.recent-posts li {
     border-bottom: 1px solid #d0d0d0;
 }
 

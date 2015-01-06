@@ -6,16 +6,16 @@
     {{ page.content }}
     {% endfor %}
 
-    <h2>Recent posts:</h2>
+    <h1>Recent posts:</h1>
 
-    <ul class="post-list">
+    <ul class="recent-posts">
     {% for article in articles[0:ARTICLES_FRONT_PAGE] %}
         <li>
-        <h3><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+        <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
             title="Permalink to {{ article.title|striptags }}">{{ article.title
-            }}</a></h3>
+            }}</a></h2>
         <abbr title="{{ article.date.isoformat() }}">
-            Posted on {{ article.locale_date }}
+            Posted on {{ article.date|strftime('%d-%m-%Y') }}
             {% if article.author %}
                 by <a href="{{ SITEURL }}/{{ article.author.url }}">
                 {{ article.author }}</a>

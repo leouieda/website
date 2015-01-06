@@ -38,8 +38,7 @@
 
 <body>
     <header>
-        <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
-        <aside>{{ SITESUBTITLE }}</aside>
+        <h1 class="name"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
         <nav><ul>
             {% for title, link in MENUITEMS %}
                 <li><a href="{{ link }}">{{ title }}</a></li>

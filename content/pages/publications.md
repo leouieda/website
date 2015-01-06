@@ -16,7 +16,7 @@ Legend:
 
 
 ----
-### 2014
+## 2014
 
 
 <i class="fa fa-unlock-alt" title="Open-Access"></i>
@@ -49,7 +49,7 @@ doi:10.1016/j.oregeorev.2014.02.011.
 [<i class="fa fa-file-pdf-o" title="PDF"></i>](/pdf/paper-quadrilatero-2014.pdf)
 
 ----
-### 2013
+## 2013
 
 [Melo, F. F.][figura], [V. C. F. Barbosa][valeria], **L. Uieda**,
 [V. C. Oliveira Jr][birocoles],
@@ -70,7 +70,7 @@ doi:10.1190/geo2012-0196.1.
 [<i class="fa fa-file-pdf-o" title="PDF"></i>](/pdf/paper-polynomial-eqlayer-2013.pdf)
 
 ----
-### 2012
+## 2012
 
 **Uieda, L.**, and [V. C. F. Barbosa][valeria] (2012),
 Robust 3D gravity gradient inversion by planting anomalous densities,

@@ -2,11 +2,9 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'Leonardo Uieda'
-
-SITENAME = u"Leonardo Uieda"
-SITESUBTITLE = u'Assistant Professor of Geophysics'
+SITENAME = u"Leonardo <b>Uieda</b>"
 SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
-SITEURL = ''
+SITEURL = '/'
 
 # Language and time
 DEFAULT_LANG = u'en'
@@ -49,12 +47,11 @@ DISPLAY_CATEGORIES_ON_MENU = False
 FEED_ALL_RSS = 'rss.xml'
 FEED_ALL_ATOM = False
 
-THEME = 'theme/uieda'
+THEME = 'theme'
 
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('<i class="fa fa-home fa-lg" title="Home"></i>', '/'),
     ('About', '/about.html'),
     ('Blog', '/archives.html'),
     #('Research', '/research.html'),
@@ -62,9 +59,6 @@ MENUITEMS = [
     ('Talks', '/talks.html'),
     ('Teaching', '/teaching.html'),
     ('Software', '/software.html'),
-    ('pinga-lab', 'https://github.com/pinga-lab'),
-    ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>', 'https://twitter.com/leouieda'),
-    ('<i class="fa fa-github-square fa-lg" title="Github"></i>', 'https://github.com/leouieda'),
     ('<i class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
 ]
 
