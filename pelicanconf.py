@@ -2,8 +2,8 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'Leonardo Uieda'
-SITENAME = u"Leonardo <b>Uieda</b>"
-SITETITLE = u"Leonardo Uieda"
+SITETITLE = u"Leonardo <b>Uieda</b>"
+SITENAME = u"Leonardo Uieda"
 SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
 SITEURL = ''
 
@@ -60,6 +60,10 @@ MENUITEMS = [
     ('Talks', '/talks.html'),
     ('Teaching', '/teaching.html'),
     ('Software', '/software.html'),
+    ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
+     'https://twitter.com/leouieda'),
+    ('<i class="fa fa-github-square fa-lg" title="Github"></i>',
+     'https://github.com/leouieda'),
     ('<i class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
 ]
 

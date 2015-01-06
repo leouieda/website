@@ -10,16 +10,12 @@
             <meta name="keywords" content="{{ SITEKEYWORDS }}"/>
         {% endif %}
     {% endblock %}
-    <title>{% block title %}{{ SITETITLE }}{% endblock title %}</title>
-
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <link href="/theme/css/style.css" type="text/css" rel="stylesheet">
-
     <link rel="shortcut icon" href="{{ SITEURL }}/favicon.png">
-
-    <!--Include the Font Awesome CSS-->
+    <!--Include the Font Awesome and Academicons CSS-->
+    <link rel="stylesheet" href="/theme/academicons/academicons.css">
     <link rel="stylesheet" href="/theme/font-awesome/css/font-awesome.min.css">
-
-
     <!-- Feeds -->
     {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -27,33 +23,25 @@
     {% if FEED_ALL_RSS %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
     {% endif %}
-
     <!-- Google Analytics -->
     {{ GOOGLE_ANALYTICS }}
-
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 {% endblock head %}
 </head>
 
 <body>
     <header>
-        <h1 class="name"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
-        <nav><ul>
+        <section class="name">
+            <a href="{{ SITEURL }}">{{ SITETITLE }}</a>
+        </section>
+        <nav class="menu">
+            <ul>
             {% for title, link in MENUITEMS %}
                 <li><a href="{{ link }}">{{ title }}</a></li>
             {% endfor %}
-            {% if DISPLAY_PAGES_ON_MENU %}
-                {% for p in PAGES %}
-                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-                {% endfor %}
-            {% else %}
-                {% if DISPLAY_CATEGORIES_ON_MENU %}
-                    {% for cat, null in categories %}
-                        <li{% if cat == category %}
-                        class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                    {% endfor %}
-                {% endif %}
-            {% endif %}
-        </ul></nav>
+            </ul>
+        </nav>
     </header>
 
     <div class="content">
