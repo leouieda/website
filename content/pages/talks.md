@@ -11,7 +11,7 @@ Legend:
 <li><i class="fa fa-file-pdf-o fa-fw"></i> Abstract PDF </li>
 <li><i class="fa fa-download fa-fw"></i> Download poster/slides </li>
 <li><i class="fa fa-clipboard fa-fw"></i> Supplementary material </li>
-<li><i class="fa fa-archive fa-fw"></i> Github repository</li>
+<li><i class="fa fa-github-square fa-fw"></i> Github repository</li>
 <li><i class="fa fa-youtube-play fa-fw"></i> Talk recording/animation </li>
 <li><i class="fa fa-slideshare fa-fw"></i> View slides on Slideshare </li>
 </ul>
@@ -24,7 +24,7 @@ Legend:
 Using Fatiando a Terra to solve inverse problems in geophysics,
 Python in Science Conference.
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.1089987)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/scipy2014)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/scipy2014)
 
 **Uieda, L.** and [V. C. F. Barbosa][valeria]
 (2014),
@@ -33,7 +33,7 @@ EGU General Assembly,
 Geophysical Research Abstracts, 2014, v. 16. p. EGU2014-10898-1.
 [<i class="fa fa-file-pdf-o" title="Abstract"></i>](http://meetingorganizer.copernicus.org/EGU2014/EGU2014-10898-1.pdf)
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.1155457)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/egu2014)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/egu2014)
 [<i class="fa fa-slideshare" title="View slides on Slideshare"></i>](http://www.slideshare.net/leouieda/gravity-inversion-in-spherical-coordinates-using-tesseroids)
 
 ----
@@ -46,7 +46,7 @@ Modeling the Earth with Fatiando a Terra,
 Proceedings of the 12th Python in Science Conference, pp. 90-96.
 [<i class="fa fa-file-pdf-o" title="Abstract"></i>](http://conference.scipy.org/proceedings/scipy2013/uieda.html)
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://leouieda.github.io/scipy2013/?theme=night#/)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/scipy2013)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/scipy2013)
 [<i class="fa fa-clipboard" title="Supplementary material"></i>](http://dx.doi.org/10.6084/m9.figshare.708390)
 [<i class="fa fa-youtube-play" title="Talk recording/animation"></i>](http://www.youtube.com/watch?v=Ec38h1oB8cc)
 
@@ -54,7 +54,7 @@ Proceedings of the 12th Python in Science Conference, pp. 90-96.
 3D magnetic inversion by planting anomalous densities,
 AGU Meeting of the Americas, Abstract GP22A-01.
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.703651)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/agu-cancun2013)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/agu-cancun2013)
 [<i class="fa fa-slideshare" title="View slides on Slideshare"></i>](http://www.slideshare.net/leouieda/3d-magnetic-inversion-by-planting-anomalous-densities)
 
 ----
@@ -67,7 +67,7 @@ anomalous densities, SEG Technical Program Expanded Abstracts, pp. 1-6,
 doi:[10.1190/segam2012-0383.1](http://library.seg.org/doi/abs/10.1190/segam2012-0383.1).
 [<i class="fa fa-file-pdf-o" title="Abstract"></i>](/pdf/seg-2012.pdf)
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.156864)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/seg2012)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/seg2012)
 [<i class="fa fa-slideshare" title="View slides on Slideshare"></i>](http://www.slideshare.net/leouieda/uieda-barbosa-seg2012eposter)
 
 Carlos, D. U., **L. Uieda**, Y. Li, [V. C. F. Barbosa][valeria], M. A. Braga,
@@ -84,7 +84,7 @@ Rapid 3D inversion of gravity and gravity gradient data to test geologic
 hypotheses,
 International Symposium on Gravity, Geoid and Height Systems.
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.156859)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/gghs2012)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/gghs2012)
 [<i class="fa fa-slideshare" title="View slides on Slideshare"></i>](http://www.slideshare.net/leouieda/rapid-3d-inversion-of-gravity-and-gravity-gradient-data-to-test-geologic-hypotheses)
 
 Carlos, D. U., [V. C. F. Barbosa][valeria], **L. Uieda**, and M. A. Braga
@@ -112,7 +112,7 @@ structure at GOCE height,
 Proc. of 4th International GOCE User Workshop, pp. 1–5.
 [<i class="fa fa-file-pdf-o" title="Abstract"></i>](/pdf/goce-2011.pdf)
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.92624)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/goce2011)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/goce2011)
 
 **Uieda, L.**, and [V. C. F. Barbosa][valeria] (2011),
 Robust 3D gravity gradient inversion by planting anomalous densities,
@@ -120,7 +120,7 @@ SEG Technical Program Expanded Abstracts, vol. 30, pp. 820–824,
 doi:[10.1190/1.3628201](http://library.seg.org/doi/abs/10.1190/1.3628201).
 [<i class="fa fa-file-pdf-o" title="Abstract"></i>](/pdf/seg-2011.pdf)
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.156863)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/seg2011)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/seg2011)
 [<i class="fa fa-slideshare" title="View slides on Slideshare"></i>](http://www.slideshare.net/leouieda/robust-3d-gravity-gradient-inversion-by-planting-anomalous-densities)
 
 **Uieda, L.**, and [V. C. F. Barbosa][valeria] (2011),
@@ -128,7 +128,7 @@ doi:[10.1190/1.3628201](http://library.seg.org/doi/abs/10.1190/1.3628201).
 SBGf 2011 Expanded Abstracts, pp. 1–5.
 [<i class="fa fa-file-pdf-o" title="Abstract"></i>](/pdf/sbgf-2011.pdf)
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.156861)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/sbgf2011)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/sbgf2011)
 [<i class="fa fa-slideshare" title="View slides on Slideshare"></i>](http://www.slideshare.net/leouieda/3d-gravity-inversion-by-planting-anomalous-densitiesa)
 
 **Uieda, L.**, and [V. C. F. Barbosa][valeria] (2011),
@@ -136,7 +136,7 @@ SBGf 2011 Expanded Abstracts, pp. 1–5.
 73th EAGE Conference & Exhibition incorporating SPE EUROPEC, pp. 1–5.
 [<i class="fa fa-file-pdf-o" title="Abstract"></i>](/pdf/eage-2011.pdf)
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.91511)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/eage2011)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/eage2011)
 
 ----
 
@@ -147,7 +147,7 @@ Computation of the gravity gradient tensor due to topographic masses
 using tesseroids, Eos Trans. AGU, Meet. Am. Suppl., vol. 91, Abstract G22A–04.
 [<i class="fa fa-file-pdf-o" title="Abstract"></i>](http://www.agu.org/cgi-bin/SFgate/SFgate?language=English&verbose=0&listenv=table&application=ja10&convert=&converthl=&refinequery=&formintern=&formextern=&transquery=au=uieda&_lines=&multiple=0&descriptor=/data/epubs/wais/indexes/ja10/ja10%7C1000%7C3828%7CComputation%20of%20the%20gravity%20gradient%20tensor%20due%20to%20topographic%20masses%20using%20tesseroids%7CHTML%7Clocalhost:0%7C/data/epubs/wais/indexes/ja10/ja10%7C2890230%202894058%20/data2/epubs/wais/data/ja10/ja10.txt)
 [<i class="fa fa-download" title="Download poster/slides"></i>](http://dx.doi.org/10.6084/m9.figshare.156858)
-[<i class="fa fa-archive" title="Github repository"></i>](https://github.com/leouieda/agu2010)
+[<i class="fa fa-github-square" title="Github repository"></i>](https://github.com/leouieda/agu2010)
 [<i class="fa fa-slideshare" title="View slides on Slideshare"></i>](http://www.slideshare.net/leouieda/computation-of-the-gravity-gradient-tensor-due-to-topographic-masses-using-tesseroids)
 
 [birocoles]: http://fatiando.org/people/oliveira-jr/

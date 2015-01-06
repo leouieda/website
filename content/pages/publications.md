@@ -9,9 +9,9 @@ Legend:
 <li><i class="fa fa-link fa-fw"></i> Link to publisher</li>
 <li><i class="fa fa-file-pdf-o fa-fw"></i> PDF version</li>
 <li><i class="fa fa-clipboard fa-fw"></i> Supplementary material</li>
-<li><i class="fa fa-archive fa-fw"></i> Github repository</li>
+<li><i class="fa fa-github-square fa-fw"></i> Github repository</li>
 <li><i class="fa fa-flask fa-fw"></i> Data</li>
-<li><i class="fa fa-video-camera fa-fw"></i> Movie/animation</li>
+<li><i class="fa fa-youtube-play fa-fw"></i> Movie/animation</li>
 </ul>
 
 
@@ -36,7 +36,7 @@ Geophysical tutorial: Euler deconvolution of potential-field data,
 The Leading Edge, 33(4), 448-450,
 doi:10.1190/tle33040448.1.
 [<i class="fa fa-link" title="Official version"></i>](http://library.seg.org/doi/abs/10.1190/tle33040448.1)
-[<i class="fa fa-archive" title="Github Repository"></i>](https://github.com/pinga-lab/paper-tle-euler-tutorial)
+[<i class="fa fa-github-square" title="Github Repository"></i>](https://github.com/pinga-lab/paper-tle-euler-tutorial)
 [<i class="fa fa-flask" title="Data"></i>](http://dx.doi.org/10.6084/m9.figshare.923450)
 [[wiki version](http://wiki.seg.org/wiki/Euler_deconvolution_of_potential_field_data_%28tutorial%29)]
 
@@ -78,9 +78,9 @@ Geophysics, 77(4), G55-G66,
 doi:10.1190/geo2011-0388.1.
 [<i class="fa fa-link" title="Official version"></i>](http://library.seg.org/doi/abs/10.1190/geo2011-0388.1)
 [<i class="fa fa-file-pdf-o" title="PDF"></i>](/pdf/paper-planting-anomalous-densities-2012.pdf)
-[<i class="fa fa-archive" title="Github Repository"></i>](https://github.com/pinga-lab/paper-planting-densities)
+[<i class="fa fa-github-square" title="Github Repository"></i>](https://github.com/pinga-lab/paper-planting-densities)
 [<i class="fa fa-clipboard" title="Supplementary material"></i>](http://dx.doi.org/10.6084/m9.figshare.91574)
-[<i class="fa fa-video-camera" title="Animation"></i>](http://dx.doi.org/10.6084/m9.figshare.91469)
+[<i class="fa fa-youtube-play" title="Animation"></i>](http://dx.doi.org/10.6084/m9.figshare.91469)
 
 
 [birocoles]: http://fatiando.org/people/oliveira-jr/
