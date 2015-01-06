@@ -65,6 +65,8 @@ a i.fa:hover, a i.ai:hover {
 }
 .contact-list li {
     padding-bottom: 5px;
+    padding-right: 30px;
+    /*display: inline-block;*/
 }
 
 /* EDUCATION LISTS (UNIVERSITY, ADVISOR, THESIS) */
@@ -157,7 +159,7 @@ a i.fa:hover, a i.ai:hover {
     display: inline;
     text-transform: uppercase;
     padding: 10px;
-    line-height: 15px;
+    line-height: 20px;
 }
 .menu a {
     color: #ffffff;
@@ -166,6 +168,7 @@ a i.fa:hover, a i.ai:hover {
     color: #333;
 }
 .menu i.fa, .menu i.ai {
+    font-size: 16pt;
     color: #ffffff;
 }
 .menu i.fa:hover, .menu i.ai:hover {
@@ -194,13 +197,16 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 /* **************************************************************** */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     body {
         width: 95%;
     }
-    header nav {
+    .menu {
         margin-left: -2.5%;
         width: 105%;
+    }
+    .menu li {
+        line-height: 30px;
     }
 }
 /* **************************************************************** */

@@ -8,5 +8,5 @@
     <h1>{{ page.title }}</h1>
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
-    {{ page.content }}
+    {{ page.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
 {% endblock %}

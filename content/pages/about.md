@@ -18,28 +18,39 @@ we provide repositories
 with the source code for the papers we publish
 and other things we are working on.
 
-## Around the internet
+## Contact
 
-You can find my research outputs on various sites around the internet.
-The main ones include:
+<ul class="contact-list">
+<li><i class="fa fa-envelope fa-lg" title="e-mail"></i>
+    <a href="mailto:leouieda@gmail.com"
+     title="My personal e-mail.">leouieda@gmail.com</a>
+</li>
+<li><i class="fa fa-twitter fa-lg" title="Twitter"></i>
+    <a class="external reference"
+     href="https://twitter.com/leouieda">@leouieda</a>
+</li>
+<li><i class="fa fa-google-plus-square fa-lg" title="Google+"></i>
+    <a class="external reference"
+     href="https://plus.google.com/u/0/+LeonardoUieda">+Leonardo Uieda</a>
+</li>
+</ul>
 
-* [Github](https://github.com/leouieda):
-  Repository for all my code, text, etc.
-* [figshare](http://figshare.com/authors/Leonardo%20Uieda/97471):
-  view and download data, presentations, posters, and
-  supplementary material
-* [Impactstory](http://impactstory.org/leouieda):
-  altmetrics for my research outputs and scientific CV
-* [ORCID](http://orcid.org/0000-0001-6123-9515):
-  My open researcher ID
-* [Google Scholar](http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ):
-  a list of publications with some (sketchy) citation metrics
-* [Curriculo Lattes](http://lattes.cnpq.br/8939551682050504):
-  Brazilian academic resume by [CNPq](http://www.cnpq.br/)
-* [ResearcherID](http://www.researcherid.com/rid/G-3258-2012):
-  another tracking site for publications and citations from Web of Science
-* [LinkedIn](http://www.linkedin.com/in/uieda):
-  another professional of my CV
+
+## Around the Internet
+
+You'll find me and my research outputs in various sites
+(there is also my [Currículo Lattes](http://lattes.cnpq.br/8939551682050504)
+for the Brazilians out there):
+
+<div style="text-align: center;">
+<a href="https://github.com/leouieda"><i class="fa fa-github-square fa-3x" title="Github"></i></a>
+<a href="http://figshare.com/authors/Leonardo%20Uieda/97471"><i class="ai ai-figshare-square fa-3x" title="figshare"></i></a>
+<a href="http://impactstory.org/leouieda"><i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i></a>
+<a href="http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ"><i class="ai ai-google-scholar-square fa-3x" title="Google Scholar"></i></a>
+<a href="https://www.researchgate.net/profile/Leonardo_Uieda"><i class="ai ai-researchgate-square fa-3x" title="ResearchGate"></i></a>
+<a href="http://orcid.org/0000-0001-6123-9515"><i class="ai ai-orcid-square fa-3x" title="ORCID"></i></a>
+<a href="http://www.linkedin.com/in/uieda"><i class="fa fa-linkedin-square fa-3x" title="LinkedIn"></i></a>
+</div>
 
 ## Education
 

@@ -39,7 +39,7 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
 
 
 # Blog articles display
-ARTICLES_FRONT_PAGE = 2
+ARTICLES_FRONT_PAGE = 3
 SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -64,6 +64,12 @@ MENUITEMS = [
      'https://twitter.com/leouieda'),
     ('<i class="fa fa-github-square fa-lg" title="Github"></i>',
      'https://github.com/leouieda'),
+    ('<i class="ai ai-impactstory fa-lg" title="ImpactStory"></i>',
+     'http://impactstory.org/leouieda'),
+    ('<i class="ai ai-google-scholar fa-lg" title="Google Scholar"></i>',
+     'http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ'),
+    ('<i class="ai ai-researchgate-square fa-lg" title="ResearchGate"></i>',
+     'https://www.researchgate.net/profile/Leonardo_Uieda'),
     ('<i class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
 ]
 

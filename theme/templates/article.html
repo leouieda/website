@@ -27,14 +27,14 @@
     {{ translations.translations_for(article) }}
 
     <abbr title="{{ article.date.isoformat() }}">
-        Posted on {{ article.locale_date }}
+        Posted on {{ article.date|strftime('%d/%m/%Y') }}
         {% if article.author %}
             by <a href="{{ SITEURL }}/{{ article.author.url }}">
             {{ article.author }}</a>
         {% endif %}
     </abbr>
 
-    {{ article.content }}
+    {{ article.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
 
     <!-- DISQUS -->
     {% if DISQUS_SITENAME %}
