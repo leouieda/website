@@ -7,6 +7,9 @@ body {
     font-size: 12pt;
     font-family: Verdana, sans-serif;
 }
+h1, h2, h3, h4 {
+    font-family: Helvetica, sans-serif;
+}
 p, li {
     line-height: 25px;
 }
@@ -20,21 +23,16 @@ a {
     color: #0571b0;
     text-decoration: none;
 }
+h1 {
+    font-size: 20pt;
+}
 h2 {
-    font-size: 16pt;
-    margin-bottom: 5px;
-}
-h1 > a {
-    color: #424242;
-}
-h2 > a {
-    color: #424242;
+    font-size: 18pt;
 }
 h3 {
     font-size: 14pt;
-    margin-bottom: 5px;
 }
-h3 > a {
+h1 > a, h2 > a, h3 > a {
     color: #424242;
 }
 abbr {
@@ -48,11 +46,11 @@ hr {
     color: #d0d0d0;
 }
 
-/* Color for fontawesome icons */
-i.fa {
+/* Color for icons */
+i.fa, i.ai {
     color: #424242;
 }
-a i.fa:hover {
+a i.fa:hover, a i.ai:hover {
     color: #0571b0;
 }
 
@@ -67,6 +65,8 @@ a i.fa:hover {
 }
 .contact-list li {
     padding-bottom: 5px;
+    padding-right: 30px;
+    /*display: inline-block;*/
 }
 
 /* EDUCATION LISTS (UNIVERSITY, ADVISOR, THESIS) */
@@ -82,13 +82,35 @@ a i.fa:hover {
     padding-bottom: 2px;
 }
 
-/* POST LIST ON FRONT PAGE */
+/* POST LIST (BLOG ARCHIVE) */
 /* **************************************************************** */
 .post-list {
     list-style-type: none;
     padding: 0;
 }
 .post-list li {
+    padding-bottom: 15px;
+    border: none;
+}
+.post-list li span {
+    color: #a6a6a6;
+    padding-right: 10px;
+    float: right;
+}
+.post-list li a {
+    color: #0571b0;
+}
+.post-list li a:hover {
+    color: #0571b0;
+}
+
+/* RECENT POSTS LIST ON FRONT PAGE */
+/* **************************************************************** */
+.recent-posts {
+    list-style-type: none;
+    padding: 0;
+}
+.recent-posts li {
     border-bottom: 1px solid #d0d0d0;
 }
 
@@ -107,44 +129,49 @@ a i.fa:hover {
 
 /* HEADER */
 /* **************************************************************** */
-header h1 {
-    font-size: 20pt;
-    margin-bottom: 5px;
+/* SITE NAME */
+.name {
+    font-family: Helvetica, sans-serif;
+    font-size: 24pt;
+    margin-bottom: 0;
 }
-header aside {
-    font-size: 12pt;
+.name a {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #4d4d4d;
 }
-header h1 > a {
-    color: #424242;
+.name a:hover {
+    color: #0571b0;
 }
-header nav {
-    margin-top: 20px;
+.menu {
+    margin-top: 5px;
     background: #0571b0;
 }
-header ul {
+.menu ul {
     width: 96%;
     padding-left: 2%;
     padding-top: 10px;
     padding-bottom: 10px;
     list-style-type: none;
 }
-header li {
+.menu li {
     font-size: 10pt;
     display: inline;
     text-transform: uppercase;
     padding: 10px;
-    line-height: 15px;
+    line-height: 20px;
 }
-header a {
+.menu a {
     color: #ffffff;
 }
-header a:hover {
+.menu a:hover {
     color: #333;
 }
-header i.fa {
+.menu i.fa, .menu i.ai {
+    font-size: 16pt;
     color: #ffffff;
 }
-header i.fa:hover {
+.menu i.fa:hover, .menu i.ai:hover {
     color: #333;
 }
 /* **************************************************************** */
@@ -170,13 +197,16 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 /* **************************************************************** */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     body {
         width: 95%;
     }
-    header nav {
+    .menu {
         margin-left: -2.5%;
         width: 105%;
+    }
+    .menu li {
+        line-height: 30px;
     }
 }
 /* **************************************************************** */

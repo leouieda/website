@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Blog - {{ SITENAME }}
+{% endblock %}
+
+{% block content %}
+
+<h1>Blog posts</h1>
+
+<ul class="post-list">
+{% for article in articles %}
+    <li>
+    <span>{{ article.date|strftime('%d/%m/%Y') }}</span>
+    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+       title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+    </li>
+{% endfor %}</ul>
+
+{% endblock %}

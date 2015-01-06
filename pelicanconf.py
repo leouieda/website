@@ -2,9 +2,8 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'Leonardo Uieda'
-
+SITETITLE = u"Leonardo <b>Uieda</b>"
 SITENAME = u"Leonardo Uieda"
-SITESUBTITLE = u'Assistant Professor of Geophysics'
 SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
 SITEURL = ''
 
@@ -40,7 +39,7 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
 
 
 # Blog articles display
-ARTICLES_FRONT_PAGE = 2
+ARTICLES_FRONT_PAGE = 3
 SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -49,12 +48,11 @@ DISPLAY_CATEGORIES_ON_MENU = False
 FEED_ALL_RSS = 'rss.xml'
 FEED_ALL_ATOM = False
 
-THEME = 'theme/uieda'
+THEME = 'theme'
 
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('<i class="fa fa-home fa-lg" title="Home"></i>', '/'),
     ('About', '/about.html'),
     ('Blog', '/archives.html'),
     #('Research', '/research.html'),
@@ -62,9 +60,16 @@ MENUITEMS = [
     ('Talks', '/talks.html'),
     ('Teaching', '/teaching.html'),
     ('Software', '/software.html'),
-    ('pinga-lab', 'https://github.com/pinga-lab'),
-    ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>', 'https://twitter.com/leouieda'),
-    ('<i class="fa fa-github-square fa-lg" title="Github"></i>', 'https://github.com/leouieda'),
+    ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
+     'https://twitter.com/leouieda'),
+    ('<i class="fa fa-github-square fa-lg" title="Github"></i>',
+     'https://github.com/leouieda'),
+    ('<i class="ai ai-impactstory fa-lg" title="ImpactStory"></i>',
+     'http://impactstory.org/leouieda'),
+    ('<i class="ai ai-google-scholar fa-lg" title="Google Scholar"></i>',
+     'http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ'),
+    ('<i class="ai ai-researchgate-square fa-lg" title="ResearchGate"></i>',
+     'https://www.researchgate.net/profile/Leonardo_Uieda'),
     ('<i class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
 ]
 
