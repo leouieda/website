@@ -3,8 +3,9 @@ import os
 
 AUTHOR = u'Leonardo Uieda'
 SITENAME = u"Leonardo <b>Uieda</b>"
+SITETITLE = u"Leonardo Uieda"
 SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
-SITEURL = '/'
+SITEURL = ''
 
 # Language and time
 DEFAULT_LANG = u'en'

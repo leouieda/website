@@ -2,17 +2,15 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
 {% block head %}
-    <meta charset="utf-8" />
     {% block meta %}
-        <meta name="description" content="{{ SITESUBTITLE }}"/>
+        <meta charset="utf-8" />
+        <meta name="author" content="{{ AUTHOR }}"/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
         {% if SITEKEYWORDS %}
             <meta name="keywords" content="{{ SITEKEYWORDS }}"/>
         {% endif %}
-        <meta name="author" content="{{ AUTHOR }}"/>
     {% endblock %}
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
-
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <title>{% block title %}{{ SITETITLE }}{% endblock title %}</title>
 
     <link href="/theme/css/style.css" type="text/css" rel="stylesheet">
 
