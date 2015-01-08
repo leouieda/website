@@ -70,6 +70,8 @@ MENUITEMS = [
      'http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ'),
     ('<i class="ai ai-researchgate-square fa-lg" title="ResearchGate"></i>',
      'https://www.researchgate.net/profile/Leonardo_Uieda'),
+    ('<i class="ai ai-orcid fa-lg" title="ORCID"></i>',
+     'http://orcid.org/0000-0001-6123-9515'),
     ('<i class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
 ]
 
