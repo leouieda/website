@@ -53,13 +53,11 @@ THEME = 'theme'
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('About', '/about.html'),
-    ('Blog', '/archives.html'),
-    #('Research', '/research.html'),
+    ('About', '/index.html'),
+    ('Research', '/research.html'),
     ('Publications', '/publications.html'),
     ('Talks', '/talks.html'),
     ('Teaching', '/teaching.html'),
-    ('Software', '/software.html'),
     ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
      'https://twitter.com/leouieda'),
     ('<i class="fa fa-github-square fa-lg" title="Github"></i>',
