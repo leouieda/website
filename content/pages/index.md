@@ -1,7 +1,6 @@
-title: index
+title: About
 date: 25/01/2014
 slub: index
-template: index
 save_as: index.html
 
 
@@ -48,7 +47,7 @@ If you are around Rio and would like to talk, you'll find me at:
 
 ## Around the Internet
 
-You'll find me and my research outputs in various sites
+You'll find my research outputs in various sites
 (there is also my [Currículo Lattes](http://lattes.cnpq.br/8939551682050504)
 for the Brazilians out there):
 

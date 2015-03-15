@@ -104,14 +104,16 @@ a i.fa:hover, a i.ai:hover {
     color: #0571b0;
 }
 
-/* RECENT POSTS LIST ON FRONT PAGE */
+/* PAPER PAGES */
 /* **************************************************************** */
-.recent-posts {
-    list-style-type: none;
-    padding: 0;
+.paper-meta ul {
+    margin: 0px;
+    padding: 0px;
 }
-.recent-posts li {
-    border-bottom: 1px solid #d0d0d0;
+.paper-meta li {
+    list-style-type: none;
+    padding-right: 20px;
+    line-height: 30px;
 }
 
 /* THE PUBLICATION LIST */

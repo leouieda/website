@@ -16,23 +16,94 @@
 {% endblock %}
 
 {% block title %}
-    {{ article.title}} - {{ SITENAME }}
+{{ article.category|capitalize }}: {{ article.title }} - {{ SITENAME }}
 {% endblock %}
 
 {% block content %}
-    <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-        title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+    <a href="{{SITEURL}}/{{category}}">{{category|capitalize}}</a> >
+    </br>
+    <h1>{{ article.title }}
+    {% if article.tags is defined and "review" in article.tags %}
+    (in review)
+    {% endif %}
+    </h1>
 
-    {% import 'translations.html' as translations with context %}
-    {{ translations.translations_for(article) }}
+    <p class="paper-date-author">
+    by {{ article.author }} ({{ article.date|strftime('%Y') }})
+    </p>
 
-    <abbr title="{{ article.date.isoformat() }}">
-        Posted on {{ article.date|strftime('%d/%m/%Y') }}
-        {% if article.author %}
-            by <a href="{{ SITEURL }}/{{ article.author.url }}">
-            {{ article.author }}</a>
+    <h2>Resources</h2>
+    <ul class="paper-meta">
+        {% if article.tags is defined and "OA" in article.tags %}
+        <li>
+        <i class="fa fa-unlock-alt" title="Open-Access"></i>
+        Open-Access
+        </li>
         {% endif %}
-    </abbr>
+
+        {% if article.pdf is defined %}
+        <li>
+        <i class="fa fa-file-pdf-o"></i>
+        PDF: <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
+        </li>
+        {% endif %}
+
+        {% if article.slides is defined %}
+        <li>
+        <i class="fa fa-desktop"></i>
+        Slides: <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
+        </li>
+        {% endif %}
+
+        {% if article.poster is defined %}
+        <li>
+        <i class="fa fa-file-text"></i>
+        Poster: <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
+        </li>
+        {% endif %}
+
+        {% if article.repository is defined %}
+        <li>
+        <i class="fa fa-github-square"></i>
+        Repository:
+        <a href="https://github.com/{{article.repository}}">{{article.repository}}</a>
+        </li>
+        {% endif %}
+
+        {% if article.event is defined %}
+        <li>
+        <i class="fa fa-users"></i>
+        Event: {{article.event}}
+        </li>
+        {% endif %}
+
+        {% if article.journal is defined %}
+        <li>
+        <i class="fa fa-book"></i>
+        Journal: {{article.journal}}
+        </li>
+        {% endif %}
+
+        {% if article.doi is defined %}
+        <li>
+        <i class="fa fa-external-link"></i>
+        DOI: <a href="http://dx.doi.org/{{article.doi}}">{{article.doi}}</a>
+        </li>
+        {% endif %}
+
+        {% if article.supplement is defined %}
+        <li>
+        <i class="fa fa-paperclip"></i>
+        Supplement:
+        <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
+        </li>
+        {% endif %}
+    </ul>
+
+    {% if article.thumbnail is defined %}
+    <img class="paper-thumbnail" src="{{SITEURL/article.thumbnail}}"></img>
+    </br>
+    {% endif %}
 
     {{ article.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
 
