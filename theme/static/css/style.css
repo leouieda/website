@@ -106,7 +106,7 @@ a i.fa:hover, a i.ai:hover {
 
 /* PAPER PAGES */
 /* **************************************************************** */
-.paper-meta ul {
+ul.paper-meta {
     margin: 0px;
     padding: 0px;
 }
@@ -114,6 +114,14 @@ a i.fa:hover, a i.ai:hover {
     list-style-type: none;
     padding-right: 20px;
     line-height: 30px;
+}
+ul.paper-list {
+    padding: 0px;
+}
+.paper-list li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
 /* THE PUBLICATION LIST */

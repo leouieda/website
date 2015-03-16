@@ -56,7 +56,7 @@ THEME = 'theme'
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
     ('About', '/index.html'),
-    ('Research', '/research.html'),
+    #('Research', '/research.html'),
     ('Papers', '/papers'),
     ('Talks', '/talks'),
     ('Teaching', '/teaching.html'),

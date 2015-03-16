@@ -16,7 +16,7 @@
 {% endblock %}
 
 {% block title %}
-{{ article.category|capitalize }}: {{ article.title }} - {{ SITENAME }}
+{{ article.title }}: {{ article.category|capitalize }} by {{ SITENAME }}
 {% endblock %}
 
 {% block content %}
@@ -45,6 +45,17 @@
         <li>
         <i class="fa fa-file-pdf-o"></i>
         PDF: <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
+        </li>
+        {% endif %}
+
+        {% if article.type is defined %}
+        <li>
+        <i class="fa fa-info-circle fa-lg"></i>
+        Presentation:
+        {{article.type|capitalize}}
+        {% if article.tags is defined and "notme" in article.tags %}
+            <b>(not presented by me)</b>
+        {% endif %}
         </li>
         {% endif %}
 
@@ -104,6 +115,7 @@
     <img class="paper-thumbnail" src="{{SITEURL/article.thumbnail}}"></img>
     </br>
     {% endif %}
+
 
     {{ article.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
 

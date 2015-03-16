@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block title %}
-{{ category|capitalize }} - {{ SITENAME }}
+{{ category|capitalize }} by {{ SITENAME }}
 {% endblock %}
 
 {% block content %}
@@ -15,6 +15,12 @@
     {% endif %}
     {% if "OA" in article.tags %}
         <i class="fa fa-unlock-alt" title="Open-Access"></i>
+    {% endif %}
+    {% if article.type is defined %}
+        <i>({{article.type|lower}})</i>
+    {% endif %}
+    {% if "notme" in article.tags %}
+        <i>(not presented by me)</i>
     {% endif %}
     <a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a>
     ({{article.date|strftime('%Y')}}) {{article.author}},
