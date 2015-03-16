@@ -20,10 +20,13 @@ This work is licensed under a
 EXTRA_FOOTER = 'Source code at <a href="https://github.com/leouieda/website">github.com/leouieda/website</a>.'
 
 # Where to put generated files
-ARTICLE_URL = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
-ARTICLE_SAVE_AS = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}.html'
+ARTICLE_URL = '{category}/{slug}.html'
+ARTICLE_SAVE_AS = ARTICLE_URL
 PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = '{slug}.html'
+PAGE_SAVE_AS = PAGE_URL
+USE_FOLDER_AS_CATEGORY = True
+CATEGORY_URL = '{slug}/'
+CATEGORY_SAVE_AS = '{slug}/index.html'
 
 STATIC_PATHS = ['images',
                 'notebooks',
@@ -38,8 +41,7 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
                        }
 
 
-# Blog articles display
-ARTICLES_FRONT_PAGE = 3
+ARTICLES_FRONT_PAGE = None
 SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -53,13 +55,11 @@ THEME = 'theme'
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('About', '/about.html'),
-    ('Blog', '/archives.html'),
+    ('About', '/index.html'),
     #('Research', '/research.html'),
-    ('Publications', '/publications.html'),
-    ('Talks', '/talks.html'),
+    ('Papers', '/papers'),
+    ('Talks', '/talks'),
     ('Teaching', '/teaching.html'),
-    ('Software', '/software.html'),
     ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
      'https://twitter.com/leouieda'),
     ('<i class="fa fa-github-square fa-lg" title="Github"></i>',
@@ -72,7 +72,7 @@ MENUITEMS = [
      'https://www.researchgate.net/profile/Leonardo_Uieda'),
     ('<i class="ai ai-orcid fa-lg" title="ORCID"></i>',
      'http://orcid.org/0000-0001-6123-9515'),
-    ('<i class="fa fa-rss fa-lg" title="RSS feed"></i>', '/rss.xml'),
+    ('<i class="fa fa-rss fa-lg" title="RSS feed for papers and talks"></i>', '/rss.xml'),
 ]
 
 PLUGIN_PATHS = ['pelican-plugins']

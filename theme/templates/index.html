@@ -2,32 +2,4 @@
 
 {% block content %}
 
-    {% for page in pages if page.title == "index" %}
-    {{ page.content }}
-    {% endfor %}
-
-    <h1>Recent blog posts:</h1>
-
-    <ul class="recent-posts">
-    {% for article in articles[0:ARTICLES_FRONT_PAGE] %}
-        <li>
-        <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-            title="Permalink to {{ article.title|striptags }}">{{ article.title
-            }}</a></h2>
-        <abbr title="{{ article.date.isoformat() }}">
-            Posted on {{ article.date|strftime('%d/%m/%Y') }}
-            {% if article.author %}
-                by <a href="{{ SITEURL }}/{{ article.author.url }}">
-                {{ article.author }}</a>
-            {% endif %}
-        </abbr>
-        <div>
-            {{ article.summary|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
-        </div>
-        </li>
-    {% endfor %}</ul>
-
-<a href="{{ SITEURL }}/archives.html" alt="More posts in the archives.">More
-posts</a>
-
 {% endblock content %}
