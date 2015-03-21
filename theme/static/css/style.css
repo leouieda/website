@@ -28,19 +28,15 @@ body {
     margin-bottom: 5px;
 }
 
+footer {
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #CCC;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #6F6F6F;
+ }
 
-/*[> EDUCATION LISTS (UNIVERSITY, ADVISOR, THESIS) <]*/
-/*[> **************************************************************** <]*/
-/*.edu-list {*/
-    /*list-style-type: none;*/
-    /*padding: 0px;*/
-    /*margin: 0px;*/
-    /*margin-top: -10px;*/
-    /*padding-left: 10px;*/
-/*}*/
-/*.edu-list li {*/
-    /*padding-bottom: 2px;*/
-/*}*/
 
 /*[> POST LIST (BLOG ARCHIVE) <]*/
 /*[> **************************************************************** <]*/

@@ -5,8 +5,8 @@ save_as: index.html
 
 <img src="images/torres-del-paine.jpg" style="width: 100%"></img>
 
-<div class="container">
 <div class="row">
+
 <div class="col-md-4">
 
 <h2>About</h2>
@@ -34,7 +34,6 @@ and other things we are working on.
 <h2>Contact</h2>
 
 <div class="list-group">
-
 <a class="list-group-item" href="mailto:leouieda@gmail.com">
 <i class="fa fa-envelope fa-fw fa-lg"></i> leouieda@gmail.com</a>
 
@@ -49,9 +48,7 @@ and other things we are working on.
 <i class="fa fa-map-marker fa-fw fa-lg"></i>
 UERJ, Rua São Francisco Xavier, 524 Sala 2029A/2031A.
 20550-900, Rio de Janeiro - RJ - Brazil</a>
-
 </div>
-
 
 </div>
 <div class="col-md-4">
@@ -60,31 +57,51 @@ UERJ, Rua São Francisco Xavier, 524 Sala 2029A/2031A.
 
 You'll find me and some of my research outputs in various sites:
 
-<ul class="icon-link-list">
+<div class="list-group">
+<a class="list-group-item"
+   href="https://github.com/leouieda">
+<i class="fa fa-github-square fa-fw fa-lg" title="Github"></i>
+Github</a>
 
-<li><a href="https://github.com/leouieda"><i
-  class="fa fa-github-square fa-3x" title="Github"></i></a></li>
-<li><a href="http://figshare.com/authors/Leonardo%20Uieda/97471"><i
-  class="ai ai-figshare-square fa-3x" title="figshare"></i></a></li>
-<li><a href="http://impactstory.org/leouieda"><i
-  class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i></a></li>
-<li><a href="http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ"><i
-  class="ai ai-google-scholar-square fa-3x" title="Google Scholar"></i></a></li>
-<li><a href="http://orcid.org/0000-0001-6123-9515"><i
-  class="ai ai-orcid-square fa-3x" title="ORCID"></i></a></li>
-<li><a href="https://www.researchgate.net/profile/Leonardo_Uieda"><i
-  class="ai ai-researchgate-square fa-3x" title="ResearchGate"></i></a></li>
-<li><a href="http://www.linkedin.com/in/uieda"><i
-  class="fa fa-linkedin-square fa-3x" title="LinkedIn"></i></a></li>
+<a class="list-group-item"
+   href="http://figshare.com/authors/Leonardo%20Uieda/97471">
+<i class="ai ai-figshare fa-fw fa-lg" title="figshare"></i>
+figshare</a>
 
-</ul>
+<a class="list-group-item"
+   href="http://impactstory.org/leouieda">
+<i class="ai ai-impactstory fa-fw fa-lg" title="ImpactStory"></i>
+Impact Story</a>
 
-(there is also my
-<a href="http://lattes.cnpq.br/8939551682050504">Currículo Lattes</a>
-for the Brazilians out there)
+<a class="list-group-item"
+   href="http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ">
+<i class="ai ai-google-scholar fa-fw fa-lg" title="Google Scholar"></i>
+Google Scholar</a>
+
+<a class="list-group-item"
+   href="http://orcid.org/0000-0001-6123-9515">
+<i class="ai ai-orcid fa-fw fa-lg" title="ORCID"></i>
+ORCID</a>
+
+<a class="list-group-item"
+   href="https://www.researchgate.net/profile/Leonardo_Uieda">
+<i class="ai ai-researchgate fa-fw fa-lg" title="ResearchGate"></i>
+ResearchGate</a>
+
+<a class="list-group-item"
+   href="http://www.linkedin.com/in/uieda">
+<i class="fa fa-linkedin fa-fw fa-lg" title="LinkedIn"></i>
+LinkedIn</a>
+
+<a class="list-group-item"
+   href="http://lattes.cnpq.br/8939551682050504">
+<i class="fa fa-file-text fa-fw fa-lg" title="LinkedIn"></i>
+Currículo Lattes</a>
+</div>
 
 </div>
 </div><!-- row -->
+
 <div class="row">
 <div class="col-md-4">
 
@@ -128,7 +145,7 @@ for the Brazilians out there)
     Thesis: Robust 3D gravity gradient inversion by planting anomalous
     densities (published as an article)
 </li>
-<li><i class="fa-li fa fa-link fa-fw"></i>
+<li><i class="fa-li fa fa-external-link fa-fw"></i>
     doi:
     <a href="http://library.seg.org/doi/abs/10.1190/geo2011-0388.1">10.1190/geo2011-0388.1</a>
 </li>
@@ -162,7 +179,7 @@ International <b>Exchange</b> Program (2008-2009):
 <li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis: Cálculo do tensor gradiente gravimétrico utilizando tesseroides
 </li>
-<li><i class="fa-li fa fa-link fa-fw"></i>
+<li><i class="fa-li fa fa-external-link fa-fw"></i>
     doi:
     <a href="http://dx.doi.org/10.6084/m9.figshare.963547">10.6084/m9.figshare.963547</a>
 </li>
@@ -173,4 +190,3 @@ International <b>Exchange</b> Program (2008-2009):
 
 </div>
 </div><!-- row -->
-</div>

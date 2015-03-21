@@ -64,13 +64,19 @@
 
 <footer>
     <div class="container">
-    {{ COPYRIGHT_NOTICE }}
-    <br/>
-    {{ EXTRA_FOOTER }}
-    <br/>
-    Powered by <a href="http://getpelican.com/">Pelican</a>,
-    <a href="http://python.org">Python</a>,
-    and <a href="http://getbootstrap.com/">Bootstrap</a>.
+    <div class="row">
+        <div class="col-md-4">
+            {{ COPYRIGHT_NOTICE }}
+            <br/>
+            Powered by <a href="http://getpelican.com/">Pelican</a>,
+            <a href="http://python.org">Python</a>,
+            and <a href="http://getbootstrap.com/">Bootstrap</a>.
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            {{ EXTRA_FOOTER }}
+        </div>
     </div>
 </footer>
 

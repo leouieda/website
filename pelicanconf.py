@@ -21,6 +21,7 @@ EXTRA_FOOTER = """
 Built by <a href="https://travis-ci.org/">Travis CI</a>
 and
 hosted on <a href="https://pages.github.com/">Github Pages</a>.
+</br>
 Icons by <a href="http://fontawesome.io/">Font Awesome</a>
 and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
 </br>
