@@ -113,9 +113,12 @@ Currículo Lattes</a>
 <div class="row">
 <div class="col-md-4">
 
-<b>PhD</b> in Geophysics (2011-ongoing):
+<h3><b>PhD</b> in Geophysics</h3>
 
 <ul class="fa-ul">
+<li><i class="fa-li fa fa-calendar fa-fw"></i>
+    2011-ongoing
+</li>
 <li><i class="fa-li fa fa-university fa-fw"></i>
     <a href="http://www.on.br">Observatório Nacional, Brazil</a>
 </li>
@@ -131,9 +134,12 @@ Currículo Lattes</a>
 </div>
 <div class="col-md-4">
 
-<b>MSc</b> in Geophysics (2010-2011):
+<h3><b>MSc</b> in Geophysics</h3>
 
 <ul class="fa-ul">
+<li><i class="fa-li fa fa-calendar fa-fw"></i>
+    2010-2011
+</li>
 <li><i class="fa-li fa fa-university fa-fw"></i>
     <a href="http://www.on.br">Observatório Nacional, Brazil</a>
 </li>
@@ -160,15 +166,22 @@ Currículo Lattes</a>
 </div>
 <div class="col-md-4">
 
-International <b>Exchange</b> Program (2008-2009):
+<h3>International <b>Exchange</b> Program</h3>
 <ul class="fa-ul">
+<li><i class="fa-li fa fa-calendar fa-fw"></i>
+    2008-2009
+</li>
 <li><i class="fa-li fa fa-university fa-fw"></i>
     <a href="http://www.yorku.ca/esse/">York University, Toronto, Canada</a>
 </li>
 </ul>
 
-<b>BSc</b> in Geophysics (2009):
+<h3><b>BSc</b> in Geophysics</h3>
+
 <ul class="fa-ul">
+<li><i class="fa-li fa fa-calendar fa-fw"></i>
+    2004-2009
+</li>
 <li><i class="fa-li fa fa-university fa-fw"></i>
     <a href="http://www.iag.usp.br">Universidade de São Paulo, Brazil</a>
 </li>

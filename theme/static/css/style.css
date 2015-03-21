@@ -4,6 +4,10 @@ body {
 h1 {
     margin-bottom: 21px;
 }
+h3 {
+    font-size: 16pt;
+    margin-bottom: 15px;
+}
 
 /* The icon list in the about page */
 .icon-link-list li {
