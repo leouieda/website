@@ -148,8 +148,9 @@ Currículo Lattes</a>
     <a href="http://lattes.cnpq.br/0391036221142471">Valéria C. F. Barbosa</a>
 </li>
 <li><i class="fa-li fa fa-book fa-fw"></i>
-    Thesis: Robust 3D gravity gradient inversion by planting anomalous
-    densities (published as an article)
+    Thesis:
+    Robust 3D gravity gradient inversion by planting anomalous densities
+    (<a href="papers/paper-planting-anomalous-densities-2012.html">published as an article</a>)
 </li>
 <li><i class="fa-li fa fa-external-link fa-fw"></i>
     doi:
