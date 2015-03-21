@@ -8,7 +8,6 @@ These are some of the courses I've taught.
 If you'd like to help me translate any of this to English
 (or another language),
 [send me an e-mail or tweet](http://www.leouieda.com).
-
 Most courses have Github repositories
 and/or websites with the course material:
 slides, text, assignments, code, IPython notebooks, etc.
