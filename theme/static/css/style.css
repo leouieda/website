@@ -1,282 +1,230 @@
 body {
-    width: 70%;
-    margin: auto;
-    margin-top: 20px;
-    color: #424242;
-    background: #fafafa;
     font-size: 12pt;
-    font-family: Verdana, sans-serif;
-}
-h1, h2, h3, h4 {
-    font-family: Helvetica, sans-serif;
-}
-p, li {
-    line-height: 25px;
-}
-blockquote {
-    font-style: italic;
-}
-code {
-    background: #ececec;
-}
-a {
-    color: #0571b0;
-    text-decoration: none;
-}
-h1 {
-    font-size: 20pt;
-}
-h2 {
-    font-size: 18pt;
-}
-h3 {
-    font-size: 14pt;
-}
-h1 > a, h2 > a, h3 > a {
-    color: #424242;
-}
-abbr {
-    font-size: 10pt;
-    border: none;
-}
-.content {
-    margin-top: 20px;
-}
-hr {
-    color: #d0d0d0;
 }
 
-/* Color for icons */
-i.fa, i.ai {
-    color: #424242;
+/* The icon list in the about page */
+.icon-link-list li {
+    display: inline;
 }
-a i.fa:hover, a i.ai:hover {
-    color: #0571b0;
+
+.navbar-inverse {
+    border: none;
 }
 
 /* THE CONTACT LIST ON THE FRONT PAGE */
 /* **************************************************************** */
-.contact-list {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 20px;
-    padding-left: 20px;
-}
 .contact-list li {
-    padding-bottom: 5px;
-    padding-right: 30px;
+    padding-bottom: 8px;
+}
+
+/*[> EDUCATION LISTS (UNIVERSITY, ADVISOR, THESIS) <]*/
+/*[> **************************************************************** <]*/
+/*.edu-list {*/
+    /*list-style-type: none;*/
+    /*padding: 0px;*/
+    /*margin: 0px;*/
+    /*margin-top: -10px;*/
+    /*padding-left: 10px;*/
+/*}*/
+/*.edu-list li {*/
+    /*padding-bottom: 2px;*/
+/*}*/
+
+/*[> POST LIST (BLOG ARCHIVE) <]*/
+/*[> **************************************************************** <]*/
+/*.post-list {*/
+    /*list-style-type: none;*/
+    /*padding: 0;*/
+/*}*/
+/*.post-list li {*/
+    /*padding-bottom: 15px;*/
+    /*border: none;*/
+/*}*/
+/*.post-list li span {*/
+    /*color: #a6a6a6;*/
+    /*padding-right: 10px;*/
+    /*float: right;*/
+/*}*/
+/*.post-list li a {*/
+    /*color: #0571b0;*/
+/*}*/
+/*.post-list li a:hover {*/
+    /*color: #0571b0;*/
+/*}*/
+
+/*[> PAPER PAGES <]*/
+/*[> **************************************************************** <]*/
+/*ul.paper-meta {*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+/*}*/
+/*.paper-meta li {*/
+    /*list-style-type: none;*/
+    /*padding-right: 20px;*/
+    /*line-height: 30px;*/
+/*}*/
+/*ul.paper-list {*/
+    /*padding: 0px;*/
+/*}*/
+/*.paper-list li {*/
+    /*list-style-type: none;*/
+    /*padding: 0;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*[> THE PUBLICATION LIST <]*/
+/*[> **************************************************************** <]*/
+/*.pub-legend ul {*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+    /*list-style-type: none;*/
+/*}*/
+/*.pub-legend li {*/
     /*display: inline-block;*/
-}
+    /*padding-right: 20px;*/
+    /*line-height: 30px;*/
+/*}*/
 
-/* EDUCATION LISTS (UNIVERSITY, ADVISOR, THESIS) */
-/* **************************************************************** */
-.edu-list {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    margin-top: -10px;
-    padding-left: 10px;
-}
-.edu-list li {
-    padding-bottom: 2px;
-}
+/*[> HEADER <]*/
+/*[> **************************************************************** <]*/
+/*[> SITE NAME <]*/
+/*.name {*/
+    /*font-family: Helvetica, sans-serif;*/
+    /*font-size: 24pt;*/
+    /*margin-bottom: 0;*/
+/*}*/
+/*.name a {*/
+    /*text-transform: uppercase;*/
+    /*font-weight: normal;*/
+    /*color: #4d4d4d;*/
+/*}*/
+/*.name a:hover {*/
+    /*color: #0571b0;*/
+/*}*/
+/*.menu {*/
+    /*margin-top: 5px;*/
+    /*background: #0571b0;*/
+/*}*/
+/*.menu ul {*/
+    /*width: 96%;*/
+    /*padding-left: 2%;*/
+    /*padding-top: 10px;*/
+    /*padding-bottom: 10px;*/
+    /*list-style-type: none;*/
+/*}*/
+/*.menu li {*/
+    /*font-size: 10pt;*/
+    /*display: inline;*/
+    /*text-transform: uppercase;*/
+    /*padding: 10px;*/
+    /*line-height: 20px;*/
+/*}*/
+/*.menu a {*/
+    /*color: #ffffff;*/
+/*}*/
+/*.menu a:hover {*/
+    /*color: #333;*/
+/*}*/
+/*.menu i.fa, .menu i.ai {*/
+    /*font-size: 16pt;*/
+    /*color: #ffffff;*/
+/*}*/
+/*.menu i.fa:hover, .menu i.ai:hover {*/
+    /*color: #333;*/
+/*}*/
+/*[> **************************************************************** <]*/
 
-/* POST LIST (BLOG ARCHIVE) */
-/* **************************************************************** */
-.post-list {
-    list-style-type: none;
-    padding: 0;
-}
-.post-list li {
-    padding-bottom: 15px;
-    border: none;
-}
-.post-list li span {
-    color: #a6a6a6;
-    padding-right: 10px;
-    float: right;
-}
-.post-list li a {
-    color: #0571b0;
-}
-.post-list li a:hover {
-    color: #0571b0;
-}
+/*[> FOOTER <]*/
+/*[> **************************************************************** <]*/
+/*footer {*/
+    /*text-align: center;*/
+    /*margin: 60px 0 0 0;*/
+    /*font-size: 10pt;*/
+    /*line-height: 150%;*/
+    /*color: #b0b0b0;*/
+    /*padding: 30px 0 30px 0;*/
+/*}*/
+/*footer a {*/
+    /*color: #b0b0b0;*/
+    /*text-decoration: underline;*/
+/*}*/
+/*footer a:hover {*/
+    /*color: #424242;*/
+/*}*/
+/*[> **************************************************************** <]*/
 
-/* PAPER PAGES */
-/* **************************************************************** */
-ul.paper-meta {
-    margin: 0px;
-    padding: 0px;
-}
-.paper-meta li {
-    list-style-type: none;
-    padding-right: 20px;
-    line-height: 30px;
-}
-ul.paper-list {
-    padding: 0px;
-}
-.paper-list li {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
+/*[> MEDIA QUERIES <]*/
+/*[> **************************************************************** <]*/
+/*@media screen and (max-width: 1100px) {*/
+    /*body {*/
+        /*width: 95%;*/
+    /*}*/
+    /*.menu {*/
+        /*margin-left: -2.5%;*/
+        /*width: 105%;*/
+    /*}*/
+    /*.menu li {*/
+        /*line-height: 30px;*/
+    /*}*/
+/*}*/
+/*[> **************************************************************** <]*/
 
-/* THE PUBLICATION LIST */
-/* **************************************************************** */
-.pub-legend ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-}
-.pub-legend li {
-    display: inline-block;
-    padding-right: 20px;
-    line-height: 30px;
-}
+/*[> FIGURES AND IMAGES <]*/
+/*[> **************************************************************** <]*/
+/*img {*/
+    /*max-width: 100%;*/
+    /*height: auto;*/
+    /*margin: 1em 1em 1em 0;*/
+/*}*/
+/*img.align-right {*/
+    /*float: right;*/
+    /*margin: 1em 0 1em 1em;*/
+/*}*/
+/*img.align-left {*/
+    /*float: left;*/
+    /*margin: 1em 1em 1em 0;*/
+/*}*/
 
-/* HEADER */
-/* **************************************************************** */
-/* SITE NAME */
-.name {
-    font-family: Helvetica, sans-serif;
-    font-size: 24pt;
-    margin-bottom: 0;
-}
-.name a {
-    text-transform: uppercase;
-    font-weight: normal;
-    color: #4d4d4d;
-}
-.name a:hover {
-    color: #0571b0;
-}
-.menu {
-    margin-top: 5px;
-    background: #0571b0;
-}
-.menu ul {
-    width: 96%;
-    padding-left: 2%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    list-style-type: none;
-}
-.menu li {
-    font-size: 10pt;
-    display: inline;
-    text-transform: uppercase;
-    padding: 10px;
-    line-height: 20px;
-}
-.menu a {
-    color: #ffffff;
-}
-.menu a:hover {
-    color: #333;
-}
-.menu i.fa, .menu i.ai {
-    font-size: 16pt;
-    color: #ffffff;
-}
-.menu i.fa:hover, .menu i.ai:hover {
-    color: #333;
-}
-/* **************************************************************** */
-
-/* FOOTER */
-/* **************************************************************** */
-footer {
-    text-align: center;
-    margin: 60px 0 0 0;
-    font-size: 10pt;
-    line-height: 150%;
-    color: #b0b0b0;
-    padding: 30px 0 30px 0;
-}
-footer a {
-    color: #b0b0b0;
-    text-decoration: underline;
-}
-footer a:hover {
-    color: #424242;
-}
-/* **************************************************************** */
-
-/* MEDIA QUERIES */
-/* **************************************************************** */
-@media screen and (max-width: 1100px) {
-    body {
-        width: 95%;
-    }
-    .menu {
-        margin-left: -2.5%;
-        width: 105%;
-    }
-    .menu li {
-        line-height: 30px;
-    }
-}
-/* **************************************************************** */
-
-/* FIGURES AND IMAGES */
-/* **************************************************************** */
-img {
-    max-width: 100%;
-    height: auto;
-    margin: 1em 1em 1em 0;
-}
-img.align-right {
-    float: right;
-    margin: 1em 0 1em 1em;
-}
-img.align-left {
-    float: left;
-    margin: 1em 1em 1em 0;
-}
-
-.figure {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #bbb;
-    border-radius: 3px;
-    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
-    padding: 0px;
-    float: left;
-    margin: 0 1em 1em 0;
-}
-.figure.align-right {
-    float: right;
-    margin: 0 0 1em 1em;
-}
-.figure.align-left {
-    float: left;
-}
-.figure img {
-    max-width: 95%;
-    height: auto;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    margin: 10px;
-    box-shadow: none;
-    float: left;
-}
-.figure p.caption {
-    margin: 0;
-    font-size: 90%;
-    padding: 10px;
-    float: left;
-    text-align: left;
-    font-style: italic;
-}
-.figure div.legend {
-    padding: 10px;
-    font-size: 90%;
-    color: #aaa;
-    font-style: italic;
-    float: left;
-}
-/* **************************************************************** */
+/*.figure {*/
+    /*max-width: 100%;*/
+    /*height: auto;*/
+    /*border: 1px solid #bbb;*/
+    /*border-radius: 3px;*/
+    /*box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);*/
+    /*padding: 0px;*/
+    /*float: left;*/
+    /*margin: 0 1em 1em 0;*/
+/*}*/
+/*.figure.align-right {*/
+    /*float: right;*/
+    /*margin: 0 0 1em 1em;*/
+/*}*/
+/*.figure.align-left {*/
+    /*float: left;*/
+/*}*/
+/*.figure img {*/
+    /*max-width: 95%;*/
+    /*height: auto;*/
+    /*border: none;*/
+    /*border-radius: 0;*/
+    /*padding: 0;*/
+    /*margin: 10px;*/
+    /*box-shadow: none;*/
+    /*float: left;*/
+/*}*/
+/*.figure p.caption {*/
+    /*margin: 0;*/
+    /*font-size: 90%;*/
+    /*padding: 10px;*/
+    /*float: left;*/
+    /*text-align: left;*/
+    /*font-style: italic;*/
+/*}*/
+/*.figure div.legend {*/
+    /*padding: 10px;*/
+    /*font-size: 90%;*/
+    /*color: #aaa;*/
+    /*font-style: italic;*/
+    /*float: left;*/
+/*}*/
+/*[> **************************************************************** <]*/

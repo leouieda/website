@@ -3,7 +3,7 @@
 <head>
 {% block head %}
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block meta %}
         <meta name="author" content="{{ AUTHOR }}"/>
         {% if SITEKEYWORDS %}
@@ -11,11 +11,12 @@
         {% endif %}
     {% endblock %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-    <link href="/theme/css/style.css" type="text/css" rel="stylesheet">
     <link rel="shortcut icon" href="{{ SITEURL }}/favicon.png">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
     <!--Include the Font Awesome and Academicons CSS-->
-    <link rel="stylesheet" href="/theme/academicons/academicons.css">
-    <link rel="stylesheet" href="/theme/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/academicons/academicons.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/font-awesome/css/font-awesome.min.css">
     <!-- Feeds -->
     {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -29,32 +30,56 @@
 </head>
 
 <body>
-    <header>
-        <span class="name">
-            <a href="{{ SITEURL }}">{{ SITETITLE }}</a>
-        </span>
-        <nav class="menu">
-            <ul>
+
+<nav class="navbar navbar-inverse">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+         data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+         aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ SITEURL }}">{{ SITETITLE }}</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
             {% for title, link in MENUITEMS %}
                 <li><a href="{{ link }}">{{ title }}</a></li>
             {% endfor %}
-            </ul>
-        </nav>
-    </header>
+        </ul>
+    </div><!--/.nav-collapse -->
+</div>
+</nav>
 
-    <div class="content">
 
-    {% block content %}
-    {% endblock %}
+<div class="container">
 
+{% block content %}
+{% endblock %}
+
+</div>
+
+<footer>
+    <div class="container">
+    {{ COPYRIGHT_NOTICE }}
+    <br/>
+    {{ EXTRA_FOOTER }}
+    <br/>
+    Powered by <a href="http://getpelican.com/">Pelican</a>,
+    <a href="http://python.org">Python</a>,
+    and <a href="http://getbootstrap.com/">Bootstrap</a>.
     </div>
+</footer>
 
-    <footer>
-        {{ COPYRIGHT_NOTICE }}
-        <br/>
-        Powered by <a href="http://getpelican.com/">Pelican</a>
-        and <a href="http://python.org">Python</a>.
-        {{ EXTRA_FOOTER }}
-    </footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="{{SITEURL}}/theme/js/bootstrap.min.js"></script>
+
 </body>
 </html>
