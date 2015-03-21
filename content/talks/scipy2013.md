@@ -6,6 +6,13 @@ repository: leouieda/scipy2013
 type: oral
 event: 12th Python in Science Conference
 slug: scipy2013
+citation: Uieda, L., V. C. Oliveira Jr and V. C. F. Barbosa (2013), Modeling the Earth with Fatiando a Terra, Proceedings of the 12th Python in Science Conference, pp. 90-96
+
+## Presentation
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Ec38h1oB8cc" frameborder="0"
+allowfullscreen></iframe>
 
 **Slides are available in HTML**:
 [leouieda.com/scipy2013](http://www.leouieda.com/scipy2013/?theme=night#/)
@@ -43,15 +50,3 @@ picking, projections, etc) and Mayavi (automatic conversion of geometry classes
 to VTK, drawing continents, etc). In the future, we plan to continuously
 implement classic and state-of-the-art algorithms as well as sample problems to
 help teach geophysics.
-
-## Presentation
-
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/Ec38h1oB8cc" frameborder="0"
-allowfullscreen></iframe>
-
-## Citation
-
-Uieda, L., V. C. Oliveira Jr and V. C. F. Barbosa (2013), Modeling the Earth
-with Fatiando a Terra, Proceedings of the 12th Python in Science Conference,
-pp. 90-96

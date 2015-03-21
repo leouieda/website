@@ -32,92 +32,110 @@
     by {{ article.author }} ({{ article.date|strftime('%Y') }})
     </p>
 
+    <div class="row">
+
+    <div class="col-md-4">
     <h2>Resources</h2>
-    <ul class="paper-meta">
+    <ul class="list-group">
         {% if article.tags is defined and "OA" in article.tags %}
-        <li>
-        <i class="fa fa-unlock-alt" title="Open-Access"></i>
+        <li class="list-group-item">
+        <i class="fa fa-unlock-alt fa-fw"></i>
         Open-Access
         </li>
         {% endif %}
 
         {% if article.pdf is defined %}
-        <li>
-        <i class="fa fa-file-pdf-o"></i>
+        <li class="list-group-item">
+        <i class="fa fa-file-pdf-o fa-fw"></i>
         PDF: <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
         </li>
         {% endif %}
 
         {% if article.type is defined %}
-        <li>
-        <i class="fa fa-info-circle fa-lg"></i>
-        Presentation:
-        {{article.type|capitalize}}
-        {% if article.tags is defined and "notme" in article.tags %}
-            <b>(not presented by me)</b>
-        {% endif %}
-        </li>
+            <li class="list-group-item">
+            {% if article.type == "oral" %}
+                <i class="fa fa-comments-o fa-fw"></i>
+            {% endif %}
+            {% if article.type == "poster" %}
+                <i class="fa fa-picture-o fa-fw"></i>
+            {% endif %}
+            Presentation:
+            {{article.type|capitalize}}
+            {% if article.tags is defined and "notme" in article.tags %}
+                <b>(not presented by me)</b>
+            {% endif %}
+            </li>
         {% endif %}
 
         {% if article.slides is defined %}
-        <li>
-        <i class="fa fa-desktop"></i>
-        Slides: <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
+        <li class="list-group-item">
+        <i class="fa fa-desktop fa-fw"></i>
+        Slides:
+        <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
         </li>
         {% endif %}
 
         {% if article.poster is defined %}
-        <li>
-        <i class="fa fa-file-text"></i>
+        <li class="list-group-item">
+        <i class="fa fa-file-text fa-fw"></i>
         Poster: <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
         </li>
         {% endif %}
 
         {% if article.repository is defined %}
-        <li>
-        <i class="fa fa-github-square"></i>
-        Repository:
+        <li class="list-group-item">
+        <i class="fa fa-github-square fa-fw"></i>
         <a href="https://github.com/{{article.repository}}">{{article.repository}}</a>
         </li>
         {% endif %}
 
         {% if article.event is defined %}
-        <li>
-        <i class="fa fa-users"></i>
+        <li class="list-group-item">
+        <i class="fa fa-users fa-fw"></i>
         Event: {{article.event}}
         </li>
         {% endif %}
 
         {% if article.journal is defined %}
-        <li>
-        <i class="fa fa-book"></i>
+        <li class="list-group-item">
+        <i class="fa fa-book fa-fw"></i>
         Journal: {{article.journal}}
         </li>
         {% endif %}
 
         {% if article.doi is defined %}
-        <li>
-        <i class="fa fa-external-link"></i>
+        <li class="list-group-item">
+        <i class="fa fa-external-link fa-fw"></i>
         DOI: <a href="http://dx.doi.org/{{article.doi}}">{{article.doi}}</a>
         </li>
         {% endif %}
 
         {% if article.supplement is defined %}
-        <li>
-        <i class="fa fa-paperclip"></i>
+        <li class="list-group-item">
+        <i class="fa fa-paperclip fa-fw"></i>
         Supplement:
         <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
         </li>
         {% endif %}
     </ul>
 
-    {% if article.thumbnail is defined %}
-    <img class="paper-thumbnail" src="{{SITEURL/article.thumbnail}}"></img>
-    </br>
+    {% if article.citation is defined %}
+    <h2>Citation</h2>
+    <p>{{article.citation}}</p>
     {% endif %}
 
+    </div>
+
+    <div class="col-md-8">
+
+    {% if article.thumbnail is defined %}
+    <img class="paper-thumbnail" src="{{SITEURL}}/{{article.thumbnail}}"></img>
+    {% endif %}
 
     {{ article.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
+
+    </div>
+    </div><!-- row -->
 
     <!-- DISQUS -->
     {% if DISQUS_SITENAME %}

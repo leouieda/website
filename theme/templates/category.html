@@ -17,7 +17,12 @@
         <i class="fa fa-unlock-alt" title="Open-Access"></i>
     {% endif %}
     {% if article.type is defined %}
-        <i>({{article.type|lower}})</i>
+        {% if article.type == "oral" %}
+            <i class="fa fa-comments-o"></i>
+        {% endif %}
+        {% if article.type == "poster" %}
+            <i class="fa fa-picture-o"></i>
+        {% endif %}
     {% endif %}
     {% if "notme" in article.tags %}
         <i>(not presented by me)</i>

@@ -6,6 +6,14 @@ doi: 10.5194/npgd-1-1465-2014
 repository: birocoles/Total-magnetization-of-spherical-bodies
 tags: OA, review
 author: Oliveira Jr, V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda
+citation: Oliveira Jr, V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda (2014), Estimation of the total magnetization direction of approximately spherical bodies, Nonlinear Processes in Geophysics
+
+## Review
+
+This paper is currently under open peer-review. Follow the discussion
+from
+[the publishers
+site](http://www.nonlin-processes-geophys-discuss.net/1/1465/2014/npgd-1-1465-2014-discussion.html).
 
 ## Abstract
 
@@ -34,19 +42,6 @@ Diorama have almost the same magnetization direction of that ones in the
 alkaline complex of Montes Claros de Goiás, strongly suggesting that these
 sources have emplaced the crust almost within the same geological time
 interval.
-
-## Review
-
-This paper is currently under open peer-review. Follow the discussion
-from
-[the publishers
-site](http://www.nonlin-processes-geophys-discuss.net/1/1465/2014/npgd-1-1465-2014-discussion.html).
-
-## Citation
-
-Oliveira Jr, V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda (2014),
-Estimation of the total magnetization direction of approximately spherical
-bodies, Nonlinear Processes in Geophysics
 
 ## Bibtex
 

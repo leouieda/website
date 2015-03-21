@@ -5,6 +5,7 @@ slug: paper-polynomial-eqlayer-2013
 pdf: paper-polynomial-eqlayer-2013.pdf
 doi: 10.1190/geo2012-0196.1
 journal: Geophysics
+citation: Oliveira Jr, V. C., V. C. F. Barbosa, and L. Uieda (2013), Polynomial equivalent layer, Geophysics, 78(1), G1–G13, doi:10.1190/geo2012-0196.1
 
 ## Abstract
 
@@ -37,12 +38,6 @@ linear inverse problem can be reduced by as many as three and four orders of
 magnitude, respectively. Applications to synthetic and real data show that our
 method performs the standard linear transformations of potential-field data
 accurately.
-
-
-## Citation
-
-Oliveira Jr, V. C., V. C. F. Barbosa, and L. Uieda (2013), Polynomial
-equivalent layer, Geophysics, 78(1), G1–G13, doi:10.1190/geo2012-0196.1
 
 ## Bibtex
 

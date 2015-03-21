@@ -5,7 +5,7 @@ slug: paper-quadrilatero-2014
 pdf: paper-quadrilatero-2014.pdf
 journal: Ore Geology Reviews
 doi: 10.1016/j.oregeorev.2014.02.011
-
+citation: Carlos, D. U., L. Uieda, and V. C. F. Barbosa (2014), Imaging iron ore from the Quadrilátero Ferrífero (Brazil) using geophysical inversion and drill hole data, Ore Geology Reviews, 61, 268-285, doi:10.1016/j.oregeorev.2014.02.011
 
 ## Abstract
 
@@ -39,14 +39,7 @@ estimated iron-ore mass agrees reasonably well with the information provided
 from the lithologic logging data of drill holes. In this geophysical study, the
 estimated iron-ore reserves are approximately 3 billion tons.
 
-## Citation
-
-Carlos, D. U., L. Uieda, and V. C. F. Barbosa (2014), Imaging iron ore from the
-Quadrilátero Ferrífero (Brazil) using geophysical inversion and drill hole
-data, Ore Geology Reviews, 61, 268-285, doi:10.1016/j.oregeorev.2014.02.011
-
 ## Bibtex
-
 
     @article{carlos2014,
         title = {Imaging iron ore from the {Quadrilátero} {Ferrífero} ({Brazil})

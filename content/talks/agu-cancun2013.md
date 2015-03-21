@@ -7,6 +7,12 @@ slides: 10.6084/m9.figshare.703651
 event: AGU Meeting of the Americas
 slug: agu-cancun2011
 
+## Presentation
+
+<script async class="speakerdeck-embed"
+data-id="47e71fe41d9d4f1fa7859454577a6d3f" data-ratio="1.33159947984395"
+src="//speakerdeck.com/assets/embed.js"></script>
+
 ## Abstract
 
 **AGU abstract ID**: GP22A-01
@@ -37,9 +43,3 @@ a poor fit to the observations and is not in accordance with the geologic
 information. This leads to the conclusion that A2 does not have the same
 magnetization as ME. These results indicate the usefulness and capabilities of
 the inversion method here proposed.
-
-## Presentation
-
-<script async class="speakerdeck-embed"
-data-id="47e71fe41d9d4f1fa7859454577a6d3f" data-ratio="1.33159947984395"
-src="//speakerdeck.com/assets/embed.js"></script>
