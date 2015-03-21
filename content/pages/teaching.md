@@ -2,6 +2,8 @@ title: Teaching
 date: 06/10/2014
 slug: teaching
 
+# Teaching
+
 These are some of the courses I've taught.
 If you'd like to help me translate any of this to English
 (or another language),

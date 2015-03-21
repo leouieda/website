@@ -1,6 +1,9 @@
 body {
     font-size: 12pt;
 }
+h1 {
+    margin-bottom: 21px;
+}
 
 /* The icon list in the about page */
 .icon-link-list li {
