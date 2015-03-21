@@ -6,6 +6,7 @@ type: poster
 poster: 10.6084/m9.figshare.1089987
 event: Python in Science Conference
 slug: scipy2014
+thumbnail: images/poster-scipy2014.png
 
 ![Scipy hashtag]({filename}/images/scipy2014hashtag.gif)
 
@@ -84,7 +85,3 @@ I'll conclude by outlining
 how we are using this framework in our own research,
 what we are currently working on,
 and our plans for the future.
-
-## Poster
-
-![Scipy 2014 poster]({filename}/images/poster-scipy2014.png)

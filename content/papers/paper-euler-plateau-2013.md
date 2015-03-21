@@ -6,6 +6,7 @@ doi: 10.1190/geo2012-0515.1
 supplement: 10.6084/m9.figshare.649433
 pdf: paper-euler-plateau-2013.pdf
 slug: paper-euler-plateau-2013
+citation: Melo, F. F., V. C. F. Barbosa, L. Uieda, V. C. Oliveira Jr, and J. B. C. Silva (2013), Estimating the nature and the horizontal and vertical positions of 3D magnetic sources using Euler deconvolution, Geophysics, 78(6), J87-J98, doi:10.1190/geo2012-0515.1
 
 ## Abstract
 
@@ -35,13 +36,6 @@ When applied to synthetic data, our method yielded good results if the bodies
 produce weak- and mid-interfering anomalies. A test on real data over
 intrusions in the Goiás Alkaline Province, Brazil, retrieved sphere-like
 sources suggesting 3D bodies.
-
-## Citation
-
-Melo, F. F., V. C. F. Barbosa, L. Uieda, V. C. Oliveira Jr, and J. B. C. Silva
-(2013), Estimating the nature and the horizontal and vertical positions of 3D
-magnetic sources using Euler deconvolution, Geophysics, 78(6), J87-J98,
-doi:10.1190/geo2012-0515.1
 
 ## Bibtex
 

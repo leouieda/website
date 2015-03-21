@@ -8,6 +8,13 @@ slides: 10.6084/m9.figshare.156865
 event: SEG Annual Meeting
 doi: 10.1190/segam2012-0525.1
 slug: seg-carlos2012
+citation: Carlos, D. U., L. Uieda, Y. Li, V. C. F. Barbosa, M. A. Braga, G. Angeli, and G. Peres (2012), Iron ore interpretation using gravity-gradient inversions in the Carajás, Brazil, SEG Technical Program Expanded Abstracts, pp. 2008–2012, doi:10.1190/segam2012-0525.1
+
+## Presentation
+
+<script async class="speakerdeck-embed"
+data-id="b036bda0e0494ddfb2410953e5f25230" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>
 
 ## Abstract
 
@@ -31,17 +38,3 @@ results give rise two interpretations: i) the iron orebody may present its
 depth to the bottom greater than the maximum depth of 200 m attained by the
 deepest borehole; or ii) the iron orebody may be 200 m deep and the rocks below
 may be jaspilite whose density is close to that of soft hematite.
-
-
-## Presentation
-
-<script async class="speakerdeck-embed"
-data-id="b036bda0e0494ddfb2410953e5f25230" data-ratio="1.33333333333333"
-src="//speakerdeck.com/assets/embed.js"></script>
-
-## Citation
-
-Carlos, D. U., L. Uieda, Y. Li, V. C. F. Barbosa, M. A. Braga, G. Angeli, and
-G. Peres (2012), Iron ore interpretation using gravity-gradient inversions in
-the Carajás, Brazil, SEG Technical Program Expanded Abstracts, pp. 2008–2012,
-doi:10.1190/segam2012-0525.1

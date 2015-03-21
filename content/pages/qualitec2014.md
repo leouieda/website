@@ -3,6 +3,7 @@ date: 2014-10-11
 slug: qualitec2014
 author: Leonardo Uieda
 
+# Seleção para bolsa QUALITEC 2014
 
 O Laboratório de Geofísica de Exploração (LAGEX)
 da [Universidade do Estado do Rio de Janeiro (UERJ)](http://www.uerj.br/)

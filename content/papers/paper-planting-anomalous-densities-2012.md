@@ -7,7 +7,12 @@ repository: pinga-lab/paper-planting-densities
 doi: 10.1190/geo2011-0388.1
 journal: Geophysics
 supplement: 10.6084/m9.figshare.91574
-tags:
+citation: Uieda, L., and V. C. F. Barbosa (2012), Robust 3D gravity gradient inversion by planting anomalous densities, Geophysics, 77(4), G55-G66, doi:10.1190/geo2011-0388.1
+
+## Extra supplement
+
+* Animation:
+  [10.6084/m9.figshare.91469](http://dx.doi.org/10.6084/m9.figshare.91469)
 
 ## Abstract
 
@@ -35,18 +40,6 @@ sources are present. Inverting the data from an airborne gravity gradiometry
 survey flown over the iron ore province of Quadrilátero Ferrífero, southeastern
 Brazil, we estimated a compact iron ore body that is in agreement with geologic
 information and previous interpretations.
-
-
-## Extra supplement
-
-* Animation:
-  [10.6084/m9.figshare.91469](http://dx.doi.org/10.6084/m9.figshare.91469)
-
-## Citation
-
-Uieda, L., and V. C. F. Barbosa (2012), Robust 3D gravity gradient inversion by
-planting anomalous densities, Geophysics, 77(4), G55-G66,
-doi:10.1190/geo2011-0388.1
 
 ## Bibtex
 
