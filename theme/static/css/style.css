@@ -6,16 +6,28 @@ body {
 .icon-link-list li {
     display: inline;
 }
+.icon-link-list li > a {
+    color: #333;
+}
+.icon-link-list li > a:hover {
+    color: #1A6ECC;
+}
+.icon-link-list {
+    padding-left: 20px;
+    padding-top: 10px;
+}
 
 .navbar-inverse {
     border: none;
 }
 
-/* THE CONTACT LIST ON THE FRONT PAGE */
-/* **************************************************************** */
-.contact-list li {
-    padding-bottom: 8px;
+.fa-ul {
+    margin-top: 10px;
 }
+.fa-ul li {
+    margin-bottom: 5px;
+}
+
 
 /*[> EDUCATION LISTS (UNIVERSITY, ADVISOR, THESIS) <]*/
 /*[> **************************************************************** <]*/
