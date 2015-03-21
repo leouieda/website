@@ -99,14 +99,14 @@ for the Brazilians out there)
 <b>PhD</b> in Geophysics (2011-ongoing):
 
 <ul class="fa-ul">
-<li><i class="fa-li fa fa-university"></i>
+<li><i class="fa-li fa fa-university fa-fw"></i>
     <a href="http://www.on.br">Observatório Nacional, Brazil</a>
 </li>
-<li><i class="fa-li fa fa-graduation-cap"></i>
+<li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
     Advisor:
     <a href="http://lattes.cnpq.br/0391036221142471">Valéria C. F. Barbosa</a>
 </li>
-<li><i class="fa-li fa fa-book"></i>
+<li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis: Inversão 3D de campos pontenciais em coordenadas esféricas
 </li>
 </ul>
@@ -117,25 +117,25 @@ for the Brazilians out there)
 <b>MSc</b> in Geophysics (2010-2011):
 
 <ul class="fa-ul">
-<li><i class="fa-li fa fa-university"></i>
+<li><i class="fa-li fa fa-university fa-fw"></i>
     <a href="http://www.on.br">Observatório Nacional, Brazil</a>
 </li>
-<li><i class="fa-li fa fa-graduation-cap"></i>
+<li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
     Advisor:
     <a href="http://lattes.cnpq.br/0391036221142471">Valéria C. F. Barbosa</a>
 </li>
-<li><i class="fa-li fa fa-book"></i>
+<li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis: Robust 3D gravity gradient inversion by planting anomalous
     densities (published as an article)
 </li>
-<li><i class="fa-li fa fa-link"></i>
+<li><i class="fa-li fa fa-link fa-fw"></i>
     doi:
     <a href="http://library.seg.org/doi/abs/10.1190/geo2011-0388.1">10.1190/geo2011-0388.1</a>
 </li>
-<li><i class="fa-li fa fa-file-pdf-o"></i>
+<li><i class="fa-li fa fa-file-pdf-o fa-fw"></i>
     <a href="pdf/paper-planting-anomalous-densities-2012.pdf">Article PDF</a>
 </li>
-<li><i class="fa-li fa fa-github-square"></i>
+<li><i class="fa-li fa fa-github-square fa-fw"></i>
     <a href="https://github.com/pinga-lab/paper-planting-densities">pinga-lab/paper-planting-densities</a>
 </li>
 </ul>
@@ -145,28 +145,28 @@ for the Brazilians out there)
 
 International <b>Exchange</b> Program (2008-2009):
 <ul class="fa-ul">
-<li><i class="fa-li fa fa-university"></i>
+<li><i class="fa-li fa fa-university fa-fw"></i>
     <a href="http://www.yorku.ca/esse/">York University, Toronto, Canada</a>
 </li>
 </ul>
 
 <b>BSc</b> in Geophysics (2009):
 <ul class="fa-ul">
-<li><i class="fa-li fa fa-university"></i>
+<li><i class="fa-li fa fa-university fa-fw"></i>
     <a href="http://www.iag.usp.br">Universidade de São Paulo, Brazil</a>
 </li>
-<li><i class="fa-li fa fa-graduation-cap"></i>
+<li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
     Advisor:
     <a href="http://lattes.cnpq.br/6704246490515612">Naomi Ussami</a>
 </li>
-<li><i class="fa-li fa fa-book"></i>
+<li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis: Cálculo do tensor gradiente gravimétrico utilizando tesseroides
 </li>
-<li><i class="fa-li fa fa-link"></i>
+<li><i class="fa-li fa fa-link fa-fw"></i>
     doi:
     <a href="http://dx.doi.org/10.6084/m9.figshare.963547">10.6084/m9.figshare.963547</a>
 </li>
-<li><i class="fa-li fa fa-github-square"></i>
+<li><i class="fa-li fa fa-github-square fa-fw"></i>
     <a href="https://github.com/leouieda/barchelor-thesis">leouieda/barchelor-thesis</a>
 </li>
 </ul>
