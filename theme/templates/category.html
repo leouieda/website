@@ -7,35 +7,49 @@
 {% block content %}
 <h1>{{ category|capitalize }}</h1>
 
-<ul class="paper-list">
-{% for article in articles %}
-    <li>
-    {% if "review" in article.tags %}
-        <i>(In review)</i>
-    {% endif %}
-    {% if "OA" in article.tags %}
-        <i class="fa fa-unlock-alt" title="Open-Access"></i>
-    {% endif %}
-    {% if article.type is defined %}
-        {% if article.type == "oral" %}
-            <i class="fa fa-comments-o"></i>
+{% for row in articles|batch(4) %}
+    <div class="row">
+    {% for article in row %}
+        <div class="col-md-3 col-sm-6">
+        <div class="well article-box">
+
+        {% if article.thumbnail is defined %}
+            <img src="{{SITEURL}}/{{article.thumbnail}}"></img>
+            </br>
         {% endif %}
-        {% if article.type == "poster" %}
-            <i class="fa fa-picture-o"></i>
+
+        <a href="{{SITEURL}}/{{article.url}}"><h3>
+        {% if "OA" in article.tags %}
+            <i class="fa fa-unlock-alt" title="Open-Access"></i>
         {% endif %}
-    {% endif %}
-    {% if "notme" in article.tags %}
-        <i>(not presented by me)</i>
-    {% endif %}
-    <a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a>
-    ({{article.date|strftime('%Y')}}) {{article.author}},
-    {% if article.journal is defined %}
-        <i>{{article.journal}}</i>
-    {% endif %}
-    {% if article.event is defined %}
-        <i>{{article.event}}</i>
-    {% endif %}
-    </li>
+        {% if article.type is defined %}
+            {% if article.type == "oral" %}
+                <i class="fa fa-comments-o"></i>
+            {% endif %}
+            {% if article.type == "poster" %}
+                <i class="fa fa-picture-o"></i>
+            {% endif %}
+        {% endif %}
+        {{article.title}}</h3></a>
+
+        <p>
+        ({{article.date|strftime('%Y')}}) {{article.author}},
+        {% if article.journal is defined %}
+            <i>{{article.journal}}</i>
+        {% endif %}
+        {% if article.event is defined %}
+            <i>{{article.event}}</i>
+        {% endif %}
+
+        {% if "review" in article.tags %}
+            <span class="label label-warning">In review</span>
+        {% endif %}
+        </p>
+
+        </div>
+        </div>
+    {% endfor %}
+    </div>
 {% endfor %}
 </ul>
 {% endblock %}

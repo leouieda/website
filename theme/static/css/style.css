@@ -60,15 +60,24 @@ p.paper-date-author {
     font-style: italic;
 }
 
-.paper-list > li {
-    margin-bottom: 8px;
+.article-box {
+    background-color: #fcfcfc;
 }
-.paper-list {
-    list-style-type: none;
-    padding-left: 5px;
+
+.article-box  img {
+    width: 100%;
 }
-.paper-list > li > i.fa {
-    margin-right: 5px;
+
+.article-box i {
+    margin-right: 3px;
+}
+
+.article-box p {
+    color: #6F6F6F;
+}
+
+.article-box a {
+    color: #333;
 }
 
 img {

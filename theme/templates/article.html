@@ -54,13 +54,6 @@
         </li>
         {% endif %}
 
-        {% if article.pdf is defined %}
-        <li class="list-group-item">
-        <i class="fa fa-file-pdf-o fa-fw"></i>
-        PDF: <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
-        </li>
-        {% endif %}
-
         {% if article.type is defined %}
             <li class="list-group-item">
             {% if article.type == "oral" %}
@@ -69,7 +62,7 @@
             {% if article.type == "poster" %}
                 <i class="fa fa-picture-o fa-fw"></i>
             {% endif %}
-            Presentation type:
+            Presentation:
             {{article.type|capitalize}}
             {% if article.tags is defined and "notme" in article.tags %}
                 <b>(not presented by me)</b>
@@ -125,6 +118,13 @@
         <i class="fa fa-paperclip fa-fw"></i>
         Supplement:
         <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
+        </li>
+        {% endif %}
+
+        {% if article.pdf is defined %}
+        <li class="list-group-item">
+        <i class="fa fa-file-pdf-o fa-fw"></i>
+        PDF: <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
         </li>
         {% endif %}
     </ul>
