@@ -8,7 +8,7 @@ event: Python in Science Conference
 slug: scipy2014
 thumbnail: images/poster-scipy2014.png
 
-![Scipy hashtag]({filename}/images/scipy2014hashtag.gif)
+[![Scipy hashtag]({filename}/images/scipy2014hashtag.gif)](http://nbviewer.ipython.org/github/leouieda/scipy2014/blob/master/hashtag/scipy_hashtag.ipynb)
 
 ## Abstract
 

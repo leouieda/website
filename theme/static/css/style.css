@@ -63,6 +63,7 @@ p.paper-date-author {
 }
 .paper-list {
     list-style-type: none;
+    padding-left: 5px;
 }
 .paper-list > li > i.fa {
     margin-right: 5px;
