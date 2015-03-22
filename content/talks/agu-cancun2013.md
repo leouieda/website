@@ -5,7 +5,8 @@ repository: leouieda/agu-cancun2013
 type: oral
 slides: 10.6084/m9.figshare.703651
 event: AGU Meeting of the Americas
-slug: agu-cancun2011
+slug: agu-cancun2013
+thumbnail: images/thumb/agu-cancun2013.png
 
 ## Presentation
 
