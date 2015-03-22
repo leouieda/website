@@ -12,8 +12,15 @@ thumbnail: images/thumb/paper-planting-anomalous-densities-2012.png
 
 ## Extra supplement
 
-* Animation:
-  [10.6084/m9.figshare.91469](http://dx.doi.org/10.6084/m9.figshare.91469)
+Animation of the groth algorithm:
+[10.6084/m9.figshare.91469](http://dx.doi.org/10.6084/m9.figshare.91469)
+
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="http://wl.figshare.com/articles/91469/embed?show_title=0"
+width="568" height="481" frameborder="0"></iframe>
+</div>
+
 
 ## Abstract
 
