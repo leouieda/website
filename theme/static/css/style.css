@@ -56,6 +56,8 @@ img.paper-thumbnail {
 
 p.paper-date-author {
     margin-bottom: 20px;
+    font-size: 14pt;
+    font-style: italic;
 }
 
 .paper-list > li {
@@ -67,4 +69,8 @@ p.paper-date-author {
 }
 .paper-list > li > i.fa {
     margin-right: 5px;
+}
+
+img {
+    width: 100%;
 }

@@ -6,6 +6,7 @@ doi: 10.5194/npgd-1-1465-2014
 repository: birocoles/Total-magnetization-of-spherical-bodies
 tags: OA, review
 author: Oliveira Jr, V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda
+thumbnail: images/thumb/paper-mag-dir-2015.png
 citation: Oliveira Jr, V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda (2014), Estimation of the total magnetization direction of approximately spherical bodies, Nonlinear Processes in Geophysics
 
 ## Review

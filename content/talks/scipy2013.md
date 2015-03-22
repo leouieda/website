@@ -10,17 +10,19 @@ citation: Uieda, L., V. C. Oliveira Jr and V. C. F. Barbosa (2013), Modeling the
 
 ## Presentation
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/Ec38h1oB8cc" frameborder="0"
-allowfullscreen></iframe>
-
 **Slides are available in HTML**:
 [leouieda.com/scipy2013](http://www.leouieda.com/scipy2013/?theme=night#/)
 
-**Conference proceedings site**:
-[http://conference.scipy.org/proceedings/scipy2013/uieda.html](http://conference.scipy.org/proceedings/scipy2013/uieda.html)
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Ec38h1oB8cc" frameborder="0"
+allowfullscreen></iframe>
+</div>
 
 ## Abstract
+
+**Conference proceedings site**:
+[http://conference.scipy.org/proceedings/scipy2013/uieda.html](http://conference.scipy.org/proceedings/scipy2013/uieda.html)
 
 Solid Earth geophysics is the science of using physical observations of the
 Earth to infer its inner structure. Generally, this is done with a variety of

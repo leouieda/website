@@ -16,17 +16,14 @@
 {% endblock %}
 
 {% block title %}
-{{ article.title }}: {{ article.category|capitalize }} by {{ SITENAME }}
+{{ article.title }} - {{ SITENAME }}
 {% endblock %}
 
 {% block content %}
     <a href="{{SITEURL}}/{{category}}">{{category|capitalize}}</a> >
     </br>
-    <h1>{{ article.title }}
-    {% if article.tags is defined and "review" in article.tags %}
-    (in review)
-    {% endif %}
-    </h1>
+
+    <h1>{{ article.title }}</h1>
 
     <p class="paper-date-author">
     by {{ article.author }} ({{ article.date|strftime('%Y') }})
@@ -35,7 +32,20 @@
     <div class="row">
 
     <div class="col-md-4">
-    <h2>Resources</h2>
+
+    {% if article.tags is defined and "review" in article.tags %}
+    <div class="alert alert-warning">
+        <strong>
+        This article is unpublished and is currently undergoing peer-review.
+        </strong>
+    </div>
+    {% endif %}
+
+    {% if article.thumbnail is defined %}
+    <img class="paper-thumbnail" src="{{SITEURL}}/{{article.thumbnail}}"></img>
+    {% endif %}
+
+    <h2>Info</h2>
     <ul class="list-group">
         {% if article.tags is defined and "OA" in article.tags %}
         <li class="list-group-item">
@@ -59,7 +69,7 @@
             {% if article.type == "poster" %}
                 <i class="fa fa-picture-o fa-fw"></i>
             {% endif %}
-            Presentation:
+            Presentation type:
             {{article.type|capitalize}}
             {% if article.tags is defined and "notme" in article.tags %}
                 <b>(not presented by me)</b>
@@ -77,7 +87,7 @@
 
         {% if article.poster is defined %}
         <li class="list-group-item">
-        <i class="fa fa-file-text fa-fw"></i>
+        <i class="fa fa-picture-o fa-fw"></i>
         Poster: <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
         </li>
         {% endif %}
@@ -127,10 +137,6 @@
     </div>
 
     <div class="col-md-8">
-
-    {% if article.thumbnail is defined %}
-    <img class="paper-thumbnail" src="{{SITEURL}}/{{article.thumbnail}}"></img>
-    {% endif %}
 
     {{ article.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
 

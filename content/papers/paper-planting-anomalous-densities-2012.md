@@ -8,6 +8,7 @@ doi: 10.1190/geo2011-0388.1
 journal: Geophysics
 supplement: 10.6084/m9.figshare.91574
 citation: Uieda, L., and V. C. F. Barbosa (2012), Robust 3D gravity gradient inversion by planting anomalous densities, Geophysics, 77(4), G55-G66, doi:10.1190/geo2011-0388.1
+thumbnail: images/thumb/paper-planting-anomalous-densities-2012.png
 
 ## Extra supplement
 

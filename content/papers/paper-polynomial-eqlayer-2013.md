@@ -5,6 +5,7 @@ slug: paper-polynomial-eqlayer-2013
 pdf: paper-polynomial-eqlayer-2013.pdf
 doi: 10.1190/geo2012-0196.1
 journal: Geophysics
+thumbnail: images/thumb/paper-polynomial-eqlayer-2013.png
 citation: Oliveira Jr, V. C., V. C. F. Barbosa, and L. Uieda (2013), Polynomial equivalent layer, Geophysics, 78(1), G1–G13, doi:10.1190/geo2012-0196.1
 
 ## Abstract
