@@ -6,7 +6,7 @@ type: poster
 poster: 10.6084/m9.figshare.1089987
 event: Python in Science Conference
 slug: scipy2014
-thumbnail: images/scipy2014hashtag.gif
+thumbnail: images/thumb/scipy2014.png
 
 ## Poster
 
@@ -87,3 +87,11 @@ I'll conclude by outlining
 how we are using this framework in our own research,
 what we are currently working on,
 and our plans for the future.
+
+## Bonus
+
+As a bonus, I made this gif for the Twitter hashtag
+[#scipy2014](https://twitter.com/hashtag/SciPy2014?src=hash):
+
+[![#scipy!]({filename}/images/scipy2014hashtag.gif)](https://twitter.com/leouieda/status/486917338092929024)
+
