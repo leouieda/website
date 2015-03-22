@@ -71,14 +71,8 @@ MENUITEMS = [
     ('Teaching', '/teaching.html'),
     ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
      'https://twitter.com/leouieda'),
-    ('<i class="fa fa-github-square fa-lg" title="Github"></i>',
-     'https://github.com/leouieda'),
     ('<i class="ai ai-impactstory fa-lg" title="ImpactStory"></i>',
      'http://impactstory.org/leouieda'),
-    ('<i class="ai ai-google-scholar fa-lg" title="Google Scholar"></i>',
-     'http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ'),
-    ('<i class="ai ai-orcid fa-lg" title="ORCID"></i>',
-     'http://orcid.org/0000-0001-6123-9515'),
     ('<i class="fa fa-rss fa-lg" title="RSS feed for papers and talks"></i>', '/rss.xml'),
 ]
 
