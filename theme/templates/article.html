@@ -26,14 +26,19 @@
     <h1>{{ article.title }}</h1>
 
     <p class="paper-date-author">
-    by {{ article.author }} ({{ article.date|strftime('%Y') }})
+    {% if article.author %}
+        by {{ article.author }}
+    {% endif %}
+    {% if article.date %}
+        ({{ article.date|strftime('%Y') }})
+    {% endif %}
     </p>
 
     <div class="row">
 
     <div class="col-md-4">
 
-    {% if article.tags is defined and "review" in article.tags %}
+    {% if article.tags and "review" in article.tags %}
     <div class="alert alert-warning">
         <strong>
         This article is unpublished and is currently undergoing peer-review.
@@ -41,36 +46,37 @@
     </div>
     {% endif %}
 
-    {% if article.thumbnail is defined %}
+    {% if article.thumbnail %}
     <img class="paper-thumbnail" src="{{SITEURL}}/{{article.thumbnail}}"></img>
     {% endif %}
 
     <h2>Info</h2>
     <ul class="list-group">
-        {% if article.tags is defined and "OA" in article.tags %}
-        <li class="list-group-item">
+        {% if article.tags and "OA" in article.tags %}
+        <li class="list-group-item active">
         <i class="fa fa-unlock-alt fa-fw"></i>
         Open-Access
         </li>
         {% endif %}
 
-        {% if article.type is defined %}
+        {% if article.type %}
             <li class="list-group-item">
+            <i class="fa fa-info-circle fa-fw"></i>
+            Type:
+            {{article.type|capitalize}}
             {% if article.type == "oral" %}
                 <i class="fa fa-comments-o fa-fw"></i>
             {% endif %}
             {% if article.type == "poster" %}
                 <i class="fa fa-picture-o fa-fw"></i>
             {% endif %}
-            Presentation:
-            {{article.type|capitalize}}
-            {% if article.tags is defined and "notme" in article.tags %}
+            {% if article.tags and "notme" in article.tags %}
                 <b>(not presented by me)</b>
             {% endif %}
             </li>
         {% endif %}
 
-        {% if article.slides is defined %}
+        {% if article.slides %}
         <li class="list-group-item">
         <i class="fa fa-desktop fa-fw"></i>
         Slides:
@@ -78,42 +84,50 @@
         </li>
         {% endif %}
 
-        {% if article.poster is defined %}
+        {% if article.poster %}
         <li class="list-group-item">
         <i class="fa fa-picture-o fa-fw"></i>
         Poster: <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
         </li>
         {% endif %}
 
-        {% if article.repository is defined %}
+        {% if article.repository %}
         <li class="list-group-item">
         <i class="fa fa-github-square fa-fw"></i>
+        Repository:
         <a href="https://github.com/{{article.repository}}">{{article.repository}}</a>
         </li>
         {% endif %}
 
-        {% if article.event is defined %}
+        {% if article.event %}
         <li class="list-group-item">
         <i class="fa fa-users fa-fw"></i>
         Event: {{article.event}}
         </li>
         {% endif %}
 
-        {% if article.journal is defined %}
+        {% if article.institution %}
+        <li class="list-group-item">
+        <i class="fa fa-university fa-fw"></i>
+        Institution: {{article.institution}}
+        </li>
+        {% endif %}
+
+        {% if article.journal %}
         <li class="list-group-item">
         <i class="fa fa-book fa-fw"></i>
         Journal: {{article.journal}}
         </li>
         {% endif %}
 
-        {% if article.doi is defined %}
+        {% if article.doi %}
         <li class="list-group-item">
         <i class="fa fa-external-link fa-fw"></i>
         DOI: <a href="http://dx.doi.org/{{article.doi}}">{{article.doi}}</a>
         </li>
         {% endif %}
 
-        {% if article.supplement is defined %}
+        {% if article.supplement %}
         <li class="list-group-item">
         <i class="fa fa-paperclip fa-fw"></i>
         Supplement:
@@ -121,15 +135,22 @@
         </li>
         {% endif %}
 
-        {% if article.pdf is defined %}
+        {% if article.pdf %}
         <li class="list-group-item">
         <i class="fa fa-file-pdf-o fa-fw"></i>
         PDF: <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
         </li>
         {% endif %}
+
+        {% if article.website %}
+        <li class="list-group-item">
+        <i class="fa fa-home fa-fw"></i>
+        <a href="{{article.website}}">{{article.website}}</a>
+        </li>
+        {% endif %}
     </ul>
 
-    {% if article.citation is defined %}
+    {% if article.citation %}
     <h2>Citation</h2>
     <p>{{article.citation}}</p>
     {% endif %}

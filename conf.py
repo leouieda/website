@@ -37,18 +37,19 @@ USE_FOLDER_AS_CATEGORY = True
 CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
 
-STATIC_PATHS = ['images',
-                'notebooks',
-                'pdf',
-                'extra/CNAME',
-                'extra/favicon.ico',
-                'extra/favicon.png',
-                ]
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
-                       'extra/favicon.ico': {'path': 'favicon.ico'},
-                       'extra/favicon.png': {'path': 'favicon.png'},
-                       }
-
+STATIC_PATHS = [
+    'images',
+    'notebooks',
+    'pdf',
+    'extra/CNAME',
+    'extra/favicon.ico',
+    'extra/favicon.png',
+]
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/favicon.png': {'path': 'favicon.png'},
+}
 
 ARTICLES_FRONT_PAGE = None
 SUMMARY_MAX_LENGTH = 25
@@ -68,7 +69,7 @@ MENUITEMS = [
     #('Research', '/research.html'),
     ('Papers', '/papers'),
     ('Talks', '/talks'),
-    ('Teaching', '/teaching.html'),
+    ('Teaching', '/teaching'),
     ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
      'https://twitter.com/leouieda'),
     ('<i class="ai ai-impactstory fa-lg" title="ImpactStory"></i>',

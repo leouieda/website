@@ -13,7 +13,7 @@
         <div class="col-md-3 col-sm-6">
         <div class="well article-box">
 
-        {% if article.thumbnail is defined %}
+        {% if article.thumbnail %}
             <img src="{{SITEURL}}/{{article.thumbnail}}"></img>
             </br>
         {% endif %}
@@ -22,7 +22,7 @@
         {% if "OA" in article.tags %}
             <i class="fa fa-unlock-alt" title="Open-Access"></i>
         {% endif %}
-        {% if article.type is defined %}
+        {% if article.type %}
             {% if article.type == "oral" %}
                 <i class="fa fa-comments-o"></i>
             {% endif %}
@@ -33,16 +33,28 @@
         {{article.title}}</h3></a>
 
         <p>
-        ({{article.date|strftime('%Y')}}) {{article.author}},
-        {% if article.journal is defined %}
-            <i>{{article.journal}}</i>
+        {% if article.date %}
+            ({{article.date|strftime('%Y')}})
         {% endif %}
-        {% if article.event is defined %}
-            <i>{{article.event}}</i>
+        {% if article.author %}
+            {{article.author}}.
         {% endif %}
-
+        {% if article.journal %}
+            {{article.journal}}.
+        {% endif %}
+        {% if article.event %}
+            {{article.event}}.
+        {% endif %}
+        {% if article.institution %}
+            {{article.institution}}.
+        {% endif %}
         {% if "review" in article.tags %}
             <span class="label label-warning">In review</span>
+        {% endif %}
+        {% if article.type %}
+            {% if article.type != "oral" and article.type != "poster" %}
+                <span class="label label-primary">{{article.type}}</span>
+            {% endif %}
         {% endif %}
         </p>
 
