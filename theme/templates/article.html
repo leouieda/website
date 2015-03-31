@@ -20,6 +20,9 @@
 {% endblock %}
 
 {% block content %}
+
+<div class="container">
+
     <a href="{{SITEURL}}/{{category}}">{{category|capitalize}}</a> >
     </br>
 
@@ -54,82 +57,82 @@
     <ul class="list-group">
         {% if article.tags and "OA" in article.tags %}
         <li class="list-group-item active">
-        <i class="fa fa-unlock-alt fa-fw"></i>
+        <i class="fa fa-unlock-alt fa-fw" title="Open-access article"></i>
         Open-Access
         </li>
         {% endif %}
 
         {% if article.type %}
             <li class="list-group-item">
-            <i class="fa fa-info-circle fa-fw"></i>
-            Type:
-            {{article.type|capitalize}}
             {% if article.type == "oral" %}
-                <i class="fa fa-comments-o fa-fw"></i>
+                <i class="fa fa-comments-o fa-fw"
+                    title="{{article.type}} presentation"></i>
+            {% elif article.type == "poster" %}
+                <i class="fa fa-picture-o fa-fw"
+                    title="{{article.type}} presentation"></i>
+            {% elif article.type == "university course" %}
+                <i class="fa fa-graduation-cap fa-fw" title="{{article.type}}"></i>
+            {% elif article.type == "short course" %}
+                <i class="fa fa-info-circle fa-fw" title="{{article.type}}"></i>
+            {% else %}
+                <i class="fa fa-info-circle fa-fw" title="{{article.type}}"></i>
             {% endif %}
-            {% if article.type == "poster" %}
-                <i class="fa fa-picture-o fa-fw"></i>
-            {% endif %}
-            {% if article.tags and "notme" in article.tags %}
-                <b>(not presented by me)</b>
-            {% endif %}
+            {{article.type|capitalize}}
             </li>
         {% endif %}
 
         {% if article.slides %}
         <li class="list-group-item">
-        <i class="fa fa-desktop fa-fw"></i>
-        Slides:
+        <i class="fa fa-desktop fa-fw" title="Download slides"></i>
         <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
         </li>
         {% endif %}
 
         {% if article.poster %}
         <li class="list-group-item">
-        <i class="fa fa-picture-o fa-fw"></i>
-        Poster: <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
+        <i class="fa fa-picture-o fa-fw" title="Download poster"></i>
+        <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
         </li>
         {% endif %}
 
         {% if article.repository %}
         <li class="list-group-item">
-        <i class="fa fa-github-square fa-fw"></i>
-        Repository:
+        <i class="fa fa-github-square fa-fw" title="Github repository"></i>
         <a href="https://github.com/{{article.repository}}">{{article.repository}}</a>
         </li>
         {% endif %}
 
         {% if article.event %}
         <li class="list-group-item">
-        <i class="fa fa-users fa-fw"></i>
-        Event: {{article.event}}
+        <i class="fa fa-users fa-fw" title="Event name"></i>
+        {{article.event}}
         </li>
         {% endif %}
 
         {% if article.institution %}
         <li class="list-group-item">
-        <i class="fa fa-university fa-fw"></i>
-        Institution: {{article.institution}}
+        <i class="fa fa-university fa-fw" title="Institution name"></i>
+        {{article.institution}}
         </li>
         {% endif %}
 
         {% if article.journal %}
         <li class="list-group-item">
-        <i class="fa fa-book fa-fw"></i>
-        Journal: {{article.journal}}
+        <i class="fa fa-book fa-fw" title="Journal name"></i>
+        {{article.journal}}
         </li>
         {% endif %}
 
         {% if article.doi %}
         <li class="list-group-item">
-        <i class="fa fa-external-link fa-fw"></i>
-        DOI: <a href="http://dx.doi.org/{{article.doi}}">{{article.doi}}</a>
+        <i class="fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+        doi: <a href="http://dx.doi.org/{{article.doi}}">{{article.doi}}</a>
         </li>
         {% endif %}
 
         {% if article.supplement %}
         <li class="list-group-item">
-        <i class="fa fa-paperclip fa-fw"></i>
+        <i class="fa fa-paperclip fa-fw" title="Supplementary material"></i>
         Supplement:
         <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
         </li>
@@ -137,14 +140,14 @@
 
         {% if article.pdf %}
         <li class="list-group-item">
-        <i class="fa fa-file-pdf-o fa-fw"></i>
-        PDF: <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
+        <i class="fa fa-file-pdf-o fa-fw" title="Paper PDF"></i>
+        <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
         </li>
         {% endif %}
 
         {% if article.website %}
         <li class="list-group-item">
-        <i class="fa fa-home fa-fw"></i>
+        <i class="fa fa-home fa-fw" title="Website"></i>
         <a href="{{article.website}}">{{article.website}}</a>
         </li>
         {% endif %}
@@ -181,5 +184,7 @@
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     {% endif %}
+
+</div> <!-- container -->
 
 {% endblock %}

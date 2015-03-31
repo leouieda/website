@@ -5,6 +5,9 @@
 {% endblock %}
 
 {% block content %}
+
+<div class="container">
+
 <h1>{{ category|capitalize }}</h1>
 
 {% for row in articles|batch(4) %}
@@ -24,10 +27,13 @@
         {% endif %}
         {% if article.type %}
             {% if article.type == "oral" %}
-                <i class="fa fa-comments-o"></i>
-            {% endif %}
-            {% if article.type == "poster" %}
-                <i class="fa fa-picture-o"></i>
+                <i class="fa fa-comments-o" title="Oral presentation"></i>
+            {% elif article.type == "poster" %}
+                <i class="fa fa-picture-o" title="Poster presentation"></i>
+            {% elif article.type == "short course" %}
+                <i class="fa fa-info-circle" title="Short course"></i>
+            {% elif article.type == "university course" %}
+                <i class="fa fa-graduation-cap" title="University course"></i>
             {% endif %}
         {% endif %}
         {{article.title}}</h3></a>
@@ -64,5 +70,7 @@
     </div>
 {% endfor %}
 </ul>
+
+</div> <!-- container -->
 {% endblock %}
 

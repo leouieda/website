@@ -13,12 +13,15 @@ h3 {
 .icon-link-list li {
     display: inline;
 }
+
 .icon-link-list li > a {
     color: #333;
 }
+
 .icon-link-list li > a:hover {
     color: #1A6ECC;
 }
+
 .icon-link-list {
     padding-left: 20px;
     padding-top: 10px;
@@ -31,6 +34,7 @@ h3 {
 .fa-ul {
     margin-top: 10px;
 }
+
 .fa-ul li {
     margin-bottom: 5px;
 }
@@ -44,9 +48,9 @@ footer {
     color: #6F6F6F;
  }
 
- .list-group-item > i {
-     margin-right: 5px;
- }
+.list-group-item > i {
+    margin-right: 5px;
+}
 
 img.paper-thumbnail {
     width: 100%;
@@ -82,4 +86,17 @@ p.paper-date-author {
 
 img {
     width: 100%;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.banner {
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5) inset;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }

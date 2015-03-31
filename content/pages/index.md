@@ -2,8 +2,7 @@ title: About
 date: 25/01/2014
 slub: index
 save_as: index.html
-
-<img src="images/torres-del-paine.jpg" style="width: 100%"></img>
+banner: images/torres-del-paine.jpg
 
 <div class="row">
 
