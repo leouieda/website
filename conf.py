@@ -70,6 +70,7 @@ MENUITEMS = [
     ('Papers', '/papers'),
     ('Talks', '/talks'),
     ('Teaching', '/teaching'),
+    ('Software', '/software'),
     ('PINGA-lab', 'http://www.pinga-lab.org'),
     ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
      'https://twitter.com/leouieda'),

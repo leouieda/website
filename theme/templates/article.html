@@ -151,6 +151,22 @@
         <a href="{{article.website}}">{{article.website}}</a>
         </li>
         {% endif %}
+
+        {% if article.language %}
+        <li class="list-group-item">
+        <i class="fa fa-code fa-fw" title="Programming language"></i>
+        Programming language:
+        {{article.language}}
+        </li>
+        {% endif %}
+
+        {% if article.license %}
+        <li class="list-group-item">
+        <i class="fa fa-file-text fa-fw" title="Open-source license"></i>
+        {{article.license}}
+        License
+        </li>
+        {% endif %}
     </ul>
 
     {% if article.citation %}
