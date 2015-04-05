@@ -47,11 +47,15 @@
         {{article.title}}</h3></a>
 
         <p>
-        {% if article.date %}
-            ({{article.date|strftime('%Y')}})
-        {% endif %}
-        {% if article.author %}
-            {{article.author}}.
+        {% if category != "software" %}
+            {% if article.date %}
+                ({{article.date|strftime('%Y')}})
+            {% endif %}
+            {% if category != "teaching" %}
+                {% if article.author %}
+                    {{article.author}}.
+                {% endif %}
+            {% endif %}
         {% endif %}
         {% if article.journal %}
             {{article.journal}}.

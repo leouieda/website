@@ -3,6 +3,7 @@ author: Uieda, L., and V. C. F. Barbosa
 date: 01-05-2013
 repository: leouieda/agu-cancun2013
 type: oral
+doi: 10.6084/m9.figshare.703651
 slides: 10.6084/m9.figshare.703651
 event: AGU Meeting of the Americas
 slug: agu-cancun2013

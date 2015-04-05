@@ -4,6 +4,7 @@ date: 01-07-2014
 repository: leouieda/scipy2014
 type: poster
 poster: 10.6084/m9.figshare.1089987
+doi: 10.6084/m9.figshare.1089987
 event: Python in Science Conference
 slug: scipy2014
 thumbnail: images/thumb/scipy2014.png

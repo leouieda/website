@@ -169,6 +169,12 @@
         {% endif %}
     </ul>
 
+    {% if article.doi %}
+    <h2>Article Level Metrics</h2>
+    <div data-badge-details="right" data-badge-type="medium-donut"
+        data-doi="{{article.doi}}" class="altmetric-embed"></div>
+    {% endif %}
+
     {% if article.citation %}
     <h2>Citation</h2>
     <p>{{article.citation}}</p>
