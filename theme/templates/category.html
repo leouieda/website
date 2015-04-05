@@ -10,6 +10,14 @@
 
 <h1>{{ category|capitalize }}</h1>
 
+<div class="category-header">
+{% for cat, content in CATEGORY_HEADERS %}
+    {% if cat == category %}
+        {{content}}
+    {% endif %}
+{% endfor %}
+</div>
+
 {% for row in articles|batch(4) %}
     <div class="row">
     {% for article in row %}
@@ -56,11 +64,6 @@
         {% endif %}
         {% if "review" in article.tags %}
             <span class="label label-warning">In review</span>
-        {% endif %}
-        {% if article.type %}
-            {% if article.type != "oral" and article.type != "poster" %}
-                <span class="label label-primary">{{article.type}}</span>
-            {% endif %}
         {% endif %}
         </p>
 

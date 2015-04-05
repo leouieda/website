@@ -9,6 +9,10 @@ h3 {
     margin-bottom: 15px;
 }
 
+.category-header {
+    margin-bottom: 40px;
+}
+
 /* The icon list in the about page */
 .icon-link-list li {
     display: inline;

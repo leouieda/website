@@ -79,6 +79,32 @@ MENUITEMS = [
     ('<i class="fa fa-rss fa-lg" title="RSS feed for papers and talks"></i>', '/rss.xml'),
 ]
 
+CATEGORY_HEADERS = [
+    ['teaching', """
+    <p>
+    These are some the classes I've taught or am teaching at the moment.
+    Most have Github repositories and links to download and view all content.
+    There is a mixture of semester long university courses
+    (<i class="fa fa-graduation-cap"></i>) and short courses
+    (<i class="fa fa-info-circle"></i>).
+    </p>
+    """],
+    ['talks', """
+    <p>
+    A list of talks (<i class="fa fa-comments-o"></i>)
+    and poster presentations (<i class="fa fa-picture-o"></i>)
+    I have given over the years.
+    All have links to download the poster/slides.
+    </p>
+    """],
+    ['software', """
+    <p>
+    Most of my research work involves writing software. These are some of the
+    open-source packages I have developed.
+    </p>
+    """],
+]
+
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['summary',
            'render_math',
