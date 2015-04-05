@@ -10,24 +10,45 @@ banner: images/torres-del-paine.jpg
 
 <h2>About</h2>
 
-Since 2014, I'm a Professor of Geophysics at the
-<a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro</a>.
-My research focuses on inverse problems in gravity and magnetic methods.
+<p>
+I'm Leonardo Uieda,
+a geophysicist working mainly on inverse problems in gravity and magnetics.
+</p>
+
+<p>
+Starting February 2014,
+I'm working as Professor of Geophysics at the
+<a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro</a>,
+Brazil.
+I teach the "Intro to Geophysics" courses to Geology students,
+<a href="teaching/">among others</a>.
 A typical day at work usually involves a lot of
 <a href="https://github.com/leouieda">open-source software development</a>,
 for both research and teaching.
 At the moment I'm finishing my PhD
 at the <a href="http://www.on.br">Observatório Nacional</a>.
+</p>
 
-I am a researcher of the
-<a href="https://github.com/pinga-lab">PINGA lab</a>,
+<p>
+In the spirit of open-science,
+I share all of the research and
+teaching material online under permissive licenses.
+You'll find links to source code, images, lessons, etc, scattered around this
+website
+(look for the <i class="fa fa-github-square fa-fw"></i> icon).
+</p>
+
+<p>
+I am a member of the
+<a href="http://www.pinga-lab.org">PINGA lab</a>,
 a research group for inverse problems in geophysics.
-In the group page,
-we provide repositories
-with the source code for the papers we publish
-and other things we are working on.
+In the group page you'll find links to papers and talks by the group members.
+We try to provide links to source code and supplementary material to our
+papers (most new papers have these).
+</p>
 
 </div>
+
 <div class="col-md-4">
 
 <h2>Contact</h2>
