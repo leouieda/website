@@ -2,9 +2,7 @@ language: python
 before_install:
 - cd pelican-plugins; git submodule init; git submodule update; cd ..;
 install:
-- sudo apt-get update
-- sudo apt-get install nodejs
-- pip install pelican==3.5.0 markdown==2.4 ipython==2.3.1 pillow beautifulsoup4==4.3.2
+- pip install pelican==3.5.0 markdown==2.4 beautifulsoup4==4.3.2
 script:
 - make publish
 after_success:
