@@ -41,6 +41,7 @@ STATIC_PATHS = [
     'images',
     'notebooks',
     'pdf',
+    'misc',
     'extra/CNAME',
     'extra/favicon.ico',
     'extra/favicon.png',
@@ -50,6 +51,8 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/favicon.png': {'path': 'favicon.png'},
 }
+
+READERS = {"html": None}
 
 ARTICLES_FRONT_PAGE = None
 SUMMARY_MAX_LENGTH = 25
