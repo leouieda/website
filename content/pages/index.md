@@ -82,6 +82,10 @@ UERJ, Rua São Francisco Xavier, 524 Sala 2019A/2031A.
 You can also follow me and find out more about my research, code, articles, and data
 in the following sites:
 
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+
 <ul class="social">
 
 <li>
@@ -127,6 +131,10 @@ in the following sites:
 </li>
 
 </ul>
+
+</div>
+<div class="col-md-2"></div>
+</div>
 
 Para os brasileiros, aqui está o link para meu
 <a href="http://lattes.cnpq.br/8939551682050504">Currículo Lattes</a>.
