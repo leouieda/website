@@ -14,21 +14,19 @@ h3 {
 }
 
 /* The icon list in the about page */
-.icon-link-list li {
+.social {
+    list-style-type: none;
+    margin-top: 10.5px;
+    margin-left: 50px;
+}
+
+.social > li {
     display: inline;
+    margin-right: 3px;
 }
 
-.icon-link-list li > a {
+.social > li > a{
     color: #333;
-}
-
-.icon-link-list li > a:hover {
-    color: #1A6ECC;
-}
-
-.icon-link-list {
-    padding-left: 20px;
-    padding-top: 10px;
 }
 
 .navbar-inverse {
@@ -51,6 +49,10 @@ footer {
     padding-bottom: 30px;
     color: #6F6F6F;
  }
+
+.list-group-item {
+    border: none;
+}
 
 .list-group-item > i {
     margin-right: 5px;

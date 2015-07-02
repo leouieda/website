@@ -6,7 +6,7 @@ banner: images/torres-del-paine.jpg
 
 <div class="row">
 
-<div class="col-md-4">
+<div class="col-md-6">
 
 <h2>About</h2>
 
@@ -31,8 +31,10 @@ at the <a href="http://www.on.br">Observatório Nacional</a>.
 
 <p>
 In the spirit of open-science,
-I share all of the research and
-teaching material online under permissive licenses.
+I share all of my research and
+teaching material
+(code, data, slides, etc)
+online under permissive licenses.
 You'll find links to source code, images, lessons, etc, scattered around this
 website
 (look for the <i class="fa fa-github-square fa-fw"></i> icon).
@@ -49,75 +51,85 @@ papers (most new papers have these).
 
 </div>
 
-<div class="col-md-4">
+<div class="col-md-6">
 
 <h2>Contact</h2>
 
-<div class="list-group">
-<a class="list-group-item" href="mailto:leouieda@gmail.com">
-<i class="fa fa-envelope fa-fw fa-lg"></i> leouieda@gmail.com</a>
 
-<a class="list-group-item" href="https://twitter.com/leouieda">
-<i class="fa fa-twitter fa-fw fa-lg"></i> @leouieda</a>
+<ul class="fa-ul contact">
 
-<a class="list-group-item"
-   href="https://plus.google.com/u/0/+LeonardoUieda">
-<i class="fa fa-google-plus-square fa-fw fa-lg"></i> +Leonardo Uieda</a>
+<li><i class="fa-li fa fa-envelope fa-fw"></i>
+<a href="mailto:leouieda@gmail.com">leouieda@gmail.com</a>
+</li>
 
-<a class="list-group-item" href="https://goo.gl/maps/7jGIq">
-<i class="fa fa-map-marker fa-fw fa-lg"></i>
-UERJ, Rua São Francisco Xavier, 524 Sala 2029A/2031A.
+<li><i class="fa-li fa fa-twitter fa-fw"></i>
+<a href="https://twitter.com/leouieda">@leouieda</a>
+</li>
+
+<li><i class="fa-li fa fa-google-plus fa-fw"></i>
+<a href="https://plus.google.com/u/0/+LeonardoUieda">+Leonardo Uieda</a>
+</li>
+
+<li><i class="fa-li fa fa-map-marker fa-fw"></i>
+<a href="https://goo.gl/maps/7jGIq">
+UERJ, Rua São Francisco Xavier, 524 Sala 2019A/2031A.
+</br>
 20550-900, Rio de Janeiro - RJ - Brazil</a>
-</div>
+</li>
 
-</div>
-<div class="col-md-4">
+</ul>
 
-<h2>Around the Internet</h2>
+You can also follow me and find out more about my research, code, articles, and data
+in the following sites:
 
-You'll find me and some of my research outputs in various sites:
+<ul class="social">
 
-<div class="list-group">
-<a class="list-group-item"
-   href="https://github.com/leouieda">
-<i class="fa fa-github-square fa-fw fa-lg" title="Github"></i>
-Github</a>
+<li>
+<a href="https://github.com/leouieda">
+<i class="fa fa-github-square fa-3x" title="Github"></i>
+</a>
+</li>
 
-<a class="list-group-item"
-   href="http://figshare.com/authors/Leonardo%20Uieda/97471">
-<i class="ai ai-figshare fa-fw fa-lg" title="figshare"></i>
-figshare</a>
+<li>
+<a href="http://figshare.com/authors/Leonardo%20Uieda/97471">
+<i class="ai ai-figshare-square fa-3x" title="figshare"></i>
+</a>
+</li>
 
-<a class="list-group-item"
-   href="http://impactstory.org/leouieda">
-<i class="ai ai-impactstory fa-fw fa-lg" title="ImpactStory"></i>
-Impact Story</a>
+<li>
+<a href="http://impactstory.org/leouieda">
+<i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i>
+</a>
+</li>
 
-<a class="list-group-item"
-   href="http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ">
-<i class="ai ai-google-scholar fa-fw fa-lg" title="Google Scholar"></i>
-Google Scholar</a>
+<li>
+<a href="http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ">
+<i class="ai ai-google-scholar-square fa-3x" title="Google Scholar"></i>
+</a>
+</li>
 
-<a class="list-group-item"
-   href="http://orcid.org/0000-0001-6123-9515">
-<i class="ai ai-orcid fa-fw fa-lg" title="ORCID"></i>
-ORCID</a>
+<li>
+<a href="http://orcid.org/0000-0001-6123-9515">
+<i class="ai ai-orcid-square fa-3x" title="ORCID"></i>
+</a>
+</li>
 
-<a class="list-group-item"
-   href="https://www.researchgate.net/profile/Leonardo_Uieda">
-<i class="ai ai-researchgate fa-fw fa-lg" title="ResearchGate"></i>
-ResearchGate</a>
+<li>
+<a href="https://www.researchgate.net/profile/Leonardo_Uieda">
+<i class="ai ai-researchgate-square fa-3x" title="ResearchGate"></i>
+</a>
+</li>
 
-<a class="list-group-item"
-   href="http://www.linkedin.com/in/uieda">
-<i class="fa fa-linkedin fa-fw fa-lg" title="LinkedIn"></i>
-LinkedIn</a>
+<li>
+<a href="http://www.linkedin.com/in/uieda">
+<i class="fa fa-linkedin-square fa-3x" title="LinkedIn"></i>
+</a>
+</li>
 
-<a class="list-group-item"
-   href="http://lattes.cnpq.br/8939551682050504">
-<i class="fa fa-file-text fa-fw fa-lg" title="LinkedIn"></i>
-Currículo Lattes</a>
-</div>
+</ul>
+
+Para os brasileiros, aqui está o link para meu
+<a href="http://lattes.cnpq.br/8939551682050504">Currículo Lattes</a>.
 
 </div>
 </div><!-- row -->
