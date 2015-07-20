@@ -21,12 +21,11 @@
 {% for row in articles|batch(4) %}
     <div class="row">
     {% for article in row %}
-        <div class="col-md-3 col-sm-6">
-        <div class="well article-box">
+        <div class="col-md-3 col-sm-3">
+        <div class="article-box">
 
         {% if article.thumbnail %}
-            <img src="{{SITEURL}}/{{article.thumbnail}}"></img>
-            </br>
+            <img class="img-responsive center-block" src="{{SITEURL}}/{{article.thumbnail}}"></img>
         {% endif %}
 
         <a href="{{SITEURL}}/{{article.url}}"><h3>

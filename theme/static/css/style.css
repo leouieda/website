@@ -71,11 +71,10 @@ p.paper-date-author {
 }
 
 .article-box {
-    background-color: #fcfcfc;
+    padding-bottom: 50px;
 }
 
-.article-box  img {
-    width: 100%;
+.article-box img {
 }
 
 .article-box i {
@@ -88,6 +87,12 @@ p.paper-date-author {
 
 .article-box a {
     color: #333;
+}
+
+.article-box a > h3 {
+    font-size: 15pt;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 img {
