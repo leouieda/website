@@ -98,12 +98,27 @@ CATEGORY_HEADERS = [
     and poster presentations (<i class="fa fa-picture-o"></i>)
     I have given over the years.
     All have links to download the poster/slides.
+    Most include links to source-code and data used to produce the results
+    (look for the <i class="fa fa-github-square"></i> icon).
     </p>
     """],
     ['software', """
     <p>
     Most of my research work involves writing software. These are some of the
     open-source packages I have developed.
+    </p>
+    """],
+    ['papers', """
+    <p>
+    Publications marked with a
+    <i class="fa fa-unlock-alt"></i> are
+    <a href="https://en.wikipedia.org/wiki/Open_access">open-access (OA)</a>.
+    I have made available links for you to download free PDFs from all non-OA
+    publications.
+    Many papers include links to accompanying source-code repositories on
+    Github (<i class="fa fa-github-square"></i>) and supplementary material
+    hosted on <a href="http://figshare.com/">figshare</a> or
+    <a href="http://zenodo.org/">Zenodo</a>.
     </p>
     """],
 ]
