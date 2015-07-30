@@ -81,24 +81,24 @@
             </li>
         {% endif %}
 
+        {% if article.repository %}
+        <li class="list-group-item">
+        <i class="fa fa-github-square fa-fw" title="Github repository"></i>
+        Repository (code + data): <a href="https://github.com/{{article.repository}}">{{article.repository}}</a>
+        </li>
+        {% endif %}
+
         {% if article.slides %}
         <li class="list-group-item">
         <i class="fa fa-desktop fa-fw" title="Download slides"></i>
-        <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
+        Slides: <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
         </li>
         {% endif %}
 
         {% if article.poster %}
         <li class="list-group-item">
         <i class="fa fa-picture-o fa-fw" title="Download poster"></i>
-        <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
-        </li>
-        {% endif %}
-
-        {% if article.repository %}
-        <li class="list-group-item">
-        <i class="fa fa-github-square fa-fw" title="Github repository"></i>
-        <a href="https://github.com/{{article.repository}}">{{article.repository}}</a>
+        Poster: <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
         </li>
         {% endif %}
 
