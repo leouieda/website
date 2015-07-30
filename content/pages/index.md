@@ -136,6 +136,8 @@ in the following sites:
 <div class="col-md-2"></div>
 </div>
 
+My <a href="http://orcid.org">ORCID</a> number is
+<a href="http://orcid.org/0000-0001-6123-9515">0000-0001-6123-9515</a>.
 Para os brasileiros, aqui está o link para meu
 <a href="http://lattes.cnpq.br/8939551682050504">Currículo Lattes</a>.
 
