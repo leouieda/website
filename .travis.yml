@@ -1,12 +1,32 @@
 language: python
-before_install:
-- cd pelican-plugins; git submodule init; git submodule update; cd ..;
-install:
-- pip install pelican==3.5.0 markdown==2.4 beautifulsoup4==4.3.2
-script:
-- make publish
-after_success:
-- bash .update-website.sh
+
+sudo: false
+
 env:
-  global:
-    secure: EG9V+ITvORiIk68ZziZPqPibUxyf8pIMJD8vbWl7adJ/SuwZ/L0kEAIz30YTgtihrbanrk+0tDfm0s7CRJofnjeOjNT9144bYQENob9rMkZbF9n/jd6O5gIJ9cWBzUh7oNRB9noee3dBNeikD6qWkx73PTWdM1c5WX7pOuHeCfs=
+  global: # For deploying the site to Github Pages
+    - secure: EG9V+ITvORiIk68ZziZPqPibUxyf8pIMJD8vbWl7adJ/SuwZ/L0kEAIz30YTgtihrbanrk+0tDfm0s7CRJofnjeOjNT9144bYQENob9rMkZbF9n/jd6O5gIJ9cWBzUh7oNRB9noee3dBNeikD6qWkx73PTWdM1c5WX7pOuHeCfs=
+  matrix:
+    - PYTHON=2.7
+
+before_install:
+  # Get Miniconda from Continuum
+  - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
+  - chmod +x miniconda.sh
+  - ./miniconda.sh -b
+  - export PATH=/home/travis/miniconda/bin:$PATH
+  # Update conda itself
+  - conda update --yes conda
+  # Initialize the Pelican plugins submodule
+  - cd pelican-plugins; git submodule init; git submodule update; cd ..;
+
+install:
+  - conda create -n testenv --yes pip python=$PYTHON
+  - conda update conda --yes
+  - source activate testenv
+  - pip install -r requirements.txt
+
+script:
+  - make publish
+
+after_success:
+  - bash ci-tools/deploy-gh-pages.sh
