@@ -43,11 +43,13 @@ STATIC_PATHS = [
     'pdf',
     'misc',
     'extra/CNAME',
+    'extra/.nojekyll',
     'extra/favicon.ico',
     'extra/favicon.png',
 ]
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/.nojekyll': {'path': '.nojekyll'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/favicon.png': {'path': 'favicon.png'},
 }
