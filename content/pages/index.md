@@ -10,6 +10,9 @@ banner: images/torres-del-paine.jpg
 
 <h2>About</h2>
 
+<img src="images/leo-uieda-portrait.jpg" class="img-circle portrait"
+     title="Portrait of myself">
+
 <p>
 I'm Leonardo Uieda,
 a geophysicist working mainly on inverse problems in gravity and magnetics.
