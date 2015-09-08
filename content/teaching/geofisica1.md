@@ -1,11 +1,12 @@
 title: Geofísica 1 - Gravimetria e magnetometria
-date: 03-8-2014
+date: 8-03-2015
 slug: geofisica1
 institution: UERJ
 type: university course
-repository: lagex/geofisica1
+repository: leouieda/geofisica1
 authors: Leonardo Uieda
-website: http://lagex.github.io/geofisica1/
+website: http://www.leouieda.com/geofisica1/
+thumbnail: images/thumb/geofisica1.png
 
 ## About
 
