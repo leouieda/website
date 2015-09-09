@@ -6,6 +6,13 @@ SITETITLE = u"LEONARDO <b>UIEDA</b>"
 SITENAME = u"Leonardo Uieda"
 SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific software'
 SITEURL = ''
+DESCRIPTION = """
+<strong>Welcome!</strong> This website is about my professional (academic)
+life.  I'm a professor of geophysics at UERJ, Brazil, working mainly on gravity
+and magnetics, inverse problems, and free software.  I really enjoy teaching
+and believe that science should be open.
+"""
+BANNER = "images/torres-del-paine.jpg"
 
 # Language and time
 DEFAULT_LANG = u'en'
@@ -56,7 +63,7 @@ EXTRA_PATH_METADATA = {
 
 READERS = {"html": None}
 
-ARTICLES_FRONT_PAGE = None
+ARTICLES_FRONT_PAGE = 2
 SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -70,17 +77,15 @@ THEME = 'theme'
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('About', '/index.html'),
+    ('About', '/about.html'),
     #('Research', '/research.html'),
     ('Papers', '/papers'),
     ('Talks', '/talks'),
     ('Teaching', '/teaching'),
     ('Software', '/software'),
-    ('PINGA lab', 'http://www.pinga-lab.org'),
+    ('Contact', '/contact.html'),
     ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
      'https://twitter.com/leouieda'),
-    ('<i class="ai ai-impactstory fa-lg" title="ImpactStory"></i>',
-     'http://impactstory.org/leouieda'),
     ('<i class="fa fa-rss fa-lg" title="RSS feed for papers and talks"></i>', '/rss.xml'),
 ]
 

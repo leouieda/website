@@ -22,54 +22,43 @@
     <div class="row">
     {% for article in row %}
         <div class="col-md-3 col-sm-3">
-        <div class="article-box">
+        <div class="thumbnail">
 
-        {% if article.thumbnail %}
-            <img class="img-responsive center-block" src="{{SITEURL}}/{{article.thumbnail}}"></img>
-        {% endif %}
-
-        <a href="{{SITEURL}}/{{article.url}}"><h3>
-        {% if "OA" in article.tags %}
-            <i class="fa fa-unlock-alt" title="Open-Access"></i>
-        {% endif %}
-        {% if article.type %}
-            {% if article.type == "oral" %}
-                <i class="fa fa-comments-o" title="Oral presentation"></i>
-            {% elif article.type == "poster" %}
-                <i class="fa fa-picture-o" title="Poster presentation"></i>
-            {% elif article.type == "short course" %}
-                <i class="fa fa-info-circle" title="Short course"></i>
-            {% elif article.type == "university course" %}
-                <i class="fa fa-graduation-cap" title="University course"></i>
+            {% if article.thumbnail %}
+                <img  src="{{SITEURL}}/{{article.thumbnail}}"></img>
             {% endif %}
-        {% endif %}
-        {{article.title}}</h3></a>
 
-        <p>
-        {% if category != "software" %}
-            {% if article.date %}
-                ({{article.date|strftime('%Y')}})
-            {% endif %}
-            {% if category != "teaching" %}
-                {% if article.author %}
-                    {{article.author}}.
+            <div class="caption">
+
+                <a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a>
+
+                {% if category != "software" %}
+                    {% if article.date %}
+                        ({{article.date|strftime('%Y')}})
+                    {% endif %}
                 {% endif %}
-            {% endif %}
-        {% endif %}
-        {% if article.journal %}
-            {{article.journal}}.
-        {% endif %}
-        {% if article.event %}
-            {{article.event}}.
-        {% endif %}
-        {% if article.institution %}
-            {{article.institution}}.
-        {% endif %}
-        {% if "review" in article.tags %}
-            <span class="label label-warning">In review</span>
-        {% endif %}
-        </p>
 
+                {% if "OA" in article.tags %}
+                    <i class="fa fa-unlock-alt" title="Open-Access"></i>
+                {% endif %}
+
+                {% if article.type %}
+                    {% if article.type == "oral" %}
+                        <i class="fa fa-comments-o" title="Oral presentation"></i>
+                    {% elif article.type == "poster" %}
+                        <i class="fa fa-picture-o" title="Poster presentation"></i>
+                    {% elif article.type == "short course" %}
+                        <i class="fa fa-info-circle" title="Short course"></i>
+                    {% elif article.type == "university course" %}
+                        <i class="fa fa-graduation-cap" title="University course"></i>
+                    {% endif %}
+                {% endif %}
+
+                {% if "review" in article.tags %}
+                    <span class="label label-warning">In review</span>
+                {% endif %}
+
+            </div>
         </div>
         </div>
     {% endfor %}

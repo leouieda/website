@@ -1,47 +1,50 @@
 title: About
 date: 25/01/2014
-slub: index
-save_as: index.html
-banner: images/torres-del-paine.jpg
+slub: about
+
+<h1>About</h1>
 
 <div class="row">
 
 <div class="col-md-6">
 
-<h2>About</h2>
-
-<img src="images/leo-uieda-portrait.jpg" class="img-circle portrait"
-     title="Portrait of myself">
+<img src="images/leo-uieda-portrait.jpg"
+     class="img-circle"
+     title="Portrait of myself"
+     style="width: 30%; margin-right: 20px; margin-top: 15px; margin-bottom: 5px; float: left;">
 
 <p>
-I'm Leonardo Uieda,
-a geophysicist working mainly on inverse problems in gravity and magnetics.
+My name is Leonardo Uieda.
+I'm a geophysicist working mainly on inverse problems in gravity and magnetics.
 </p>
 
 <p>
-Starting February 2014,
-I'm working as Professor of Geophysics at the
+I'm a Professor of Geophysics at the
 <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro</a>,
-Brazil.
+Brazil,
+since February 2014.
 I teach the "Intro to Geophysics" courses to Geology students,
 <a href="teaching/">among others</a>.
-A typical day at work usually involves a lot of
-<a href="https://github.com/leouieda">open-source software development</a>,
-for both research and teaching.
-At the moment I'm finishing my PhD
-at the <a href="http://www.on.br">Observatório Nacional</a>.
+My research and teaching work usually involves a lot of
+<a href="https://github.com/leouieda">open-source software development</a>.
 </p>
 
 <p>
-In the spirit of open-science,
+In the spirit of
+<a href="https://en.wikipedia.org/wiki/Open_science">open-science</a>,
 I share all of my research and
 teaching material
 (code, data, slides, etc)
 online under permissive licenses.
-You'll find links to source code, images, lessons, etc, scattered around this
+You'll find links to source code, images, lessons, etc, around this
 website
 (look for the <i class="fa fa-github-square fa-fw"></i> icon).
 </p>
+
+</div>
+
+
+<div class="col-md-6">
 
 <p>
 I am a member of the
@@ -52,38 +55,10 @@ We try to provide links to source code and supplementary material to our
 papers (most new papers have these).
 </p>
 
-</div>
-
-<div class="col-md-6">
-
-<h2>Contact</h2>
-
-
-<ul class="fa-ul contact">
-
-<li><i class="fa-li fa fa-envelope fa-fw"></i>
-<a href="mailto:leouieda@gmail.com">leouieda@gmail.com</a>
-</li>
-
-<li><i class="fa-li fa fa-twitter fa-fw"></i>
-<a href="https://twitter.com/leouieda">@leouieda</a>
-</li>
-
-<li><i class="fa-li fa fa-google-plus fa-fw"></i>
-<a href="https://plus.google.com/u/0/+LeonardoUieda">+Leonardo Uieda</a>
-</li>
-
-<li><i class="fa-li fa fa-map-marker fa-fw"></i>
-<a href="https://goo.gl/maps/7jGIq">
-UERJ, Rua São Francisco Xavier, 524 Sala 2019A/2031A.
-</br>
-20550-900, Rio de Janeiro - RJ - Brazil</a>
-</li>
-
-</ul>
-
-You can also follow me and find out more about my research, code, articles, and data
-in the following sites:
+<p>
+You can also follow me and find out more about my research, code, articles, and
+data in the following sites (yes, I'm a bit of an early adopter):
+</p>
 
 <div class="row">
 <div class="col-md-2"></div>
@@ -139,10 +114,15 @@ in the following sites:
 <div class="col-md-2"></div>
 </div>
 
+<p>
 My <a href="http://orcid.org">ORCID</a> number is
 <a href="http://orcid.org/0000-0001-6123-9515">0000-0001-6123-9515</a>.
+</p>
+
+<p>
 Para os brasileiros, aqui está o link para meu
 <a href="http://lattes.cnpq.br/8939551682050504">Currículo Lattes</a>.
+</p>
 
 </div>
 </div><!-- row -->

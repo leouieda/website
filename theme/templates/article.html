@@ -82,102 +82,102 @@
         {% endif %}
 
         {% if article.repository %}
-        <li class="list-group-item">
-        <i class="fa fa-github-square fa-fw" title="Github repository"></i>
-        Repository (code + data): <a href="https://github.com/{{article.repository}}">{{article.repository}}</a>
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-github-square fa-fw" title="Github repository"></i>
+            Source code and data: <a href="https://github.com/{{article.repository}}">{{article.repository}}</a>
+            </li>
         {% endif %}
 
         {% if article.slides %}
-        <li class="list-group-item">
-        <i class="fa fa-desktop fa-fw" title="Download slides"></i>
-        Slides: <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-desktop fa-fw" title="Download slides"></i>
+            Slides: <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
+            </li>
         {% endif %}
 
         {% if article.poster %}
-        <li class="list-group-item">
-        <i class="fa fa-picture-o fa-fw" title="Download poster"></i>
-        Poster: <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-picture-o fa-fw" title="Download poster"></i>
+            Poster: <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
+            </li>
         {% endif %}
 
         {% if article.event %}
-        <li class="list-group-item">
-        <i class="fa fa-users fa-fw" title="Event name"></i>
-        {{article.event}}
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-users fa-fw" title="Event name"></i>
+            {{article.event}}
+            </li>
         {% endif %}
 
         {% if article.institution %}
-        <li class="list-group-item">
-        <i class="fa fa-university fa-fw" title="Institution name"></i>
-        {{article.institution}}
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-university fa-fw" title="Institution name"></i>
+            {{article.institution}}
+            </li>
         {% endif %}
 
         {% if article.journal %}
-        <li class="list-group-item">
-        <i class="fa fa-book fa-fw" title="Journal name"></i>
-        {{article.journal}}
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-book fa-fw" title="Journal name"></i>
+            {{article.journal}}
+            </li>
         {% endif %}
 
         {% if article.doi %}
-        <li class="list-group-item">
-        <i class="fa fa-external-link fa-fw" title="DOI link to publisher"></i>
-        doi: <a href="http://dx.doi.org/{{article.doi}}">{{article.doi}}</a>
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+            doi: <a href="http://dx.doi.org/{{article.doi}}">{{article.doi}}</a>
+            </li>
         {% endif %}
 
         {% if article.supplement %}
-        <li class="list-group-item">
-        <i class="fa fa-paperclip fa-fw" title="Supplementary material"></i>
-        Supplement:
-        <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-paperclip fa-fw" title="Supplementary material"></i>
+            Supplement:
+            <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
+            </li>
         {% endif %}
 
         {% if article.pdf %}
-        <li class="list-group-item">
-        <i class="fa fa-file-pdf-o fa-fw" title="Paper PDF"></i>
-        <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-file-pdf-o fa-fw" title="Paper PDF"></i>
+            <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
+            </li>
         {% endif %}
 
         {% if article.website %}
-        <li class="list-group-item">
-        <i class="fa fa-home fa-fw" title="Website"></i>
-        <a href="{{article.website}}">{{article.website}}</a>
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-home fa-fw" title="Website"></i>
+            <a href="{{article.website}}">{{article.website}}</a>
+            </li>
         {% endif %}
 
         {% if article.language %}
-        <li class="list-group-item">
-        <i class="fa fa-code fa-fw" title="Programming language"></i>
-        Programming language:
-        {{article.language}}
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-code fa-fw" title="Programming language"></i>
+            Programming language:
+            {{article.language}}
+            </li>
         {% endif %}
 
         {% if article.license %}
-        <li class="list-group-item">
-        <i class="fa fa-file-text fa-fw" title="Open-source license"></i>
-        {{article.license}}
-        License
-        </li>
+            <li class="list-group-item">
+            <i class="fa fa-file-text fa-fw" title="Open-source license"></i>
+            {{article.license}}
+            License
+            </li>
         {% endif %}
     </ul>
 
     {% if article.doi %}
-    <h2>Article Level Metrics</h2>
-    <div data-badge-details="right" data-badge-type="medium-donut"
-        data-doi="{{article.doi}}" class="altmetric-embed"></div>
+        <h2>Article Level Metrics</h2>
+        <div data-badge-details="right" data-badge-type="medium-donut"
+            data-doi="{{article.doi}}" class="altmetric-embed"></div>
     {% endif %}
 
     {% if article.citation %}
-    <h2>Citation</h2>
-    <p>{{article.citation}}</p>
+        <h2>Citation</h2>
+        <p>{{article.citation}}</p>
     {% endif %}
 
     </div>

@@ -1,4 +1,64 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+{% if BANNER %}
+<div class="container-fluid">
+    <div class="banner" style="background-image: url({{BANNER}});">
+        <div class="container">
+            <div class="jumbotron site-description">
+                <p style="font-weight: 400">
+                {{ DESCRIPTION }}
+                </p>
+                <a role="button" class="btn btn-xs btn-primary pull-right"
+                   href="/about.html">More about me</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+
+{% for row in categories|batch(2) %}
+    <div class="row">
+    {% for category, articles in row %}
+        <div class="col-md-6">
+            <h1>{{ category|capitalize }}</h1>
+            <div class="row">
+                {% for article in articles[0:2] %}
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="thumbnail">
+
+                        {% if article.thumbnail %}
+                            <img  src="{{SITEURL}}/{{article.thumbnail}}"></img>
+                        {% endif %}
+
+                        <div class="caption">
+                            <a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a>
+                            {% if category != "software" %}
+                                {% if article.date %}
+                                    ({{article.date|strftime('%Y')}})
+                                {% endif %}
+                            {% endif %}
+                            {% if "OA" in article.tags %}
+                                <i class="fa fa-unlock-alt" title="Open-Access"></i>
+                            {% endif %}
+                        </div>
+                    </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <p>
+            <a class="btn btn-primary btn-xs" role="button" href="/{{category}}">See the full list ></a>
+            </p>
+        </div>
+    {% endfor %}
+    </div>
+{% endfor %}
+
+</div>
+
+{% endif %}
+
 {% endblock content %}

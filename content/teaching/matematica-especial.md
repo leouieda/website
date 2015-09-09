@@ -6,6 +6,7 @@ type: university course
 repository: leouieda/matematica-especial
 authors: Leonardo Uieda
 website: http://www.leouieda.com/matematica-especial
+thumbnail: images/thumb/matematica-especial.png
 
 ## Sobre
 

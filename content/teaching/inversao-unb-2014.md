@@ -6,6 +6,7 @@ institution: UNB
 type: short course
 repository: pinga-lab/inversao-unb-2014
 authors: Leonardo Uieda
+thumbnail: images/thumb/inversao-unb-2014.png
 
 ## About
 
