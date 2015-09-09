@@ -84,6 +84,8 @@ MENUITEMS = [
     ('Teaching', '/teaching'),
     ('Software', '/software'),
     ('Contact', '/contact.html'),
+    ('<i class="fa fa-github fa-lg" title="Github"></i>',
+     'https://github.com/leouieda'),
     ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
      'https://twitter.com/leouieda'),
     ('<i class="fa fa-rss fa-lg" title="RSS feed for papers and talks"></i>', '/rss.xml'),
