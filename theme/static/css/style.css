@@ -102,3 +102,8 @@ img {
     margin-bottom: 30px;
     margin-top: 10px;
 }
+
+.summary-box {
+    padding-left: 45px;
+    padding-right: 45px;
+}

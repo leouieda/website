@@ -23,7 +23,7 @@
 {% for row in categories|batch(2) %}
     <div class="row">
     {% for category, articles in row %}
-        <div class="col-md-6">
+        <div class="col-md-6 summary-box">
             <h1>{{ category|capitalize }}</h1>
             <div class="row">
                 {% for article in articles[0:2] %}
