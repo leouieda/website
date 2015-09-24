@@ -154,6 +154,19 @@ Para os brasileiros, aqui está o link para meu
 <li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis: Inversão 3D de campos pontenciais em coordenadas esféricas
 </li>
+<li><i class="fa-li fa fa-desktop fa-fw"></i> Yearly seminars:
+</li>
+    <ul class="fa-ul">
+        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2015:
+            <a href="https://github.com/leouieda/seminario-on-2015">leouieda/seminario-on-2015</a>
+        </li>
+        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2014:
+            <a href="https://github.com/leouieda/seminario-on-2014">leouieda/seminario-on-2014</a>
+        </li>
+        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2013 (qualification exam):
+            <a href="https://github.com/leouieda/qualify">leouieda/qualify</a>
+        </li>
+    </ul>
 </ul>
 
 </div>
