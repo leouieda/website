@@ -252,6 +252,13 @@ Para os brasileiros, aqui está o link para meu
 <li><i class="fa-li fa fa-github-square fa-fw"></i>
     <a href="https://github.com/leouieda/barchelor-thesis">leouieda/barchelor-thesis</a>
 </li>
+<li><i class="fa-li fa fa-desktop fa-fw"></i> Presentations:
+</li>
+    <ul class="fa-ul">
+        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2008:
+            <a href="https://github.com/leouieda/simposio-iag-2008">leouieda/simposio-iag-2008</a>
+        </li>
+    </ul>
 </ul>
 
 </div>
