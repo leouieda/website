@@ -166,6 +166,9 @@ Para os brasileiros, aqui está o link para meu
         <li><i class="fa-li fa fa-github-square fa-fw"></i> 2013 (qualification exam):
             <a href="https://github.com/leouieda/qualify">leouieda/qualify</a>
         </li>
+        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2012:
+            <a href="https://github.com/leouieda/seminario-on-2012">leouieda/seminario-on-2012</a>
+        </li>
     </ul>
 </ul>
 
@@ -200,6 +203,17 @@ Para os brasileiros, aqui está o link para meu
 <li><i class="fa-li fa fa-github-square fa-fw"></i>
     <a href="https://github.com/pinga-lab/paper-planting-densities">pinga-lab/paper-planting-densities</a>
 </li>
+<li><i class="fa-li fa fa-desktop fa-fw"></i> Yearly seminars:
+</li>
+    <ul class="fa-ul">
+        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2011:
+            <a href="https://github.com/leouieda/seminario-on-2011">leouieda/seminario-on-2011</a>
+        </li>
+        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2010:
+            <a href="https://github.com/leouieda/seminario-on-2010">leouieda/seminario-on-2010</a>
+        </li>
+    </ul>
+</ul>
 </ul>
 
 </div>
