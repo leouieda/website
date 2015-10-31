@@ -5,22 +5,18 @@
 {% if BANNER %}
 <div class="container-fluid">
     <div class="banner" style="background-image: url({{BANNER}});">
-        <div class="container">
-            <div class="alert site-description alert-dismissible" role="alert">
-                <button type="button" class="pull-right close" data-dismiss="alert"
-                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <p class="lead" style="font-weight: 400">
-                {{ DESCRIPTION }}
-                </p>
-                <a role="button" class="btn btn-xs btn-primary pull-right"
-                   href="/about.html">More about me</a>
-            </div>
-        </div>
     </div>
 </div>
 
 <div class="container">
 
+<div class="alert site-description" role="alert">
+    <p class="lead" style="font-weight: 400">
+    {{ DESCRIPTION }}
+    </p>
+    <a role="button" class="btn btn-xs btn-primary pull-right"
+       href="/about.html">More about me</a>
+</div>
 
 {% for row in categories|batch(2) %}
     <div class="row">
@@ -52,7 +48,8 @@
                 {% endfor %}
             </div>
             <p>
-            <a class="btn btn-primary btn-xs" role="button" href="/{{category}}">See the full list ></a>
+            <a class="btn btn-primary btn-xs" role="button"
+                href="/{{category}}">See the full list</a>
             </p>
         </div>
     {% endfor %}
