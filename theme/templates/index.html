@@ -22,7 +22,7 @@
     <div class="row">
     {% for category, articles in row %}
         <div class="col-md-6 summary-box">
-            <h1>{{ category|capitalize }}</h1>
+            <h1><a class="category-link" href="/{{category}}">{{ category|capitalize }}  »</a></h1>
             <div class="row">
                 {% for article in articles[0:2] %}
                     <div class="col-md-6 col-sm-6">
@@ -34,11 +34,11 @@
 
                         <div class="caption">
                             <a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a>
-                            {% if category != "software" %}
-                                {% if article.date %}
-                                    ({{article.date|strftime('%Y')}})
-                                {% endif %}
-                            {% endif %}
+                            <!--{% if category != "software" %}-->
+                                <!--{% if article.date %}-->
+                                    <!--({{article.date|strftime('%Y')}})-->
+                                <!--{% endif %}-->
+                            <!--{% endif %}-->
                             {% if "OA" in article.tags %}
                                 <i class="fa fa-unlock-alt" title="Open-Access"></i>
                             {% endif %}
@@ -47,10 +47,6 @@
                     </div>
                 {% endfor %}
             </div>
-            <p>
-            <a class="btn btn-primary btn-xs" role="button"
-                href="/{{category}}">See the full list</a>
-            </p>
         </div>
     {% endfor %}
     </div>
