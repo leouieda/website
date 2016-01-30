@@ -10,10 +10,10 @@ SITEKEYWORDS = u'geophysics, earth, earthscience, science, foss, scientific soft
 SITEURL = ''
 REPOURL = 'https://github.com/leouieda/website'
 DESCRIPTION = """
-<strong>Welcome!</strong> This website is about my professional (academic)
-life.  I'm a professor of geophysics at UERJ, Brazil, working mainly on gravity
-and magnetics, inverse problems, and free software.  I really enjoy teaching
-and believe that science should be open.
+<strong>Welcome!</strong> This website is about my academic life.
+I'm interested in gravity and magnetic methods, inverse problems,
+and free software.
+I really enjoy teaching and believe that science should be open.
 """
 BANNER = "images/torres-del-paine.jpg"
 BUILD_TIME = datetime.date.today().strftime(format='%d-%b-%Y')
