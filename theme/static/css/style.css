@@ -13,6 +13,10 @@ h3 {
     margin-bottom: 40px;
 }
 
+.category-link {
+    margin-top: 30px;
+}
+
 /* The icon list in the about page */
 .social {
     list-style-type: none;
