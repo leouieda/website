@@ -117,8 +117,7 @@ CATEGORY_HEADERS = [
     These are some the classes I've taught or am teaching at the moment.
     Most have Github repositories and links to download and view all content.
     There is a mixture of semester long university courses
-    (<i class="fa fa-graduation-cap"></i>) and short courses
-    (<i class="fa fa-info-circle"></i>).
+    (<i class="fa fa-graduation-cap"></i>) and short courses.
     </p>
     """],
     ['talks', """
