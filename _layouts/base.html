@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{ language }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block meta %}
+        <meta name="author" content="{{ site.author }}"/>
+        {% if SITEKEYWORDS %}
+            <meta name="keywords" content="{{ site.keywords }}"/>
+        {% endif %}
+    {% endblock %}
+    <title>{% block title %}{{ site.name }}{% endblock title %}</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Include the Source Sans Pro Google fonts CSS -->
+    <link rel="stylesheet" href="/css/sourcesanspro/sourcesanspro.css">
+    <!--Include the Font Awesome and Academicons CSS-->
+    <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+{% endblock head %}
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+         data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+         aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">{{ site.title }}</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            {% for url, title in site.menulinks %}
+                <li><a href="{{ url }}">{{ title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div><!--/.nav-collapse -->
+</div>
+</nav>
+
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    {% include 'footer.html' %}
+</footer>
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- ================================================== -->
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+</body>
+</html>

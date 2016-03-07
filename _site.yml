@@ -1,0 +1,35 @@
+name: Leonardo Uieda
+
+title: "LEONARDO <strong>UIEDA</strong>"
+
+author: Leonardo Uieda
+
+keep_files: [ .nojekyll ]
+
+language: en
+
+keywords: ['science', 'geoscience', 'geophysics', 'software', 'open-source']
+
+menulinks: [
+    ['/about.html', 'About'],
+    #['/papers', 'Papers'],
+    #['/talks', 'Talks'],
+    #['/teaching', 'Teaching'],
+    ['/software.html', 'Software'],
+    ['/contact.html', 'Contact'],
+    ['https://github.com/leouieda',
+     '<i class="fa fa-github fa-lg" title="Github"></i>'],
+    ['https://twitter.com/leouieda',
+     '<i class="fa fa-twitter fa-lg" title="Twitter"></i>'],
+    ]
+
+reflinks:
+    leouieda:
+        url: http://www.leouieda.com
+        title: Leonardo Uieda
+    content_license:
+        url: http://creativecommons.org/licenses/by/4.0/
+        title: CC-BY License
+    site_repo:
+        url: https://github.com/leouieda/website
+        title: leouieda/website

@@ -1,0 +1,12 @@
+body, h1, h2 {
+    font-family: 'PT Serif', serif;
+}
+body {
+    font-size: 12pt;
+}
+h1 {
+    font-size: 24pt;
+}
+h2 {
+    font-size: 18pt;
+}

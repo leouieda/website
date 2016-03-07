@@ -1,0 +1,120 @@
+body {
+    font-size: 12pt;
+}
+h1 {
+    margin-bottom: 21px;
+}
+h3 {
+    font-size: 16pt;
+    margin-bottom: 15px;
+}
+
+.category-header {
+    margin-bottom: 40px;
+}
+
+.category-link {
+    margin-top: 30px;
+}
+
+/* The icon list in the about page */
+.social {
+    list-style-type: none;
+    margin-top: 10.5px;
+    padding: 0px;
+}
+
+.social > li {
+    display: inline;
+    margin-right: 3px;
+}
+
+.social > li > a{
+    color: #333;
+}
+
+.navbar-inverse {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.fa-ul {
+    margin-top: 10px;
+}
+
+.fa-ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #CCC;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #6F6F6F;
+ }
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item > i {
+    margin-right: 5px;
+}
+
+img.paper-thumbnail {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p.paper-date-author {
+    margin-bottom: 20px;
+    font-size: 14pt;
+    font-style: italic;
+}
+
+.thumbnail {
+    border-radius: 4px;
+}
+
+img {
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.altmetric-embed img {
+    width: auto; /* Prevent img width=100% in Chrome (makes it stretched) */
+}
+
+.site-description {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    line-height: 45px;
+    font-size: 18pt;
+}
+
+.banner-area {
+    background-color: #EEE;
+    margin-bottom: 30px;
+}
+
+.banner {
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5) inset;
+    background-position: left top;
+    margin: 0px;
+}
+
+.summary-box {
+    padding-left: 45px;
+    padding-right: 45px;
+}
