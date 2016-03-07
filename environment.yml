@@ -1,0 +1,6 @@
+name: urubu
+dependencies:
+    - python=3.5
+    - pip
+    - pip:
+        - urubu==1.2.0
