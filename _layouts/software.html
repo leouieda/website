@@ -1,0 +1,31 @@
+{% extends "publication.html" %}
+{% from "utils.html" import fa %}
+
+{% block left %}
+
+    {% if this.website %}
+        <li class="list-group-item">
+            {{ fa("home", "fa-fw", "Website") }}
+            <a href="{{this.website}}">{{this.website}}</a>
+        </li>
+    {% endif %}
+
+    {% if this.language %}
+        <li class="list-group-item">
+            {{ fa("code", "fa-fw", "Programming language") }}
+            Programming language:
+            {{this.language}}
+        </li>
+    {% endif %}
+
+    {% if this.license %}
+        <li class="list-group-item">
+            {{ fa("file-text", "fa-fw", "Open-source license") }}
+            {{this.license}}
+            License
+        </li>
+    {% endif %}
+
+    {{ super() }}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{# Utility functions for the templates #}
+
+{% macro card(page, date=true) %}
+    <div class="thumbnail">
+        <img src="/images/thumb/{{page.thumbnail}}">
+        <div class="caption">
+            <a href="{{ page.url }}">{{ page.title }}</a>
+            {% if date %}
+                ({{ page.date.year }})
+            {% endif %}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro fa(name, class='', title='') %}
+    <i class="fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
+{% endmacro %}

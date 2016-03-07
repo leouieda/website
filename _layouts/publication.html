@@ -1,0 +1,55 @@
+{% extends "page.html" %}
+{% from "utils.html" import fa %}
+
+{% block content %}
+
+{% if this.author %}
+    <p class="pub-date-author">
+        by {{ this.author }}
+    {% if this.date %}
+        ({{ this.date.year }})
+    {% endif %}
+    </p>
+{% endif %}
+
+<div class="row">
+    <div class="col-md-4">
+
+        <img class="pub-thumbnail"
+             src="/images/thumb/{{this.thumbnail}}"></img>
+
+        <h2>Info</h2>
+
+        <ul class="list-group">
+            {% block left %}
+                {% if this.repository %}
+                    <li class="list-group-item">
+                        {{ fa("github-square", "fa-fw", "Github repository") }}
+                        Source code:
+                        <a href="https://github.com/{{this.repository}}">{{
+                            this.repository}}</a>
+                    </li>
+                {% endif %}
+                {% if this.doi %}
+                    <li class="list-group-item">
+                        {{ fa("external-link", "fa-fw", "DOI link to publisher") }}
+                        doi: <a href="http://dx.doi.org/{{this.doi}}">{{
+                            this.doi}}</a>
+                    </li>
+                {% endif %}
+            {% endblock %}
+        </ul>
+        {% if this.citation %}
+            <h2>Citation</h2>
+            <p>{{this.citation}}</p>
+        {% endif %}
+    </div>
+
+    <div class="col-md-8">
+        {% block right %}
+            {{ this.body }}
+        {% endblock %}
+    </div>
+</div>
+
+{% endblock %}

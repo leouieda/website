@@ -15,7 +15,7 @@ menulinks: [
     #['/papers', 'Papers'],
     #['/talks', 'Talks'],
     #['/teaching', 'Teaching'],
-    ['/software.html', 'Software'],
+    ['/software', 'Software'],
     ['/contact.html', 'Contact'],
     ['https://github.com/leouieda',
      '<i class="fa fa-github fa-lg" title="Github"></i>'],
