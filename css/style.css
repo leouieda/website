@@ -49,11 +49,21 @@ h3 {
 
 footer {
     width: 100%;
-    margin-top: 30px;
-    border-top: 1px solid #CCC;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #6F6F6F;
+    margin-top: 100px;
+    background-color: #2780e3;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: #afdddd;
+ }
+
+footer a {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+ }
+footer a:hover {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
  }
 
 .list-group-item {
@@ -93,8 +103,8 @@ img {
 }
 
 .site-description {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 90px;
     padding-left: 45px;
     padding-right: 45px;
     line-height: 45px;
@@ -110,7 +120,7 @@ img {
 .banner {
     background-size: cover;
     width: 100%;
-    min-height: 400px;
+    min-height: 450px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5) inset;
     background-position: left top;
     margin: 0px;
