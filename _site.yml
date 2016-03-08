@@ -8,7 +8,7 @@ keep_files: [ .nojekyll ]
 
 language: en
 
-keywords: ['science', 'geoscience', 'geophysics', 'software', 'open-source']
+keywords: 'science, geoscience, geophysics, software, open-source'
 
 banner: '/images/torres-del-paine.jpg'
 
