@@ -1,7 +1,30 @@
 {% extends "base.html" %}
 
+{% from "utils.html" import recent_cards %}
+
 {% block body %}
 
-    {{ this.body }}
+{{ this.body }}
+
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-6 summary-box">-->
+            <!--{{ recent_cards(site.reflinks['/software'], date=false) }}-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="container">
+    {% set columns = 2 %}
+    {% for row in this.content|batch(columns) %}
+        <div class="row">
+            {% for category in row %}
+                <div class="col-md-{{12//columns}} summary-box">
+                    {{ recent_cards(category, number=2, date=false) }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
 
 {% endblock %}

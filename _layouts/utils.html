@@ -15,3 +15,15 @@
 {% macro fa(name, class='', title='') %}
     <i class="fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
 {% endmacro %}
+
+{% macro recent_cards(category, number=2, date=true) %}
+    <h1><a class="category-link"
+           href="{{ category.url }}">{{ category.title }}  »</a></h1>
+    <div class="row">
+        {% for article in category.content[0:number] %}
+            <div class="col-md-{{12//number}} col-sm-{{12//number}}">
+                {{ card(article, date=date) }}
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}
