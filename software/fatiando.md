@@ -7,10 +7,9 @@ repository: fatiando/fatiando
 website: http://www.fatiando.org
 doi: 10.5281/zenodo.16205
 thumbnail: fatiando.png
+citation: Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2013), Modeling the Earth with Fatiando a Terra, Proceedings of the 12th Python in Science Conference, pp. 91-98.
 layout: software
 ---
-
-<img src="/images/fatiando-banner.png" alt="Fatiando a Terra Logo"></img>
 
 # About
 
@@ -44,3 +43,14 @@ src="https://www.youtube.com/embed/Ec38h1oB8cc" frameborder="0"
 allowfullscreen></iframe>
 </div>
 
+# Bibtex
+
+    @InProceedings{ uieda-proc-scipy-2013,
+      author    = { Leonardo Uieda and Vanderlei C. Oliveira Jr and Val\'eria C. F.
+    Barbosa },
+      title     = { Modeling the Earth with Fatiando a Terra },
+      booktitle = { Proceedings of the 12th Python in Science Conference },
+      pages     = { 96 - 103 },
+      year      = { 2013 },
+      editor    = { St\'efan van der Walt and Jarrod Millman and Katy Huff }
+    }

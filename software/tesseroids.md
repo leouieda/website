@@ -6,8 +6,8 @@ license: BSD
 repository: leouieda/tesseroids
 website: http://tesseroids.leouieda.com
 doi: 10.5281/zenodo.16033
-citation: Uieda, L., E. P. Bomfim, C. Braitenberg, and E. Molina (2011), Optimal forward calculation method of the Marussi tensor due to a geologic structure at GOCE height, Proceedings of the 4th International GOCE User Workshop.
 thumbnail: tesseroids.png
+citation: Uieda, L., E. P. Bomfim, C. Braitenberg, and E. Molina (2011), Optimal forward calculation method of the Marussi tensor due to a geologic structure at GOCE height, Proceedings of the 4th International GOCE User Workshop.
 layout: software
 ---
 
@@ -30,8 +30,21 @@ rectangular prisms, both in Cartesian and spherical coordinates.
 </div>
 <div class="col-md-6">
 
-<img src="{filename}/images/tesseroid.png"
- title="A tesseroid in a geocentric coordinate system."></img>
+<img src="/images/tesseroid.png"
+     title="A tesseroid in a geocentric coordinate system."></img>
 
 </div>
 </div>
+
+# Bibtex
+
+    @inproceedings{,
+        author = {Uieda, Leonardo and Bomfim, Everton P. and Braitenberg,
+                  Carla and Molina, Eder},
+        title = {Optimal forward calculation method of the Marussi tensor
+                 due to a geologic structure at GOCE height},
+        booktitle = {Proceedings of the 4th International GOCE User
+                     Workshop},
+        year = {2011},
+    }
+
