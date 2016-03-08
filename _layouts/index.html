@@ -1,46 +1,18 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
+{% from "utils.html" import card, fa %}
 
-{% from "utils.html" import card %}
+{% block content %}
 
-{% macro recent_cards(category, number=2, date=true) %}
-    <h2 class="category-header">
-        <a href="{{ category.url }}">{{ category.title }}  »</a>
-    </h2>
+{{ super() }}
+
+{% for row in this.content|batch(4) %}
     <div class="row">
-        {% for article in category.content[0:number] %}
-            <div class="col-md-{{12//number}} col-sm-{{12//number}}
-                        col-xs-{{12//number}}">
-                {{ card(article, date=date) }}
+        {% for article in row %}
+            <div class="col-md-3 col-sm-3">
+                {{ card(article, date=false) }}
             </div>
         {% endfor %}
     </div>
-{% endmacro %}
-
-
-{% block body %}
-
-{{ this.body }}
-
-<!--<div class="container">-->
-    <!--<div class="row">-->
-        <!--<div class="col-md-6 summary-box">-->
-            <!--{{ recent_cards(site.reflinks['/software'], date=false) }}-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
-<div class="container">
-    <h1 class="text-center">Latest outputs</h1>
-    {% set columns = 2 %}
-    {% for row in this.content|batch(columns) %}
-        <div class="row">
-            {% for category in row %}
-                <div class="col-md-{{12//columns}} summary-box">
-                    {{ recent_cards(category, number=2, date=false) }}
-                </div>
-            {% endfor %}
-        </div>
-    {% endfor %}
-</div>
+{% endfor %}
 
 {% endblock %}

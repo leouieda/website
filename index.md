@@ -1,6 +1,6 @@
 ---
 title: Leonardo Uieda
-layout: index
+layout: home
 content:
     - teaching
     - software

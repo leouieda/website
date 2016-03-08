@@ -1,6 +1,6 @@
 ---
 title: Teaching
-layout: publication-list
+layout: teaching
 order: date
 reverse: true
 ---

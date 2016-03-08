@@ -1,6 +1,6 @@
 ---
 title: Software projects
-layout: publication-list
+layout: index
 content:
     - fatiando
     - tesseroids
