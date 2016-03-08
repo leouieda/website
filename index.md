@@ -2,6 +2,7 @@
 title: Leonardo Uieda
 layout: index
 content:
+    - teaching
     - software
 ---
 

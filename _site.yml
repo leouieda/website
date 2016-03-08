@@ -16,7 +16,7 @@ menulinks: [
     ['/about.html', 'About'],
     #['/papers', 'Papers'],
     #['/talks', 'Talks'],
-    #['/teaching', 'Teaching'],
+    ['/teaching', 'Teaching'],
     ['/software', 'Software'],
     ['/contact.html', 'Contact'],
     ['https://github.com/leouieda',
