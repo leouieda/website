@@ -3,13 +3,6 @@
 
 {% block left %}
 
-    {% if this.website %}
-        <li class="list-group-item">
-            {{ fa("home", "fa-fw", "Website") }}
-            <a href="{{this.website}}">{{this.website}}</a>
-        </li>
-    {% endif %}
-
     {% if this.language %}
         <li class="list-group-item">
             {{ fa("code", "fa-fw", "Programming language") }}

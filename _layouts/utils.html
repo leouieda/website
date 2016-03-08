@@ -2,7 +2,9 @@
 
 {% macro card(page, date=true) %}
     <div class="thumbnail">
-        <img src="/images/thumb/{{page.thumbnail}}">
+        {% if page.thumbnail %}
+            <img src="/images/thumb/{{page.thumbnail}}">
+        {%  endif %}
         <div class="caption">
             <a href="{{ page.url }}">{{ page.title }}</a>
             {% if date %}

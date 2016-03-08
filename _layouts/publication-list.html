@@ -1,0 +1,19 @@
+{% extends "page.html" %}
+
+{% from "utils.html" import card, fa %}
+
+{% block content %}
+
+{{ super() }}
+
+{% for row in this.content|batch(4) %}
+    <div class="row">
+        {% for article in row %}
+            <div class="col-md-3 col-sm-3">
+                {{ card(article, date=false) }}
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+
+{% endblock %}

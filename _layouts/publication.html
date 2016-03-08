@@ -15,8 +15,10 @@
 <div class="row">
     <div class="col-md-4">
 
-        <img class="pub-thumbnail"
-             src="/images/thumb/{{this.thumbnail}}"></img>
+        {% if this.thumbnail %}
+            <img class="pub-thumbnail"
+                 src="/images/thumb/{{this.thumbnail}}"></img>
+        {% endif %}
 
         <h2>Info</h2>
 
@@ -35,6 +37,12 @@
                         {{ fa("external-link", "fa-fw", "DOI link to publisher") }}
                         doi: <a href="http://dx.doi.org/{{this.doi}}">{{
                             this.doi}}</a>
+                    </li>
+                {% endif %}
+                {% if this.website %}
+                    <li class="list-group-item">
+                        {{ fa("home", "fa-fw", "Website") }}
+                        <a href="{{this.website}}">{{this.website}}</a>
                     </li>
                 {% endif %}
             {% endblock %}
