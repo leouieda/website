@@ -1,0 +1,28 @@
+language: python
+
+sudo: false
+
+env:
+  global: # For deploying the site to Github Pages
+    - secure: EG9V+ITvORiIk68ZziZPqPibUxyf8pIMJD8vbWl7adJ/SuwZ/L0kEAIz30YTgtihrbanrk+0tDfm0s7CRJofnjeOjNT9144bYQENob9rMkZbF9n/jd6O5gIJ9cWBzUh7oNRB9noee3dBNeikD6qWkx73PTWdM1c5WX7pOuHeCfs=
+  matrix:
+    - PYTHON=3.5
+
+before_install:
+  # Get Miniconda from Continuum
+  - wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+  - chmod +x miniconda.sh
+  - ./miniconda.sh -b
+  - export PATH=/home/travis/miniconda3/bin:$PATH
+  # Update conda itself
+  - conda update --yes conda
+
+install:
+  - conda env create
+  - source activate urubu
+
+script:
+  - make
+
+after_success:
+  - bash ci-tools/deploy-gh-pages.sh
