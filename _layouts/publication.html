@@ -1,5 +1,5 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa %}
+{% from "utils.html" import fa, ai %}
 
 {% block content %}
 
@@ -42,7 +42,7 @@
                 {% if this.journal %}
                     <li class="list-group-item">
                         {{ fa("book", "fa-fw", "Journal name") }}
-                        {{this.journal}}
+                        Journal: {{this.journal}}
                     </li>
                 {% endif %}
                 {% if this.presentation %}

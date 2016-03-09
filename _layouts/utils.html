@@ -1,6 +1,14 @@
 {# Utility functions for the templates #}
 
-{% macro card(page, date=true) %}
+{% macro fa(name, class='', title='') %}
+    <i class="fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
+{% endmacro %}
+
+{% macro ai(name, class='', title='') %}
+    <i class="ai ai-{{ name }} {{ class }}" title="{{ title }}"></i>
+{% endmacro %}
+
+{% macro card(page, date=true, show_oa=false) %}
     <div class="thumbnail">
         {% if page.thumbnail %}
             <img src="/images/thumb/{{page.thumbnail}}">
@@ -10,10 +18,9 @@
             {% if date %}
                 ({{ page.date.year }})
             {% endif %}
+            {% if show_oa and page.oa %}
+                {{ ai("open-access") }}
+            {% endif %}
         </div>
     </div>
-{% endmacro %}
-
-{% macro fa(name, class='', title='') %}
-    <i class="fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
 {% endmacro %}
