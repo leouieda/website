@@ -20,6 +20,28 @@ This article is also available at the
 where it can edited and improved.
 </div>
 
+# About
+
+This article is part of the
+[Geophysical Tutorials](http://wiki.seg.org/wiki/Geophysical_tutorials)
+section in [The Leading Edge](http://library.seg.org/journal/leedff),
+started by Matt Hall of [Agile Geoscience](http://agilegeoscience.com/).
+All tutorials are Open-Access and include open-source code examples.
+Read the
+[February 2016 tutorial](http://dx.doi.org/10.1190/tle35020190.1) by Matt
+for an introduction to the tutorial series
+and what you need to know to get started running the code in them.
+
+# Open-source implementation
+
+This article uses the Euler deconvolution implemented in
+[Fatiando a Terra](http://www.fatiando.org),
+an open-source Python library.
+See the repository
+[pinga-lab/paper-tle-euler-tutorial](https://github.com/pinga-lab/paper-tle-euler-tutorial)
+for the source code that accompanies the article
+and extra material.
+
 # Abstract
 
 In this tutorial we'll talk about a widely used method of interpretation for

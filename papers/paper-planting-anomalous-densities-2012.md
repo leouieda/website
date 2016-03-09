@@ -13,11 +13,21 @@ thumbnail: paper-planting-anomalous-densities-2012.png
 alm: true
 ---
 
-# Extra supplement
+# Open-source implementation
 
-Animation of the groth algorithm:
+The inversion method proposed in this paper is implemented in the open-source
+[Fatiando a Terra](http://www.fatiando.org) Python library
+as the `fatiando.gravmag.harvester` module.
+The module was introduced in
+[version 0.1](http://www.fatiando.org/changelog.html#version-0-1)
+of the library.
+
+# Visualizing the algorithm
+
+The following is an animation of the growth algorithm
+during the inversion of synthetic data.
+The video is available at [figshare](http://figshare.com/):
 [10.6084/m9.figshare.91469](http://dx.doi.org/10.6084/m9.figshare.91469)
-
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe src="http://wl.figshare.com/articles/91469/embed?show_title=0"

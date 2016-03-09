@@ -11,6 +11,17 @@ layout: publication
 alm: true
 ---
 
+# Open-source implementation
+
+This paper uses the planting inversion proposed in
+[our 2012 paper](/papers/paper-planting-anomalous-densities-2012.html).
+We used the implementation in the open-source
+[Fatiando a Terra](http://www.fatiando.org) Python library
+(the `fatiando.gravmag.harvester` module).
+The module was introduced in
+[version 0.1](http://www.fatiando.org/changelog.html#version-0-1)
+of the library.
+
 # Abstract
 
 The Quadrilátero Ferrífero in southeastern Brazil hosts one of the largest
