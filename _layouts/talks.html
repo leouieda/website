@@ -1,0 +1,22 @@
+{% extends "page.html" %}
+
+{% from "utils.html" import card, fa %}
+
+{% block content %}
+
+{{ super() }}
+
+{% for group in this.content|groupby("presentation")|reverse() %}
+    <h2>{{group.grouper|capitalize()}}</h2>
+    {% for row in group.list|batch(4) %}
+        <div class="row">
+            {% for article in row %}
+                <div class="col-md-3 col-sm-3">
+                    {{ card(article, date=true) }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endfor %}
+
+{% endblock %}
