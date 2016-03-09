@@ -2,11 +2,11 @@
 title: Matemática Especial I
 date: 2015-08-01
 institution: UERJ
-type: university course
+course: university
 repository: leouieda/matematica-especial
 website: http://www.leouieda.com/matematica-especial
 thumbnail: matematica-especial.png
-layout: course
+layout: publication
 ---
 
 # Sobre

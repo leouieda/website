@@ -1,13 +1,13 @@
 ---
-title: "Geofísica 2: Sísmica, métodos elétricos e eletromagnéticos"
+title: "Geofísica 2: Sismologia e sísmica"
 date: 2015-03-01
 institution: UERJ
-type: university course
+course: university
 repository: lagex/geofisica2
 authors: Leonardo Uieda
 website: http://lagex.github.io/geofisica2
 thumbnail: geofisica2.png
-layout: course
+layout: publication
 ---
 
 # About

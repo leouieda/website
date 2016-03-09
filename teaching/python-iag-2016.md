@@ -3,10 +3,10 @@ title: Python para Ciências da Terra (IAG/USP)
 date: 2016-01-26
 event: XVIII Escola de Verão de Geofísica
 institution: IAG/USP
-type: short course
+course: short
 repository: leouieda/verao2016
 thumbnail: python-iag-2016.png
-layout: course
+layout: publication
 ---
 
 # Sobre

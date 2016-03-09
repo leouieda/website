@@ -3,10 +3,10 @@ title: Tópicos de inversão em geofísica (IAG/USP)
 date: 2012-02-01
 event: XVI Escola de Verão de Geofísica
 institution: IAG/USP
-type: short course
+course: short
 repository: pinga-lab/inversao-iag-2012
 author: Leonardo Uieda and Vanderlei C. Oliveira Jr
-layout: course
+layout: publication
 ---
 
 # About

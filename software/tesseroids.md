@@ -8,7 +8,7 @@ website: http://tesseroids.leouieda.com
 doi: 10.5281/zenodo.16033
 thumbnail: tesseroids.png
 citation: Uieda, L., E. P. Bomfim, C. Braitenberg, and E. Molina (2011), Optimal forward calculation method of the Marussi tensor due to a geologic structure at GOCE height, Proceedings of the 4th International GOCE User Workshop.
-layout: software
+layout: publication
 ---
 
 # About

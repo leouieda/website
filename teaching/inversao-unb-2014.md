@@ -3,10 +3,10 @@ title: Tópicos de inversão em geofísica (UnB)
 date: 2014-11-03
 event: III Semana de Geofísica
 institution: UNB
-type: short course
+course: short
 repository: pinga-lab/inversao-unb-2014
 thumbnail: inversao-unb-2014.png
-layout: course
+layout: publication
 ---
 
 # About

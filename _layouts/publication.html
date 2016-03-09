@@ -24,6 +24,20 @@
 
         <ul class="list-group">
             {% block left %}
+                {% if this.language %}
+                    <li class="list-group-item">
+                        {{ fa("code", "fa-fw", "Programming language") }}
+                        Language:
+                        {{this.language}}
+                    </li>
+                {% endif %}
+                {% if this.license %}
+                    <li class="list-group-item">
+                        {{ fa("file-text", "fa-fw", "Open-source license") }}
+                        {{this.license}}
+                        License
+                    </li>
+                {% endif %}
                 {% if this.repository %}
                     <li class="list-group-item">
                         {{ fa("github-square", "fa-fw", "Github repository") }}
