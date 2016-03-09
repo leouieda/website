@@ -5,7 +5,7 @@
 echo -e "Preparing to copy generated files to leouieda.com"
 if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
     echo -e "Starting to update website\n"
-    cp -R output $HOME/keep
+    cp -R _build $HOME/keep
     # Go to home and setup git
     cd $HOME
     git config --global user.email "leouieda@gmail.com"
