@@ -14,8 +14,8 @@ banner: '/images/torres-del-paine.jpg'
 
 menulinks: [
     ['/about.html', 'About'],
-    #['/papers', 'Papers'],
-    #['/talks', 'Talks'],
+    ['/papers', 'Papers'],
+    ['/talks', 'Talks'],
     ['/teaching', 'Teaching'],
     ['/software', 'Software'],
     ['/contact.html', 'Contact'],

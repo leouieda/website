@@ -14,9 +14,6 @@
             </div>
         {% endfor %}
     </div>
-    <!--{% for article in category.content[0:number] %}-->
-        <!--{{ card(article, date=date) }}-->
-    <!--{% endfor %}-->
 {% endmacro %}
 
 
@@ -26,7 +23,7 @@
 
 <div class="container">
     <h1 class="text-center">Latest outputs</h1>
-    {% set columns = 3 %}
+    {% set columns = 2 %}
     {% for row in this.content|batch(columns) %}
         <div class="row">
             {% for category in row %}

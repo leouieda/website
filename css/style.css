@@ -34,9 +34,39 @@ h3 {
     color: #333;
 }
 
-.navbar-inverse {
+.menu {
     border: none;
     margin-bottom: 0px;
+    background-color: #2780e3;
+    color: #ffffff;
+    position: relative;
+    min-height: 50px;
+    display: block;
+    font-size: 12pt;
+    line-height:50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.menu a {
+    color: #ffffff;
+}
+.menu-brand {
+    font-size: 19px;
+}
+.menu-brand > a:hover {
+    text-decoration: none;
+}
+.menu-list {
+    padding-top: 0px;
+}
+.menu-list > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-list > ul > li {
+    display: inline;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
 .fa-ul {
