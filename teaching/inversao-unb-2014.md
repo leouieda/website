@@ -6,6 +6,7 @@ institution: UNB
 course: short
 repository: pinga-lab/inversao-unb-2014
 thumbnail: inversao-unb-2014.png
+license: CC-BY
 layout: publication
 ---
 

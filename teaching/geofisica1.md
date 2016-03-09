@@ -1,11 +1,12 @@
 ---
 title: "Geofísica 1: Gravimetria e magnetometria"
-date: 2015-08-01
+date: 2015-08-02
 institution: UERJ
 course: university
 repository: leouieda/geofisica1
 website: http://www.leouieda.com/geofisica1
 thumbnail: geofisica1.png
+license: CC-BY
 layout: publication
 ---
 

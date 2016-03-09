@@ -15,6 +15,15 @@
 <div class="row">
     <div class="col-md-4">
 
+        {% if this.review %}
+            <div class="alert alert-warning">
+                <strong>
+                This article is unpublished and is currently undergoing
+                peer-review.
+                </strong>
+            </div>
+        {% endif %}
+
         {% if this.thumbnail %}
             <img class="pub-thumbnail"
                  src="/images/thumb/{{this.thumbnail}}"></img>
@@ -24,6 +33,42 @@
 
         <ul class="list-group">
             {% block left %}
+                {% if this.oa %}
+                    <li class="list-group-item active">
+                        {{ ai("open-access", "fa-fw", "Open-access article") }}
+                        Open-Access
+                    </li>
+                {% endif %}
+                {% if this.journal %}
+                    <li class="list-group-item">
+                        {{ fa("book", "fa-fw", "Journal name") }}
+                        {{this.journal}}
+                    </li>
+                {% endif %}
+                {% if this.presentation %}
+                    <li class="list-group-item">
+                        {{ fa("comments-o", "fa-fw", "Presentation type") }}
+                        {{this.presentation|capitalize()}} presentation
+                    </li>
+                {% endif %}
+                {% if this.event %}
+                    <li class="list-group-item">
+                        {{ fa("users", "fa-fw", "Event name") }}
+                        {{this.event}}
+                    </li>
+                {% endif %}
+                {% if this.institution %}
+                    <li class="list-group-item">
+                        {{ fa("university", "fa-fw", "Institution name") }}
+                        {{this.institution}}
+                    </li>
+                {% endif %}
+                {% if this.course %}
+                    <li class="list-group-item">
+                        {{ fa("graduation-cap", "fa-fw", "Course type") }}
+                        {{ this.course|capitalize() }} course
+                    </li>
+                {% endif %}
                 {% if this.language %}
                     <li class="list-group-item">
                         {{ fa("code", "fa-fw", "Programming language") }}
@@ -38,12 +83,47 @@
                         License
                     </li>
                 {% endif %}
+                {% if this.slides %}
+                    <li class="list-group-item">
+                        {{ fa("desktop", "fa-fw", "Download slides") }}
+                        Slides:
+                        {% if this.slides[:4] == "http" %}
+                            <a href="{{this.slides}}">{{this.slides}}</a>
+                        {% else %}
+                            <a href="http://dx.doi.org/{{this.slides}}">{{this.slides}}</a>
+                        {% endif %}
+                    </li>
+                {% endif %}
+                {% if this.poster %}
+                    <li class="list-group-item">
+                        {{ fa("picture-o", "fa-fw", "Download poster") }}
+                        Poster:
+                        {% if this.poster[:4] == "http" %}
+                            <a href="{{this.poster}}">{{this.poster}}</a>
+                        {% else %}
+                            <a href="http://dx.doi.org/{{this.poster}}">{{this.poster}}</a>
+                        {% endif %}
+                    </li>
+                {% endif %}
                 {% if this.repository %}
                     <li class="list-group-item">
                         {{ fa("github-square", "fa-fw", "Github repository") }}
                         Source code:
                         <a href="https://github.com/{{this.repository}}">{{
                             this.repository}}</a>
+                    </li>
+                {% endif %}
+                {% if this.supplement %}
+                    <li class="list-group-item">
+                        {{ fa("paperclip", "fa-fw", "Supplementary material") }}
+                        Supplement:
+                        <a href="http://dx.doi.org/{{this.supplement}}">{{this.supplement}}</a>
+                    </li>
+                {% endif %}
+                {% if this.pdf %}
+                    <li class="list-group-item">
+                        {{ fa("file-pdf-o", "fa-fw", "Paper PDF") }}
+                        <a href="/pdf/{{this.pdf}}">{{this.pdf}}</a>
                     </li>
                 {% endif %}
                 {% if this.doi %}
@@ -61,6 +141,11 @@
                 {% endif %}
             {% endblock %}
         </ul>
+        {% if this.alm %}
+            <h2>Article Level Metrics</h2>
+            <div data-badge-details="right" data-badge-type="medium-donut"
+                 data-doi="{{this.doi}}" class="altmetric-embed"></div>
+        {% endif %}
         {% if this.citation %}
             <h2>Citation</h2>
             <p>{{this.citation}}</p>

@@ -6,6 +6,7 @@ course: university
 repository: leouieda/matematica-especial
 website: http://www.leouieda.com/matematica-especial
 thumbnail: matematica-especial.png
+license: CC-BY
 layout: publication
 ---
 

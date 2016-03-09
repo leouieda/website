@@ -7,6 +7,7 @@ repository: lagex/geofisica2
 authors: Leonardo Uieda
 website: http://lagex.github.io/geofisica2
 thumbnail: geofisica2.png
+license: CC-BY
 layout: publication
 ---
 

@@ -6,6 +6,7 @@ institution: IAG/USP
 course: short
 repository: pinga-lab/inversao-iag-2012
 author: Leonardo Uieda and Vanderlei C. Oliveira Jr
+license: CC-BY
 layout: publication
 ---
 
