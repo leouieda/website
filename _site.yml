@@ -15,12 +15,12 @@ keywords: 'science, geoscience, geophysics, software, open-source'
 banner: '/images/torres-del-paine.jpg'
 
 menulinks: [
-    ['/about.html', 'About'],
+    ['/about', 'About'],
     ['/papers', 'Papers'],
     ['/talks', 'Talks'],
     ['/teaching', 'Teaching'],
     ['/software', 'Software'],
-    ['/contact.html', 'Contact'],
+    ['/contact', 'Contact'],
     ['https://github.com/leouieda',
      '<i class="fa fa-github fa-lg" title="Github"></i>'],
     ['https://twitter.com/leouieda',

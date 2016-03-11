@@ -1,6 +1,7 @@
 ---
 title: Contact
 layout: page
+order: date
 ---
 
 <div class="row">

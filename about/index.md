@@ -1,13 +1,14 @@
 ---
 title: About
 layout: page
+order: date
 ---
 
 <div class="row">
 
 <div class="col-md-6">
 
-<img src="images/leo-uieda-portrait.jpg"
+<img src="/images/leo-uieda-portrait.jpg"
      class="img-circle"
      title="Portrait of myself"
      style="width: 30%; margin-right: 20px; margin-top: 15px; margin-bottom: 5px; float: left;">
