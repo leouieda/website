@@ -16,8 +16,8 @@ keywords: 'science, geoscience, geophysics, software, open-source'
 
 menulinks: [
     ['/about', 'About'],
-    #['/research', 'Research'],
     #['/blog', 'Blog'],
+    ['/research', 'Research'],
     ['/papers', 'Papers'],
     ['/talks', 'Talks'],
     ['/teaching', 'Teaching'],
