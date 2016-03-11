@@ -4,6 +4,8 @@ layout: page
 order: date
 ---
 
+{% from "utils.html" import fa, ai %}
+
 <div class="row">
 
 <div class="col-md-6">
@@ -14,19 +16,23 @@ order: date
      style="width: 30%; margin-right: 20px; margin-top: 15px; margin-bottom: 5px; float: left;">
 
 <p>
-My name is Leonardo Uieda.
-I'm a geophysicist working mainly on inverse problems in gravity and magnetics.
-</p>
-
-<p>
-I'm a Professor of Geophysics at the
+I'm Professor of Geophysics at the
 <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro</a>,
 Brazil,
 since February 2014.
+My research focuses on gravity and magnetic methods, particularly in developing
+new methodologies for
+<a href="/papers/paper-polynomial-eqlayer-2013.html">data interpretation</a>
+and
+<a href="/papers/paper-planting-anomalous-densities-2012.html">inversion</a>.
 I teach the "Intro to Geophysics" courses to Geology students,
-<a href="teaching/">among others</a>.
-My research and teaching work usually involves a lot of
-<a href="https://github.com/leouieda">open-source software development</a>.
+<a href="/teaching">among others</a>.
+All my work usually involves a lot of
+<a href="/software">open-source software development</a>,
+most of it in the excellent <a href="https://www.python.org/">Python</a>
+programming language.
+I'm the main developer of the open-source geophysics library
+<a href="/software/fatiando.html">Fatiando a Terra</a>.
 </p>
 
 <p>
@@ -38,7 +44,7 @@ teaching material
 online under permissive licenses.
 You'll find links to source code, images, lessons, etc, around this
 website
-(look for the <i class="fa fa-github-square fa-fw"></i> icon).
+(look for the {{fa("github-square", "fa-fw")}} icon).
 </p>
 
 </div>
@@ -57,7 +63,7 @@ papers (most new papers have these).
 
 <p>
 You can also follow me and find out more about my research, code, articles, and
-data in the following sites (yes, I'm a bit of an early adopter):
+data in the following sites:
 </p>
 
 <div class="row">
@@ -68,43 +74,43 @@ data in the following sites (yes, I'm a bit of an early adopter):
 
 <li>
 <a href="https://github.com/leouieda">
-<i class="fa fa-github-square fa-3x" title="Github"></i>
+{{fa("github-square", "fa-3x", "Github")}}
 </a>
 </li>
 
 <li>
 <a href="http://orcid.org/0000-0001-6123-9515">
-<i class="ai ai-orcid-square fa-3x" title="ORCID"></i>
+{{ai("orcid-square", "fa-3x", "ORCID")}}
 </a>
 </li>
 
 <li>
 <a href="http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ">
-<i class="ai ai-google-scholar-square fa-3x" title="Google Scholar"></i>
+{{ai("google-scholar-square", "fa-3x", "Google Scholar")}}
 </a>
 </li>
 
 <li>
 <a href="http://figshare.com/authors/Leonardo%20Uieda/97471">
-<i class="ai ai-figshare-square fa-3x" title="figshare"></i>
+{{ai("figshare-square", "fa-3x", "figshare")}}
 </a>
 </li>
 
 <li>
 <a href="http://impactstory.org/leouieda">
-<i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i>
+{{ai("impactstory-square", "fa-3x", "ImpactStory")}}
 </a>
 </li>
 
 <li>
 <a href="https://www.researchgate.net/profile/Leonardo_Uieda">
-<i class="ai ai-researchgate-square fa-3x" title="ResearchGate"></i>
+{{ai("researchgate-square", "fa-3x", "ResearchGate")}}
 </a>
 </li>
 
 <li>
 <a href="http://www.linkedin.com/in/uieda">
-<i class="fa fa-linkedin-square fa-3x" title="LinkedIn"></i>
+{{fa("linkedin-square", "fa-3x", "LinkedIn")}}
 </a>
 </li>
 
@@ -156,20 +162,20 @@ Para os brasileiros, aqui está o link para meu
 </li>
 <li><i class="fa-li fa fa-desktop fa-fw"></i> Yearly seminars:
 </li>
-    <ul class="fa-ul">
-        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2015:
-            <a href="https://github.com/leouieda/seminario-on-2015">leouieda/seminario-on-2015</a>
-        </li>
-        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2014:
-            <a href="https://github.com/leouieda/seminario-on-2014">leouieda/seminario-on-2014</a>
-        </li>
-        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2013 (qualification exam):
-            <a href="https://github.com/leouieda/qualify">leouieda/qualify</a>
-        </li>
-        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2012:
-            <a href="https://github.com/leouieda/seminario-on-2012">leouieda/seminario-on-2012</a>
-        </li>
-    </ul>
+<ul class="fa-ul">
+    <li><i class="fa-li fa fa-github-square fa-fw"></i> 2015:
+        <a href="https://github.com/leouieda/seminario-on-2015">leouieda/seminario-on-2015</a>
+    </li>
+    <li><i class="fa-li fa fa-github-square fa-fw"></i> 2014:
+        <a href="https://github.com/leouieda/seminario-on-2014">leouieda/seminario-on-2014</a>
+    </li>
+    <li><i class="fa-li fa fa-github-square fa-fw"></i> 2013 (qualification exam):
+        <a href="https://github.com/leouieda/qualify">leouieda/qualify</a>
+    </li>
+    <li><i class="fa-li fa fa-github-square fa-fw"></i> 2012:
+        <a href="https://github.com/leouieda/seminario-on-2012">leouieda/seminario-on-2012</a>
+    </li>
+</ul>
 </ul>
 
 </div>
