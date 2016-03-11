@@ -4,7 +4,9 @@ title: "LEONARDO <strong>UIEDA</strong>"
 
 author: Leonardo Uieda
 
-keep_files: [ .nojekyll ]
+keep_files: [".nojekyll"]
+
+ignore_patterns: ["README.md"]
 
 language: en
 
