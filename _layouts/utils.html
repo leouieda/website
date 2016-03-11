@@ -11,9 +11,12 @@
 {% macro card(page, date=true, show_oa=false) %}
     <div class="thumbnail">
         {% if page.thumbnail %}
-            <img src="/images/thumb/{{page.thumbnail}}">
+        <img src="/images/thumb/{{page.thumbnail}}">
         {%  endif %}
         <div class="caption">
+            {% if page.inreview %}
+                <span class="label label-warning">Under Review</span>
+            {% endif %}
             <a href="{{ page.url }}">{{ page.title }}</a>
             {% if date %}
                 ({{ page.date.year }})

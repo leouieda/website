@@ -12,17 +12,18 @@
     </p>
 {% endif %}
 
+{% if this.inreview %}
+    <div class="alert alert-warning">
+        <strong>
+        This article is unpublished and is currently undergoing
+        peer-review.
+        </strong>
+    </div>
+{% endif %}
+
+
 <div class="row">
     <div class="col-md-4">
-
-        {% if this.review %}
-            <div class="alert alert-warning">
-                <strong>
-                This article is unpublished and is currently undergoing
-                peer-review.
-                </strong>
-            </div>
-        {% endif %}
 
         {% if this.thumbnail %}
             <img class="pub-thumbnail"
