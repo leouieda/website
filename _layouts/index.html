@@ -5,14 +5,26 @@
 
 {{ super() }}
 
-{% for row in this.content|batch(4) %}
-    <div class="row">
-        {% for article in row %}
-            <div class="col-md-3 col-sm-3">
-                {{ card(article, date=false) }}
+{# There will be 4 cards in a row and collapse to 2 in a row for smaller
+displays. The way to do this is to batch the cards into pairs, make a row with
+2 columns and place a pair in each column. #}
+<hr>
+{% for row in this.content|batch(2) %}
+    {% if loop.index % 2 != 0 %}
+        <div class="row">
+    {% endif %}
+        <div class="col-md-6">
+            <div class="row">
+            {% for article in row %}
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    {{ card(article, date=false) }}
+                </div>
+            {% endfor %}
             </div>
-        {% endfor %}
-    </div>
+        </div>
+    {% if loop.index % 2 == 0 or loop.last %}
+        </div>
+    {% endif %}
 {% endfor %}
 
 {% endblock %}
