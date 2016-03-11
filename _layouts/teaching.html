@@ -6,17 +6,22 @@
 
 {{ super() }}
 
+<div class="row">
 {% for group in this.content|groupby("course")|reverse() %}
-    <h2>{{group.grouper|capitalize()}} Courses</h2>
-    {% for row in group.list|batch(4) %}
-        <div class="row">
-            {% for article in row %}
-                <div class="col-md-3 col-sm-3">
-                    {{ card(article, date=true) }}
-                </div>
-            {% endfor %}
-        </div>
-    {% endfor %}
+    <div class="col-md-6">
+        <h2>{{group.grouper|capitalize()}} Courses</h2>
+        <hr>
+        {% for row in group.list|batch(2) %}
+            <div class="row">
+                {% for article in row %}
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        {{ card(article, date=true) }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
 {% endfor %}
+</div>
 
 {% endblock %}
