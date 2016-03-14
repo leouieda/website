@@ -40,6 +40,12 @@
                         Open-Access
                     </li>
                 {% endif %}
+                {% if this.inprogress %}
+                    <li class="list-group-item active">
+                        {{ fa("refresh", "fa-fw", "Open-access article") }}
+                        In progress
+                    </li>
+                {% endif %}
                 {% if this.journal %}
                     <li class="list-group-item">
                         {{ fa("book", "fa-fw", "Journal name") }}
