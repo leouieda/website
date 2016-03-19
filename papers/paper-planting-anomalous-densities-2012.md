@@ -1,7 +1,7 @@
 ---
 title: Robust 3D gravity gradient inversion by planting anomalous densities
 layout: publication
-author: Uieda, L. and V.C.F. Barbosa
+author: Leonardo Uieda, Valéria C. F. Barbosa
 date: 2012-07-01
 pdf: paper-planting-anomalous-densities-2012.pdf
 repository: pinga-lab/paper-planting-densities

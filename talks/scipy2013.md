@@ -1,6 +1,6 @@
 ---
 title: Modeling the Earth with Fatiando a Terra
-author: Uieda, L., V. C. Oliveira Jr and V. C. F. Barbosa
+author: L. Uieda, V. C. Oliveira Jr, V. C. F. Barbosa
 date: 2013-06-01
 pdf: scipy-2013.pdf
 repository: leouieda/scipy2013

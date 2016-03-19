@@ -1,6 +1,6 @@
 ---
 title: 3D magnetic inversion by planting anomalous densities
-author: Uieda, L., and V. C. F. Barbosa
+author: L. Uieda, V. C. F. Barbosa
 date: 2013-05-01
 repository: leouieda/agu-cancun2013
 presentation: oral

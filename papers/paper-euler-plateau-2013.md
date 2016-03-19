@@ -1,7 +1,7 @@
 ---
 title: Estimating the nature and the horizontal and vertical positions of 3D magnetic sources using Euler deconvolution
 layout: publication
-author: Melo, F. F., V. C. F. Barbosa, L. Uieda, V. C. Oliveira Jr, and J. B. C. Silva
+author: F. F. Melo, V. C. F. Barbosa, L. Uieda, V. C. Oliveira Jr, J. B. C. Silva
 date: 2013-12-01
 journal: Geophysics
 doi: 10.1190/geo2012-0515.1

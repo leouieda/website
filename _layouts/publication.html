@@ -5,7 +5,14 @@
 
 {% if this.author %}
     <p class="pub-date-author">
-        by {{ this.author }}
+        by
+        {% for author in this.author.split(', ') %}
+            {% if author in ["Leonardo Uieda", "L. Uieda"] %}
+                <strong>{{ author }}</strong>{% if not loop.last %}, {% endif%}
+            {% else %}
+                {{ author }}{% if not loop.last %}, {% endif%}
+            {% endif %}
+        {% endfor %}
     {% if this.date %}
         ({{ this.date.year }})
     {% endif %}

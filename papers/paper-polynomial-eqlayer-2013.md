@@ -1,6 +1,6 @@
 ---
 title: Polynomial equivalent layer
-author: Oliveira Jr, V. C., V. C. F. Barbosa, and L. Uieda
+author: V. C. Oliveira Jr, V. C. F. Barbosa, L. Uieda
 date: 2013-01-01
 pdf: paper-polynomial-eqlayer-2013.pdf
 doi: 10.1190/geo2012-0196.1

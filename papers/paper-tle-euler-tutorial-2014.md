@@ -1,7 +1,7 @@
 ---
 title: "Geophysical tutorial: Euler deconvolution of potential-field data"
 date: 2014-04-01
-author: Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa
+author: L. Uieda, V. C. Oliveira Jr, V. C. F. Barbosa
 repository: pinga-lab/paper-tle-euler-tutorial
 doi: 10.1190/tle33040448.1
 journal: The Leading Edge
