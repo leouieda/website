@@ -1,6 +1,6 @@
 ---
 title: Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho
-author: Leonardo Uieda and Valéria C. F. Barbosa
+author: Leonardo Uieda, Valéria C. F. Barbosa
 layout: publication
 date: 2016-04-01
 journal: Geophysical Journal International
@@ -8,12 +8,6 @@ repository: pinga-lab/paper-moho-inversion-tesseroids
 thumbnail: paper-moho-inversion-2016.png
 inreview: true
 ---
-
-# Open-source implementation
-
-Uses [Tesseroids](http://tesseroids.leouieda.com).
- and
-[Fatiando a Terra](http://www.fatiando.org).
 
 
 # Abstract
@@ -39,7 +33,7 @@ gravity and seismological data is worse in the Andes and best in oceanic areas,
 central Brazil and Patagonia, and along the Atlantic coast.  Similarly to
 previous results, the model suggests a thinner crust of 30-35 km under the
 Andean foreland basins.  Discrepancies with the seismological data are greatest
-in the Guiana shield, the central Solimões and Amazon basins, the Paraná basin,
-and the Borborema province.  These differences suggest the existence of crustal
-or mantle density anomalies that were unaccounted for during gravity data
-processing.
+in the Guyana Shield, the central Solimões and Amazonas Basins, the Paraná
+Basin, and the Borborema province.  These differences suggest the existence of
+crustal or mantle density anomalies that were unaccounted for during gravity
+data processing.
