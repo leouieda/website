@@ -5,7 +5,6 @@ language: C
 license: BSD
 repository: leouieda/tesseroids
 website: http://tesseroids.leouieda.com
-doi: 10.5281/zenodo.16033
 thumbnail: tesseroids.png
 citation: Uieda, L., E. P. Bomfim, C. Braitenberg, and E. Molina (2011), Optimal forward calculation method of the Marussi tensor due to a geologic structure at GOCE height, Proceedings of the 4th International GOCE User Workshop.
 layout: publication
@@ -13,28 +12,27 @@ layout: publication
 
 # About
 
-<div class="row">
-<div class="col-md-6">
-
-<p>
-<em>Tesseroids</em> is a collection of command-line programs for modeling the
+*Tesseroids* is a collection of command-line programs for modeling the
 gravitational potential, acceleration, and gradient tensor. Tesseroids supports
 models and computation grids in Cartesian and spherical coordinates.
-</p>
-<p>
+
 The geometric element used in the modeling processes is a spherical prism, also
 called a tesseroid. Tesseroids also contains programs for modeling using right
 rectangular prisms, both in Cartesian and spherical coordinates.
-</p>
 
-</div>
-<div class="col-md-6">
+I started working on *Tesseroids* in 2008 for my
+[Bachelor's degree thesis](http://dx.doi.org/10.6084/m9.figshare.963547).
+Since then, the software has been through many revisions.
+The paper "[/papers/paper-tesseroids-2016]" describes the algorithms behind
+[version 1.2.0](http://dx.doi.org/10.5281/zenodo.16033) of the software.
+This paper became a chapter of my PhD thesis.
 
-<img src="/images/tesseroid.png"
-     title="A tesseroid in a geocentric coordinate system."></img>
+# Presentations
 
-</div>
-</div>
+The following presentations are about the software and algorithms involved:
+
+* 2011: [/talks/goce2011]
+* 2010: [/talks/agu2010]
 
 # Bibtex
 
