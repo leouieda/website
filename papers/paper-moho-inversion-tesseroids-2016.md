@@ -9,6 +9,27 @@ thumbnail: paper-moho-inversion-2016.png
 inreview: true
 ---
 
+# About
+
+This paper is a chapter of my PhD thesis.
+It describes a new gravity inversion method to estimate the depth of the
+crust-mantle interface (the Moho).
+The inversion uses a spherical Earth approximation by discretizing the Earth
+into tesseroids (spherical prisms).
+The forward modeling method used is described in the paper
+[/papers/paper-tesseroids-2016].
+We applied the inversion to estimate the Moho depth for South America.
+
+# Open-source implementation
+
+The inversion method proposed here is implemented in the Python programming
+language.
+The code uses the forward modeling and inversion packages of the library
+[/software/fatiando].
+You'll find the source code and all you need to produce the results
+from the paper on the Github repository
+[pinga-lab/paper-moho-inversion-tesseroids](https://github.com/pinga-lab/paper-moho-inversion-tesseroids)
+
 
 # Abstract
 
