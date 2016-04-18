@@ -85,26 +85,26 @@ data in the following sites:
 </li>
 
 <li>
+<a href="https://impactstory.org/u/0000-0001-6123-9515">
+{{ai("impactstory-square", "fa-3x", "ImpactStory")}}
+</a>
+</li>
+
+<li>
 <a href="http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ">
 {{ai("google-scholar-square", "fa-3x", "Google Scholar")}}
 </a>
 </li>
 
 <li>
-<a href="http://figshare.com/authors/Leonardo%20Uieda/97471">
-{{ai("figshare-square", "fa-3x", "figshare")}}
-</a>
-</li>
-
-<li>
-<a href="http://impactstory.org/leouieda">
-{{ai("impactstory-square", "fa-3x", "ImpactStory")}}
-</a>
-</li>
-
-<li>
 <a href="https://www.researchgate.net/profile/Leonardo_Uieda">
 {{ai("researchgate-square", "fa-3x", "ResearchGate")}}
+</a>
+</li>
+
+<li>
+<a href="http://figshare.com/authors/Leonardo%20Uieda/97471">
+{{ai("figshare-square", "fa-3x", "figshare")}}
 </a>
 </li>
 
@@ -126,20 +126,18 @@ My <a href="http://orcid.org">ORCID</a> number is
 </p>
 
 <p>
-Para os brasileiros, aqui está o link para meu
-<a href="http://lattes.cnpq.br/8939551682050504">Currículo Lattes</a>.
+<em>Para os brasileiros, aqui está o link para meu
+<a href="http://lattes.cnpq.br/8939551682050504">Currículo Lattes</a>.</em>
 </p>
 
 </div>
 </div><!-- row -->
 
-<div class="row">
-<div class="col-md-4">
+
+
 
 <h2>Education</h2>
-
-</div>
-</div><!-- row -->
+<hr>
 
 <div class="row">
 <div class="col-md-4">
@@ -158,7 +156,11 @@ Para os brasileiros, aqui está o link para meu
     <a href="http://lattes.cnpq.br/0391036221142471">Valéria C. F. Barbosa</a>
 </li>
 <li><i class="fa-li fa fa-book fa-fw"></i>
-    Thesis: Inversão 3D de campos pontenciais em coordenadas esféricas
+    Thesis: Forward modeling and inversion of gravitational fields in spherical coordinates
+    (published in 3 parts:
+    <a href="/papers/paper-tesseroids-2016.html">forward modeling</a>,
+    <a href="/talks/scipy2013.html">Python inversion library</a>,
+    <a href="/papers/paper-moho-inversion-tesseroids-2016.html">Moho inversion</a>)
 </li>
 <li><i class="fa-li fa fa-desktop fa-fw"></i> Yearly seminars:
 </li>
@@ -197,7 +199,7 @@ Para os brasileiros, aqui está o link para meu
 <li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis:
     Robust 3D gravity gradient inversion by planting anomalous densities
-    (<a href="papers/paper-planting-anomalous-densities-2012.html">published as an article</a>)
+    (<a href="/papers/paper-planting-anomalous-densities-2012.html">published as an article</a>)
 </li>
 <li><i class="fa-li fa fa-external-link fa-fw"></i>
     doi:
