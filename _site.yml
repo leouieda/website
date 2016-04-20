@@ -6,7 +6,7 @@ author: Leonardo Uieda
 
 keep_files: [".nojekyll"]
 
-ignore_patterns: ["README.md"]
+ignore_patterns: ["README.md", "ci-tools", "environment.yml", "miniconda.sh"]
 
 strict_undefined: true
 
