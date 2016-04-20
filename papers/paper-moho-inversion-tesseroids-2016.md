@@ -1,6 +1,6 @@
 ---
 title: Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho
-author: Leonardo Uieda, Valéria C. F. Barbosa
+author: uieda, barbosa
 layout: publication
 date: 2016-04-01
 journal: Geophysical Journal International

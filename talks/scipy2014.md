@@ -1,6 +1,6 @@
 ---
 title: Using Fatiando a Terra to solve inverse problems in geophysics
-author: L. Uieda, V. C. Oliveira Jr, V. C. F. Barbosa
+author: uieda, oliveira-jr, barbosa
 date: 2014-07-01
 repository: leouieda/scipy2014
 presentation: poster

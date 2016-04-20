@@ -10,7 +10,7 @@
 
 {% macro card(page, date=true, show_oa=false, inprogress=false) %}
     <div class="thumbnail">
-        {% if page.thumbnail %}
+        {% if page.thumbnail is defined %}
             <img src="/images/thumb/{{page.thumbnail}}">
         {%  endif %}
         <div class="caption">
@@ -18,13 +18,13 @@
             {% if date %}
                 ({{ page.date.year }})
             {% endif %}
-            {% if show_oa and page.oa %}
+            {% if show_oa and page.oa is defined and page.oa %}
                 {{ ai("open-access") }}
             {% endif %}
-            {% if inprogress and page.inprogress %}
+            {% if inprogress and page.inprogress is defined and page.inprogress %}
                 <span class="label label-primary">IN PROGRESS</span>
             {% endif %}
-            {% if page.inreview %}
+            {% if page.inreview is defined and page.inreview %}
                 <span class="label label-warning">UNDER REVIEW</span>
             {% endif %}
         </div>

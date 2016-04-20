@@ -1,7 +1,7 @@
 ---
 title: Imaging iron ore from the Quadrilátero Ferrífero (Brazil) using geophysical inversion and drill hole data
 date: 2014-09-01
-author: D. U. Carlos, L. Uieda, V. C. F. Barbosa
+author: carlos, uieda, barbosa
 pdf: paper-quadrilatero-2014.pdf
 journal: Ore Geology Reviews
 doi: 10.1016/j.oregeorev.2014.02.011

@@ -1,6 +1,6 @@
 ---
 title: Iron ore interpretation using gravity-gradient inversions in the Carajás, Brazil
-author: D. U. Carlos, L. Uieda, Y. Li, V. C. F. Barbosa, M. A. Braga, G. Angeli, G. Peres
+author: carlos, uieda, yli, barbosa, mbraga, angeli, peres
 date: 2012-11-01
 pdf: seg-carlos-2012.pdf
 repository: leouieda/seg2012

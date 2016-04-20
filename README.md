@@ -23,7 +23,7 @@ Use the `Makefile`:
     make
     make serve
 
-The command `make serve` will start a simple server at the `_build` dir
+The command `make serve` will start a simple server at the `_build` folder
 where the built HTML files are.
 Point your browser to [http://127.0.0.1:8000](http://127.0.0.1:8000)
 to view the site.
@@ -40,7 +40,7 @@ The Jinja2 templates and CSS are located in the `_layouts` and `css` folders.
 I really should make this theme more generic and provide it to the world.
 But, you know, time and things.
 You can still use it by copying the folders to your own project.
-I can't guarantee that things will work without my specific folder struture.
+I can't guarantee that things will work without my specific folder structure.
 
 ## Adding an article/talk/course/software
 
@@ -73,10 +73,12 @@ Optional:
     oa: true
     inreview: true
     alm: true
-    author: Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa
+    author: uieda, oliveira-jr, barbosa
     journal: The Leading Edge
     citation: Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2014), Geophysical tutorial: Euler deconvolution of potential-field data, The Leading Edge, 33(4), 448-450, doi:10.1190/tle33040448.1
 
+* `authors` is a list of ids defined in the `_site.yml` file. Each id
+  maps to an author name.
 * An entry with `oa: true` will be marked as open-acess.
 * `inreview: true` will mark the entry as under peer-review (unpublished).
 * `alm: true` will embed Article Level Metrics for that entry.

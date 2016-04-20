@@ -1,6 +1,5 @@
 ---
 title: "Fatiando a Terra: modeling and inversion in geophysics"
-author: Leonardo Uieda, Vanderlei C. Oliveira Jr., Henrique B. Santos, André Ferreira, et al.
 language: Python
 license: BSD
 repository: fatiando/fatiando
@@ -20,6 +19,9 @@ flexible way to perform and implement geophysical data analysis.
 I've started development of Fatiando in 2010 during my Masters degree at the
 Observatório Nacional, Brazil.
 I now use it daily for my research and teaching.
+Fatiando has grown and is now a **community developed** project, with
+contributors from different countries.
+
 Most recent papers published by the [PINGA lab](http://www.pinga-lab.org) use
 it in some way.
 My [Geophysics courses](/teaching) use Fatiando and

@@ -1,6 +1,6 @@
 ---
 title: "Tesseroids: forward modeling gravitational fields in spherical coordinates"
-author: Leonardo Uieda, Valéria C. F. Barbosa, Carla Braitenberg
+author: uieda, barbosa, carla
 layout: publication
 date: 2016-03-01
 journal: Geophysics

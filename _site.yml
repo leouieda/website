@@ -8,6 +8,8 @@ keep_files: [".nojekyll"]
 
 ignore_patterns: ["README.md"]
 
+strict_undefined: true
+
 language: en
 
 keywords: 'science, geoscience, geophysics, software, open-source'
@@ -26,6 +28,22 @@ menulinks: [
     ['https://twitter.com/leouieda',
      '<i class="fa fa-twitter fa-lg" title="Twitter"></i>'],
     ]
+
+authors:
+    barbosa: Valéria C. F. Barbosa
+    carla: Carla Braitenberg
+    melo: Felipe F. Melo
+    oliveira-jr: Vanderlei C. Oliveira Jr
+    jbsilva: João B. C. Silva
+    daiana: Daiana P. Sales
+    carlos: Dionisio U. Carlos
+    ussami: Naomi Ussami
+    everton: Everton P. Bomfim
+    eder: Eder Molina
+    yli: Yaoguo Li
+    mbraga: Marco A. Braga
+    angeli: Glauco Angeli
+    peres: Guilherme Peres
 
 reflinks:
     leouieda:

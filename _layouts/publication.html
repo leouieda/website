@@ -3,23 +3,23 @@
 
 {% block content %}
 
-{% if this.author %}
+{% if this.author is defined %}
     <p class="pub-date-author">
         by
         {% for author in this.author.split(', ') %}
-            {% if author in ["Leonardo Uieda", "L. Uieda"] %}
-                <strong>{{ author }}</strong>{% if not loop.last %}, {% endif%}
+            {% if author == "uieda" %}
+                <strong>{{ site.author }}</strong>{% if not loop.last %}, {% endif%}
             {% else %}
-                {{ author }}{% if not loop.last %}, {% endif%}
+                {{ site.authors[author] }}{% if not loop.last %}, {% endif%}
             {% endif %}
         {% endfor %}
-    {% if this.date %}
+    {% if this.date is defined %}
         ({{ this.date.year }})
     {% endif %}
     </p>
 {% endif %}
 
-{% if this.inreview %}
+{% if this.inreview is defined and this.inreview %}
     <div class="alert alert-warning">
         <strong>
         This article is unpublished and is currently undergoing
@@ -32,7 +32,7 @@
 <div class="row">
     <div class="col-md-4">
 
-        {% if this.thumbnail %}
+        {% if this.thumbnail is defined %}
             <img class="pub-thumbnail"
                  src="/images/thumb/{{this.thumbnail}}"></img>
         {% endif %}
@@ -41,63 +41,63 @@
 
         <ul class="list-group">
             {% block left %}
-                {% if this.oa %}
+                {% if this.oa is defined and this.oa %}
                     <li class="list-group-item active">
                         {{ ai("open-access", "fa-fw", "Open-access article") }}
                         Open-Access
                     </li>
                 {% endif %}
-                {% if this.inprogress %}
+                {% if this.inprogress is defined and this.inprogress %}
                     <li class="list-group-item active">
                         {{ fa("refresh", "fa-fw", "Open-access article") }}
                         In progress
                     </li>
                 {% endif %}
-                {% if this.journal %}
+                {% if this.journal is defined %}
                     <li class="list-group-item">
                         {{ fa("book", "fa-fw", "Journal name") }}
                         Journal: {{this.journal}}
                     </li>
                 {% endif %}
-                {% if this.presentation %}
+                {% if this.presentation is defined %}
                     <li class="list-group-item">
                         {{ fa("comments-o", "fa-fw", "Presentation type") }}
                         {{this.presentation|capitalize()}} presentation
                     </li>
                 {% endif %}
-                {% if this.event %}
+                {% if this.event is defined %}
                     <li class="list-group-item">
                         {{ fa("users", "fa-fw", "Event name") }}
                         {{this.event}}
                     </li>
                 {% endif %}
-                {% if this.institution %}
+                {% if this.institution is defined %}
                     <li class="list-group-item">
                         {{ fa("university", "fa-fw", "Institution name") }}
                         {{this.institution}}
                     </li>
                 {% endif %}
-                {% if this.course %}
+                {% if this.course is defined %}
                     <li class="list-group-item">
                         {{ fa("graduation-cap", "fa-fw", "Course type") }}
                         {{ this.course|capitalize() }} course
                     </li>
                 {% endif %}
-                {% if this.language %}
+                {% if this.language is defined %}
                     <li class="list-group-item">
                         {{ fa("code", "fa-fw", "Programming language") }}
                         Language:
                         {{this.language}}
                     </li>
                 {% endif %}
-                {% if this.license %}
+                {% if this.license is defined %}
                     <li class="list-group-item">
                         {{ fa("file-text", "fa-fw", "Open-source license") }}
                         {{this.license}}
                         License
                     </li>
                 {% endif %}
-                {% if this.slides %}
+                {% if this.slides is defined %}
                     <li class="list-group-item">
                         {{ fa("desktop", "fa-fw", "Download slides") }}
                         Slides:
@@ -108,7 +108,7 @@
                         {% endif %}
                     </li>
                 {% endif %}
-                {% if this.poster %}
+                {% if this.poster is defined %}
                     <li class="list-group-item">
                         {{ fa("picture-o", "fa-fw", "Download poster") }}
                         Poster:
@@ -119,7 +119,7 @@
                         {% endif %}
                     </li>
                 {% endif %}
-                {% if this.repository %}
+                {% if this.repository is defined %}
                     <li class="list-group-item">
                         {{ fa("github-square", "fa-fw", "Github repository") }}
                         Source code:
@@ -127,28 +127,28 @@
                             this.repository}}</a>
                     </li>
                 {% endif %}
-                {% if this.supplement %}
+                {% if this.supplement is defined %}
                     <li class="list-group-item">
                         {{ fa("paperclip", "fa-fw", "Supplementary material") }}
                         Supplement:
                         <a href="http://dx.doi.org/{{this.supplement}}">{{this.supplement}}</a>
                     </li>
                 {% endif %}
-                {% if this.pdf %}
+                {% if this.pdf is defined %}
                     <li class="list-group-item">
                         {{ fa("file-pdf-o", "fa-fw", "Paper PDF") }}
                         PDF:
                         <a href="/pdf/{{this.pdf}}">{{this.pdf}}</a>
                     </li>
                 {% endif %}
-                {% if this.doi %}
+                {% if this.doi is defined %}
                     <li class="list-group-item">
                         {{ fa("external-link", "fa-fw", "DOI link to publisher") }}
                         doi: <a href="http://dx.doi.org/{{this.doi}}">{{
                             this.doi}}</a>
                     </li>
                 {% endif %}
-                {% if this.website %}
+                {% if this.website is defined %}
                     <li class="list-group-item">
                         {{ fa("home", "fa-fw", "Website") }}
                         <a href="{{this.website}}">{{this.website}}</a>
@@ -156,12 +156,12 @@
                 {% endif %}
             {% endblock %}
         </ul>
-        {% if this.alm %}
+        {% if this.alm is defined and this.alm %}
             <h2>Article Level Metrics</h2>
             <div data-badge-details="right" data-badge-type="medium-donut"
                  data-doi="{{this.doi}}" class="altmetric-embed"></div>
         {% endif %}
-        {% if this.citation %}
+        {% if this.citation is defined %}
             <h2>Citation</h2>
             <p>{{this.citation}}</p>
         {% endif %}

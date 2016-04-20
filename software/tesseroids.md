@@ -1,6 +1,5 @@
 ---
 title: "Tesseroids: forward modeling in spherical coordinates"
-author: Leonardo Uieda, Carla Braitenberg
 language: C
 license: BSD
 repository: leouieda/tesseroids
