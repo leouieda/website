@@ -146,7 +146,7 @@ My <a href="http://orcid.org">ORCID</a> number is
 
 <ul class="fa-ul">
 <li><i class="fa-li fa fa-calendar fa-fw"></i>
-    2011-ongoing
+    2011-2016
 </li>
 <li><i class="fa-li fa fa-university fa-fw"></i>
     <a href="http://www.on.br">Observatório Nacional, Brazil</a>
@@ -157,10 +157,30 @@ My <a href="http://orcid.org">ORCID</a> number is
 </li>
 <li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis: Forward modeling and inversion of gravitational fields in spherical coordinates
-    (published in 3 parts:
-    <a href="/papers/paper-tesseroids-2016.html">forward modeling</a>,
-    <a href="/talks/scipy2013.html">Python inversion library</a>,
-    <a href="/papers/paper-moho-inversion-tesseroids-2016.html">Moho inversion</a>)
+    (published in 3 parts)
+</li>
+<li><i class="fa-li fa fa-file-text-o fa-fw"></i>1:
+    <a href="/papers/paper-tesseroids-2016.html">Tesseroids: forward
+    modeling gravitational fields in spherical coordinates</a>
+</li>
+<li><i class="fa-li fa fa-file-text-o fa-fw"></i>2:
+    <a href="/talks/scipy2013.html">Modeling the Earth with Fatiando a
+    Terra</a>
+</li>
+<li><i class="fa-li fa fa-file-text-o fa-fw"></i>3:
+    <a href="/papers/paper-moho-inversion-tesseroids-2016.html">Fast
+    non-linear gravity inversion in spherical coordinates with application
+    to the South American Moho</a>
+</li>
+<li><i class="fa-li fa fa-file-pdf-o fa-fw"></i> Thesis PDF:
+    <a href="/pdf/phd-thesis.pdf">phd-thesis.pdf</a>
+</li>
+<li><i class="fa-li fa fa-desktop fa-fw"></i> Slides:
+    <a href="https://speakerdeck.com/leouieda/phd-defense">on
+    speakerdeck</a>
+</li>
+<li><i class="fa-li fa fa-github-square fa-fw"></i>
+    <a href="https://github.com/leouieda/phd-thesis">leouieda/phd-thesis</a>
 </li>
 <li><i class="fa-li fa fa-desktop fa-fw"></i> Yearly seminars:
 </li>
@@ -197,16 +217,16 @@ My <a href="http://orcid.org">ORCID</a> number is
     <a href="http://lattes.cnpq.br/0391036221142471">Valéria C. F. Barbosa</a>
 </li>
 <li><i class="fa-li fa fa-book fa-fw"></i>
-    Thesis:
+    Dissertation:
     Robust 3D gravity gradient inversion by planting anomalous densities
-    (<a href="/papers/paper-planting-anomalous-densities-2012.html">published as an article</a>)
 </li>
-<li><i class="fa-li fa fa-external-link fa-fw"></i>
-    doi:
-    <a href="http://library.seg.org/doi/abs/10.1190/geo2011-0388.1">10.1190/geo2011-0388.1</a>
+<li><i class="fa-li fa fa-file-text-o fa-fw"></i> Published article:
+    <a href="/papers/paper-planting-anomalous-densities-2012.html">Robust 3D
+    gravity gradient inversion by planting anomalous densities</a>
 </li>
-<li><i class="fa-li fa fa-file-pdf-o fa-fw"></i>
-    <a href="pdf/paper-planting-anomalous-densities-2012.pdf">Article PDF</a>
+<li><i class="fa-li fa fa-desktop fa-fw"></i> Slides:
+    <a href="https://speakerdeck.com/leouieda/masters-defense">on
+    speakerdeck</a>
 </li>
 <li><i class="fa-li fa fa-github-square fa-fw"></i>
     <a href="https://github.com/pinga-lab/paper-planting-densities">pinga-lab/paper-planting-densities</a>
@@ -243,9 +263,13 @@ My <a href="http://orcid.org">ORCID</a> number is
 <li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis: Cálculo do tensor gradiente gravimétrico utilizando tesseroides
 </li>
-<li><i class="fa-li fa fa-external-link fa-fw"></i>
-    doi:
+<li><i class="fa-li fa fa-file-pdf-o fa-fw"></i>
+    Thesis PDF:
     <a href="http://dx.doi.org/10.6084/m9.figshare.963547">10.6084/m9.figshare.963547</a>
+</li>
+<li><i class="fa-li fa fa-desktop fa-fw"></i> Slides:
+    <a href="https://speakerdeck.com/leouieda/bachelors-defense">on
+    speakerdeck</a>
 </li>
 <li><i class="fa-li fa fa-github-square fa-fw"></i>
     <a href="https://github.com/leouieda/barchelor-thesis">leouieda/barchelor-thesis</a>
