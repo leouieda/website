@@ -25,6 +25,7 @@ meetings at each step (in order):
 * 2012: This paper
 * 2012: [/talks/seg2012]
 * 2013: [/talks/agu-cancun2013]
+* 2014: [/talks/egu2014]
 
 # Open-source implementation
 

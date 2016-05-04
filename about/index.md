@@ -142,7 +142,7 @@ My <a href="http://orcid.org">ORCID</a> number is
 <div class="row">
 <div class="col-md-4">
 
-<h3><b>PhD</b> in Geophysics</h3>
+<h3><a href="/about/phd.html"><b>PhD</b> in Geophysics  »</a></h3>
 
 <ul class="fa-ul">
 <li><i class="fa-li fa fa-calendar fa-fw"></i>
@@ -157,53 +157,13 @@ My <a href="http://orcid.org">ORCID</a> number is
 </li>
 <li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis: Forward modeling and inversion of gravitational fields in spherical coordinates
-    (published in 3 parts)
 </li>
-<li><i class="fa-li fa fa-file-text-o fa-fw"></i>1:
-    <a href="/papers/paper-tesseroids-2016.html">Tesseroids: forward
-    modeling gravitational fields in spherical coordinates</a>
-</li>
-<li><i class="fa-li fa fa-file-text-o fa-fw"></i>2:
-    <a href="/talks/scipy2013.html">Modeling the Earth with Fatiando a
-    Terra</a>
-</li>
-<li><i class="fa-li fa fa-file-text-o fa-fw"></i>3:
-    <a href="/papers/paper-moho-inversion-tesseroids-2016.html">Fast
-    non-linear gravity inversion in spherical coordinates with application
-    to the South American Moho</a>
-</li>
-<li><i class="fa-li fa fa-file-pdf-o fa-fw"></i> Thesis PDF:
-    <a href="/pdf/phd-thesis.pdf">phd-thesis.pdf</a>
-</li>
-<li><i class="fa-li fa fa-desktop fa-fw"></i> Slides:
-    <a href="https://speakerdeck.com/leouieda/phd-defense">on
-    speakerdeck</a>
-</li>
-<li><i class="fa-li fa fa-github-square fa-fw"></i>
-    <a href="https://github.com/leouieda/phd-thesis">leouieda/phd-thesis</a>
-</li>
-<li><i class="fa-li fa fa-desktop fa-fw"></i> Yearly seminars:
-</li>
-<ul class="fa-ul">
-    <li><i class="fa-li fa fa-github-square fa-fw"></i> 2015:
-        <a href="https://github.com/leouieda/seminario-on-2015">leouieda/seminario-on-2015</a>
-    </li>
-    <li><i class="fa-li fa fa-github-square fa-fw"></i> 2014:
-        <a href="https://github.com/leouieda/seminario-on-2014">leouieda/seminario-on-2014</a>
-    </li>
-    <li><i class="fa-li fa fa-github-square fa-fw"></i> 2013 (qualification exam):
-        <a href="https://github.com/leouieda/qualify">leouieda/qualify</a>
-    </li>
-    <li><i class="fa-li fa fa-github-square fa-fw"></i> 2012:
-        <a href="https://github.com/leouieda/seminario-on-2012">leouieda/seminario-on-2012</a>
-    </li>
-</ul>
 </ul>
 
 </div>
 <div class="col-md-4">
 
-<h3><b>MSc</b> in Geophysics</h3>
+<h3><a href="/about/masters.html"><b>MSc</b> in Geophysics  »</a></h3>
 
 <ul class="fa-ul">
 <li><i class="fa-li fa fa-calendar fa-fw"></i>
@@ -220,34 +180,12 @@ My <a href="http://orcid.org">ORCID</a> number is
     Dissertation:
     Robust 3D gravity gradient inversion by planting anomalous densities
 </li>
-<li><i class="fa-li fa fa-file-text-o fa-fw"></i> Published article:
-    <a href="/papers/paper-planting-anomalous-densities-2012.html">Robust 3D
-    gravity gradient inversion by planting anomalous densities</a>
-</li>
-<li><i class="fa-li fa fa-desktop fa-fw"></i> Slides:
-    <a href="https://speakerdeck.com/leouieda/masters-defense">on
-    speakerdeck</a>
-</li>
-<li><i class="fa-li fa fa-github-square fa-fw"></i>
-    <a href="https://github.com/pinga-lab/paper-planting-densities">pinga-lab/paper-planting-densities</a>
-</li>
-<li><i class="fa-li fa fa-desktop fa-fw"></i> Yearly seminars:
-</li>
-    <ul class="fa-ul">
-        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2011:
-            <a href="https://github.com/leouieda/seminario-on-2011">leouieda/seminario-on-2011</a>
-        </li>
-        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2010:
-            <a href="https://github.com/leouieda/seminario-on-2010">leouieda/seminario-on-2010</a>
-        </li>
-    </ul>
-</ul>
 </ul>
 
 </div>
 <div class="col-md-4">
 
-<h3><b>BSc</b> in Geophysics</h3>
+<h3><a href="/about/bachelors.html"><b>BSc</b> in Geophysics  »</a></h3>
 
 <ul class="fa-ul">
 <li><i class="fa-li fa fa-calendar fa-fw"></i>
@@ -263,24 +201,6 @@ My <a href="http://orcid.org">ORCID</a> number is
 <li><i class="fa-li fa fa-book fa-fw"></i>
     Thesis: Cálculo do tensor gradiente gravimétrico utilizando tesseroides
 </li>
-<li><i class="fa-li fa fa-file-pdf-o fa-fw"></i>
-    Thesis PDF:
-    <a href="http://dx.doi.org/10.6084/m9.figshare.963547">10.6084/m9.figshare.963547</a>
-</li>
-<li><i class="fa-li fa fa-desktop fa-fw"></i> Slides:
-    <a href="https://speakerdeck.com/leouieda/bachelors-defense">on
-    speakerdeck</a>
-</li>
-<li><i class="fa-li fa fa-github-square fa-fw"></i>
-    <a href="https://github.com/leouieda/barchelor-thesis">leouieda/barchelor-thesis</a>
-</li>
-<li><i class="fa-li fa fa-desktop fa-fw"></i> Presentations:
-</li>
-    <ul class="fa-ul">
-        <li><i class="fa-li fa fa-github-square fa-fw"></i> 2008:
-            <a href="https://github.com/leouieda/simposio-iag-2008">leouieda/simposio-iag-2008</a>
-        </li>
-    </ul>
 </ul>
 
 <h3>International <b>Exchange</b> Program</h3>
