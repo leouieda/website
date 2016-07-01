@@ -2,14 +2,19 @@
 title: Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho
 author: uieda, barbosa
 layout: publication
-date: 2016-04-01
-journal: Geophysical Journal International
+date: 2016-06-01
+<!--journal: Geophysical Journal International-->
 repository: pinga-lab/paper-moho-inversion-tesseroids
 thumbnail: paper-moho-inversion-2016.png
 inreview: true
 ---
 
 # About
+
+The manuscript has been **submitted** to the Geophysical Journal International
+and is currently undergoing peer-review.
+A **pre-print** is available from the Github repository at
+[github.com/pinga-lab/paper-moho-inversion-tesseroids/releases/latest](https://github.com/pinga-lab/paper-moho-inversion-tesseroids/releases/latest).
 
 This paper is a chapter of my PhD thesis.
 It describes a new gravity inversion method to estimate the depth of the
