@@ -2,19 +2,17 @@
 title: "Tesseroids: forward modeling gravitational fields in spherical coordinates"
 author: uieda, barbosa, carla
 layout: publication
-date: 2016-05-01
+date: 2016-09-01
 journal: Geophysics
 repository: pinga-lab/paper-tesseroids
 thumbnail: paper-tesseroids-2016.png
-inreview: true
+pdf: paper-tesseroids-2016.pdf
+doi: 10.1190/geo2015-0204.1
+alm: true
+citation: "Uieda, L., V. Barbosa, and C. Braitenberg (2016), Tesseroids: Forward-modeling gravitational fields in spherical coordinates, GEOPHYSICS, F41–F48, doi:10.1190/geo2015-0204.1."
 ---
 
 # About
-
-The manuscript has been **accepted** for publication in *Geophysics*.
-While the final version is not made available on the publishers website,
-a **pre-print** is available from the Github repository at
-[github.com/pinga-lab/paper-tesseroids/releases/latest](https://github.com/pinga-lab/paper-tesseroids/releases/latest).
 
 This paper is a chapter of my PhD thesis.
 It describes the algorithms used in version 1.2.0 of the open-source
