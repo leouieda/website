@@ -2,7 +2,7 @@
 title: Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho
 author: uieda, barbosa
 layout: publication
-date: 2016-06-01
+date: 2016-12-01
 <!--journal: Geophysical Journal International-->
 repository: pinga-lab/paper-moho-inversion-tesseroids
 thumbnail: paper-moho-inversion-2016.png
