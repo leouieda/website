@@ -8,6 +8,7 @@ repository: pinga-lab/paper-moho-inversion-tesseroids
 thumbnail: paper-moho-inversion-2016.png
 supplement: 10.6084/m9.figshare.3987267
 pdf: paper-moho-inversion-tesseroids-2016.pdf
+alm: true
 inreview: true
 ---
 
@@ -26,11 +27,11 @@ The forward modeling method used is described in the paper
 We applied the inversion to estimate the Moho depth for South America.
 
 The main result from this publication is the gravity-derived Moho depth model
-for South America and the differences between it and seismological estimates 
+for South America and the differences between it and seismological estimates
 of [Assumpção et al. (2013)](http://dx.doi.org/10.1016/j.tecto.2012.11.014).
 These differences allow us to know where the gravity-derived model can be trusted and where there might be unaccounted sources in the gravity data.
 
-You can **download** the model results, source code, and input data from 
+You can **download** the model results, source code, and input data from
 doi:[10.6084/m9.figshare.3987267](https://dx.doi.org/10.6084/m9.figshare.3987267)
 
 
