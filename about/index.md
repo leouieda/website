@@ -16,23 +16,31 @@ order: date
      style="width: 30%; margin-right: 20px; margin-top: 15px; margin-bottom: 5px; float: left;">
 
 <p>
-I'm Professor of Geophysics at the
+In February 2014 I started working as
+Professor of Geophysics at the
 <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro</a>,
-Brazil,
-since February 2014.
+Brazil.
+There, I teach the "Introduction to Geophysics" courses to Geology students,
+a "Programming and numerical methods" course to Oceanography students,
+<a href="/teaching">among others</a>.
+</p>
+
+<p>
 My research focuses on gravity and magnetic methods, particularly in developing
 new methodologies for
 <a href="/papers/paper-polynomial-eqlayer-2013.html">data interpretation</a>
 and
 <a href="/papers/paper-planting-anomalous-densities-2012.html">inversion</a>.
-I teach the "Intro to Geophysics" courses to Geology students,
-<a href="/teaching">among others</a>.
+</p>
+
+<p>
 All my work usually involves a lot of
 <a href="/software">open-source software development</a>,
 most of it in the excellent <a href="https://www.python.org/">Python</a>
 programming language.
-I'm the main developer of the open-source geophysics library
-<a href="/software/fatiando.html">Fatiando a Terra</a>.
+I'm the creator and main developer of
+the C command-line program <a href="/software/tesseroids.html">Tesseroids</a>
+and the Python library <a href="/software/fatiando.html">Fatiando a Terra</a>.
 </p>
 
 <p>
