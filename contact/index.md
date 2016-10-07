@@ -8,26 +8,26 @@ order: date
 
 <div class="col-md-6">
 
-The best way to get in touch is to <strong>write me an e-mail</strong> to:
+The best way to get in touch is to write me an e-mail or ping me on Twitter:
 
 <ul class="fa-ul contact">
     <li><i class="fa-li fa fa-envelope fa-fw"></i>
     <a href="mailto:leouieda@gmail.com">leouieda@gmail.com</a>
     </li>
-</ul>
-
-If it's not urgent, you can ping me on Twitter or Google+. I don't check these
-sites daily but at least every 2-3 days.
-
-<ul class="fa-ul contact">
     <li><i class="fa-li fa fa-twitter fa-fw"></i>
     <a href="https://twitter.com/leouieda">@leouieda</a>
     </li>
-
-    <li><i class="fa-li fa fa-google-plus fa-fw"></i>
-    <a href="https://plus.google.com/u/0/+LeonardoUieda">+Leonardo Uieda</a>
-    </li>
 </ul>
+
+<p>
+I'm also fairly active on the
+<a href="http://www.agilegeoscience.com/blog/2016/8/04/the-sound-of-the-software-underground">Software Underground</a>
+Slack channel.
+It's a place where very interesting and smart geoscientists gather to chat and
+exchange ideas.
+I highly recommend signing up (for free) at
+<a href="http://swung.rocks/">swung.rocks</a>.
+</p>
 
 If you're around Rio and want to chat about geophysics, science, free software,
 teaching, or anything interesting, stop by my office
