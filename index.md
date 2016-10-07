@@ -8,15 +8,24 @@ content:
     - software
 ---
 
-<div class="container-fluid banner-area">
+<div class="container-fluid">
+
     <div class="banner" style="background-image: url({{site.banner}});">
     </div>
-    <div class="container site-description text-center">
-        <h2 style="line-height: 50px">
-        This is a website about my academic life:
-        geophysics, gravity and magnetic methods, inverse problems,
-        free software, teaching and education, and open scholarship.
-        </h2>
+
+    <div class="container">
+
+        <p class="site-description text-center">
+        I teach geophysics.
+        I program.
+        I research gravimetry and inverse problems.
+        </br>
+        Learning should be active.
+        Software should be free.
+        Science should be open.
+        </p>
+
     </div>
+
 </div>
 

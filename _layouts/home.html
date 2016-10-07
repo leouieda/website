@@ -25,7 +25,6 @@
 
 <div class="container">
 
-    <h1 class="text-center">Highlights</h1>
     {% set columns = 2 %}
     {% for row in this.content|batch(columns) %}
         <div class="row">
@@ -37,18 +36,6 @@
         </div>
     {% endfor %}
 
-    <div class="text-center" style="margin-top: 60px;">
-        <hr>
-        <h2>Do you like programming, geoscience, and general
-            geekiness?</h2>
-        <h3>
-        Join us in the Software Underground
-        <a href="https://slack.com/">Slack</a> group at
-        <a href="http://swung.rocks/">swung.rocks</a>.
-        </h3>
-        <img src="/images/swung.png" style="width: 100px" >
-        <hr>
-    </div>
 </div>
 
 {% endblock %}
