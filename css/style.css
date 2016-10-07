@@ -117,7 +117,11 @@ p.pub-date-author {
 }
 
 .thumbnail {
-    border-radius: 4px;
+    border: none;
+}
+
+.thumbnail .caption {
+    padding: 9px 0px;
 }
 
 img {
