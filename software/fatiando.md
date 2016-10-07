@@ -1,5 +1,5 @@
 ---
-title: "Fatiando a Terra: modeling and inversion in geophysics"
+title: "Fatiando a Terra: modeling and inversion for geophysics"
 language: Python
 license: BSD
 repository: fatiando/fatiando
