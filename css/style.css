@@ -116,12 +116,18 @@ p.pub-date-author {
     font-style: italic;
 }
 
-.thumbnail {
+.card {
     border: none;
+    padding: 20px 0px;
 }
 
-.thumbnail .caption {
+.card-caption {
     padding: 9px 0px;
+    color: #333333;
+}
+
+.card-title {
+    color: #2780e3;
 }
 
 img {
