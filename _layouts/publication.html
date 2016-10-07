@@ -130,7 +130,7 @@
                 {% if this.supplement is defined %}
                     <li class="list-group-item">
                         {{ fa("paperclip", "fa-fw", "Supplementary material") }}
-                        Supplement:
+                        Data/Supplement:
                         <a href="http://dx.doi.org/{{this.supplement}}">{{this.supplement}}</a>
                     </li>
                 {% endif %}
@@ -158,8 +158,16 @@
         </ul>
         {% if this.alm is defined and this.alm %}
             <h2>Article Level Metrics</h2>
-            <div data-badge-details="right" data-badge-type="medium-donut"
+            {% if this.doi %}
+                <h3>Main article</h3>
+                <div data-badge-details="right" data-badge-type="medium-donut"
                  data-doi="{{this.doi}}" class="altmetric-embed"></div>
+            {% endif %}
+            {% if this.supplement %}
+                <h3>Data/Supplement</h3>
+                <div data-badge-details="right" data-badge-type="medium-donut"
+                 data-doi="{{this.supplement}}" class="altmetric-embed"></div>
+            {% endif %}
         {% endif %}
         {% if this.citation is defined %}
             <h2>Citation</h2>
