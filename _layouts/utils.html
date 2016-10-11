@@ -15,14 +15,14 @@
             <img src="/images/thumb/{{page.thumbnail}}">
         {%  endif %}
         <div class="card-caption">
+            {% if show_oa and page.oa is defined and page.oa %}
+                {{ ai("open-access") }}
+            {% endif %}
             <span class="card-title">
                 {{ page.title }}
             </span>
             {% if date %}
                 ({{ page.date.year }})
-            {% endif %}
-            {% if show_oa and page.oa is defined and page.oa %}
-                {{ ai("open-access") }}
             {% endif %}
             </br>
             {% if inprogress and page.inprogress is defined and page.inprogress %}
