@@ -84,17 +84,17 @@ footer {
     padding-top: 40px;
     padding-bottom: 60px;
     color: #afdddd;
- }
+}
 
 footer a {
     color: #fff;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
- }
+}
 footer a:hover {
     color: #fff;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
     text-decoration: underline;
- }
+}
 
 .list-group-item {
     border: none;
@@ -163,3 +163,8 @@ img {
     padding-left: 45px;
     padding-right: 45px;
 }
+
+.alert-accepted {
+    background-color: #2780e3;
+}
+

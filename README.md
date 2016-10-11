@@ -70,21 +70,24 @@ Optional:
     supplement: 10.6084/m9.figshare.923450
     thumbnail: paper-tle-euler-tutorial-2014.png
     pdf: paper-tle.pdf
-    oa: true
-    inreview: true
-    alm: true
     author: uieda, oliveira-jr, barbosa
     journal: The Leading Edge
     citation: Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2014), Geophysical tutorial: Euler deconvolution of potential-field data, The Leading Edge, 33(4), 448-450, doi:10.1190/tle33040448.1
+    oa: true
+    inreview: true
+    accepted: true
+    alm: true
 
 * `authors` is a list of ids defined in the `_site.yml` file. Each id
   maps to an author name.
 * An entry with `oa: true` will be marked as open-acess.
-* `inreview: true` will mark the entry as under peer-review (unpublished).
-* `alm: true` will embed Article Level Metrics for that entry.
 * `thumbnail`  should be the name of a 600 x 300 pixel figure in
   `/images/thumb`
 * `pdf` should be the name of PDF file in the `pdf` folder
+* `inreview: true` will mark the entry as under peer-review (unpublished).
+* `accepted: true` will mark the entry as accepted for publication (after
+  peer-review but not yet published).
+* `alm: true` will embed Article Level Metrics for that entry.
 
 ### Talks
 

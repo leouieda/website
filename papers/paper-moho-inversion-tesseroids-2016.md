@@ -9,13 +9,11 @@ thumbnail: paper-moho-inversion-2016.png
 supplement: 10.6084/m9.figshare.3987267
 pdf: paper-moho-inversion-tesseroids-2016.pdf
 alm: true
-inreview: true
+accepted: true
 ---
 
 
 # About
-
-The manuscript has been **accepted** for publication in the Geophysical Journal International.
 
 This paper is a chapter of my PhD thesis.
 It describes a new gravity inversion method to estimate the depth of the

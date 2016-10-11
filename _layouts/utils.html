@@ -31,6 +31,9 @@
             {% if page.inreview is defined and page.inreview %}
                 <span class="label label-warning">UNDER REVIEW</span>
             {% endif %}
+            {% if page.accepted is defined and page.accepted %}
+                <span class="label label-primary">ACCEPTED</span>
+            {% endif %}
         </div>
     </div></a>
 {% endmacro %}
