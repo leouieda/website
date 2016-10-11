@@ -3,6 +3,7 @@ title: Geofísica 2 (currículo antigo)
 date: 2014-03-03
 institution: UERJ
 course: university
+thumbnail: generic-course.png
 layout: publication
 ---
 

@@ -6,6 +6,7 @@ institution: IAG/USP
 course: short
 repository: pinga-lab/inversao-iag-2012
 license: CC-BY
+thumbnail: generic-course.png
 layout: publication
 ---
 
