@@ -32,7 +32,7 @@ Yearly seminars presented at the Observatório Nacional:
 * 2013 (qualification exam): [leouieda/qualify](https://github.com/leouieda/qualify)
 * 2012: [leouieda/seminario-on-2012](https://github.com/leouieda/seminario-on-2012)
 
-Slides from my thesis defense:
+# PhD defense slides
 
 <script async class="speakerdeck-embed"
 data-id="db1324af5ddc4183b5961497fd87b057" data-ratio="1.33333333333333"
