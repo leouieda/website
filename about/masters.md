@@ -2,10 +2,9 @@
 title: "MSc in Geophysics: Robust 3D gravity gradient inversion by planting anomalous densities"
 date: 2011-11-01
 repository: pinga-lab/paper-planting-densities
-doi: 10.1190/geo2011-0388.1
 institution: Observatório Nacional, Brazil
 thumbnail: paper-planting-anomalous-densities-2012.png
-alm: true
+pdf: msc-dissertation.pdf
 layout: publication
 ---
 
@@ -14,10 +13,13 @@ layout: publication
 I did my Master's degree in Geophysics at the Observatório Nacional in Rio de
 Janeiro, Brazil, under the supervision of
 [Valéria C. F. Barbosa](http://lattes.cnpq.br/0391036221142471).
-I started in March 2010 and presented my dissertation in October 2011.
-The dissertation was published as the paper
-[/papers/paper-planting-anomalous-densities-2012]
-and the method that we developed is implemented in the software
+I started in March 2010 and defended my dissertation in October 2011.
+
+The dissertation was published as the paper:
+
+* [/papers/paper-planting-anomalous-densities-2012]
+
+The method that we developed is implemented in the software
 [Fatiando a Terra][/software/fatiando].
 You'll find supplementary material, the PDF, and links to the publisher in the
 paper page.
@@ -41,7 +43,7 @@ Other papers that use this method:
 * 2016: [/papers/paper-quadrilatero2-2016]
 * 2014: [/papers/paper-quadrilatero-2014]
 
-Slides from my dissertation defense:
+# Dissertation defense slides
 
 <script async class="speakerdeck-embed"
 data-id="bd870aa438774d84974048becca502a1" data-ratio="1.33159947984395"
