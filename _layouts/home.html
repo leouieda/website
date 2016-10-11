@@ -2,7 +2,7 @@
 
 {% from "utils.html" import card %}
 
-{% macro recent_cards(category, number=2, date=true) %}
+{% macro recent_cards(category, number=2) %}
     <h2 class="category-header">
         <a href="{{ category.url }}">{{ category.title }}  »</a>
     </h2>
@@ -11,7 +11,7 @@
         {% for article in category.content[0:number] %}
             <div class="col-md-{{12//number}} col-sm-{{12//number}}
                         col-xs-{{12//number}}">
-                {{ card(article, date=date) }}
+                {{ card(article, date=false, inprogress=true) }}
             </div>
         {% endfor %}
     </div>
@@ -30,7 +30,7 @@
         <div class="row">
             {% for category in row %}
                 <div class="col-md-{{12//columns}}">
-                    {{ recent_cards(category, number=2, date=false) }}
+                    {{ recent_cards(category, number=2) }}
                 </div>
             {% endfor %}
         </div>
