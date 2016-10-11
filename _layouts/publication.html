@@ -29,12 +29,20 @@
 {% endif %}
 
 {% if this.accepted is defined and this.accepted %}
-    <div class="alert alert-info alert-accepted">
+    <div class="alert alert-info alert-blue">
         This article has been <strong>accepted</strong> for publication
         {% if this.journal is defined %}
             in {{this.journal}}
         {% endif %}
         but has not yet been published.
+    </div>
+{% endif %}
+
+{% if this.inprogress is defined and this.inprogress %}
+    <div class="alert alert-info alert-blue">
+        {{ fa("refresh", "fa-fw", "Course in progress") }}
+        This course is currently <strong>in progress</strong>
+        for the {{this.date.year}} school year.
     </div>
 {% endif %}
 
@@ -55,12 +63,6 @@
                     <li class="list-group-item active">
                         {{ ai("open-access", "fa-fw", "Open-access article") }}
                         Open-Access
-                    </li>
-                {% endif %}
-                {% if this.inprogress is defined and this.inprogress %}
-                    <li class="list-group-item active">
-                        {{ fa("refresh", "fa-fw", "Open-access article") }}
-                        In progress
                     </li>
                 {% endif %}
                 {% if this.journal is defined %}
