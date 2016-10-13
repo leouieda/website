@@ -1,7 +1,7 @@
 ---
 title: Research Interests
 order: date
-layout: research
+layout: page
 ---
 
 As a geophysicist,
