@@ -148,79 +148,75 @@ My <a href="http://orcid.org">ORCID</a> number is
 <hr>
 
 <div class="row">
-<div class="col-md-4">
 
-<h3><a href="/about/phd.html"><b>PhD</b> in Geophysics  »</a></h3>
-
-<ul class="fa-ul">
-<li><i class="fa-li fa fa-calendar fa-fw"></i>
-    2011-2016
-</li>
-<li><i class="fa-li fa fa-university fa-fw"></i>
-    <a href="http://www.on.br">Observatório Nacional, Brazil</a>
-</li>
-<li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
-    Advisor:
-    <a href="http://lattes.cnpq.br/0391036221142471">Valéria C. F. Barbosa</a>
-</li>
-<li><i class="fa-li fa fa-book fa-fw"></i>
-    Thesis: Forward modeling and inversion of gravitational fields in spherical coordinates
-</li>
-</ul>
-
+<div class="col-md-3">
+    <h3><a href="/about/phd.html"><b>PhD</b> in Geophysics  »</a></h3>
+    <ul class="fa-ul">
+        <li><i class="fa-li fa fa-calendar fa-fw"></i>
+            2011-2016
+        </li>
+        <li><i class="fa-li fa fa-university fa-fw"></i>
+            <a href="http://www.on.br">Observatório Nacional, Brazil</a>
+        </li>
+        <li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
+            Advisor:
+            <a href="http://lattes.cnpq.br/0391036221142471">Valéria C. F. Barbosa</a>
+        </li>
+        <li><i class="fa-li fa fa-book fa-fw"></i>
+            Thesis: Forward modeling and inversion of gravitational fields in spherical coordinates
+        </li>
+    </ul>
 </div>
-<div class="col-md-4">
 
-<h3><a href="/about/masters.html"><b>MSc</b> in Geophysics  »</a></h3>
-
-<ul class="fa-ul">
-<li><i class="fa-li fa fa-calendar fa-fw"></i>
-    2010-2011
-</li>
-<li><i class="fa-li fa fa-university fa-fw"></i>
-    <a href="http://www.on.br">Observatório Nacional, Brazil</a>
-</li>
-<li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
-    Advisor:
-    <a href="http://lattes.cnpq.br/0391036221142471">Valéria C. F. Barbosa</a>
-</li>
-<li><i class="fa-li fa fa-book fa-fw"></i>
-    Dissertation:
-    Robust 3D gravity gradient inversion by planting anomalous densities
-</li>
-</ul>
-
+<div class="col-md-3">
+    <h3><a href="/about/masters.html"><b>MSc</b> in Geophysics  »</a></h3>
+    <ul class="fa-ul">
+        <li><i class="fa-li fa fa-calendar fa-fw"></i>
+            2010-2011
+        </li>
+        <li><i class="fa-li fa fa-university fa-fw"></i>
+            <a href="http://www.on.br">Observatório Nacional, Brazil</a>
+        </li>
+        <li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
+            Advisor:
+            <a href="http://lattes.cnpq.br/0391036221142471">Valéria C. F. Barbosa</a>
+        </li>
+        <li><i class="fa-li fa fa-book fa-fw"></i>
+            Dissertation:
+            Robust 3D gravity gradient inversion by planting anomalous densities
+        </li>
+    </ul>
 </div>
-<div class="col-md-4">
 
-<h3><a href="/about/bachelors.html"><b>BSc</b> in Geophysics  »</a></h3>
+<div class="col-md-3">
+    <h3>International <b>Exchange</b></h3>
+    <ul class="fa-ul">
+    <li><i class="fa-li fa fa-calendar fa-fw"></i>
+        2008-2009
+    </li>
+    <li><i class="fa-li fa fa-university fa-fw"></i>
+        <a href="http://www.yorku.ca/esse/">York University, Toronto, Canada</a>
+    </li>
+    </ul>
+</div>
 
-<ul class="fa-ul">
-<li><i class="fa-li fa fa-calendar fa-fw"></i>
-    2004-2009
-</li>
-<li><i class="fa-li fa fa-university fa-fw"></i>
-    <a href="http://www.iag.usp.br">Universidade de São Paulo, Brazil</a>
-</li>
-<li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
-    Advisor:
-    <a href="http://lattes.cnpq.br/6704246490515612">Naomi Ussami</a>
-</li>
-<li><i class="fa-li fa fa-book fa-fw"></i>
-    Thesis: Cálculo do tensor gradiente gravimétrico utilizando tesseroides
-</li>
-</ul>
-
-<h3>International <b>Exchange</b> Program</h3>
-<ul class="fa-ul">
-<li><i class="fa-li fa fa-calendar fa-fw"></i>
-    2008-2009
-</li>
-<li><i class="fa-li fa fa-university fa-fw"></i>
-    <a href="http://www.yorku.ca/esse/">York University, Toronto, Canada</a>
-</li>
-</ul>
-
+<div class="col-md-3">
+    <h3><a href="/about/bachelors.html"><b>BSc</b> in Geophysics  »</a></h3>
+    <ul class="fa-ul">
+    <li><i class="fa-li fa fa-calendar fa-fw"></i>
+        2004-2009
+    </li>
+    <li><i class="fa-li fa fa-university fa-fw"></i>
+        <a href="http://www.iag.usp.br">Universidade de São Paulo, Brazil</a>
+    </li>
+    <li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
+        Advisor:
+        <a href="http://lattes.cnpq.br/6704246490515612">Naomi Ussami</a>
+    </li>
+    <li><i class="fa-li fa fa-book fa-fw"></i>
+        Thesis: Cálculo do tensor gradiente gravimétrico utilizando tesseroides
+    </li>
+    </ul>
 </div>
 
 </div><!-- row -->
