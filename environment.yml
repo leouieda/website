@@ -2,5 +2,11 @@ name: urubu
 dependencies:
     - python=3.5
     - pip
+    # Install Urubu's requirements from conda
+    - jinja2>=2.7
+    - beautifulsoup4
+    - markdown
+    - pygments
+    - pyyaml
     - pip:
         - urubu==1.2.0
