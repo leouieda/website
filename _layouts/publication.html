@@ -1,7 +1,11 @@
 {% extends "page.html" %}
 {% from "utils.html" import fa, ai %}
 
+
 {% block content %}
+
+
+<h1>{{ this.title }}</h1>
 
 {% if this.author is defined %}
     <p class="pub-date-author">
@@ -193,5 +197,6 @@
         {% endblock %}
     </div>
 </div>
+
 
 {% endblock %}

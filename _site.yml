@@ -14,8 +14,6 @@ language: en
 
 keywords: 'science, geoscience, geophysics, software, open-source'
 
-banner: '/images/torres-del-paine.jpg'
-
 menulinks: [
     ['/about', 'About'],
     #['/research', 'Research'],
