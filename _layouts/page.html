@@ -1,10 +1,22 @@
 {% extends "base.html" %}
 
+
 {% block title %}
     {{ this.title }} | {{ site.name }}
 {% endblock %}
 
+
 {% block body %}
+
+
+{% block banner %}
+    {% if this.banner is defined %}
+        <div class="container-fluid">
+            <div class="banner" style="background-image: url(/images/{{this.banner}});">
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
 
 <div class="container">
 
@@ -18,9 +30,9 @@
         </ol>
     {% endblock %}
 
-    <h1>{{ this.title }}</h1>
-
     {% block content %}
+
+        <h1>{{ this.title }}</h1>
 
         {{ this.body }}
 

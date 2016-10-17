@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
 
 {% from "utils.html" import card %}
 
@@ -19,11 +19,13 @@
 {% endmacro %}
 
 
-{% block body %}
+{% block breadcrumbs %}
+{% endblock %}
 
-{{ this.body }}
 
-<div class="container">
+{% block content %}
+
+    {{ this.body }}
 
     {% set columns = 2 %}
     {% for row in this.content|batch(columns) %}
@@ -35,7 +37,5 @@
             {% endfor %}
         </div>
     {% endfor %}
-
-</div>
 
 {% endblock %}
