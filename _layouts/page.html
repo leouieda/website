@@ -11,8 +11,14 @@
 
 {% block banner %}
     {% if this.banner is defined %}
+        {% if this.banner_position is defined %}
+            {% set position = this.banner_position %}
+        {% else %}
+            {% set position = "center" %}
+        {% endif %}
         <div class="container-fluid">
-            <div class="banner" style="background-image: url(/images/{{this.banner}});">
+            <div class="banner" style="background-image:
+            url(/images/{{this.banner}}); background-position: {{position}};">
             </div>
         </div>
     {% endif %}

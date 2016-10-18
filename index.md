@@ -7,6 +7,7 @@ content:
     - teaching
     - software
 banner: torres-del-paine.jpg
+banner_position: left
 ---
 
 <p class="site-description text-center">
