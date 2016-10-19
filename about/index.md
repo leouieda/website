@@ -2,6 +2,7 @@
 title: About
 layout: page
 order: date
+banner: monte-roraima.jpg
 ---
 
 {% from "utils.html" import fa, ai %}
