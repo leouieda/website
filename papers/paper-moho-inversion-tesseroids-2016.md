@@ -8,14 +8,15 @@ repository: pinga-lab/paper-moho-inversion-tesseroids
 thumbnail: paper-moho-inversion-2016.png
 supplement: 10.6084/m9.figshare.3987267
 pdf: paper-moho-inversion-tesseroids-2016.pdf
+doi: 10.1093/gji/ggw390
+citation: "Uieda, L. and V. C. F. Barbosa (2016), Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho, Geophysical Journal International, doi:10.1093/gji/ggw390."
 alm: true
-accepted: true
 ---
 
 
 # About
 
-This paper is a chapter of my PhD thesis.
+This paper is a chapter of my [PhD thesis][/about/phd].
 It describes a new gravity inversion method to estimate the depth of the
 crust-mantle interface (the Moho).
 The inversion uses a spherical Earth approximation by discretizing the Earth
@@ -57,10 +58,18 @@ The code uses the forward modeling and inversion packages of the library
 [/software/fatiando].
 
 You'll find the source code, input data, and instructions to produce the
-results from the paper on the Github repository (link in the side bar).
+results from the paper on the Github repository. There should be enough
+information for you to produce all figures of the paper.
 
-You can also run the Jupyter notebooks online without installing anything
-thanks to the awesome free [Binder](http://mybinder.org/) webservice:
+
+# Running the code online
+
+You can run the Jupyter notebooks online without installing anything
+thanks to the awesome free [Binder](http://mybinder.org/) web service.
+Follow the link below and open any notebook in the `code` folder. Beware that
+the CRUST1.0 synthetic and the South American Moho results will take hours or
+days to run.
+
 [mybinder.org/repo/pinga-lab/paper-moho-inversion-tesseroids](http://mybinder.org:/repo/pinga-lab/paper-moho-inversion-tesseroids)
 
 
