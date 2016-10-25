@@ -9,4 +9,4 @@ dependencies:
     - pygments
     - pyyaml
     - pip:
-        - urubu==1.2.0
+        - https://github.com/jandecaluwe/urubu/archive/master.zip
