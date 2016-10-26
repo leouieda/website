@@ -179,7 +179,7 @@
                 <div data-badge-details="right" data-badge-type="medium-donut"
                  data-doi="{{this.doi}}" class="altmetric-embed"></div>
             {% endif %}
-            {% if this.supplement %}
+            {% if this.supplement is defined %}
                 <h3>Data/Supplement</h3>
                 <div data-badge-details="right" data-badge-type="medium-donut"
                  data-doi="{{this.supplement}}" class="altmetric-embed"></div>
