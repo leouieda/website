@@ -4,7 +4,7 @@ brand: "LEONARDO <strong>UIEDA</strong>"
 
 description: "I teach geophysics. I program. I research gravimetry and inverse problems. </br>Learning should be active. Software should be free. Science should be open."
 
-author: Leonardo Uieda
+author: uieda
 
 keep_files: [".nojekyll"]
 
@@ -33,6 +33,7 @@ menulinks: [
     ]
 
 authors:
+    uieda: Leonardo Uieda
     barbosa: Valéria C. F. Barbosa
     carla: Carla Braitenberg
     melo: Felipe F. Melo

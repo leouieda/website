@@ -37,3 +37,14 @@
         </div>
     </div></a>
 {% endmacro %}
+
+{% macro get_authors(article, site) %}
+    {% for author in article.author.split(', ') %}
+        {% if author == site.author %}
+            {% set author_name = "<strong>" + site.authors[author] + "</strong>" %}
+        {% else %}
+            {% set author_name = site.authors[author] %}
+        {% endif %}
+        {{ author_name }}{% if not loop.last %}, {% endif %}
+    {% endfor %}
+{% endmacro %}

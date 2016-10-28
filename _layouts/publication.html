@@ -1,25 +1,17 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa, ai %}
+{% from "utils.html" import fa, ai, get_authors %}
 
 
 {% block content %}
-
 
 <h1>{{ this.title }}</h1>
 
 {% if this.author is defined %}
     <p class="pub-date-author">
-        by
-        {% for author in this.author.split(', ') %}
-            {% if author == "uieda" %}
-                <strong>{{ site.author }}</strong>{% if not loop.last %}, {% endif%}
-            {% else %}
-                {{ site.authors[author] }}{% if not loop.last %}, {% endif%}
-            {% endif %}
-        {% endfor %}
-    {% if this.date is defined %}
-        ({{ this.date.year }})
-    {% endif %}
+        by {{ get_authors(this, site) }}
+        {% if this.date is defined %}
+            ({{ this.date.year }})
+        {% endif %}
     </p>
 {% endif %}
 
