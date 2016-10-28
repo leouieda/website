@@ -1,5 +1,5 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa, ai, get_authors %}
+{% from "utils.html" import fa, ai, get_authors, pub_alerts %}
 
 
 {% block content %}
@@ -15,33 +15,7 @@
     </p>
 {% endif %}
 
-{% if this.inreview is defined and this.inreview %}
-    <div class="alert alert-warning">
-        <strong>
-        This article is unpublished and is currently undergoing
-        peer-review.
-        </strong>
-    </div>
-{% endif %}
-
-{% if this.accepted is defined and this.accepted %}
-    <div class="alert alert-info alert-blue">
-        This article has been <strong>accepted</strong> for publication
-        {% if this.journal is defined %}
-            in {{this.journal}}
-        {% endif %}
-        but has not yet been published.
-    </div>
-{% endif %}
-
-{% if this.inprogress is defined and this.inprogress %}
-    <div class="alert alert-info alert-blue">
-        {{ fa("refresh", "fa-fw", "Course in progress") }}
-        This course is currently <strong>in progress</strong>
-        for the {{this.date.year}} school year.
-    </div>
-{% endif %}
-
+{{ pub_alerts(this) }}
 
 <div class="row">
     <div class="col-md-4">

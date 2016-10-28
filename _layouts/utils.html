@@ -1,12 +1,15 @@
 {# Utility functions for the templates #}
 
+
 {% macro fa(name, class='', title='') %}
     <i class="fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
 {% endmacro %}
 
+
 {% macro ai(name, class='', title='') %}
     <i class="ai ai-{{ name }} {{ class }}" title="{{ title }}"></i>
 {% endmacro %}
+
 
 {% macro card(page, date=true, show_oa=false, inprogress=false) %}
 <a href="{{ page.url }}">
@@ -38,6 +41,7 @@
     </div></a>
 {% endmacro %}
 
+
 {% macro get_authors(article, site) %}
     {% for author in article.author.split(', ') %}
         {% if author == site.author %}
@@ -47,4 +51,56 @@
         {% endif %}
         {{ author_name }}{% if not loop.last %}, {% endif %}
     {% endfor %}
+{% endmacro %}
+
+
+{% macro pub_alerts(article, fancy=true) %}
+    {% if article.inreview is defined and article.inreview %}
+        {% if fancy %}
+            <div class="alert alert-warning">
+        {% else %}
+            <p>
+        {% endif %}
+            This article is unpublished and is currently
+            <strong>undergoing peer-review</strong>.
+        {% if fancy %}
+            </div>
+        {% else %}
+            </p>
+        {% endif %}
+    {% endif %}
+
+    {% if article.accepted is defined and article.accepted %}
+        {% if fancy %}
+            <div class="alert alert-info alert-blue">
+        {% else %}
+            <p>
+        {% endif %}
+            This article has been <strong>accepted</strong> for publication
+            {% if article.journal is defined %}
+                in {{article.journal}}
+            {% endif %}
+            but has not yet been published.
+        {% if fancy %}
+            </div>
+        {% else %}
+            </p>
+        {% endif %}
+    {% endif %}
+
+    {% if article.inprogress is defined and article.inprogress %}
+        {% if fancy %}
+            <div class="alert alert-info alert-blue">
+            {{ fa("refresh", "fa-fw", "Course in progress") }}
+        {% else %}
+            <p>
+        {% endif %}
+            This course is currently <strong>in progress</strong>
+            for the {{article.date.year}} school year.
+        {% if fancy %}
+            </div>
+        {% else %}
+            </p>
+        {% endif %}
+    {% endif %}
 {% endmacro %}
