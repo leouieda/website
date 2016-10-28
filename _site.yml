@@ -25,7 +25,7 @@ menulinks: [
     ['/teaching', 'Teaching'],
     ['/software', 'Software'],
     ['/contact', 'Contact'],
-    ['http://www.pinga-lab.org', 'PINGA lab'],
+    ['http://www.pinga-lab.org', 'PINGA-lab'],
     ['https://github.com/leouieda',
      '<i class="fa fa-github fa-lg" title="Github"></i>'],
     ['https://twitter.com/leouieda',
