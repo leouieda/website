@@ -1,8 +1,10 @@
-name: Leonardo Uieda
+title: Leonardo Uieda
 
-title: "LEONARDO <strong>UIEDA</strong>"
+brand: "LEONARDO <strong>UIEDA</strong>"
 
-author: Leonardo Uieda
+description: "I teach geophysics. I program. I research gravimetry and inverse problems. </br>Learning should be active. Software should be free. Science should be open."
+
+author: uieda
 
 keep_files: [".nojekyll"]
 
@@ -23,7 +25,7 @@ menulinks: [
     ['/teaching', 'Teaching'],
     ['/software', 'Software'],
     ['/contact', 'Contact'],
-    ['http://www.pinga-lab.org', 'PINGA lab'],
+    ['http://www.pinga-lab.org', 'PINGA-lab'],
     ['https://github.com/leouieda',
      '<i class="fa fa-github fa-lg" title="Github"></i>'],
     ['https://twitter.com/leouieda',
@@ -31,6 +33,7 @@ menulinks: [
     ]
 
 authors:
+    uieda: Leonardo Uieda
     barbosa: Valéria C. F. Barbosa
     carla: Carla Braitenberg
     melo: Felipe F. Melo

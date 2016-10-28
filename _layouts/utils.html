@@ -1,12 +1,15 @@
 {# Utility functions for the templates #}
 
+
 {% macro fa(name, class='', title='') %}
     <i class="fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
 {% endmacro %}
 
+
 {% macro ai(name, class='', title='') %}
     <i class="ai ai-{{ name }} {{ class }}" title="{{ title }}"></i>
 {% endmacro %}
+
 
 {% macro card(page, date=true, show_oa=false, inprogress=false) %}
 <a href="{{ page.url }}">
@@ -36,4 +39,210 @@
             {% endif %}
         </div>
     </div></a>
+{% endmacro %}
+
+
+{% macro get_authors(article, site) %}
+    {% for author in article.author.split(', ') %}
+        {% if author == site.author %}
+            {% set author_name = "<strong>" + site.authors[author] + "</strong>" %}
+        {% else %}
+            {% set author_name = site.authors[author] %}
+        {% endif %}
+        {{ author_name }}{% if not loop.last %}, {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+
+{% macro pub_alerts(article, fancy=true) %}
+    {% if article.inreview is defined and article.inreview %}
+        {% if fancy %}
+            <div class="alert alert-warning">
+        {% else %}
+            <p>
+        {% endif %}
+            This article is unpublished and is currently
+            <strong>undergoing peer-review</strong>.
+        {% if fancy %}
+            </div>
+        {% else %}
+            </p>
+        {% endif %}
+    {% endif %}
+
+    {% if article.accepted is defined and article.accepted %}
+        {% if fancy %}
+            <div class="alert alert-info alert-blue">
+        {% else %}
+            <p>
+        {% endif %}
+            This article has been <strong>accepted</strong> for publication
+            {% if article.journal is defined %}
+                in {{article.journal}}
+            {% endif %}
+            but has not yet been published.
+        {% if fancy %}
+            </div>
+        {% else %}
+            </p>
+        {% endif %}
+    {% endif %}
+
+    {% if article.inprogress is defined and article.inprogress %}
+        {% if fancy %}
+            <div class="alert alert-info alert-blue">
+            {{ fa("refresh", "fa-fw", "Course in progress") }}
+        {% else %}
+            <p>
+        {% endif %}
+            This course is currently <strong>in progress</strong>
+            for the {{article.date.year}} school year.
+        {% if fancy %}
+            </div>
+        {% else %}
+            </p>
+        {% endif %}
+    {% endif %}
+{% endmacro %}
+
+
+{% macro pub_info(article, fancy=true) %}
+    <h2>Info</h2>
+
+    {% if fancy %}
+        {% set ul_class = "list-group" %}
+        {% set li_class = "list-group-item" %}
+    {% else %}
+        {% set ul_class = "" %}
+        {% set li_class = "" %}
+    {% endif %}
+
+    <ul class={{ ul_class }}>
+        {% if article.oa is defined and article.oa %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ ai("open-access", "fa-fw", "Open-access article") }}{% endif %}
+                Open-Access
+            </li>
+        {% endif %}
+        {% if article.journal is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("book", "fa-fw", "Journal name") }}{% endif %}
+                Journal: <em>{{article.journal}}</em>
+            </li>
+        {% endif %}
+        {% if article.presentation is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("comments-o", "fa-fw", "Presentation type") }}{% endif %}
+                {{article.presentation|capitalize()}} presentation
+            </li>
+        {% endif %}
+        {% if article.event is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("users", "fa-fw", "Event name") }}{% endif %}
+                {{article.event}}
+            </li>
+        {% endif %}
+        {% if article.institution is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("university", "fa-fw", "Institution name") }}{% endif %}
+                {{article.institution}}
+            </li>
+        {% endif %}
+        {% if article.course is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("graduation-cap", "fa-fw", "Course type") }}{% endif %}
+                {{ article.course|capitalize() }} course
+            </li>
+        {% endif %}
+        {% if article.language is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("code", "fa-fw", "Programming language") }}{% endif %}
+                Language:
+                {{article.language}}
+            </li>
+        {% endif %}
+        {% if article.license is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("file-text", "fa-fw", "Open-source license") }}{% endif %}
+                {{article.license}}
+                License
+            </li>
+        {% endif %}
+        {% if article.slides is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("desktop", "fa-fw", "Download slides") }}{% endif %}
+                Slides:
+                {% if article.slides[:4] == "http" %}
+                    <a href="{{article.slides}}">{{article.slides}}</a>
+                {% else %}
+                    <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
+                {% endif %}
+            </li>
+        {% endif %}
+        {% if article.poster is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("picture-o", "fa-fw", "Download poster") }}{% endif %}
+                Poster:
+                {% if article.poster[:4] == "http" %}
+                    <a href="{{article.poster}}">{{article.poster}}</a>
+                {% else %}
+                    <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
+                {% endif %}
+            </li>
+        {% endif %}
+        {% if article.repository is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("github-square", "fa-fw", "Github repository") }}{% endif %}
+                Source code:
+                <a href="https://github.com/{{article.repository}}">{{
+                    article.repository}}</a>
+            </li>
+        {% endif %}
+        {% if article.supplement is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("paperclip", "fa-fw", "Supplementary material") }}{% endif %}
+                Data/Supplement:
+                <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
+            </li>
+        {% endif %}
+        {% if article.pdf is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("file-pdf-o", "fa-fw", "Paper PDF") }}{% endif %}
+                PDF:
+                <a href="/pdf/{{article.pdf}}">{{article.pdf}}</a>
+            </li>
+        {% endif %}
+        {% if article.doi is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("external-link", "fa-fw", "DOI link to publisher") }}{% endif %}
+                doi: <a href="http://dx.doi.org/{{article.doi}}">{{
+                    article.doi}}</a>
+            </li>
+        {% endif %}
+        {% if article.website is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("home", "fa-fw", "Website") }}{% endif %}
+                <a href="{{article.website}}">{{article.website}}</a>
+            </li>
+        {% endif %}
+    </ul>
+{% endmacro %}
+
+
+{% macro show_alm(article) %}
+    {% if article.alm is defined and article.alm %}
+        <h2>Article Level Metrics</h2>
+
+        {% if article.doi is defined %}
+            <h3>Main article</h3>
+            <div data-badge-details="right" data-badge-type="medium-donut"
+             data-doi="{{article.doi}}" class="altmetric-embed"></div>
+        {% endif %}
+
+        {% if article.supplement is defined %}
+            <h3>Data/Supplement</h3>
+            <div data-badge-details="right" data-badge-type="medium-donut"
+             data-doi="{{article.supplement}}" class="altmetric-embed"></div>
+        {% endif %}
+    {% endif %}
 {% endmacro %}
