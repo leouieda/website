@@ -15,7 +15,6 @@
             </div>
         {% endfor %}
     </div>
-
 {% endmacro %}
 
 
@@ -23,9 +22,16 @@
 {% endblock %}
 
 
+{% block title %}
+    {{this.title}}
+{% endblock %}
+
+
 {% block content %}
 
-    {{ this.body }}
+    <p class="site-description text-center">
+        {{site.description}}
+    </p>
 
     {% set columns = 2 %}
     {% for row in this.content|batch(columns) %}
@@ -37,5 +43,7 @@
             {% endfor %}
         </div>
     {% endfor %}
+
+    {{ this.body }}
 
 {% endblock %}
