@@ -1,5 +1,5 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info %}
+{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info, show_alm %}
 
 
 {% block content %}
@@ -27,19 +27,8 @@
 
         {{ pub_info(this, fancy=true) }}
 
-        {% if this.alm is defined and this.alm %}
-            <h2>Article Level Metrics</h2>
-            {% if this.doi %}
-                <h3>Main article</h3>
-                <div data-badge-details="right" data-badge-type="medium-donut"
-                 data-doi="{{this.doi}}" class="altmetric-embed"></div>
-            {% endif %}
-            {% if this.supplement is defined %}
-                <h3>Data/Supplement</h3>
-                <div data-badge-details="right" data-badge-type="medium-donut"
-                 data-doi="{{this.supplement}}" class="altmetric-embed"></div>
-            {% endif %}
-        {% endif %}
+        {{ show_alm(this) }}
+
         {% if this.citation is defined %}
             <h2>Citation</h2>
             <p>{{this.citation}}</p>

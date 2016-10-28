@@ -227,3 +227,22 @@
         {% endif %}
     </ul>
 {% endmacro %}
+
+
+{% macro show_alm(article) %}
+    {% if article.alm is defined and article.alm %}
+        <h2>Article Level Metrics</h2>
+
+        {% if article.doi is defined %}
+            <h3>Main article</h3>
+            <div data-badge-details="right" data-badge-type="medium-donut"
+             data-doi="{{article.doi}}" class="altmetric-embed"></div>
+        {% endif %}
+
+        {% if article.supplement is defined %}
+            <h3>Data/Supplement</h3>
+            <div data-badge-details="right" data-badge-type="medium-donut"
+             data-doi="{{article.supplement}}" class="altmetric-embed"></div>
+        {% endif %}
+    {% endif %}
+{% endmacro %}
