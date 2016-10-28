@@ -104,3 +104,126 @@
         {% endif %}
     {% endif %}
 {% endmacro %}
+
+
+{% macro pub_info(article, fancy=true) %}
+    <h2>Info</h2>
+
+    {% if fancy %}
+        {% set ul_class = "list-group" %}
+        {% set li_class = "list-group-item" %}
+    {% else %}
+        {% set ul_class = "" %}
+        {% set li_class = "" %}
+    {% endif %}
+
+    <ul class={{ ul_class }}>
+        {% if article.oa is defined and article.oa %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ ai("open-access", "fa-fw", "Open-access article") }}{% endif %}
+                Open-Access
+            </li>
+        {% endif %}
+        {% if article.journal is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("book", "fa-fw", "Journal name") }}{% endif %}
+                Journal: <em>{{article.journal}}</em>
+            </li>
+        {% endif %}
+        {% if article.presentation is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("comments-o", "fa-fw", "Presentation type") }}{% endif %}
+                {{article.presentation|capitalize()}} presentation
+            </li>
+        {% endif %}
+        {% if article.event is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("users", "fa-fw", "Event name") }}{% endif %}
+                {{article.event}}
+            </li>
+        {% endif %}
+        {% if article.institution is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("university", "fa-fw", "Institution name") }}{% endif %}
+                {{article.institution}}
+            </li>
+        {% endif %}
+        {% if article.course is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("graduation-cap", "fa-fw", "Course type") }}{% endif %}
+                {{ article.course|capitalize() }} course
+            </li>
+        {% endif %}
+        {% if article.language is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("code", "fa-fw", "Programming language") }}{% endif %}
+                Language:
+                {{article.language}}
+            </li>
+        {% endif %}
+        {% if article.license is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("file-text", "fa-fw", "Open-source license") }}{% endif %}
+                {{article.license}}
+                License
+            </li>
+        {% endif %}
+        {% if article.slides is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("desktop", "fa-fw", "Download slides") }}{% endif %}
+                Slides:
+                {% if article.slides[:4] == "http" %}
+                    <a href="{{article.slides}}">{{article.slides}}</a>
+                {% else %}
+                    <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
+                {% endif %}
+            </li>
+        {% endif %}
+        {% if article.poster is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("picture-o", "fa-fw", "Download poster") }}{% endif %}
+                Poster:
+                {% if article.poster[:4] == "http" %}
+                    <a href="{{article.poster}}">{{article.poster}}</a>
+                {% else %}
+                    <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
+                {% endif %}
+            </li>
+        {% endif %}
+        {% if article.repository is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("github-square", "fa-fw", "Github repository") }}{% endif %}
+                Source code:
+                <a href="https://github.com/{{article.repository}}">{{
+                    article.repository}}</a>
+            </li>
+        {% endif %}
+        {% if article.supplement is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("paperclip", "fa-fw", "Supplementary material") }}{% endif %}
+                Data/Supplement:
+                <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
+            </li>
+        {% endif %}
+        {% if article.pdf is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("file-pdf-o", "fa-fw", "Paper PDF") }}{% endif %}
+                PDF:
+                <a href="/pdf/{{article.pdf}}">{{article.pdf}}</a>
+            </li>
+        {% endif %}
+        {% if article.doi is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("external-link", "fa-fw", "DOI link to publisher") }}{% endif %}
+                doi: <a href="http://dx.doi.org/{{article.doi}}">{{
+                    article.doi}}</a>
+            </li>
+        {% endif %}
+        {% if article.website is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("home", "fa-fw", "Website") }}{% endif %}
+                <a href="{{article.website}}">{{article.website}}</a>
+            </li>
+        {% endif %}
+    </ul>
+{% endmacro %}

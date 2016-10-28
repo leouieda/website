@@ -1,5 +1,5 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa, ai, get_authors, pub_alerts %}
+{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info %}
 
 
 {% block content %}
@@ -15,7 +15,7 @@
     </p>
 {% endif %}
 
-{{ pub_alerts(this) }}
+{{ pub_alerts(this, fancy=true) }}
 
 <div class="row">
     <div class="col-md-4">
@@ -25,119 +25,8 @@
                  src="/images/thumb/{{this.thumbnail}}"></img>
         {% endif %}
 
-        <h2>Info</h2>
+        {{ pub_info(this, fancy=true) }}
 
-        <ul class="list-group">
-            {% block left %}
-                {% if this.oa is defined and this.oa %}
-                    <li class="list-group-item active">
-                        {{ ai("open-access", "fa-fw", "Open-access article") }}
-                        Open-Access
-                    </li>
-                {% endif %}
-                {% if this.journal is defined %}
-                    <li class="list-group-item">
-                        {{ fa("book", "fa-fw", "Journal name") }}
-                        Journal: {{this.journal}}
-                    </li>
-                {% endif %}
-                {% if this.presentation is defined %}
-                    <li class="list-group-item">
-                        {{ fa("comments-o", "fa-fw", "Presentation type") }}
-                        {{this.presentation|capitalize()}} presentation
-                    </li>
-                {% endif %}
-                {% if this.event is defined %}
-                    <li class="list-group-item">
-                        {{ fa("users", "fa-fw", "Event name") }}
-                        {{this.event}}
-                    </li>
-                {% endif %}
-                {% if this.institution is defined %}
-                    <li class="list-group-item">
-                        {{ fa("university", "fa-fw", "Institution name") }}
-                        {{this.institution}}
-                    </li>
-                {% endif %}
-                {% if this.course is defined %}
-                    <li class="list-group-item">
-                        {{ fa("graduation-cap", "fa-fw", "Course type") }}
-                        {{ this.course|capitalize() }} course
-                    </li>
-                {% endif %}
-                {% if this.language is defined %}
-                    <li class="list-group-item">
-                        {{ fa("code", "fa-fw", "Programming language") }}
-                        Language:
-                        {{this.language}}
-                    </li>
-                {% endif %}
-                {% if this.license is defined %}
-                    <li class="list-group-item">
-                        {{ fa("file-text", "fa-fw", "Open-source license") }}
-                        {{this.license}}
-                        License
-                    </li>
-                {% endif %}
-                {% if this.slides is defined %}
-                    <li class="list-group-item">
-                        {{ fa("desktop", "fa-fw", "Download slides") }}
-                        Slides:
-                        {% if this.slides[:4] == "http" %}
-                            <a href="{{this.slides}}">{{this.slides}}</a>
-                        {% else %}
-                            <a href="http://dx.doi.org/{{this.slides}}">{{this.slides}}</a>
-                        {% endif %}
-                    </li>
-                {% endif %}
-                {% if this.poster is defined %}
-                    <li class="list-group-item">
-                        {{ fa("picture-o", "fa-fw", "Download poster") }}
-                        Poster:
-                        {% if this.poster[:4] == "http" %}
-                            <a href="{{this.poster}}">{{this.poster}}</a>
-                        {% else %}
-                            <a href="http://dx.doi.org/{{this.poster}}">{{this.poster}}</a>
-                        {% endif %}
-                    </li>
-                {% endif %}
-                {% if this.repository is defined %}
-                    <li class="list-group-item">
-                        {{ fa("github-square", "fa-fw", "Github repository") }}
-                        Source code:
-                        <a href="https://github.com/{{this.repository}}">{{
-                            this.repository}}</a>
-                    </li>
-                {% endif %}
-                {% if this.supplement is defined %}
-                    <li class="list-group-item">
-                        {{ fa("paperclip", "fa-fw", "Supplementary material") }}
-                        Data/Supplement:
-                        <a href="http://dx.doi.org/{{this.supplement}}">{{this.supplement}}</a>
-                    </li>
-                {% endif %}
-                {% if this.pdf is defined %}
-                    <li class="list-group-item">
-                        {{ fa("file-pdf-o", "fa-fw", "Paper PDF") }}
-                        PDF:
-                        <a href="/pdf/{{this.pdf}}">{{this.pdf}}</a>
-                    </li>
-                {% endif %}
-                {% if this.doi is defined %}
-                    <li class="list-group-item">
-                        {{ fa("external-link", "fa-fw", "DOI link to publisher") }}
-                        doi: <a href="http://dx.doi.org/{{this.doi}}">{{
-                            this.doi}}</a>
-                    </li>
-                {% endif %}
-                {% if this.website is defined %}
-                    <li class="list-group-item">
-                        {{ fa("home", "fa-fw", "Website") }}
-                        <a href="{{this.website}}">{{this.website}}</a>
-                    </li>
-                {% endif %}
-            {% endblock %}
-        </ul>
         {% if this.alm is defined and this.alm %}
             <h2>Article Level Metrics</h2>
             {% if this.doi %}
