@@ -1,1 +1,29 @@
-RSS
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xml:base="{{ site.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>{{ site.title }}</title>
+<link>{{ site.url }}</link>
+<description>{{ site.description }}</description>
+
+{% set posts = [] %}
+{% for id in this.content %}
+    {# Using {{ posts.extend(...) }} results in "None"s printed to the HTML.
+       The alternative is to use {% set ... %} and redirect to a tmp variable
+       that will receive None returned by extend #}
+    {% set tmp = posts.extend(site.reflinks['/' + id]['content']) %}
+{% endfor %}
+
+{% for post in posts|sort(attribute='date', reverse=true) %}
+    <item>
+        <title>{{ post.title }}</title>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <guid>{{ site.url }}{{ post.url }}</guid>
+        <description><![CDATA[
+        {{ post.body }}
+        ]]></description>
+        <pubDate>{{ post.date.strftime('%a, %d %b %Y 01:00:00 GMT') }}</pubDate>
+    </item>
+{% endfor %}
+
+</channel>
+</rss>
