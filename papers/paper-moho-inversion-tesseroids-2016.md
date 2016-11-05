@@ -2,7 +2,7 @@
 title: Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho
 author: uieda, barbosa
 layout: publication
-date: 2016-12-01
+date: 2016-10-17
 journal: Geophysical Journal International
 repository: pinga-lab/paper-moho-inversion-tesseroids
 thumbnail: paper-moho-inversion-2016.png
@@ -33,8 +33,9 @@ These differences allow us to know where the gravity-derived model can be truste
 You can **download** the model results, source code, and input data from
 doi:[10.6084/m9.figshare.3987267](https://dx.doi.org/10.6084/m9.figshare.3987267)
 
+![The estimated Moho depth for South America and differences with seismological estimates.](/images/south-american-moho-gravity-inversion.png)
 
-![The estimated Moho depth for South America and differences with seismological estimates](https://raw.githubusercontent.com/pinga-lab/paper-moho-inversion-tesseroids/master/model/south-american-moho.png)
+\[[high resolution version](https://raw.githubusercontent.com/pinga-lab/paper-moho-inversion-tesseroids/master/model/south-american-moho.png)\]
 
 *Figure caption:
 Dotted lines represent the boundaries between major geologic provinces.
