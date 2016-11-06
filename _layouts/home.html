@@ -2,19 +2,23 @@
 
 {% from "utils.html" import card %}
 
-{% macro recent_cards(category, number=2) %}
-    <h2 class="category-header">
-        <a href="{{ category.url }}">{{ category.title }}  »</a>
-    </h2>
-    <hr>
+{% macro recent_cards(category, number=2, start=0) %}
     <div class="row">
-        {% for article in category.content[0:number] %}
+        {% set finish = start + number %}
+        {% for article in category.content[start:finish] %}
             <div class="col-md-{{12//number}} col-sm-{{12//number}}
                         col-xs-{{12//number}}">
                 {{ card(article, date=false, inprogress=true) }}
             </div>
         {% endfor %}
     </div>
+{% endmacro %}
+
+{% macro header(category) %}
+    <h2 class="category-header">
+        <a href="{{ category.url }}">{{ category.title }}  »</a>
+    </h2>
+    <hr>
 {% endmacro %}
 
 
@@ -33,13 +37,25 @@
         {{site.description}}
     </p>
 
-    {% set columns = 2 %}
-    {% for row in this.content|batch(columns) %}
+    {% for row in this.content|batch(2) %}
         <div class="row">
             {% for category in row %}
-                <div class="col-md-{{12//columns}}">
-                    {{ recent_cards(category, number=2) }}
-                </div>
+                {% if row|length > 1 %}
+                    <div class="col-md-6">
+                        {{ header(category) }}
+                        {{ recent_cards(category, number=2) }}
+                    </div>
+                {% else %}
+                    <div class="col-md-12">
+                        {{ header(category) }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ recent_cards(category, number=2, start=0) }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ recent_cards(category, number=2, start=2) }}
+                    </div>
+                {% endif %}
             {% endfor %}
         </div>
     {% endfor %}
