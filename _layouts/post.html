@@ -1,5 +1,5 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info, show_alm, card %}
+{% from "utils.html" import feedback %}
 
 
 {% block content %}
@@ -11,7 +11,10 @@
         <p class="post-date">
             {{ this.date.strftime('%B %d, %Y') }}
         </p>
+
         {{ this.body }}
+
+        {{ feedback(this, site, fancy=true) }}
     </div>
     <div class="col-md-1">
     </div>

@@ -277,3 +277,21 @@
         {% endif %}
     {% endif %}
 {% endmacro %}
+
+
+{% macro feedback(post, site, fancy=true) %}
+    <hr>
+    {% if fancy %}
+    <div class="panel panel-default">
+        <div class="panel-body">
+    {% endif %}
+            <strong>Comments?</strong>
+            Let me know on Twitter
+            <a href="https://twitter.com/intent/tweet?text=@{{ site.twitter }}&url={{ site.url}}{{ post.url }}">@{{ site.twitter }}</a>
+            or in the <a href="http://swung.rocks/">Software Underground</a>
+            Slack group.
+    {% if fancy %}
+        </div>
+    </div>
+    {% endif %}
+{% endmacro %}
