@@ -20,7 +20,7 @@
         <title>{% if category != "blog" %}[{{ category|title }}] {% endif %}{{ post.title }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid>{{ site.url }}{{ post.url }}</guid>
-        <pubDate>{{ post.date.strftime('%a, %d %b %Y 12:00:00 UTC') }}</pubDate>
+        <pubDate>{{ post.date.strftime('%a, %d %b %Y 12:00:00 GMT') }}</pubDate>
         {% if post.author is defined %}
         <dc:creator>{{ get_authors(post, site, fancy=false) }}</dc:creator>
         {% endif %}
