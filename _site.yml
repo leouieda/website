@@ -36,6 +36,8 @@ menulinks: [
      '<i class="fa fa-github fa-lg" title="Github"></i>'],
     ['https://twitter.com/leouieda',
      '<i class="fa fa-twitter fa-lg" title="Twitter"></i>'],
+    ['/rss.xml',
+     '<i class="fa fa-rss fa-lg" title="RSS Feed"></i>'],
     ]
 
 authors:
