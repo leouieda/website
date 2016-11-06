@@ -5,7 +5,7 @@
 <title>{{ site.title }}</title>
 <link>{{ site.url }}</link>
 <description>{{ site.description }}</description>
-<atom:link href="{{ site.url }}{{ this.url }}" rel="self" type="application/rss+xml" />
+<atom:link href="{{ site.rss }}" rel="self" type="application/rss+xml" />
 
 {% set posts = [] %}
 {% for id in this.content %}
