@@ -1,5 +1,6 @@
+{% from "utils.html" import get_authors, pub_alerts, pub_info %}
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xml:base="{{ site.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xml:base="{{ site.url }}" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
 <title>{{ site.title }}</title>
 <link>{{ site.url }}</link>
@@ -15,13 +16,35 @@
 
 {% for post in posts|sort(attribute='date', reverse=true) %}
     <item>
-        <title>{{ post.title }}</title>
+        {% set category = post.id.split('/')[1] %}
+        <title>[{{ category|title }}] {{ post.title }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid>{{ site.url }}{{ post.url }}</guid>
-        <description><![CDATA[
-        {{ post.body }}
-        ]]></description>
         <pubDate>{{ post.date.strftime('%a, %d %b %Y 01:00:00 GMT') }}</pubDate>
+        {% if post.author is defined %}
+        <dc:creator>{{ get_authors(post, site, fancy=false) }}</dc:creator>
+        {% endif %}
+        <description><![CDATA[
+            {% if post.thumbnail is defined %}
+                <img alt="Thumbnail image for publication."
+                 src="/images/thumb/{{post.thumbnail}}">
+            {% endif %}
+
+            <p></p>
+
+            {{ pub_alerts(post, fancy=false) }}
+
+            {% if category != "blog" %}
+                {{ pub_info(post, fancy=false) }}
+            {% endif %}
+
+            {{ post.body }}
+
+            {% if post.citation is defined %}
+                <h2>Citation</h2>
+                <p>{{post.citation}}</p>
+            {% endif %}
+        ]]></description>
     </item>
 {% endfor %}
 

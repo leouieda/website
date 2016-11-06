@@ -42,9 +42,9 @@
 {% endmacro %}
 
 
-{% macro get_authors(article, site) %}
+{% macro get_authors(article, site, fancy=true) %}
     {% for author in article.author.split(', ') %}
-        {% if author == site.author %}
+        {% if fancy and author == site.author %}
             {% set author_name = "<strong>" + site.authors[author] + "</strong>" %}
         {% else %}
             {% set author_name = site.authors[author] %}
