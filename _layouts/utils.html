@@ -15,7 +15,7 @@
 <a href="{{ page.url }}">
     <div class="card">
         {% if page.thumbnail is defined %}
-            <img src="/images/thumb/{{page.thumbnail}}">
+            <img alt="Thumbnail image for publication." src="/images/thumb/{{page.thumbnail}}">
         {%  endif %}
         <div class="card-caption">
             {% if show_oa and page.oa is defined and page.oa %}
@@ -27,7 +27,7 @@
             {% if date %}
                 ({{ page.date.year }})
             {% endif %}
-            </br>
+            <br>
             {% if inprogress and page.inprogress is defined and page.inprogress %}
                 <span class="label label-primary">IN PROGRESS</span>
             {% endif %}

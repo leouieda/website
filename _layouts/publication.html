@@ -21,8 +21,7 @@
     <div class="col-md-4">
 
         {% if this.thumbnail is defined %}
-            <img class="pub-thumbnail"
-                 src="/images/thumb/{{this.thumbnail}}"></img>
+            <img class="pub-thumbnail" alt="Thumbnail image for publication." src="/images/thumb/{{this.thumbnail}}">
         {% endif %}
 
         {{ pub_info(this, fancy=true) }}
