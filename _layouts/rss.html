@@ -5,12 +5,12 @@
 <title>{{ site.title }}</title>
 <link>{{ site.url }}</link>
 <description>{{ site.description }}</description>
+<atom:link href="{{ site.url }}{{ this.url }}" rel="self" type="application/rss+xml" />
 
 {% set posts = [] %}
 {% for id in this.content %}
     {# Using {{ posts.extend(...) }} results in "None"s printed to the HTML.
-       The alternative is to use {% set ... %} and redirect to a tmp variable
-       that will receive None returned by extend #}
+       The alternative is to use {% set . %} and redirect to a tmp variable #}
     {% set tmp = posts.extend(site.reflinks['/' + id]['content']) %}
 {% endfor %}
 
