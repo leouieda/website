@@ -17,7 +17,7 @@
 {% for post in posts|sort(attribute='date', reverse=true) %}
     <item>
         {% set category = post.id.split('/')[1] %}
-        <title>[{{ category|title }}] {{ post.title }}</title>
+        <title>{% if category != "blog" %}[{{ category|title }}] {% endif %}{{ post.title }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid>{{ site.url }}{{ post.url }}</guid>
         <pubDate>{{ post.date.strftime('%a, %d %b %Y 12:00:00 UTC') }}</pubDate>
