@@ -11,7 +11,7 @@
 {% endmacro %}
 
 
-{% macro card(page, date=true, show_oa=false, inprogress=false) %}
+{% macro card(page, date=true, year_only=true, show_oa=false, inprogress=false) %}
 <a href="{{ page.url }}">
     <div class="card">
         {% if page.thumbnail is defined %}
@@ -25,7 +25,13 @@
                 {{ page.title }}
             </span>
             {% if date %}
-                ({{ page.date.year }})
+                <span class="card-date">
+                {% if year_only %}
+                    ({{ page.date.year }})
+                {% else %}
+                    ({{ page.date.strftime('%d %b %Y') }})
+                {% endif %}
+                </span>
             {% endif %}
             <br>
             {% if inprogress and page.inprogress is defined and page.inprogress %}
@@ -39,6 +45,31 @@
             {% endif %}
         </div>
     </div></a>
+{% endmacro %}
+
+
+{% macro make_index(content, date=false, year_only=true, show_oa=false) %}
+    {# There will be 4 cards in a row and collapse to 2 in a row for smaller
+    displays. The way to do this is to batch the cards into pairs, make a row
+    with 2 columns and place a pair in each column. #}
+    <hr>
+    {% for row in content|batch(2) %}
+        {% if loop.index % 2 != 0 %}
+            <div class="row">
+        {% endif %}
+            <div class="col-md-6">
+                <div class="row">
+                {% for article in row %}
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        {{ card(article, date=date, year_only=year_only, show_oa=show_oa) }}
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        {% if loop.index % 2 == 0 or loop.last %}
+            </div>
+        {% endif %}
+    {% endfor %}
 {% endmacro %}
 
 
@@ -244,5 +275,23 @@
             <div data-badge-details="right" data-badge-type="medium-donut"
              data-doi="{{article.supplement}}" class="altmetric-embed"></div>
         {% endif %}
+    {% endif %}
+{% endmacro %}
+
+
+{% macro feedback(post, site, fancy=true) %}
+    <hr>
+    {% if fancy %}
+    <div class="panel panel-default">
+        <div class="panel-body">
+    {% endif %}
+            <strong>Comments?</strong>
+            Let me know on Twitter
+            <a href="https://twitter.com/intent/tweet?text=@{{ site.twitter }}&url={{ site.url}}{{ post.url }}">@{{ site.twitter }}</a>
+            or in the <a href="http://swung.rocks/">Software Underground</a>
+            Slack group.
+    {% if fancy %}
+        </div>
+    </div>
     {% endif %}
 {% endmacro %}

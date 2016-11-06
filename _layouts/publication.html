@@ -1,5 +1,5 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info, show_alm %}
+{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info, show_alm, feedback %}
 
 
 {% block content %}
@@ -37,6 +37,7 @@
     <div class="col-md-8">
         {% block right %}
             {{ this.body }}
+            {{ feedback(this, site, fancy=true) }}
         {% endblock %}
     </div>
 </div>

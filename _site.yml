@@ -12,7 +12,8 @@ author: uieda
 
 keep_files: [".nojekyll"]
 
-ignore_patterns: ["README.md", "ci-tools", "environment.yml", "miniconda.sh"]
+ignore_patterns: ["README.md", "ci-tools", "environment.yml", "miniconda.sh",
+                  "blog/.sample-post.md"]
 
 strict_undefined: true
 
@@ -24,8 +25,8 @@ google_analytics: UA-38125837-5
 
 menulinks: [
     ['/about', 'About'],
-    #['/research', 'Research'],
     #['/blog', 'Blog'],
+    #['/research', 'Research'],
     ['/papers', 'Papers'],
     ['/talks', 'Talks'],
     ['/teaching', 'Teaching'],
@@ -39,6 +40,8 @@ menulinks: [
     ['/rss.xml',
      '<i class="fa fa-rss fa-lg" title="RSS Feed"></i>'],
     ]
+
+twitter: leouieda
 
 authors:
     uieda: Leonardo Uieda
