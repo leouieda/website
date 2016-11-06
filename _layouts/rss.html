@@ -5,12 +5,12 @@
 <title>{{ site.title }}</title>
 <link>{{ site.url }}</link>
 <description>{{ site.description }}</description>
+<atom:link href="{{ site.url }}{{ this.url }}" rel="self" type="application/rss+xml" />
 
 {% set posts = [] %}
 {% for id in this.content %}
     {# Using {{ posts.extend(...) }} results in "None"s printed to the HTML.
-       The alternative is to use {% set ... %} and redirect to a tmp variable
-       that will receive None returned by extend #}
+       The alternative is to use {% set . %} and redirect to a tmp variable #}
     {% set tmp = posts.extend(site.reflinks['/' + id]['content']) %}
 {% endfor %}
 
@@ -20,7 +20,7 @@
         <title>{% if category != "blog" %}[{{ category|title }}] {% endif %}{{ post.title }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid>{{ site.url }}{{ post.url }}</guid>
-        <pubDate>{{ post.date.strftime('%a, %d %b %Y 12:00:00 UTC') }}</pubDate>
+        <pubDate>{{ post.date.strftime('%a, %d %b %Y 12:00:00 GMT') }}</pubDate>
         {% if post.author is defined %}
         <dc:creator>{{ get_authors(post, site, fancy=false) }}</dc:creator>
         {% endif %}
