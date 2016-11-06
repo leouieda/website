@@ -25,7 +25,7 @@
         <dc:creator>{{ get_authors(post, site, fancy=false) }}</dc:creator>
         {% endif %}
         <description><![CDATA[
-            {% if post.thumbnail is defined %}
+            {% if post.thumbnail is defined and category != "blog" %}
                 <img alt="Thumbnail image for publication."
                  src="/images/thumb/{{post.thumbnail}}">
             {% endif %}
