@@ -1,0 +1,44 @@
+{% extends "page.html" %}
+{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info, show_alm, card %}
+
+
+{% block content %}
+
+<h1>{{ this.title }}</h1>
+
+<div class="row">
+    <div class="col-md-9">
+        <p class="post-date">
+            {{ this.date.strftime('%B %d, %Y') }}
+        </p>
+        {{ this.body }}
+    </div>
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-2">
+        <hr>
+        <h3>From the blog</h3>
+        {% set blogposts = site.reflinks['/blog']['content']|sort(attribute='date', reverse=true) %}
+        {% for post in blogposts[:5] %}
+            <a href="{{ post.url }}">
+            <div class="row blog-roll">
+                <div class="col-xs-4 col-sm-4 col-md-12">
+                    {% if post.thumbnail is defined %}
+                        <img alt="Thumbnail image for publication."
+                         src="/images/thumb/{{post.thumbnail}}">
+                    {%  endif %}
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-12">
+                    {{ post.title }}
+                    <br>
+                    <span class="card-date">
+                    ({{ post.date.strftime('%d %b %Y') }})
+                    </span>
+                </div>
+            </div>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

@@ -171,3 +171,12 @@ img {
     background-color: #2780e3;
 }
 
+.blog-roll {
+    padding-bottom: 20px;
+    font-size:11pt;
+}
+
+.post-date {
+    color: #aaaaaa;
+    padding-bottom: 20px;
+}
