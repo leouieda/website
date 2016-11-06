@@ -187,14 +187,14 @@
         {% endif %}
         {% if article.language is defined %}
             <li class={{ li_class }}>
-                {% if fancy %}{{ fa("code", "fa-fw", "Programming language") }}{% endif %}
+                {% if fancy %}{{ fa("flag", "fa-fw", "Programming language") }}{% endif %}
                 Language:
                 {{article.language}}
             </li>
         {% endif %}
         {% if article.license is defined %}
             <li class={{ li_class }}>
-                {% if fancy %}{{ fa("file-text", "fa-fw", "Open-source license") }}{% endif %}
+                {% if fancy %}{{ fa("gavel", "fa-fw", "Open-source license") }}{% endif %}
                 {{article.license}}
                 License
             </li>
@@ -223,7 +223,7 @@
         {% endif %}
         {% if article.repository is defined %}
             <li class={{ li_class }}>
-                {% if fancy %}{{ fa("github-square", "fa-fw", "Github repository") }}{% endif %}
+                {% if fancy %}{{ fa("code", "fa-fw", "Source code repository") }}{% endif %}
                 Source code:
                 <a href="https://github.com/{{article.repository}}">{{
                     article.repository}}</a>
@@ -284,6 +284,7 @@
     {% if fancy %}
     <div class="panel panel-default">
         <div class="panel-body">
+            {{ fa("comments", "fa-fw") }}
     {% endif %}
             <strong>Comments?</strong>
             Let me know on Twitter
