@@ -12,7 +12,8 @@ author: uieda
 
 keep_files: [".nojekyll"]
 
-ignore_patterns: ["README.md", "ci-tools", "environment.yml", "miniconda.sh"]
+ignore_patterns: ["README.md", "ci-tools", "environment.yml", "miniconda.sh",
+                  "blog/.sample-post.md"]
 
 strict_undefined: true
 
