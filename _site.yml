@@ -2,6 +2,10 @@ title: Leonardo Uieda
 
 brand: "LEONARDO <strong>UIEDA</strong>"
 
+url: http://www.leouieda.com
+
+rss: http://www.leouieda.com/rss.xml
+
 description: "I teach geophysics. I program. I research gravimetry and inverse problems. Learning should be active. Software should be free. Science should be open."
 
 author: uieda
@@ -32,6 +36,8 @@ menulinks: [
      '<i class="fa fa-github fa-lg" title="Github"></i>'],
     ['https://twitter.com/leouieda',
      '<i class="fa fa-twitter fa-lg" title="Twitter"></i>'],
+    ['/rss.xml',
+     '<i class="fa fa-rss fa-lg" title="RSS Feed"></i>'],
     ]
 
 authors:

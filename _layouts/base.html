@@ -15,6 +15,9 @@
     <link rel="shortcut icon" href="/images/favicon.png">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    {% if site.rss is defined %}
+    <link rel="alternate" type="application/rss+xml" href="{{ site.rss }}" title="{{ site.title }}">
+    {% endif %}
     <!-- Include the Source Sans Pro Google fonts CSS -->
     <link rel="stylesheet" href="/css/sourcesanspro/sourcesanspro.css">
     <!--Include the Font Awesome and Academicons CSS-->
