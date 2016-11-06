@@ -52,8 +52,7 @@ teaching material
 (code, data, slides, etc)
 online under permissive licenses.
 You'll find links to source code, images, lessons, etc, around this
-website
-(look for the {{fa("github-square", "fa-fw")}} icon).
+website.
 </p>
 
 </div>
