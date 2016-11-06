@@ -130,6 +130,10 @@ p.pub-date-author {
     color: #2780e3;
 }
 
+.card-date {
+    color: #999999;
+}
+
 img {
     width: 100%;
 }
