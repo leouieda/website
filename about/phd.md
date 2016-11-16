@@ -1,6 +1,10 @@
 ---
-title: "PhD in Geophysics: Forward modeling and inversion of gravitational fields in spherical coordinates"
+title: "Forward modeling and inversion of gravitational fields in spherical coordinates"
 date: 2016-04-29
+start_date: 2011-11-01
+degree: PhD
+advisor: Valéria C. F. Barbosa
+subject: Geophysics
 thumbnail: paper-moho-inversion-2016.png
 repository: leouieda/phd-thesis
 institution: Observatório Nacional, Brazil

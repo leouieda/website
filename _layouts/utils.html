@@ -155,6 +155,12 @@
                 Open-Access
             </li>
         {% endif %}
+        {% if article.start_date is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("calendar", "fa-fw", "Period") }}{% endif %}
+                {{ article.start_date.year}}-{{ article.date.year }}
+            </li>
+        {% endif %}
         {% if article.journal is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("book", "fa-fw", "Journal name") }}{% endif %}
@@ -177,6 +183,12 @@
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("university", "fa-fw", "Institution name") }}{% endif %}
                 {{article.institution}}
+            </li>
+        {% endif %}
+        {% if article.advisor is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("graduation-cap", "fa-fw", "Advisor") }}{% endif %}
+                Advisor: {{ article.advisor }}
             </li>
         {% endif %}
         {% if article.course is defined %}

@@ -1,6 +1,10 @@
 ---
-title: "MSc in Geophysics: Robust 3D gravity gradient inversion by planting anomalous densities"
+title: "Robust 3D gravity gradient inversion by planting anomalous densities"
 date: 2011-11-01
+start_date: 2010-03-01
+advisor: Valéria C. F. Barbosa
+degree: MSc
+subject: Geophysics
 repository: pinga-lab/paper-planting-densities
 institution: Observatório Nacional, Brazil
 thumbnail: paper-planting-anomalous-densities-2012.png
