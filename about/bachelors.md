@@ -1,6 +1,10 @@
 ---
-title: "BSc in Geophysics: Cálculo do tensor gradiente gravimétrico utilizando tesseroides"
+title: "Cálculo do tensor gradiente gravimétrico utilizando tesseroides"
 date: 2009-12-01
+start_date: 2004-03-01
+degree: BSc
+advisor: Naomi Ussami
+subject: Geophysics
 thumbnail: agu2010.png
 doi: 10.6084/m9.figshare.963547
 repository: leouieda/barchelor-thesis
@@ -35,7 +39,7 @@ Other work that uses this research:
 * [/papers/paper-moho-inversion-tesseroids-2016]
 * [/talks/egu2014]
 
-Slides from my thesis defense:
+# Thesis defense slides
 
 <script async class="speakerdeck-embed"
 data-id="169b9ea3da7043ff932a297100824ab7" data-ratio="1.33333333333333"
