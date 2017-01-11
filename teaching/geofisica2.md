@@ -8,7 +8,7 @@ authors: Leonardo Uieda
 thumbnail: geofisica2.gif
 license: CC-BY
 layout: publication
-inprogress: true
+inprogress: false
 ---
 
 # About
@@ -19,6 +19,7 @@ Covers seismics, seismology, electric and electromagnetic methods.
 Version of this material over the years I have been teaching it:
 
 * [latest](https://github.com/leouieda/geofisica2)
+* [2016](https://github.com/leouieda/geofisica2/tree/2016)
 * [2015](https://github.com/leouieda/geofisica2/tree/2015)
 
 # Sobre

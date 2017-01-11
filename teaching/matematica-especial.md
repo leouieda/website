@@ -7,7 +7,7 @@ repository: mat-esp/about
 thumbnail: matematica-especial.png
 license: CC-BY
 layout: publication
-inprogress: true
+inprogress: false
 ---
 
 # About
