@@ -15,7 +15,7 @@
 {% endmacro %}
 
 {% macro header(category) %}
-    <h2 class="category-header">
+    <h2 class="category-header text-center">
         <a href="{{ category.url }}">{{ category.title }}  »</a>
     </h2>
     <hr>
@@ -37,26 +37,17 @@
         {{site.description}}
     </p>
 
-    {% for row in this.content|batch(2) %}
+    {% for category in this.content %}
         <div class="row">
-            {% for category in row %}
-                {% if row|length > 1 %}
-                    <div class="col-md-6">
-                        {{ header(category) }}
-                        {{ recent_cards(category, number=2) }}
-                    </div>
-                {% else %}
-                    <div class="col-md-12">
-                        {{ header(category) }}
-                    </div>
-                    <div class="col-md-6">
-                        {{ recent_cards(category, number=2, start=0) }}
-                    </div>
-                    <div class="col-md-6">
-                        {{ recent_cards(category, number=2, start=2) }}
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="col-md-12">
+                {{ header(category) }}
+            </div>
+            <div class="col-md-6">
+                {{ recent_cards(category, number=2, start=0) }}
+            </div>
+            <div class="col-md-6">
+                {{ recent_cards(category, number=2, start=2) }}
+            </div>
         </div>
     {% endfor %}
 
