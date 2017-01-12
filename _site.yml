@@ -25,7 +25,7 @@ google_analytics: UA-38125837-5
 
 menulinks: [
     ['/about', 'About'],
-    #['/blog', 'Blog'],
+    ['/blog', 'Blog'],
     #['/research', 'Research'],
     ['/papers', 'Papers'],
     ['/talks', 'Talks'],
