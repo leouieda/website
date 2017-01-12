@@ -1,5 +1,5 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info, show_alm, feedback %}
+{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info, show_alm, feedback, insert_thumbnail %}
 
 
 {% block content %}
@@ -20,9 +20,7 @@
 <div class="row">
     <div class="col-md-4">
 
-        {% if this.thumbnail is defined %}
-            <img class="pub-thumbnail" alt="Thumbnail image for publication." src="/images/thumb/{{this.thumbnail}}">
-        {% endif %}
+        {{ insert_thumbnail(this) }}
 
         {{ pub_info(this, fancy=true) }}
 

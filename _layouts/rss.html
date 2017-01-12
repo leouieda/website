@@ -1,4 +1,4 @@
-{% from "utils.html" import get_authors, pub_alerts, pub_info, feedback %}
+{% from "utils.html" import get_authors, pub_alerts, pub_info, feedback, insert_thumbnail %}
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xml:base="{{ site.url }}" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
@@ -25,10 +25,8 @@
         <dc:creator>{{ get_authors(post, site, fancy=false) }}</dc:creator>
         {% endif %}
         <description><![CDATA[
-            {% if post.thumbnail is defined and category != "blog" %}
-                <img alt="Thumbnail image for publication."
-                 src="/images/thumb/{{post.thumbnail}}">
-            {% endif %}
+
+            {{ insert_thumbnail(post, fancy=false) }}
 
             <p></p>
 

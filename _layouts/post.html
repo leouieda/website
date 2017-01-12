@@ -1,5 +1,5 @@
 {% extends "page.html" %}
-{% from "utils.html" import feedback %}
+{% from "utils.html" import feedback, insert_thumbnail %}
 
 
 {% block content %}
@@ -11,6 +11,16 @@
         <p class="post-date">
             {{ this.date.strftime('%B %d, %Y') }}
         </p>
+
+        <div class="row" style="margin-bottom:20px; margin-top:-30px;">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                {{ insert_thumbnail(this) }}
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
 
         {{ this.body }}
 
