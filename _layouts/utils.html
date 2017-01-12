@@ -14,9 +14,9 @@
 {% macro card(page, date=true, year_only=true, show_oa=false, inprogress=false) %}
 <a href="{{ page.url }}">
     <div class="card">
-        {% if page.thumbnail is defined %}
-            <img alt="Thumbnail image for publication." src="/images/thumb/{{page.thumbnail}}">
-        {%  endif %}
+
+        {{ insert_thumbnail(page, fancy=false) }}
+
         <div class="card-caption">
             {% if show_oa and page.oa is defined and page.oa %}
                 {{ ai("open-access") }}
@@ -287,6 +287,18 @@
             <div data-badge-details="right" data-badge-type="medium-donut"
              data-doi="{{article.supplement}}" class="altmetric-embed"></div>
         {% endif %}
+    {% endif %}
+{% endmacro %}
+
+
+{% macro insert_thumbnail(article, fancy=true) %}
+    {% if fancy %}
+        {% set class = "pub-thumbnail" %}
+    {% else %}
+        {% set class = "" %}
+    {% endif %}
+    {% if article.thumbnail is defined %}
+        <img class="{{ class }}" alt="Thumbnail image for publication." src="/images/thumb/{{article.thumbnail}}">
     {% endif %}
 {% endmacro %}
 
