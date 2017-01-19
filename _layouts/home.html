@@ -14,13 +14,6 @@
     </div>
 {% endmacro %}
 
-{% macro header(category) %}
-    <h2 class="category-header text-center">
-        <a href="{{ category.url }}">{{ category.title }}  »</a>
-    </h2>
-    <hr>
-{% endmacro %}
-
 
 {% block breadcrumbs %}
 {% endblock %}
@@ -34,13 +27,16 @@
 {% block content %}
 
     <p class="site-description text-center">
-        {{site.description}}
+        {{ site.description }}
     </p>
 
     {% for category in this.content %}
-        <div class="row">
+        <div class="row category-row">
             <div class="col-md-12">
-                {{ header(category) }}
+                <h2 class="category-header text-center">
+                <a href="{{ category.url }}">{{ category.title }}  »</a>
+                </h2>
+                <hr>
             </div>
             <div class="col-md-6">
                 {{ recent_cards(category, number=2, start=0) }}

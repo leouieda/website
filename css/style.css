@@ -14,9 +14,12 @@ h3 {
 }
 
 .category-header {
-    margin-top: 60px;
     margin-bottom: 20px;
-    font-size: 34px;
+    font-size: 36px;
+}
+
+.category-row {
+    margin-bottom: 100px;
 }
 
 /* The icon list in the about page */
@@ -149,7 +152,7 @@ img {
 
 .site-description {
     margin: 0px;
-    padding: 50px 0px;
+    padding: 100px 0px;
     line-height: 60px;
     font-size: 34px;
     font-weight: 300;
@@ -158,7 +161,7 @@ img {
 .banner {
     background-size: cover;
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5) inset;
     margin: 0px;
 }
