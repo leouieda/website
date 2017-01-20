@@ -4,6 +4,9 @@ body {
 h1 {
     margin-bottom: 21px;
 }
+h2 {
+    margin-top: 40px;
+}
 h3 {
     font-size: 16pt;
     margin-bottom: 15px;
@@ -176,7 +179,8 @@ img {
 }
 
 .blog-roll {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     font-size:11pt;
 }
 
