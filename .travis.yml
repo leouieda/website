@@ -2,6 +2,14 @@ language: python
 
 sudo: false
 
+notifications:
+  email: false
+
+# Only build pushes from the master branch. PRs are always built.
+branches:
+  only:
+    - master
+
 env:
   global: # For deploying the site to Github Pages
     - secure: EG9V+ITvORiIk68ZziZPqPibUxyf8pIMJD8vbWl7adJ/SuwZ/L0kEAIz30YTgtihrbanrk+0tDfm0s7CRJofnjeOjNT9144bYQENob9rMkZbF9n/jd6O5gIJ9cWBzUh7oNRB9noee3dBNeikD6qWkx73PTWdM1c5WX7pOuHeCfs=
