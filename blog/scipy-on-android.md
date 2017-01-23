@@ -5,6 +5,22 @@ thumbnail: scipy-on-android.png
 layout: post
 ---
 
+
+# TL;DR
+
+Install Termux from Google Play, open it and run:
+
+    $ apt install clang python python-dev fftw
+    $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy scipy matplotlib pandas jupyter
+    $ jupyter notebook
+
+Copy the URL printed to the screen and paste it into Chrome/Firefox. Enjoy!
+
+Read on for more tips and a few tweaks.
+
+
+# Some background
+
 I bought my first tablet last October, an
 [NVIDIA Shield K1](https://www.amazon.com/NVIDIA-SHIELD-K1-Tablet-Black/dp/B0171BS9CG/ref=sr_1_2?s=pc&ie=UTF8&qid=1484937529&sr=1-2&keywords=nvidia+shield+k1).
 I had been putting off getting one because I never could think of a good use
@@ -127,6 +143,9 @@ Here are a few tips for making life a little bit easier.
   when using Vim. Esc shows the homescreen on Android and is a very frustrating
   habit to loose.
 
+![Sreenshot of vim running inside termux writing this post,
+inception style.](/images/termux-vim.png)
+
 
 # Things that are still missing
 
@@ -148,7 +167,7 @@ be finding a continuous integration service that runs Android and setting up
 the infrastructure.
 
 
-**Let me know if you try this out! Is theres another setup that you use.  What
+**Let me know if you try this out! Is there another setup that you use?  What
 else is missing?  Do you think we'll be able to fully work like this one day?**
 
 
