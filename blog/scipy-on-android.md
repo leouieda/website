@@ -11,7 +11,7 @@ layout: post
 Install Termux from Google Play, open it and run:
 
     $ apt install clang python python-dev fftw
-    $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy scipy matplotlib pandas jupyter
+    $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
     $ jupyter notebook
 
 Copy the URL printed to the screen and paste it into Chrome/Firefox. Enjoy!
@@ -103,7 +103,13 @@ Things work more smoothly these days (if you follow the
     $ # Install the required packages from Termux
     $ apt install clang python python-dev fftw
     $ # Add some magic works to tell pip how to compile the C extensions
-    $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy scipy matplotlib pandas jupyter
+    $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
+
+**UPDATE (24-01-2017):** I removed the `scipy` package from the above `pip
+install` because it actually doesn't work. I should have tested the commands
+better, sorry. It seems like it [will be a while before we get
+scipy](https://github.com/termux/termux-packages/issues/471) because of all the
+binary requirements (BLAS, LAPACK, and gfortran).
 
 Now you have access to things like `ipython` on the command-line:
 
@@ -157,6 +163,11 @@ and the [conda package manager](http://conda.pydata.org/docs/).
 Having a prebuilt bundle certainly makes life a lot easier.
 But I miss the conda environments the most.
 I use them extensively for my projects and papers.
+
+**UPDATE (24-01-2017):** See the update above about the scipy package. So
+yeah, that is still missing as well. A lot of things can be done using
+numpy replacements (`numpy.fft` instead of `scipy.fftpack` etc) though they are
+usually slower.
 
 Another recent arrival that has made a huge impact on my daily work is [conda-forge](https://conda-forge.github.io/).
 This project greatly democratizes conda packages.
