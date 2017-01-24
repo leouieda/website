@@ -97,12 +97,16 @@ python and `pip` to install packages.
 
 But don't despair!
 Things work more smoothly these days (if you follow the
-[magic incantations](https://github.com/termux/termux-packages/issues/136)):
+[magic incantations](https://github.com/termux/termux-packages/issues/136)).
 
+First, I installed the required packages from Termux:
 
-    $ # Install the required packages from Termux
     $ apt install clang python python-dev fftw libzmq libzmq-dev
-    $ # Add some magic works to tell pip how to compile the C extensions
+
+Next, install the Python packages using `pip`. This will compile the C
+extensions so it might take a while. You might want to install packages
+in separate commands just in case Termux crashes (it can happen).
+
     $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
 
 **UPDATE (24-01-2017):** I removed the `scipy` package from the above `pip
@@ -142,6 +146,9 @@ repo](https://github.com/leouieda/website)), it may not be the most productive
 environment.
 Here are a few tips for making life a little bit easier.
 
+* Enable [extra keys (esc, ctrl, tab)](https://termux.com/touch-keyboard.html)
+  to complement your touch keyboard by pressing "Volume Up" + Q. Can you
+  imagine using a terminal without tab completion?
 * Get a bluetooth keyboard. I bought the
   [Logitech 920-003390](https://www.amazon.com/Logitech-920-003390-Tablet-Keyboard-Android/dp/B0054L8N7M/ref=sr_1_15?s=pc&ie=UTF8&qid=1476900899&sr=1-15&keywords=Android+keyboard).
   It's not great but much better than a touch screen.
