@@ -10,7 +10,7 @@ layout: post
 
 Install Termux from Google Play, open it and run:
 
-    $ apt install clang python python-dev fftw
+    $ apt install clang python python-dev fftw libzmq libzmq-dev
     $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
     $ jupyter notebook
 
@@ -101,7 +101,7 @@ Things work more smoothly these days (if you follow the
 
 
     $ # Install the required packages from Termux
-    $ apt install clang python python-dev fftw
+    $ apt install clang python python-dev fftw libzmq libzmq-dev
     $ # Add some magic works to tell pip how to compile the C extensions
     $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
 
@@ -110,6 +110,9 @@ install` because it actually doesn't work. I should have tested the commands
 better, sorry. It seems like it [will be a while before we get
 scipy](https://github.com/termux/termux-packages/issues/471) because of all the
 binary requirements (BLAS, LAPACK, and gfortran).
+
+**UPDATE (24-01-2017), the return:** Also forgot to add `libzmq` and the
+corresponding headers to the `apt install` list, as required by Jupyter.
 
 Now you have access to things like `ipython` on the command-line:
 
