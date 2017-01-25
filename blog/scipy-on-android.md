@@ -10,13 +10,20 @@ layout: post
 
 Install Termux from Google Play, open it and run:
 
-    $ apt install clang python python-dev fftw libzmq libzmq-dev
+    $ apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev libpng libpng-dev pkg-config
     $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
     $ jupyter notebook
 
-Copy the URL printed to the screen and paste it into Chrome/Firefox. Enjoy!
+Copy the URL printed to the screen (it will look something like
+`http://localhost:8888/?token=longstringofcharacters`)
+and paste it into Chrome/Firefox. Enjoy!
 
 Read on for more tips and a few tweaks.
+
+**UPDATE (25-01-2017):**
+There were a few dependencies that I had left out of the instructions for
+installing numpy et al. I edited the post to make things more complete and
+clear.
 
 
 # Some background
@@ -97,22 +104,35 @@ python and `pip` to install packages.
 
 But don't despair!
 Things work more smoothly these days (if you follow the
-[magic incantations](https://github.com/termux/termux-packages/issues/136)):
+[magic incantations](https://github.com/termux/termux-packages/issues/136)).
+Sadly, the scipy library itself so far [can't be installed without significant
+effort](https://github.com/termux/termux-packages/issues/471).
+Even then you might not be able to do it because of all the Fortran
+requirements (BLAS, LAPACK, and gfortran).
+So for now, we have to make do with numpy only.
 
+First, we must install python it self (version 3.6), the headers files, a C compiler,
+and the FFTW package from Termux:
 
-    $ # Install the required packages from Termux
-    $ apt install clang python python-dev fftw libzmq libzmq-dev
-    $ # Add some magic works to tell pip how to compile the C extensions
-    $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
+    $ apt install python python-dev clang fftw
 
-**UPDATE (24-01-2017):** I removed the `scipy` package from the above `pip
-install` because it actually doesn't work. I should have tested the commands
-better, sorry. It seems like it [will be a while before we get
-scipy](https://github.com/termux/termux-packages/issues/471) because of all the
-binary requirements (BLAS, LAPACK, and gfortran).
+Now we can install numpy using pip:
 
-**UPDATE (24-01-2017), the return:** Also forgot to add `libzmq` and the
-corresponding headers to the `apt install` list, as required by Jupyter.
+    $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy
+
+For matplotlib, we'll need to install a few more dependencies:
+
+    $ apt install freetype freetype-dev libpng libpng-dev pkg-config
+    $ LDFLAGS=" -lm -lcompiler_rt" pip install matplotlib
+
+And for Jupyter we need to install the zmq library as well:
+
+    $ apt install libzmq libzmq-dev
+    $ LDFLAGS=" -lm -lcompiler_rt" pip install jupyter
+
+Finally, we can get pandas:
+
+    $ LDFLAGS=" -lm -lcompiler_rt" pip install pandas
 
 Now you have access to things like `ipython` on the command-line:
 
@@ -122,6 +142,7 @@ One thing that won't work are matplotlib plots because there is no backend for
 Android.
 You can, however, use `%matplotlib inline` or `%matplotlib notebook` inside
 Jupyter notebooks to get the plots working.
+Using `plt.savefig` without using `plt.show()` should also work.
 
 To get a Jupyter notebook server running, so the same thing you would on any
 other computer:
@@ -137,11 +158,14 @@ you can copy the URL from the output and paste it into Chrome or Firefox.
 # Getting comfortable
 
 While it is possible to do some work using this setup (I wrote part of this
-post on the tablet using Vim and pushing to the [Github
+post on the tablet using Vim and pushing to the [website's Github
 repo](https://github.com/leouieda/website)), it may not be the most productive
 environment.
 Here are a few tips for making life a little bit easier.
 
+* Enable [extra keys (esc, ctrl, tab)](https://termux.com/touch-keyboard.html)
+  to complement your touch keyboard by pressing "Volume Up" + Q. Can you
+  imagine using a terminal without tab completion?
 * Get a bluetooth keyboard. I bought the
   [Logitech 920-003390](https://www.amazon.com/Logitech-920-003390-Tablet-Keyboard-Android/dp/B0054L8N7M/ref=sr_1_15?s=pc&ie=UTF8&qid=1476900899&sr=1-15&keywords=Android+keyboard).
   It's not great but much better than a touch screen.
@@ -167,10 +191,9 @@ Having a prebuilt bundle certainly makes life a lot easier.
 But I miss the conda environments the most.
 I use them extensively for my projects and papers.
 
-**UPDATE (24-01-2017):** See the update above about the scipy package. So
-yeah, that is still missing as well. A lot of things can be done using
-numpy replacements (`numpy.fft` instead of `scipy.fftpack` etc) though they are
-usually slower.
+The scipy package. So yeah, that is still missing as well. A lot of things can
+be done using numpy replacements (`numpy.fft` instead of `scipy.fftpack` etc)
+though they are usually slower.
 
 Another recent arrival that has made a huge impact on my daily work is [conda-forge](https://conda-forge.github.io/).
 This project greatly democratizes conda packages.
