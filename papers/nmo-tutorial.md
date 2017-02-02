@@ -5,10 +5,11 @@ author: uieda
 repository: pinga-lab/nmo-tutorial
 journal: The Leading Edge
 oa: true
-alm: false
+alm: true
+doi: 10.1190/tle36020179.1
 thumbnail: nmo-tutorial.png
+citation: "Uieda, L. (2017), Step-by-step NMO correction, The Leading Edge, 36(2), 179-180, doi:10.1190/tle36020179.1"
 layout: publication
-accepted: yes
 ---
 
 
@@ -20,7 +21,9 @@ All tutorials are open-access and include open-source code examples.*
 
 The manuscript was written in [Authorea](https://www.authorea.com).
 You can view and comment on the text
-[online](https://www.authorea.com/users/1856/articles/142722/_show_article).
+[online at Authorea](https://www.authorea.com/users/1856/articles/142722/_show_article)
+and even edit it on the
+[SEG Wiki](http://wiki.seg.org/wiki/Step-by-step_NMO_correction).
 
 The Jupyter notebook that accompanies the tutorial (see the source code
 repository on Github) contains the full source code, along with documentation
