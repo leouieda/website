@@ -21,8 +21,6 @@ language: en
 
 keywords: 'science, geoscience, geophysics, software, open-source'
 
-google_analytics: UA-38125837-5
-
 menulinks: [
     ['/about', 'About'],
     ['/blog', 'Blog'],
