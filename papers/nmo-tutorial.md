@@ -1,5 +1,5 @@
 ---
-title: "Geophysical tutorial: Step-by-step NMO correction"
+title: "Step-by-step NMO correction"
 date: 2017-02-01
 author: uieda
 repository: pinga-lab/nmo-tutorial
@@ -24,6 +24,8 @@ You can view and comment on the text
 [online at Authorea](https://www.authorea.com/users/1856/articles/142722/_show_article)
 and even edit it on the
 [SEG Wiki](http://wiki.seg.org/wiki/Step-by-step_NMO_correction).
+The final (pretty) PDF version is free to download from the publisher website
+(follow the doi link).
 
 The Jupyter notebook that accompanies the tutorial (see the source code
 repository on Github) contains the full source code, along with documentation
