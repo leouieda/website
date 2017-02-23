@@ -1,5 +1,13 @@
+/* To stick the footer to the bottom of the page */
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
     font-size: 12pt;
+    /* Margin bottom by footer height with a little room to accomodate small
+     * screens */
+    margin-bottom: 400px;
 }
 h1 {
     margin-bottom: 21px;
@@ -86,11 +94,15 @@ h3 {
 
 footer {
     width: 100%;
-    margin-top: 100px;
     background-color: #2780e3;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 60px;
     color: #afdddd;
+    /* To stick the footer to the bottom of the page */
+    position: absolute;
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+    min-height: 180px;
 }
 
 footer a {
