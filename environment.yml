@@ -1,6 +1,8 @@
 name: urubu
+channels:
+    - conda-forge
 dependencies:
-    - python=3.5
+    - python=3.6
     - pip
     # Install Urubu's requirements from conda
     - jinja2>=2.7
