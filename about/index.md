@@ -52,6 +52,48 @@ We try to provide links to source code and supplementary material to our
 papers (most new papers have these).
 
 
+# Experience
+<hr>
+
+## Visiting Research Scientist
+
+<ul class="fa-ul">
+    <li><i class="fa-li fa fa-calendar fa-fw"></i>
+        Feb 2017 - Present
+    </li>
+    <li><i class="fa-li fa fa-university fa-fw"></i>
+        Department of Geology and Geophysics, SOEST,
+        <a href="http://www.soest.hawaii.edu/GG/index.html">University of
+        Hawaii at Manoa</a>
+    </li>
+    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
+        I'm on a postdoc scholarship for 1 to 2 years working with
+        <a href="http://www.soest.hawaii.edu/wessel/">Prof. Paul Wessel</a>
+        to build a Python wrapper and high-level API for the
+        <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools (GMT)</a>
+        software.
+    </li>
+</ul>
+
+## Assistant Professor of Geophysics
+
+<ul class="fa-ul">
+    <li><i class="fa-li fa fa-calendar fa-fw"></i>
+        Feb 2014 - Present
+    </li>
+    <li><i class="fa-li fa fa-university fa-fw"></i>
+        Faculdade de Geologia,
+        <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro (UERJ)</a>
+    </li>
+    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
+        I do research and am responsible for the following undergraduate classes:
+        <br>
+        <a href="/teaching/matematica-especial.html">Matemática Especial</a> |
+        <a href="/teaching/geofisica1.html">Geofísica 1: Gravimetria e magnetometria</a> |
+        <a href="/teaching/geofisica2.html">Geofísica 2: Sismologia e sísmica</a>
+    </li>
+</ul>
+
 # Around the internet
 <hr>
 
