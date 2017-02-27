@@ -68,3 +68,6 @@ reflinks:
     site_repo:
         url: https://github.com/leouieda/website
         title: leouieda/website
+    swung:
+        url: https://softwareunderground.org
+        title: Software Underground

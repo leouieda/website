@@ -21,12 +21,11 @@ The best way to get in touch is to write me an e-mail or ping me on Twitter:
 
 <p>
 I'm also fairly active on the
-<a href="http://www.agilegeoscience.com/blog/2016/8/04/the-sound-of-the-software-underground">Software Underground</a>
+<a href="{{ site.reflinks.swung.url }}">{{ site.reflinks.swung.title }}</a>
 Slack channel.
 It's a place where very interesting and smart geoscientists gather to chat and
 exchange ideas.
-I highly recommend signing up (for free) at
-<a href="http://swung.rocks/">swung.rocks</a>.
+I highly recommend signing up (it's free!).
 </p>
 
 If you're around Rio and want to chat about geophysics, science, free software,
