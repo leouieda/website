@@ -8,6 +8,8 @@ order: date
 
 <div class="col-md-6">
 
+<h2>Online</h2>
+
 The best way to get in touch is to write me an e-mail or ping me on Twitter:
 
 <ul class="fa-ul contact">
@@ -28,22 +30,28 @@ exchange ideas.
 I highly recommend signing up (it's free!).
 </p>
 
+
+<h2>In Rio de Janeiro</h2>
+
 If you're around Rio and want to chat about geophysics, science, free software,
 teaching, or anything interesting, stop by my office
 (I teach a lot  of classes so it's better to send me an e-mail first):
 
 <ul class="fa-ul contact">
     <li><i class="fa-li fa fa-map-marker fa-fw"></i>
+    Departamento de Geologia Aplicada (DGAP)
+    <br>
+    Faculdade de Geologia (FGEL)
+    <br>
+    Universidade do Estado do Rio de Janeiro
+    <br>
     <a href="https://goo.gl/maps/7jGIq">
-    UERJ, Rua São Francisco Xavier, 524 Sala 2019A.
+    Rua São Francisco Xavier, 524 Sala 2019A
     <br>
     20550-900, Rio de Janeiro - RJ - Brazil</a>
     </li>
 </ul>
 
-
-</div>
-<div class="col-md-6">
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe
@@ -52,6 +60,42 @@ width="600" height="450" style="border:0"
 allowfullscreen></iframe>
 </div>
 
-</div>
 
 </div>
+
+
+<div class="col-md-6">
+
+
+<h2>At the University of Hawaii at Manoa</h2>
+
+I'm currently on a postdoc leave at
+<a href="http://www.soest.hawaii.edu/GG/index.html">UH Manoa</a>.
+You can find me at:
+
+<ul class="fa-ul contact">
+    <li><i class="fa-li fa fa-map-marker fa-fw"></i>
+    Department of Geology and Geophysics
+    <br>
+    School of Ocean and Earth Science and Technology (SOEST)
+    <br>
+    University of Hawaii at Manoa
+    <br>
+    <a href="https://goo.gl/maps/8uHWEC3GHX42">
+    1680 East-West Road, POST Room 821
+    <br>
+    Honolulu, HI 96822, USA.
+    </a>
+    </li>
+</ul>
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2628.5603383760836!2d-157.81678785215124!3d21.297353040375274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006d9ecad14f15%3A0xca19e3c92caf4c3a!2s1680+East-West+Rd%2C+Honolulu%2C+HI+96822!5e0!3m2!1sen!2sus!4v1488230299919"
+width="600" height="450" frameborder="0" style="border:0"
+allowfullscreen></iframe>
+</div>
+
+
+</div>
+
+</div> <!-- Row -->
