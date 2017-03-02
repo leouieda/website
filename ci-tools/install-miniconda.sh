@@ -16,5 +16,3 @@ else
 fi
 
 chmod +x miniconda.sh && ./miniconda.sh -b
-
-export PATH=/home/travis/miniconda3/bin:$PATH
