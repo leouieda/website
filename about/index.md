@@ -20,13 +20,11 @@ Brazil.
 There, I teach the "Introduction to Geophysics" courses to Geology students,
 a "Programming and numerical methods" course to Oceanography students,
 [among others](/teaching).
-
 My research focuses on gravity and magnetic methods, particularly in developing
 new methodologies for
 [data processing](/papers/paper-polynomial-eqlayer-2013.html)
 and
 [inversion](/papers/paper-moho-inversion-tesseroids-2016.html).
-
 All my work usually involves a lot of
 [open-source software development](/software),
 most of it in the excellent [Python](https://www.python.org)
@@ -34,7 +32,6 @@ programming language.
 I'm the creator and main developer of
 the C command-line program [Tesseroids](/software/tesseroids.html)
 and the Python library [Fatiando a Terra](/software/fatiando.html).
-
 In the spirit of
 [open-science](https://en.wikipedia.org/wiki/Open_science),
 I share all of my research and
@@ -43,8 +40,7 @@ teaching material
 online under permissive licenses.
 You'll find links to source code, images, lessons, etc, around this
 website.
-
-I am a member of the
+I am also a member of the
 [PINGA lab](http://www.pinga-lab.org),
 a research group for inverse problems in geophysics.
 In the group page you'll find links to papers and talks by the group members.

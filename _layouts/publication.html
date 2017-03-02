@@ -22,20 +22,26 @@
 
         {{ insert_thumbnail(this) }}
 
-        {{ pub_info(this, fancy=true) }}
+        <div class="info-bar">
+            {{ pub_info(this, fancy=true) }}
 
-        {{ show_alm(this) }}
+            {{ show_alm(this) }}
+        </div>
 
-        {% if this.citation is defined %}
-            <h2>Citation</h2>
-            <p>{{this.citation}}</p>
-        {% endif %}
     </div>
 
     <div class="col-md-8">
         {% block right %}
+
             {{ this.body }}
+
+            {% if this.citation is defined %}
+                <h2>Citation</h2>
+                <p>{{this.citation}}</p>
+            {% endif %}
+
             {{ feedback(this, site, fancy=true) }}
+
         {% endblock %}
     </div>
 </div>

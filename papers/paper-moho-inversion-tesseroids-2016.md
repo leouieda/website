@@ -34,9 +34,8 @@ You can **download** the model results, source code, and input data from
 doi:[10.6084/m9.figshare.3987267](https://dx.doi.org/10.6084/m9.figshare.3987267)
 
 ![The estimated Moho depth for South America and differences with seismological estimates.](/images/south-american-moho-gravity-inversion.png)
-
 \[[high resolution version](https://raw.githubusercontent.com/pinga-lab/paper-moho-inversion-tesseroids/master/model/south-american-moho.png)\]
-
+<br>
 *Figure caption:
 Dotted lines represent the boundaries between major geologic provinces.
 AD: Andean Province, AFB: Andean foreland basins, AM: Amazonas Basin, BR:
