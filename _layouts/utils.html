@@ -11,13 +11,22 @@
 {% endmacro %}
 
 
-{% macro card(page, date=true, year_only=true, show_oa=false, inprogress=false) %}
-<a href="{{ page.url }}">
-    <div class="card">
+{% macro card(page, date=true, year_only=true, show_oa=false, inprogress=false, collapse_side=false) %}
+    {% if collapse_side %}
+        {% set col_thumb = "col-xs-6 col-sm-4 col-md-12" %}
+        {% set col_title = "col-xs-6 col-sm-8 col-md-12" %}
+    {% else %}
+        {% set col_thumb = "col-md-12" %}
+        {% set col_title = "col-md-12" %}
+    {% endif %}
+    <a href="{{ page.url }}">
+    <div class="row card">
 
-        {{ insert_thumbnail(page, fancy=false) }}
+        <div class="{{ col_thumb }}">
+            {{ insert_thumbnail(page, fancy=false) }}
+        </div>
 
-        <div class="card-caption">
+        <div class="{{ col_title }} card-caption">
             {% if show_oa and page.oa is defined and page.oa %}
                 {{ ai("open-access") }}
             {% endif %}
@@ -25,6 +34,7 @@
                 {{ page.title }}
             </span>
             {% if date %}
+                <br>
                 <span class="card-date">
                 {% if year_only %}
                     ({{ page.date.year }})

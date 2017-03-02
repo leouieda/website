@@ -5,31 +5,30 @@
 
 <h1>{{ this.title }}</h1>
 
+{{ this.body }}
+
+<h2>Education</h2>
+<hr>
 <div class="row">
-    <div class="col-md-8">
-        {{ this.body }}
-    </div>
+{% for edu in this.content %}
     <div class="col-md-4">
-        <h2>Education</h2>
-        <hr>
-        {% for edu in this.content %}
-            <h3><a href="{{ edu.url }}"><b>{{ edu.degree }}</b> in {{ edu.subject }}  »</a></h3>
-            <ul class="fa-ul">
-                <li><i class="fa-li fa fa-calendar fa-fw"></i>
-                    {{ edu.start_date.year}}-{{ edu.date.year }}
-                </li>
-                <li><i class="fa-li fa fa-university fa-fw"></i>
-                    {{ edu.institution }}
-                </li>
-                <li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
-                    Advisor: {{ edu.advisor }}
-                </li>
-                <li><i class="fa-li fa fa-book fa-fw"></i>
-                    Thesis: {{ edu.title }}
-                </li>
-            </ul>
-        {% endfor %}
+    <h3><a href="{{ edu.url }}"><b>{{ edu.degree }}</b> in {{ edu.subject }}  »</a></h3>
+    <ul class="fa-ul">
+        <li><i class="fa-li fa fa-calendar fa-fw"></i>
+            {{ edu.start_date.year}}-{{ edu.date.year }}
+        </li>
+        <li><i class="fa-li fa fa-university fa-fw"></i>
+            {{ edu.institution }}
+        </li>
+        <li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
+            Advisor: {{ edu.advisor }}
+        </li>
+        <li><i class="fa-li fa fa-book fa-fw"></i>
+            Thesis: {{ edu.title }}
+        </li>
+    </ul>
     </div>
+{% endfor %}
 </div>
 
 {% endblock %}
