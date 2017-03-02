@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    /*font-size: 12pt;*/
     font-size: 18px;
     line-height: 31.5px;
     /* Margin bottom by footer height with a little room to accomodate small
@@ -18,7 +17,8 @@ h1 {
 }
 
 h2 {
-    margin-top: 40px;
+    margin-top: 31.5px;
+    margin-bottom: 31.5px;
 }
 
 h3 {
@@ -28,6 +28,15 @@ h3 {
 
 p {
     margin-bottom: 31.5px;
+}
+
+pre {
+    margin-bottom: 31.5px;
+}
+
+ul {
+    margin-bottom: 31.5px;
+    padding-left: 20px;
 }
 
 i.fa {
@@ -158,7 +167,7 @@ footer a:hover {
 img.pub-thumbnail {
     width: 100%;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 21px;
 }
 
 p.pub-date-author {
@@ -233,11 +242,15 @@ img {
 
 .post-date {
     color: #aaaaaa;
-    padding-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .info-bar {
     font-size: 16px;
+}
+
+.info-bar > h2 {
+    margin-bottom: 10.5px;
 }
 
 .info-bar > ul > li {
