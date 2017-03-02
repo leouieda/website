@@ -5,20 +5,18 @@ thumbnail: hawaii-gmt-postdoc.png
 layout: post
 ---
 
-Back in July 2016, I applied for a postdoc position to work on the
+Back in July of 2016, I applied for a postdoc position to work on the
 [Generic Mapping Tools](http://gmt.soest.hawaii.edu/) with
-Professor [Paul Wessel](http://www.soest.hawaii.edu/wessel/).
-
-I had just finished [my PhD][/about/phd] and was eager to do something
-different.
-
-Brazil was in crisis and Rio was bad.
-
-Since March the university (UERJ) was on a strike that ultimately lasted 6
-months.
-
-Classes started only after the Olympic Games.
-
+Professor [Paul Wessel](http://www.soest.hawaii.edu/wessel/)
+at the University of Hawaii.
+After two and half years as a [Professor at UERJ](/about),
+struggling to teach classes without any experience or time to prepare,
+all while finishing [my PhD][/about/phd],
+I was eager to do something different.
+Meanwhile, Brazil was (and still is) in a huge economic and political crisis
+and Rio was hit pretty bad.
+The University, which is State owned, was on strike from March 2016 until after
+the Olympic games in August.
 The time was ripe to apply for something different abroad.
 
 
