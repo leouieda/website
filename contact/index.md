@@ -8,7 +8,7 @@ order: date
 <h2>Online</h2>
 
 The best way to get in touch is to write me an e-mail or ping me on Twitter or
-Google Plus:
+Google+:
 
 <ul class="fa-ul contact">
     <li><i class="fa-li fa fa-envelope fa-fw"></i>
@@ -35,10 +35,12 @@ I highly recommend signing up (it's free!).
 <div class="row">
 <div class="col-md-6">
 
+<p>
 I'm currently on a postdoc leave at
 <a href="http://www.soest.hawaii.edu/GG/index.html">UH Manoa</a>.
 You can find me at:
-<br>
+</p>
+
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-map-marker fa-fw"></i>
     Department of Geology and Geophysics
@@ -72,10 +74,12 @@ allowfullscreen></iframe>
 <div class="row">
 <div class="col-md-6">
 
+<p>
 If you're around Rio and want to chat about geophysics, science, free software,
 teaching, or anything interesting, stop by my office
 (I teach a lot  of classes so it's better to send me an e-mail first):
-<br>
+</p>
+
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-map-marker fa-fw"></i>
     Departamento de Geologia Aplicada (DGAP)

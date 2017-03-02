@@ -90,10 +90,15 @@ papers (most new papers have these).
     </li>
 </ul>
 
+
 # Around the internet
 <hr>
 
-You can find my research, code, articles, and data at:
+I post about my research on social networking sites and have a moderate
+presence on Twitter mostly (links at the top of the page).
+Most of my research output is available around the internet, usually in Github
+repositories.
+You can find me and my research, code, articles, and data at:
 
 <ul class="fa-ul">
 
