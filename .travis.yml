@@ -1,5 +1,8 @@
 language: python
 
+python:
+  - "3.6"
+
 sudo: false
 
 notifications:
@@ -25,8 +28,6 @@ before_install:
   - export PATH=/home/travis/miniconda3/bin:$PATH
   # Update conda itself
   - conda update --yes conda
-  # Temporary patch for conda env (see https://github.com/conda/conda/issues/3738)
-  - conda install --yes pyyaml
 
 install:
   - conda env create
