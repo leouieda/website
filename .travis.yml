@@ -21,16 +21,10 @@ env:
     - secure: EG9V+ITvORiIk68ZziZPqPibUxyf8pIMJD8vbWl7adJ/SuwZ/L0kEAIz30YTgtihrbanrk+0tDfm0s7CRJofnjeOjNT9144bYQENob9rMkZbF9n/jd6O5gIJ9cWBzUh7oNRB9noee3dBNeikD6qWkx73PTWdM1c5WX7pOuHeCfs=
 
 before_install:
-  # Get Miniconda from Continuum
-  - mkdir -p download
-  - wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O download/miniconda.sh
-  - chmod +x download/miniconda.sh
-  - ./download/miniconda.sh -b
+  - bash ci-tools/install-miniconda.sh
   - export PATH=/home/travis/miniconda3/bin:$PATH
   # Update conda itself
   - conda update --yes conda
-  # Temporary patch for conda env (see https://github.com/conda/conda/issues/3738)
-  - conda install --yes pyyaml
 
 install:
   - conda env create
