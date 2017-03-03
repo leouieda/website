@@ -20,7 +20,7 @@ called a tesseroid. Tesseroids also contains programs for modeling using right
 rectangular prisms, both in Cartesian and spherical coordinates.
 
 I started working on *Tesseroids* in 2008 for my
-[Bachelor's degree thesis](http://dx.doi.org/10.6084/m9.figshare.963547).
+[Bachelor's degree thesis][/about/bachelors].
 Since then, the software has been through many revisions.
 
 The paper "[/papers/paper-tesseroids-2016]" describes the algorithms behind
