@@ -39,6 +39,13 @@ ul {
     padding-left: 20px;
 }
 
+blockquote {
+    font-size: 18px;
+    line-height: 31.5px;
+    padding: 0px 21px;
+    color: #666;
+}
+
 i.fa {
     line-height: 26px;
 }
@@ -194,7 +201,7 @@ p.pub-date-author {
 }
 
 .card-date {
-    color: #999999;
+    color: #aaaaaa;
 }
 
 img {
@@ -259,4 +266,8 @@ img {
 
 .contact {
     margin-bottom: 31.5px;
+}
+
+.feedback {
+    margin-bottom: 70px;
 }
