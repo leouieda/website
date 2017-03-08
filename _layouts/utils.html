@@ -315,10 +315,13 @@
 
 {% macro feedback(post, site, fancy=true) %}
     <hr>
+
     {% if fancy %}
     <div class="panel panel-default feedback">
         <div class="panel-body">
             {{ fa("comments", "fa-fw") }}
+    {% else %}
+        <p>
     {% endif %}
             <strong>Comments?</strong>
             Leave one below or
@@ -329,7 +332,29 @@
     {% if fancy %}
         </div>
     </div>
+    {% else %}
+        </p>
     {% endif %}
+
+    {% if fancy %}
+    <div class="panel panel-default feedback">
+        <div class="panel-body">
+            {{ fa("bug", "fa-fw") }}
+    {% else %}
+        <p>
+    {% endif %}
+            <strong>Found a typo/mistake?</strong>
+            Send a <a href="{{ site.reflinks.site_repo.url }}/edit/master/{{ post.fn }}">fix through Github</a>
+            and I'll happily merge it
+            (<em>plus you'll feel great because you helped someone</em>).
+            All you need is an account and 5 minutes!
+    {% if fancy %}
+        </div>
+    </div>
+    {% else %}
+        </p>
+    {% endif %}
+
     <!-- The Disqus comments code -->
     <div id="disqus_thread"></div>
     <script>
