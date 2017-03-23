@@ -2,16 +2,19 @@
 
 
 {% macro fa(name, class='', title='') %}
+{# Utility for inserting font awesome icons #}
     <i class="fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
 {% endmacro %}
 
 
 {% macro ai(name, class='', title='') %}
+{# Utility for inserting academicons icons #}
     <i class="ai ai-{{ name }} {{ class }}" title="{{ title }}"></i>
 {% endmacro %}
 
 
 {% macro card(page, date=true, year_only=true, show_oa=false, inprogress=false, collapse_side=false) %}
+{# Make a card linked to the page showing the thumbnail, title, etc #}
     {% if collapse_side %}
         {% set col_thumb = "col-xs-6 col-sm-4 col-md-12" %}
         {% set col_title = "col-xs-6 col-sm-8 col-md-12" %}
@@ -59,6 +62,7 @@
 
 
 {% macro make_index(content, date=false, year_only=true, show_oa=false) %}
+{# Make an index of cards for all elements in content #}
     {# There will be 4 cards in a row and collapse to 2 in a row for smaller
     displays. The way to do this is to batch the cards into pairs, make a row
     with 2 columns and place a pair in each column. #}
@@ -84,6 +88,7 @@
 
 
 {% macro get_authors(article, site, fancy=true) %}
+{# Make the author list by expanding the stubs into full names from "site.authors" #}
     {% for author in article.author.split(', ') %}
         {% if fancy and author == site.author %}
             {% set author_name = "<strong>" + site.authors[author] + "</strong>" %}
@@ -96,6 +101,7 @@
 
 
 {% macro pub_alerts(article, fancy=true) %}
+{# Make the little alert tags based on the page metadata #}
     {% if article.inreview is defined and article.inreview %}
         {% if fancy %}
             <div class="alert alert-warning">
@@ -147,7 +153,23 @@
 {% endmacro %}
 
 
+{% macro make_metadata_link(meta) %}
+{# Make a link for the metadata tag depending on wether it's a doi, etc.
+   Can be a link (with "http" at the start"), an HTML link (using "<a>" tags),
+   or doi (assume it's a doi if not any of the previous options).
+#}
+    {% if meta[:4] == "http" %}
+        <a href="{{ meta }}">{{ meta }}</a>
+    {% elif "<a " in meta and "</a>" in meta %}
+        {{ meta }}
+    {% else %}
+        <a href="https://doi.org/{{ meta }}">{{ meta }}</a>
+    {% endif %}
+{% endmacro %}
+
+
 {% macro pub_info(article, fancy=true) %}
+{# Make the info side bar for an article based on the metadata header #}
     <h2>Info</h2>
 
     {% if fancy %}
@@ -218,14 +240,7 @@
         {% if article.slides is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("desktop", "fa-fw", "Download slides") }}{% endif %}
-                Slides:
-                {% if article.slides[:4] == "http" %}
-                    <a href="{{article.slides}}">{{article.slides}}</a>
-                {% elif "<a " in article.slides and "</a>" in article.slides %}
-                    {{article.slides}}
-                {% else %}
-                    <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
-                {% endif %}
+                Slides: {{ make_metadata_link(article.slides) }}
             </li>
         {% endif %}
         {% if article.poster is defined %}
@@ -269,8 +284,7 @@
         {% if article.doi is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("external-link", "fa-fw", "DOI link to publisher") }}{% endif %}
-                doi: <a href="http://dx.doi.org/{{article.doi}}">{{
-                    article.doi}}</a>
+                doi: <a href="http://dx.doi.org/{{article.doi}}">{{ article.doi }}</a>
             </li>
         {% endif %}
         {% if article.website is defined %}
@@ -284,6 +298,7 @@
 
 
 {% macro show_alm(article) %}
+{# Create the article level metrics side bar #}
     {% if article.alm is defined and article.alm %}
         <h2>Article Level Metrics</h2>
 
@@ -303,6 +318,7 @@
 
 
 {% macro insert_thumbnail(article, fancy=true) %}
+{# Make the thumbnail image for the article #}
     {% if fancy %}
         {% set class = "pub-thumbnail" %}
     {% else %}
@@ -315,6 +331,7 @@
 
 
 {% macro feedback(post, site, fancy=true) %}
+{# Make the feedback request boxes and Disqus comments section #}
     <hr>
 
     {% if fancy %}
