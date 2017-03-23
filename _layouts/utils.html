@@ -281,21 +281,35 @@
 {% endmacro %}
 
 
+{% macro altmetric_badge(doi, title) %}
+{# Insert the altmetric badge if "doi" is a valid doi. #}
+    {% if "doi.org/" in make_metadata_link(doi) %}
+        <h3>{{ title }}</h3>
+        <div data-badge-details="right" data-badge-type="medium-donut"
+         data-doi="{{ doi }}" class="altmetric-embed"></div>
+    {% endif %}
+{% endmacro %}
+
+
 {% macro show_alm(article) %}
 {# Create the article level metrics side bar #}
     {% if article.alm is defined and article.alm %}
         <h2>Article Level Metrics</h2>
 
         {% if article.doi is defined %}
-            <h3>Main article</h3>
-            <div data-badge-details="right" data-badge-type="medium-donut"
-             data-doi="{{ article.doi }}" class="altmetric-embed"></div>
+            {{ altmetric_badge(article.doi, "Main article") }}
         {% endif %}
 
         {% if article.supplement is defined %}
-            <h3>Data/Supplement</h3>
-            <div data-badge-details="right" data-badge-type="medium-donut"
-             data-doi="{{ article.supplement }}" class="altmetric-embed"></div>
+            {{ altmetric_badge(article.supplement, "Data/Supplement") }}
+        {% endif %}
+
+        {% if article.poster is defined %}
+            {{ altmetric_badge(article.poster, "Poster") }}
+        {% endif %}
+
+        {% if article.slides is defined %}
+            {{ altmetric_badge(article.slides, "Slides") }}
         {% endif %}
     {% endif %}
 {% endmacro %}
