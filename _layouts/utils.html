@@ -177,12 +177,6 @@
                 Journal: <em>{{article.journal}}</em>
             </li>
         {% endif %}
-        {% if article.presentation is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("comments-o", "fa-fw", "Presentation type") }}{% endif %}
-                {{article.presentation|capitalize()}} presentation
-            </li>
-        {% endif %}
         {% if article.event is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("users", "fa-fw", "Event name") }}{% endif %}

@@ -1,11 +1,14 @@
 {% extends "page.html" %}
 
-{% from "utils.html" import card, fa %}
+{% from "utils.html" import card, fa, make_index %}
 
 {% block content %}
 
 {{ super() }}
 
+{{ make_index(this.content, date=true, year_only=true, show_oa=false) }}
+
+{#
 <div class="row">
 {% for group in this.content|groupby("presentation")|reverse() %}
     <div class="col-md-6">
@@ -23,5 +26,6 @@
     </div>
 {% endfor %}
 </div>
+#}
 
 {% endblock %}

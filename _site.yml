@@ -27,10 +27,10 @@ menulinks: [
     #['/research', 'Research'],
     ['/papers', 'Papers'],
     ['/talks', 'Talks'],
+    ['/posters', 'Posters'],
     ['/teaching', 'Teaching'],
     ['/software', 'Software'],
     ['/contact', 'Contact'],
-    #['http://www.pinga-lab.org', 'PINGA-lab'],
     ]
 
 menuicons: [

@@ -25,8 +25,9 @@ In 2016, I defended my thesis, which was submitted for publication in 3 parts:
 
 Presentations about the topic:
 
+* 2017: [/talks/tgif-2017]
 * 2015: [/talks/iag-04-2015]
-* 2014: [/talks/scipy2014]
+* 2014: [/posters/scipy2014]
 * 2013: [/talks/scipy2013]
 
 Yearly seminars presented at the Observatório Nacional:

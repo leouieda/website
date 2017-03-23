@@ -103,6 +103,7 @@ i.ai {
 
 .menu-brand {
     font-size: 19px;
+    padding: 0px;
 }
 
 .menu-brand > a:hover {
@@ -110,7 +111,7 @@ i.ai {
 }
 
 .menu-list {
-    padding-top: 0px;
+    padding: 0px;
 }
 
 .menu-list > ul {

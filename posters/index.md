@@ -1,12 +1,12 @@
 ---
-title: Talks
-layout: talks
+title: Posters
+layout: posters
 order: date
 reverse: true
 ---
 
 {% from "utils.html" import fa, ai %}
 
-A list presentations that I have given over the years.
-All have links to download the slides.
+The poster presentations that I have given.
+All have links to download the poster, usually in PDF.
 Most include links to source-code and data used to produce the results.

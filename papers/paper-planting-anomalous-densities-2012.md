@@ -19,7 +19,7 @@ This was my first publication and the topic of my Masters dissertation.
 The inversion method was developed along successive iterations and presented in
 meetings at each step (in order):
 
-* 2011: [/talks/eage2011]
+* 2011: [/posters/eage2011]
 * 2011: [/talks/seg2011] (talk at SEG 2011)
 * 2011: [/talks/sbgf2011]
 * 2012: This paper

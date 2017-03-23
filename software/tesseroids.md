@@ -25,11 +25,12 @@ Since then, the software has been through many revisions.
 
 The paper "[/papers/paper-tesseroids-2016]" describes the algorithms behind
 [version 1.2.0](http://dx.doi.org/10.5281/zenodo.16033) of the software.
-This paper became a chapter of my PhD thesis.
+This paper became a chapter of [my PhD thesis][/about/phd].
 
 # Presentations
 
 The following presentations are about the software and algorithms involved:
 
-* 2011: [/talks/goce2011]
+* 2016: [My PhD thesis defense][/about/phd]
+* 2011: [/posters/goce2011]
 * 2010: [/talks/agu2010]

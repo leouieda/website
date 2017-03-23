@@ -30,7 +30,7 @@ doi:[10.6084/m9.figshare.963547](http://dx.doi.org/10.6084/m9.figshare.963547).
 
 Presentations about this topic:
 
-* [/talks/goce2011]
+* [/posters/goce2011]
 * [/talks/agu2010]
 * [leouieda/simposio-iag-2008](https://github.com/leouieda/simposio-iag-2008)
 
