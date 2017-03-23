@@ -3,7 +3,6 @@ title: Using Fatiando a Terra to solve inverse problems in geophysics
 author: uieda, oliveira-jr, barbosa
 date: 2014-07-01
 repository: leouieda/scipy2014
-presentation: poster
 poster: 10.6084/m9.figshare.1089987
 doi: 10.6084/m9.figshare.1089987
 event: Python in Science Conference

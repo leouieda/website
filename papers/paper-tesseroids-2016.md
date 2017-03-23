@@ -25,7 +25,7 @@ There is also a separate Python implementation of the same algorithm in the
 
 Presentations about the modeling methods and previous versions of the software:
 
-* [/talks/goce2011]
+* [/posters/goce2011]
 * [/talks/agu2010]
 
 

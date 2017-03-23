@@ -35,7 +35,7 @@ Presentations about this topic:
 * 2012: [/talks/seg2012]
 * 2011: [/talks/sbgf2011]
 * 2011: [/talks/seg2011] (talk at SEG 2011)
-* 2011: [/talks/eage2011]
+* 2011: [/posters/eage2011]
 
 Yearly seminars presented at the Observatório Nacional:
 

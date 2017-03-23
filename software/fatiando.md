@@ -38,7 +38,7 @@ I have given a few presentation about Fatiando over the years:
 
 * [/talks/iag-04-2015]: Invited talk (in portuguese) at the
   [University of São Paulo](http://www.iag.usp.br/).
-* [/talks/scipy2014]: Poster presentation at the Scipy 2014 conference about
+* [/posters/scipy2014]: Poster presentation at the Scipy 2014 conference about
   the `fatiando.inversion` package.
 * [/talks/scipy2013]: Talk at the Scipy 2013 conference introducing Fatiando.
   You can watch [a recording of the talk on Youtube](https://youtu.be/Ec38h1oB8cc).
