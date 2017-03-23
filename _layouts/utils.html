@@ -153,17 +153,17 @@
 {% endmacro %}
 
 
-{% macro make_metadata_link(meta) %}
-{# Make a link for the metadata tag depending on wether it's a doi, etc.
-   Can be a link (with "http" at the start"), an HTML link (using "<a>" tags),
-   or doi (assume it's a doi if not any of the previous options).
+{% macro make_metadata_link(meta, baseurl="https://doi.org") %}
+{# Make a link for the metadata tag depending on wether it's a url, HTML link
+   (using the "<a>" tag), or something else. If something else, will append
+   "meta" to "baseurl" and make a link using "meta" as the link text.
 #}
     {% if meta[:4] == "http" %}
         <a href="{{ meta }}">{{ meta }}</a>
-    {% elif "<a " in meta and "</a>" in meta %}
+    {% elif "<a href=" in meta and "</a>" in meta %}
         {{ meta }}
     {% else %}
-        <a href="https://doi.org/{{ meta }}">{{ meta }}</a>
+        <a href="{{ baseurl }}/{{ meta }}">{{ meta }}</a>
     {% endif %}
 {% endmacro %}
 
@@ -226,15 +226,13 @@
         {% if article.language is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("flag", "fa-fw", "Programming language") }}{% endif %}
-                Language:
-                {{article.language}}
+                Language: {{article.language}}
             </li>
         {% endif %}
         {% if article.license is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("gavel", "fa-fw", "Open-source license") }}{% endif %}
-                {{article.license}}
-                License
+                {{article.license}} License
             </li>
         {% endif %}
         {% if article.slides is defined %}
@@ -246,51 +244,37 @@
         {% if article.poster is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("picture-o", "fa-fw", "Download poster") }}{% endif %}
-                Poster:
-                {% if article.poster[:4] == "http" %}
-                    <a href="{{article.poster}}">{{article.poster}}</a>
-                {% elif "<a " in article.poster and "</a>" in article.poster %}
-                    {{article.poster}}
-                {% else %}
-                    <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
-                {% endif %}
+                Poster: {{ make_metadata_link(article.poster) }}
             </li>
         {% endif %}
         {% if article.repository is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("code", "fa-fw", "Source code repository") }}{% endif %}
-                Source code:
-                {% if "<a " in article.repository and "</a>" in article.repository %}
-                    {{article.repository}}
-                {% else %}
-                    <a href="https://github.com/{{article.repository}}">{{ article.repository }}</a>
-                {% endif %}
+                Source code: {{ make_metadata_link(article.repository, baseurl="https://github.com") }}
             </li>
         {% endif %}
         {% if article.supplement is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("paperclip", "fa-fw", "Supplementary material") }}{% endif %}
-                Data/Supplement:
-                <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
+                Data/Supplement: {{ make_metadata_link(article.supplement) }}
             </li>
         {% endif %}
         {% if article.pdf is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("file-pdf-o", "fa-fw", "Paper PDF") }}{% endif %}
-                PDF:
-                <a href="/pdf/{{article.pdf}}">{{article.pdf}}</a>
+                PDF: <a href="/pdf/{{article.pdf}}">{{article.pdf}}</a>
             </li>
         {% endif %}
         {% if article.doi is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("external-link", "fa-fw", "DOI link to publisher") }}{% endif %}
-                doi: <a href="http://dx.doi.org/{{article.doi}}">{{ article.doi }}</a>
+                doi: {{ make_metadata_link(article.doi) }}
             </li>
         {% endif %}
         {% if article.website is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("home", "fa-fw", "Website") }}{% endif %}
-                <a href="{{article.website}}">{{article.website}}</a>
+                Website: {{ make_metadata_link(article.website) }}
             </li>
         {% endif %}
     </ul>
@@ -305,13 +289,13 @@
         {% if article.doi is defined %}
             <h3>Main article</h3>
             <div data-badge-details="right" data-badge-type="medium-donut"
-             data-doi="{{article.doi}}" class="altmetric-embed"></div>
+             data-doi="{{ article.doi }}" class="altmetric-embed"></div>
         {% endif %}
 
         {% if article.supplement is defined %}
             <h3>Data/Supplement</h3>
             <div data-badge-details="right" data-badge-type="medium-donut"
-             data-doi="{{article.supplement}}" class="altmetric-embed"></div>
+             data-doi="{{ article.supplement }}" class="altmetric-embed"></div>
         {% endif %}
     {% endif %}
 {% endmacro %}
