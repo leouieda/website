@@ -4,7 +4,6 @@ author: carlos, uieda, yli, barbosa, mbraga, angeli, peres
 date: 2012-11-01
 pdf: seg-carlos-2012.pdf
 repository: leouieda/seg2012
-presentation: oral
 slides: 10.6084/m9.figshare.156865
 event: SEG Annual Meeting
 doi: 10.1190/segam2012-0525.1

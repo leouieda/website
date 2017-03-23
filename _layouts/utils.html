@@ -221,6 +221,8 @@
                 Slides:
                 {% if article.slides[:4] == "http" %}
                     <a href="{{article.slides}}">{{article.slides}}</a>
+                {% elif "<a " in article.slides and "</a>" in article.slides %}
+                    {{article.slides}}
                 {% else %}
                     <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
                 {% endif %}
@@ -232,6 +234,8 @@
                 Poster:
                 {% if article.poster[:4] == "http" %}
                     <a href="{{article.poster}}">{{article.poster}}</a>
+                {% elif "<a " in article.poster and "</a>" in article.poster %}
+                    {{article.poster}}
                 {% else %}
                     <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
                 {% endif %}
@@ -241,8 +245,11 @@
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("code", "fa-fw", "Source code repository") }}{% endif %}
                 Source code:
-                <a href="https://github.com/{{article.repository}}">{{
-                    article.repository}}</a>
+                {% if "<a " in article.repository and "</a>" in article.repository %}
+                    {{article.repository}}
+                {% else %}
+                    <a href="https://github.com/{{article.repository}}">{{ article.repository }}</a>
+                {% endif %}
             </li>
         {% endif %}
         {% if article.supplement is defined %}
