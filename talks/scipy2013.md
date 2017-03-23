@@ -4,7 +4,7 @@ author: uieda, oliveira-jr, barbosa
 date: 2013-06-01
 pdf: scipy-2013.pdf
 repository: leouieda/scipy2013
-presentation: oral
+slides: <a href="http://www.leouieda.com/scipy2013/?theme=night#/">HTML slides</a>
 event: 12th Python in Science Conference
 doi: 10.6084/m9.figshare.708390
 thumbnail: scipy2013.png
@@ -14,9 +14,6 @@ layout: publication
 ---
 
 # Presentation
-
-**Slides are available in HTML**:
-[leouieda.com/scipy2013](http://www.leouieda.com/scipy2013/?theme=night#/)
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315"
