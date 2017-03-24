@@ -4,7 +4,6 @@ author: uieda, ussami
 date: 2008-03-01
 repository: leouieda/simposio-iag-2008
 poster: 10.6084/m9.figshare.4779760
-doi: 10.6084/m9.figshare.4779760
 event: XIII Simpósio de Iniciação Científica do IAG-USP
 thumbnail: simposio-iag-2008.png
 alm: true

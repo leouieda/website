@@ -3,7 +3,6 @@ title: 3D magnetic inversion by planting anomalous densities
 author: uieda, barbosa
 date: 2013-05-01
 repository: leouieda/agu-cancun2013
-doi: 10.6084/m9.figshare.703651
 slides: 10.6084/m9.figshare.703651
 event: AGU Meeting of the Americas
 thumbnail: agu-cancun2013.png

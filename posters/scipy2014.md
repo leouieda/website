@@ -4,7 +4,6 @@ author: uieda, oliveira-jr, barbosa
 date: 2014-07-01
 repository: leouieda/scipy2014
 poster: 10.6084/m9.figshare.1089987
-doi: 10.6084/m9.figshare.1089987
 event: Python in Science Conference
 thumbnail: scipy2014.png
 alm: true

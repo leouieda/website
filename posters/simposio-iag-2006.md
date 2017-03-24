@@ -3,7 +3,6 @@ title: Paleomagnetismo e mineralogia magnética dos diques cambrianos de Maravil
 author: uieda, dagrella
 date: 2006-03-01
 poster: 10.6084/m9.figshare.4779769
-doi: 10.6084/m9.figshare.4779769
 event: XI Simpósio de Iniciação Científica do IAG/USP
 thumbnail: simposio-iag-2006.png
 alm: true
