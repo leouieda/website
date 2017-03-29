@@ -10,16 +10,16 @@ description: "I teach geophysics. I program. I research gravimetry and inverse p
 
 author: uieda
 
+language: en
+
+keywords: 'science, geoscience, geophysics, software, open-source'
+
 keep_files: [".nojekyll"]
 
 ignore_patterns: ["README.md", "ci-tools", "environment.yml", "miniconda.sh",
                   "blog/.sample-post.md"]
 
 strict_undefined: true
-
-language: en
-
-keywords: 'science, geoscience, geophysics, software, open-source'
 
 menulinks: [
     ['/about', 'About'],

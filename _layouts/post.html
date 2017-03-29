@@ -26,8 +26,13 @@
     <div class="col-md-3">
         <hr>
         <h3>From the blog</h3>
-        {% set blogposts = site.reflinks['/blog']['content']|sort(attribute='date', reverse=true) %}
-        {% for post in blogposts[:5] %}
+        {% set all_posts = site.reflinks['/blog']['content']|sort(attribute='date', reverse=true) %}
+        {% set n_latest = 0 %}
+        {% set latest_posts = all_posts[:n_latest] %}
+        {% set n_random = 4 %}
+        {% set random_posts = all_posts[n_latest:]|shuffle %}
+        {% set selected_random_posts = random_posts[:n_random]|sort(attribute='date', reverse=true) %}
+        {% for post in latest_posts + selected_random_posts %}
             {{ card(post, year_only=false, collapse_side=true) }}
         {% endfor %}
     </div>
