@@ -1,6 +1,6 @@
 ---
 title: "Talk proposal for Scipy 2017: Bringing the Generic Mapping Tools to Python"
-date: 2017-03-29
+date: 2017-03-30
 thumbnail: scipy2017-proposal-gmt.png
 layout: post
 ---
