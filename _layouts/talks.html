@@ -6,7 +6,7 @@
 
 {{ super() }}
 
-{{ make_index(this.content, date=true, year_only=true, show_oa=false) }}
+{{ make_index(this.content, site, date=true, year_only=true, show_oa=false) }}
 
 {#
 <div class="row">
@@ -18,7 +18,7 @@
             <div class="row">
                 {% for article in row %}
                     <div class="col-md-6 col-sm-6 col-xs-6">
-                        {{ card(article, date=true) }}
+                        {{ card(article, site, date=true) }}
                     </div>
                 {% endfor %}
             </div>

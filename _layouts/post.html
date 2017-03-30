@@ -1,9 +1,8 @@
-{% extends "page.html" %}
+{% extends "publication.html" %}
 {% from "utils.html" import feedback, insert_thumbnail, card %}
 
 
 {% block content %}
-
 
 <div class="row">
     <div class="col-md-9">
@@ -14,7 +13,7 @@
             {{ this.date.strftime('%B %d, %Y') }}
         </p>
 
-        {{ insert_thumbnail(this) }}
+        {{ insert_thumbnail(this, site) }}
         <p></p>
 
         {{ this.body }}
@@ -40,7 +39,7 @@
         {% set selected_random_posts = random_posts[:n_random]|sort(attribute='date', reverse=true) %}
 
         {% for post in latest_posts + selected_random_posts %}
-            {{ card(post, year_only=false, collapse_side=true) }}
+            {{ card(post, site, year_only=false, collapse_side=true) }}
         {% endfor %}
 
     </div>
