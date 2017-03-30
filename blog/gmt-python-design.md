@@ -46,7 +46,7 @@ To my knowledge, there have been 3 attempts at a GMT Python interface:
 
 Only `gmtpy` has received commits since 2014 and is the more mature
 alternative. However, the project [doesn't seem to be very
-activate](https://github.com/emolch/gmtpy/graphs/contributors). Both
+active](https://github.com/emolch/gmtpy/graphs/contributors). Both
 `gmtpy` and `PyGMT` use system class (through `subprocess.Popen`) and
 pass input and output through `subprocess.PIPE`. `pygmt` seems to call
 the GMT C API directly through a hand-coded Python C extension. This
