@@ -21,6 +21,8 @@ ignore_patterns: ["README.md", "ci-tools", "environment.yml", "miniconda.sh",
 
 strict_undefined: true
 
+thumbnail_path: "images/thumb"
+
 menulinks: [
     ['/about', 'About'],
     ['/blog', 'Blog'],

@@ -8,7 +8,7 @@
         {% for article in category.content[start:finish] %}
             <div class="col-md-{{12//number}} col-sm-{{12//number}}
                         col-xs-{{12//number}}">
-                {{ card(article, date=false, inprogress=true) }}
+                {{ card(article, site, date=false, inprogress=true) }}
             </div>
         {% endfor %}
     </div>

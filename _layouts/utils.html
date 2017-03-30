@@ -13,7 +13,7 @@
 {% endmacro %}
 
 
-{% macro card(page, date=true, year_only=true, show_oa=false, inprogress=false, collapse_side=false) %}
+{% macro card(page, site, date=true, year_only=true, show_oa=false, inprogress=false, collapse_side=false) %}
 {# Make a card linked to the page showing the thumbnail, title, etc #}
     {% if collapse_side %}
         {% set col_thumb = "col-xs-6 col-sm-4 col-md-12" %}
@@ -26,7 +26,7 @@
     <div class="row card">
 
         <div class="{{ col_thumb }}">
-            {{ insert_thumbnail(page, fancy=false) }}
+            {{ insert_thumbnail(page, site, fancy=false) }}
         </div>
 
         <div class="{{ col_title }} card-caption">
@@ -61,7 +61,7 @@
 {% endmacro %}
 
 
-{% macro make_index(content, date=false, year_only=true, show_oa=false) %}
+{% macro make_index(content, site, date=false, year_only=true, show_oa=false) %}
 {# Make an index of cards for all elements in content #}
     {# There will be 4 cards in a row and collapse to 2 in a row for smaller
     displays. The way to do this is to batch the cards into pairs, make a row
@@ -75,7 +75,7 @@
                 <div class="row">
                 {% for article in row %}
                     <div class="col-md-6 col-sm-6 col-xs-6">
-                        {{ card(article, date=date, year_only=year_only, show_oa=show_oa) }}
+                        {{ card(article, site, date=date, year_only=year_only, show_oa=show_oa) }}
                     </div>
                 {% endfor %}
                 </div>
@@ -315,7 +315,7 @@
 {% endmacro %}
 
 
-{% macro insert_thumbnail(article, fancy=true) %}
+{% macro insert_thumbnail(article, site, fancy=true) %}
 {# Make the thumbnail image for the article #}
     {% if fancy %}
         {% set class = "pub-thumbnail" %}
@@ -323,7 +323,8 @@
         {% set class = "" %}
     {% endif %}
     {% if article.thumbnail is defined %}
-        <img class="{{ class }}" alt="Thumbnail image for publication." src="/images/thumb/{{article.thumbnail}}">
+    <img class="{{ class }}" alt="Thumbnail image for publication."
+         src="/{{ site.thumbnail_path }}/{{ article.thumbnail }}">
     {% endif %}
 {% endmacro %}
 
