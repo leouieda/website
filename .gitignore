@@ -2,3 +2,5 @@ _build
 .*~
 .*.swp
 .env
+__pycache__
+*.pyc
