@@ -6,8 +6,9 @@
 
 
 <div class="row">
-    <div class="col-md-8">
-<h1>{{ this.title }}</h1>
+    <div class="col-md-9">
+
+        <h1>{{ this.title }}</h1>
 
         <p class="post-date">
             {{ this.date.strftime('%B %d, %Y') }}
@@ -21,9 +22,11 @@
         {{ feedback(this, site, fancy=true) }}
 
     </div>
+
     <div class="col-md-1">
     </div>
-    <div class="col-md-3">
+
+    <div class="col-md-2">
         <hr>
         <h3>From the blog</h3>
         {% set all_posts = site.reflinks['/blog']['content']|sort(attribute='date', reverse=true) %}
