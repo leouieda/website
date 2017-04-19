@@ -1,5 +1,5 @@
 ---
-title: Software projects
+title: Software
 layout: index
 content:
     - fatiando
