@@ -1,10 +1,7 @@
 ---
-title: RSS feed
+title: RSS feed for blog posts
 layout: rss
 content:
-    - papers
-    - talks
-    - posters
     - blog
 saveas: rss.xml
 ---

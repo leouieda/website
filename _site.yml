@@ -45,7 +45,7 @@ menuicons: [
     ['https://www.linkedin.com/in/uieda',
      '<i class="fa fa-linkedin fa-lg" title="LinkedIn"></i>'],
     ['/rss.xml',
-     '<i class="fa fa-rss fa-lg" title="RSS Feed"></i>'],
+     '<i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i>'],
     ]
 
 twitter: leouieda
