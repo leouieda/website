@@ -18,6 +18,8 @@ Github repository.
 It covers our [initial ideas about the GMT Python
 interface][/blog/gmt-python-design].
 
+**UPDATE (8 May 2017):** The proposal was accepted!
+
 ---
 
 ## Abstract
