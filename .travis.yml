@@ -18,7 +18,8 @@ branches:
 
 env:
   global: # For deploying the site to Github Pages
-    - secure: EG9V+ITvORiIk68ZziZPqPibUxyf8pIMJD8vbWl7adJ/SuwZ/L0kEAIz30YTgtihrbanrk+0tDfm0s7CRJofnjeOjNT9144bYQENob9rMkZbF9n/jd6O5gIJ9cWBzUh7oNRB9noee3dBNeikD6qWkx73PTWdM1c5WX7pOuHeCfs=
+    - secure: "PPQrLTT8xUaPQPMsCHZvfZRduOd7J/5APtL/ta0Rq6vM1Mnr751sbsly1avFPUMSfJ44RvIlRemtGGu/0O8LWvc2YQ1U5+6e4zqgkXpdY7oDm3H16dmpsvnshl0MBfAQ2nVI/AOpZwtpz9IvrVg522MigtEParcpsEBab2Rhpww="
+
 
 before_install:
   - bash ci-tools/install-miniconda.sh
