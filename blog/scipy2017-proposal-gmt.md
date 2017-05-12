@@ -20,6 +20,9 @@ interface][/blog/gmt-python-design].
 
 **UPDATE (8 May 2017):** The proposal was accepted!
 
+**UPDATE (11 May 2017):** I've posted the [reviews we got for the
+proposal][/blog/scipy2017-reviews] along with some comments and replies.
+
 ---
 
 ## Abstract
