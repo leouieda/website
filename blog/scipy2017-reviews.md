@@ -49,10 +49,10 @@ much of the prototype will be ready for the conference. We are sure that we'll
 have *something* to show, even if it's not complete. The focus of the talk will
 be on our design decisions, implementation details, and the changes in the GMT
 modern execution mode on which the Python wrappers are based. We'll run some
-examples of whatever we have working mostly for the "Ooo"s and "Aaah"s.
+examples of whatever we have working mostly for the "Oooh"s and "Aaah"s.
 
 The wrapper will be manually generated using
-[cytpes](http://docs.python.org/library/ctypes.html).
+[ctypes](http://docs.python.org/library/ctypes.html).
 We chose this over [SWIG](http://www.swig.org/) or [Cython](http://cython.org/)
 because ctypes allows us to write pure Python code.
 It's a much simpler way of wrapping a C library.
