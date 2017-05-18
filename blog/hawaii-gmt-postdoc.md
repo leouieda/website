@@ -17,7 +17,7 @@ base.
 Read on for the long version.
 
 ![](/images/post-building-university-hawaii.jpg)
-*The The Pacific Ocean Science and Technology (POST) building in the UH Manoa
+*The Pacific Ocean Science and Technology (POST) building in the UH Manoa
 campus. My office is on the top floor with a nice view of downtown Honolulu.*
 
 After two and half years as a [Professor at UERJ][/about],
