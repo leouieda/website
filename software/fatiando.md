@@ -36,12 +36,25 @@ Portuguese)](http://sys2.sbgf.org.br/portal/images/stories/Arquivos/Boletim_89-2
 
 I have given a few presentation about Fatiando over the years:
 
+* [/talks/tgif-2017]: Invited talk at the Department of Geology and Geophysics
+  of the University of Hawaii. It also covers the work in the paper
+  [/papers/paper-moho-inversion-tesseroids-2016], which is a part of my
+  [PhD thesis][/about/phd].
 * [/talks/iag-04-2015]: Invited talk (in portuguese) at the
   [University of São Paulo](http://www.iag.usp.br/).
 * [/posters/scipy2014]: Poster presentation at the Scipy 2014 conference about
   the `fatiando.inversion` package.
 * [/talks/scipy2013]: Talk at the Scipy 2013 conference introducing Fatiando.
-  You can watch [a recording of the talk on Youtube](https://youtu.be/Ec38h1oB8cc).
+
+
+You can watch
+[a recording of the Scipy talk on Youtube](https://youtu.be/Ec38h1oB8cc):
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Ec38h1oB8cc" frameborder="0"
+allowfullscreen></iframe>
+</div>
 
 
 # Bibtex
