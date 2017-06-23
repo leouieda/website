@@ -35,7 +35,7 @@
 
 
 {% block title %}
-    {{ this.title }} | {{ site.title }}
+    {{ this.title|striptags }} | {{ site.title|striptags }}
 {% endblock %}
 
 

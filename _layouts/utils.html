@@ -211,10 +211,23 @@
                 {{article.institution}}
             </li>
         {% endif %}
+        {% if article.thesis is defined %}
+            <li class={{ li_class }}>
+                {% if fancy %}{{ fa("book", "fa-fw", "Thesis title") }}{% endif %}
+                Thesis: <em>{{ article.thesis }}</em>
+            </li>
+        {% endif %}
         {% if article.advisor is defined %}
             <li class={{ li_class }}>
                 {% if fancy %}{{ fa("graduation-cap", "fa-fw", "Advisor") }}{% endif %}
                 Advisor: {{ article.advisor }}
+            </li>
+        {% endif %}
+        {% if article.sucupira is defined %}
+            <li class="list-group-item">
+                {{ fa("info-circle", "fa-fw", "Additional information") }}
+                More info:
+                <a href="https://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConclusao.jsf?popup=true&id_trabalho={{article.sucupira}}">Sucupira platform</a>
             </li>
         {% endif %}
         {% if article.course is defined %}
