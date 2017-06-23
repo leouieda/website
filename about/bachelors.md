@@ -1,11 +1,11 @@
 ---
-title: "Cálculo do tensor gradiente gravimétrico utilizando tesseroides"
+title: <b>BSc</b> in Geophysics
+thesis: "Cálculo do tensor gradiente gravimétrico utilizando tesseroides"
 date: 2009-12-01
 start_date: 2004-03-01
 degree: BSc
 advisor: Naomi Ussami
 subject: Geophysics
-thumbnail: agu2010.png
 doi: 10.6084/m9.figshare.963547
 repository: leouieda/barchelor-thesis
 institution: Universidade de São Paulo, Brazil
@@ -18,7 +18,7 @@ layout: publication
 My Bachelor's degree in Geophysics is from the Universidade de São Paulo,
 Brazil, where I studied from 2004 until 2009.
 I did an undergraduate research project and eventually my thesis under the
-supervision of [Naomi Ussami](http://lattes.cnpq.br/6704246490515612).
+supervision of [Dr. Naomi Ussami](http://lattes.cnpq.br/6704246490515612).
 This was when I started development of the software
 [Tesseroids][/software/tesseroids] and the research that lead to the paper
 [/papers/paper-tesseroids-2016], which is the first part of my
