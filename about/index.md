@@ -13,13 +13,17 @@ banner: monte-roraima.jpg
 # Summary
 <hr>
 
-In February 2014 I started working as
+Since February 2014, I've been working as
 Professor of Geophysics at the
-[Universidade do Estado do Rio de Janeiro](http://www.uerj.br),
+[Universidade do Estado do Rio de Janeiro (UERJ)](http://www.uerj.br),
 Brazil.
-There, I teach the "Introduction to Geophysics" courses to Geology students,
-a "Programming and numerical methods" course to Oceanography students,
-[among others](/teaching).
+I teach the [Geophysics 1][/teaching/geofisica1] and
+[Geophysics 2][/teaching/geofisica2] courses to Geology students,
+and [Programming and Numerical Methods][/teaching/matematica-especial] to
+Oceanography students, [among others][/teaching].
+I'm currently on leave from UERJ for a
+[1-2 year postdoc at the University of Hawaii][/blog/hawaii-gmt-postdoc].
+
 My research focuses on gravity and magnetic methods, particularly in developing
 new methodologies for
 [data processing](/papers/paper-polynomial-eqlayer-2013.html)
@@ -32,6 +36,7 @@ programming language.
 I'm the creator and main developer of
 the C command-line program [Tesseroids](/software/tesseroids.html)
 and the Python library [Fatiando a Terra](/software/fatiando.html).
+
 In the spirit of
 [open-science](https://en.wikipedia.org/wiki/Open_science),
 I share all of my research and
@@ -40,55 +45,13 @@ teaching material
 online under permissive licenses.
 You'll find links to source code, images, lessons, etc, around this
 website.
-I am also a member of the
+
+I am a member of the
 [PINGA lab](http://www.pinga-lab.org),
 a research group for inverse problems in geophysics.
-In the group page you'll find links to papers and talks by the group members.
+In the group page, you'll find links to papers and thesis by the group members.
 We try to provide links to source code and supplementary material to our
 papers (most new papers have these).
-
-
-# Experience
-<hr>
-
-## Visiting Research Scientist
-
-<ul class="fa-ul">
-    <li><i class="fa-li fa fa-calendar fa-fw"></i>
-        Feb 2017 - Present
-    </li>
-    <li><i class="fa-li fa fa-university fa-fw"></i>
-        Department of Geology and Geophysics, SOEST,
-        <a href="http://www.soest.hawaii.edu/GG/index.html">University of
-        Hawaii at Manoa</a>
-    </li>
-    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
-        I'm on a postdoc scholarship for 1 to 2 years working with
-        <a href="http://www.soest.hawaii.edu/wessel/">Prof. Paul Wessel</a>
-        to build a Python wrapper and high-level API for the
-        <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools (GMT)</a>
-        software.
-    </li>
-</ul>
-
-## Assistant Professor of Geophysics
-
-<ul class="fa-ul">
-    <li><i class="fa-li fa fa-calendar fa-fw"></i>
-        Feb 2014 - Present
-    </li>
-    <li><i class="fa-li fa fa-university fa-fw"></i>
-        Faculdade de Geologia,
-        <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro (UERJ)</a>
-    </li>
-    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
-        I do research and am responsible for the following undergraduate classes:
-        <br>
-        <a href="/teaching/matematica-especial.html">Matemática Especial</a> |
-        <a href="/teaching/geofisica1.html">Geofísica 1: Gravimetria e magnetometria</a> |
-        <a href="/teaching/geofisica2.html">Geofísica 2: Sismologia e sísmica</a>
-    </li>
-</ul>
 
 
 # Around the internet
@@ -137,4 +100,49 @@ You can find me and my research, code, articles, and data at:
 <em>Brazilian online resume</em>
 </li>
 
+</ul>
+
+
+# Experience
+<hr>
+
+## Visiting Research Scientist
+
+<ul class="fa-ul">
+    <li><i class="fa-li fa fa-calendar fa-fw"></i>
+        Feb 2017 - Present
+    </li>
+    <li><i class="fa-li fa fa-university fa-fw"></i>
+        Department of Geology and Geophysics, SOEST,
+        <a href="http://www.soest.hawaii.edu/GG/index.html">University of
+        Hawaii at Manoa</a>
+    </li>
+    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
+        I'm on <a href="/blog/hawaii-gmt-postdoc.html">a postdoc scholarship
+        for 1 to 2 years</a> working with
+        <a href="http://www.soest.hawaii.edu/wessel/">Prof. Paul Wessel</a>
+        to build a Python wrapper and high-level API for the
+        <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools (GMT)</a>
+        software.
+
+    </li>
+</ul>
+
+## Assistant Professor of Geophysics
+
+<ul class="fa-ul">
+    <li><i class="fa-li fa fa-calendar fa-fw"></i>
+        Feb 2014 - Present
+    </li>
+    <li><i class="fa-li fa fa-university fa-fw"></i>
+        Faculdade de Geologia,
+        <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro (UERJ)</a>
+    </li>
+    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
+        I do research and am responsible for the following undergraduate classes:
+        <br>
+        <a href="/teaching/matematica-especial.html">Matemática Especial</a> |
+        <a href="/teaching/geofisica1.html">Geofísica 1: Gravimetria e magnetometria</a> |
+        <a href="/teaching/geofisica2.html">Geofísica 2: Sismologia e sísmica</a>
+    </li>
 </ul>
