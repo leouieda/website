@@ -18,9 +18,8 @@ website.
 The library is **Python 3 only** and we're striving for comprehensive test
 coverage and documentation.
 
-I will present the project at Scipy 2017 (see [out talk
-proposal][/blog/scipy2017-proposal-gmt] and [the reviews we
-got][/blog/scipy2017-reviews]).
+I gave a [talk about GMT/Python][/talk/scipy2017] at Scipy 2017. There is a
+video of it on Youtube.
 
 We have a [Gitter chatroom](https://gitter.im/GenericMappingTools/gmt-python)
 if you want to get touch.

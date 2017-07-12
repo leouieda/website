@@ -5,7 +5,7 @@ date: 2013-06-01
 pdf: scipy-2013.pdf
 repository: leouieda/scipy2013
 slides: <a href="http://www.leouieda.com/scipy2013/?theme=night#/">HTML slides</a>
-event: 12th Python in Science Conference
+event: Python in Science Conference
 supplement: 10.6084/m9.figshare.708390
 thumbnail: scipy2013.png
 citation: Uieda, L., V. C. Oliveira Jr and V. C. F. Barbosa (2013), Modeling the Earth with Fatiando a Terra, Proceedings of the 12th Python in Science Conference, pp. 90-96
