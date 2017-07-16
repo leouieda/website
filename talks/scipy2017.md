@@ -10,20 +10,11 @@ license: CC-BY
 layout: publication
 ---
 
-# Slides
-
-<div class="embed-responsive embed-responsive-4by3">
-<iframe
-src="https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4BVnIxYBg/embed?start=false&loop=false&delayms=3000"
-frameborder="0" width="960" height="749" allowfullscreen="true"
-mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
-\[[view in Google Drive](https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4BVnIxYBg/pub?start=false&loop=false&delayms=3000)\]
-
-
 # About
 
-This was the first talk I gave about [GMT/Python][/software/gmt-python].
+This was the first talk I gave about [GMT/Python][/software/gmt-python], a
+wrapper that [I'm building for the Generic Mapping
+Tools][/blog/hawaii-gmt-postdoc].
 I didn't have that much implemented yet but was able to give a quick demo (see
 notebook link below).
 
@@ -33,6 +24,33 @@ notebook link below).
 * There is a [Jupyter notebook with the live
   demo](http://nbviewer.jupyter.org/github/GenericMappingTools/scipy2017/blob/master/demo.ipynb).
   It only works on Linux for now, sorry.
+
+
+# Video recording
+
+Scipy records all of the presentations and [makes them available on
+YouTube](https://www.youtube.com/playlist?list=PLYx7XA2nY5GfdAFycPLBdUDOUtdQIVoMf).
+Here is the video of mine:
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/93M4How7R24" frameborder="0"
+allowfullscreen></iframe>
+</div>
+
+
+# Slides
+
+I made the slides in Google Drive. You can see them below or follow the link:
+
+<div class="embed-responsive embed-responsive-4by3">
+<iframe
+src="https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4BVnIxYBg/embed?start=false&loop=false&delayms=3000"
+frameborder="0" width="960" height="749" allowfullscreen="true"
+mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+\[[view in Google Drive](https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4BVnIxYBg/pub?start=false&loop=false&delayms=3000)\]
+
 
 # Abstract
 

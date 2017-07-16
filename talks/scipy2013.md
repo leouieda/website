@@ -13,13 +13,26 @@ alm: true
 layout: publication
 ---
 
-# Presentation
+
+# About
+
+This was the first presentation that I made about [Fatiando a
+Terra][/software/fatiando], a Python library for modeling and inversion in
+geophysics.
+
+
+# Video recording
+
+Scipy records all of the presentations and [makes them available on
+YouTube](https://www.youtube.com/playlist?list=PLYx7XA2nY5GeTWcUQTbXVdllyp-Ie3r-y).
+Here is the video of mine:
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315"
 src="https://www.youtube.com/embed/Ec38h1oB8cc" frameborder="0"
 allowfullscreen></iframe>
 </div>
+
 
 # Abstract
 
