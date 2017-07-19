@@ -50,7 +50,7 @@ You can find me at:
     University of Hawaii at Manoa
     <br>
     <a href="https://goo.gl/maps/8uHWEC3GHX42">
-    1680 East-West Road, POST Room 821
+    1680 East-West Road, POST Room 804
     <br>
     Honolulu, HI 96822, USA.
     </a>
