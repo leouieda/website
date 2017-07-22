@@ -31,3 +31,10 @@ I gave a [talk about GMT/Python at Scipy 2017][/talks/scipy2017]:
 src="https://www.youtube.com/embed/93M4How7R24" frameborder="0"
 allowfullscreen></iframe>
 </div>
+
+I also wrote a few blog posts about the project:
+
+* [/blog/gmt-after-scipy2017]
+* [/blog/scipy2017-reviews]
+* [/blog/scipy2017-proposal-gmt]
+* [/blog/gmt-python-design]
