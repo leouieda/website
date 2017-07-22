@@ -217,6 +217,10 @@ img {
     width: auto; /* Prevent img width=100% in Chrome (makes it stretched) */
 }
 
+.embed-responsive {
+    margin-bottom: 31.5px;
+}
+
 .site-description {
     margin: 0px;
     padding: 100px 0px;
