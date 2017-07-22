@@ -1,15 +1,9 @@
-language: python
+language: generic
 
 sudo: false
 
 notifications:
   email: false
-
-# Cache the miniconda download and pip installed packages for faster builds
-cache:
-  directories:
-    - $HOME/.cache/pip
-    - $HOME/download
 
 # Only build pushes from the master branch. PRs are always built.
 branches:
@@ -17,22 +11,29 @@ branches:
     - master
 
 env:
-  global: # For deploying the site to Github Pages
+  global:
+    # Github Token for pushing the built docs
     - secure: "PPQrLTT8xUaPQPMsCHZvfZRduOd7J/5APtL/ta0Rq6vM1Mnr751sbsly1avFPUMSfJ44RvIlRemtGGu/0O8LWvc2YQ1U5+6e4zqgkXpdY7oDm3H16dmpsvnshl0MBfAQ2nVI/AOpZwtpz9IvrVg522MigtEParcpsEBab2Rhpww="
 
-
 before_install:
-  - bash ci-tools/install-miniconda.sh
-  - export PATH=/home/travis/miniconda3/bin:$PATH
-  # Update conda itself
-  - conda update --yes conda
+  # Get Miniconda from Continuum
+  # Need to source the script to set the PATH variable in this environment
+  # (not the scripts environment)
+  - source ci/install-miniconda.sh
 
 install:
+  # Update conda itself
+  - conda update --yes conda
+  # Create a conda env based on environment.yml
   - conda env create
   - source activate urubu
 
 script:
   - make
 
-after_success:
-  - bash ci-tools/deploy-gh-pages.sh
+deploy:
+  # Push the built HMTL to Github pages
+  - provider: script
+    script: ci/deploy-gh-pages.sh
+    on:
+      branch: master
