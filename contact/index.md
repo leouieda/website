@@ -69,6 +69,7 @@ allowfullscreen></iframe>
 </div>
 
 
+<!--
 <h2>In Rio de Janeiro</h2>
 
 <div class="row">
@@ -106,3 +107,4 @@ allowfullscreen></iframe>
 </div>
 
 </div>
+-->
