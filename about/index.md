@@ -53,6 +53,11 @@ In the group page, you'll find links to papers and thesis by the group members.
 We try to provide links to source code and supplementary material to our
 papers (most new papers have these).
 
+I also keep a PDF version of my CV in a more traditional format.
+You can see and reuse the [Latex template](https://github.com/leouieda/cv)
+and [download the latest PDF](https://github.com/leouieda/cv/releases/latest)
+from Github.
+
 
 # Around the internet
 <hr>
