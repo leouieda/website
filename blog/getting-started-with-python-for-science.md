@@ -19,7 +19,23 @@ So instead of writing yet another email,
 I decided to ["Reply to public"](http://matt.might.net/articles/how-to-blog-as-an-academic/)
 here.
 
-Here are my recommendations (in order):
+**Before you start**, try to find a task or problem that you would like to
+solve using programming.
+Then learn what you need to solve this problem.
+This will let you apply the knowledge you gain straight away.
+Plus, you get something useful by the end of your studies.
+If you don't have anything in mind, here a few ideas:
+
+* Loading data from several text files and making a plot for each one.
+* Extracting a section of data from several files and compiling them into a
+  single file.
+* Download data from an online source and fit a trend line to it (for example,
+  the temperature data from
+  [my Python workshop at UH][/blog/python-hawaii-2017]).
+* Implement a common (and simple) method in your field that is only available
+  in commercial software.
+
+Finally, here are my recommendations (in order):
 
 0. **Don't start** with a general Python programming book/site/tutorial/video.
    They are usually meant for programmers, not scientists. You'll have to wade
@@ -46,6 +62,8 @@ Here are my recommendations (in order):
    to find specific instructions for what you want, for example the
    [numpy documentation](http://www.numpy.org/) and the
    [matplotlib gallery](http://matplotlib.org/gallery.html).
+4. If you like games and want to learn useful general Python skills, try the
+   [Python Challenge](http://www.pythonchallenge.com/).
 
 From now on, learning new things will be a continuous process. I've been
 programming Python for 10 years and every once in a while I'll still learn
@@ -66,6 +84,8 @@ crisis!
 
 *How did you get started with Python? Do you have anything to add to this list?
 Let me know!*
+
+*Update (2017-11-13): Added "Before you start" and the Python Challenge.*
 
 ---
 
