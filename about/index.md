@@ -10,6 +10,18 @@ banner: monte-roraima.jpg
 
 {% from "utils.html" import fa, ai %}
 
+# TL;DR
+<hr>
+
+* Building [GMT/Python][/software/gmt-python] as a Visiting Research Scholar at
+  the University of Hawaii.
+* Professor of Geophysics at [UERJ, Brazil](http://www.uerj.br/) (currently on
+  leave).
+* I research gravity and magnetic inverse problems.
+* I build open-source software like [Tesseroids][/software/tesseroids] and
+  [Fatiando a Terra][/software/fatiando].
+
+
 # Summary
 <hr>
 
@@ -26,16 +38,17 @@ I'm currently on leave from UERJ for a
 
 My research focuses on gravity and magnetic methods, particularly in developing
 new methodologies for
-[data processing](/papers/paper-polynomial-eqlayer-2013.html)
+[data processing][/papers/paper-polynomial-eqlayer-2013]
 and
-[inversion](/papers/paper-moho-inversion-tesseroids-2016.html).
+[inversion][/papers/paper-moho-inversion-tesseroids-2016].
 All my work usually involves a lot of
-[open-source software development](/software),
+[open-source software development][/software],
 most of it in the excellent [Python](https://www.python.org)
 programming language.
 I'm the creator and main developer of
-the C command-line program [Tesseroids](/software/tesseroids.html)
-and the Python library [Fatiando a Terra](/software/fatiando.html).
+the C command-line program [Tesseroids][/software/tesseroids],
+the Python library [Fatiando a Terra][/software/fatiando],
+and [GMT/Python][/software/gmt-python].
 
 In the spirit of
 [open-science](https://en.wikipedia.org/wiki/Open_science),
@@ -93,6 +106,11 @@ You can find me and my research, code, articles, and data at:
 <li><i class="fa-li ai ai-figshare fa-lg"></i>
 <a href="http://figshare.com/authors/Leonardo%20Uieda/97471">figshare</a>:
 <em>where I publish most supplemental material, slides, posters</em>
+</li>
+
+<li><i class="fa-li ai ai-publons fa-lg"></i>
+<a href="https://publons.com/a/1328468/">Publons</a>:
+<em>registry for my peer-review contributions</em>
 </li>
 
 <li><i class="fa-li ai ai-researchgate fa-lg"></i>
