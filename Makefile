@@ -1,3 +1,5 @@
+all: build
+
 build:
 	urubu build
 
