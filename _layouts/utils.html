@@ -168,125 +168,132 @@
 {% endmacro %}
 
 
+{% macro pub_info_icon(icon, caption, fancy) %}
+{# Set the icon for a li in pub_info to fa-li with an icon of choice.
+   Adds a caption to the icon. If fancy=false, will be blank. #}
+    {% if fancy %}
+        <i class="fa-li {{ icon }} fa-fw" title="{{ caption }}"></i>
+    {% endif %}
+{% endmacro %}
+
+
 {% macro pub_info(article, fancy=true) %}
 {# Make the info side bar for an article based on the metadata header #}
     <h2>Info</h2>
 
     {% if fancy %}
-        {% set ul_class = "list-group" %}
-        {% set li_class = "list-group-item" %}
+        {% set ul_class = "fa-ul" %}
     {% else %}
         {% set ul_class = "" %}
-        {% set li_class = "" %}
     {% endif %}
 
-    <ul class={{ ul_class }}>
+    <ul class="{{ ul_class }}">
         {% if article.oa is defined and article.oa %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ ai("open-access", "fa-fw", "Open-access article") }}{% endif %}
+            <li>
+                {{ pub_info_icon("ai ai-open-access", "Open-access article", fancy) }}
                 Open-Access
             </li>
         {% endif %}
         {% if article.start_date is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("calendar", "fa-fw", "Period") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-calendar", "Period", fancy) }}
                 {{ article.start_date.year}}-{{ article.date.year }}
             </li>
         {% endif %}
         {% if article.journal is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("book", "fa-fw", "Journal name") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-book", "Journal name", fancy) }}
                 Journal: <em>{{article.journal}}</em>
             </li>
         {% endif %}
         {% if article.event is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("users", "fa-fw", "Event name") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-users", "Event name", fancy) }}
                 {{article.event}}
             </li>
         {% endif %}
         {% if article.institution is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("university", "fa-fw", "Institution name") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-university", "Institution", fancy) }}
                 {{article.institution}}
             </li>
         {% endif %}
         {% if article.thesis is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("book", "fa-fw", "Thesis title") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-book", "Thesis title", fancy) }}
                 Thesis: <em>{{ article.thesis }}</em>
             </li>
         {% endif %}
         {% if article.advisor is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("graduation-cap", "fa-fw", "Advisor") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-graduation-cap", "Advisor", fancy) }}
                 Advisor: {{ article.advisor }}
             </li>
         {% endif %}
         {% if article.sucupira is defined %}
-            <li class="list-group-item">
-                {{ fa("info-circle", "fa-fw", "Additional information") }}
+            <li>
+                {{ pub_info_icon("fa fa-info-circle", "Additional information", fancy) }}
                 More info:
                 <a href="https://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConclusao.jsf?popup=true&id_trabalho={{article.sucupira}}">Sucupira platform</a>
             </li>
         {% endif %}
         {% if article.course is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("graduation-cap", "fa-fw", "Course type") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-graduation-cap", "Course type", fancy) }}
                 {{ article.course|capitalize() }} course
             </li>
         {% endif %}
         {% if article.language is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("flag", "fa-fw", "Programming language") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-flag", "Programming language", fancy) }}
                 Language: {{article.language}}
             </li>
         {% endif %}
         {% if article.license is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("gavel", "fa-fw", "Open-source license") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-gavel", "Open-source license", fancy) }}
                 {{article.license}} License
             </li>
         {% endif %}
         {% if article.slides is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("desktop", "fa-fw", "Download slides") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-desktop", "Download slides", fancy) }}
                 Slides: {{ make_metadata_link(article.slides) }}
             </li>
         {% endif %}
         {% if article.poster is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("picture-o", "fa-fw", "Download poster") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-picture-o", "Download poster", fancy) }}
                 Poster: {{ make_metadata_link(article.poster) }}
             </li>
         {% endif %}
         {% if article.repository is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("code", "fa-fw", "Source code repository") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-code", "Source code repository", fancy) }}
                 Source code: {{ make_metadata_link(article.repository, baseurl="https://github.com") }}
             </li>
         {% endif %}
         {% if article.supplement is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("paperclip", "fa-fw", "Supplementary material") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-paperclip", "Supplementary material", fancy) }}
                 Data/Supplement: {{ make_metadata_link(article.supplement) }}
             </li>
         {% endif %}
         {% if article.pdf is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("file-pdf-o", "fa-fw", "Paper PDF") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-file-pdf-o", "Paper PDF", fancy) }}
                 PDF: <a href="/pdf/{{article.pdf}}">{{article.pdf}}</a>
             </li>
         {% endif %}
         {% if article.doi is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("external-link", "fa-fw", "DOI link to publisher") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-external-link", "DOI link to publisher", fancy) }}
                 doi: {{ make_metadata_link(article.doi) }}
             </li>
         {% endif %}
         {% if article.website is defined %}
-            <li class={{ li_class }}>
-                {% if fancy %}{{ fa("home", "fa-fw", "Website") }}{% endif %}
+            <li>
+                {{ pub_info_icon("fa fa-home", "Website", fancy) }}
                 Website: {{ make_metadata_link(article.website) }}
             </li>
         {% endif %}
