@@ -11,7 +11,6 @@ banner: monte-roraima.jpg
 {% from "utils.html" import fa, ai %}
 
 # TL;DR
-<hr>
 
 * Building [GMT/Python][/software/gmt-python] as a Visiting Research Scholar at
   the University of Hawaii.
@@ -23,7 +22,6 @@ banner: monte-roraima.jpg
 
 
 # Summary
-<hr>
 
 Since February 2014, I've been working as
 Professor of Geophysics at the
@@ -73,7 +71,6 @@ from Github.
 
 
 # Around the internet
-<hr>
 
 I post about my research on social networking sites and have a moderate
 presence on Twitter mostly (links at the top of the page).
@@ -127,7 +124,6 @@ You can find me and my research, code, articles, and data at:
 
 
 # Experience
-<hr>
 
 ## Visiting Research Scientist
 

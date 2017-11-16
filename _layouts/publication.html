@@ -2,49 +2,65 @@
 {% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info, show_alm, feedback, insert_thumbnail %}
 
 
+{% block breadcrumbs %}
+    <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        {% for bc in this.breadcrumbs[:-1] %}
+            <li><a href="{{ bc.url }}">{{ bc.title }}</a></li>
+        {% endfor %}
+    </ol>
+{% endblock %}
+
+
 {% block content %}
 
-<h1>{{ this.title }}</h1>
+    <div class="row">
 
-{% if this.author is defined %}
-    <p class="pub-date-author">
-        by {{ get_authors(this, site) }}
-        {% if this.date is defined %}
-            ({{ this.date.year }})
-        {% endif %}
-    </p>
-{% endif %}
+        <div class="col-md-8">
+            <h1>{{ this.title }}</h1>
 
-{{ pub_alerts(this, fancy=true) }}
+            {% if this.author is defined %}
+                <p class="pub-date-author">
+                    {{ get_authors(this, site) }}
+                    {% if this.date is defined %}
+                        ({{ this.date.year }})
+                    {% endif %}
+                </p>
+            {% endif %}
 
-<div class="row">
-    <div class="col-md-4">
-
-        {{ insert_thumbnail(this, site) }}
-
-        <div class="info-bar">
-            {{ pub_info(this, fancy=true) }}
-
-            {{ show_alm(this) }}
-        </div>
-
-    </div>
-
-    <div class="col-md-8">
-        {% block right %}
+            {{ pub_alerts(this, fancy=true) }}
 
             {{ this.body }}
+
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-3">
+            <div class="info">
+                {{ pub_info(this, fancy=true) }}
+            </div>
+
+            <div class="alm">
+                {{ show_alm(this) }}
+            </div>
 
             {% if this.citation is defined %}
                 <h2>Citation</h2>
                 <p>{{this.citation}}</p>
             {% endif %}
+        </div>
 
-            {{ feedback(this, site, fancy=true) }}
-
-        {% endblock %}
     </div>
-</div>
 
+    <div class="row">
+        <div class="col-md-8">
+            {{ feedback(this, site, fancy=true) }}
+        </div>
+
+        <div class="col-md-4">
+        </div>
+    </div>
 
 {% endblock %}
