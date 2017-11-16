@@ -37,7 +37,7 @@
         <div class="col-md-1">
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 publication-sidebar">
             <div class="info">
                 {{ pub_info(this, fancy=true) }}
             </div>
@@ -47,8 +47,10 @@
             </div>
 
             {% if this.citation is defined %}
-                <h2>Citation</h2>
-                <p>{{this.citation}}</p>
+                <div class="citation">
+                    <h2>Citation</h2>
+                    <p>{{this.citation}}</p>
+                </div>
             {% endif %}
         </div>
 

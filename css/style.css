@@ -63,11 +63,11 @@ blockquote {
 }
 
 i.fa {
-    line-height: 26px;
+    line-height: 1.7em;
 }
 
 i.ai {
-    line-height: 26px;
+    line-height: 1.7em;
 }
 
 .content {
@@ -283,17 +283,23 @@ img {
     margin-bottom: 0px;
 }
 
-.recent
-
-.info {
-    margin-top: -15px;
+.publication-sidebar {
 }
 
-.info > ul > li {
-    padding: 5px 0px;
+.info {
+    font-size: 0.9em;
+}
+
+.info h2 {
+    margin-top: 30px;
 }
 
 .alm {
+    font-size: 0.9em;
+}
+
+.citation {
+    font-size: 0.9em;
 }
 
 .contact {
@@ -302,6 +308,7 @@ img {
 
 .feedback {
     margin-bottom: 20px;
+    font-size: 0.9em;
 }
 
 #disqus_thread {
