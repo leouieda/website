@@ -20,8 +20,8 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.2em;
-    line-height: 1.5em;
+    font-size: 2.0em;
+    line-height: 1.4em;
     margin-bottom: 30px;
 }
 
@@ -31,12 +31,14 @@ h2 {
     border-bottom: 1px solid #eee;
     width: 100%;
     padding-bottom: 10px;
-    font-size: 1.7em;
+    font-size: 1.6em;
+    line-height: 1.5em;
 }
 
 h3 {
-    font-size: 1.4em;
-    margin-bottom: 20px;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
 }
 
 p {
@@ -96,6 +98,10 @@ i.ai {
     color: #333;
 }
 
+.breadcrumb {
+    font-size: 0.9em;
+}
+
 .menu {
     line-height:50px;
     border: none;
@@ -110,6 +116,10 @@ i.ai {
 
 .menu a {
     color: #ffffff;
+}
+
+.menu strong {
+    font-weight: 800;
 }
 
 .menu-brand {
@@ -256,15 +266,24 @@ img {
     background-color: #2780e3;
 }
 
-.blog-roll {
-    margin-bottom: 30px;
+.blog-roll h2 {
     margin-top: 30px;
+}
+
+.blog-roll .card {
+    padding-top: 0px;
+}
+
+.blog-roll .card-thumbnail {
+    padding-top: 15px;
 }
 
 .post-date {
     color: #aaaaaa;
     margin-bottom: 0px;
 }
+
+.recent
 
 .info {
     margin-top: -15px;

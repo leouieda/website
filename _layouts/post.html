@@ -10,7 +10,7 @@
             <h1>{{ this.title }}</h1>
 
             <p class="post-date">
-                {{ this.date.strftime('%B %d, %Y') }}
+                {{ this.date.strftime(' %d %B %Y') }}
             </p>
 
             <div class="content">
@@ -24,7 +24,7 @@
         <div class="col-md-2">
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-2 blog-roll">
             <h2>Blog</h2>
 
             {% set all_posts = site.reflinks['/blog']['content']|sort(attribute='date', reverse=true) %}
