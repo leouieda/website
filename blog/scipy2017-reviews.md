@@ -24,7 +24,7 @@ constructive feedback.
 Now, on to the reviews!
 
 
-## Review 1 - [Paul Celicourt](http://hydrounits.com/)
+# Review 1 - [Paul Celicourt](http://hydrounits.com/)
 
 > The paper introduces a Python wrapper for the C-based Generic Mapping Tools
 > used to process and analyze time series and gridded data. The content is well
@@ -76,7 +76,7 @@ There are some more details about this in
 
 
 
-## Review 2 - [Ricardo Barros Lourenço](https://github.com/ricardobarroslourenco)
+# Review 2 - [Ricardo Barros Lourenço](https://github.com/ricardobarroslourenco)
 
 > The authors submitted a clear abstract, in the sense that they will present a
 > new Python library, which is a binding to the Generic Mapping Tools (GMT) C
@@ -136,7 +136,7 @@ can be used instead of `gmt grdmath` (no need to tie your head in knots over
 [RPN](https://en.wikipedia.org/wiki/Reverse_Polish_notation) anymore!).
 
 
-## Review 3 - [Ryan May](https://github.com/dopplershift)
+# Review 3 - [Ryan May](https://github.com/dopplershift)
 
 > Python bindings for GMT, as demonstrated by the authors, are very much in
 > demand within the geoscience community. The work lays out a clear path
