@@ -298,8 +298,8 @@
 {# Insert the altmetric badge if "doi" is a valid doi. #}
     {% if "doi.org/" in make_metadata_link(doi) %}
         <h3>{{ title }}</h3>
-        <div data-badge-details="right" data-badge-type="medium-donut"
-         data-doi="{{ doi }}" class="altmetric-embed"></div>
+        <div class="altmetric-embed center-block"
+             data-badge-type="medium-donut" data-doi="{{ doi }}"></div>
     {% endif %}
 {% endmacro %}
 

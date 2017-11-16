@@ -2,49 +2,62 @@
 html {
     position: relative;
     min-height: 100%;
+    font-size: 62.5%;
 }
 
 body {
-    font-size: 18px;
-    line-height: 31.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    line-height: 1.7em;
     /* Margin bottom by footer height with a little room to accomodate small
      * screens */
     margin-bottom: 400px;
 }
 
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
 h1 {
-    margin-bottom: 21px;
+    font-size: 2.2em;
     line-height: 1.5em;
+    margin-bottom: 30px;
 }
 
 h2 {
-    margin-top: 31.5px;
-    margin-bottom: 31.5px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 1.7em;
 }
 
 h3 {
-    font-size: 26px;
-    margin-bottom: 15px;
+    font-size: 1.4em;
+    margin-bottom: 20px;
 }
 
 p {
-    margin-bottom: 31.5px;
+    margin-bottom: 30px;
 }
 
 pre {
-    margin-bottom: 31.5px;
+    margin-bottom: 30px;
 }
 
 ul {
-    margin-bottom: 31.5px;
+    margin-bottom: 30px;
     padding-left: 20px;
 }
 
 blockquote {
-    font-size: 18px;
-    line-height: 31.5px;
+    font-size: inherit;
+    line-height: inherit;
     padding: 0px 21px;
     color: #666;
+    margin-bottom: 30px;
 }
 
 i.fa {
@@ -55,14 +68,12 @@ i.ai {
     line-height: 26px;
 }
 
-.breadcrumb {
-    margin-top: 21px;
-    font-size: 16px;
+.content {
+    margin-top: 30px;
 }
 
 .category-header {
-    margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 2em;
 }
 
 .category-row {
@@ -86,6 +97,7 @@ i.ai {
 }
 
 .menu {
+    line-height:50px;
     border: none;
     margin-bottom: 0px;
     background-color: #2780e3;
@@ -93,8 +105,6 @@ i.ai {
     position: relative;
     min-height: 50px;
     display: block;
-    font-size: 16px;
-    line-height:50px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -103,7 +113,6 @@ i.ai {
 }
 
 .menu-brand {
-    font-size: 19px;
     padding: 0px;
 }
 
@@ -113,6 +122,7 @@ i.ai {
 
 .menu-list {
     padding: 0px;
+    font-size: 0.9em;
 }
 
 .menu-list > ul {
@@ -150,8 +160,8 @@ footer {
     bottom: 0;
     /* Set the fixed height of the footer here */
     min-height: 180px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 0.9em;
+    line-height: 1.5em;
 }
 
 footer a {
@@ -181,8 +191,6 @@ img.pub-thumbnail {
 
 p.pub-date-author {
     margin-bottom: 20px;
-    font-size: 14pt;
-    font-style: italic;
 }
 
 .card {
@@ -194,8 +202,8 @@ p.pub-date-author {
     padding-top: 9px;
     padding-bottom: 9px;
     color: #333333;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 0.9em;
+    line-height: 1.5em;
 }
 
 .card-title {
@@ -219,15 +227,16 @@ img {
 }
 
 .embed-responsive {
-    margin-bottom: 31.5px;
+    margin-bottom: 30px;
 }
 
 .site-description {
     margin: 0px;
     padding: 100px 0px;
-    line-height: 60px;
-    font-size: 34px;
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 1.7em;
 }
 
 .banner {
@@ -250,7 +259,6 @@ img {
 .blog-roll {
     margin-bottom: 30px;
     margin-top: 30px;
-    /*font-size:11pt;*/
 }
 
 .post-date {
@@ -258,20 +266,19 @@ img {
     margin-bottom: 0px;
 }
 
-.info-bar {
-    font-size: 16px;
+.info {
+    margin-top: -15px;
 }
 
-.info-bar > h2 {
-    margin-bottom: 10.5px;
-}
-
-.info-bar > ul > li {
+.info > ul > li {
     padding: 5px 0px;
 }
 
+.alm {
+}
+
 .contact {
-    margin-bottom: 31.5px;
+    margin-bottom: 30px;
 }
 
 .feedback {
