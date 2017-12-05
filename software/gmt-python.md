@@ -3,7 +3,7 @@ title: "GMT/Python: A Python interface for the Generic Mapping Tools"
 language: Python
 license: BSD
 repository: GenericMappingTools/gmt-python
-website: https://genericmappingtools.github.io/gmt-python/
+website: http://www.gmtpython.xyz
 thumbnail: gmt-python.png
 layout: publication
 ---
@@ -31,6 +31,10 @@ I gave a [talk about GMT/Python at Scipy 2017][/talks/scipy2017]:
 src="https://www.youtube.com/embed/93M4How7R24" frameborder="0"
 allowfullscreen></iframe>
 </div>
+
+And presented a [poster at the AGU Fall Meeting 2017][/posters/agu2017]:
+
+![The AGU 2017 poster about GMT/Python](/images/poster-agu2017.png)
 
 I also wrote a few blog posts about the project:
 

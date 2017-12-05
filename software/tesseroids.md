@@ -3,7 +3,7 @@ title: "Tesseroids: gravity forward modeling in spherical coordinates"
 language: C
 license: BSD
 repository: leouieda/tesseroids
-website: http://tesseroids.leouieda.com
+website: http://tesseroids.org
 thumbnail: tesseroids.png
 doi: 10.1190/geo2015-0204.1
 citation: "Uieda, L., V. Barbosa, and C. Braitenberg (2016), Tesseroids: Forward-modeling gravitational fields in spherical coordinates, GEOPHYSICS, F41–F48, doi:10.1190/geo2015-0204.1."
