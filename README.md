@@ -27,7 +27,7 @@ The command `make serve` will start a simple server at the `_build` folder
 where the built HTML files are.
 Point your browser to [http://127.0.0.1:8000](http://127.0.0.1:8000)
 to view the site.
-Use `Ctrl+C` to kill the server.
+The server runs in the background so you can continue working on the site.
 
 ## The theme
 
@@ -53,63 +53,9 @@ To add a new entry, create the `.md` file in the corresponding folder.
 
 ## Metadata for entries
 
-### Papers
-
-Required:
-
-    title: Geophysical tutorial: Euler deconvolution of potential-field data
-    date: yyyy-mm-dd
-    layout: publication
-
-Note that `citation` has to be in a single line.
-
-Optional:
-
-    repository: pinga-lab/paper-tle-euler-tutorial
-    doi: 10.1190/tle33040448.1
-    supplement: 10.6084/m9.figshare.923450
-    thumbnail: paper-tle-euler-tutorial-2014.png
-    pdf: paper-tle.pdf
-    author: uieda, oliveira-jr, barbosa
-    journal: The Leading Edge
-    citation: Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2014), Geophysical tutorial: Euler deconvolution of potential-field data, The Leading Edge, 33(4), 448-450, doi:10.1190/tle33040448.1
-    oa: true
-    inreview: true
-    accepted: true
-    alm: true
-
-* `authors` is a list of ids defined in the `_site.yml` file. Each id
-  maps to an author name.
-* An entry with `oa: true` will be marked as open-acess.
-* `thumbnail`  should be the name of a 600 x 300 pixel figure in
-  `/images/thumb`
-* `pdf` should be the name of PDF file in the `pdf` folder
-* `inreview: true` will mark the entry as under peer-review (unpublished).
-* `accepted: true` will mark the entry as accepted for publication (after
-  peer-review but not yet published).
-* `alm: true` will embed Article Level Metrics for that entry.
-
-### Talks
-
-Required:
-
-    title: Use of the "shape-of-anomaly" data misfit in 3D inversion by planting anomalous densities
-    presentation: oral
-    date: yyyy-mm-dd
-    layout: publication
-
-`presentation` can be either `oral` or `poster`.
-
-Optional:
-
-    event: SEG Annual Meeting
-    pdf: seg-2012.pdf
-    repository: leouieda/seg2012
-    slides: 10.6084/m9.figshare.156864
-    poster: 10.6084/m9.figshare.1089987
-    doi: 10.1190/segam2012-0383.1
-    thumbnail: seg2012.png
-    citation: Uieda, L., and V. C. F. Barbosa (2012), Use of the "shape-of-anomaly" data misfit in 3D inversion by planting anomalous densities, SEG Technical Program Expanded Abstracts, pp. 1-6, doi:10.1190/segam2012-0383.1
+The template makes extensive use of metadata entries for pages. You can specify
+things like the DOI, Github repository, etc and the template will include it in
+the publication side bar. See the existing publications for examples.
 
 
 ## Automatic deploy with TravisCI
@@ -117,14 +63,7 @@ Optional:
 The site is automatically built and deployed to
 [leouieda/leouieda.github.com](https://github.com/leouieda/leouieda.github.com)
 every time a commit is pushed to the *master* branch.
-See files `.travis.yml` and `ci-tools/deply-gh-pages.sh`.
-
-Inspired by
-[Sleepy Coders](http://sleepycoders.blogspot.com.au/2013/03/sharing-travis-ci-generated-files.html)
-and
-[Mathieu Leplatre](http://blog.mathieu-leplatre.info/publish-your-pelican-blog-on-github-pages-via-travis-ci.html).
-
-[![TravisCI status](http://img.shields.io/travis/leouieda/website.svg?style=flat)](https://travis-ci.org/leouieda/website)
+See files `.travis.yml` and `ci/deply-gh-pages.sh`.
 
 ## License
 
