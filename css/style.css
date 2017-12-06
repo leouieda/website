@@ -42,7 +42,7 @@ h3 {
 }
 
 p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 pre {
@@ -308,7 +308,6 @@ img {
 
 .feedback {
     margin-bottom: 20px;
-    font-size: 0.9em;
 }
 
 #disqus_thread {
