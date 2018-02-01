@@ -15,10 +15,26 @@ layout: publication
 
 I was invited to this panel session on
 "[Open-Source Software in the Geosciences](https://agu.confex.com/agu/fm17/meetingapp.cgi/Session/30500)"
-along with some very famous people: Kerry Key, Brian Savage, Gary
+along with Kerry Key, Brian Savage, Gary
 D Egbert, Colin Andrew Zelt, and Lion Krischer.
-Many thanks to the chairs Anna Kelbert and Louise Pellerin for putting this
-together and to Lindsey Heagy for the invitation.
+Many thanks to the chairs Lindsey Heagy, Anna Kelbert and Louise Pellerin for
+putting this together.
+
+
+# Video recording
+
+A video recording of the panel is available [on
+YouTube](https://www.youtube.com/watch?v=0GO4ZZ5Ry6M):
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/0GO4ZZ5Ry6M" frameborder="0"
+allowfullscreen></iframe>
+</div>
+
+Sadly, the video only shows the slides with the discussion topics,
+so think of this more as a podcast.
+We got some very good feedback and participation from the audience.
 
 
 # Abstract
