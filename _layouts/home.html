@@ -16,12 +16,12 @@
 
 
 {% block twitter_card_description %}
-    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:description" content="{{ site.description|striptags }}">
 {% endblock %}
 
 
 {% block opengraph_description %}
-    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description|striptags }}">
 {% endblock %}
 
 
