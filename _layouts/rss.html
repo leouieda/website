@@ -4,7 +4,7 @@
 <channel>
 <title>{{ site.title }}</title>
 <link>{{ site.url }}</link>
-<description>{{ site.description }}</description>
+<description>{{ site.description|striptags }}</description>
 <atom:link href="{{ site.rss }}" rel="self" type="application/rss+xml" />
 
 {% set posts = [] %}
