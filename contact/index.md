@@ -2,6 +2,8 @@
 title: Contact
 layout: page
 order: date
+banner: rainbow-from-uh-office.jpg
+banner_description: "View of the always rainy Manoa Valey from my UH office window."
 ---
 
 

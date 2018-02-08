@@ -6,6 +6,7 @@ content:
     - masters
     - bachelors
 banner: monte-roraima.jpg
+banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela."
 ---
 
 {% from "utils.html" import fa, ai %}

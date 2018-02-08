@@ -9,5 +9,6 @@ content:
     - posters
     - software
 banner: torres-del-paine.jpg
-banner_position: top left
+banner_position: center left
+banner_description: "A glacier at Torres del Paine National Park, Chile."
 ---

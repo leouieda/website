@@ -252,6 +252,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 2px 2px 2px #444444;
 }
 
 .page-description > ul.list-inline {

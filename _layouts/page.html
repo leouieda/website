@@ -48,20 +48,27 @@
             {% else %}
                 {% set position = "center" %}
             {% endif %}
+            {% if this.banner_description is defined %}
+                {% set title = this.banner_description %}
+            {% else %}
+                {% set title = "" %}
+            {% endif %}
             <div class="container-fluid">
-                <div class="banner" style="background-image:
-                url(/images/{{this.banner}}); background-position: {{position}};">
-                    {% block description %}
-                        {% if this.description is defined %}
-                            <div class="container">
-                                <div class="page-description">
+                <div class="banner"
+                     title="{{ title }}"
+                     style="background-image: url(/images/{{this.banner}}); background-position: {{position}};">
+                    <div class="container" title="{{ title }}">
+                        <div class="page-description text-center" title="{{ title }}">
+                            {% block description %}
+                                {# Must define the div because it defines the minimum height of the banner #}
+                                {% if this.description is defined %}
                                     <p class="text-center">
                                         {{ this.description }}
                                     </p>
-                                </div>
-                            </div>
-                        {% endif %}
-                    {% endblock %}
+                                {% endif %}
+                            {% endblock %}
+                        </div>
+                    </div>
                 </div>
             </div>
         {% endif %}
