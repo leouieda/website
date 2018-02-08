@@ -51,6 +51,15 @@
             <div class="container-fluid">
                 <div class="banner" style="background-image:
                 url(/images/{{this.banner}}); background-position: {{position}};">
+                    {% block description %}
+                        <div class="page-description">
+                            <p class="text-center">
+                                {% if this.description is defined %}
+                                    {{ this.description }}
+                                {% endif %}
+                            </p>
+                        </div>
+                    {% endblock %}
                 </div>
             </div>
         {% endif %}
