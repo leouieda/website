@@ -33,8 +33,9 @@ geophysics with a heavy dose of open-source software development.
 Lately,
 I am developing the
 [Python bindings for the Generic Mapping Tools][/software/gmt-python].
-I'm passionate about open science and training the next generation of
-scientists in the best practices for reproducible experiments.
+I do my best to bring more openness to the scientific process
+and to train the next generation of scientists in the best practices of
+reproducible computational experiments.
 
 # Not-so-short summary
 
