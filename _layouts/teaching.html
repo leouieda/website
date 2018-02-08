@@ -10,7 +10,6 @@
 {% for group in this.content|groupby("course")|reverse() %}
     <div class="col-md-6">
         <h2>{{group.grouper|capitalize()}} Courses</h2>
-        <hr>
         {% for row in group.list|batch(2) %}
             <div class="row">
                 {% for article in row %}

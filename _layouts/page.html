@@ -52,13 +52,15 @@
                 <div class="banner" style="background-image:
                 url(/images/{{this.banner}}); background-position: {{position}};">
                     {% block description %}
-                        <div class="page-description">
-                            <p class="text-center">
-                                {% if this.description is defined %}
-                                    {{ this.description }}
-                                {% endif %}
-                            </p>
-                        </div>
+                        {% if this.description is defined %}
+                            <div class="container">
+                                <div class="page-description">
+                                    <p class="text-center">
+                                        {{ this.description }}
+                                    </p>
+                                </div>
+                            </div>
+                        {% endif %}
                     {% endblock %}
                 </div>
             </div>

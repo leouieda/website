@@ -79,7 +79,7 @@ i.ai {
 }
 
 .category-row {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 /* The icon list in the about page */
@@ -245,13 +245,18 @@ img {
     padding: 100px 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1.7em;
     color: #ffffff;
     min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.page-description > ul.list-inline {
+    margin: 0px;
+    padding: 0px;
 }
 
 .banner {
