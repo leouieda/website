@@ -33,12 +33,16 @@
     {{this.title}}
 {% endblock %}
 
+{% block description %}
+    <div class="page-description">
+        <p class="text-center">
+            {{ site.description }}
+        </p>
+    </div>
+{% endblock %}
+
 
 {% block content %}
-
-    <p class="site-description text-center">
-        {{ site.description }}
-    </p>
 
     {% for category in this.content %}
         <div class="row category-row">

@@ -79,7 +79,7 @@ i.ai {
 }
 
 .category-row {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 /* The icon list in the about page */
@@ -240,19 +240,23 @@ img {
     margin-bottom: 30px;
 }
 
-.site-description {
+.page-description {
     margin: 0px;
-    padding: 100px 0px;
+    padding: 100px 20px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 2em;
     line-height: 1.7em;
+    color: #ffffff;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner {
     background-size: cover;
     width: 100%;
-    min-height: 400px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5) inset;
     margin: 0px;
 }
