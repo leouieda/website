@@ -46,7 +46,7 @@ reproducible computational experiments.
 
 I keep a PDF version of my CV in a more traditional format on the
 [leouieda/cv Github repository](https://github.com/leouieda/cv)
-(download the [latest PDF](https://github.com/leouieda/cv/releases/latest).
+(download the [latest PDF](https://github.com/leouieda/cv/raw/pdf/leonardo_uieda_cv.pdf)).
 The CV is typeset in Latex using a custom open-source template.
 
 
