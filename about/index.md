@@ -14,21 +14,24 @@ banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela.
 # TL;DR
 
 * Building [GMT/Python][/software/gmt-python] as a Visiting Research Scholar at
-  the University of Hawaii.
-* Professor of Geophysics at [UERJ, Brazil](http://www.uerj.br/) (currently on
-  leave).
-* I research gravity and magnetic inverse problems.
-* I build open-source software like [Tesseroids][/software/tesseroids] and
-  [Fatiando a Terra][/software/fatiando].
+  the University of Hawaii at Manoa.
+* Researching gravity and magnetic inverse problems.
+* Working on other open-source software like [Tesseroids][/software/tesseroids]
+  and [Fatiando a Terra][/software/fatiando].
 
 # Short summary
 
-I am currently a Visiting Research Scholar at the University of Hawaii and
-Assistant Professor at the Universidade do Estado do Rio de Janeiro, Brazil.
+I am currently Visiting Research Scholar at the
+[University of Hawaii at Manoa](http://www.soest.hawaii.edu/GG/index.html).
+Prior to coming here, I worked for 4 years as Assistant Professor of Geophysics
+at the [Universidade do Estado do Rio de Janeiro (UERJ)](http://www.uerj.br),
+Brazil.
 I received [my PhD][/about/phd] from the Observatório Nacional, Brazil, for the
 creation of the open-source software [Tesseroid][/software/tesseroids] and
 [Fatiando a Terra][/software/fatiando] and for my
 [work on large-scale gravity inversion][/papers/paper-moho-inversion-tesseroids-2016].
+I am a member of the [PINGA lab](http://www.pinga-lab.org), a research group
+for inverse problems in geophysics.
 My research focuses on inverse problems in potential field
 geophysics with a heavy dose of open-source software development.
 Lately,
@@ -38,52 +41,21 @@ I do my best to bring more openness to the scientific process
 and to train the next generation of scientists in the best practices of
 reproducible computational experiments.
 
-# Not-so-short summary
-
-In February 2014, I was hired as
-Professor of Geophysics at the
-[Universidade do Estado do Rio de Janeiro (UERJ)](http://www.uerj.br),
-Brazil.
-I teach the [Geophysics 1][/teaching/geofisica1] and
-[Geophysics 2][/teaching/geofisica2] courses to Geology students,
-and [Programming and Numerical Methods][/teaching/matematica-especial] to
-Oceanography students, [among others][/teaching].
-I'm currently on leave from UERJ for a
-[1-2 year postdoc at the University of Hawaii][/blog/hawaii-gmt-postdoc].
-
-In the spirit of
-[open-science](https://en.wikipedia.org/wiki/Open_science),
-I share all of my research and
-teaching material
-(code, data, slides, etc)
-online under permissive licenses.
-You'll find links to source code, images, lessons, etc, around this
-website.
-
-I am a member of the
-[PINGA lab](http://www.pinga-lab.org),
-a research group for inverse problems in geophysics.
-In the group page, you'll find links to papers and thesis by the group members.
-We try to provide links to source code and supplementary material to our
-papers (most new papers have these).
-
 
 # Curriculum Vitae
 
-I keep a PDF version of my CV in a more traditional format at:
-[github.com/leouieda/cv](https://github.com/leouieda/cv)
-
-You can reuse the Latex template if you like
-and [download the latest PDF](https://github.com/leouieda/cv/releases/latest)
-from the Github releases.
+I keep a PDF version of my CV in a more traditional format on the
+[leouieda/cv Github repository](https://github.com/leouieda/cv)
+(download the [latest PDF](https://github.com/leouieda/cv/releases/latest).
+The CV is typeset in Latex using a custom open-source template.
 
 
 # Around the internet
 
 I post about my research on social networking sites and have a moderate
-presence on Twitter mostly (links at the top of the page).
-Most of my research output is available around the internet, usually in Github
-repositories.
+presence on Twitter (links at the top of the page).
+Most of my research output is available around the internet, usually through
+Github repositories.
 You can find me and my research, code, articles, and data at:
 
 <ul class="fa-ul">
@@ -140,18 +112,16 @@ You can find me and my research, code, articles, and data at:
         Feb 2017 - Present
     </li>
     <li><i class="fa-li fa fa-university fa-fw"></i>
-        Department of Geology and Geophysics, SOEST,
+        Department of Geology and Geophysics -
+        SOEST -
         <a href="http://www.soest.hawaii.edu/GG/index.html">University of
         Hawaii at Manoa</a>
     </li>
     <li><i class="fa-li fa fa-info-circle fa-fw"></i>
-        I'm on <a href="/blog/hawaii-gmt-postdoc.html">a postdoc scholarship
-        for 1 to 2 years</a> working with
-        <a href="http://www.soest.hawaii.edu/wessel/">Prof. Paul Wessel</a>
-        to build a Python wrapper and high-level API for the
-        <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools (GMT)</a>
-        software.
-
+        I came to UH on <a href="/blog/hawaii-gmt-postdoc.html">a 2-year
+        postdoc scholarship</a> to build a Python wrapper and high-level API
+        for the <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools
+        (GMT)</a>.
     </li>
 </ul>
 
@@ -159,17 +129,21 @@ You can find me and my research, code, articles, and data at:
 
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-calendar fa-fw"></i>
-        Feb 2014 - Present
+        Feb 2014 - Feb 2018
     </li>
     <li><i class="fa-li fa fa-university fa-fw"></i>
-        Faculdade de Geologia,
+        Departamento de Geologia Aplicada -
+        Faculdade de Geologia -
         <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro (UERJ)</a>
     </li>
     <li><i class="fa-li fa fa-info-circle fa-fw"></i>
-        I do research and am responsible for the following undergraduate classes:
-        <br>
-        <a href="/teaching/matematica-especial.html">Matemática Especial</a> |
-        <a href="/teaching/geofisica1.html">Geofísica 1: Gravimetria e magnetometria</a> |
-        <a href="/teaching/geofisica2.html">Geofísica 2: Sismologia e sísmica</a>
+        At UERJ, I developed and taught the
+        <a href="/teaching/geofisica1.html">Geophysics 1 (Gravity and
+        Magnetics)</a> and
+        <a href="/teaching/geofisica2.html">Geophysics 2 (Seismology)</a>
+        courses for the Geology program, the
+        <a href="/teaching/matematica-especial.html">Special Mathematics 1
+        (Programming and Numerical Methods)</a> course for the Oceanography
+        program, and <a href="/teaching">a range of short courses</a>.
     </li>
 </ul>
