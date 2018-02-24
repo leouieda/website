@@ -23,7 +23,7 @@ can do in a couple of years.
 
 Back then, there were very few Python geophysical modeling libraries.
 A decade later, the ecosystem has expanded.
-The four currently on going projects of which I'm aware are (let me
+The five currently on going projects of which I'm aware are (let me
 know in the comments if I missed any):
 
 * [PyGMI](https://github.com/Patrick-Cole/pygmi): GUI + library for 3D modeling
@@ -108,8 +108,29 @@ This is being done already for Moulder.
 
 ## The plan
 
-What it will look like.
+This is what I envision the Fatiando ecosystem of packages in the future:
 
+* `fatiando`: A metapackage that can be used to install all the whole stack
+  (like the `jupyter` package).
+* `deeplook`: the inversion package. Scikit-learn like interface.
+* `geometric`: the geometric objects and meshed. Includes a way of plotting
+  them on Mayavi and matplotlib.
+* `verde`: the gridding package. Will include some new Green's functions based
+  gridding that I'm working on.
+* `harmonica`: the gravity and magnetic methods. They are solutions to
+  Laplace's equation, or harmonic functions.
+* `sismica`: the toy examples from the seismic package which have tests.
+* `wavefd`: the experimental 2D FD wave propagation code (useful for teaching
+  but wouldn't trust it enough for research).
+* `moulder`: GUI for 2D gravmag modeling
+
+All of these packages will be tied together in the
+[`fatiando` Github organization](https://github.com/fatiando/)
+and the [fatiando.org](http://www.fatiando.org/) website.
+Members of the organization will be free to create new packages  anyone wants to include a new package, they can.
+
+
+* All code will be Python 3 only.
 * The `fatiando/fatiando` repository with the metapackage and main website
   sources. Each new release of `fatiando` will pin specific versions of each
   package that are tested together (or the minimum version that works).
@@ -129,24 +150,7 @@ What it will look like.
 * The 2D visualization code will be removed or moved into it's own package
   (mostly the seismic plotting functions).
 * The 3D visualization code (Mayavi) will be included in the mesher package.
-* All code will be Python 3 only.
 
-The packages that will make up the Fatiando ecosystem:
-
-* `fatiando`: the metapackage that ties it all together. Not importable.
-* `deeplook`: the inversion package. Scikit-learn like interface.
-* `verde`: the gridding package. Will include some new Green's functions based
-  gridding that I'm working on.
-* `geometric`: the geometric objects and meshed. Includes a way of plotting
-  them on Mayavi and matplotlib.
-* `harmonica`: the gravity and magnetic methods. They are solutions to
-  Laplace's equation, or harmonic functions.
-* `sismica`: the toy examples from the seismic package which have tests.
-* `wavefd`: the experimental 2D FD wave propagation code (useful for teaching
-  but wouldn't trust it enough for research).
-* `moulder`: GUI for 2D gravmag modeling
-
-If anyone wants to include a new package, they can.
 
 
 The convolution and lame will be moved to bruges.
