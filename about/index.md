@@ -26,6 +26,8 @@ I am currently Visiting Research Scholar at the
 Prior to coming here, I worked for 4 years as Assistant Professor of Geophysics
 at the [Universidade do Estado do Rio de Janeiro (UERJ)](http://www.uerj.br),
 Brazil.
+There, I developed and taught courses in [geophysics][/teaching/geofisica1] and
+[programming and numerical methods][/teaching/matematica-especial].
 I received [my PhD][/about/phd] from the Observatório Nacional, Brazil, for the
 creation of the open-source software [Tesseroid][/software/tesseroids] and
 [Fatiando a Terra][/software/fatiando] and for my
