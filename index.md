@@ -1,5 +1,6 @@
 ---
 title: Leonardo Uieda
+description: "Learning should be active. Software should be free. Science should be open."
 layout: home
 content:
     - blog

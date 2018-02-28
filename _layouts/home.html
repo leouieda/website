@@ -33,16 +33,10 @@
     {{this.title}}
 {% endblock %}
 
-{% block description %}
-            <ul class="list-inline">
-                {% for item in site.description %}
-                    <li>{{ item }}</li>
-                {% endfor %}
-            </ul>
-{% endblock %}
-
 
 {% block content %}
+
+    {{ this.body }}
 
     {% for category in this.content %}
         <div class="row category-row">
@@ -59,7 +53,5 @@
             </div>
         </div>
     {% endfor %}
-
-    {{ this.body }}
 
 {% endblock %}
