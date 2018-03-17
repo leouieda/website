@@ -7,40 +7,68 @@ layout: post
 
 At the [PINGA lab](http://www.pinga-lab.org/), we have been experimenting with
 ways to increase the reproducibility of our research by publishing the git
-repositories that accompany our papers on our
+repositories that accompany our papers.
+You can find them on our
 [Github organzation](https://github.com/pinga-lab).
 I've synthesized the experience of the last 4 years into a template in the
 [pinga-lab/paper-template](https://github.com/pinga-lab/paper-template)
 repository.
 
-*SCREENSHOT OF THE REPOSITORY*.
+![Screenshot of the paper-template Github repository.](/images/paper-template-repository.png)
 
 The template reflects the tools we've been using and the type of research that
-we do.
-Most papers are proposing a new methodology rather than the analysis of a
-dataset.
-However, there is always an application to a dataset included in the paper.
-Our code is usually written in Python and executed in Jupyter notebooks.
-The focus of the paper is on the methodology, not the code.
-As such, the code is more of a proof-of-concept than a full blown application
-library.
-The paper itself is written in LaTeX and usually included in the repository.
+we do:
 
-It certainly won't fit everyone's needs but I hope that you can at least use a
-few bits and pieces.
-Of course, the code is open-source (BSD license).
+* Most papers are proposing a new methodology rather than the analysis of a
+  dataset.
+* There is always an application to a dataset to show the method works. We
+  can't always publish the data but we include it in the repository whenever we
+  can.
+* All papers include an implementation of the proposed method.
+* Our code is usually written in Python and executed in Jupyter notebooks.
+* The focus of the paper is usually on the methodology, not the code. As such,
+  the code is more of a proof-of-concept than a full blown application or
+  library.
+* The paper itself is written in LaTeX with the source usually included in the
+  repository.
+
+This certainly won't fit everyone's needs but I hope that you can at least use
+a few bits and pieces for inspiration.
+Of course, the template code is open-source (BSD license) and you are free to
+reuse it however you like.
 The template includes a sample application to climate change data, complete
 with a Python package, automated tests, an analysis notebook, a notebook that
 generates the paper figure, raw data, and a LaTeX text.
-Something about running everything with a single `make`.
+Everything, from compilation to building the final PDF, can be done with a
+single `make` command.
 
-*SCREENSHOT OF RUNNING MAKE TO PRODUCE THE PDF*.
+![Screenshot of running "make" in the paper-template with the final paper PDF and a Jupyter notebook.](/images/paper-template-in-action.png)
 
-The main features of the template are:
+We've been using different versions of this template for a few years and I've
+been tweaking it to address some of the difficulties we encountered along the
+way.
 
-* Uses `Makefile`s to automate the workflow.
-* You can build and test the software, generate results and figures, and
-  compile the PDF with a single `make` command.
+* Running experiments in Jupyter notebooks can get messy when people aren't
+  diligent about the execution order. It can be hard to remember to "Reset and
+  run all" before using the results.
+* The execution was done manually so you had to remember and document in what
+  order the notebooks need to be run.
+* Experimental parameters (e.g., number of data points, inversion parameters,
+  model configuration) were copied into the text manually. This sometimes led
+  to values getting out of sync between the notebooks and paper.
+* We only had integration tests implemented in notebooks. More often than not,
+  the checks were visual and not automated. I think a big reason for this is
+  the lack of experience in writing tests within the group and setting up all
+  of the testing infrastructure (mainly how to use pytest and what kind of test
+  to perform).
+
+The [latest update](https://github.com/pinga-lab/paper-template/pull/5)
+addresses all of these pain points.
+The main features of the new template are:
+
+* Uses `Makefile`s to automate the workflow. You can build and test the
+  software, generate results and figures, and compile the PDF with a single
+  `make` command.
 * A `Makefile` for building the manuscript PDF with extra rules for
   running [proselint](https://github.com/amperser/proselint), counting words,
   and opening the PDF.
@@ -57,12 +85,66 @@ The main features of the template are:
   the notebooks.
 * The code `Makefile` can run the notebooks using `jupyter nbconvert` to
   guarantee that the notebooks are executed in sequential order (top to
-  bottom). A major concern with notebooks is that the order in which they are
-  executed is difficult to reproduce.  I would love to use
-  [nbflow](https://github.com/jhamrick/nbflow) but the
-  [SCons](http://scons.org/) requirement puts me off a bit. `make` works fine
-  and the basic syntax is easier to understand.
+  bottom). I would love to use [nbflow](https://github.com/jhamrick/nbflow) but
+  the [SCons](http://scons.org/) requirement puts me off a bit. `make` works
+  fine and the basic syntax is easier to understand.
 * An example of using code to write experimental parameters in a `.tex` file.
   The file defines new variables that are used in the main text. This
   guarantees that the values cited in the text are the ones that you actually
   used to produce the results.
+
+This last feature is my favorite. For example, the notebook
+`code/notebooks/estimate-hawaii-trend.ipynb` has the following code:
+
+{% raw %}
+```python
+tex = r"""
+% Generated by code/notebooks/estimate-hawaii-trend.ipynb
+\newcommand{{\HawaiiLinearCoef}}{{{linear:.3f} C}}
+\newcommand{{\HawaiiAngularCoef}}{{{angular:.3f} C/year}}
+""".format(linear=trend.linear_coef, angular=trend.angular_coef)
+
+with open('../../manuscript/hawaii_trend.tex', 'w') as f:
+    f.write(tex)
+```
+{% endraw %}
+
+It defines the LaTeX commands `\HawaiiLinearCoef` and `\HawaiiAngularCoef` that
+can be used in the paper to insert the values estimated by the Python code.
+The commands are saved to a `.tex` file that can be included in the main
+`manuscript.tex`.
+Since this file is generated by the code, the values are guaranteed to be
+up-to-date.
+
+If you want to use the template to start a new project:
+
+1. Create a new git repository:
+
+        mkdir mypaper
+        cd mypaper
+        git init
+
+2. Pull in the template code:
+
+        git pull https://github.com/pinga-lab/paper-template.git master
+
+3. Create a new repository on Github.
+4. Push the template code to Github:
+
+        git remote add origin https://github.com/USER/REPOSITORY.git
+        git push -u origin master
+
+5. Follow the instruction in the `README.md`.
+
+Alternatively, you can use the "Import repository" option on Github.
+
+![Screenshot of the Github page for importing code from an existing repository.](/images/paper-template-import-repository.png)
+
+I hope that this template will be useful to people outside of our lab.
+There is definitely still room for improvement and I'm looking forward to
+trying it out on my next project.
+
+*What other features would you like to see in the template?*
+Let me know in the comments (or better yet, [submit a pull
+request](https://github.com/pinga-lab/paper-template)).
+I'd love to know about your experiences and workflows for computational papers.
