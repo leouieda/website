@@ -129,29 +129,20 @@ The main problems that need to be fixed in the code are:
 
 # A way forward
 
+The best way forward for Fatiando is to become an ecosystem of specialized
+tools and libraries, rather than a single Python package.
 Having things in separate libraries allows us to better indicate what is robust
-and professional and what is experimental or meant as a toy problem.
+and professional and what is experimental or meant as a teaching tool.
+In particular, the meshing library has some overlap with
+[discretize](https://github.com/simpeg/discretize).
+Separating what we have in a library will help us articulate the
+requirements of Fatiando so that we can organize a potential merger of the two
+packages.
+We can also include experimental libraries (like `fatiando.seismic.wavefd`) and
+CLI or GUI programs.
 
-The experimental stuff should be in it's own library with a lot of warnings,
-like wavefd.
-
-The release cycle for each library is independent.
-
-
-Separating the mesh, grid, and inversion packages lowers the barrier for other
-libraries to adopt them.
-
-We can't know how to reuse things if we don't understand what each library
-needs.
-
-Having these libraries will start a conversation and help us articulate the
-requirements of Fatiando so that we can think of merging with something like
-discretize.
-
-We can also include experimental libraries and CLI or GUI programs.
-This is being done already for Moulder.
-
-This is what I envision the Fatiando ecosystem of packages in the future:
+This is what I envision the Fatiando ecosystem in the future. I have already
+started working on some of them.
 
 * `fatiando`: A metapackage that can be used to install all the whole stack
   (like the `jupyter` package).
@@ -169,38 +160,50 @@ This is what I envision the Fatiando ecosystem of packages in the future:
 
 All of these packages will be tied together in the
 [`fatiando` Github organization](https://github.com/fatiando/)
-and the [fatiando.org](http://www.fatiando.org/) website.
-Members of the organization will be free to create new packages  anyone wants to include a new package, they can.
+and the [fatiando.org](http://www.fatiando.org/) website, which will include
+instructions for installing the entire stack.
+The website will also link to individual packages (as is done right now for the
+subpackages) and any other project in the `fatiando` umbrela.
+Members of the organization will be free to create new repositories and we'll
+provide a template for doing so.
 
+The requirements and goals for these new packages are:
 
 * All code will be Python 3 only.
-* The `fatiando/fatiando` repository with the metapackage and main website
-  sources. Each new release of `fatiando` will pin specific versions of each
-  package that are tested together (or the minimum version that works).
-  The website will include instructions for installing the entire stack.
-* The main website will link to individual packages (as is done right now for
-  the subpackages) and any other project in the `fatiando` umbrela.
+* All docstrings will use the numpy style.
 * Each package will have it's own docs page with tutorials,
   API reference, install instructions, changelog, and gallery. They will share
-  a common template and theme.
-* All repos will include a COC and contributing guide.
+  a common template and a simple theme.
+* All repos will include a Code of Conduct and Contributing Guide.
 * All main packages will have a comprehensive test suite. Anything not tested
   or experimental will be moved to separate packages. Full test coverage (or as
   much as possible) will be a requirement for merging a contribution.
-* The geothermal and seismic.wavefd packages will be marked as experimental
-  and separated into their own repositories. They can still be used but
-  shouldn't be packaged with well tested and robust code.
 * The 2D visualization code will be removed or moved into it's own package
   (mostly the seismic plotting functions).
-* The 3D visualization code (Mayavi) will be included in the mesher package.
+* The 3D visualization code (Mayavi) will be included in the `geometric`
+  package as an optional feature until we can find something better.
+
+This is how I think we could implement this:
+
+1. Release Fatiando 0.6 with what we currently have in the *master* branch.
+2. Create a package template repository with the shared infrastructure
+   (`setup.py`, docs, continuous integration configuration, `Makefile`,
+   testing, etc).
+3. Start repositories for each of the packages listed above.
+4. Begin with clear goals for each package and an example of how we want the
+   API to look.
+5. Focus on redesigning the inversion package first. This is the basis for many
+   other packages.
+6. Slowly copy over code from `fatiando/fatiando` while ensuring that all code
+   is tested and documented.
 
 
+# Help!
 
-The convolution and lame will be moved to bruges.
+I'm curious to know what the Python geophysics community thinks about all of
+this!
+Do I have it all wrong?
+What should be done differently?
+And most importantly, **would you like to help?**
+Let me know in the comments below!
 
-This is how I'm planning to implement this.
-
-1. Release Fatiando 0.6 with what we currently have in master.
-2. Start repositories with the basic infratructure (testing, CI, docs) for each
-   package.
-3. Slowly copy over code from `fatiando/fatiando` ensuring
