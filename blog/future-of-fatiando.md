@@ -209,6 +209,8 @@ This is how I think we could implement this:
 
 # Help!
 
+The goal of all these changes is to make *Fatiando* better for users and
+developers by making the code more robust and well documented.
 I'm curious to know what the Python geophysics community thinks about all of
 this.
 Do I have it all wrong?
