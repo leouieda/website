@@ -41,8 +41,6 @@ menuicons: [
      '<i class="fa fa-github fa-lg" title="Github"></i>'],
     ['https://twitter.com/leouieda',
      '<i class="fa fa-twitter fa-lg" title="Twitter"></i>'],
-    ['https://plus.google.com/+LeonardoUieda',
-     '<i class="fa fa-google-plus fa-lg" title="Google+"></i>'],
     ['https://www.linkedin.com/in/uieda',
      '<i class="fa fa-linkedin fa-lg" title="LinkedIn"></i>'],
     ['/rss.xml',
