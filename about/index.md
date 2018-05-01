@@ -97,7 +97,7 @@ You can find me and my research, code, articles, and data at:
 <em>academic social network</em>
 </li>
 
-<li><i class="fa-li fa fa-flask fa-fw"></i>
+<li><i class="fa-li ai ai-lattes fa-fw"></i>
 <a href="http://lattes.cnpq.br/8939551682050504">Currículo Lattes</a>:
 <em>Brazilian online resume</em>
 </li>
