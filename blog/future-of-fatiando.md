@@ -82,8 +82,8 @@ and some [non-conventional inversion algorithms][/papers/paper-planting-anomalou
 (see the animation below).
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe src="http://wl.figshare.com/articles/91469/embed?show_title=0"
-width="568" height="481" frameborder="0"></iframe>
+<iframe src="https://widgets.figshare.com/articles/91469/embed?show_title=0"
+width="568" height="426" frameborder="0"></iframe>
 </div>
 
 It's no coincidence that Fatiando mostly contains the tools needed to implement
