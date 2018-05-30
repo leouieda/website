@@ -1,7 +1,7 @@
 ---
 title: "Should geophysicists use the gravity disturbance or the anomaly?"
 date: 2018-05-29
-author: oliveira-jr, uieda, barbosa, hallam
+author: oliveira-jr, uieda, hallam, barbosa
 repository: pinga-lab/use-the-disturbance
 supplement: 10.5281/zenodo.1255306
 journal: Geophysical Journal International
