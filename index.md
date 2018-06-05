@@ -5,9 +5,9 @@ layout: home
 content:
     - blog
     - papers
-    - teaching
     - talks
     - posters
+    - teaching
     - software
 banner: torres-del-paine.jpg
 banner_position: center left
