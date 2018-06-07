@@ -10,6 +10,7 @@ pdf: paper-tesseroids-2016.pdf
 doi: 10.1190/geo2015-0204.1
 alm: true
 citation: "Uieda, L., V. Barbosa, and C. Braitenberg (2016), Tesseroids: Forward-modeling gravitational fields in spherical coordinates, GEOPHYSICS, F41–F48, doi:10.1190/geo2015-0204.1."
+tags: tesseroids
 ---
 
 # About
