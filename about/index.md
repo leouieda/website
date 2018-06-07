@@ -1,6 +1,6 @@
 ---
 title: About
-layout: about
+layout: page
 content:
     - phd
     - masters
@@ -9,7 +9,8 @@ banner: monte-roraima.jpg
 banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela."
 ---
 
-{% from "utils.html" import fa, ai %}
+
+{% from "utils.html" import fa, ai, edu_summary %}
 
 # TL;DR
 
@@ -149,3 +150,10 @@ You can find me and my research, code, articles, and data at:
         program, and <a href="/teaching">a range of short courses</a>.
     </li>
 </ul>
+
+
+# Education
+
+<div>
+{{ edu_summary(this.content) }}
+</div>
