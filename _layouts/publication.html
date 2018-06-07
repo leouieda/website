@@ -1,14 +1,10 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info, show_alm, feedback, insert_thumbnail %}
+{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info,
+   show_alm, feedback, insert_thumbnail, make_breadcrumbs %}
 
 
 {% block breadcrumbs %}
-    <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
-        {% for bc in this.breadcrumbs[:-1] %}
-            <li><a href="{{ bc.url }}">{{ bc.title }}</a></li>
-        {% endfor %}
-    </ol>
+    {{ make_breadcrumbs(this) }}
 {% endblock %}
 
 
