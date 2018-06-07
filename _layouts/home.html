@@ -1,33 +1,16 @@
 {% extends "page.html" %}
-{% from "utils.html" import card %}
-
-
-{% macro recent_cards(category, number=2, start=0) %}
-    <div class="row">
-        {% set finish = start + number %}
-        {% for article in category.content[start:finish] %}
-            <div class="col-md-{{12//number}} col-sm-{{12//number}}
-                        col-xs-{{12//number}}">
-                {{ card(article, site, date=false, inprogress=true) }}
-            </div>
-        {% endfor %}
-    </div>
-{% endmacro %}
-
+{% from "utils.html" import make_index %}
 
 {% block twitter_card_description %}
     <meta name="twitter:description" content="{{ site.description|striptags }}">
 {% endblock %}
 
-
 {% block opengraph_description %}
     <meta property="og:description" content="{{ site.description|striptags }}">
 {% endblock %}
 
-
 {% block breadcrumbs %}
 {% endblock %}
-
 
 {% block title %}
     {{this.title}}
@@ -39,19 +22,8 @@
     {{ this.body }}
 
     {% for category in this.content %}
-        <div class="row category-row">
-            <div class="col-md-12">
-                <h2 class="category-header text-center">
-                <a href="{{ category.url }}">{{ category.title }}  »</a>
-                </h2>
-            </div>
-            <div class="col-md-6">
-                {{ recent_cards(category, number=2, start=0) }}
-            </div>
-            <div class="col-md-6">
-                {{ recent_cards(category, number=2, start=2) }}
-            </div>
-        </div>
+        <h2 class="category-header text-center"><a href="{{ category.url }}">{{ category.title }}  »</a></h2>
+        {{ make_index(category.content, site, date=false, hr=false, ncards=4) }}
     {% endfor %}
 
 {% endblock %}
