@@ -61,12 +61,14 @@
 {% endmacro %}
 
 
-{% macro make_index(content, site, date=false, year_only=true, show_oa=false) %}
+{% macro make_index(content, site, date=false, year_only=true, show_oa=false, hr=true) %}
 {# Make an index of cards for all elements in content #}
     {# There will be 4 cards in a row and collapse to 2 in a row for smaller
     displays. The way to do this is to batch the cards into pairs, make a row
     with 2 columns and place a pair in each column. #}
-    <hr>
+    {% if hr %}
+        <hr>
+    {% endif %}
     {% for row in content|batch(2) %}
         {% if loop.index % 2 != 0 %}
             <div class="row">
