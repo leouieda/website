@@ -1,26 +1,14 @@
 {% extends "page.html" %}
 
-{% from "utils.html" import card, fa %}
+{% from "utils.html" import make_index %}
 
 {% block content %}
 
 {{ super() }}
 
-<div class="row">
 {% for group in this.content|groupby("course")|reverse() %}
-    <div class="col-md-6">
-        <h2>{{group.grouper|capitalize()}} Courses</h2>
-        {% for row in group.list|batch(2) %}
-            <div class="row">
-                {% for article in row %}
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        {{ card(article, site, date=true, inprogress=true) }}
-                    </div>
-                {% endfor %}
-            </div>
-        {% endfor %}
-    </div>
+    <h2>{{group.grouper|capitalize()}} Courses</h2>
+    {{ make_index(group.list, site, date=true, year_only=true, hr=false) }}
 {% endfor %}
-</div>
 
 {% endblock %}
