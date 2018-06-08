@@ -1,5 +1,5 @@
 {% extends "publication.html" %}
-{% from "utils.html" import feedback, insert_thumbnail, card %}
+{% from "utils.html" import feedback, insert_thumbnail, card, make_tags, fa %}
 
 
 {% block content %}
@@ -9,9 +9,19 @@
 
             <h1>{{ this.title }}</h1>
 
-            <p class="post-date">
-                {{ this.date.strftime(' %d %B %Y') }}
-            </p>
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <p class="post-date">
+                        {{ this.date.strftime(' %d %B %Y') }}
+                    </p>
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    {% if this.tags is defined %}
+                        {{ fa('tags') }} {{ make_tags(this.tags) }}
+                    {% endif %}
+                </div>
+            </div>
+
 
             <div class="content">
                 {{ this.body }}

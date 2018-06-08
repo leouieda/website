@@ -11,6 +11,7 @@ thumbnail: seg-carlos2012.png
 citation: Carlos, D. U., L. Uieda, Y. Li, V. C. F. Barbosa, M. A. Braga, G. Angeli, and G. Peres (2012), Iron ore interpretation using gravity-gradient inversions in the Carajás, Brazil, SEG Technical Program Expanded Abstracts, pp. 2008–2012, doi:10.1190/segam2012-0525.1
 alm: true
 layout: publication
+tags: planting-inversion
 ---
 
 # Presentation

@@ -313,3 +313,10 @@ img {
 #disqus_thread {
     margin-top: 90px;
 }
+
+.tag {
+    background-color: #eeeeee;
+    color: #888888;
+    font-weight: lighter;
+    margin-right: 5px;
+}

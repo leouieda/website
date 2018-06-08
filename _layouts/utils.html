@@ -1,33 +1,47 @@
 {# Utility functions for the templates #}
 
 
-{% macro fa(name, class='', title='') %}
+{%- macro fa(name, class='', title='') -%}
 {# Utility for inserting font awesome icons #}
     <i class="fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
-{% endmacro %}
+{%- endmacro -%}
 
 
-{% macro ai(name, class='', title='') %}
+{%- macro ai(name, class='', title='') -%}
 {# Utility for inserting academicons icons #}
     <i class="ai ai-{{ name }} {{ class }}" title="{{ title }}"></i>
-{% endmacro %}
+{%- endmacro -%}
 
 
-{% macro make_breadcrumbs(page) %}
+{%- macro make_tag(tag, fancy=true) -%}
+{# Make a tag for display, optionally using a label span #}
+    {%- if fancy -%}<span class="label label-default tag">{{ tag }}</span>{% else -%}{{ tag }}{%- endif -%}
+{%- endmacro -%}
+
+
+{%- macro make_tags(tags, fancy=true) -%}
+{# Make a sequence of tag links, optionally using a label span #}
+    {%- for tag in tags -%}
+        <a href="/tag/{{ tag }}">{{ make_tag(tag, fancy) }}</a>
+    {%- endfor -%}
+{%- endmacro -%}
+
+
+{%- macro make_breadcrumbs(page) -%}
 {# Make the breadcrumbs bar for a page #}
     <ol class="breadcrumb">
         <li><a href="/">Home</a></li>
-        {% for bc in page.breadcrumbs[:-1] %}
+        {%- for bc in page.breadcrumbs[:-1] -%}
             <li><a href="{{ bc.url }}">{{ bc.title }}</a></li>
-        {% endfor %}
+        {%- endfor -%}
     </ol>
-{% endmacro %}
+{%- endmacro -%}
 
 
-{% macro edu_summary(content) %}
+{%- macro edu_summary(content) -%}
 {# Make a summary of the education (content of the about page) #}
     <div class="row">
-    {% for edu in content %}
+    {%- for edu in content -%}
         <div class="col-md-4">
         <h3><a href="{{ edu.url }}">{{ edu.title }}  »</a></h3>
         <ul class="fa-ul">
@@ -45,397 +59,401 @@
             </li>
         </ul>
         </div>
-    {% endfor %}
+    {%- endfor -%}
     </div>
-{% endmacro %}
+{%- endmacro -%}
 
 
-{% macro card(page, site, date=true, year_only=true, show_oa=false, inprogress=false, collapse_side=false) %}
+{%- macro card(page, site, date=true, year_only=true, show_oa=false, inprogress=false, collapse_side=false) -%}
 {# Make a card linked to the page showing the thumbnail, title, etc #}
-    {% if collapse_side %}
-        {% set col_thumb = "col-xs-6 col-sm-4 col-md-12" %}
-        {% set col_title = "col-xs-6 col-sm-8 col-md-12" %}
-    {% else %}
-        {% set col_thumb = "col-md-12" %}
-        {% set col_title = "col-md-12" %}
-    {% endif %}
+    {%- if collapse_side -%}
+        {% set col_thumb = "col-xs-6 col-sm-4 col-md-12" -%}
+        {% set col_title = "col-xs-6 col-sm-8 col-md-12" -%}
+    {% else -%}
+        {% set col_thumb = "col-md-12" -%}
+        {% set col_title = "col-md-12" -%}
+    {%- endif -%}
     <a href="{{ page.url }}">
     <div class="row card">
-
         <div class="{{ col_thumb }} card-thumbnail">
             {{ insert_thumbnail(page, site, fancy=false) }}
         </div>
-
         <div class="{{ col_title }} card-caption">
-            {% if show_oa and page.oa is defined and page.oa %}
+            {%- if show_oa and page.oa is defined and page.oa -%}
                 {{ ai("open-access") }}
-            {% endif %}
+            {%- endif -%}
             <span class="card-title">
                 {{ page.title }}
             </span>
-            {% if date %}
+            {%- if date -%}
                 <br>
                 <span class="card-date">
-                {% if year_only %}
+                {%- if year_only -%}
                     ({{ page.date.year }})
-                {% else %}
+                {% else -%}
                     ({{ page.date.strftime('%d %b %Y') }})
-                {% endif %}
+                {%- endif -%}
                 </span>
-            {% endif %}
+            {%- endif -%}
             <br>
-            {% if inprogress and page.inprogress is defined and page.inprogress %}
+            {%- if inprogress and page.inprogress is defined and page.inprogress -%}
                 <span class="label label-primary">IN PROGRESS</span>
-            {% endif %}
-            {% if page.inreview is defined and page.inreview %}
+            {%- endif -%}
+            {%- if page.inreview is defined and page.inreview -%}
                 <span class="label label-warning">UNDER REVIEW</span>
-            {% endif %}
-            {% if page.accepted is defined and page.accepted %}
+            {%- endif -%}
+            {%- if page.accepted is defined and page.accepted -%}
                 <span class="label label-primary">ACCEPTED</span>
-            {% endif %}
+            {%- endif -%}
         </div>
     </div></a>
-{% endmacro %}
+{%- endmacro -%}
 
 
-{% macro make_index(content, site, date=false, year_only=true, show_oa=false, hr=true, ncards=false) %}
+{%- macro make_index(content, site, date=false, year_only=true, show_oa=false, hr=true, ncards=false) -%}
 {# Make an index of cards for the elements in content.
    There will be 4 cards in a row and collapse to 2 in a row for smaller
    displays. The way to do this is to batch the cards into pairs, make a row
    with 2 columns and place a pair in each column.
    If ncards is not false, then it should be number of cards to show.
 #}
-    {% if hr %}
+    {%- if hr -%}
         <hr>
-    {% endif %}
-    {% if ncards == false %}
-        {% set cards = content %}
-    {% else %}
-        {% set cards = content[:ncards] %}
-    {% endif %}
-    {% for row in cards|batch(2) %}
-        {% if loop.index % 2 != 0 %}
+    {%- endif -%}
+    {%- if ncards == false -%}
+        {% set cards = content -%}
+    {% else -%}
+        {% set cards = content[:ncards] -%}
+    {%- endif -%}
+    {%- for row in cards|batch(2) -%}
+        {%- if loop.index % 2 != 0 -%}
             <div class="row">
-        {% endif %}
+        {%- endif -%}
             <div class="col-md-6">
                 <div class="row">
-                {% for article in row %}
+                {%- for article in row -%}
                     <div class="col-md-6 col-sm-6 col-xs-6">
                         {{ card(article, site, date=date, year_only=year_only, show_oa=show_oa) }}
                     </div>
-                {% endfor %}
+                {%- endfor -%}
                 </div>
             </div>
-        {% if loop.index % 2 == 0 or loop.last %}
+        {%- if loop.index % 2 == 0 or loop.last -%}
             </div>
-        {% endif %}
-    {% endfor %}
-{% endmacro %}
+        {%- endif -%}
+    {%- endfor -%}
+{%- endmacro -%}
 
 
-{% macro get_authors(article, site, fancy=true) %}
+{%- macro get_authors(article, site, fancy=true) -%}
 {# Make the author list by expanding the stubs into full names from "site.authors" #}
-    {% for author in article.author.split(', ') %}
-        {% if fancy and author == site.author %}
-            {% set author_name = "<strong>" + site.authors[author] + "</strong>" %}
-        {% else %}
-            {% set author_name = site.authors[author] %}
-        {% endif %}
-        {{ author_name }}{% if not loop.last %}, {% endif %}
-    {% endfor %}
-{% endmacro %}
+    {%- for author in article.author.split(', ') -%}
+        {%- if fancy and author == site.author -%}
+            {% set author_name = "<strong>" + site.authors[author] + "</strong>" -%}
+        {% else -%}
+            {% set author_name = site.authors[author] -%}
+        {%- endif -%}
+        {{ author_name }}{%- if not loop.last -%}, {%- endif -%}
+    {%- endfor -%}
+{%- endmacro -%}
 
 
-{% macro pub_alerts(article, fancy=true) %}
+{%- macro pub_alerts(article, fancy=true) -%}
 {# Make the little alert tags based on the page metadata #}
-    {% if article.inreview is defined and article.inreview %}
-        {% if fancy %}
+    {%- if article.inreview is defined and article.inreview -%}
+        {%- if fancy -%}
             <div class="alert alert-warning">
-        {% else %}
+        {% else -%}
             <p>
-        {% endif %}
+        {%- endif -%}
             This article is currently
             <strong>undergoing peer-review</strong>
             at <em>{{ article.journal }}</em>.
-        {% if fancy %}
+        {%- if fancy -%}
             </div>
-        {% else %}
+        {% else -%}
             </p>
-        {% endif %}
-    {% endif %}
+        {%- endif -%}
+    {%- endif -%}
 
-    {% if article.accepted is defined and article.accepted %}
-        {% if fancy %}
+    {%- if article.accepted is defined and article.accepted -%}
+        {%- if fancy -%}
             <div class="alert alert-info alert-blue">
-        {% else %}
+        {% else -%}
             <p>
-        {% endif %}
+        {%- endif -%}
             This article has been <strong>accepted</strong> for publication
-            {% if article.journal is defined %}
+            {%- if article.journal is defined -%}
                 in {{article.journal}}
-            {% endif %}
+            {%- endif -%}
             but has not yet been published.
-        {% if fancy %}
+        {%- if fancy -%}
             </div>
-        {% else %}
+        {% else -%}
             </p>
-        {% endif %}
-    {% endif %}
+        {%- endif -%}
+    {%- endif -%}
 
-    {% if article.inprogress is defined and article.inprogress %}
-        {% if fancy %}
+    {%- if article.inprogress is defined and article.inprogress -%}
+        {%- if fancy -%}
             <div class="alert alert-info alert-blue">
             {{ fa("refresh", "fa-fw", "Course in progress") }}
-        {% else %}
+        {% else -%}
             <p>
-        {% endif %}
+        {%- endif -%}
             This course is currently <strong>in progress</strong>
             for the {{article.date.year}} school year.
-        {% if fancy %}
+        {%- if fancy -%}
             </div>
-        {% else %}
+        {% else -%}
             </p>
-        {% endif %}
-    {% endif %}
-{% endmacro %}
+        {%- endif -%}
+    {%- endif -%}
+{%- endmacro -%}
 
 
-{% macro make_metadata_link(meta, baseurl="https://doi.org") %}
+{%- macro make_metadata_link(meta, baseurl="https://doi.org") -%}
 {# Make a link for the metadata tag depending on wether it's a url, HTML link
    (using the "<a>" tag), or something else. If something else, will append
    "meta" to "baseurl" and make a link using "meta" as the link text.
 #}
-    {% if meta[:4] == "http" %}
+    {%- if meta[:4] == "http" -%}
         <a href="{{ meta }}">{{ meta }}</a>
-    {% elif "<a href=" in meta and "</a>" in meta %}
+    {% elif "<a href=" in meta and "</a>" in meta -%}
         {{ meta }}
-    {% else %}
+    {% else -%}
         <a href="{{ baseurl }}/{{ meta }}">{{ meta }}</a>
-    {% endif %}
-{% endmacro %}
+    {%- endif -%}
+{%- endmacro -%}
 
 
-{% macro pub_info_icon(icon, caption, fancy) %}
+{%- macro pub_info_icon(icon, caption, fancy) -%}
 {# Set the icon for a li in pub_info to fa-li with an icon of choice.
    Adds a caption to the icon. If fancy=false, will be blank. #}
-    {% if fancy %}
+    {%- if fancy -%}
         <i class="fa-li {{ icon }} fa-fw" title="{{ caption }}"></i>
-    {% endif %}
-{% endmacro %}
+    {%- endif -%}
+{%- endmacro -%}
 
 
-{% macro pub_info(article, fancy=true) %}
+{%- macro pub_info(article, fancy=true) -%}
 {# Make the info side bar for an article based on the metadata header #}
     <h2>Info</h2>
 
-    {% if fancy %}
-        {% set ul_class = "fa-ul" %}
-    {% else %}
-        {% set ul_class = "" %}
-    {% endif %}
+    {%- if fancy -%}
+        {% set ul_class = "fa-ul" -%}
+    {% else -%}
+        {% set ul_class = "" -%}
+    {%- endif -%}
 
     <ul class="{{ ul_class }}">
-        {% if article.oa is defined and article.oa %}
+        {%- if article.oa is defined and article.oa -%}
             <li>
                 {{ pub_info_icon("ai ai-open-access", "Open-access article", fancy) }}
                 Open-Access
             </li>
-        {% endif %}
-        {% if article.start_date is defined %}
+        {%- endif -%}
+        {%- if article.start_date is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-calendar", "Period", fancy) }}
                 {{ article.start_date.year}}-{{ article.date.year }}
             </li>
-        {% endif %}
-        {% if article.journal is defined %}
+        {%- endif -%}
+        {%- if article.journal is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-book", "Journal name", fancy) }}
                 Journal: <em>{{article.journal}}</em>
             </li>
-        {% endif %}
-        {% if article.event is defined %}
+        {%- endif -%}
+        {%- if article.event is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-users", "Event name", fancy) }}
                 {{article.event}}
             </li>
-        {% endif %}
-        {% if article.institution is defined %}
+        {%- endif -%}
+        {%- if article.institution is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-university", "Institution", fancy) }}
                 {{article.institution}}
             </li>
-        {% endif %}
-        {% if article.thesis is defined %}
+        {%- endif -%}
+        {%- if article.thesis is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-book", "Thesis title", fancy) }}
                 Thesis: <em>{{ article.thesis }}</em>
             </li>
-        {% endif %}
-        {% if article.advisor is defined %}
+        {%- endif -%}
+        {%- if article.advisor is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-graduation-cap", "Advisor", fancy) }}
                 Advisor: {{ article.advisor }}
             </li>
-        {% endif %}
-        {% if article.sucupira is defined %}
+        {%- endif -%}
+        {%- if article.sucupira is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-info-circle", "Additional information", fancy) }}
                 More info:
                 <a href="https://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConclusao.jsf?popup=true&id_trabalho={{article.sucupira}}">Sucupira platform</a>
             </li>
-        {% endif %}
-        {% if article.course is defined %}
+        {%- endif -%}
+        {%- if article.course is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-graduation-cap", "Course type", fancy) }}
                 {{ article.course|capitalize() }} course
             </li>
-        {% endif %}
-        {% if article.language is defined %}
+        {%- endif -%}
+        {%- if article.language is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-flag", "Programming language", fancy) }}
                 Language: {{article.language}}
             </li>
-        {% endif %}
-        {% if article.license is defined %}
+        {%- endif -%}
+        {%- if article.license is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-gavel", "Open-source license", fancy) }}
                 {{article.license}} License
             </li>
-        {% endif %}
-        {% if article.slides is defined %}
+        {%- endif -%}
+        {%- if article.slides is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-desktop", "Download slides", fancy) }}
                 Slides: {{ make_metadata_link(article.slides) }}
             </li>
-        {% endif %}
-        {% if article.poster is defined %}
+        {%- endif -%}
+        {%- if article.poster is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-picture-o", "Download poster", fancy) }}
                 Poster: {{ make_metadata_link(article.poster) }}
             </li>
-        {% endif %}
-        {% if article.repository is defined %}
+        {%- endif -%}
+        {%- if article.repository is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-code", "Source code repository", fancy) }}
                 Source code: {{ make_metadata_link(article.repository, baseurl="https://github.com") }}
             </li>
-        {% endif %}
-        {% if article.supplement is defined %}
+        {%- endif -%}
+        {%- if article.supplement is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-paperclip", "Supplementary material", fancy) }}
                 Data/Supplement: {{ make_metadata_link(article.supplement) }}
             </li>
-        {% endif %}
-        {% if article.pdf is defined %}
+        {%- endif -%}
+        {%- if article.pdf is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-file-pdf-o", "Paper PDF", fancy) }}
                 PDF: <a href="/pdf/{{article.pdf}}">{{article.pdf}}</a>
             </li>
-        {% endif %}
-        {% if article.doi is defined %}
+        {%- endif -%}
+        {%- if article.doi is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-external-link", "DOI link to publisher", fancy) }}
                 doi: {{ make_metadata_link(article.doi) }}
             </li>
-        {% endif %}
-        {% if article.website is defined %}
+        {%- endif -%}
+        {%- if article.website is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-home", "Website", fancy) }}
                 Website: {{ make_metadata_link(article.website) }}
             </li>
-        {% endif %}
+        {%- endif -%}
+        {%- if article.tags is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-tags", "tags", fancy) }}
+                {{ make_tags(article.tags, fancy) }}
+            </li>
+        {%- endif -%}
     </ul>
-{% endmacro %}
+{%- endmacro -%}
 
 
-{% macro altmetric_badge(doi, title) %}
+{%- macro altmetric_badge(doi, title) -%}
 {# Insert the altmetric badge if "doi" is a valid doi. #}
-    {% if "doi.org/" in make_metadata_link(doi) %}
+    {%- if "doi.org/" in make_metadata_link(doi) -%}
         <h3>{{ title }}</h3>
         <div class="altmetric-embed center-block"
              data-badge-type="medium-donut" data-doi="{{ doi }}"></div>
-    {% endif %}
-{% endmacro %}
+    {%- endif -%}
+{%- endmacro -%}
 
 
-{% macro show_alm(article) %}
+{%- macro show_alm(article) -%}
 {# Create the article level metrics side bar #}
-    {% if article.alm is defined and article.alm %}
+    {%- if article.alm is defined and article.alm -%}
         <h2>Article Level Metrics</h2>
 
-        {% if article.doi is defined %}
+        {%- if article.doi is defined -%}
             {{ altmetric_badge(article.doi, "Main article") }}
-        {% endif %}
+        {%- endif -%}
 
-        {% if article.supplement is defined %}
+        {%- if article.supplement is defined -%}
             {{ altmetric_badge(article.supplement, "Data/Supplement") }}
-        {% endif %}
+        {%- endif -%}
 
-        {% if article.poster is defined %}
+        {%- if article.poster is defined -%}
             {{ altmetric_badge(article.poster, "Poster") }}
-        {% endif %}
+        {%- endif -%}
 
-        {% if article.slides is defined %}
+        {%- if article.slides is defined -%}
             {{ altmetric_badge(article.slides, "Slides") }}
-        {% endif %}
-    {% endif %}
-{% endmacro %}
+        {%- endif -%}
+    {%- endif -%}
+{%- endmacro -%}
 
 
-{% macro insert_thumbnail(article, site, fancy=true) %}
+{%- macro insert_thumbnail(article, site, fancy=true) -%}
 {# Make the thumbnail image for the article #}
-    {% if fancy %}
-        {% set class = "pub-thumbnail" %}
-    {% else %}
-        {% set class = "" %}
-    {% endif %}
-    {% if article.thumbnail is defined %}
+    {%- if fancy -%}
+        {% set class = "pub-thumbnail" -%}
+    {% else -%}
+        {% set class = "" -%}
+    {%- endif -%}
+    {%- if article.thumbnail is defined -%}
     <img class="{{ class }}" alt="Thumbnail image for publication."
          src="/{{ site.thumbnail_path }}/{{ article.thumbnail }}">
-    {% endif %}
-{% endmacro %}
+    {%- endif -%}
+{%- endmacro -%}
 
 
-{% macro feedback(post, site, fancy=true) %}
+{%- macro feedback(post, site, fancy=true) -%}
 {# Make the feedback request boxes and Disqus comments section #}
     <hr>
 
-    {% if fancy %}
+    {%- if fancy -%}
     <div class="panel panel-default feedback">
         <div class="panel-body">
             {{ fa("comments", "fa-fw") }}
-    {% else %}
+    {% else -%}
         <p>
-    {% endif %}
+    {%- endif -%}
             <strong>Comments?</strong>
             Leave one below or
             let me know on Twitter
             <a href="https://twitter.com/intent/tweet?text=@{{ site.twitter }}&url={{ site.url }}{{ post.url }}">@{{ site.twitter }}</a>.
-    {% if fancy %}
+    {%- if fancy -%}
         </div>
     </div>
-    {% else %}
+    {% else -%}
         </p>
-    {% endif %}
+    {%- endif -%}
 
-    {% if fancy %}
+    {%- if fancy -%}
     <div class="panel panel-default feedback">
         <div class="panel-body">
             {{ fa("bug", "fa-fw") }}
-    {% else %}
+    {% else -%}
         <p>
-    {% endif %}
+    {%- endif -%}
             <strong>Found a typo/mistake?</strong>
             Send a <a href="{{ site.reflinks.site_repo.url }}/edit/master/{{ post.fn }}">fix through Github</a>
             and I'll happily merge it
             (<em>plus you'll feel great because you helped someone</em>).
             All you need is an account and 5 minutes!
-    {% if fancy %}
+    {%- if fancy -%}
         </div>
     </div>
-    {% else %}
+    {% else -%}
         </p>
-    {% endif %}
+    {%- endif -%}
 
     <!-- The Disqus comments code -->
     <div id="disqus_thread"></div>
@@ -453,4 +471,4 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-{% endmacro %}
+{%- endmacro -%}

@@ -12,6 +12,8 @@ pdf: msc-dissertation.pdf
 layout: publication
 ---
 
+{% from "utils.html" import make_index %}
+
 # About
 
 I did my Master's degree in Geophysics at the Observatório Nacional in Rio de
@@ -21,31 +23,27 @@ I started in March 2010 and defended my dissertation in October 2011.
 
 The dissertation was published as the paper:
 
-* [/papers/paper-planting-anomalous-densities-2012]
+<div>
+    {{ make_index([site.reflinks["/papers/paper-planting-anomalous-densities-2012"]], site, hr=false, date=true, year_only=true) }}
+</div>
 
 The method that we developed is implemented in the software
 [Fatiando a Terra][/software/fatiando].
 You'll find supplementary material, the PDF, and links to the publisher in the
 paper page.
 
-Presentations about this topic:
+Other presentations and publications about the planting inversion:
 
-* 2014: [/talks/egu2014]
-* 2013: [/talks/agu-cancun2013]
-* 2012: [/talks/seg2012]
-* 2011: [/talks/sbgf2011]
-* 2011: [/talks/seg2011] (talk at SEG 2011)
-* 2011: [/posters/eage2011]
+<div>
+    {% set others = site.reflinks["/tag/planting-inversion"].content|remove(["/papers/paper-planting-anomalous-densities-2012"]) %}
+    {{ make_index(others, site, hr=false, date=true, year_only=true) }}
+</div>
 
 Yearly seminars presented at the Observatório Nacional:
 
 * 2011: [leouieda/seminario-on-2011](https://github.com/leouieda/seminario-on-2011)
 * 2010: [leouieda/seminario-on-2010](https://github.com/leouieda/seminario-on-2010)
 
-Other papers that use this method:
-
-* 2016: [/papers/paper-quadrilatero2-2016]
-* 2014: [/papers/paper-quadrilatero-2014]
 
 # Dissertation defense slides
 

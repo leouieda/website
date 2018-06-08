@@ -2,6 +2,7 @@
 title: "The future of Fatiando a Terra"
 date: 2018-03-25
 thumbnail: fatiando.png
+tags: fatiando, software
 layout: post
 ---
 
