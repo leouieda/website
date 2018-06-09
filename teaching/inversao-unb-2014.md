@@ -8,11 +8,9 @@ repository: pinga-lab/inversao-unb-2014
 thumbnail: inversao-unb-2014.png
 license: CC-BY
 layout: publication
+license: Creative Commons Attribution
+tags: inversion-workshop
 ---
-
-# About
-
-Introduction to inverse problems.
 
 # Sobre
 
@@ -43,10 +41,3 @@ Links para cada apresentação abaixo:
    inversos](http://pinga-lab.github.io/inversao-unb-2014/dados_e_parametros.html)
 3. [Sobre as atividades
    práticas](http://pinga-lab.github.io/inversao-unb-2014/introducao_praticas.html)
-
-# License
-
-This work is licensed under a
-[Creative Commons Attribution 4.0 International
-License](http://creativecommons.org/licenses/by/4.0/).
-

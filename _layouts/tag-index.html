@@ -1,0 +1,13 @@
+{% extends "page.html" %}
+{% from "utils.html" import make_index, make_tags, fa %}
+
+{% block content %}
+    <h1>{{ fa('tags') }} {{ this.title }}</h1>
+    {% if this.body is defined %}
+        {{ this.body }}
+    {% endif %}
+    <hr>
+    <div class="tag-index">
+        {{ make_tags(site|tagnames|sort) }}
+    </div>
+{% endblock %}

@@ -11,24 +11,13 @@ supplement: 10.6084/m9.figshare.91574
 citation: Uieda, L., and V. C. F. Barbosa (2012), Robust 3D gravity gradient inversion by planting anomalous densities, Geophysics, 77(4), G55-G66, doi:10.1190/geo2011-0388.1
 thumbnail: paper-planting-anomalous-densities-2012.png
 alm: true
+tags: planting-inversion, inversion, gravity
 ---
 
 # About
 
-This was my first publication and the topic of my Masters dissertation.
-The inversion method was developed along successive iterations and presented in
-meetings at each step (in order):
-
-* 2011: [/posters/eage2011]
-* 2011: [/talks/seg2011] (talk at SEG 2011)
-* 2011: [/talks/sbgf2011]
-* 2012: This paper
-* 2012: [/talks/seg2012]
-* 2013: [/talks/agu-cancun2013]
-* 2014: [/talks/egu2014]
-
-# Open-source implementation
-
+This was my first publication in a scientific journal and the
+topic of my [Masters dissertation][/about/masters].
 The inversion method proposed in this paper is implemented in the open-source
 [Fatiando a Terra](http://www.fatiando.org) Python library
 as the `fatiando.gravmag.harvester` module.

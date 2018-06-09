@@ -2,6 +2,7 @@
 title: "GMT and open-source at #AGU17 and a GMT/Python online demo"
 date: 2017-12-05
 thumbnail: gmt-at-agu2017.png
+tags: gmtpython
 layout: post
 ---
 

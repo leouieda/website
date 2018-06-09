@@ -13,7 +13,11 @@
     <meta name="twitter:site" content="@{{ site.twitter }}">
     <meta name="twitter:title" content="{{ this.title }}">
     {% block twitter_card_description %}
-        <meta name="twitter:description" content="{{ (this.body|striptags)[:140] }}...">
+        {% if this.body is defined %}
+            <meta name="twitter:description" content="{{ (this.body|striptags)[:140] }}...">
+        {% else %}
+            <meta name="twitter:description" content="{{ this.title }}">
+        {% endif %}
     {% endblock %}
 {% endblock %}
 
@@ -29,7 +33,11 @@
         <meta property="og:image" content="{{ site.url }}/images/twitter-card-image.png">
     {% endif %}
     {% block opengraph_description %}
-        <meta property="og:description" content="{{ (this.body|striptags)[:140] }}...">
+        {% if this.body is defined %}
+            <meta property="og:description" content="{{ (this.body|striptags)[:140] }}...">
+        {% else %}
+            <meta property="og:description" content="{{ this.title }}">
+        {% endif %}
     {% endblock %}
 {% endblock %}
 
@@ -74,7 +82,11 @@
 
             <h1>{{ this.title }}</h1>
 
+            {% if this.body is defined %}
+
             {{ this.body }}
+
+            {% endif %}
 
         {% endblock %}
 

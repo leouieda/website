@@ -11,14 +11,8 @@ supplement: 10.6084/m9.figshare.923450
 thumbnail: paper-tle-euler-tutorial-2014.png
 citation: "Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2014), Geophysical tutorial: Euler deconvolution of potential-field data, The Leading Edge, 33(4), 448-450, doi:10.1190/tle33040448.1"
 layout: publication
+tags: euler-deconvolution, tutorial
 ---
-
-<div class="alert alert-success">
-This article is also available at the
-<a class="alert-link"
-   href="http://wiki.seg.org/wiki/Euler_deconvolution_of_potential_field_data_%28tutorial%29">SEG wiki</a>
-where it can edited and improved.
-</div>
 
 # About
 
@@ -31,6 +25,10 @@ Read the
 [February 2016 tutorial](http://dx.doi.org/10.1190/tle35020190.1) by Matt
 for an introduction to the tutorial series
 and what you need to know to get started running the code in them.
+The article is also available at the
+<a href="http://wiki.seg.org/wiki/Euler_deconvolution_of_potential_field_data_%28tutorial%29">SEG wiki</a>
+where it can edited and improved.
+
 
 # Open-source implementation
 

@@ -11,7 +11,11 @@ institution: Observatório Nacional, Brazil
 pdf: phd-thesis.pdf
 sucupira: 3627205
 layout: publication
+thumbnail: phd.png
+tags: moho, tesseroids, fatiando, inversion
 ---
+
+{% from "utils.html" import make_index %}
 
 # About
 
@@ -20,22 +24,19 @@ I stayed at the Observatório Nacional for my PhD,
 also with [Valéria C. F. Barbosa](http://lattes.cnpq.br/0391036221142471).
 In 2016, I defended my thesis, which was submitted for publication in 3 parts:
 
-1. [/papers/paper-tesseroids-2016]
-2. [/talks/scipy2013]
-3. [/papers/paper-moho-inversion-tesseroids-2016]
+<div>
+    {% set papers = site|pages(["/papers/paper-moho-inversion-tesseroids-2016",
+                                "/papers/paper-tesseroids-2016",
+                                "/talks/scipy2013"]) %}
+    {{ make_index(papers, site, hr=false, date=true, year_only=true) }}
+</div>
 
-Presentations about the topic:
-
-* 2017: [/talks/tgif-2017]
-* 2015: [/talks/iag-04-2015]
-* 2014: [/posters/scipy2014]
-* 2013: [/talks/scipy2013]
-
-Yearly seminars presented at the Observatório Nacional:
+During my PhD, I presented the following yearly seminars at the Observatório
+Nacional:
 
 * 2015: [leouieda/seminario-on-2015](https://github.com/leouieda/seminario-on-2015)
 * 2014: [leouieda/seminario-on-2014](https://github.com/leouieda/seminario-on-2014)
-* 2013 (qualification exam): [leouieda/qualify](https://github.com/leouieda/qualify)
+* 2013: [leouieda/qualify](https://github.com/leouieda/qualify) (qualification exam)
 * 2012: [leouieda/seminario-on-2012](https://github.com/leouieda/seminario-on-2012)
 
 # PhD defense slides

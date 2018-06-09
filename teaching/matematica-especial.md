@@ -5,7 +5,8 @@ institution: UERJ
 course: university
 repository: mat-esp/about
 thumbnail: matematica-especial.png
-license: CC-BY
+license: Creative Commons Attribution
+tags: uerj
 layout: publication
 inprogress: false
 ---

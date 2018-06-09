@@ -3,6 +3,7 @@ title: "Recommended reading to get started with Python for science and data anal
 date: 2017-02-07
 thumbnail: getting-started-python.png
 layout: post
+tags: python
 ---
 
 I get asked a lot in the [Fatiando a Terra][/software/fatiando]

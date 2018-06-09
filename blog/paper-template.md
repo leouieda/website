@@ -3,6 +3,7 @@ title: A template for reproducible papers
 date: 2018-03-15
 thumbnail: paper-template.png
 layout: post
+tags: open-source, open-science, reproducibility
 ---
 
 At the [PINGA lab](http://www.pinga-lab.org/), we have been experimenting with

@@ -5,14 +5,22 @@ date: 2014-07-01
 repository: leouieda/scipy2014
 poster: 10.6084/m9.figshare.1089987
 event: Python in Science Conference
+license: Creative Commons Attribution
 thumbnail: scipy2014.png
 alm: true
 layout: publication
+tags: fatiando, open-source
 ---
 
-# Poster
+# About
 
 ![The poster](/images/poster-scipy2014.png)
+
+This was my second time at Scipy presenting about [Fatiando a
+Terra](https://www.fatiando.org) (see my [Scipy2013 talk][/talks/scipy2013]).
+The poster is about some of the work me and Vanderlei had been doing on a
+general purpose inverse problems framework.
+
 
 # Abstract
 

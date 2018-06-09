@@ -11,13 +11,19 @@ thumbnail: seg-carlos2012.png
 citation: Carlos, D. U., L. Uieda, Y. Li, V. C. F. Barbosa, M. A. Braga, G. Angeli, and G. Peres (2012), Iron ore interpretation using gravity-gradient inversions in the Carajás, Brazil, SEG Technical Program Expanded Abstracts, pp. 2008–2012, doi:10.1190/segam2012-0525.1
 alm: true
 layout: publication
+tags: planting-inversion, gravity
 ---
 
-# Presentation
+# About
 
 <script async class="speakerdeck-embed"
 data-id="b036bda0e0494ddfb2410953e5f25230" data-ratio="1.33333333333333"
 src="//speakerdeck.com/assets/embed.js"></script>
+
+This presentation is about the work Dionisio did for his PhD.
+He used my [planting inversion method][/papers/paper-planting-anomalous-densities-2012]
+on data from his research area in central Brazil.
+He couldn't make it to the meeting so I ended up giving the talk on his behalf.
 
 # Abstract
 

@@ -3,6 +3,7 @@ title: Podcasts in my playlist
 date: 2017-01-12
 thumbnail: podcasts-2016.png
 layout: post
+tags: podcast
 ---
 
 Last week, John Leeman wrote

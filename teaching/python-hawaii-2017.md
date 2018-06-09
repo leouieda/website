@@ -5,9 +5,12 @@ institution: Department of Geology and Geophysics - University of Hawaii at Mano
 course: short
 repository: leouieda/python-hawaii-2017
 thumbnail: python-hawaii-2017.png
-license: CC-BY
+license: Creative Commons Attribution
+tags: python-workshop, hawaii
 layout: publication
 ---
+
+{% from "utils.html" import make_index %}
 
 # About
 
@@ -21,5 +24,9 @@ Python.
 
 All material used is stored in the Github repository and can be freely reused.
 
-I wrote a [blog post about my thoughts on the
-workshop][/blog/python-hawaii-2017].
+I wrote a blog post about my thoughts on the workshop and the feedback that I
+received from the participants:
+
+<div>
+    {{ make_index(site|pages(["/blog/python-hawaii-2017"]), site, hr=false, date=true, year_only=true) }}
+</div>

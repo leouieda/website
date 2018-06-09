@@ -11,6 +11,7 @@ oa: true
 author: oliveira-jr, daiana, barbosa, uieda
 thumbnail: paper-mag-dir-2015.png
 citation: Oliveira Jr., V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda (2015), Estimation of the total magnetization direction of approximately spherical bodies, Nonlin. Processes Geophys., 22(2), 215-232, doi:10.5194/npg-22-215-2015.
+tags: inversion, magnetic
 ---
 
 # Open-source implementation

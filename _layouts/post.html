@@ -1,17 +1,27 @@
 {% extends "publication.html" %}
-{% from "utils.html" import feedback, insert_thumbnail, card %}
+{% from "utils.html" import feedback, insert_thumbnail, make_tags, fa, make_side_index %}
 
 
 {% block content %}
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
 
             <h1>{{ this.title }}</h1>
 
-            <p class="post-date">
-                {{ this.date.strftime(' %d %B %Y') }}
-            </p>
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <p class="post-date">
+                        {{ this.date.strftime(' %d %B %Y') }}
+                    </p>
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    {% if this.tags is defined %}
+                        {{ make_tags(this.tags, icon=true) }}
+                    {% endif %}
+                </div>
+            </div>
+
 
             <div class="content">
                 {{ this.body }}
@@ -21,19 +31,19 @@
 
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-1">
         </div>
 
-        <div class="col-md-2 blog-roll">
+        <div class="col-md-2 sidebar">
             <h2>Blog</h2>
+            {% set posts = site.reflinks['/blog'].content|sort(attribute='date', reverse=true) %}
+            {{ make_side_index(posts, site, date=true, year_only=false, ncards=3) }}
 
-            {% set all_posts = site.reflinks['/blog']['content']|sort(attribute='date', reverse=true) %}
-            {% set n_latest = 5 %}
-            {% set latest_posts = all_posts[:n_latest] %}
-
-            {% for post in latest_posts %}
-                {{ card(post, site, year_only=false, collapse_side=true) }}
-            {% endfor %}
+            {% set pages = this|related(site)|sort(attribute='date', reverse=true) %}
+            {% if pages %}
+                <h2>Related</h2>
+                {{ make_side_index(pages, site, date=true, year_only=true, ncards=3) }}
+            {% endif %}
         </div>
     </div>
 
