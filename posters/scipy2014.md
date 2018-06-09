@@ -9,7 +9,7 @@ license: Creative Commons Attribution
 thumbnail: scipy2014.png
 alm: true
 layout: publication
-tags: fatiando
+tags: fatiando, open-source
 ---
 
 # About

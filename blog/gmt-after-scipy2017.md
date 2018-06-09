@@ -3,6 +3,7 @@ title: "GMT/Python update and feedback from Scipy 2017"
 date: 2017-07-26
 thumbnail: gmt-after-scipy2017.png
 layout: post
+tags: gmtpython
 ---
 
 Last week [I presented the first working prototype][/talks/scipy2017] of

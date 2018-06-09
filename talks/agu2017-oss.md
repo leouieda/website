@@ -8,7 +8,7 @@ license: Creative Commons Attribution
 thumbnail: agu2017-oss.png
 alm: false
 layout: publication
-tags: open-source
+tags: open-source, invited
 ---
 
 

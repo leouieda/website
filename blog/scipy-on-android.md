@@ -3,6 +3,7 @@ title: Running Jupyter and the Scipy stack on Android
 date: 2017-01-23
 thumbnail: scipy-on-android.png
 layout: post
+tags: tutorial, jupyter, android, python
 ---
 
 

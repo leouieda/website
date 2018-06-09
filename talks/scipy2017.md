@@ -8,7 +8,7 @@ event: Python in Science Conference
 thumbnail: scipy2017.png
 license: CC-BY
 layout: publication
-tags: gmtpython
+tags: gmtpython, open-source
 ---
 
 # About

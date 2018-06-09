@@ -3,6 +3,7 @@ title: Thoughts from the Introduction to Python Workshop at UH Manoa
 date: 2017-04-28
 thumbnail: python-hawaii-2017.png
 layout: post
+tags: python, hawaii, python-workshop
 ---
 
 

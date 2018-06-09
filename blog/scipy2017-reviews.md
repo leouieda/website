@@ -3,6 +3,7 @@ title: "Reviews of our Scipy 2017 talk proposal: Bringing the Generic Mapping To
 date: 2017-05-11
 thumbnail: scipy2017-reviews.png
 layout: post
+tags: gmtpython
 ---
 
 This year, [Scipy is using a double-open peer-review
