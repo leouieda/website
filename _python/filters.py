@@ -28,8 +28,13 @@ def related(page, site):
     """
     related = []
     if 'tags' in page:
+        ids = []
         for tag in page['tags']:
-            related.extend(site['reflinks']['/tag/{}'.format(tag)]['content'])
+            content = site['reflinks']['/tag/{}'.format(tag)]['content']
+            ids.extend([page['id'] for page in content])
+        # Use the set to remove any duplicates (pages that share more than 1
+        # tag with this one)
+        related = [site['reflinks'][i] for i in set(ids)]
         related = remove(related, [page['id']])
     return related
 
