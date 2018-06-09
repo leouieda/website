@@ -3,29 +3,24 @@ title: Utilização de tesseróides na modelagem de dados de gradiometria gravim
 author: uieda, ussami
 date: 2008-03-01
 repository: leouieda/simposio-iag-2008
+license: Creative Commons Attribution
 poster: 10.6084/m9.figshare.4779760
 event: XIII Simpósio de Iniciação Científica do IAG-USP
 thumbnail: simposio-iag-2008.png
 alm: true
 layout: publication
+tags: tesseroids
 ---
 
-# Poster
+# About
 
 ![The poster](/images/poster-simposio-iag-2008.jpg)
-
-# About
 
 This is the first poster I presented about my [undergraduate
 research][/about/bachelors] on forward modeling with tesseroids (spherical
 prisms). This would eventually become the software
 [Tesseroids][/software/tesseroids], the paper [/papers/paper-tesseroids-2016],
 and a part of my [PhD thesis][/about/phd].
-
-Other presentations about *Tesseroids*:
-
-* [/talks/agu2010]
-* [/posters/goce2011]
 
 
 # Abstract
