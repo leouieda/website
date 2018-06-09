@@ -7,6 +7,8 @@ course: short
 repository: leouieda/verao2016
 thumbnail: python-iag-2016.png
 layout: publication
+license: Creative Commons Attribution
+tags: python-workshop, usp
 ---
 
 # Sobre

@@ -5,7 +5,8 @@ institution: UERJ
 course: university
 repository: leouieda/geofisica1
 thumbnail: geofisica1.png
-license: CC-BY
+license: Creative Commons Attribution
+tags: uerj
 layout: publication
 inprogress: false
 ---

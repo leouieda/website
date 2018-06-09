@@ -7,6 +7,8 @@ course: short
 repository: leouieda/python-geologia-2016
 thumbnail: python-geologia-2016.png
 layout: publication
+license: Creative Commons Attribution
+tags: python-workshop, uerj
 ---
 
 # Sobre

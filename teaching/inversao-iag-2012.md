@@ -5,14 +5,11 @@ event: XVI Escola de Verão de Geofísica
 institution: IAG/USP
 course: short
 repository: pinga-lab/inversao-iag-2012
-license: CC-BY
 thumbnail: generic-course.png
 layout: publication
+license: Creative Commons Attribution
+tags: inversion-workshop, usp
 ---
-
-# About
-
-Introduction to inverse problems.
 
 # Sobre
 
@@ -25,10 +22,3 @@ práticas. Estas práticas utilizam a versão 0.0.1 do programa [/software/fatia
 
 A apostila do curso está disponível em
 [github.com/pinga-lab/inverse-problems](https://github.com/pinga-lab/inverse-problems).
-
-# License
-
-This work is licensed under a
-[Creative Commons Attribution 4.0 International
-License](http://creativecommons.org/licenses/by/4.0/).
-

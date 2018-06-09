@@ -4,6 +4,8 @@ date: 2014-03-03
 institution: UERJ
 course: university
 thumbnail: generic-course.png
+license: Creative Commons Attribution
+tags: uerj
 layout: publication
 ---
 

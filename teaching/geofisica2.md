@@ -6,7 +6,8 @@ course: university
 repository: leouieda/geofisica2
 authors: Leonardo Uieda
 thumbnail: geofisica2.gif
-license: CC-BY
+license: Creative Commons Attribution
+tags: uerj
 layout: publication
 inprogress: false
 ---
