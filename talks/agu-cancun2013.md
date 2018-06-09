@@ -8,7 +8,7 @@ event: AGU Meeting of the Americas
 thumbnail: agu-cancun2013.png
 alm: true
 layout: publication
-tags: planting-inversion
+tags: planting-inversion, magnetic
 ---
 
 # About

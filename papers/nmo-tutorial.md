@@ -10,6 +10,7 @@ doi: 10.1190/tle36020179.1
 thumbnail: nmo-tutorial.png
 citation: "Uieda, L. (2017), Step-by-step NMO correction, The Leading Edge, 36(2), 179-180, doi:10.1190/tle36020179.1"
 layout: publication
+tags: seismic, tutorial
 ---
 
 

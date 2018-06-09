@@ -49,7 +49,7 @@
             {% set pages = this|related(site)|sort(attribute='date', reverse=true) %}
             {% if pages %}
                 <h2>Related</h2>
-                {{ make_side_index(pages, site, date=true, year_only=true, ncards=3) }}
+                {{ make_side_index(pages, site, date=true, year_only=true, ncards=4) }}
             {% endif %}
         </div>
 

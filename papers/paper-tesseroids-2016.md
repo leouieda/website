@@ -10,12 +10,12 @@ pdf: paper-tesseroids-2016.pdf
 doi: 10.1190/geo2015-0204.1
 alm: true
 citation: "Uieda, L., V. Barbosa, and C. Braitenberg (2016), Tesseroids: Forward-modeling gravitational fields in spherical coordinates, GEOPHYSICS, F41–F48, doi:10.1190/geo2015-0204.1."
-tags: tesseroids
+tags: tesseroids, gravity, open-source
 ---
 
 # About
 
-This paper is a chapter of my PhD thesis.
+This paper is a chapter of my [PhD thesis][/about/phd].
 It describes the algorithms used in version 1.2.0 of the open-source
 software [/software/tesseroids].
 The software is a suite of C coded command-line programs that calculate the
@@ -23,11 +23,6 @@ gravitational field of a tesseroid (spherical prism) model.
 There is also a separate Python implementation of the same algorithm in the
 `fatiando.gravmag.tesseroid` module of the open-source library
 [/software/fatiando] (introduced in version 0.3).
-
-Presentations about the modeling methods and previous versions of the software:
-
-* [/posters/goce2011]
-* [/talks/agu2010]
 
 
 # Abstract

@@ -8,7 +8,7 @@ doi: 10.1016/j.jappgeo.2016.04.011
 alm: true
 thumbnail: paper-quadrilatero2-2016.png
 citation: "Carlos, D. U., L. Uieda, and V. C. F. Barbosa (2016), How two gravity-gradient inversion methods can be used to reveal different geologic features of ore deposit — A case study from the Quadrilátero Ferrífero (Brazil), Journal of Applied Geophysics, doi:10.1016/j.jappgeo.2016.04.011."
-tags: planting-inversion
+tags: planting-inversion, gravity
 layout: publication
 ---
 
