@@ -1,12 +1,12 @@
 {% extends "index.html" %}
-{% from "utils.html" import make_index, make_tag, fa %}
+{% from "utils.html" import make_index, make_tags, fa %}
 
 {% block title %}
     Tag "{{ this.title }}" | {{ site.title }}
 {% endblock %}
 
 {% block content %}
-    <h1>{{ fa('tags')}}{{ make_tag(this.title) }}</h1>
+    Pages with {{ fa('tags')}} {{ make_tags([this.title], link=false) }}
     {# The type attribute is define by a hook in _python/hooks.py #}
     {% for group in this.content|groupby("type") %}
         {% set category = site.reflinks[group.grouper] %}

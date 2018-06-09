@@ -10,6 +10,7 @@ repository: pinga-lab/paper-planting-densities
 institution: Observatório Nacional, Brazil
 pdf: msc-dissertation.pdf
 layout: publication
+tags: planting-inversion
 ---
 
 {% from "utils.html" import make_index %}
@@ -21,25 +22,15 @@ Janeiro, Brazil, under the supervision of
 [Valéria C. F. Barbosa](http://lattes.cnpq.br/0391036221142471).
 I started in March 2010 and defended my dissertation in October 2011.
 
-The dissertation was published as the paper:
+The method that we developed is implemented in the software
+[Fatiando a Terra][/software/fatiando].
+The dissertation was later published as the paper:
 
 <div>
     {{ make_index([site.reflinks["/papers/paper-planting-anomalous-densities-2012"]], site, hr=false, date=true, year_only=true) }}
 </div>
 
-The method that we developed is implemented in the software
-[Fatiando a Terra][/software/fatiando].
-You'll find supplementary material, the PDF, and links to the publisher in the
-paper page.
-
-Other presentations and publications about the planting inversion:
-
-<div>
-    {% set others = site.reflinks["/tag/planting-inversion"].content|remove(["/papers/paper-planting-anomalous-densities-2012"]) %}
-    {{ make_index(others, site, hr=false, date=true, year_only=true) }}
-</div>
-
-Yearly seminars presented at the Observatório Nacional:
+During my Masters, I presented the following yearly seminars:
 
 * 2011: [leouieda/seminario-on-2011](https://github.com/leouieda/seminario-on-2011)
 * 2010: [leouieda/seminario-on-2010](https://github.com/leouieda/seminario-on-2010)

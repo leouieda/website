@@ -13,16 +13,24 @@
 {%- endmacro -%}
 
 
-{%- macro make_tag(tag, fancy=true) -%}
-{# Make a tag for display, optionally using a label span #}
-    {%- if fancy -%}<span class="label label-default tag">{{ tag }}</span>{% else -%}{{ tag }}{%- endif -%}
-{%- endmacro -%}
-
-
-{%- macro make_tags(tags, fancy=true) -%}
+{%- macro make_tags(tags, fancy=true, link=true) -%}
 {# Make a sequence of tag links, optionally using a label span #}
+    {%- if fancy -%}
+        {% set class = "label label-default tag" %}
+        {%- if link -%}
+            {% set class = class + " tag-link" %}
+        {%- endif -%}
+    {%- else -%}
+        {% set class = "" %}
+    {%- endif -%}
     {%- for tag in tags -%}
-        <a href="/tag/{{ tag }}">{{ make_tag(tag, fancy) }}</a>
+        <span class="{{ class }}">
+            {%- if link -%}
+                <a href="/tag/{{ tag }}">{{ tag }}</a>
+            {%- else -%}
+                {{ tag }}
+            {%- endif -%}
+        </span>
     {%- endfor -%}
 {%- endmacro -%}
 
@@ -69,7 +77,7 @@
     {%- if collapse_side -%}
         {% set col_thumb = "col-xs-6 col-sm-4 col-md-12" -%}
         {% set col_title = "col-xs-6 col-sm-8 col-md-12" -%}
-    {% else -%}
+    {%- else -%}
         {% set col_thumb = "col-md-12" -%}
         {% set col_title = "col-md-12" -%}
     {%- endif -%}
@@ -90,7 +98,7 @@
                 <span class="card-date">
                 {%- if year_only -%}
                     ({{ page.date.year }})
-                {% else -%}
+                {%- else -%}
                     ({{ page.date.strftime('%d %b %Y') }})
                 {%- endif -%}
                 </span>
@@ -122,7 +130,7 @@
     {%- endif -%}
     {%- if ncards == false -%}
         {% set cards = content -%}
-    {% else -%}
+    {%- else -%}
         {% set cards = content[:ncards] -%}
     {%- endif -%}
     {%- for row in cards|batch(2) -%}
@@ -145,15 +153,28 @@
 {%- endmacro -%}
 
 
+{%- macro make_side_index(content, site, date=false, year_only=true, show_oa=false, ncards=false) -%}
+{# Make a list of cards for the side bar #}
+    {%- if ncards == false -%}
+        {% set cards = content -%}
+    {%- else -%}
+        {% set cards = content[:ncards] -%}
+    {%- endif -%}
+    {% for article in cards %}
+        {{ card(article, site, date=date, year_only=year_only, show_oa=show_oa, collapse_side=true) }}
+    {% endfor %}
+{%- endmacro -%}
+
+
 {%- macro get_authors(article, site, fancy=true) -%}
 {# Make the author list by expanding the stubs into full names from "site.authors" #}
     {%- for author in article.author.split(', ') -%}
         {%- if fancy and author == site.author -%}
             {% set author_name = "<strong>" + site.authors[author] + "</strong>" -%}
-        {% else -%}
+        {%- else -%}
             {% set author_name = site.authors[author] -%}
         {%- endif -%}
-        {{ author_name }}{%- if not loop.last -%}, {%- endif -%}
+        {{ author_name }}{% if not loop.last %}, {% endif %}
     {%- endfor -%}
 {%- endmacro -%}
 
@@ -163,7 +184,7 @@
     {%- if article.inreview is defined and article.inreview -%}
         {%- if fancy -%}
             <div class="alert alert-warning">
-        {% else -%}
+        {%- else -%}
             <p>
         {%- endif -%}
             This article is currently
@@ -171,7 +192,7 @@
             at <em>{{ article.journal }}</em>.
         {%- if fancy -%}
             </div>
-        {% else -%}
+        {%- else -%}
             </p>
         {%- endif -%}
     {%- endif -%}
@@ -179,7 +200,7 @@
     {%- if article.accepted is defined and article.accepted -%}
         {%- if fancy -%}
             <div class="alert alert-info alert-blue">
-        {% else -%}
+        {%- else -%}
             <p>
         {%- endif -%}
             This article has been <strong>accepted</strong> for publication
@@ -189,7 +210,7 @@
             but has not yet been published.
         {%- if fancy -%}
             </div>
-        {% else -%}
+        {%- else -%}
             </p>
         {%- endif -%}
     {%- endif -%}
@@ -198,14 +219,14 @@
         {%- if fancy -%}
             <div class="alert alert-info alert-blue">
             {{ fa("refresh", "fa-fw", "Course in progress") }}
-        {% else -%}
+        {%- else -%}
             <p>
         {%- endif -%}
             This course is currently <strong>in progress</strong>
             for the {{article.date.year}} school year.
         {%- if fancy -%}
             </div>
-        {% else -%}
+        {%- else -%}
             </p>
         {%- endif -%}
     {%- endif -%}
@@ -221,7 +242,7 @@
         <a href="{{ meta }}">{{ meta }}</a>
     {% elif "<a href=" in meta and "</a>" in meta -%}
         {{ meta }}
-    {% else -%}
+    {%- else -%}
         <a href="{{ baseurl }}/{{ meta }}">{{ meta }}</a>
     {%- endif -%}
 {%- endmacro -%}
@@ -238,14 +259,11 @@
 
 {%- macro pub_info(article, fancy=true) -%}
 {# Make the info side bar for an article based on the metadata header #}
-    <h2>Info</h2>
-
     {%- if fancy -%}
         {% set ul_class = "fa-ul" -%}
-    {% else -%}
+    {%- else -%}
         {% set ul_class = "" -%}
     {%- endif -%}
-
     <ul class="{{ ul_class }}">
         {%- if article.oa is defined and article.oa -%}
             <li>
@@ -379,7 +397,7 @@
 {%- macro show_alm(article) -%}
 {# Create the article level metrics side bar #}
     {%- if article.alm is defined and article.alm -%}
-        <h2>Article Level Metrics</h2>
+        <h2>Metrics</h2>
 
         {%- if article.doi is defined -%}
             {{ altmetric_badge(article.doi, "Main article") }}
@@ -404,7 +422,7 @@
 {# Make the thumbnail image for the article #}
     {%- if fancy -%}
         {% set class = "pub-thumbnail" -%}
-    {% else -%}
+    {%- else -%}
         {% set class = "" -%}
     {%- endif -%}
     {%- if article.thumbnail is defined -%}
@@ -422,7 +440,7 @@
     <div class="panel panel-default feedback">
         <div class="panel-body">
             {{ fa("comments", "fa-fw") }}
-    {% else -%}
+    {%- else -%}
         <p>
     {%- endif -%}
             <strong>Comments?</strong>
@@ -432,7 +450,7 @@
     {%- if fancy -%}
         </div>
     </div>
-    {% else -%}
+    {%- else -%}
         </p>
     {%- endif -%}
 
@@ -440,7 +458,7 @@
     <div class="panel panel-default feedback">
         <div class="panel-body">
             {{ fa("bug", "fa-fw") }}
-    {% else -%}
+    {%- else -%}
         <p>
     {%- endif -%}
             <strong>Found a typo/mistake?</strong>
@@ -451,7 +469,7 @@
     {%- if fancy -%}
         </div>
     </div>
-    {% else -%}
+    {%- else -%}
         </p>
     {%- endif -%}
 

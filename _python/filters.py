@@ -22,7 +22,20 @@ def remove(seq, ids):
     return [item for item in seq if item['id'] not in ids]
 
 
+def related(page, site):
+    """
+    Make a list of related pages that share the same tags.
+    """
+    related = []
+    if 'tags' in page:
+        for tag in page['tags']:
+            related.extend(site['reflinks']['/tag/{}'.format(tag)]['content'])
+        related = remove(related, [page['id']])
+    return related
+
+
 filters = dict(
     shuffle=shuffle,
     remove=remove,
+    related=related,
 )

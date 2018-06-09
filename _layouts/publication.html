@@ -1,6 +1,6 @@
 {% extends "page.html" %}
 {% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info,
-   show_alm, feedback, insert_thumbnail, make_breadcrumbs %}
+   show_alm, feedback, insert_thumbnail, make_breadcrumbs, make_side_index %}
 
 
 {% block breadcrumbs %}
@@ -12,52 +12,53 @@
 
     <div class="row">
 
-        <div class="col-md-8">
+        <div class="col-md-9">
             <h1>{{ this.title }}</h1>
 
             {% if this.author is defined %}
                 <p class="pub-date-author">
                     {{ get_authors(this, site) }}
                     {% if this.date is defined %}
-                        ({{ this.date.year }})
+                        <span class="post-date">({{ this.date.year }})</span>
                     {% endif %}
                 </p>
             {% endif %}
 
             {{ pub_alerts(this, fancy=true) }}
 
+            <h2>Info</h2>
+
+            {{ pub_info(this, fancy=true) }}
+
             {{ this.body }}
 
+            {% if this.citation is defined %}
+                <h2>Citation</h2>
+                <p>{{this.citation}}</p>
+            {% endif %}
         </div>
 
         <div class="col-md-1">
         </div>
 
-        <div class="col-md-3 publication-sidebar">
-            <div class="info">
-                {{ pub_info(this, fancy=true) }}
-            </div>
+        <div class="col-md-2 sidebar">
+            {{ show_alm(this) }}
 
-            <div class="alm">
-                {{ show_alm(this) }}
-            </div>
-
-            {% if this.citation is defined %}
-                <div class="citation">
-                    <h2>Citation</h2>
-                    <p>{{this.citation}}</p>
-                </div>
+            {% set pages = this|related(site)|sort(attribute='date', reverse=true) %}
+            {% if pages %}
+                <h2>Related</h2>
+                {{ make_side_index(pages, site, date=true, year_only=true, ncards=3) }}
             {% endif %}
         </div>
 
     </div>
 
+    {# Separate this so that the sidebar collapses above the comments #}
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
             {{ feedback(this, site, fancy=true) }}
         </div>
-
-        <div class="col-md-4">
+        <div class="col-md-3">
         </div>
     </div>
 
