@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-md-9 col-sm-9">
                     {% if this.tags is defined %}
-                        {{ fa('tags') }} {{ make_tags(this.tags) }}
+                        {{ make_tags(this.tags, icon=true) }}
                     {% endif %}
                 </div>
             </div>

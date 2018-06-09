@@ -46,9 +46,17 @@ def pages(site, ids):
     return [site['reflinks'][i] for i in ids]
 
 
+def tagnames(site):
+    """
+    Get a list of all tags (just the names) from the site.
+    """
+    return [tag['title'] for tag in site['reflinks']['/tag']['content']]
+
+
 filters = dict(
     shuffle=shuffle,
     remove=remove,
     related=related,
     pages=pages,
+    tagnames=tagnames,
 )

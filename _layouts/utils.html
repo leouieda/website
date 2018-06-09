@@ -13,8 +13,8 @@
 {%- endmacro -%}
 
 
-{%- macro make_tags(tags, fancy=true, link=true) -%}
-{# Make a sequence of tag links, optionally using a label span #}
+{%- macro make_tag(tag, fancy=true, link=true) -%}
+{# Utility for inserting academicons icons #}
     {%- if fancy -%}
         {% set class = "label label-default tag" %}
         {%- if link -%}
@@ -23,15 +23,28 @@
     {%- else -%}
         {% set class = "" %}
     {%- endif -%}
-    {%- for tag in tags -%}
-        <span class="{{ class }}">
-            {%- if link -%}
-                <a href="/tag/{{ tag }}">{{ tag }}</a>
-            {%- else -%}
-                {{ tag }}
-            {%- endif -%}
-        </span>
-    {%- endfor -%}
+    <span class="{{ class }}">
+        {%- if link -%}
+            <a href="/tag/{{ tag }}">{{ tag }}</a>
+        {%- else -%}
+            {{ tag }}
+        {%- endif -%}
+    </span>
+{%- endmacro -%}
+
+
+{%- macro make_tags(tags, fancy=true, link=true, icon=false) -%}
+{# Make a sequence of tag links, optionally using a label span #}
+    <div class="tag-list">
+        <ul>
+        {%- if icon -%}
+            <li>{{ fa('tags', 'fa-fw') }}</li>
+        {%- endif -%}
+        {%- for tag in tags -%}
+            <li>{{ make_tag(tag, fancy=fancy, link=link) }}</li>
+        {%- endfor -%}
+        </ul>
+    </div>
 {%- endmacro -%}
 
 

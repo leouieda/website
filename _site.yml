@@ -43,6 +43,8 @@ menuicons: [
      '<i class="fa fa-twitter fa-lg" title="Twitter"></i>'],
     ['https://www.linkedin.com/in/uieda',
      '<i class="fa fa-linkedin fa-lg" title="LinkedIn"></i>'],
+    ['/tag',
+     '<i class="fa fa-tags fa-lg" title="Browse by tag"></i>'],
     ['/rss.xml',
      '<i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i>'],
     ]
