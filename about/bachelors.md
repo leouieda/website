@@ -33,7 +33,7 @@ which is the first part of my [PhD thesis][/about/phd]:
 
 You can download a PDF of my thesis (in Portuguese) from
 [figshare](http://figshare.com) at
-doi:[10.6084/m9.figshare.963547](http://dx.doi.org/10.6084/m9.figshare.963547).
+doi:[10.6084/m9.figshare.963547](https://doi.org/10.6084/m9.figshare.963547).
 
 
 # Thesis defense slides

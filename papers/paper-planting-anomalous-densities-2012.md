@@ -30,7 +30,7 @@ of the library.
 The following is an animation of the growth algorithm
 during the inversion of synthetic data.
 The video is available at [figshare](http://figshare.com/):
-[10.6084/m9.figshare.91469](http://dx.doi.org/10.6084/m9.figshare.91469)
+[10.6084/m9.figshare.91469](https://doi.org/10.6084/m9.figshare.91469)
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe src="https://widgets.figshare.com/articles/91469/embed?show_title=0"
