@@ -34,8 +34,16 @@ def related(page, site):
     return related
 
 
+def pages(site, ids):
+    """
+    Select only the pages with the given ids from the site.
+    """
+    return [site['reflinks'][i] for i in ids]
+
+
 filters = dict(
     shuffle=shuffle,
     remove=remove,
     related=related,
+    pages=pages,
 )

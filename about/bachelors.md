@@ -11,7 +11,10 @@ repository: leouieda/barchelor-thesis
 institution: Universidade de São Paulo, Brazil
 alm: true
 layout: publication
+tags: tesseroids
 ---
+
+{% from "utils.html" import make_index %}
 
 # About
 
@@ -21,23 +24,16 @@ I did an undergraduate research project and eventually my thesis under the
 supervision of [Dr. Naomi Ussami](http://lattes.cnpq.br/6704246490515612).
 This was when I started development of the software
 [Tesseroids][/software/tesseroids] and the research that lead to the paper
-[/papers/paper-tesseroids-2016], which is the first part of my
-[PhD thesis][/about/phd].
+which is the first part of my [PhD thesis][/about/phd]:
+
+<div>
+    {{ make_index(site|pages(["/papers/paper-tesseroids-2016"]), site, hr=false, date=true, year_only=true) }}
+</div>
 
 You can download a PDF of my thesis (in Portuguese) from
 [figshare](http://figshare.com) at
 doi:[10.6084/m9.figshare.963547](http://dx.doi.org/10.6084/m9.figshare.963547).
 
-Presentations about this topic:
-
-* [/posters/goce2011]
-* [/talks/agu2010]
-* [leouieda/simposio-iag-2008](https://github.com/leouieda/simposio-iag-2008)
-
-Other work that uses this research:
-
-* [/papers/paper-moho-inversion-tesseroids-2016]
-* [/talks/egu2014]
 
 # Thesis defense slides
 

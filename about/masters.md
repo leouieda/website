@@ -27,7 +27,7 @@ The method that we developed is implemented in the software
 The dissertation was later published as the paper:
 
 <div>
-    {{ make_index([site.reflinks["/papers/paper-planting-anomalous-densities-2012"]], site, hr=false, date=true, year_only=true) }}
+    {{ make_index(site|pages(["/papers/paper-planting-anomalous-densities-2012"]), site, hr=false, date=true, year_only=true) }}
 </div>
 
 During my Masters, I presented the following yearly seminars:
