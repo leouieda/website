@@ -10,6 +10,7 @@ repository: pinga-lab/paper-planting-densities
 institution: Observatório Nacional, Brazil
 pdf: msc-dissertation.pdf
 layout: publication
+thumbnail: masters.png
 tags: planting-inversion
 ---
 

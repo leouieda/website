@@ -11,6 +11,7 @@ institution: Observatório Nacional, Brazil
 pdf: phd-thesis.pdf
 sucupira: 3627205
 layout: publication
+thumbnail: phd.png
 tags: moho, tesseroids, fatiando, inversion
 ---
 

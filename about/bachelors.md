@@ -10,6 +10,7 @@ doi: 10.6084/m9.figshare.963547
 repository: leouieda/barchelor-thesis
 institution: Universidade de São Paulo, Brazil
 alm: true
+thumbnail: bachelors.png
 layout: publication
 tags: tesseroids
 ---
