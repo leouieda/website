@@ -14,11 +14,16 @@ layout: publication
 tags: planting-inversion
 ---
 
-# Presentation
+# About
 
 <script async class="speakerdeck-embed"
 data-id="b036bda0e0494ddfb2410953e5f25230" data-ratio="1.33333333333333"
 src="//speakerdeck.com/assets/embed.js"></script>
+
+This presentation is about the work Dionisio did for his PhD.
+He used my [planting inversion method][/papers/paper-planting-anomalous-densities-2012]
+on data from his research area in central Brazil.
+He couldn't make it to the meeting so I ended up giving the talk on his behalf.
 
 # Abstract
 

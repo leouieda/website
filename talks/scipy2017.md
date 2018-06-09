@@ -8,6 +8,7 @@ event: Python in Science Conference
 thumbnail: scipy2017.png
 license: CC-BY
 layout: publication
+tags: gmtpython
 ---
 
 # About
@@ -15,15 +16,7 @@ layout: publication
 This was the first talk I gave about [GMT/Python][/software/gmt-python], a
 wrapper that [I'm building for the Generic Mapping
 Tools][/blog/hawaii-gmt-postdoc].
-I didn't have that much implemented yet but was able to give a quick demo (see
-notebook link below).
-
-* See my blog post with the initial [talk
-  proposal][/blog/scipy2017-proposal-gmt].
-* Read the [reviews we got and our replies][/blog/scipy2017-reviews].
-* There is a [Jupyter notebook with the live
-  demo](http://nbviewer.jupyter.org/github/GenericMappingTools/scipy2017/blob/master/demo.ipynb).
-  It only works on Linux for now, sorry.
+I didn't have that much implemented yet but was able to give a quick demo.
 
 
 # Video recording
@@ -49,7 +42,6 @@ src="https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4
 frameborder="0" width="960" height="749" allowfullscreen="true"
 mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
-\[[view in Google Drive](https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4BVnIxYBg/pub?start=false&loop=false&delayms=3000)\]
 
 
 # Abstract

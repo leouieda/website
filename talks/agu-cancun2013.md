@@ -11,13 +11,11 @@ layout: publication
 tags: planting-inversion
 ---
 
-# Presentation
+# About
 
 <script async class="speakerdeck-embed"
 data-id="47e71fe41d9d4f1fa7859454577a6d3f" data-ratio="1.33159947984395"
 src="//speakerdeck.com/assets/embed.js"></script>
-
-# About
 
 This talk presents an adaptation of the gravity-gradient inversion method I
 developed for my Masters degree dissertation
@@ -26,17 +24,6 @@ developed for my Masters degree dissertation
 As you may have noticed, there is an **error in the title**. We do not, in
 fact, invert magnetic data using **density** anomalies. This illustrates the
 perils of copy-pasting combined with a looming deadline.
-
-The inversion method was developed along a few iterations and presented at
-different meetings
-(in order):
-
-* 2011: [/posters/eage2011]
-* 2011: [/talks/seg2011]
-* 2011: [/talks/sbgf2011]
-* 2012: [/papers/paper-planting-anomalous-densities-2012] (the paper)
-* 2012: [/talks/seg2012]
-* 2013: This talk
 
 I have added an **open-source** implementation of the gravity-gradient
 inversion method to the Python library [Fatiando a

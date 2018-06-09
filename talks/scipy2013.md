@@ -11,6 +11,7 @@ thumbnail: scipy2013.png
 citation: Uieda, L., V. C. Oliveira Jr and V. C. F. Barbosa (2013), Modeling the Earth with Fatiando a Terra, Proceedings of the 12th Python in Science Conference, pp. 90-96
 alm: true
 layout: publication
+tags: fatiando
 ---
 
 
@@ -19,6 +20,8 @@ layout: publication
 This was the first presentation that I made about [Fatiando a
 Terra][/software/fatiando], a Python library for modeling and inversion in
 geophysics.
+The proceedings paper that accompanies this talk became the second chapter of
+my [PhD thesis][/about/phd].
 
 
 # Video recording
