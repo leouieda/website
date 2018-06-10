@@ -28,11 +28,11 @@ We applied the inversion to estimate the Moho depth for South America.
 
 The main result from this publication is the gravity-derived Moho depth model
 for South America and the differences between it and seismological estimates
-of [Assumpção et al. (2013)](http://dx.doi.org/10.1016/j.tecto.2012.11.014).
+of [Assumpção et al. (2013)](https://doi.org/10.1016/j.tecto.2012.11.014).
 These differences allow us to know where the gravity-derived model can be trusted and where there might be unaccounted sources in the gravity data.
 
 You can **download** the model results, source code, and input data from
-doi:[10.6084/m9.figshare.3987267](https://dx.doi.org/10.6084/m9.figshare.3987267)
+doi:[10.6084/m9.figshare.3987267](https://doi.org/10.6084/m9.figshare.3987267)
 
 ![The estimated Moho depth for South America and differences with seismological estimates.](/images/south-american-moho-gravity-inversion.png)
 \[[high resolution version](https://raw.githubusercontent.com/pinga-lab/paper-moho-inversion-tesseroids/master/model/south-american-moho.png)\]

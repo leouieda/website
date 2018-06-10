@@ -25,7 +25,7 @@ I started working on *Tesseroids* in 2008 for my
 Since then, the software has been through many revisions.
 
 The paper "[/papers/paper-tesseroids-2016]" describes the algorithms behind
-[version 1.2.0](http://dx.doi.org/10.5281/zenodo.16033) of the software.
+[version 1.2.0](https://doi.org/10.5281/zenodo.16033) of the software.
 This paper became a chapter of [my PhD thesis][/about/phd].
 
 # Presentations

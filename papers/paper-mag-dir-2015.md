@@ -32,7 +32,7 @@ for more information about using this class.
 
 This paper has undergone open peer-review.
 The original submission, reviews, and replies can be viewed at
-[doi:10.5194/npgd-1-1465-2014](http://dx.doi.org/10.5194/npgd-1-1465-2014).
+[doi:10.5194/npgd-1-1465-2014](https://doi.org/10.5194/npgd-1-1465-2014).
 
 # Abstract
 
