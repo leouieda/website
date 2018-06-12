@@ -1,8 +1,10 @@
 ---
 title: Papers
-layout: papers
+layout: index
 order: date
 reverse: true
+banner: andes-topography.jpg
+banner_description: "Topography of the central Andes and bathymetry of the Pacific around off the coast of Chile."
 ---
 
 {% from "utils.html" import fa, ai %}

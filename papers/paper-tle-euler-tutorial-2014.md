@@ -11,7 +11,7 @@ supplement: 10.6084/m9.figshare.923450
 thumbnail: paper-tle-euler-tutorial-2014.png
 citation: "Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2014), Geophysical tutorial: Euler deconvolution of potential-field data, The Leading Edge, 33(4), 448-450, doi:10.1190/tle33040448.1"
 layout: publication
-tags: euler-deconvolution, tutorial
+tags: euler-deconvolution, inversion, tutorial
 ---
 
 # About

@@ -12,7 +12,7 @@ pdf: phd-thesis.pdf
 sucupira: 3627205
 layout: publication
 thumbnail: phd.png
-tags: moho, tesseroids, fatiando, inversion
+tags: moho, tesseroids, fatiando
 ---
 
 {% from "utils.html" import make_index %}

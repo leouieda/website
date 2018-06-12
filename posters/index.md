@@ -1,11 +1,11 @@
 ---
 title: Posters
-layout: posters
+layout: index
 order: date
 reverse: true
+banner: triple-junction-bathymetry.jpg
+banner_description: "Bathymetry of southern Indian Ocean."
 ---
-
-{% from "utils.html" import fa, ai %}
 
 The poster presentations that I have given.
 All have links to download the poster, usually in PDF.
