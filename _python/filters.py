@@ -3,6 +3,7 @@ Define jinja filters.
 """
 import random
 
+
 def shuffle(seq):
     """
     Shuffle the given sequence if it can be turned into a list

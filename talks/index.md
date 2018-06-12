@@ -1,11 +1,11 @@
 ---
 title: Talks
-layout: talks
+layout: index
 order: date
 reverse: true
+banner: anatolia-himalayas-topography.jpg
+banner_description: "Topography from the Anatolian Plateau to the Himalayas."
 ---
-
-{% from "utils.html" import fa, ai %}
 
 A list of presentations that I have given over the years.
 All have links to download the slides.

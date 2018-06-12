@@ -24,6 +24,8 @@ strict_undefined: true
 
 thumbnail_path: "images/thumb"
 
+banner_path: "images/banner"
+
 menulinks: [
     ['/about', 'About'],
     ['/blog', 'Blog'],

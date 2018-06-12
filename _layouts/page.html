@@ -63,33 +63,32 @@
             {% endif %}
             <div class="banner"
                  title="{{ title }}"
-                 style="background-image: url(/images/{{this.banner}}); background-position: {{position}};">
-                <div class="banner-text" title="{{ title }}">
-                    {% if this.description is defined %}
+                 style="background-image: url(/{{ site.banner_path }}/{{ this.banner }}); background-position: {{position}};">
+                {% if this.description is defined %}
+                    <div class="banner-text" title="{{ title }}">
                         {{ this.description }}
-                    {% endif %}
-                </div>
+                    </div>
+                {% else %}
+                    <h1 class="banner-title" title="{{ title }}">
+                        {{ this.title }}
+                    </h1>
+                {% endif %}
             </div>
         {% endif %}
     {% endblock %}
 
     <div class="container content">
-
         {% block breadcrumbs %}
         {% endblock %}
 
         {% block content %}
-
-            <h1>{{ this.title }}</h1>
-
-            {% if this.body is defined %}
-
-            {{ this.body }}
-
+            {% if not this.banner is defined %}
+                <h1>{{ this.title }}</h1>
             {% endif %}
-
+            {% if this.body is defined %}
+                {{ this.body }}
+            {% endif %}
         {% endblock %}
-
     </div>
 
 {% endblock %}

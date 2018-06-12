@@ -131,13 +131,14 @@
 {%- endmacro -%}
 
 
-{%- macro make_index(content, site, date=false, year_only=true, show_oa=false, hr=true, ncards=false) -%}
+{%- macro make_index(content, site, date=false, year_only=true, show_oa=false, hr=true, ncards=false, twocolumn=true) -%}
 {# Make an index of cards for the elements in content.
    There will be 4 cards in a row and collapse to 2 in a row for smaller
    displays. The way to do this is to batch the cards into pairs, make a row
    with 2 columns and place a pair in each column.
    If ncards is not false, then it should be number of cards to show.
 #}
+    <div class="card-index">
     {%- if hr -%}
         <hr>
     {%- endif -%}
@@ -147,10 +148,12 @@
         {% set cards = content[:ncards] -%}
     {%- endif -%}
     {%- for row in cards|batch(2) -%}
-        {%- if loop.index % 2 != 0 -%}
-            <div class="row">
-        {%- endif -%}
+        {%- if twocolumn -%}
+            {%- if loop.index is odd -%}
+                <div class="row">
+            {%- endif -%}
             <div class="col-md-6">
+        {%- endif -%}
                 <div class="row">
                 {%- for article in row -%}
                     <div class="col-md-6 col-sm-6 col-xs-6">
@@ -158,11 +161,14 @@
                     </div>
                 {%- endfor -%}
                 </div>
+        {%- if twocolumn -%}
             </div>
-        {%- if loop.index % 2 == 0 or loop.last -%}
-            </div>
+            {%- if loop.index is even or loop.last -%}
+                </div>
+            {%- endif -%}
         {%- endif -%}
     {%- endfor -%}
+    </div>
 {%- endmacro -%}
 
 
