@@ -34,7 +34,6 @@ menulinks: [
     ['/talks', 'Talks'],
     ['/posters', 'Posters'],
     ['/teaching', 'Teaching'],
-    ['/software', 'Software'],
     ['/contact', 'Contact'],
     ]
 

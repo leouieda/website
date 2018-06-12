@@ -247,8 +247,8 @@ img {
 
 .banner-text {
     margin: 0;
-    padding: 200px 10%;
-    height: 500px;
+    padding: 250px 10%;
+    height: 550px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -260,8 +260,8 @@ img {
 
 .banner-title {
     margin: 0;
-    padding: 180px 10%;
-    height: 500px;
+    padding: 120px 10%;
+    height: 350px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;

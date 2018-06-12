@@ -4,7 +4,7 @@ layout: index
 order: date
 reverse: true
 banner: triple-junction-bathymetry.jpg
-banner_description: "Bathymetry of souther Indian Ocean."
+banner_description: "Bathymetry of southern Indian Ocean."
 ---
 
 The poster presentations that I have given.
