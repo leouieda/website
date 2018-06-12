@@ -1,14 +1,14 @@
 ---
 title: "Tesseroids: gravity forward modeling in spherical coordinates"
-language: C
-license: BSD
 repository: leouieda/tesseroids
 website: http://tesseroids.org
 thumbnail: tesseroids.png
-doi: 10.1190/geo2015-0204.1
-citation: "Uieda, L., V. Barbosa, and C. Braitenberg (2016), Tesseroids: Forward-modeling gravitational fields in spherical coordinates, GEOPHYSICS, F41–F48, doi:10.1190/geo2015-0204.1."
 layout: publication
 ---
+
+<div class="alert alert-warning">
+This page is deprecated. Please see <a href="/research">Research</a> instead.
+</div>
 
 # About
 
@@ -27,11 +27,3 @@ Since then, the software has been through many revisions.
 The paper "[/papers/paper-tesseroids-2016]" describes the algorithms behind
 [version 1.2.0](https://doi.org/10.5281/zenodo.16033) of the software.
 This paper became a chapter of [my PhD thesis][/about/phd].
-
-# Presentations
-
-The following presentations are about the software and algorithms involved:
-
-* 2016: [My PhD thesis defense][/about/phd]
-* 2011: [/posters/goce2011]
-* 2010: [/talks/agu2010]
