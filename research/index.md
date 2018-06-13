@@ -8,35 +8,32 @@ banner_description: "Bathymetry of the Pacific Ocean around the Hawaiian islands
 
 {% from "utils.html" import make_index, make_tags %}
 
-# Summary
 
-My main research focus is
-the development of methods
-to solve inverse problems,
-mainly for potential fields.
-Central to all of my projects
-is the open-source software
-that implements the new methods.
+My main topic of research is the development of methods to solve
+[inverse problems in geophysics](https://en.wikipedia.org/wiki/Inverse_problem).
+For example, estimating
+[density anomalies in the subsurface from measured disturbances in gravity][/papers/paper-planting-anomalous-densities-2012]
+or the [direction of magnetization of a buried structure from the anomalies that it produces in the Earth's magnetic field][/papers/paper-mag-dir-2015].
+Most methods are applied to potential field methods (gravity and magnetics)
+but I'm also interested in [seismology][/papers/nmo-tutorial] and
+[geodesy][/talks/aogs2018].
+Central to all of my projects is the open-source software upon which I
+implement the new methods.
 
-Method development.
+I have an *open by default* policy for my research and teaching output.
+Pretty much everything I do is freely available online, usually on
+[Github](https://github.com/leouieda/).
 
 
-# Gravity and magnetic inverse problems
+# Inverse problems
 
-As a geophysicist,
-my ultimate goal is
-to infer knowledge about the inner Earth
-and its processes
-from surface observations,
-such as its gravity and magnetic fields,
-topography,
-or propagation patterns of seismic waves.
-%
-Ubiquitous to all of geophysics
-is the fact that this inference
-is an ill-posed inverse problem,
-to which a solution might not exist
-or be non-unique and unstable.
+As a geophysicist, my ultimate goal is to infer the physical properties of the
+inner Earth and its processes from surface observations.
+This is an ill-posed inverse problem, to which a solution might not exist or be
+non-unique and unstable.
+I develop methods for solving different kinds of inverse problems using
+several sets of constraints to overcome the instability of the solution.
+
 
 <div>
     {{ make_tags(["inversion", "gravity", "magnetic", "euler-deconvolution"], icon=true) }}
@@ -44,17 +41,15 @@ or be non-unique and unstable.
 </div>
 
 
-# Processing using equivalent layers
-
-
-<div>
-    {{ make_tags(["equivalent-layer"], icon=true) }}
-    {{ make_index(site.reflinks["/tag/equivalent-layer"].content[:4], site, hr=false, date=false) }}
-</div>
-
-
 # Forward modeling
 
+A key component for solving an inverse problem is first solve the "forward
+problem".
+This is jargon for predicting data given a set of model parameters.
+One of the first research problems on which I worked was developing a method
+for forward modeling gravitational fields caused by
+[a tesseroid](https://doi.org/10.6084/m9.figshare.1495521) (a spherical prism).
+I'm still doing work related to this theme.
 
 <div>
     {{ make_tags(["tesseroids"], icon=true) }}
@@ -62,39 +57,87 @@ or be non-unique and unstable.
 </div>
 
 
+# Data processing
+
+There is no turning back from the machine learning frenzy that has taken over
+the world.
+Geoscientists have been doing similar things for decades but with different
+names and objectives.
+One of these things is called the
+"[equivalent layer technique][/papers/paper-polynomial-eqlayer-2013]"
+in gravity and magnetics.
+Similar methods in different fields have many different names, for example
+[radial basis functions](https://en.wikipedia.org/wiki/Radial_basis_function)
+or [Green's functions interpolation](https://doi.org/10.1002/2016GL070340).
+All of these methods are linear regressions in which we fit a linear model to
+some data and then use the model to predict new data.
+The difference with standard machine learning is that the linear model we use
+has physical meaning.
+For gravity data, the model is the gravitational attraction of point sources,
+whereas for GPS data, the model is the elastic deformation of medium.
+Given the many similarities, I have been very interested in applying other
+machine learning techniques, like model selection, to these geophysical
+problems.
+
+<div>
+    {{ make_tags(["equivalent-layer"], icon=true) }}
+    {{ make_index(site.reflinks["/tag/equivalent-layer"].content[:4], site, hr=false, date=false) }}
+</div>
+
+
 # Open-source software
 
-Methodological development requires
-much prototyping and iteration.
+Programming is a requirement for method development.
+By definition, there is no existing software that implements your new method.
+I program mostly in [Python](https://www.python.org/) but I'm also proficient
+in [C](https://en.wikipedia.org/wiki/C_(programming_language)).
+All of my software contributions are
+[open-source](https://en.wikipedia.org/wiki/Open-source_software)
+and hosted on [Github](https://github.com/leouieda/).
 
-Thus,
-a researcher needs
-a flexible environment
-and a large collection of tools
-for experimentation.
-The approach I have taken is
-to develop an open-source library
-called Fatiando a Terra\footnote{\url{http://www.fatiando.org}}
-that collects the basic tools
-required for building an inversion method.
-The library is implemented in Python,
-a dynamically typed interpreted language
-known for its simplicity
-and large ecosystem of scientific libraries.
-Fatiando is developed in the
-open\footnote{\url{https://github.com/fatiando/fatiando}}
-with the help of a growing, though yet small,
-developer community.
-I use it as the basis for
-all of my research projects
-as well as for teaching geophysics.
-My first open-source project
-was \textit{Tesseroids}\footnote{\url{http://tesseroids.leouieda.com/}},
-a collection of command-line programs
-for forward modeling gravitational fields
-using spherical prisms.
-It is written entirely in C
-and is my most widely used software project to date.
+I'm the creator and/or maintainer of the following projects:
+
+## Tesseroids ([www.tesseroids.org](http://www.tesseroids.org))
+
+Command-line programs for gravity forward modeling. This was my first software
+project. I started working on *Tesseroids* in 2008 for my [Bachelor's thesis
+project][/about/bachelors] and continued in collaboration with Professor [Carla
+Braitenberg](https://www2.units.it/braitenberg/) from the [University of
+Trieste](https://dmg.units.it/). The paper "[/papers/paper-tesseroids-2016]"
+describes the algorithms behind [version
+1.2.0](https://doi.org/10.5281/zenodo.16033) of the software, which ended up
+becoming a chapter of my [PhD thesis][/about/phd].
+
+## Fatiando a Terra ([www.fatiando.org](https://www.fatiando.org))
+
+Fatiando is a Python library for modeling and inversion in geophysics.
+The name is Portuguese for "*slicing the Earth*" (like a loaf of bread).
+I started development of Fatiando in 2010 while working on my
+[Masters degree][/about/masters].
+I now use it regularly for my research and also for much of my teaching
+material.
+My [Geophysics classes at UERJ][/teaching] used Fatiando and [Jupyter
+notebooks](http://jupyter.org/) to provide students with interactive examples
+and synthetic data.
+Most recent papers published by the [PINGA lab](http://www.pinga-lab.org) use
+it in some way.
+Fatiando was featured in the
+[89th Boletim SBGf (PDF in Portuguese)](/pdf/boletim-sbgf-fatiando-89-2014.pdf).
+
+Recently, I started work to [convert Fatiando into several independent
+packages][/blog/future-of-fatiando]. The first one to come out is
+[Verde](https://www.fatiando.org/verde/dev/), a library for gridding and
+spatial data processing.
+
+## GMT/Python ([www.gmtpython.xyz](https://www.gmtpython.xyz))
+
+A modern Python interface for the [Generic Mapping Tools](http://gmt.soest.hawaii.edu/).
+I started building GMT/Python in 2017 as part of my
+[postdoc at the University of Hawaii][/blog/hawaii-gmt-postdoc] with
+Professor [Paul Wessel](http://www.soest.hawaii.edu/wessel).
+Work is still in early stages but there is a minimum working example on the
+website. GMT/Python was used to generate the bathymetry and topography banner
+images for this website.
 
 <div>
     {{ make_tags(["open-source"], icon=true) }}

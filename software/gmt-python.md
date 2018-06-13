@@ -12,7 +12,7 @@ This page is deprecated. Please see <a href="/research">Research</a> instead.
 
 # About
 
-Is started building the GMT/Python interface in 2017 as part of my
+I started building the GMT/Python interface in 2017 as part of my
 [postdoc at the University of Hawaii][/blog/hawaii-gmt-postdoc] with
 [Prof Paul Wessel](http://www.soest.hawaii.edu/wessel).
 Work is still in early stages but there is a minimum working example on the

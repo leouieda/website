@@ -28,8 +28,8 @@ banner_path: "images/banner"
 
 menulinks: [
     ['/about', 'About'],
-    ['/blog', 'Blog'],
     ['/research', 'Research'],
+    ['/blog', 'Blog'],
     ['/papers', 'Papers'],
     ['/talks', 'Talks'],
     ['/posters', 'Posters'],
