@@ -18,7 +18,7 @@ tags: fatiando, open-source
 # About
 
 This was the first presentation that I made about [Fatiando a
-Terra][/software/fatiando], a Python library for modeling and inversion in
+Terra](https://www.fatiando.org), a Python library for modeling and inversion in
 geophysics.
 The proceedings paper that accompanies this talk became the second chapter of
 my [PhD thesis][/about/phd].

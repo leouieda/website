@@ -1,14 +1,14 @@
 ---
 title: "Fatiando a Terra: modeling and inversion for geophysics"
-language: Python
-license: BSD
 repository: fatiando/fatiando
 website: http://www.fatiando.org
-doi: 10.5281/zenodo.16205
 thumbnail: fatiando.png
-citation: Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2013), Modeling the Earth with Fatiando a Terra, Proceedings of the 12th Python in Science Conference, pp. 91-98.
 layout: publication
 ---
+
+<div class="alert alert-warning">
+This page is deprecated. Please see <a href="/research">Research</a> instead.
+</div>
 
 # About
 
@@ -30,41 +30,3 @@ examples and synthetic data.
 
 Fatiando was featured in the [89th Boletim SBGf (PDF in
 Portuguese)](http://sys2.sbgf.org.br/portal/images/stories/Arquivos/Boletim_89-2014.pdf).
-
-
-# Presentations
-
-I have given a few presentation about Fatiando over the years:
-
-* [/talks/tgif-2017]: Invited talk at the Department of Geology and Geophysics
-  of the University of Hawaii. It also covers the work in the paper
-  [/papers/paper-moho-inversion-tesseroids-2016], which is a part of my
-  [PhD thesis][/about/phd].
-* [/talks/iag-04-2015]: Invited talk (in portuguese) at the
-  [University of São Paulo](http://www.iag.usp.br/).
-* [/posters/scipy2014]: Poster presentation at the Scipy 2014 conference about
-  the `fatiando.inversion` package.
-* [/talks/scipy2013]: Talk at the Scipy 2013 conference introducing Fatiando.
-
-
-You can watch
-[a recording of the Scipy talk on Youtube](https://youtu.be/Ec38h1oB8cc):
-
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/Ec38h1oB8cc" frameborder="0"
-allowfullscreen></iframe>
-</div>
-
-
-# Bibtex
-
-    @InProceedings{ uieda-proc-scipy-2013,
-      author    = { Leonardo Uieda and Vanderlei C. Oliveira Jr and Val\'eria C. F.
-    Barbosa },
-      title     = { Modeling the Earth with Fatiando a Terra },
-      booktitle = { Proceedings of the 12th Python in Science Conference },
-      pages     = { 96 - 103 },
-      year      = { 2013 },
-      editor    = { St\'efan van der Walt and Jarrod Millman and Katy Huff }
-    }

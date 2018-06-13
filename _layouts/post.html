@@ -1,5 +1,5 @@
 {% extends "publication.html" %}
-{% from "utils.html" import feedback, insert_thumbnail, make_tags, fa, make_side_index %}
+{% from "utils.html" import feedback, insert_thumbnail, make_tags, fa, make_side_index, pub_info_icon %}
 
 
 {% block content %}
@@ -9,19 +9,18 @@
 
             <h1>{{ this.title }}</h1>
 
-            <div class="row">
-                <div class="col-md-3 col-sm-3">
-                    <p class="post-date">
-                        {{ this.date.strftime(' %d %B %Y') }}
-                    </p>
-                </div>
-                <div class="col-md-9 col-sm-9">
-                    {% if this.tags is defined %}
-                        {{ make_tags(this.tags, icon=true) }}
-                    {% endif %}
-                </div>
-            </div>
-
+            <ul class="fa-ul">
+                <li class="post-date">
+                    {{ pub_info_icon("fa fa-calendar", "date") }}
+                    {{ this.date.strftime(' %d %B %Y') }}
+                </li>
+                {% if this.tags is defined %}
+                    <li>
+                        {{ pub_info_icon("fa fa-tags", "tags") }}
+                        {{ make_tags(this.tags) }}
+                    </li>
+                {% endif %}
+            </ul>
 
             <div class="content">
                 {{ this.body }}

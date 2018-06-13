@@ -13,7 +13,7 @@ tags: gmtpython, open-source
 
 # About
 
-This was the first talk I gave about [GMT/Python][/software/gmt-python], a
+This was the first talk I gave about [GMT/Python](https://www.gmtpython.xyz), a
 wrapper that [I'm building for the Generic Mapping
 Tools][/blog/hawaii-gmt-postdoc].
 I didn't have that much implemented yet but was able to give a quick demo.

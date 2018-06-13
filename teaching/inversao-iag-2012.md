@@ -18,7 +18,7 @@ e [Vanderlei C. Oliveira Jr](http://pinga-lab.org/people/oliveira-jr)
 na XVI Escola de Verão de Geofísica do [IAG-USP](http://www.iag.usp.br/).
 
 No repositório do curso estão as apresentações e *scripts* das atividades
-práticas. Estas práticas utilizam a versão 0.0.1 do programa [/software/fatiando].
+práticas. Estas práticas utilizam a versão 0.0.1 do programa (https://www.fatiando.org).
 
 A apostila do curso está disponível em
 [github.com/pinga-lab/inverse-problems](https://github.com/pinga-lab/inverse-problems).
