@@ -24,7 +24,7 @@ Brazil, where I studied from 2004 until 2009.
 I did an undergraduate research project and eventually my thesis under the
 supervision of [Dr. Naomi Ussami](http://lattes.cnpq.br/6704246490515612).
 This was when I started development of the software
-[Tesseroids][/software/tesseroids] and the research that lead to the paper
+[Tesseroids](http://www.tesseroids.org) and the research that lead to the paper
 which is the first part of my [PhD thesis][/about/phd]:
 
 <div>

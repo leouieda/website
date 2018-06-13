@@ -56,7 +56,7 @@ depth contour.*
 The inversion method proposed here is implemented in the Python programming
 language.
 The code uses the forward modeling and inversion packages of the library
-[/software/fatiando].
+(https://www.fatiando.org).
 
 You'll find the source code, input data, and instructions to produce the
 results from the paper on the Github repository. There should be enough

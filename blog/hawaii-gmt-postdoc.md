@@ -68,8 +68,8 @@ After about a month on the lists, this message from Paul came on the CIG list:
 
 The requirements seemed to fit me perfectly.
 My [Bachelor's thesis][/about/bachelors] was to developed a
-[C program][/software/tesseroids] and I spent most of [my PhD][/about/phd]
-building a [Python library][/software/fatiando].
+[C program](http://www.tesseroids.org) and I spent most of [my PhD][/about/phd]
+building a [Python library](https://www.fatiando.org).
 After some careful consideration with my wife and bit of hesitation, I decided
 to apply for the position.
 I consulted my department and they generously agreed to cover my

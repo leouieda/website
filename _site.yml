@@ -29,7 +29,7 @@ banner_path: "images/banner"
 menulinks: [
     ['/about', 'About'],
     ['/blog', 'Blog'],
-    #['/research', 'Research'],
+    ['/research', 'Research'],
     ['/papers', 'Papers'],
     ['/talks', 'Talks'],
     ['/posters', 'Posters'],

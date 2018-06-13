@@ -12,7 +12,7 @@ week in New Orleans, potentially gathering more than 20,000 geoscientists in a
 single place.
 Me and [Paul](http://www.soest.hawaii.edu/wessel/) will be there to talk about
 the next version of the [Generic Mapping Tools](http://gmt.soest.hawaii.edu/),
-my work on [GMT/Python][/software/gmt-python], and the role of open-source
+my work on [GMT/Python](https://www.gmtpython.xyz), and the role of open-source
 software in the Geosciences.
 
 There is so much going on at AGU that it can be daunting just to browse the
@@ -119,7 +119,7 @@ I'll surely have a lot more to say after the panel.
 Last but not least,
 I'll be presenting the poster
 "[A modern Python interface for the Generic Mapping Tools][/posters/agu2017]"
-about my work on [GMT/Python][/software/gmt-python].
+about my work on [GMT/Python](https://www.gmtpython.xyz).
 Come see the poster and chat with me and Paul!
 I'd love to hear what you want to see in this software.
 I'll also have a laptop and tablets for you to play around with a demo.

@@ -6,7 +6,7 @@ layout: post
 tags: python
 ---
 
-I get asked a lot in the [Fatiando a Terra][/software/fatiando]
+I get asked a lot in the [Fatiando a Terra](https://www.fatiando.org)
 [mailing list](https://groups.google.com/d/forum/fatiando)
 how to do some basic Python and numpy tasks which are not necessarily related
 to Fatiando.

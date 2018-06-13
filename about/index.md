@@ -14,11 +14,11 @@ banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela.
 
 # TL;DR
 
-* Building [GMT/Python][/software/gmt-python] as a Visiting Research Scholar at
+* Building [GMT/Python](https://www.gmtpython.xyz) as a Visiting Research Scholar at
   the University of Hawaii at Manoa.
 * Researching gravity and magnetic inverse problems.
-* Working on other open-source software like [Tesseroids][/software/tesseroids]
-  and [Fatiando a Terra][/software/fatiando].
+* Working on other open-source software like [Tesseroids](http://www.tesseroids.org)
+  and [Fatiando a Terra](https://www.fatiando.org).
 
 # Short summary
 
@@ -30,8 +30,8 @@ Brazil.
 There, I developed and taught courses in [geophysics][/teaching/geofisica1] and
 [programming and numerical methods][/teaching/matematica-especial].
 I received [my PhD][/about/phd] from the Observatório Nacional, Brazil, for the
-creation of the open-source software [Tesseroid][/software/tesseroids] and
-[Fatiando a Terra][/software/fatiando] and for my
+creation of the open-source software [Tesseroids](http://www.tesseroids.org) and
+[Fatiando a Terra](https://www.fatiando.org) and for my
 [work on large-scale gravity inversion][/papers/paper-moho-inversion-tesseroids-2016].
 I am a member of the [PINGA lab](http://www.pinga-lab.org), a research group
 for inverse problems in geophysics.
@@ -39,7 +39,7 @@ My research focuses on inverse problems in potential field
 geophysics with a heavy dose of open-source software development.
 Lately,
 I am developing the
-[Python bindings for the Generic Mapping Tools][/software/gmt-python].
+[Python bindings for the Generic Mapping Tools](https://www.gmtpython.xyz).
 I do my best to bring more openness to the scientific process
 and to train the next generation of scientists in the best practices of
 reproducible computational experiments.

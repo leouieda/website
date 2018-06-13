@@ -17,12 +17,12 @@ tags: tesseroids, gravity, open-source
 
 This paper is a chapter of my [PhD thesis][/about/phd].
 It describes the algorithms used in version 1.2.0 of the open-source
-software [/software/tesseroids].
+software (http://www.tesseroids.org).
 The software is a suite of C coded command-line programs that calculate the
 gravitational field of a tesseroid (spherical prism) model.
 There is also a separate Python implementation of the same algorithm in the
 `fatiando.gravmag.tesseroid` module of the open-source library
-[/software/fatiando] (introduced in version 0.3).
+(https://www.fatiando.org) (introduced in version 0.3).
 
 
 # Abstract

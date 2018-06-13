@@ -19,7 +19,7 @@ tags: tesseroids, gravity
 This is the first poster I presented about my [undergraduate
 research][/about/bachelors] on forward modeling with tesseroids (spherical
 prisms). This would eventually become the software
-[Tesseroids][/software/tesseroids], the paper [/papers/paper-tesseroids-2016],
+[Tesseroids](http://www.tesseroids.org), the paper [/papers/paper-tesseroids-2016],
 and a part of my [PhD thesis][/about/phd].
 
 

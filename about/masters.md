@@ -24,7 +24,7 @@ Janeiro, Brazil, under the supervision of
 I started in March 2010 and defended my dissertation in October 2011.
 
 The method that we developed is implemented in the software
-[Fatiando a Terra][/software/fatiando].
+[Fatiando a Terra](https://www.fatiando.org).
 The dissertation was later published as the paper:
 
 <div>

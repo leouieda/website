@@ -7,7 +7,7 @@ tags: gmtpython
 ---
 
 Last week [I presented the first working prototype][/talks/scipy2017] of
-[GMT/Python][/software/gmt-python] at Scipy 2017, which is my favorite
+[GMT/Python](https://www.gmtpython.xyz) at Scipy 2017, which is my favorite
 conference.
 I got a lot of excellent feedback about the project and will need to make some
 major changes as a result.
