@@ -8,12 +8,14 @@ slides: <a href="http://www.leouieda.com/scipy2013/?theme=night#/">HTML slides</
 event: Python in Science Conference
 supplement: 10.6084/m9.figshare.708390
 thumbnail: scipy2013.png
+youtube: Ec38h1oB8cc
 citation: Uieda, L., V. C. Oliveira Jr and V. C. F. Barbosa (2013), Modeling the Earth with Fatiando a Terra, Proceedings of the 12th Python in Science Conference, pp. 90-96
 alm: true
 layout: publication
 tags: fatiando, open-source
 ---
 
+{% from "utils.html" import youtube_embed %}
 
 # About
 
@@ -30,11 +32,7 @@ Scipy records all of the presentations and [makes them available on
 YouTube](https://www.youtube.com/playlist?list=PLYx7XA2nY5GeTWcUQTbXVdllyp-Ie3r-y).
 Here is the video of mine:
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/Ec38h1oB8cc" frameborder="0"
-allowfullscreen></iframe>
-</div>
+{{ youtube_embed("Ec38h1oB8cc") }}
 
 
 # Abstract
