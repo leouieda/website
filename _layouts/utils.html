@@ -72,32 +72,6 @@
 {%- endmacro -%}
 
 
-{%- macro edu_summary(content) -%}
-{# Make a summary of the education (content of the about page) #}
-    <div class="row">
-    {%- for edu in content -%}
-        <div class="col-md-4">
-        <h3><a href="{{ edu.url }}">{{ edu.title }}  »</a></h3>
-        <ul class="fa-ul">
-            <li><i class="fa-li fa fa-calendar fa-fw"></i>
-                {{ edu.start_date.year}}-{{ edu.date.year }}
-            </li>
-            <li><i class="fa-li fa fa-university fa-fw"></i>
-                {{ edu.institution }}
-            </li>
-            <li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
-                Advisor: {{ edu.advisor }}
-            </li>
-            <li><i class="fa-li fa fa-book fa-fw"></i>
-                Thesis: {{ edu.thesis }}
-            </li>
-        </ul>
-        </div>
-    {%- endfor -%}
-    </div>
-{%- endmacro -%}
-
-
 {%- macro card(page, site, date=true, year_only=true, show_oa=false, inprogress=false, collapse_side=false) -%}
 {# Make a card linked to the page showing the thumbnail, title, etc #}
     {%- if collapse_side -%}
