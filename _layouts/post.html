@@ -1,49 +1,34 @@
 {% extends "publication.html" %}
-{% from "utils.html" import feedback, insert_thumbnail, make_tags, fa, make_side_index, pub_info_icon %}
+{% from "utils.html" import feedback, insert_thumbnail, make_tags, fa, make_index, pub_info_icon, related_pages, disqus %}
 
 
 {% block content %}
 
-    <div class="row">
-        <div class="col-md-9">
+    <h1>{{ this.title }}</h1>
 
-            <h1>{{ this.title }}</h1>
+    <ul class="fa-ul">
+        <li class="post-date">
+            {{ pub_info_icon("fa fa-calendar", "date") }}
+            {{ this.date.strftime(' %d %B %Y') }}
+        </li>
+        {% if this.tags is defined %}
+            <li>
+                {{ pub_info_icon("fa fa-tags", "tags") }}
+                {{ make_tags(this.tags) }}
+            </li>
+        {% endif %}
+    </ul>
 
-            <ul class="fa-ul">
-                <li class="post-date">
-                    {{ pub_info_icon("fa fa-calendar", "date") }}
-                    {{ this.date.strftime(' %d %B %Y') }}
-                </li>
-                {% if this.tags is defined %}
-                    <li>
-                        {{ pub_info_icon("fa fa-tags", "tags") }}
-                        {{ make_tags(this.tags) }}
-                    </li>
-                {% endif %}
-            </ul>
+    {{ this.body }}
 
-            <div class="content">
-                {{ this.body }}
-            </div>
+    {{ feedback(this, site, fancy=true) }}
 
-            {{ feedback(this, site, fancy=true) }}
+    <h2>More from the blog</h2>
+    {% set posts = site.reflinks['/blog'].content|sort(attribute='date', reverse=true) %}
+    {{ make_index(posts, site, date=true, year_only=false, ncards=4, hr=false) }}
 
-        </div>
+    {{ related_pages(this, site) }}
 
-        <div class="col-md-1">
-        </div>
-
-        <div class="col-md-2 sidebar">
-            <h2>Blog</h2>
-            {% set posts = site.reflinks['/blog'].content|sort(attribute='date', reverse=true) %}
-            {{ make_side_index(posts, site, date=true, year_only=false, ncards=3) }}
-
-            {% set pages = this|related(site)|sort(attribute='date', reverse=true) %}
-            {% if pages %}
-                <h2>Related</h2>
-                {{ make_side_index(pages, site, date=true, year_only=true, ncards=3) }}
-            {% endif %}
-        </div>
-    </div>
+    {{ disqus(this, site) }}
 
 {% endblock %}
