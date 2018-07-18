@@ -13,6 +13,19 @@
 {%- endmacro -%}
 
 
+{%- macro youtube_embed(video_id, aspect="16by9") -%}
+{# Embed a youtube video on the page given the video ID.
+   The ID are the chars after v= in the link. #}
+<div class="embed-responsive embed-responsive-{{ aspect }}">
+    <iframe
+     width="560" height="315"
+     src="https://www.youtube.com/embed/{{ video_id }}"
+     frameborder="0" allowfullscreen>
+    </iframe>
+</div>
+{%- endmacro -%}
+
+
 {%- macro make_tag(tag, fancy=true, link=true) -%}
 {# Utility for inserting academicons icons #}
     {%- if fancy -%}
@@ -252,7 +265,7 @@
 {%- endmacro -%}
 
 
-{%- macro make_metadata_link(meta, baseurl="https://doi.org") -%}
+{%- macro make_metadata_link(meta, baseurl="https://doi.org/") -%}
 {# Make a link for the metadata tag depending on wether it's a url, HTML link
    (using the "<a>" tag), or something else. If something else, will append
    "meta" to "baseurl" and make a link using "meta" as the link text.
@@ -262,7 +275,7 @@
     {% elif "<a href=" in meta and "</a>" in meta -%}
         {{ meta }}
     {%- else -%}
-        <a href="{{ baseurl }}/{{ meta }}">{{ meta }}</a>
+        <a href="{{ baseurl }}{{ meta }}">{{ meta }}</a>
     {%- endif -%}
 {%- endmacro -%}
 
@@ -363,10 +376,16 @@
                 Poster: {{ make_metadata_link(article.poster) }}
             </li>
         {%- endif -%}
+        {%- if article.youtube is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-youtube-play", "Video on Youtube", fancy) }}
+                YouTube video: {{ make_metadata_link(article.youtube, baseurl="https://www.youtube.com/watch?v=") }}
+            </li>
+        {%- endif -%}
         {%- if article.repository is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-code", "Source code repository", fancy) }}
-                Source code: {{ make_metadata_link(article.repository, baseurl="https://github.com") }}
+                Source code: {{ make_metadata_link(article.repository, baseurl="https://github.com/") }}
             </li>
         {%- endif -%}
         {%- if article.supplement is defined -%}

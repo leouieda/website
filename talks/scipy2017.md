@@ -6,10 +6,13 @@ repository: GenericMappingTools/scipy2017
 slides: <a href="https://github.com/GenericMappingTools/scipy2017/raw/master/slides.pdf">PDF slides</a>
 event: Python in Science Conference
 thumbnail: scipy2017.png
+youtube: 93M4How7R24
 license: CC-BY
 layout: publication
 tags: gmtpython, open-source
 ---
+
+{% from "utils.html" import youtube_embed %}
 
 # About
 
@@ -25,11 +28,7 @@ Scipy records all of the presentations and [makes them available on
 YouTube](https://www.youtube.com/playlist?list=PLYx7XA2nY5GfdAFycPLBdUDOUtdQIVoMf).
 Here is the video of mine:
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/93M4How7R24" frameborder="0"
-allowfullscreen></iframe>
-</div>
+{{ youtube_embed("93M4How7R24") }}
 
 
 # Slides

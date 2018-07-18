@@ -7,9 +7,12 @@ slides: 10.6084/m9.figshare.6814052
 event: Python in Science Conference
 thumbnail: scipy2018.png
 license: CC-BY
+youtube: 6wMtfZXfTRM
 layout: publication
 tags: gmtpython, open-source
 ---
+
+{% from "utils.html" import youtube_embed %}
 
 # About
 
@@ -19,6 +22,15 @@ It showed the progress that we made in the past year, what our struggles and suc
 were, and our plans for the future.
 
 I gave a live demo using the notebook from [try.gmtpython.xyz](http://try.gmtpython.xyz)
+
+
+# Video recording
+
+Scipy records all of the presentations and [makes them available on
+YouTube](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gd-tNhm79CNMe_qvi35PgUR).
+Here is the video of mine:
+
+{{ youtube_embed("6wMtfZXfTRM") }}
 
 
 # Slides
