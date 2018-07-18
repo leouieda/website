@@ -10,7 +10,7 @@ banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela.
 ---
 
 
-{% from "utils.html" import fa, ai, edu_summary %}
+{% from "utils.html" import fa, ai %}
 
 # TL;DR
 
@@ -155,5 +155,21 @@ You can find me and my research, code, articles, and data at:
 # Education
 
 <div>
-{{ edu_summary(this.content) }}
+    {%- for edu in this.content -%}
+        <h3><a href="{{ edu.url }}">{{ edu.title }}  »</a></h3>
+        <ul class="fa-ul">
+            <li><i class="fa-li fa fa-calendar fa-fw"></i>
+                {{ edu.start_date.year}}-{{ edu.date.year }}
+            </li>
+            <li><i class="fa-li fa fa-university fa-fw"></i>
+                {{ edu.institution }}
+            </li>
+            <li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
+                Advisor: {{ edu.advisor }}
+            </li>
+            <li><i class="fa-li fa fa-book fa-fw"></i>
+                Thesis: {{ edu.thesis }}
+            </li>
+        </ul>
+    {%- endfor -%}
 </div>
