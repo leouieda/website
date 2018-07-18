@@ -352,3 +352,9 @@ img {
 .info {
     font-size: 0.9em;
 }
+
+@media (min-width: 1200px) {
+    .content {
+        width: 900px;
+    }
+}

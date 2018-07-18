@@ -422,6 +422,16 @@
 {%- endmacro -%}
 
 
+{%- macro related_pages(article, site) -%}
+{# Create an index section with pages that share a tag with this one #}
+    {% set pages = article|related(site)|sort(attribute='date', reverse=true) %}
+    {% if pages %}
+        <h2>Related pages</h2>
+        {{ make_index(pages, site, date=true, year_only=true, ncards=4, hr=false) }}
+    {% endif %}
+{%- endmacro -%}
+
+
 {%- macro altmetric_badge(doi, title) -%}
 {# Insert the altmetric badge if "doi" is a valid doi. #}
     {%- if "doi.org/" in make_metadata_link(doi) -%}
@@ -432,26 +442,38 @@
 {%- endmacro -%}
 
 
-{%- macro show_alm(article) -%}
-{# Create the article level metrics side bar #}
+{%- macro article_level_metrics(article) -%}
+{# Create the article level metrics section #}
     {%- if article.alm is defined and article.alm -%}
-        <h2>Metrics</h2>
+        <h2>Article Level Metrics</h2>
+
+        <div class="row">
 
         {%- if article.doi is defined -%}
+            <div class="col-sm-3">
             {{ altmetric_badge(article.doi, "Main article") }}
+            </div>
         {%- endif -%}
 
         {%- if article.supplement is defined -%}
+            <div class="col-sm-3">
             {{ altmetric_badge(article.supplement, "Data/Supplement") }}
+            </div>
         {%- endif -%}
 
         {%- if article.poster is defined -%}
+            <div class="col-sm-3">
             {{ altmetric_badge(article.poster, "Poster") }}
+            </div>
         {%- endif -%}
 
         {%- if article.slides is defined -%}
+            <div class="col-sm-3">
             {{ altmetric_badge(article.slides, "Slides") }}
+            </div>
         {%- endif -%}
+
+        </div>
     {%- endif -%}
 {%- endmacro -%}
 
@@ -471,9 +493,8 @@
 
 
 {%- macro feedback(post, site, fancy=true) -%}
-{# Make the feedback request boxes and Disqus comments section #}
+{# Make the feedback request boxes #}
     <hr>
-
     {%- if fancy -%}
     <div class="panel panel-default feedback">
         <div class="panel-body">
@@ -510,8 +531,12 @@
     {%- else -%}
         </p>
     {%- endif -%}
+{%- endmacro -%}
 
-    <!-- The Disqus comments code -->
+
+{%- macro disqus(post, site) -%}
+{# Embed the Disqus comments in the page #}
+    <!-- Disqus -->
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function () {
@@ -526,5 +551,4 @@
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 {%- endmacro -%}

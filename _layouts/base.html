@@ -56,6 +56,34 @@
 
     {% include 'nav.html' %}
 
+    {% block banner %}
+        {% if this.banner is defined %}
+            {% if this.banner_position is defined %}
+                {% set position = this.banner_position %}
+            {% else %}
+                {% set position = "center" %}
+            {% endif %}
+            {% if this.banner_description is defined %}
+                {% set title = this.banner_description %}
+            {% else %}
+                {% set title = "" %}
+            {% endif %}
+            <div class="banner"
+                 title="{{ title }}"
+                 style="background-image: url(/{{ site.banner_path }}/{{ this.banner }}); background-position: {{position}};">
+                {% if this.description is defined %}
+                    <div class="banner-text" title="{{ title }}">
+                        {{ this.description }}
+                    </div>
+                {% else %}
+                    <h1 class="banner-title" title="{{ title }}">
+                        {{ this.title }}
+                    </h1>
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endblock %}
+
     {% block body %}
     {% endblock %}
 
