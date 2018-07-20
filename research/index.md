@@ -125,9 +125,13 @@ Fatiando was featured in the
 [89th Boletim SBGf (PDF in Portuguese)](/pdf/boletim-sbgf-fatiando-89-2014.pdf).
 
 Recently, I started work to [convert Fatiando into several independent
-packages][/blog/future-of-fatiando]. The first one to come out is
-[Verde](https://www.fatiando.org/verde/dev/), a library for gridding and
-spatial data processing.
+packages][/blog/future-of-fatiando]:
+
+* [Verde](https://www.fatiando.org/verde/): The first one I started working on. A
+  library for gridding and spatial data processing.
+* [Pooch](https://www.fatiando.org/pooch/): A small Python library that manages the
+  download and caching of sample data sets. It will be used in support of the other
+  packages.
 
 ## GMT/Python ([www.gmtpython.xyz](https://www.gmtpython.xyz))
 
@@ -140,6 +144,6 @@ website. GMT/Python was used to generate the bathymetry and topography banner
 images for this website.
 
 <div>
-    {{ make_tags(["open-source"], icon=true) }}
+    {{ make_tags(["open-source", "fatiando", "gmtpython"], icon=true) }}
     {{ make_index(site.reflinks["/tag/open-source"].content[:4], site, hr=false, date=false) }}
 </div>
