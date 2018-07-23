@@ -4,15 +4,17 @@
 {% block body %}
 
     <div class="container">
-        {% if not this.banner is defined %}
-            <h1>{{ this.title }}</h1>
-        {% endif %}
-        {% if this.body is defined %}
-            {{ this.body }}
-        {% endif %}
+        {% block content %}
+            {% if not this.banner is defined %}
+                <h1>{{ this.title }}</h1>
+            {% endif %}
+            {% if this.body is defined %}
+                {{ this.body }}
+            {% endif %}
 
-        {% block index %}
-            {{ make_index(this.content, site, date=false, show_oa=true) }}
+            {% block index %}
+                {{ make_index(this.content, site, date=false, show_oa=true) }}
+            {% endblock %}
         {% endblock %}
     </div>
 
