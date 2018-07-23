@@ -9,6 +9,7 @@ thumbnail: scipy2018.png
 license: CC-BY
 youtube: 6wMtfZXfTRM
 layout: publication
+alm: true
 tags: gmtpython, open-source
 ---
 

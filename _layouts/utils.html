@@ -51,7 +51,7 @@
     <div class="tag-list">
         <ul>
         {%- if icon -%}
-            <li>{{ fa('tags', 'fa-fw') }}</li>
+            <li>{{ fa('tags', 'fa-fw', 'Tags') }}</li>
         {%- endif -%}
         {%- for tag in tags -%}
             <li>{{ make_tag(tag, fancy=fancy, link=link) }}</li>

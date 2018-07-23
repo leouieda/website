@@ -96,6 +96,7 @@ i.ai {
 
 .breadcrumb {
     font-size: 0.9em;
+    margin-bottom: 80px;
 }
 
 .menu {
@@ -351,6 +352,11 @@ img {
 
 .info {
     font-size: 0.9em;
+}
+
+.research-index {
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 @media (min-width: 1200px) {
