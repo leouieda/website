@@ -526,3 +526,27 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {%- endmacro -%}
+
+
+{%- macro menu(class, site) -%}
+{# Layout the menu using the specified class #}
+    <div class="container-fluid menu {{ class }} text-center">
+        <div class="col-lg-3 menu-brand">
+            <a href="/">{{ site.brand }}</a>
+        </div>
+        <div class="col-lg-6 menu-list">
+            <ul>
+                {% for url, title in site.menulinks %}
+                    <li><a href="{{ url }}">{{ title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-lg-3 menu-list">
+            <ul>
+                {% for url, title in site.menuicons %}
+                    <li><a href="{{ url }}">{{ title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{%- endmacro -%}
