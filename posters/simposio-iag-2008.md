@@ -9,7 +9,7 @@ event: XIII Simpósio de Iniciação Científica do IAG-USP
 thumbnail: simposio-iag-2008.png
 alm: true
 layout: publication
-tags: tesseroids, gravity
+tags: tesseroids, gravity, forward-modeling
 ---
 
 # About

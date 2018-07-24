@@ -6,7 +6,7 @@ banner: pacific-bathymetry.jpg
 banner_description: "Bathymetry of the Pacific Ocean around the Hawaiian islands."
 ---
 
-{% from "utils.html" import make_index, make_tags %}
+{% from "utils.html" import make_index, make_tags, make_tag, fa %}
 
 
 My main topic of research is the development of methods to solve
@@ -14,15 +14,18 @@ My main topic of research is the development of methods to solve
 For example, estimating
 [density anomalies in the subsurface from measured disturbances in gravity][/papers/paper-planting-anomalous-densities-2012]
 or the [direction of magnetization of a buried structure from the anomalies that it produces in the Earth's magnetic field][/papers/paper-mag-dir-2015].
-Most methods are applied to potential field methods (gravity and magnetics)
+Most methods that I develop are related to gravity and magnetics
 but I'm also interested in [seismology][/papers/nmo-tutorial] and
 [geodesy][/talks/aogs2018].
 Central to all of my projects is the open-source software upon which I
 implement the new methods.
 
-I have an *open by default* policy for my research and teaching output.
+I have an **open by default** policy for my research and teaching output.
 Pretty much everything I do is freely available online, usually on
 [Github](https://github.com/leouieda/).
+
+<div class="research-index">
+</div>
 
 
 # Inverse problems
@@ -34,8 +37,7 @@ non-unique and unstable.
 I develop methods for solving different kinds of inverse problems using
 several sets of constraints to overcome the instability of the solution.
 
-
-<div>
+<div class="research-index">
     {{ make_tags(["inversion", "gravity", "magnetic", "euler-deconvolution"], icon=true) }}
     {{ make_index(site.reflinks["/tag/inversion"].content[:4], site, hr=false, date=false) }}
 </div>
@@ -51,9 +53,9 @@ for forward modeling gravitational fields caused by
 [a tesseroid](https://doi.org/10.6084/m9.figshare.1495521) (a spherical prism).
 I'm still doing work related to this theme.
 
-<div>
-    {{ make_tags(["tesseroids"], icon=true) }}
-    {{ make_index(site.reflinks["/tag/tesseroids"].content[:4], site, hr=false, date=false) }}
+<div class="research-index">
+    {{ make_tags(["forward-modeling", "tesseroids"], icon=true) }}
+    {{ make_index(site.reflinks["/tag/forward-modeling"].content[:4], site, hr=false, date=false) }}
 </div>
 
 
@@ -79,7 +81,7 @@ Given the many similarities, I have been very interested in applying other
 machine learning techniques, like model selection, to these geophysical
 problems.
 
-<div>
+<div class="research-index">
     {{ make_tags(["equivalent-layer"], icon=true) }}
     {{ make_index(site.reflinks["/tag/equivalent-layer"].content[:4], site, hr=false, date=false) }}
 </div>
@@ -97,16 +99,9 @@ and hosted on [Github](https://github.com/leouieda/).
 
 I'm the creator and/or maintainer of the following projects:
 
-## Tesseroids ([www.tesseroids.org](http://www.tesseroids.org))
+<div class="research-index">
+</div>
 
-Command-line programs for gravity forward modeling. This was my first software
-project. I started working on *Tesseroids* in 2008 for my [Bachelor's thesis
-project][/about/bachelors] and continued in collaboration with Professor [Carla
-Braitenberg](https://www2.units.it/braitenberg/) from the [University of
-Trieste](https://dmg.units.it/). The paper "[/papers/paper-tesseroids-2016]"
-describes the algorithms behind [version
-1.2.0](https://doi.org/10.5281/zenodo.16033) of the software, which ended up
-becoming a chapter of my [PhD thesis][/about/phd].
 
 ## Fatiando a Terra ([www.fatiando.org](https://www.fatiando.org))
 
@@ -133,6 +128,23 @@ packages][/blog/future-of-fatiando]:
   download and caching of sample data sets. It will be used in support of the other
   packages.
 
+<div class="research-index">
+</div>
+
+## Tesseroids  ([www.tesseroids.org](http://www.tesseroids.org))
+
+Command-line programs for gravity forward modeling. This was my first software
+project. I started working on *Tesseroids* in 2008 for my [Bachelor's thesis
+project][/about/bachelors] and continued in collaboration with Professor [Carla
+Braitenberg](https://www2.units.it/braitenberg/) from the [University of
+Trieste](https://dmg.units.it/). The paper "[/papers/paper-tesseroids-2016]"
+describes the algorithms behind [version
+1.2.0](https://doi.org/10.5281/zenodo.16033) of the software, which ended up
+becoming a chapter of my [PhD thesis][/about/phd].
+
+<div class="research-index">
+</div>
+
 ## GMT/Python ([www.gmtpython.xyz](https://www.gmtpython.xyz))
 
 A modern Python interface for the [Generic Mapping Tools](http://gmt.soest.hawaii.edu/).
@@ -143,7 +155,7 @@ Work is still in early stages but there is a minimum working example on the
 website. GMT/Python was used to generate the bathymetry and topography banner
 images for this website.
 
-<div>
-    {{ make_tags(["open-source", "fatiando", "gmtpython"], icon=true) }}
+<div class="research-index">
+    {{ make_tags(["open-source", "fatiando", "gmtpython", "tesseroids"], icon=true) }}
     {{ make_index(site.reflinks["/tag/open-source"].content[:4], site, hr=false, date=false) }}
 </div>
