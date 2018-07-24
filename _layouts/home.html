@@ -23,8 +23,10 @@
         {{ this.body }}
 
         {% for category in this.content %}
-            <h2 class="category-header text-center"><a href="{{ category.url }}">{{ category.title }}  »</a></h2>
-            {{ make_index(category.content, site, date=false, hr=false, ncards=4) }}
+            <div class="home-index">
+                <h2 class="category-header text-center"><a href="{{ category.url }}">{{ category.title }}  »</a></h2>
+                {{ make_index(category.content, site, date=false, hr=false, ncards=4) }}
+            </div>
         {% endfor %}
     </div>
 
