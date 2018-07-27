@@ -43,6 +43,14 @@ every other day.
   America, though not as often as Europe and the US.
 * [GSA Job Board](http://www.geosociety.org/GSA/Publications/GSA_Today/Job_Board/GSA/GSAToday/Job_Board.aspx#pos):
   The official job board of the Geological Society of America.
+  
+# Non-English language sites
+
+For the many scientists out there in the world 🌏 👋: 
+
+* [Academics.de](https://www.academics.de/) (German): Contributed by 
+  [Stefanie Donner](https://twitter.com/stefdonner/status/1022926220735008768).
+
 
 **Did I miss any? Let me know and I'll add them to the post (or better yet,
 [send a pull request](https://github.com/leouieda/website/edit/master/blog/job-sites.md)).**
