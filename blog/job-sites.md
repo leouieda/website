@@ -44,12 +44,15 @@ every other day.
 * [GSA Job Board](http://www.geosociety.org/GSA/Publications/GSA_Today/Job_Board/GSA/GSAToday/Job_Board.aspx#pos):
   The official job board of the Geological Society of America.
   
-# Non-English language sites
+# Non-English language jobs
 
 For the many scientists out there in the world 🌏 👋: 
 
 * [Academics.de](https://www.academics.de/) (German): Contributed by 
   [Stefanie Donner](https://twitter.com/stefdonner/status/1022926220735008768).
+* [JREC-IN](https://jrecin.jst.go.jp/seek/SeekJorSearch?fn=1&ln=1&bg1=00003&sm1=00005&bgCode1=00003&smCode1=00005) (Japanese):
+  Academic jobs in Japan, not restricted to Earth Sciences. Contributed by
+  [Hakim Saibi](https://www.linkedin.com/feed/update/urn:li:activity:6428482680828104704).
 
 
 **Did I miss any? Let me know and I'll add them to the post (or better yet,
