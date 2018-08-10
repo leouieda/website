@@ -133,6 +133,8 @@ help you get started and a
 [Code of Conduct](https://github.com/fatiando/pooch/blob/master/CODE_OF_CONDUCT.md)
 to keep you safe.
 
+**Update (2018-08-10):** Pooch now works on Python 2.7 ([PR17](https://github.com/fatiando/pooch/pull/17))
+but we'll only support it until mid 2019. 
 
 ----
 
