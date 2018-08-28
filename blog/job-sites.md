@@ -31,6 +31,8 @@ updated daily):
   Geophysical Union.
 * [Computational Infrastructure for Geodynamics](https://geodynamics.org/cig/about/mailing-lists/):
   Most ads are related to computational geophysics or numerical modeling but not all.
+* [met-jobs](https://www.lists.rdg.ac.uk/archives/met-jobs/)
+  Academic and some industry positions related to meterology and oceanography.
 
 # Job boards
 
