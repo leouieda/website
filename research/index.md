@@ -24,11 +24,18 @@ I have an **open by default** policy for my research and teaching output.
 Pretty much everything I do is freely available online, usually on
 [Github](https://github.com/leouieda/).
 
+# Grants
+
+These are funded research projects in which I participate as PI or co-PI:
+
 <div class="research-index">
+    {{ make_index(site.reflinks["/research"].content[:4], site, hr=false, date=false) }}
 </div>
 
 
-# Inverse problems
+# Research Themes
+
+## Inverse problems
 
 As a geophysicist, my ultimate goal is to infer the physical properties of the
 inner Earth and its processes from surface observations.
@@ -43,7 +50,7 @@ several sets of constraints to overcome the instability of the solution.
 </div>
 
 
-# Forward modeling
+## Forward modeling
 
 A key component for solving an inverse problem is first solve the "forward
 problem".
@@ -59,7 +66,7 @@ I'm still doing work related to this theme.
 </div>
 
 
-# Data processing
+## Data processing
 
 There is no turning back from the machine learning frenzy that has taken over
 the world.

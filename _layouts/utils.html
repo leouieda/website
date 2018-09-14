@@ -277,10 +277,10 @@
                 Open-Access
             </li>
         {%- endif -%}
-        {%- if article.start_date is defined -%}
+        {%- if article.period is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-calendar", "Period", fancy) }}
-                {{ article.start_date.year}}-{{ article.date.year }}
+                {{ article.period }}
             </li>
         {%- endif -%}
         {%- if article.journal is defined -%}
@@ -299,6 +299,30 @@
             <li>
                 {{ pub_info_icon("fa fa-university", "Institution", fancy) }}
                 {{article.institution}}
+            </li>
+        {%- endif -%}
+        {%- if article.agency is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-money", "Funding agency", fancy) }}
+                {{article.agency}}
+            </li>
+        {%- endif -%}
+        {%- if article.role is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-users", "Project role", fancy) }}
+                {{article.role}}
+            </li>
+        {%- endif -%}
+        {%- if article.award is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-hashtag", "Award identifier", fancy) }}
+                Award ID: {{article.award}}
+            </li>
+        {%- endif -%}
+        {%- if article.funds is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-dollar", "Award amount", fancy) }}
+                {{article.funds}}
             </li>
         {%- endif -%}
         {%- if article.thesis is defined -%}
