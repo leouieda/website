@@ -47,7 +47,7 @@ pip install verde
 
 Conda packages will be available soon. We have a
 [conda-forge feedstock](https://github.com/conda-forge/verde-feedstock) ready and are
-just waiting on an issue
+just waiting on issue
 [conda-forge/staged-recipes#6659](https://github.com/conda-forge/staged-recipes/issues/6659).
 
 The code is hosted on Github under the Fatiando a Terra organization:
