@@ -113,6 +113,9 @@
             {%- if page.accepted is defined and page.accepted -%}
                 <span class="label label-primary">ACCEPTED</span>
             {%- endif -%}
+            {%- if page.future is defined and page.future -%}
+                <span class="label label-warning">UPCOMING</span>
+            {%- endif -%}
         </div>
     </div></a>
 {%- endmacro -%}
@@ -230,6 +233,21 @@
         {%- endif -%}
             This course is currently <strong>in progress</strong>
             for the {{article.date.year}} school year.
+        {%- if fancy -%}
+            </div>
+        {%- else -%}
+            </p>
+        {%- endif -%}
+    {%- endif -%}
+
+    {%- if article.future is defined and article.future -%}
+        {%- if fancy -%}
+            <div class="alert alert-info alert-blue">
+            {{ fa("clock-o", "fa-fw", "Future event") }}
+        {%- else -%}
+            <p>
+        {%- endif -%}
+            This event will happen on {{article.date}}.
         {%- if fancy -%}
             </div>
         {%- else -%}
