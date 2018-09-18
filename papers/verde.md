@@ -27,9 +27,10 @@ packages.
 # Open peer-review
 
 This paper is currently undergoing open peer-review at JOSS:
-[openjournals/joss-reviews#944](https://github.com/openjournals/joss-reviews/issues/944)
+[openjournals/joss-reviews#957](https://github.com/openjournals/joss-reviews/issues/957)
 
-A preprint is available [on the JOSS repository](https://github.com/openjournals/joss-papers/blob/joss.00944/joss.00944/10.21105.joss.00944.pdf).
+A preprint is available [on the JOSS repository](https://github.com/openjournals/joss-papers/blob/joss.00957/joss.00957/10.21105.joss.00957.pdf).
+
 
 # Abstract
 
