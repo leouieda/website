@@ -1,15 +1,17 @@
 ---
 title: "Verde: Processing and gridding spatial data using Green's functions"
-date: 2018-09-14
+date: 2018-10-10
 author: uieda
 repository: fatiando/verde
 journal: Journal of Open Research Software
+doi: 10.21105/joss.00957
+citation: "Uieda, L. (2018). Verde: Processing and gridding spatial data using Green's functions. Journal of Open Source Software, 3(29), 957. doi:10.21105/joss.00957"
 alm: true
 thumbnail: verde.png
 layout: publication
 tags: fatiando, open-source, equivalent-layer
 oa: true
-inreview: true
+accepted: true
 ---
 
 # About
@@ -26,7 +28,7 @@ packages.
 
 # Open peer-review
 
-This paper is currently undergoing open peer-review at JOSS:
+This paper was peer-reviewed at JOSS:
 [openjournals/joss-reviews#957](https://github.com/openjournals/joss-reviews/issues/957)
 
 A preprint is available [on the JOSS repository](https://github.com/openjournals/joss-papers/blob/joss.00957/joss.00957/10.21105.joss.00957.pdf).

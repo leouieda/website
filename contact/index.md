@@ -28,7 +28,7 @@ banner_description: "View of the always rainy Manoa Valey from my UH office wind
 
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-map-marker fa-fw"></i>
-    Department of Geology and Geophysics
+    Department of Earth Sciences
     <br>
     School of Ocean and Earth Science and Technology (SOEST)
     <br>

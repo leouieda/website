@@ -212,11 +212,8 @@
         {%- else -%}
             <p>
         {%- endif -%}
-            This article has been <strong>accepted</strong> for publication
-            {%- if article.journal is defined -%}
-                in {{article.journal}}
-            {%- endif -%}
-            but has not yet been published.
+            This article has been <strong>accepted</strong> for publication in
+            <em>{{article.journal}}</em> but has not yet been published.
         {%- if fancy -%}
             </div>
         {%- else -%}
