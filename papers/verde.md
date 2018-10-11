@@ -1,17 +1,16 @@
 ---
 title: "Verde: Processing and gridding spatial data using Green's functions"
-date: 2018-10-10
+date: 2018-10-11
 author: uieda
 repository: fatiando/verde
 journal: Journal of Open Research Software
 doi: 10.21105/joss.00957
-citation: "Uieda, L. (2018). Verde: Processing and gridding spatial data using Green's functions. Journal of Open Source Software, 3(29), 957. doi:10.21105/joss.00957"
+citation: "Uieda, L. (2018). Verde: Processing and gridding spatial data using Green's functions. Journal of Open Source Software, 3(30), 957. doi:10.21105/joss.00957"
 alm: true
 thumbnail: verde.png
 layout: publication
 tags: fatiando, open-source, equivalent-layer
 oa: true
-accepted: true
 ---
 
 # About
@@ -25,13 +24,8 @@ packages.
 [GPS interpolation][/talks/aogs2018] and
 [equivalent layer methods][/papers/paper-polynomial-eqlayer-2013] in general.
 
-
-# Open peer-review
-
-This paper was peer-reviewed at JOSS:
-[openjournals/joss-reviews#957](https://github.com/openjournals/joss-reviews/issues/957)
-
-A preprint is available [on the JOSS repository](https://github.com/openjournals/joss-papers/blob/joss.00957/joss.00957/10.21105.joss.00957.pdf).
+The peer-review at JOSS is open and can be found at
+[openjournals/joss-reviews#957](https://github.com/openjournals/joss-reviews/issues/957).
 
 
 # Abstract
