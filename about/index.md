@@ -115,7 +115,7 @@ You can find me and my research, code, articles, and data at:
         Feb 2017 - Present
     </li>
     <li><i class="fa-li fa fa-university fa-fw"></i>
-        Department of Geology and Geophysics -
+        Department of Earth Sciences -
         SOEST -
         <a href="http://www.soest.hawaii.edu/GG/index.html">University of
         Hawaii at Manoa</a>
