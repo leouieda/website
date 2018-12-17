@@ -10,7 +10,23 @@ funds: USD 174,975
 institution: University of Hawaii at Manoa
 layout: publication
 thumbnail: earthscope2018.png
+tags: earthscope2018
 ---
+
+{% from "utils.html" import make_tag %}
+
+# About
+
+This is my first grant as co-PI and it will fund the development of the new
+[GMT](https://github.com/GenericMappingTools/gmt) "modern mode" on which the
+[GMT/Python wrapper is based][/blog/gmt-python-design]. It also includes many other
+improvements to GMT and the development of a new interpolation method for GPS data.
+The latter is where most of my efforts will be directed. The interpolation method will
+rely heavily on the infrastructure developed in [Verde][/papers/verde].
+
+All outputs (posters, papers, talks, etc) related to this grant will be collected under
+the {{ make_tag("earthscope2018") }} tag.
+
 
 # Abstract
 
