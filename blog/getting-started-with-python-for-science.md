@@ -42,13 +42,15 @@ Finally, here are my recommendations (in order):
    They are usually meant for programmers, not scientists. You'll have to wade
    through mountains of string formatting and Fibonacci numbers before you find
    an answer to "How do I load these data?" (and it won't be `numpy.loadtxt`).
-1. Start with the [Software Carpentry
+1. **Ignore** any reference that uses Python 2. All support for Python 2.7
+   will end in 2020 and there is no reason to still be using it. 
+2. **Start** with the [Software Carpentry
    lessons](https://software-carpentry.org/lessons/). Read all of them if you
    can. **Everything there will make your life easier.** If you don't have the
    time, focus on "Programming with Python" and "Version Control with git".
-   The lessons are **not** detailed but instead show you what is out
+   The lessons are not detailed but instead show you what is out
    there and what you should type into Google.
-2. After you wet your appetite, **dive deeper** into more detailed material. I
+3. After you wet your appetite, **dive deeper** into more detailed material. I
    highly recommend the [Scipy Lecture Notes](http://www.scipy-lectures.org/).
    If you like the feeling of paper in your hands and have some money to spare,
    try the books
@@ -57,13 +59,16 @@ Finally, here are my recommendations (in order):
    [Katy Huff](http://katyhuff.github.io/)
    and [Python Data Science Handbook](http://shop.oreilly.com/product/0636920034919.do)
    by [Jake VanderPlas](http://staff.washington.edu/jakevdp/).
+   There is also [Think Python](http://greenteapress.com/wp/think-python-2e/) by
+   the excellent [Allen Downey](http://www.allendowney.com/), which is available
+   for free if you don't have the option to purchace.
    **Beware that I have not read these books** so I cannot vouch for them
    (but I have read good reviews online).
-3. Now that you have the basics down, **use the project documentation pages**
+4. Now that you have the basics down, **use the project documentation pages**
    to find specific instructions for what you want, for example the
    [numpy documentation](http://www.numpy.org/) and the
    [matplotlib gallery](http://matplotlib.org/gallery.html).
-4. If you like games and want to learn useful general Python skills, try the
+5. If you like games and want to learn useful general Python skills, try the
    [Python Challenge](http://www.pythonchallenge.com/).
 
 From now on, learning new things will be a continuous process. I've been
@@ -87,6 +92,9 @@ crisis!
 Let me know!*
 
 *Update (2017-11-13): Added "Before you start" and the Python Challenge.*
+
+*Update (2018-12-17): Added "Think Python" and a warning about Python 2.*
+
 
 ---
 
