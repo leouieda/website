@@ -14,43 +14,43 @@ banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela.
 
 # TL;DR
 
-* Building [GMT/Python](https://www.gmtpython.xyz) as a Visiting Research Scholar at
-  the University of Hawaii at Manoa.
-* Researching gravity and magnetic inverse problems.
-* Working on other open-source software like [Tesseroids](http://www.tesseroids.org)
-  and [Fatiando a Terra](https://www.fatiando.org).
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li>A Brazilian geophysicist, hacker, and open-sourceror living abroad.</li>
+<li>Researching gravity and magnetic inverse problems.</li>
+<li>Building open-source software like
+    <a href="http://www.tesseroids.org">Tesseroids</a>,
+    <a href="https://www.fatiando.org">Fatiando a Terra</a>,
+    and a <a href="https://www.gmtpython.xyz">Python wrapper for GMT</a>.
+</li>
+<li>Hiker, traveler, ukulele player, amateur sourdough bread baker.</li>
+</ul>
+</div>
+<div class="col-md-6">
+<img src="/images/banner/valley-of-fire.jpg"
+     title="Overlooking the Valley of Fire national park in Nevada, USA"
+     style="">
+</div>
+</div>
 
-# Short summary
+# Summary
 
-I am currently Visiting Research Scholar at the
-[University of Hawaii at Manoa](http://www.soest.hawaii.edu/GG/index.html).
-Prior to coming here, I worked for 4 years as Assistant Professor of Geophysics
-at the [Universidade do Estado do Rio de Janeiro (UERJ)](http://www.uerj.br),
-Brazil.
-There, I developed and taught courses in [geophysics][/teaching/geofisica1] and
-[programming and numerical methods][/teaching/matematica-especial].
-I received [my PhD][/about/phd] from the Observatório Nacional, Brazil, for the
-creation of the open-source software [Tesseroids](http://www.tesseroids.org) and
-[Fatiando a Terra](https://www.fatiando.org) and for my
-[work on large-scale gravity inversion][/papers/paper-moho-inversion-tesseroids-2016].
-I am a member of the [PINGA lab](http://www.pinga-lab.org), a research group
-for inverse problems in geophysics.
-My research focuses on inverse problems in potential field
-geophysics with a heavy dose of open-source software development.
-Lately,
-I am developing the
-[Python bindings for the Generic Mapping Tools](https://www.gmtpython.xyz).
-I do my best to bring more openness to the scientific process
-and to train the next generation of scientists in the best practices of
-reproducible computational experiments.
-
+I am a scientist who develops methods for determining the inner structure of the Earth
+from geophysical observations, mainly disturbances in the gravity and magnetic fields.
+As a proponent of open-science, all of the software I develop to
+accomplish my research and teaching is open-source.
+I do my best to bring more openness to the scientific process and to train the next
+generation of scientists in the best practices for reproducible research.
 
 # Curriculum Vitae
 
-I keep a PDF version of my CV in a more traditional format on the
-[leouieda/cv Github repository](https://github.com/leouieda/cv)
-(download the [latest PDF](https://github.com/leouieda/cv/raw/pdf/leonardo_uieda_cv.pdf)).
-The CV is typeset in Latex using a custom open-source template.
+I keep a PDF version of my CV in a more traditional format.
+It is typeset in Latex using a custom open-source template.
+The source is available on the Github repository
+[leouieda/cv](https://github.com/leouieda/cv).
+
+[<i class="fa fa-file-pdf-o"></i> Download Curriculum Vitæ ](https://github.com/leouieda/cv/raw/pdf/leonardo_uieda_cv.pdf)
 
 
 # Around the internet
@@ -121,7 +121,7 @@ You can find me and my research, code, articles, and data at:
         Hawaii at Manoa</a>
     </li>
     <li><i class="fa-li fa fa-info-circle fa-fw"></i>
-        I came to UH on <a href="/blog/hawaii-gmt-postdoc.html">a 2-year
+        I came to UH on <a href="/blog/hawaii-gmt-postdoc.html">a
         postdoc scholarship</a> to build a Python wrapper and high-level API
         for the <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools
         (GMT)</a>.

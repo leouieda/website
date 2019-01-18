@@ -8,7 +8,6 @@ banner_description: "Bathymetry of the Pacific Ocean around the Hawaiian islands
 
 {% from "utils.html" import make_index, make_tags, make_tag, fa %}
 
-
 My main topic of research is the development of methods to solve
 [inverse problems in geophysics](https://en.wikipedia.org/wiki/Inverse_problem).
 For example, estimating
