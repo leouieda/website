@@ -3,7 +3,7 @@ title: "A year in Hawaii hacking on the Generic Mapping Tools"
 date: 2017-03-02
 thumbnail: hawaii-gmt-postdoc.png
 layout: post
-tags: gmtpython, academia
+tags: pygmt, academia
 ---
 
 Back in July of 2016, I applied for a postdoc position to build Python bindings

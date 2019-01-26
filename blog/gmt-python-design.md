@@ -3,7 +3,7 @@ title: "Design ideas and goals for the GMT Python interface"
 date: 2017-03-29
 thumbnail: gmt-python-design.png
 layout: post
-tags: gmtpython
+tags: pygmt
 ---
 
 As you may already know, I'm away on a [postdoct writing a Python interface

@@ -22,7 +22,7 @@ banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela.
 <li>Building open-source software like
     <a href="http://www.tesseroids.org">Tesseroids</a>,
     <a href="https://www.fatiando.org">Fatiando a Terra</a>,
-    and a <a href="https://www.gmtpython.xyz">Python wrapper for GMT</a>.
+    and a <a href="https://www.pygmt.org">Python wrapper for GMT</a>.
 </li>
 <li>Hiker, traveler, ukulele player, amateur sourdough bread baker.</li>
 </ul>
