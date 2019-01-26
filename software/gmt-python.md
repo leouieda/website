@@ -3,7 +3,7 @@ title: "GMT/Python: A Python interface for the Generic Mapping Tools"
 repository: GenericMappingTools/gmt-python
 website: http://www.gmtpython.xyz
 thumbnail: gmt-python.png
-layout: publication
+layout: software
 ---
 
 <div class="alert alert-warning">
