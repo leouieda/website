@@ -3,7 +3,7 @@ title: "Fatiando a Terra: modeling and inversion for geophysics"
 repository: fatiando/fatiando
 website: http://www.fatiando.org
 thumbnail: fatiando.png
-layout: publication
+layout: software
 ---
 
 <div class="alert alert-warning">

@@ -3,7 +3,7 @@ title: "Tesseroids: gravity forward modeling in spherical coordinates"
 repository: leouieda/tesseroids
 website: http://tesseroids.org
 thumbnail: tesseroids.png
-layout: publication
+layout: software
 ---
 
 <div class="alert alert-warning">
