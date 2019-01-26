@@ -10,7 +10,7 @@ youtube: 93M4How7R24
 alm: true
 license: CC-BY
 layout: publication
-tags: gmtpython, open-source
+tags: pygmt, open-source
 ---
 
 {% from "utils.html" import youtube_embed %}

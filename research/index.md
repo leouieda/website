@@ -151,17 +151,18 @@ becoming a chapter of my [PhD thesis][/about/phd].
 <div class="research-index">
 </div>
 
-## GMT/Python ([www.gmtpython.xyz](https://www.gmtpython.xyz))
+## PyGMT ([www.pygmt.org](https://www.pygmt.org))
 
 A modern Python interface for the [Generic Mapping Tools](http://gmt.soest.hawaii.edu/).
-I started building GMT/Python in 2017 as part of my
+I started building PyGMT (formerly GMT/Python) in 2017 as part of my
 [postdoc at the University of Hawaii][/blog/hawaii-gmt-postdoc] with
-Professor [Paul Wessel](http://www.soest.hawaii.edu/wessel).
+[Paul Wessel](http://www.soest.hawaii.edu/wessel) (the co-creator and main developer of
+GMT).
 Work is still in early stages but there is a minimum working example on the
-website. GMT/Python was used to generate the bathymetry and topography banner
+website. PyGMT was used to generate the bathymetry and topography banner
 images for this website.
 
 <div class="research-index">
-    {{ make_tags(["open-source", "fatiando", "gmtpython", "tesseroids"], icon=true) }}
+    {{ make_tags(["open-source", "fatiando", "pygmt", "tesseroids"], icon=true) }}
     {{ make_index(site.reflinks["/tag/open-source"].content[:4], site, hr=false, date=false) }}
 </div>
