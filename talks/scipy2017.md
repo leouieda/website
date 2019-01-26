@@ -3,10 +3,11 @@ title: Bringing the Generic Mapping Tools to Python
 author: uieda, pwessel
 date: 2017-07-13
 repository: GenericMappingTools/scipy2017
-slides: <a href="https://github.com/GenericMappingTools/scipy2017/raw/master/slides.pdf">PDF slides</a>
+slides: 10.6084/m9.figshare.7635833
 event: Python in Science Conference
 thumbnail: scipy2017.png
 youtube: 93M4How7R24
+alm: true
 license: CC-BY
 layout: publication
 tags: gmtpython, open-source
