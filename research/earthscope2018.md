@@ -7,7 +7,7 @@ role: Co-Principal Investigator
 award: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1829371">1829371</a>
 agency: National Science Foundation
 funds: USD 174,975
-institution: University of Hawaii at Manoa
+institution: University of Hawai'i at Mānoa
 layout: publication
 thumbnail: earthscope2018.png
 tags: earthscope2018
