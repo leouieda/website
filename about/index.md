@@ -70,8 +70,8 @@ You can find me and my research, code, articles, and data at:
 </li>
 
 <li><i class="fa-li ai ai-orcid fa-fw"></i>
-<a href="http://orcid.org/0000-0001-6123-9515">ORCID (0000-0001-6123-9515)</a>:
-<em>groups my scientific output that have DOIs</em>
+<a href="http://orcid.org/0000-0001-6123-9515">ORCID</a> ( 0000-0001-6123-9515 ):
+<em>aggregates all of my scientific output that have DOIs</em>
 </li>
 
 <li><i class="fa-li ai ai-impactstory fa-fw"></i>
@@ -119,7 +119,7 @@ You can find me and my research, code, articles, and data at:
         Department of Earth Sciences -
         SOEST -
         <a href="http://www.soest.hawaii.edu/GG/index.html">University of
-        Hawaii at Manoa</a>
+        Hawai'i at Mānoa</a>
     </li>
     <li><i class="fa-li fa fa-info-circle fa-fw"></i>
         I came to UH on <a href="/blog/hawaii-gmt-postdoc.html">a

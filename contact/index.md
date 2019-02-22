@@ -24,7 +24,7 @@ banner_description: "View of the always rainy Manoa Valey from my UH office wind
 </ul>
 
 
-<h2>At the University of Hawaii at Manoa</h2>
+<h2>At the University of Hawai'i at Mānoa</h2>
 
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-map-marker fa-fw"></i>
@@ -32,7 +32,7 @@ banner_description: "View of the always rainy Manoa Valey from my UH office wind
     <br>
     School of Ocean and Earth Science and Technology (SOEST)
     <br>
-    University of Hawaii at Manoa
+    University of Hawai'i at Mānoa
     <br>
     POST Building Suite 821
     <br>
