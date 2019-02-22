@@ -17,14 +17,14 @@ banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela.
 <div class="row">
 <div class="col-md-6">
 <ul>
-<li>A Brazilian geophysicist, hacker, and open-sourceror living abroad.</li>
+<li>Brazilian geophysicist and open-sourceror living abroad.</li>
 <li>Researching gravity and magnetic inverse problems.</li>
 <li>Building open-source software like
     <a href="http://www.tesseroids.org">Tesseroids</a>,
     <a href="https://www.fatiando.org">Fatiando a Terra</a>,
     and a <a href="https://www.pygmt.org">Python wrapper for GMT</a>.
 </li>
-<li>Hiker, traveler, ukulele player, amateur sourdough bread baker.</li>
+<li>Hiker, traveler, ukulele player, sourdough bread baker.</li>
 </ul>
 </div>
 <div class="col-md-6">
@@ -36,12 +36,13 @@ banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela.
 
 # Summary
 
-I am a scientist who develops methods for determining the inner structure of the Earth
-from geophysical observations, mainly disturbances in the gravity and magnetic fields.
-As a proponent of open-science, all of the software I develop to
-accomplish my research and teaching is open-source.
-I do my best to bring more openness to the scientific process and to train the next
-generation of scientists in the best practices for reproducible research.
+Geophysicist researching methods for determining the inner structure of the Earth from
+geophysical observations, mainly disturbances in the Earth's gravity and magnetic
+fields.
+Developer of open-source software for processing, modeling, and visualizing geophysical
+data.
+Advocate for openness in the scientific process and the adoption of best practices in
+computational research.
 
 # Curriculum Vitae
 
