@@ -33,6 +33,9 @@ updated daily):
   Most ads are related to computational geophysics or numerical modeling but not all.
 * [met-jobs](https://www.lists.rdg.ac.uk/archives/met-jobs/)
   Academic and some industry positions related to meterology and oceanography.
+* [EGU Jobs](https://www.egu.eu/jobs/): The official job board for the European Geosciences Union. 
+  Doesn't seem to have email updates but you can subscribe using [RSS](https://en.wikipedia.org/wiki/RSS).
+  Contributed by Pankaj K Mishra.
 
 # Job boards
 
