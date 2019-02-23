@@ -51,7 +51,7 @@ It is typeset in Latex using a custom open-source template.
 The source is available on the Github repository
 [leouieda/cv](https://github.com/leouieda/cv).
 
-[<i class="fa fa-file-pdf-o"></i> Download Curriculum Vitæ ](https://github.com/leouieda/cv/raw/pdf/leonardo_uieda_cv.pdf)
+<a href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer"><i class="fa fa-file-pdf-o"></i> Download Curriculum Vitæ</a>
 
 
 # Around the internet
