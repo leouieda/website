@@ -34,12 +34,10 @@ banner_description: "View of the always rainy Manoa Valey from my UH office wind
     <br>
     University of Hawai'i at Mānoa
     <br>
-    POST Building Suite 821
-    <br>
     <a href="https://goo.gl/maps/8uHWEC3GHX42">
-    1680 East-West Road
+    1680 East-West Road, POST 821
     <br>
-    Honolulu, HI 96822, USA.
+    Honolulu, HI 96822, USA
     </a>
     </li>
 </ul>
