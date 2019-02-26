@@ -3,7 +3,7 @@ title: "Verde: Processing and gridding spatial data using Green's functions"
 date: 2018-10-11
 author: uieda
 repository: fatiando/verde
-journal: Journal of Open Research Software
+journal: Journal of Open Source Software
 doi: 10.21105/joss.00957
 citation: "Uieda, L. (2018). Verde: Processing and gridding spatial data using Green's functions. Journal of Open Source Software, 3(30), 957. doi:10.21105/joss.00957"
 alm: true
