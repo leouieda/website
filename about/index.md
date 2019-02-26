@@ -80,8 +80,8 @@ You can find me and my research, code, articles, and data at:
 </li>
 
 <li><i class="fa-li ai ai-google-scholar fa-fw"></i>
-<a href="http://scholar.google.com.br/citations?user=qfmPrUEAAAAJ">Google Scholar</a>:
-<em>the best source of citation information</em>
+<a href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ">Google Scholar</a>:
+<em>publication list and citation information</em>
 </li>
 
 <li><i class="fa-li ai ai-figshare fa-fw"></i>
