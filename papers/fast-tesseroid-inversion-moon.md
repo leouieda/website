@@ -5,17 +5,36 @@ layout: publication
 date: 2019-03-30
 journal: "Journal of Geophysical Research: Solid Earth"
 thumbnail: fast-tesseroid-inversion-moon.png
-pdf: fast-tesseroid-inversion-moon.pdf
 doi: 10.1029/2019JB017691
 citation: "Zhao, G., Chen, B., Uieda, L., Liu, J., Kaban, M. K., Chen, L., & Guo, R. (2019). Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons. Journal of Geophysical Research: Solid Earth. doi:10.1029/2019JB017691."
 alm: true
 tags: inversion, forward-modeling, gravity, tesseroids
 ---
 
+<div class="alert alert-success">
+<b>NOTE:</b> A postprint PDF will be made available shortly.
+</div>
 
 # About
 
+This new collaboration that came about in an unexpected way.
+I reviewed an initial version of this
+paper and it ended up being rejected by the journal.
+Originally, the paper focused
+solely on the forward modeling aspects and had no field data application (which was not
+possible without the inversion step).
+After the rejection, the authors reached out to me
+([I sign all of my reviews](https://github.com/leouieda/peer-review))
+and kindly asked if I wanted to help improve the paper further.
+We worked on this for the better part of a year, adding the inversion and lunar mascon
+application. I'm very happy the final result!
 
+The paper introduces a method for accelerating 3D gravity inversion using
+[tesseroids][/papers/paper-tesseroids-2016].
+It's fast due to the clever use of symmetry relations when computing the
+sensitivity/Jacobian matrix. This requires data laid out on a regular grid and a regular
+tesseroid mesh that aligns with the data grid. So there is a sacrifice of flexibility
+for performance. Nonetheless, the results are impressive.
 
 # Abstract
 
