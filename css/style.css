@@ -241,8 +241,13 @@ img {
     padding: 0;
 }
 
-.altmetric-embed img {
-    width: auto; /* Prevent img width=100% in Chrome (makes it stretched) */
+.altmetric-embed img + .__dimensions_badge_embed__ img {
+    width: auto;
+    height: 100%;
+}
+
+.altmetric-badge-group {
+    padding: 20px 15px;
 }
 
 .embed-responsive {
