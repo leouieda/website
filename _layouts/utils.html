@@ -413,6 +413,12 @@
                 PDF: <a href="/pdf/{{article.pdf}}">{{article.pdf}}</a>
             </li>
         {%- endif -%}
+        {%- if article.preprint is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-file-pdf-o", "Preprint PDF", fancy) }}
+                PDF (preprint): {{ make_metadata_link(article.preprint) }}
+            </li>
+        {%- endif -%}
         {%- if article.doi is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-external-link", "DOI link to publisher", fancy) }}
@@ -445,48 +451,78 @@
 {%- endmacro -%}
 
 
-{%- macro altmetric_badge(doi, title) -%}
+{%- macro altmetric_badge(doi) -%}
 {# Insert the altmetric badge if "doi" is a valid doi. #}
     {%- if "doi.org/" in make_metadata_link(doi) -%}
-        <h3>{{ title }}</h3>
-        <div class="altmetric-embed center-block"
-             data-badge-type="medium-donut" data-doi="{{ doi }}"></div>
+        <div class="altmetric-embed"
+             data-badge-popover="right"
+             data-badge-type="medium-donut"
+             data-doi="{{ doi }}"
+        >
+        </div>
+    {%- endif -%}
+{%- endmacro -%}
+
+
+{%- macro dimensions_badge(doi) -%}
+{# Insert the Dimensions.ai badge if "doi" is a valid doi. #}
+    {%- if "doi.org/" in make_metadata_link(doi) -%}
+    <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
+    <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
     {%- endif -%}
 {%- endmacro -%}
 
 
 {%- macro article_level_metrics(article) -%}
 {# Create the article level metrics section #}
+
     {%- if article.alm is defined and article.alm -%}
-        <h2>Article Level Metrics</h2>
 
-        <div class="row">
-
+        {% set badges = [] %}
         {%- if article.doi is defined -%}
-            <div class="col-sm-3">
-            {{ altmetric_badge(article.doi, "Main article") }}
-            </div>
+            {% set badges = badges + [altmetric_badge(article.doi)] %}
+            {% set badges = badges + [dimensions_badge(article.doi)] %}
         {%- endif -%}
-
+        {%- if article.preprint is defined -%}
+            {% set badges = badges + [altmetric_badge(article.preprint)] %}
+            {% set badges = badges + [dimensions_badge(article.preprint)] %}
+        {%- endif -%}
         {%- if article.supplement is defined -%}
-            <div class="col-sm-3">
-            {{ altmetric_badge(article.supplement, "Data/Supplement") }}
-            </div>
+            {% set badges = badges + [altmetric_badge(article.supplement)] %}
+            {% set badges = badges + [dimensions_badge(article.supplement)] %}
         {%- endif -%}
-
         {%- if article.poster is defined -%}
-            <div class="col-sm-3">
-            {{ altmetric_badge(article.poster, "Poster") }}
-            </div>
+            {% set badges = badges + [altmetric_badge(article.poster)] %}
         {%- endif -%}
-
         {%- if article.slides is defined -%}
-            <div class="col-sm-3">
-            {{ altmetric_badge(article.slides, "Slides") }}
-            </div>
+            {% set badges = badges + [altmetric_badge(article.slides)] %}
         {%- endif -%}
 
-        </div>
+        {%- if badges -%}
+            <h2>Article Level Metrics</h2>
+
+            {% set per_row = 4 %}
+            {% set per_group = 2 %}
+            {% set col_size_group = 12 // (per_row // per_group) %}
+            {% set col_size_badge = 12 // per_group %}
+
+            {%- for row in badges|batch(per_row) -%}
+                <div class="row">
+                {%- for group in row|batch(per_group) -%}
+                    <div class="col-sm-{{ col_size_group }} altmetric-badge-group">
+                        <div class="row">
+                        {%- for badge in group -%}
+                            <div class="col-xs-{{ col_size_badge }}">
+                                {{ badge }}
+                            </div>
+                        {%- endfor -%}
+                        </div>
+                    </div>
+                {%- endfor -%}
+                </div>
+            {%- endfor -%}
+
+        {%- endif -%}
     {%- endif -%}
 {%- endmacro -%}
 
