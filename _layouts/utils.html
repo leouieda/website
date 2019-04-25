@@ -110,6 +110,9 @@
             {%- if page.inreview is defined and page.inreview -%}
                 <span class="label label-warning">IN REVIEW</span>
             {%- endif -%}
+            {%- if page.preprint_server is defined and page.preprint_server -%}
+                <span class="label label-primary">PREPRINT</span>
+            {%- endif -%}
             {%- if page.accepted is defined and page.accepted -%}
                 <span class="label label-primary">ACCEPTED</span>
             {%- endif -%}
@@ -190,6 +193,21 @@
 
 {%- macro pub_alerts(article, fancy=true) -%}
 {# Make the little alert tags based on the page metadata #}
+    {%- if article.preprint_server is defined and article.preprint_server -%}
+        {%- if fancy -%}
+            <div class="alert alert-info alert-blue">
+        {%- else -%}
+            <p>
+        {%- endif -%}
+            This is a preprint which has
+            <strong>not</strong> yet been peer-reviewed.
+        {%- if fancy -%}
+            </div>
+        {%- else -%}
+            </p>
+        {%- endif -%}
+    {%- endif -%}
+
     {%- if article.inreview is defined and article.inreview -%}
         {%- if fancy -%}
             <div class="alert alert-warning">
@@ -296,6 +314,12 @@
             <li>
                 {{ pub_info_icon("fa fa-calendar", "Period", fancy) }}
                 {{ article.period }}
+            </li>
+        {%- endif -%}
+        {%- if article.preprint_server is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-book", "Preprint server", fancy) }}
+                Preprint server: <em>{{article.preprint_server}}</em>
             </li>
         {%- endif -%}
         {%- if article.journal is defined -%}
