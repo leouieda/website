@@ -63,7 +63,7 @@ the publication side bar. See the existing publications for examples.
 The site is automatically built and deployed to
 [leouieda/leouieda.github.com](https://github.com/leouieda/leouieda.github.com)
 every time a commit is pushed to the *master* branch.
-See files `.travis.yml` and `ci/deply-gh-pages.sh`.
+See files `.travis.yml`.
 
 ## License
 

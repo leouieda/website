@@ -1,7 +1,8 @@
-language: generic
-
-sudo: false
-
+# Configuration file for TravisCI
+os: linux
+dist: xenial
+language: python
+python: "3.6"
 notifications:
   email: false
 
@@ -12,29 +13,22 @@ branches:
 
 env:
   global:
-    # Github Token for pushing the built docs
-    - secure: "PPQrLTT8xUaPQPMsCHZvfZRduOd7J/5APtL/ta0Rq6vM1Mnr751sbsly1avFPUMSfJ44RvIlRemtGGu/0O8LWvc2YQ1U5+6e4zqgkXpdY7oDm3H16dmpsvnshl0MBfAQ2nVI/AOpZwtpz9IvrVg522MigtEParcpsEBab2Rhpww="
+    # Doctr deploy key for leouieda/leouieda.github.io
+    - secure: "LiBewAMQZc4rrKrwM2p16Z/MzqNcha4CNVwBx0Oz6xN6BOh47zlWS0EIkfQtW/Pq5T7qFH0eF6jvYgk/91HyFaZm1CcvYOUUR2qa1AoKBbKlMire1D/8JqdZBoRRumvLwBXpE+mCEUrxzk4TtJLKU+tAoPP3oXMj+GRbYPTFKl4="
 
-before_install:
-  # Get Miniconda from Continuum
-  # Need to source the script to set the PATH variable in this environment
-  # (not the scripts environment)
-  - source ci/install-miniconda.sh
-
+# Setup the build environment
 install:
-  # Update conda itself
-  - conda update --yes conda
-  # Create a conda env based on environment.yml
-  - conda env create
-  - source activate urubu
+  # Install the requirements
+  - pip install -r requirements.txt
 
 script:
+  # Build the website HTML
   - make
 
 deploy:
   # Push the built HMTL to Github pages
   - provider: script
-    script: ci/deploy-gh-pages.sh
+    script: doctr deploy . --built-docs _build --key-path .github_deploy_key.enc --deploy-repo leouieda/leouieda.github.io
     skip_cleanup: true
     on:
       branch: master

@@ -16,9 +16,15 @@ keywords: 'science, geoscience, geophysics, software, open-source'
 
 keep_files: [".nojekyll"]
 
-ignore_patterns: ["README.md", "ci-tools", "environment.yml", "miniconda.sh",
-                  "blog/.sample-post.md", "css/academicons/README.md",
-                  "LICENSE.md"]
+ignore_patterns: [
+    "README.md",
+    "LICENSE.md",
+    ".github_deploy_key.enc",
+    "environment.yml",
+    "requirements.txt",
+    "blog/.sample-post.md",
+    "css/academicons/README.md",
+    ]
 
 strict_undefined: true
 
