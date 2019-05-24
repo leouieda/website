@@ -55,23 +55,12 @@ depth contour.*
 
 The inversion method proposed here is implemented in the Python programming
 language.
-The code uses the forward modeling and inversion packages of the library
-(https://www.fatiando.org).
+The code uses the forward modeling and inversion packages of the
+[Fatiando a Terra](https://www.fatiando.org) library (version 0.5).
 
 You'll find the source code, input data, and instructions to produce the
 results from the paper on the Github repository. There should be enough
 information for you to produce all figures of the paper.
-
-
-# Running the code online
-
-You can run the Jupyter notebooks online without installing anything
-thanks to the awesome free [Binder](http://mybinder.org/) web service.
-Follow the link below and open any notebook in the `code` folder. Beware that
-the CRUST1.0 synthetic and the South American Moho results will take hours or
-days to run.
-
-[mybinder.org/repo/pinga-lab/paper-moho-inversion-tesseroids](http://mybinder.org:/repo/pinga-lab/paper-moho-inversion-tesseroids)
 
 
 # Abstract
