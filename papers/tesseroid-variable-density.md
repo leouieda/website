@@ -1,14 +1,17 @@
 ---
 title: "Gravitational field calculation in spherical coordinates using variable densities in depth"
-date: 2018-12-29
+date: 2019-06-11
 author: santiago, agustina, mario, uieda
 repository: pinga-lab/tesseroid-variable-density
 journal: Geophysical Journal International
 thumbnail: tesseroid-variable-density.png
 layout: publication
 tags: gravity, tesseroids, forward-modeling
-alm: false
-inreview: true
+alm: true
+doi: 10.1093/gji/ggz277
+preprint: 10.31223/osf.io/3548g
+supplement: 10.6084/m9.figshare.8239622
+citation: "Soler, S. R., Pesce, A., Gimenez, M. E., & Uieda, L., 2019. Gravitational field calculation in spherical coordinates using variable densities in depth, Geophysical Journal International, doi:10.1093/gji/ggz277"
 ---
 
 # About
