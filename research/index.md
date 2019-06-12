@@ -103,6 +103,11 @@ All of my software contributions are
 [open-source](https://en.wikipedia.org/wiki/Open-source_software)
 and hosted on [Github](https://github.com/leouieda/).
 
+<div class="research-index">
+    {{ make_tags(["open-source"], icon=true) }}
+    {{ make_index(site.reflinks["/tag/open-source"].content[:4], site, hr=false, date=false) }}
+</div>
+
 I'm the creator and/or maintainer of the following projects:
 
 <div class="research-index">
@@ -135,6 +140,8 @@ packages][/blog/future-of-fatiando]:
   packages.
 
 <div class="research-index">
+    {{ make_tags(["fatiando"], icon=true) }}
+    {{ make_index(site.reflinks["/tag/fatiando"].content[:4], site, hr=false, date=false) }}
 </div>
 
 ## Tesseroids  ([www.tesseroids.org](http://www.tesseroids.org))
@@ -149,6 +156,8 @@ describes the algorithms behind [version
 becoming a chapter of my [PhD thesis][/about/phd].
 
 <div class="research-index">
+    {{ make_tags(["tesseroids"], icon=true) }}
+    {{ make_index(site.reflinks["/tag/tesseroids"].content[:4], site, hr=false, date=false) }}
 </div>
 
 ## PyGMT ([www.pygmt.org](https://www.pygmt.org))
@@ -163,6 +172,6 @@ website. PyGMT was used to generate the bathymetry and topography banner
 images for this website.
 
 <div class="research-index">
-    {{ make_tags(["open-source", "fatiando", "pygmt", "tesseroids"], icon=true) }}
-    {{ make_index(site.reflinks["/tag/open-source"].content[:4], site, hr=false, date=false) }}
+    {{ make_tags(["pygmt"], icon=true) }}
+    {{ make_index(site.reflinks["/tag/pygmt"].content[:4], site, hr=false, date=false) }}
 </div>
