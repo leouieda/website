@@ -130,7 +130,7 @@ it in some way.
 Fatiando was featured in the
 [89th Boletim SBGf (PDF in Portuguese)](/pdf/boletim-sbgf-fatiando-89-2014.pdf).
 
-Recently, I started work to [convert Fatiando into several independent
+In 2018, I started work to [convert Fatiando into several independent
 packages][/blog/future-of-fatiando]:
 
 * [Verde](https://www.fatiando.org/verde/): The first one I started working on. A
@@ -138,6 +138,10 @@ packages][/blog/future-of-fatiando]:
 * [Pooch](https://www.fatiando.org/pooch/): A small Python library that manages the
   download and caching of sample data sets. It will be used in support of the other
   packages.
+* [RockHound](https://www.fatiando.org/rockhound/): Download common geophysical models
+  and datasets (think PREM, CRUST1.0, ETOPO1) and load them into Python data structures.
+* [Harmonica](https://www.fatiando.org/harmonica/dev/): Library for processing and
+  modeling gravity and magnetic data.
 
 <div class="research-index">
     {{ make_tags(["fatiando"], icon=true) }}
