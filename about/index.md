@@ -17,7 +17,7 @@ banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela.
 <div class="row">
 <div class="col-md-6">
 <ul>
-<li>Brazilian geophysicist and open-sourceror living abroad.</li>
+<li>Brazilian geophysicist and open-sourceror living in the UK.</li>
 <li>Researching gravity and magnetic inverse problems.</li>
 <li>Building open-source software like
     <a href="http://www.tesseroids.org">Tesseroids</a>,
@@ -109,23 +109,43 @@ You can find me and my research, code, articles, and data at:
 
 # Experience
 
+## Lecturer
+
+<ul class="fa-ul">
+    <li><i class="fa-li fa fa-calendar fa-fw"></i>
+        Aug 2019 - present
+    </li>
+    <li><i class="fa-li fa fa-university fa-fw"></i>
+        Department of Earth, Ocean and Ecological Sciences
+        <br>
+        School of Environmental Sciences
+        <br>
+        <a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/">University of Liverpool</a>, UK
+    </li>
+    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
+        More information soon.
+    </li>
+</ul>
+
 ## Visiting Research Scientist
 
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-calendar fa-fw"></i>
-        Feb 2017 - Present
+        Feb 2017 - Aug 2019
     </li>
     <li><i class="fa-li fa fa-university fa-fw"></i>
-        Department of Earth Sciences -
-        SOEST -
-        <a href="http://www.soest.hawaii.edu/GG/index.html">University of
-        Hawai'i at Mānoa</a>
+        Department of Earth Sciences
+        <br>
+        School of Ocean and Earth Science and Technology
+        <br>
+        <a href="http://www.soest.hawaii.edu/GG/index.html">University of Hawai'i at Mānoa</a>, USA
     </li>
     <li><i class="fa-li fa fa-info-circle fa-fw"></i>
         I came to UH on <a href="/blog/hawaii-gmt-postdoc.html">a
         postdoc scholarship</a> to build a Python wrapper and high-level API
         for the <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools
-        (GMT)</a>.
+        (GMT)</a>. I ended up getting involved in modernizing the development process of
+        GMT and helping plan for its long term sustainability.
     </li>
 </ul>
 
@@ -136,9 +156,11 @@ You can find me and my research, code, articles, and data at:
         Feb 2014 - Feb 2018
     </li>
     <li><i class="fa-li fa fa-university fa-fw"></i>
-        Departamento de Geologia Aplicada -
-        Faculdade de Geologia -
-        <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro (UERJ)</a>
+        Departamento de Geologia Aplicada
+        <br>
+        Faculdade de Geologia
+        <br>
+        <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro (UERJ)</a>, Brazil
     </li>
     <li><i class="fa-li fa fa-info-circle fa-fw"></i>
         At UERJ, I developed and taught the
