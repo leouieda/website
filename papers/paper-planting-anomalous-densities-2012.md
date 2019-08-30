@@ -37,7 +37,6 @@ The video is available at [figshare](http://figshare.com/):
 width="568" height="426" frameborder="0"></iframe>
 </div>
 
-
 # Abstract
 
 We have developed a new gravity gradient inversion method for estimating a 3D
@@ -64,6 +63,13 @@ sources are present. Inverting the data from an airborne gravity gradiometry
 survey flown over the iron ore province of Quadrilátero Ferrífero, southeastern
 Brazil, we estimated a compact iron ore body that is in agreement with geologic
 information and previous interpretations.
+
+![3D visualization of estimate ore-body from the planting inversion of gravity gradient data.](/images/quadrilatero-ferrifero-density-model.jpg)
+*Inversion results for data from the Quadrilátero Ferrífero, southeastern Brazil.
+Perspective views of the estimated density-contrast distribution, where prisms with zero
+density contrast are not shown or shown in gray and prisms with density contrast 1
+g/cm³, corresponding to the iron ore body of the Cauê itabirite, are shown in solid or
+transparent red. The seeds used in the inversion are shown as black prisms.*
 
 # Bibtex
 
