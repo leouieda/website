@@ -241,9 +241,8 @@ img {
     padding: 0;
 }
 
-.altmetric-embed img + .__dimensions_badge_embed__ img {
+.altmetric-embed img {
     width: auto;
-    height: 100%;
 }
 
 .altmetric-badge-group {
