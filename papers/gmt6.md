@@ -1,15 +1,16 @@
 ---
 title: "The Generic Mapping Tools Version 6"
-date: 2019-09-21
+date: 2019-11-01
 author: pwessel, joaquim, uieda, remko, wobbe, walter, dongdong
 journal: Geochemistry, Geophysics, Geosystems
 thumbnail: gmt6.png
 layout: publication
 tags: gmt, open-source, earthscope2018
 alm: true
+oa: true
 supplement: 10.6084/m9.figshare.8171339
-citation: ""
-inreview: true
+doi: 10.1029/2019GC008515
+citation: "Wessel, P., Luis, J. F., Uieda, L., Scharroo, R., Wobbe, F., Smith, W. H. F., & Tian, D. ( 2019). The Generic Mapping Tools version 6. Geochemistry, Geophysics, Geosystems, 20. doi:10.1029/2019GC008515"
 ---
 
 # About
