@@ -140,7 +140,7 @@ i.ai {
 }
 
 .menu-list {
-    padding: 0px;
+    padding: 15px 0;
     font-size: 0.9em;
 }
 
@@ -270,26 +270,21 @@ img {
     display: table;
     vertical-align: middle;
     text-align: center;
-    font-size: 2em;
-    line-height: 1.7em;
     color: #ffffff;
     text-shadow: 2px 2px 7px #444444;
 }
 
-.banner-title {
-    margin: 0;
-    padding: 120px 10% 170px 10%;
-    height: 350px;
-    width: 100%;
-    /*display: table-cell;*/
-    display: table;
-    vertical-align: middle;
-    text-align: center;
+.banner-text h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 4em;
-    font-weight: normal;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.8em;
     line-height: 1.7em;
-    color: #ffffff;
-    text-shadow: 2px 2px 5px #222222;
+    margin: 30px 0 0 0;
 }
 
 .summary-box {

@@ -12,37 +12,14 @@ banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela.
 
 {% from "utils.html" import fa, ai %}
 
-# TL;DR
-
-<div class="row">
-<div class="col-md-6">
-<ul>
-<li>Brazilian geophysicist and open-sourceror living in the UK.</li>
-<li>Researching gravity and magnetic inverse problems.</li>
-<li>Building open-source software like
-    <a href="http://www.tesseroids.org">Tesseroids</a>,
-    <a href="https://www.fatiando.org">Fatiando a Terra</a>,
-    and a <a href="https://www.pygmt.org">Python wrapper for GMT</a>.
-</li>
-<li>Hiker, traveler, ukulele player, sourdough bread baker.</li>
-</ul>
-</div>
-<div class="col-md-6">
-<img src="/images/banner/valley-of-fire.jpg"
-     title="Overlooking the Valley of Fire national park in Nevada, USA"
-     style="">
-</div>
-</div>
-
 # Summary
 
-Geophysicist researching methods for determining the inner structure of the Earth from
-geophysical observations, mainly disturbances in the Earth's gravity and magnetic
-fields.
-Developer of open-source software for processing, modeling, and visualizing geophysical
-data.
-Advocate for openness in the scientific process and the adoption of best practices in
-computational research.
+Geophysicist researching methods for determining the inner structure of the
+Earth from geophysical observations, mainly disturbances in the Earth's gravity
+and magnetic fields. Developer of open-source software for processing,
+modeling, and visualizing geophysical data. Advocate for openness in the
+scientific process and the adoption of best practices in computational
+research.
 
 # Curriculum Vitae
 
