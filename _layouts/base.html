@@ -70,19 +70,18 @@
             {% endif %}
             <div class="banner"
                  title="{{ title }}"
-                 style="background-image: linear-gradient(to top, transparent, #00000099), url(/{{ site.banner_path }}/{{ this.banner }}); background-position: {{position}};">
+                 style="background-image: linear-gradient(to top, #00000022, #000000dd), url(/{{ site.banner_path }}/{{ this.banner }}); background-position: {{position}};">
 
                 {{ menu("menu-transparent", site) }}
 
-                {% if this.description is defined %}
-                    <div class="banner-text" title="{{ title }}">
-                        {{ this.description }}
-                    </div>
-                {% else %}
-                    <h1 class="banner-title" title="{{ title }}">
+                <div class="banner-text" title="{{ title }}">
+                    <h1>
                         {{ this.title }}
                     </h1>
-                {% endif %}
+                    {% if this.description is defined %}
+                        <p>{{ this.description }}</p>
+                    {% endif %}
+                </div>
             </div>
         {% else %}
             {{ menu("menu-opaque", site) }}
