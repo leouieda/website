@@ -17,11 +17,8 @@ Liverpool.
 [**Bringing machine learning techniques to geophysical data processing**](https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/phd-studentships/bringingmachinelearningtechniquestogeophysicaldataprocessing.html)
 
 The goal of this project is to investigate the use of existing machine learning
-techniques to process geophysical data using equivalent layers, mainly: (1)
-parameter tuning methods for automatic configuration; (2) feature selection to
-improve stability and predictive power; (3) cross-validation for quantitative
-evaluation of performance; (4) parallel and GPU (graphics processing unit)
-computing to tackle the large computational load. The methods and software
+techniques to process gravity and magnetics data using the [Equivalent Layer
+Method][/papers/paper-polynomial-eqlayer-2013]. The methods and software
 developed during this project can be applied to process large amounts of
 gravity and magnetics data, including airborne and satellite surveys, and
 produce data products that can enable further scientific investigations.
@@ -33,17 +30,17 @@ the Moon and Mars, etc.
 [**Large-scale mapping of the thickness of the crust from satellite gravity and gravity gradient data**](https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/phd-studentships/large-scalemappingofthethicknessofthecrustfromsatellitegravityandgra.html)
 
 The goal of this project is to develop improved inversion methods to determine
-crustal thickness from gravity and gravity gradient data, in particular Uieda
-and Barbosa (2017). Main objectives include: (1) accounting for density
-variation in the oceanic lithosphere due to temperature; (2) incorporate
-seismological estimates of crustal thickness in the inversion process; (3)
-estimate the density contrast across the crust-mantle interface in different
-domains; (4) joint inversion of gravity and gravity gradient data; (5) develop
-techniques to reduce the computational load of the inversion; (6) quantify
-uncertainty due to errors in regional crustal and sedimentary basin models. The
-inversion methods developed in this project can be applied to produce improved
-crustal thickness estimates for South America, Africa, Antarctica, the Moon,
-Mars, etc.
+crustal thickness from gravity and gravity gradient data, in particular
+[Uieda and Barbosa (2017)][/papers/paper-moho-inversion-tesseroids-2016].
+Main objectives are: (1) account for density variation in the oceanic
+lithosphere due to temperature; (2) incorporate seismological estimates of
+crustal thickness in the inversion process; (3) estimate the density contrast
+across the crust-mantle interface in different domains; (4) joint inversion of
+gravity and gravity gradient data; (5) develop techniques to reduce the
+computational load of the inversion; (6) quantify uncertainty due to errors in
+regional crustal and sedimentary basin models. The inversion methods developed
+in this project can be applied to produce improved crustal thickness estimates
+for South America, Africa, Antarctica, the Moon, Mars, etc.
 
 # The details
 
