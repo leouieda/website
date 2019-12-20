@@ -19,26 +19,35 @@ banner_description: "A glacier at Torres del Paine National Park, Chile."
     <a href="/about">A bit about me »</a>
 </h2>
 <div class="row">
-<div class="col-md-7">
+<div class="col-md-8">
 <ul>
 <li>Brazilian geophysicist and open-sourceror living in the UK.</li>
-<li>Researching gravity and magnetic inverse problems.</li>
-<li>Heading the
+<li>Starting the
     <a href="https://www.compgeolab.org">Computer-Oriented Geoscience Lab</a>
     at the University of Liverpool.
 </li>
+<li>Researching gravity and magnetic inverse problems.</li>
 <li>Building open-source software like
-    <a href="http://www.tesseroids.org">Tesseroids</a>,
     <a href="https://www.fatiando.org">Fatiando a Terra</a>,
-    and a <a href="https://www.pygmt.org">Python wrapper for GMT</a>.
+    <a href="http://www.tesseroids.org">Tesseroids</a>,
+    and a <a href="https://www.pygmt.org">PyGMT</a>.
 </li>
-<li>Hiker, traveler, ukulele player, sourdough bread baker.</li>
+<li>Hiker, traveler, gamer, ukulele player, sourdough bread baker.</li>
 </ul>
 </div>
-<div class="col-md-5">
-<img src="/images/banner/valley-of-fire.jpg"
-     title="Overlooking the Valley of Fire national park in Nevada, USA"
-     style="">
+<div class="col-md-4">
+<div class="row">
+<div class="col-xs-2 col-md-0">
+</div>
+<div class="col-xs-8 col-md-12">
+<img src="/images/uieda.jpg"
+     title="Photo taken at the Ness Botanical Gardens."
+     class="img-responsive"
+     style="border-radius: 5px">
+</div>
+<div class="col-xs-2 col-md-0">
+</div>
+</div>
 </div>
 </div>
 </div>

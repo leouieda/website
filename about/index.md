@@ -5,21 +5,41 @@ content:
     - phd
     - masters
     - bachelors
-banner: monte-roraima.jpg
-banner_description: "Hiking Monte Roraima in the border of Brazil and Venezuela."
+banner: valley-of-fire.jpg
+banner_position: center left
+banner_description: "Overlooking the Valley of Fire national park in Nevada, USA."
 ---
 
 
 {% from "utils.html" import fa, ai %}
 
+# TL;DR
+
+Geophysicist specializing in the development of methods for determining the
+inner structure of the Earth from geophysical observations, mainly disturbances
+in the Earth's gravity and magnetic fields. Developer of open-source software
+for processing, modeling, and visualizing geophysical data. Advocate for
+openness in the scientific process and the adoption of best practices in
+computational research.
+
 # Summary
 
-Geophysicist researching methods for determining the inner structure of the
-Earth from geophysical observations, mainly disturbances in the Earth's gravity
-and magnetic fields. Developer of open-source software for processing,
-modeling, and visualizing geophysical data. Advocate for openness in the
-scientific process and the adoption of best practices in computational
-research.
+I am currently Lecturer of Geophysics at the University of Liverpool, where I'm
+starting the <a href="https://www.compgeolab.org">Computer-Oriented Geoscience
+Lab</a>. Our research and teaching make heavy use of open-source software. The
+lab develops and maintains the [Fatiando a Terra](https://www.fatiando.org)
+project, a collection of Python libraries for the Geosciences along with some
+general purpose tools.
+
+Before coming to Liverpool, I was a Visiting Researcher at the University of
+Hawai'i, USA, where I worked on the <a
+href="https://www.generic-mapping-tools.org">Generic Mapping Tools</a> (GMT), a
+widely-used software for processing and visualizing geophysical data. My main
+contributions were the development of [PyGMT](https://www.pygmt.org) and
+modernizing the team's development process (moving to GitHub, starting a
+Discourse forum, setting up continuous-integration, etc). Prior to Hawai'i, I
+worked for three years as Assistant Professor of Geophysics at the Universidade
+do Estado do Rio de Janeiro, Brazil.
 
 # Curriculum Vitae
 
@@ -120,7 +140,7 @@ You can find me and my research, code, articles, and data at:
     <li><i class="fa-li fa fa-info-circle fa-fw"></i>
         I came to UH on <a href="/blog/hawaii-gmt-postdoc.html">a
         postdoc scholarship</a> to build a Python wrapper and high-level API
-        for the <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools
+        for the <a href="https://www.generic-mapping-tools.org">Generic Mapping Tools
         (GMT)</a>. I ended up getting involved in modernizing the development process of
         GMT and helping plan for its long term sustainability.
     </li>
