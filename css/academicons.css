@@ -6,11 +6,8 @@
  */
 @font-face {
     font-family: 'Academicons';
-    src:url('../fonts/academicons.eot?v=1.8.6');
-    src:url('../fonts/academicons.eot?v=1.8.6') format('embedded-opentype'),
-        url('../fonts/academicons.ttf?v=1.8.6') format('truetype'),
-        url('../fonts/academicons.woff?v=1.8.6') format('woff'),
-        url('../fonts/academicons.svg?v=1.8.6#academicons') format('svg');
+    src: url('/fonts/academicons/academicons.ttf?v=1.8.6') format('truetype'),
+         url('/fonts/academicons/academicons.woff?v=1.8.6') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -307,7 +304,7 @@
 .ai.fa-pull-right {
   margin-left: .3em;
 }
-/*  
+/*
  *  Repeat of the FontAwesome style classes to prevent override if academicons.css
  *  is called after font-awesome.css.
  */

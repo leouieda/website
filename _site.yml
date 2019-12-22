@@ -23,7 +23,7 @@ ignore_patterns: [
     "environment.yml",
     "requirements.txt",
     "blog/.sample-post.md",
-    "css/academicons/README.md",
+    "fonts/academicons/README.md",
     ]
 
 strict_undefined: true
