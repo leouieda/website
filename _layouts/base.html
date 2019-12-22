@@ -97,11 +97,11 @@
 
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- ================================================== -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <!-- For the altmetric badge in articles -->
-    <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+    {% block javascript_includes %}
+        <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    {% endblock %}
 
 </body>
 </html>
