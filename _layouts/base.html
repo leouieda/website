@@ -22,20 +22,18 @@
 
     <title>{% block title %}{{ site.title|striptags }}{% endblock title %}</title>
     <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
 
     {% if site.rss is defined %}
     <link rel="alternate" type="application/rss+xml" href="{{ site.rss }}" title="{{ site.title }}">
     {% endif %}
-
-    <!-- Include Google Fonts CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300%7COpen+Sans:400,600" rel="stylesheet">
-
-    <!--Include the Font Awesome and Academicons CSS-->
-    <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
 
     <!-- Google Analytics tracking code -->
     <script>
