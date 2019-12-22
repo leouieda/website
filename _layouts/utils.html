@@ -573,9 +573,8 @@
         <p>
     {%- endif -%}
             <strong>Comments?</strong>
-            Leave one below or
-            let me know on Twitter
-            <a href="https://twitter.com/intent/tweet?text=@{{ site.twitter }}&url={{ site.url }}{{ post.url }}">@{{ site.twitter }}</a>.
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@{{ site.twitter }}&url={{ site.url }}{{ post.url }}">tweet @{{ site.twitter }}</a>).
     {%- if fancy -%}
         </div>
     </div>
@@ -591,9 +590,7 @@
         <p>
     {%- endif -%}
             <strong>Found a typo/mistake?</strong>
-            Send a <a href="{{ site.reflinks.site_repo.url }}/edit/master/{{ post.fn }}">fix through Github</a>
-            and I'll happily merge it
-            (<em>plus you'll feel great because you helped someone</em>).
+            Send a <a href="{{ site.reflinks.site_repo.url }}/edit/master/{{ post.fn }}">fix through Github</a>.
             All you need is an account and 5 minutes!
     {%- if fancy -%}
         </div>
@@ -602,27 +599,6 @@
         </p>
     {%- endif -%}
 {%- endmacro -%}
-
-
-{%- macro disqus(post, site) -%}
-{# Embed the Disqus comments in the page #}
-    <!-- Disqus -->
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function () {
-        this.page.url = '{{ site.url }}{{ post.url }}';
-        this.page.identifier = '{{ post.id }}';
-        };
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//leouieda.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{%- endmacro -%}
-
 
 {%- macro menu(class, site) -%}
 {# Layout the menu using the specified class #}

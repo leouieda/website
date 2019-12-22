@@ -1,7 +1,7 @@
 {% extends "page.html" %}
 {% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info,
-   article_level_metrics, feedback, insert_thumbnail, make_breadcrumbs, related_pages,
-   disqus %}
+   article_level_metrics, feedback, insert_thumbnail, make_breadcrumbs,
+   related_pages %}
 
 
 {% block breadcrumbs %}
@@ -39,10 +39,8 @@
 
     {{ article_level_metrics(this) }}
 
-    {{ related_pages(this, site) }}
-
     {{ feedback(this, site, fancy=true) }}
 
-    {{ disqus(this, site) }}
+    {{ related_pages(this, site) }}
 
 {% endblock %}
