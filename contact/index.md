@@ -29,18 +29,23 @@ banner_description: "View of the always rainy Manoa Valey from my UH office wind
 
 <h2>At the University of Liverpool</h2>
 
+**When:** Monday-Friday usually between 9:30-18:00 (unless teaching or in a
+meeting).
+<br>
+**Where:** Jane Herdman Building - Room A2.06 (second floor of the annex)
+
+Here is the full address:
+
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-map-marker fa-fw"></i>
-	Department of Earth, Ocean and Ecological Sciences
-    <br>
-	School of Environmental Sciences
-    <br>
-	University of Liverpool, UK
-    <br>
     <a href="https://goo.gl/maps/6F7Uj5g2hxEEkKor8">
-    Jane Herdman Building, 4 Brownlow Street
+    Jane Herdman Building
     <br>
-    Liverpool, L69 3GP, United Kingdom
+    4 Brownlow Street
+    <br>
+    Liverpool, United Kingdom
+    <br>
+    L69 3GP
     </a>
     </li>
 </ul>
