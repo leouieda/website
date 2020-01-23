@@ -28,7 +28,7 @@ Pretty much everything I do is freely available online, usually on
 These are funded research projects in which I participate as PI or co-PI:
 
 <div class="research-index">
-    {{ make_index(site.reflinks["/research"].content[:4], site, hr=false, date=false) }}
+    {{ make_index(site.reflinks["/research"].content, site, hr=false, date=false) }}
 </div>
 
 
