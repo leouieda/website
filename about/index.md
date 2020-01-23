@@ -31,6 +31,12 @@ lab develops and maintains the [Fatiando a Terra](https://www.fatiando.org)
 project, a collection of Python libraries for the Geosciences along with some
 general purpose tools.
 
+Along with my role at the University, I'm also a
+[Topic Editor for the Journal of Open Source Software](https://joss.theoj.org/),
+a member of the [Advisory Council for EarthArXiv](https://eartharxiv.org/),
+and
+a [Fellow of the Software Sustainability Institute][/blog/ssi-fellowship].
+
 Before coming to Liverpool, I was a Visiting Researcher at the University of
 Hawai'i, USA, where I worked on the <a
 href="https://www.generic-mapping-tools.org">Generic Mapping Tools</a> (GMT), a
@@ -120,7 +126,8 @@ You can find me and my research, code, articles, and data at:
         <a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/">University of Liverpool</a>, UK
     </li>
     <li><i class="fa-li fa fa-info-circle fa-fw"></i>
-        More information soon.
+        More information about my role and activities can be found in my
+        <a href="https://www.liverpool.ac.uk/environmental-sciences/staff/leonardo-uieda/">institutional profile</a>.
     </li>
 </ul>
 
