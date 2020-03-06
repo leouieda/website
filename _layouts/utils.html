@@ -93,7 +93,7 @@
             <span class="card-title">
                 {{ page.title }}
             </span>
-            {%- if date -%}
+            {%- if date and page.date is defined-%}
                 <br>
                 <span class="card-date">
                 {%- if year_only -%}

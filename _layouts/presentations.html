@@ -1,0 +1,7 @@
+{% extends "index.html" %}
+{% from "utils.html" import make_index %}
+
+{% block index %}
+    {% set content = site.reflinks["/talks"].content|extend(site.reflinks["/posters"].content) %}
+    {{ make_index(content|sort(attribute="date", reverse=true), site, date=true, year_only=true) }}
+{% endblock %}
