@@ -13,7 +13,7 @@
             {% endif %}
 
             {% block index %}
-                {{ make_index(this.content, site, date=false, show_oa=true) }}
+                {{ make_index(this.content, site, date=true, year_only=true, show_oa=true) }}
             {% endblock %}
         {% endblock %}
     </div>

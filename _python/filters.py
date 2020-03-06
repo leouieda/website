@@ -40,6 +40,15 @@ def related(page, site):
     return related
 
 
+def extend(content, new_content):
+    """
+    Extend the content list with new content creating a copy.
+    """
+    extended = list(content)
+    extended.extend(new_content)
+    return extended
+
+
 def pages(site, ids):
     """
     Select only the pages with the given ids from the site.
@@ -60,4 +69,5 @@ filters = dict(
     related=related,
     pages=pages,
     tagnames=tagnames,
+    extend=extend,
 )

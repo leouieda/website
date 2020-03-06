@@ -37,8 +37,7 @@ menulinks: [
     ['/research', 'Research'],
     ['/blog', 'Blog'],
     ['/papers', 'Papers'],
-    ['/talks', 'Talks'],
-    ['/posters', 'Posters'],
+    ['/presentations', 'Presentations'],
     ['/teaching', 'Teaching'],
     ['/contact', 'Contact'],
     ]
