@@ -33,9 +33,10 @@ thumbnail_path: "images/thumb"
 banner_path: "images/banner"
 
 menulinks: [
+    ['/', 'Home'],
     ['/about', 'About'],
-    ['/research', 'Research'],
     ['/blog', 'Blog'],
+    ['/research', 'Research'],
     ['/papers', 'Papers'],
     ['/presentations', 'Presentations'],
     ['/teaching', 'Teaching'],
