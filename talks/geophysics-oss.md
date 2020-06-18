@@ -1,7 +1,7 @@
 ---
 title: "Geophysical research powered by open-source"
 author: uieda
-date: 2020-06-04
+date: 2020-06-18
 license: Creative Commons Attribution
 thumbnail: geophysics-oss.png
 layout: publication
@@ -22,6 +22,24 @@ The slides were made with
 <i class="fa fa-github"></i> [leouieda/talk-template](https://github.com/leouieda/talk-template).
 There are links to the slides specific to each time a version of this talk was
 given. The source code links contain the underlying HTML code of the slides.
+
+# At University of São Paulo
+
+<i class="fa fa-github"></i> Source code: [leouieda/2020-06-18-usp](https://github.com/leouieda/2020-06-18-usp)
+<br>
+<i class="fa fa-desktop"></i> Slides: [leouieda.com/2020-06-18-usp](https://www.leouieda.com/2020-06-18-usp/#/)
+<br>
+<i class="fa fa-calendar"></i> Date: 2020/06/18
+<br>
+<i class="fa fa-map-marker"></i> Location: Departamento de Geofísica, IAG, Universidade de São Paulo
+
+I was really delighted to get an invitation to speak at my *alma mater*
+(roughly 10 years after my graduation). Funny enough, this talk is heavily
+inspired on the [last talk I gave there in 2015][/talks/iag-04-2015].
+
+This is the first version of this talk delivered in Portuguese (slides are
+still in English, though). I added the latest new of [successful reproduction
+of the Ferguson COVID-19 modelling results](https://doi.org/10.1038/d41586-020-01685-y).
 
 # At TU Freiberg
 
