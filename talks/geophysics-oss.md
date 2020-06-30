@@ -12,11 +12,11 @@ tags: open-source, open-science, reproducibility
 
 # About
 
-This is talk I've been working on and tweaking over a few months now. It's
+This is a talk I've been working on and tweaking over a few months now. It's
 about my path through geophysics and open-source software, how it's shaped my
 research and teaching, what I see as the future of this area (with some tips
 for informing yourself on current software best practices), and some of the
-exciting research we're doing at the [Computer-Oriented Geoscience
+research we're doing at the [Computer-Oriented Geoscience
 Lab](https://www.compgeolab.org/).
 
 The slides were made with
@@ -24,6 +24,27 @@ The slides were made with
 <i class="fa fa-github"></i> [leouieda/talk-template](https://github.com/leouieda/talk-template).
 There are links to the slides specific to each time a version of this talk was
 given. The source code links contain the underlying HTML code of the slides.
+
+# At University of Kiel
+
+<i class="fa fa-map-marker"></i> Location: Christian-Albrechts-Universität zu Kiel
+<br>
+<i class="fa fa-calendar"></i> Date: 2020/07/01
+<br>
+<i class="fa fa-github"></i> Source code: [leouieda/2020-07-01-kiel](https://github.com/leouieda/2020-07-01-kiel)
+<br>
+<i class="fa fa-desktop"></i> Slides: [leouieda.com/2020-07-01-kiel](https://www.leouieda.com/2020-07-01-kiel/#/)
+
+This was another online version of the talk.
+It was really nice to connect with the geophysicists at Kiel since
+Prof. [Jörg Ebbing](https://www.satellitengeophysik.uni-kiel.de/de/mitarbeiter/joerg_ebbing)'s
+group uses [Tesseroids][/papers/paper-tesseroids-2016] and was involved in the
+generation of the GOCE gravity gradient grids cited in the talk.
+They have also used the [Moho inversion code][/papers/paper-moho-inversion-tesseroids-2016]
+and are [getting involved in Fatiando](https://github.com/fatiando/harmonica/issues/153).
+I added some bits to the end about getting involved in open-source software
+projects and finding online communities of practice (with a shout out to the
+[Software Underground](https://softwareunderground.org/)).
 
 # At University of São Paulo
 
