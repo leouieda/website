@@ -1,6 +1,6 @@
 # Souce code for leouieda.com
 
-[![Build Status](https://img.shields.io/travis/leouieda/website/master.svg?style=flat-square)](https://travis-ci.org/leouieda/website)
+[![build-html](https://github.com/leouieda/website/workflows/build-html/badge.svg?event=push)](https://github.com/leouieda/website/actions?query=workflow%3Abuild-html)
 [![Powered by Urubu](https://img.shields.io/badge/powered_by-urubu-blue.svg?style=flat-square)](http://urubu.jandecaluwe.com/)
 
 This is the source code for my personal site
@@ -63,7 +63,7 @@ the publication side bar. See the existing publications for examples.
 The site is automatically built and deployed to
 [leouieda/leouieda.github.com](https://github.com/leouieda/leouieda.github.com)
 every time a commit is pushed to the *master* branch.
-See files `.travis.yml`.
+See files `.github/workflows/build.yml`.
 
 ## License
 
