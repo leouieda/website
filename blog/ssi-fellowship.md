@@ -8,7 +8,7 @@ layout: post
 
 {% from "utils.html" import youtube_embed %}
 
-**I have selected as part of the 2020 cohort of Fellows of the [Software
+**I have been selected as part of the 2020 cohort of Fellows of the [Software
 Sustainability Institute](https://www.software.ac.uk/)!**
 
 The Institute cultivates world-class research with software. It's based at the
