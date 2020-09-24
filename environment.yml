@@ -5,6 +5,7 @@ channels:
 dependencies:
     - python=3.8
     - pip
+    - livereload
     - jinja2>=2.7
     - beautifulsoup4
     - markdown<3

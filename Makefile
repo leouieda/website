@@ -4,7 +4,7 @@ build:
 	urubu build
 
 serve:
-	cd _build && python -m http.server 8000 2> /dev/null
+	python _python/serve.py
 
 clean:
 	rm -rf _build/* .*~
