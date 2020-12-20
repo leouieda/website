@@ -9,7 +9,7 @@ This is the source code for my personal site
 ## Dependencies
 
 You'll need to install Urubu and all it's dependencies to build the site. I
-have been using Python 3.5 for the build. See `environment.yml` for the
+have been using Python 3.8 for the build. See `environment.yml` for the
 complete dependency list.
 
 You can create a conda environment with all required dependencies by running
