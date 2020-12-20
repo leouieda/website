@@ -25,7 +25,7 @@ Use the `Makefile`:
 
 The command `make serve` will start a simple server at the `_build` folder
 where the built HTML files are.
-Point your browser to [http://127.0.0.1:8000](http://127.0.0.1:8000)
+Point your browser to [http://localhost:8008/](http://localhost:8008/)
 to view the site.
 The server runs in the background so you can continue working on the site.
 
