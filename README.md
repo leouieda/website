@@ -58,7 +58,7 @@ things like the DOI, Github repository, etc and the template will include it in
 the publication side bar. See the existing publications for examples.
 
 
-## Automatic deploy with TravisCI
+## Automatic deploy with GitHub Actions
 
 The site is automatically built and deployed to
 [leouieda/leouieda.github.com](https://github.com/leouieda/leouieda.github.com)
