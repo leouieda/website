@@ -1,0 +1,188 @@
+/* Variable definitions and redefinitions of bootstrap variables (bs) */
+/*****************************************************************************/
+:root {
+  --bs-body-font-size: 1.1rem;
+  --lu-blue: #1b579b;
+}
+
+/* Styles for basic elements */
+/*****************************************************************************/
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-size: 0.9rem;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+header {
+  background-color: var(--lu-blue);
+  background-position: top;
+  background-size: cover;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  padding: 5rem 0;
+  width: 100%;
+  color: #c6e1ff;
+  background-color: var(--lu-blue);
+  font-size: 1rem;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+/* Tweaks to Bootstrap classes */
+/*****************************************************************************/
+.container {
+}
+
+.navbar {
+  padding: 0.5rem 0;
+  z-index: 3;
+  position: relative;
+}
+
+.navbar-brand img {
+  height: 2rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffffff;
+  font-weight: normal;
+  border-bottom: 2px solid #ffffff;
+  text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link.active:hover {
+  text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link.nav-icon:hover {
+  border-bottom: none;
+}
+
+li.nav-item {
+  margin-bottom: 0;
+}
+
+li.list-inline-item {
+  margin-bottom: 0;
+}
+
+/* Custom classes */
+/*****************************************************************************/
+.page-content {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.page-section {
+  padding: 7rem 0;
+}
+
+.narrow-page {
+  max-width: 750px;
+}
+
+.callout {
+  margin: 0 auto 1.5rem;
+  /* Set a tiny bottom padding because 0 causes it to ignore the p padding */
+  padding: 1rem 1rem 0.001rem;
+  border-left: 0.5rem solid var(--bs-yellow);
+  box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+  background-color: var(--bs-gray-100);
+}
+
+.callout-warning {
+  border-color: var(--bs-danger);
+}
+
+.callout-note {
+  border-color: var(--bs-primary);
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: url("/images/noise.png");
+}
+
+.banner {
+  z-index: 3;
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  color: #ffffff;
+}
+
+.banner h1 {
+  margin-bottom: 4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.paper-info {
+  padding: 1.5rem 1.25rem;
+  border: 1px solid var(--bs-gray-400);
+  border-radius: 5px;
+}
+
+.citation {
+  border-left: 0.25rem solid var(--bs-gray-500);
+  padding-left: 1rem;
+  color: var(--bs-gray-600);
+}
+
+.nowrap {
+  white-space: nowrap;
+}

@@ -1,10 +1,10 @@
 all: build
 
 build:
-	urubu build
+	nene
 
 serve:
-	python _python/serve.py
+	nene --serve
 
 clean:
-	rm -rf _build/* .*~
+	rm -rf _build/*

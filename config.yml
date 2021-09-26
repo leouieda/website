@@ -1,137 +1,46 @@
-title: Leonardo Uieda
-
-description: Geophysicist, programmer, teacher
-
-brand: "LEONARDO <strong>UIEDA</strong>"
-
-url: https://www.leouieda.com
-
-rss: https://www.leouieda.com/rss.xml
-
-author: uieda
-
+# Main site info
+author: Leonardo Uieda
+url: "https://www.leouieda.com"
+site_name: Leonardo Uieda
+site_description: Geophysicist, scientist, programmer, teacher
+brand: LEONARDO UIEDA
 language: en
-
 keywords: 'science, geoscience, geophysics, software, open-source'
+repository: leouieda/website
+favicon: images/favicon.png
 
-keep_files: [".nojekyll"]
-
-ignore_patterns: [
-    "README.md",
-    "LICENSE.md",
-    ".github_deploy_key.enc",
-    "environment.yml",
-    "requirements.txt",
-    "blog/.sample-post.md",
-    "fonts/academicons/README.md",
-    ]
-
-strict_undefined: true
-
-thumbnail_path: "images/thumb"
-
-banner_path: "images/banner"
-
-menulinks: [
-    ['/', 'Home'],
-    ['/about', 'About'],
-    ['/blog', 'Blog'],
-    ['/research', 'Research'],
-    ['/papers', 'Papers'],
-    ['/presentations', 'Presentations'],
-    ['/teaching', 'Teaching'],
-    ['/contact', 'Contact'],
-    ]
-
-menuicons: [
-    ['https://github.com/leouieda',
-     '<i class="fa fa-github fa-lg" title="Github"></i>'],
-    ['https://twitter.com/leouieda',
-     '<i class="fa fa-twitter fa-lg" title="Twitter"></i>'],
-    ['https://www.linkedin.com/in/uieda',
-     '<i class="fa fa-linkedin fa-lg" title="LinkedIn"></i>'],
-    ['/tag',
-     '<i class="fa fa-tags fa-lg" title="Browse by tag"></i>'],
-    ['/rss.xml',
-     '<i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i>'],
-    ]
-
+# Social media
 twitter: leouieda
+github: leouieda
+linkedin: https://www.linkedin.com/in/uieda
+youtube: https://www.youtube.com/LeonardoUieda
+orcid: 0000-0001-6123-9515
+researchgate: https://www.researchgate.net/profile/Leonardo-Uieda
+googlescholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
 
-authors:
-    uieda: Leonardo Uieda
-    barbosa: Valéria C. F. Barbosa
-    carla: Carla Braitenberg
-    melo: Felipe F. Melo
-    oliveira-jr: Vanderlei C. Oliveira Jr
-    jbsilva: João B. C. Silva
-    daiana: Daiana P. Sales
-    carlos: Dionisio U. Carlos
-    ussami: Naomi Ussami
-    everton: Everton P. Bomfim
-    eder: Eder Molina
-    yli: Yaoguo Li
-    mbraga: Marco A. Braga
-    angeli: Glauco Angeli
-    peres: Guilherme Peres
-    dagrella: Manoel S. D'Agrella Filho
-    pwessel: Paul Wessel
-    joaquim: Joaquim Luis
-    remko: Remko Scharroo
-    wobbe: Florian Wobbe
-    walter: Walter H. F. Smith
-    dongdong: Dongdong Tian
-    hallam: Kristoffer A. T. Hallam
-    sandwell: David Sandwell
-    bridget: Bridget Smith-Konter
-    eric: Xiaohua Xu
-    santiago: Santiado R. Soler
-    agustina: Agustina Pesce
-    mario: Mario E. Gimenez
-    lindsey: Lindsey J. Heagy
-    guangdong: Guangdong Zhao
-    bo: Bo Chen
-    jliu: Jianxin Liu
-    mkaban: Mikhail K. Kaban
-    lchen: Longwei Chen
-    rguo: Rongwen Guo
-    lbarba: Lorena A. Barba
-    jbazan: Juanjo Bazan
-    jbrown: Jed Brown
-    rguimera: Roman V. Guimera
-    mgymrek: Melissa Gymrek
-    ahanna: Alex Hanna
-    khuff: Kathryn D. Huff
-    dkatz: Daniel S. Katz
-    cmadan: Christopher R. Madan
-    kmoerman: Kevin M. Moerman
-    kniemeyer: Kyle E. Niemeyer
-    jpoulson: Jack L. Poulson
-    pprins: Pjotr Prins
-    kram: Karthik Ram
-    arokem: Ariel Rokem
-    arfon: Arfon M. Smith
-    gthiruvathukal: George K. Thiruvathukal
-    kthyng: Kristen M. Thyng
-    bwilson: Bruce E. Wilson
-    yehudi: Yo Yehudi
-    remi: Rémi Rampin
-    hugo: Hugo van Kemenade
-    mattturk: Matthew Turk
-    shapero: Daniel Shapero
-    anderson: Anderson Banihirwe
-    leeman: John Leeman
+# Menu
+navigation:
+  - name: Home
+    id: index
+  #- name: Research
+    #id: research/index
+  #- name: Publications
+    #id: publications/index
+  #- name: Software
+    #id: software/index
+  #- name: Data
+    #id: data/index
+  #- name: Team
+    #id: team/index
+  #- name: News
+    #id: news/index
+  #- name: Contact
+    #id: contact/index
 
-reflinks:
-    leouieda:
-        url: http://www.leouieda.com
-        title: Leonardo Uieda
-    content_license:
-        url: http://creativecommons.org/licenses/by/4.0/
-        title: CC-BY 4.0
-    site_repo:
-        url: https://github.com/leouieda/website
-        title: leouieda/website
-    swung:
-        url: https://softwareunderground.org
-        title: Software Underground
+# Don't copy or process these files
+ignore:
+  - README.md
+  - LICENSE.md
+  - environment.yml
+  - Makefile
+  - css/academicons/README.md
