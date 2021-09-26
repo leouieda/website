@@ -9,7 +9,7 @@ This is the source code for my personal site
 ## Dependencies
 
 You'll need to install Urubu and all it's dependencies to build the site. I
-have been using Python 3.5 for the build. See `environment.yml` for the
+have been using Python 3.8 for the build. See `environment.yml` for the
 complete dependency list.
 
 You can create a conda environment with all required dependencies by running
@@ -25,7 +25,7 @@ Use the `Makefile`:
 
 The command `make serve` will start a simple server at the `_build` folder
 where the built HTML files are.
-Point your browser to [http://127.0.0.1:8000](http://127.0.0.1:8000)
+Point your browser to [http://localhost:8008/](http://localhost:8008/)
 to view the site.
 The server runs in the background so you can continue working on the site.
 
@@ -58,7 +58,7 @@ things like the DOI, Github repository, etc and the template will include it in
 the publication side bar. See the existing publications for examples.
 
 
-## Automatic deploy with TravisCI
+## Automatic deploy with GitHub Actions
 
 The site is automatically built and deployed to
 [leouieda/leouieda.github.com](https://github.com/leouieda/leouieda.github.com)
