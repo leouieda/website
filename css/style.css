@@ -15,6 +15,10 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+h3 {
+  margin-bottom: 1rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -32,7 +36,7 @@ img {
 }
 
 li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 header {
@@ -70,7 +74,7 @@ footer a:hover {
 }
 
 .navbar {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   z-index: 3;
   position: relative;
 }
@@ -113,6 +117,10 @@ li.nav-item {
 
 li.list-inline-item {
   margin-bottom: 0;
+}
+
+.fa-li {
+  line-height: inherit !important;
 }
 
 /* Custom classes */
@@ -185,4 +193,9 @@ li.list-inline-item {
 
 .nowrap {
   white-space: nowrap;
+}
+
+.headshot {
+  border-radius: 50%;
+  display: block;
 }
