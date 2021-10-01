@@ -90,7 +90,12 @@
       </div>
     </nav>
     {%- if page.banner_title is defined %}
-      <section class="container text-center banner">
+      {%- if page.banner_subtitle is defined %}
+        {%- set banner_class = "banner" %}
+      {%- else %}
+        {%- set banner_class = "banner banner-thin" %}
+      {%- endif %}
+      <section class="container text-center {{ banner_class }}">
         <h1 class="display-5">
           {{ page.banner_title }}
         </h1>
