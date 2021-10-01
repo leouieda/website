@@ -34,8 +34,8 @@ navigation:
     #id: team/index
   #- name: News
     #id: news/index
-  #- name: Contact
-    #id: contact/index
+  - name: Contact
+    id: contact/index
 
 # Don't copy or process these files
 ignore:

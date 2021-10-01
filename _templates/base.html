@@ -108,7 +108,7 @@
       {%- if page.no_container is defined and page.no_container %}
         {%- set section_class = "" %}
       {%- else %}
-        {%- set section_class = "container page-content overflow-hidden" %}
+        {%- set section_class = "container page-content narrow-page overflow-hidden" %}
       {%- endif %}
       <section class="{{ section_class }}">
         {{ page.body }}
