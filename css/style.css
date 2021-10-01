@@ -21,10 +21,12 @@ h3 {
 
 a {
   text-decoration: none;
+  color: var(--lu-blue);
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--lu-blue);
 }
 
 code {
