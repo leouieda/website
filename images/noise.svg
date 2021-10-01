@@ -2,16 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="2"
-   height="2"
-   viewBox="0 0 0.52916665 0.5291667"
+   width="6"
+   height="6"
+   viewBox="0 0 1.5874999 1.5875001"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="noise.svg"
    inkscape:export-filename="noise.png"
-   inkscape:export-xdpi="101.6"
-   inkscape:export-ydpi="101.6"
+   inkscape:export-xdpi="48"
+   inkscape:export-ydpi="48"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,15 +27,19 @@
      inkscape:document-units="mm"
      showgrid="false"
      units="px"
-     inkscape:zoom="128"
-     inkscape:cx="2.7890625"
-     inkscape:cy="1.296875"
+     inkscape:zoom="32.035239"
+     inkscape:cx="-5.4003032"
+     inkscape:cy="7.0235157"
      inkscape:window-width="1600"
      inkscape:window-height="865"
      inkscape:window-x="0"
      inkscape:window-y="21"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <defs
      id="defs2" />
   <g
@@ -43,19 +47,21 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#000000;fill-opacity:1;stroke-width:0.499999;stroke-miterlimit:10"
+       style="fill:#000000;fill-opacity:1;stroke-width:1.49999;stroke-miterlimit:10"
        id="rect31"
-       width="0.26458332"
-       height="0.26458332"
-       x="0.26458335"
-       y="0.26458335" />
+       width="0.79374999"
+       height="0.79374999"
+       x="0.79375005"
+       y="0.79375005"
+       inkscape:export-filename="./rect31-3.png"
+       inkscape:export-xdpi="63.999996"
+       inkscape:export-ydpi="63.999996" />
     <path
        id="rect31-3"
-       style="stroke-width:1.88976;stroke-miterlimit:10;fill:#000000;fill-opacity:0.30000001"
-       d="M 0 0 L 0 1 L 0 2 L 1 2 L 1 1 L 2 1 L 2 0 L 1 0 L 0 0 z "
-       transform="scale(0.26458333)"
+       style="fill:#000000;fill-opacity:0.3;stroke-width:1.49999;stroke-miterlimit:10"
+       d="M 0,0 V 0.79374995 1.5875 H 0.79374995 V 0.79374995 H 1.5875 V 0 H 0.79374995 Z"
        inkscape:export-filename="./rect31-3.png"
-       inkscape:export-xdpi="101.6"
-       inkscape:export-ydpi="101.6" />
+       inkscape:export-xdpi="63.999996"
+       inkscape:export-ydpi="63.999996" />
   </g>
 </svg>
