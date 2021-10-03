@@ -2,7 +2,12 @@
 /*****************************************************************************/
 :root {
   --bs-body-font-size: 1.1rem;
-  --lu-blue: #1b579b;
+  --bs-body-bg: #1b1f23;
+  --bs-body-color: #fefefe;
+  --lu-blue: #459cff;
+  --lu-mid-blue: #1a5597;
+  --lu-dark-blue: #0b141d;
+  --lu-footer-color: #c6e1ff;
 }
 
 /* Styles for basic elements */
@@ -13,10 +18,12 @@ h1 {
 
 h2 {
   margin-bottom: 1.5rem;
+  font-size: 2.5rem;
 }
 
 h3 {
   margin-bottom: 1rem;
+  font-size: 1.75rem;
 }
 
 a {
@@ -26,11 +33,10 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: var(--lu-blue);
 }
 
 code {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 img {
@@ -42,20 +48,20 @@ li {
 }
 
 header {
-  background-color: var(--lu-blue);
-  background-position: top;
-  background-size: cover;
+  background-color: var(--lu-dark-blue);
   font-size: 1rem;
-  position: relative;
-  z-index: 1;
 }
 
 footer {
   padding: 5rem 0;
   width: 100%;
-  color: #c6e1ff;
-  background-color: var(--lu-blue);
+  color: var(--lu-footer-color);
+  background-color: var(--lu-dark-blue);
   font-size: 1rem;
+}
+
+footer code {
+  font-size: 0.9rem;
 }
 
 footer a {
@@ -101,6 +107,7 @@ footer a:hover {
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
   font-weight: 300;
+  margin: 0 0.25rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -133,8 +140,29 @@ li.list-inline-item {
 }
 
 .page-section {
-  padding: 7rem 0;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
+
+.page-section-light {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  color: var(--bs-gray-800);
+  background-color: var(--bs-gray-300);
+  background-image: url("/images/pattern.svg");
+  background-position: top;
+  background-size: cover;
+}
+
+.page-section-light a {
+  text-decoration: none;
+  color: var(--lu-mid-blue);
+}
+
+.page-section-light a:hover {
+  text-decoration: underline;
+}
+
 
 .narrow-page {
   max-width: 750px;
@@ -142,11 +170,21 @@ li.list-inline-item {
 
 .callout {
   margin: 0 auto 1.5rem;
-  /* Set a tiny bottom padding because 0 causes it to ignore the p padding */
-  padding: 1rem 1rem 0.001rem;
+  color: var(--bs-gray-800);
   border-left: 0.5rem solid var(--bs-yellow);
   box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
-  background-color: var(--bs-gray-100);
+  background-color: var(--bs-gray-200);
+  /* Set a tiny bottom padding because 0 causes it to ignore the p padding */
+  padding: 1rem 1rem 0.001rem;
+}
+
+.callout a {
+  text-decoration: none;
+  color: var(--lu-mid-blue);
+}
+
+.callout a:hover {
+  text-decoration: underline;
 }
 
 .callout-warning {
@@ -169,17 +207,19 @@ li.list-inline-item {
   z-index: 3;
   position: relative;
   color: #ffffff;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
-.banner-thin {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.banner-background {
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+  width: 100%;
 }
 
 .banner h1 {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .hidden {
@@ -205,4 +245,31 @@ li.list-inline-item {
 .headshot {
   border-radius: 50%;
   display: block;
+}
+
+.footer-nav {
+  margin-bottom: 3rem;
+}
+
+.footer-nav .nav {
+  margin-left: -1rem;
+}
+
+.footer-nav .nav .nav-link.active {
+  color: var(--lu-footer-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-nav .nav .nav-link.active:hover {
+  text-decoration: underline;
+}
+
+.footer-nav .nav .nav-link {
+  color: var(--lu-footer-color);
+}
+
+.footer-nav .nav .nav-link:hover {
+  text-decoration: underline;
+  color: var(--lu-footer-color);
 }

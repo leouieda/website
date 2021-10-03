@@ -39,16 +39,7 @@
 </head>
 
 <body>
-  {%- if page.banner_image is defined %}
-    {%- set header_style = "background-image: url(/" ~ page.banner_image ~ ");" %}
-  {%- else %}
-    {%- set header_style = "" %}
-  {%- endif %}
   <header style="{{ header_style }}">
-    {%- if page.banner_image is defined %}
-      <div class="overlay">
-      </div>
-    {%- endif %}
     <nav class="navbar navbar-expand-lg navbar-dark" aria-labelledby="primary-navigation">
       <div class="container align-middle">
         <a class="navbar-brand" href="/">
@@ -89,22 +80,28 @@
         </div>
       </div>
     </nav>
-    {%- if page.banner_title is defined %}
-      {%- if page.banner_subtitle is defined %}
-        {%- set banner_class = "banner" %}
+    {%- if page.banner_image is defined %}
+      {%- if page.banner_position is defined %}
+        {%- set banner_position = page.banner_position %}
       {%- else %}
-        {%- set banner_class = "banner banner-thin" %}
+        {%- set banner_position = "top center" %}
       {%- endif %}
-      <section class="container text-center {{ banner_class }}">
-        <h1 class="display-5">
-          {{ page.banner_title }}
-        </h1>
-        {%- if page.banner_subtitle is defined %}
-          <p class="lead fs-3">
-            {{ page.banner_subtitle }}
-          </p>
-        {%- endif %}
-      </section>
+      <div class="banner-background" style="background-image: url(/{{ page.banner_image }}); background-position: {{ banner_position }};">
+        <div class="overlay">
+        </div>
+        <section class="container text-center banner">
+          {%- if page.banner_title is defined %}
+            <h1 class="display-4">
+              {{ page.banner_title }}
+            </h1>
+          {%- endif %}
+          {%- if page.banner_subtitle is defined %}
+            <p class="lead fs-3">
+              {{ page.banner_subtitle }}
+            </p>
+          {%- endif %}
+        </section>
+      </div>
     {%- endif %}
   </header>
 
@@ -123,6 +120,15 @@
 
   <footer>
     <div class="container">
+      <nav class="footer-nav" aria-labelledby="secondary-navigation">
+        <ul class="nav">
+          {%- for item in config.navigation %}
+            <li class="nav-item">
+              {{ make_nav_link(item.name, item.id, page, site) }}
+            </li>
+          {%- endfor %}
+        </ul>
+      </nav>
       <p>
         Last updated {{ build.today.strftime('%Y/%m/%d') }} from commit
         <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>.

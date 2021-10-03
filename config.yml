@@ -22,6 +22,8 @@ googlescholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
 navigation:
   - name: Home
     id: index
+  - name: About
+    id: about/index
   #- name: Research
     #id: research/index
   #- name: Publications
@@ -34,8 +36,8 @@ navigation:
     #id: team/index
   #- name: News
     #id: news/index
-  - name: Contact
-    id: contact/index
+  #- name: Contact
+    #id: contact/index
 
 # Don't copy or process these files
 ignore:

@@ -2,6 +2,7 @@
 custom_page_title: Leonardo Uieda
 banner_image: images/valley-of-fire.jpg
 banner_title: 👋🏽 Olá! I'm Leo Uieda
+banner_position: top right
 banner_subtitle: |
   Geophysicist
   <span class="nowrap">• Educator</span>
@@ -11,13 +12,13 @@ no_container: true
 template: base.html
 ---
 
-<div class="container-fluid">
-<section class="container page-section narrow-page">
+<div class="container-fluid page-section">
+<section class="container narrow-page">
 
-<h2 class="display-6 mb-5 text-center">A bit about me</h2>
+<h2 class="mb-5 text-center">A bit about me</h2>
 
-<div class="row align-items-center gy-3 mb-4">
-<div class="col-md-8">
+<div class="row align-items-center justify-content-center gy-3 mb-4">
+<div class="col-sm-8">
 
 ### The short version
 
@@ -26,84 +27,27 @@ template: base.html
   disturbances in the planet's gravity and magnetic fields.
 * Developer of open-source software (mostly in Python).
 * Advocate for openness in the scientific process.
-* Promoter of the adoption of best practices in computational research.
+* Leader of the [Computer-Oriented Geoscience Lab](https://www.compgeolab.org).
 
 </div>
-<div class="col-md-4">
+<div class="col-9 col-sm-4">
 
 <img src="https://github.com/leouieda.png" alt="Photo of me from 2019" class="headshot mb-4">
 
 </div>
 </div>
 
-### The slightly longer version
+<a class="btn btn-outline-light mt-3 me-3" href="/about">Longer version + contact <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
+<a class="btn btn-light mt-3" href="https://www.compgeolab.org" target="_blank">My research at the CompGeoLab <i class="fa fa-external-link-alt ms-1" aria-hidden="true"></i></a>
 
-I work as Lecturer in Geophysics at the University of Liverpool's
-[Department of Earth, Ocean and Ecological Sciences][deoes] in the UK,
-where I'm starting the [Computer-Oriented Geoscience Lab][compeolab].
-Before coming to Liverpool, I worked as a visiting researcher scholar at the
-University of Hawaiʻi at Mānoa, where I worked with the
-[Generic Mapping Tools][gmt] team to create [PyGMT][pygmt], a widely-used
-Python library for processing and visualizing geophysical data.
-Prior to Hawaiʻi, I worked for three years as Assistant Professor at the
-Universidade do Estado do Rio de Janeiro, Brazil.
-
-My research and teaching make heavy use of open-source software and computing
-in general to build intuition about Geoscience.
-The lab develops and maintains the [Fatiando a Terra][fatiando] project, a
-collection of Python libraries for the Geosciences along with some general
-purpose tools.
-
-Along with my role at the University, I'm also a
-[Topic Editor for the Journal of Open Source Software](https://joss.theoj.org/),
-a member of the [Advisory Council for EarthArXiv](https://eartharxiv.org/),
-and a [Fellow of the Software Sustainability Institute][ssi-fellowship].
-
-I'm first and foremost a Dedicated Involved Loving Father.
-On the rare occasions where I find myself with free time, I enjoy
-playing Incineroar in Smash Bros. Ultimate,
-baking sourdough bread,
-making noise with my ukulele and off-tune baritone,
-listening to podcasts,
-and reading sci-fi and fantasy.
-My favorite show by far is Avatar: The Last Airbender.
-
+</section>
 </div>
-</div>
-<div class="container-fluid" style="background-color: var(--bs-gray-200);">
-<div class="container page-section narrow-page">
+<div class="container-fluid page-section-light">
+<section class="container narrow-page">
 
-<h2 class="display-6 mb-5 text-center">Want to find out more?</h2>
+## Bla
 
-You can find out more about my research, code, and teaching at:
-
-<ul class="fa-ul">
-<li><i class="fa-li fab fa-github" aria-hidden="true"></i>
-GitHub:
-<a href="https://github.com/{{ config.github }}">@{{ config.github }}</a>
-</li>
-<li><i class="fa-li ai ai-orcid" aria-hidden="true"></i>
-ORCID:
-<a href="http://orcid.org/{{ config.orcid }}">{{ config.orcid }}</a>
-</li>
-<li><i class="fa-li ai ai-cv" aria-hidden="true"></i>
-Curriculum Vitæ:
-<a href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer"><code>leonardo_uieda_cv.pdf</code></a>
-(<a href="https://github.com/leouieda/cv">LaTeX source</a>)
-</li>
-<li><i class="fa-li ai ai-google-scholar" aria-hidden="true"></i>
-<a href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ">Google Scholar</a>
-</li>
-<li><i class="fa-li ai ai-publons" aria-hidden="true"></i>
-<a href="https://publons.com/a/1328468/">Publons</a>
-</li>
-<li><i class="fa-li ai ai-researchgate" aria-hidden="true"></i>
-<a href="{{ config.researchgate }}">ResearchGate</a>
-</li>
-</ul>
-
-
-</div>
+</section>
 </div>
 
 [deoes]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/
