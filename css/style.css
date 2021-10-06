@@ -2,7 +2,7 @@
 /*****************************************************************************/
 :root {
   --bs-body-font-size: 1.1rem;
-  --bs-body-bg: #1b1f23;
+  --bs-body-bg: #0b141d;
   --bs-body-color: #fefefe;
   --lu-blue: #459cff;
   --lu-mid-blue: #1a5597;
@@ -248,7 +248,7 @@ li.list-inline-item {
 }
 
 .footer-nav {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .footer-nav .nav {

@@ -120,26 +120,51 @@
 
   <footer>
     <div class="container">
-      <nav class="footer-nav" aria-labelledby="secondary-navigation">
-        <ul class="nav">
-          {%- for item in config.navigation %}
-            <li class="nav-item">
-              {{ make_nav_link(item.name, item.id, page, site) }}
+      <div class="row">
+        <div class="col-lg-6 col-xl-8">
+          <nav class="footer-nav" aria-labelledby="secondary-navigation">
+            <ul class="nav">
+              {%- for item in config.navigation %}
+                <li class="nav-item">
+                  {{ make_nav_link(item.name, item.id, page, site) }}
+                </li>
+              {%- endfor %}
+            </ul>
+          </nav>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item">
+              <a aria-label="Twitter" href="https://twitter.com/{{ config.twitter }}" target="_blank"><i class="fab fa-twitter fa-lg me-2" title="Twitter" aria-hidden="true"></i></a>
             </li>
-          {%- endfor %}
-        </ul>
-      </nav>
-      <p>
-        Last updated {{ build.today.strftime('%Y/%m/%d') }} from commit
-        <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>.
-        Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}.
-      </p>
-      <p>
-        Source code used to build this site: <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>.
-      </p>
-      <p>
-        Copyright &copy; {{ build.today.year }} {{ config.author }}
-      </p>
+            <li class="list-inline-item">
+              <a aria-label="GitHub" href="https://github.com/{{ config.github }}" target="_blank"><i class="fab fa-github fa-lg me-2" title="GitHub" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="LinkedIn" href="{{ config.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-lg me-2" title="LinkedIn" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="YouTube" href="{{ config.youtube }}" target="_blank"><i class="fab fa-youtube fa-lg me-2" title="YouTube" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="ORCID" href="https://orcid.org/{{ config.orcid }}" target="_blank"><i class="ai ai-orcid fa-lg me-2" title="ORCID" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+          <p>
+            Source code used to build this site: <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>.
+          </p>
+          <p>
+            Last updated {{ build.today.strftime('%Y/%m/%d') }} from commit
+            <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>.
+          </p>
+          <p>
+            Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}.
+          </p>
+          <p>
+            Copyright &copy; {{ build.today.year }} {{ config.author }}
+          </p>
+    </div>
+    </div>
     </div>
   </footer>
 

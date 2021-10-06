@@ -47,9 +47,7 @@ My favorite show by far is Avatar: The Last Airbender.
 ## Curriculum Vitae
 
 I keep a full length version of my CV updated and available for
-<a class="nowrap" href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf"
-target="_blank" type="application/pdf" rel="external noopener noreferrer"><i
-class="fa fa-file-pdf" aria-hidden="true"></i> download as a PDF</a>.
+<a class="nowrap" href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">download as a PDF <i class="ms-1 fa fa-file-pdf" aria-hidden="true"></i></a>.
 
 <div class="callout">
 

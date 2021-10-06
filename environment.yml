@@ -6,4 +6,4 @@ dependencies:
     - python==3.9
     - pip
     - pip:
-        - nene==0.2.0
+        - nene==0.3.*
