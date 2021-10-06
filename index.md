@@ -8,7 +8,7 @@ banner_subtitle: |
   <span class="nowrap">• Educator</span>
   <span class="nowrap">• Scientist</span>
   <span class="nowrap">• Programmer</span>
-no_container: true
+container_class:
 template: base.html
 ---
 

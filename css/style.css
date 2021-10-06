@@ -132,6 +132,14 @@ li.list-inline-item {
   line-height: inherit !important;
 }
 
+.text-muted {
+  color: var(--bs-gray-500) !important;
+}
+
+.altmetric-embed img {
+  width: auto;
+}
+
 /* Custom classes */
 /*****************************************************************************/
 .page-content {
@@ -144,14 +152,17 @@ li.list-inline-item {
   padding-bottom: 7rem;
 }
 
+.page-section-pattern {
+  background-image: url("/images/pattern.svg");
+  background-position: top;
+  background-size: cover;
+}
+
 .page-section-light {
   padding-top: 7rem;
   padding-bottom: 7rem;
   color: var(--bs-gray-800);
   background-color: var(--bs-gray-300);
-  background-image: url("/images/pattern.svg");
-  background-position: top;
-  background-size: cover;
 }
 
 .page-section-light a {
@@ -162,7 +173,6 @@ li.list-inline-item {
 .page-section-light a:hover {
   text-decoration: underline;
 }
-
 
 .narrow-page {
   max-width: 750px;
@@ -227,9 +237,11 @@ li.list-inline-item {
 }
 
 .paper-info {
-  padding: 1.5rem 1.25rem;
+  padding: 1.75rem 1.5rem;
   border: 1px solid var(--bs-gray-400);
   border-radius: 5px;
+  color: var(--bs-gray-800);
+  background-color: var(--bs-gray-100);
 }
 
 .citation {

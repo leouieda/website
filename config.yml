@@ -26,8 +26,8 @@ navigation:
     id: about/index
   #- name: Research
     #id: research/index
-  #- name: Publications
-    #id: publications/index
+  - name: Publications
+    id: publications/index
   #- name: Software
     #id: software/index
   #- name: Data

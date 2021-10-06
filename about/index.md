@@ -4,7 +4,7 @@ banner_image: images/hawaii-lava-photoshoot.jpg
 banner_position: top left
 banner_title: About me
 banner_subtitle: Who I am and how to contact me
-no_container: true
+container_class:
 template: base.html
 ---
 
@@ -29,10 +29,11 @@ The lab develops and maintains the [Fatiando a Terra][fatiando] project, a
 collection of Python libraries for the Geosciences along with some general
 purpose tools.
 
-Along with my role at the University, I'm also a
-[Topic Editor for the Journal of Open Source Software](https://joss.theoj.org/),
-a member of the [Advisory Council for EarthArXiv](https://eartharxiv.org/),
-and a [Fellow of the Software Sustainability Institute][ssi-fellowship].
+Along with my role at the University, I'm also:
+
+* Topic Editor for the [Journal of Open Source Software](https://joss.theoj.org/)
+* Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/)
+* Fellow of the [Software Sustainability Institute][ssi-fellowship]
 
 I'm first and foremost a Dedicated Involved Loving Father.
 On the rare occasions where I find myself with free time, I enjoy
@@ -85,10 +86,10 @@ You can find out more about my work at:
 </li>
 </ul>
 
+</section>
 </div>
-</div>
-<div class="container-fluid page-section-light">
-<div class="container narrow-page">
+<div class="container-fluid page-section-light page-section-pattern">
+<section class="container narrow-page">
 
 ## Contact
 
@@ -126,7 +127,7 @@ Liverpool, United Kingdom
 L69 3GP
 </a>
 
-</div>
+</section>
 </div>
 
 
