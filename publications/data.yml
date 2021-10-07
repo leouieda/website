@@ -194,7 +194,7 @@ papers:
       foreland basin in Argentina with a maximum depth of over 5000 m, using an
       exponential density function.
     note: |
-      This paper builds upon our work on <a href="/software">Tesseroids</a> and
+      This paper builds upon my work on <a href="/software">Tesseroids</a> and
       extends the methodology to work for depth-variable densities. Santiago
       led this project, did most of the work and a large part of the writing of
       the paper. This is the first paper of his PhD thesis.
@@ -387,6 +387,52 @@ papers:
         journal = {Journal of Open Source Software}
       }
 
+  - title: "Step-by-step NMO correction"
+    year: 2017
+    doi: 10.1190/tle36020179.1
+    openaccess: true
+    authors: Uieda, L.
+    journal: The Leading Edge
+    github: pinga-lab/nmo-tutorial
+    abstract: |
+      Open any text book about seismic data processing and you will inevitably
+      find a section about the normal moveout (NMO) correction. When applied to
+      a common midpoint (CMP) section, the correction is supposed to turn the
+      hyperbola associated with a reflection into a straight horizontal line.
+      What most text books won't tell you is <strong>how, exactly, do you apply
+      this equation to the data?</strong>
+      <br class="mb-3">
+      Read on and I'll explain step-by-step how the algorithm for NMO
+      correction from Yilmaz (2001) works and how to implement it in Python.
+      The accompanying Jupyter notebook contains the full source code, with
+      documentation and tests for each function.
+    note: |
+      This is a part of The Leading Edge
+      <a href="https://doi.org/10.1190/tle35020190.1">geophysics tutorials series</a>.
+      All tutorials are open-access and include open-source code examples.
+      The text is also included on the <a href="http://wiki.seg.org/wiki/Step-by-step_NMO_correction">SEG Wiki</a>!
+      The code and idea for this tutorial came from my Introduction to
+      Geophysics courses at UERJ. I came across the problem of implementing NMO
+      correction while preparing my lecture and practical exercises on this
+      topic. This is a clear example of how learning happens both ways in a
+      classroom.
+    citation: |
+      Uieda, L. (2017), Step-by-step NMO correction, The Leading Edge, 36(2),
+      179-180, doi:10.1190/tle36020179.1
+    bibtex: |
+      @article{Uieda2017,
+        doi = {10.1190/tle36020179.1},
+        url = {https://doi.org/10.1190/tle36020179.1},
+        year = {2017},
+        month = feb,
+        publisher = {Society of Exploration Geophysicists},
+        volume = {36},
+        number = {2},
+        pages = {179--180},
+        author = {Leonardo Uieda},
+        title = {Step-by-step {NMO} correction},
+        journal = {The Leading Edge}
+      }
 
   - title: |
       Fast non-linear gravity inversion in spherical coordinates with
