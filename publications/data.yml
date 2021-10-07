@@ -1,52 +1,44 @@
 preprints:
 
-  - title: Gradient-boosted equivalent sources
-    year: 2021
-    authors: Soler, S.R. and Uieda, L.
-    journal: Geophysical Journal International
-    preprint: 10.31223/X58G7C
-    data: 10.6084/m9.figshare.13604360
-    github: compgeolab/eql-gradient-boosted
+  - title: Giving software its due through community-driven review and publication
+    year: 2019
+    authors: |
+      Barba, L. A., Bazán, J., Brown, J., Guimera, R. V., Gymrek, M., Hanna,
+      A., et al.
+    journal: OSF Preprints
+    preprint: 10.31219/osf.io/f4vx6
     abstract: |
-      The equivalent source technique is a powerful and widely used method for
-      processing gravity and magnetic data. Nevertheless, its major drawback is
-      the large computational cost in terms of processing time and computer
-      memory. We present two techniques for reducing the computational cost of
-      equivalent source processing: block-averaging source locations and the
-      gradient-boosted equivalent source algorithm. Through block-averaging,
-      we reduce the number of source coefficients that must be estimated
-      while retaining the minimum desired resolution in the final processed
-      data. With the gradient boosting method, we estimate the sources
-      coefficients in small batches along overlapping windows, allowing us to
-      reduce the computer memory requirements arbitrarily to conform to the
-      constraints of the available hardware. We show that the combination of
-      block-averaging and gradient-boosted equivalent sources is capable of
-      producing accurate interpolations through tests against synthetic data.
-      Moreover, we demonstrate the feasibility of our method by gridding a
-      gravity dataset covering Australia with over 1.7 million observations
-      using a modest personal computer.
+      A recent editorial in Nature Methods, "Giving Software its Due",
+      described challenges related to the development of research software and
+      highlighted, in particular, the challenge of software publication and
+      citation. Here, we call attention to a system that we have developed that
+      enables community-driven software review, publication, and
+      citation: The Journal of Open Source Software (JOSS) is an open-source
+      project and an open access journal that provides a light-weight
+      publishing process for research software. Focused on and based in open
+      platforms and on a community of contributors, JOSS evidently satisfies a
+      pressing need, having already published more than 500 articles in
+      approximately three years of existence.
     note: |
-      This research was done entirely with open-source software and open data!
-      This means that anyone should be able to fully reproduce our results
-      using the information in the paper and the material in the associated
-      GitHub repository. This is the final part of Santiago's PhD thesis.
+      This correspondence was written by the editorial board of the
+      <a href="https://joss.theoj.org/">Journal of Open Source Software</a> in
+      response to the Nature Methods editorial
+      <a href="https://doi.org/10.1038/s41592-019-0350-x">"Giving Software its Due"</a>.
+      It was not accepted as a comment on the editorial so we published it as a
+      preprint instead.
     citation: |
-      Soler, S. R., & Uieda, L. (2021). Gradient-boosted equivalent sources.
-      Geophysical Journal International, 227(3), 1768–1783.
-      https://doi.org/10.1093/gji/ggab297
+      Barba, L. A., Bazán, J., Brown, J., Guimera, R. V., Gymrek, M., Hanna,
+      A., et al. (2019). Giving software its due through community-driven
+      review and publication. OSF Preprints. doi:10.31219/osf.io/f4vx6
     bibtex: |
-      @article{Soler2021,
-        doi = {10.1093/gji/ggab297},
-        url = {https://doi.org/10.1093/gji/ggab297},
-        year = {2021},
-        month = aug,
-        publisher = {Oxford University Press ({OUP})},
-        volume = {227},
-        number = {3},
-        pages = {1768--1783},
-        author = {Santiago R Soler and Leonardo Uieda},
-        title = {Gradient-boosted equivalent sources},
-        journal = {Geophysical Journal International}
+      @article{Barba2019,
+        doi = {10.31219/osf.io/f4vx6},
+        url = {https://doi.org/10.31219/osf.io/f4vx6},
+        year = {2019},
+        month = apr,
+        publisher = {Center for Open Science},
+        author = {Lorena A. Barba and Juanjo Baz{\'{a}}n and Jed Brown and Roman Valls Guimera and Melissa Gymrek and Alex Hanna and Lindsey Justine Heagy and Kathryn D. Huff and Daniel S. Katz and Christopher R Madan and Kevin Mattheus Moerman and Kyle Evan Niemeyer and Jack L. Poulson and Pjotr Prins and Karthik Ram and Ariel Rokem and Arfon M. Smith and George K. Thiruvathukal and Kristen M. Thyng and Leonardo Uieda and Bruce E. Wilson and Yo Yehudi},
+        title = {Giving software its due through community-driven review and publication}
       }
 
 

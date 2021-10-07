@@ -14,18 +14,17 @@ template: base.html
 
 ## Preprints
 
-<hr>
 
 {{ macros.make_publication_list(page.preprints, base_id="preprints") }}
 
 </section>
+
+<hr class="mb-5">
 {%- endif %}
 
 <section>
 
 ## Journal articles
-
-<hr>
 
 {{ macros.make_publication_list(page.papers, base_id="papers") }}
 
