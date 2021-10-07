@@ -42,13 +42,6 @@ template: base.html
 
 </section>
 </div>
-<div class="container-fluid page-section-light">
-<section class="container narrow-page">
-
-## Bla
-
-</section>
-</div>
 
 [deoes]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/
 [compeolab]: https://www.compgeolab.org

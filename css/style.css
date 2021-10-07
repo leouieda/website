@@ -58,6 +58,7 @@ footer {
   color: var(--lu-footer-color);
   background-color: var(--lu-dark-blue);
   font-size: 1rem;
+  border-top: 3px solid #111e2c;
 }
 
 footer code {
