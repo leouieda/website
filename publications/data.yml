@@ -406,6 +406,7 @@ papers:
       correction from Yilmaz (2001) works and how to implement it in Python.
       The accompanying Jupyter notebook contains the full source code, with
       documentation and tests for each function.
+      <img src="/images/nmo-tutorial.png" class="mt-4" alt="Example figure from the paper showing the application of the NMO code to a synthetic seismic section.">
     note: |
       This is a part of The Leading Edge
       <a href="https://doi.org/10.1190/tle35020190.1">geophysics tutorials series</a>.
@@ -470,6 +471,12 @@ papers:
       and Amazonas Basins, the Paraná Basin, and the Borborema province. These
       differences suggest the existence of crustal or mantle density anomalies that
       were unaccounted for during gravity data processing.
+      <img src="/images/south-american-moho.jpg" class="mt-4" alt="Estimated depth to the crust-mantle interface (Moho) from satellite measurements of gravity disturbances.">
+    note: |
+      This paper is one of the chapters of my PhD thesis. It describes a new
+      gravity inversion method to estimate the depth of the crust-mantle
+      interface (the Moho). The inversion builds upon my work on tesseroid
+      modelling.
     citation: |
       Uieda, L., & Barbosa, V. C. F. (2016). Fast nonlinear gravity inversion
       in spherical coordinates with application to the South American Moho.
@@ -523,6 +530,7 @@ papers:
     note: |
       This paper describes the algorithms used in version 1.2.0 of the
       open-source software <a href="/software">Tesseroids</a>.
+      It's also one of the chapters of my PhD thesis.
     citation: |
       Uieda, L., Barbosa, V. C. F., & Braitenberg, C. (2016). Tesseroids:
       Forward-modeling gravitational fields in spherical coordinates.
@@ -540,4 +548,120 @@ papers:
         author = {Leonardo Uieda and Val{\'{e}}ria C. F. Barbosa and Carla Braitenberg},
         title = {Tesseroids: Forward-modeling gravitational fields in spherical coordinates},
         journal = {{GEOPHYSICS}}
+      }
+
+  - title: |
+      How two gravity-gradient inversion methods can be used to reveal
+      different geologic features of ore deposit — A case study from the
+      Quadrilátero Ferrífero (Brazil)
+    year: 2016
+    doi: 10.1016/j.jappgeo.2016.04.011
+    authors: Carlos, D. U., L. Uieda, and V. C. F. Barbosa
+    journal: Journal of Applied Geophysics
+    pdf: /pdf/quadrilatero-2016.pdf
+    abstract: |
+      Airborne gravity gradiometry data have been recently used in mining
+      surveys to map the 3D geometry of ore deposits. This task can be achieved
+      by different gravity-gradient inversion methods, many of which use a
+      voxel-based discretization of the Earth's subsurface. To produce a unique
+      and stable solution, an inversion method introduces particular
+      constraints. One constraining inversion introduces a depth-weighting
+      function in the first-order Tikhonov regularization imposing a smoothing
+      on the density-contrast distributions that are not restricted to
+      near-surface regions. Another gravity-gradient inversion, the method of
+      planting anomalous densities, imposes compactness and sharp boundaries on
+      the density-contrast distributions. We used these two inversion methods
+      to invert the airborne gravity-gradient data over the iron-ore deposit at
+      the southern flank of the Gandarela syncline in Quadrilátero Ferrífero
+      (Brazil). Because these methods differ from each other in the particular
+      constraint used, the estimated 3D density-contrast distributions reveal
+      different geologic features of ore deposit. The depth-weighting smoothing
+      inversion reveals variable dip directions along the strike of the
+      retrieved iron-ore body. The planting anomalous density inversion
+      estimates a compact iron-ore mass with a single density contrast, which
+      reveals a variable volume of the iron ore along its strike increasing
+      towards the hinge zone of the Gandarela syncline which is the zone of
+      maximum compression. The combination of the geologic features inferred
+      from each estimate leads to a synergistic effect, revealing that the
+      iron-ore deposit is strongly controlled by the Gandarela syncline.
+    citation: |
+      Carlos, D. U., L. Uieda, and V. C. F. Barbosa (2016), How two
+      gravity-gradient inversion methods can be used to reveal different
+      geologic features of ore deposit — A case study from the Quadrilátero
+      Ferrífero (Brazil), Journal of Applied Geophysics,
+      doi:10.1016/j.jappgeo.2016.04.011.
+    bibtex: |
+      @article{Carlos2016,
+        doi = {10.1016/j.jappgeo.2016.04.011},
+        url = {https://doi.org/10.1016/j.jappgeo.2016.04.011},
+        year = {2016},
+        month = jul,
+        publisher = {Elsevier {BV}},
+        volume = {130},
+        pages = {153--168},
+        author = {Dion{\'{\i}}sio U. Carlos and Leonardo Uieda and Valeria C.F. Barbosa},
+        title = {How two gravity-gradient inversion methods can be used to reveal different geologic features of ore deposit {\textemdash} A case study from the Quadril{\'{a}}tero Ferr{\'{\i}}fero (Brazil)},
+        journal = {Journal of Applied Geophysics}
+      }
+
+  - title: |
+      Estimation of the total magnetization direction of approximately
+      spherical bodies
+    year: 2015
+    doi: 10.5194/npg-22-215-2015
+    authors: Oliveira Jr., V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda
+    journal: Nonlinear Processes in Geophysics
+    openaccess: true
+    data: 10.5281/zenodo.16191
+    github: pinga-lab/Total-magnetization-of-spherical-bodies
+    abstract: |
+      We have developed a fast total-field anomaly inversion to estimate the
+      magnetization direction of multiple sources with approximately spherical
+      shapes and known centres. Our method is an overdetermined inverse problem
+      that can be applied to interpret multiple sources with different but
+      homogeneous magnetization directions. It requires neither the prior
+      computation of any transformation-like reduction to the pole nor the use
+      of regularly spaced data on a horizontal grid. The method contains
+      flexibility to be implemented as a linear or non-linear inverse problem,
+      which results, respectively, in a least-squares or robust estimate of the
+      components of the magnetization vector of the sources. Applications to
+      synthetic data show the robustness of our method against interfering
+      anomalies and errors in the location of the sources' centre. Besides, we
+      show the feasibility of applying the upward continuation to interpret
+      non-spherical sources. Applications to field data over the Goiás alkaline
+      province (GAP), Brazil, show the good performance of our method in
+      estimating geologically meaningful magnetization directions. The results
+      obtained for a region of the GAP, near to the alkaline complex of
+      Diorama, suggest the presence of non-outcropping sources marked by strong
+      remanent magnetization with inclination and declination close to −70.35
+      and −19.81°, respectively. This estimated magnetization direction leads
+      to predominantly positive reduced-to-the-pole anomalies, even for other
+      region of the GAP, in the alkaline complex of Montes Claros de Goiás.
+      These results show that the non-outcropping sources near to the alkaline
+      complex of Diorama have almost the same magnetization direction of those
+      ones in the alkaline complex of Montes Claros de Goiás, strongly
+      suggesting that these sources have been emplaced in the crust within
+      almost the same geological time interval.
+    citation: |
+      Oliveira Jr., V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda (2015),
+      Estimation of the total magnetization direction of approximately
+      spherical bodies, Nonlin. Processes Geophys., 22(2), 215-232,
+      doi:10.5194/npg-22-215-2015.
+    note: |
+      This paper has undergone open peer-review. The original submission,
+      reviews, and replies can be viewed at
+      <a href="https://doi.org/10.5194/npgd-1-1465-2014">the journal website</a>.
+    bibtex: |
+      @article{Oliveira2015,
+        doi = {10.5194/npg-22-215-2015},
+        url = {https://doi.org/10.5194/npg-22-215-2015},
+        year = {2015},
+        month = apr,
+        publisher = {Copernicus {GmbH}},
+        volume = {22},
+        number = {2},
+        pages = {215--232},
+        author = {V. C. Oliveira and D. P. Sales and V. C. F. Barbosa and L. Uieda},
+        title = {Estimation of the total magnetization direction of approximately spherical bodies},
+        journal = {Nonlinear Processes in Geophysics}
       }
