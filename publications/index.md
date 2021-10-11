@@ -9,13 +9,12 @@ template: base.html
 
 {%- import "macros.html" as macros %}
 
-{%- if page.preprints %}
+{%- if page.review %}
 <section>
 
-## Preprints
+## Under review
 
-
-{{ macros.make_publication_list(page.preprints, base_id="preprints") }}
+{{ macros.make_publication_list(page.review, base_id="review") }}
 
 </section>
 
@@ -24,7 +23,7 @@ template: base.html
 
 <section>
 
-## Journal articles
+## Published
 
 {{ macros.make_publication_list(page.papers, base_id="papers") }}
 

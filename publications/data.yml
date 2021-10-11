@@ -1,45 +1,4 @@
-preprints:
-
-  - title: Giving software its due through community-driven review and publication
-    year: 2019
-    authors: |
-      Barba, L. A., Bazán, J., Brown, J., Guimera, R. V., Gymrek, M., Hanna,
-      A., et al.
-    journal: OSF Preprints
-    preprint: 10.31219/osf.io/f4vx6
-    abstract: |
-      A recent editorial in Nature Methods, "Giving Software its Due",
-      described challenges related to the development of research software and
-      highlighted, in particular, the challenge of software publication and
-      citation. Here, we call attention to a system that we have developed that
-      enables community-driven software review, publication, and
-      citation: The Journal of Open Source Software (JOSS) is an open-source
-      project and an open access journal that provides a light-weight
-      publishing process for research software. Focused on and based in open
-      platforms and on a community of contributors, JOSS evidently satisfies a
-      pressing need, having already published more than 500 articles in
-      approximately three years of existence.
-    note: |
-      This correspondence was written by the editorial board of the
-      <a href="https://joss.theoj.org/">Journal of Open Source Software</a> in
-      response to the Nature Methods editorial
-      <a href="https://doi.org/10.1038/s41592-019-0350-x">"Giving Software its Due"</a>.
-      It was not accepted as a comment on the editorial so we published it as a
-      preprint instead.
-    citation: |
-      Barba, L. A., Bazán, J., Brown, J., Guimera, R. V., Gymrek, M., Hanna,
-      A., et al. (2019). Giving software its due through community-driven
-      review and publication. OSF Preprints. doi:10.31219/osf.io/f4vx6
-    bibtex: |
-      @article{Barba2019,
-        doi = {10.31219/osf.io/f4vx6},
-        url = {https://doi.org/10.31219/osf.io/f4vx6},
-        year = {2019},
-        month = apr,
-        publisher = {Center for Open Science},
-        author = {Lorena A. Barba and Juanjo Baz{\'{a}}n and Jed Brown and Roman Valls Guimera and Melissa Gymrek and Alex Hanna and Lindsey Justine Heagy and Kathryn D. Huff and Daniel S. Katz and Christopher R Madan and Kevin Mattheus Moerman and Kyle Evan Niemeyer and Jack L. Poulson and Pjotr Prins and Karthik Ram and Ariel Rokem and Arfon M. Smith and George K. Thiruvathukal and Kristen M. Thyng and Leonardo Uieda and Bruce E. Wilson and Yo Yehudi},
-        title = {Giving software its due through community-driven review and publication}
-      }
+review:
 
 
 papers:
@@ -331,6 +290,47 @@ papers:
         author = {Guangdong Zhao and Bo Chen and Leonardo Uieda and Jianxin Liu and Mikhail K. Kaban and Longwei Chen and Rongwen Guo},
         title = {Efficient 3-D Large-Scale Forward Modeling and Inversion of Gravitational Fields in Spherical Coordinates With Application to Lunar Mascons},
         journal = {Journal of Geophysical Research: Solid Earth}
+      }
+
+  - title: Giving software its due through community-driven review and publication
+    year: 2019
+    authors: |
+      Barba, L. A., Bazán, J., Brown, J., Guimera, R. V., Gymrek, M., Hanna,
+      A., et al.
+    journal: OSF Preprints
+    preprint: 10.31219/osf.io/f4vx6
+    abstract: |
+      A recent editorial in Nature Methods, "Giving Software its Due",
+      described challenges related to the development of research software and
+      highlighted, in particular, the challenge of software publication and
+      citation. Here, we call attention to a system that we have developed that
+      enables community-driven software review, publication, and
+      citation: The Journal of Open Source Software (JOSS) is an open-source
+      project and an open access journal that provides a light-weight
+      publishing process for research software. Focused on and based in open
+      platforms and on a community of contributors, JOSS evidently satisfies a
+      pressing need, having already published more than 500 articles in
+      approximately three years of existence.
+    note: |
+      This correspondence was written by the editorial board of the
+      <a href="https://joss.theoj.org/">Journal of Open Source Software</a> in
+      response to the Nature Methods editorial
+      <a href="https://doi.org/10.1038/s41592-019-0350-x">"Giving Software its Due"</a>.
+      It was not accepted as a comment on the editorial so we published it as a
+      preprint instead.
+    citation: |
+      Barba, L. A., Bazán, J., Brown, J., Guimera, R. V., Gymrek, M., Hanna,
+      A., et al. (2019). Giving software its due through community-driven
+      review and publication. OSF Preprints. doi:10.31219/osf.io/f4vx6
+    bibtex: |
+      @article{Barba2019,
+        doi = {10.31219/osf.io/f4vx6},
+        url = {https://doi.org/10.31219/osf.io/f4vx6},
+        year = {2019},
+        month = apr,
+        publisher = {Center for Open Science},
+        author = {Lorena A. Barba and Juanjo Baz{\'{a}}n and Jed Brown and Roman Valls Guimera and Melissa Gymrek and Alex Hanna and Lindsey Justine Heagy and Kathryn D. Huff and Daniel S. Katz and Christopher R Madan and Kevin Mattheus Moerman and Kyle Evan Niemeyer and Jack L. Poulson and Pjotr Prins and Karthik Ram and Ariel Rokem and Arfon M. Smith and George K. Thiruvathukal and Kristen M. Thyng and Leonardo Uieda and Bruce E. Wilson and Yo Yehudi},
+        title = {Giving software its due through community-driven review and publication}
       }
 
   - title: "Verde: Processing and gridding spatial data using Green's functions"
@@ -664,4 +664,112 @@ papers:
         author = {V. C. Oliveira and D. P. Sales and V. C. F. Barbosa and L. Uieda},
         title = {Estimation of the total magnetization direction of approximately spherical bodies},
         journal = {Nonlinear Processes in Geophysics}
+      }
+
+  - title: |
+      Imaging iron ore from the Quadrilátero Ferrífero (Brazil) using
+      geophysical inversion and drill hole data
+    year: 2014
+    doi: 10.1016/j.oregeorev.2014.02.011
+    authors: Carlos, D. U., L. Uieda, and V. C. F. Barbosa
+    journal: Ore Geology Reviews
+    pdf: /pdf/quadrilatero-2014.pdf
+    abstract: |
+      The Quadrilátero Ferrífero in southeastern Brazil hosts one of the
+      largest concentrations of lateritic iron ore deposits in the world. Our
+      study area is over the southern flank of the Gandarela syncline which is
+      one of the regional synclines of the Quadrilátero Ferrífero. The
+      Gandarela syncline is considered the Brazilian megastructure with the
+      highest perspectives for iron ore exploration. Most of the iron-ore
+      deposits from the Quadrilátero Ferrífero are non-outcropping bodies
+      hosted in the oxidized, metamorphosed and heterogeneously deformed banded
+      iron formations. Therefore, the assessment of the 3D geometry of the
+      iron-ore body is of the utmost importance for estimating reserves and
+      production development planning. We carried out a quantitative
+      interpretation of the iron-ore deposit of the southern flank of the
+      Gandarela syncline using a 3D inversion of airborne gravity-gradient data
+      to estimate the shape of the iron-ore mineralization. The retrieved body
+      is characterized by a high-density zone associated with the
+      northeast-elongated iron formation. The thickness and the width of the
+      retrieved iron-ore body vary along its strike increasing southwestward.
+      The presence of a large volume of iron ore in the southwest portion of
+      the study area may be due to the hinge zone of the Gandarela syncline,
+      which is the zone of maximum compression. Our estimated iron-ore mass
+      reveals variable dip directions. In the southernmost, central and
+      northernmost portions of the study area, the estimated iron body dips,
+      respectively, inwards, vertically and outwards with respect to the
+      syncline axis. Previous geological mapping indicated continuous
+      mineralization. However, our result suggests a quasi-continuous iron-ore
+      body. In the central part of the study area, the estimated iron-ore body
+      is segmented into two parts. This breakup may be related to the
+      northwest-trending faults, which are perpendicular to the
+      northeast-trending axis of the Gandarela syncline. Our estimated iron-ore
+      mass agrees reasonably well with the information provided from the
+      lithologic logging data of drill holes. In this geophysical study, the
+      estimated iron-ore reserves are approximately 3 billion tons.
+    citation: |
+      Carlos, D. U., L. Uieda, and V. C. F. Barbosa (2014), Imaging iron ore
+      from the Quadrilátero Ferrífero (Brazil) using geophysical inversion and
+      drill hole data, Ore Geology Reviews, 61, 268-285,
+      doi:10.1016/j.oregeorev.2014.02.011
+    bibtex: |
+      @article{Carlos2014,
+        doi = {10.1016/j.oregeorev.2014.02.011},
+        url = {https://doi.org/10.1016/j.oregeorev.2014.02.011},
+        year = {2014},
+        month = sep,
+        publisher = {Elsevier {BV}},
+        volume = {61},
+        pages = {268--285},
+        author = {Dion{\'{\i}}sio U. Carlos and Leonardo Uieda and Valeria C.F. Barbosa},
+        title = {Imaging iron ore from the Quadril{\'{a}}tero Ferr{\'{\i}}fero (Brazil) using geophysical inversion and drill hole data},
+        journal = {Ore Geology Reviews}
+      }
+
+  - title: |
+      Geophysical tutorial: Euler deconvolution of potential-field data
+    year: 2014
+    openaccess: true
+    doi: 10.1190/tle33040448.1
+    data: 10.6084/m9.figshare.923450
+    github: pinga-lab/paper-tle-euler-tutorial
+    authors: Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa
+    journal: The Leading Edge
+    abstract: |
+      In this tutorial we'll talk about a widely used method of interpretation
+      for potential-field data called Euler deconvolution. Our goal is to
+      demonstrate its usefulness and, most importantly, call attention to some
+      pitfalls encountered in the interpretation of the results. The code and
+      synthetic data required to reproduce our results and figures can be found
+      in the accompanying IPython notebooks. The notebooks also expand
+      the analysis presented here. We encourage you to download the data and
+      try it on your software of choice. For this tutorial we'll use the
+      implementation in the open-source Python package Fatiando a Terra.
+    note: |
+      This article is part of the
+      <a href="http://wiki.seg.org/wiki/Geophysical_tutorials">Geophysical Tutorials</a>
+      series in The Leading Edge,
+      started by <a href="http://agilegeoscience.com">Matt Hall</a>.
+      All tutorials are open-access and include open-source code examples.
+      The <a href="https://doi.org/10.1190/tle35020190.1">February 2016 tutorial</a>
+      by Matt provides an introduction to the series.
+      The tutorial is also available at the
+      <a href="http://wiki.seg.org/wiki/Euler_deconvolution_of_potential_field_data_%28tutorial%29">SEG wiki</a>
+      where it can edited and improved.
+    citation: |
+      Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2014), Geophysical
+      tutorial: Euler deconvolution of potential-field data, The Leading Edge,
+      33(4), 448-450, doi:10.1190/tle33040448.1
+    bibtex: |
+      @article{uieda2014,
+        title = {Geophysical tutorial: {Euler} deconvolution of potential-field data},
+        volume = {33},
+        issn = {1070-485X, 1938-3789},
+        doi = {10.1190/tle33040448.1},
+        number = {4},
+        journal = {The Leading Edge},
+        author = {Uieda, Leonardo and Oliveira Jr., Vanderlei C. and Barbosa, Valéria C. F.},
+        month = apr,
+        year = {2014},
+        pages = {448--450}
       }
