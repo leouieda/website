@@ -24,8 +24,8 @@ navigation:
     id: index
   - name: About
     id: about/index
-  #- name: Research
-    #id: research/index
+  - name: Blog
+    id: blog/index
   - name: Publications
     id: publications/index
   #- name: Software
