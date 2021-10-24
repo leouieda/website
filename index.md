@@ -28,6 +28,7 @@ template: base.html
 * Developer of open-source software (mostly in Python).
 * Advocate for openness in the scientific process.
 * Leader of the [Computer-Oriented Geoscience Lab](https://www.compgeolab.org).
+* Proud father and amateur baker.
 
 </div>
 <div class="col-9 col-sm-4">

@@ -13,28 +13,6 @@ template: base.html
 
 ## The slightly longer version
 
-I work as Lecturer in Geophysics at the University of Liverpool's
-[Department of Earth, Ocean and Ecological Sciences][deoes] in the UK,
-where I'm starting the [Computer-Oriented Geoscience Lab][compeolab].
-Before coming to Liverpool, I worked as a visiting researcher scholar at the
-University of Hawaiʻi at Mānoa, where I worked with the
-[Generic Mapping Tools][gmt] team to create [PyGMT][pygmt], a widely-used
-Python library for processing and visualizing geophysical data.
-Prior to Hawaiʻi, I worked for three years as Assistant Professor at the
-Universidade do Estado do Rio de Janeiro, Brazil.
-
-My research and teaching make heavy use of open-source software and computing
-in general to build intuition about Geoscience.
-The lab develops and maintains the [Fatiando a Terra][fatiando] project, a
-collection of Python libraries for the Geosciences along with some general
-purpose tools.
-
-Along with my role at the University, I'm also:
-
-* Topic Editor for the [Journal of Open Source Software](https://joss.theoj.org/)
-* Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/)
-* Fellow of the [Software Sustainability Institute][ssi-fellowship]
-
 I'm first and foremost a Dedicated Involved Loving Father.
 On the rare occasions where I find myself with free time, I enjoy
 playing Incineroar in Smash Bros Ultimate,
@@ -44,19 +22,46 @@ listening to podcasts,
 and reading sci-fi and fantasy.
 My favorite show by far is Avatar: The Last Airbender.
 
+I work as Lecturer in Geophysics at the University of Liverpool's
+[Department of Earth, Ocean and Ecological Sciences][deoes] in the UK,
+where I'm starting the [Computer-Oriented Geoscience Lab][compeolab].
+Before coming to Liverpool, I was a visiting research scholar at the
+University of Hawaiʻi at Mānoa, where I worked with the
+[Generic Mapping Tools][gmt] team to create [PyGMT][pygmt], a widely-used
+Python library for processing and visualizing geophysical data.
+Prior to Hawaiʻi, I worked for three years as Assistant Professor at the
+Universidade do Estado do Rio de Janeiro, Brazil.
+
+My research and teaching make heavy use of open-source software and computing
+in general to gain insights on the inner workings of the Earth.
+I am one of the core developers and maintainer of the
+[Fatiando a Terra][fatiando] project, a community-developed set of open-source
+Python libraries for the Geosciences.
+
+Along with my role at the University of Liverpool, I'm also:
+
+* Topic Editor for the [Journal of Open Source Software](https://joss.theoj.org/)
+* Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/)
+* Fellow of the [Software Sustainability Institute][ssi-fellowship]
 
 ## Curriculum Vitae
 
-I keep a full length version of my CV updated and available for
-<a class="nowrap" href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">download as a PDF <i class="ms-1 fa fa-file-pdf" aria-hidden="true"></i></a>.
+I keep a full length version of my CV updated and publicly available:
+
+<a class="btn btn-primary mb-3" href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">
+<i class="me-1 fa fa-download" aria-hidden="true"></i>
+Download my CV in PDF
+</a>
 
 <div class="callout">
 
 **Curious about the CV template?** It's typeset in LaTeX using a custom
 template. The source is available from the GitHub repository
-<a href="https://github.com/leouieda/cv"><code>leouieda/cv</code></a>.
+<a class="nowrap" href="https://github.com/leouieda/cv"><i class="mx-1 fab fa-github" aria-hidden="true"></i><code>leouieda/cv</code></a>.
 
 </div>
+
+## Online
 
 You can find out more about my work at:
 
