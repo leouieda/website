@@ -29,6 +29,7 @@ papers:
       Moreover, we demonstrate the feasibility of our method by gridding a
       gravity dataset covering Australia with over 1.7 million observations
       using a modest personal computer.
+      <img src="/images/eql-gradient-boosted-visual-abstract.jpg" class="mt-4" alt="A visual abstract explaining the core concepts of the algorithm.">
     note: |
       This research was done entirely with open-source software and open data!
       This means that anyone should be able to fully reproduce our results
