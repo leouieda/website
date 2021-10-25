@@ -7,7 +7,7 @@
   --lu-blue: #459cff;
   --lu-mid-blue: #1a5597;
   --lu-dark-blue: #0b141d;
-  --lu-footer-color: #c6e1ff;
+  --lu-light-blue-gray: #c6e1ff;
 }
 
 /* Styles for basic elements */
@@ -55,7 +55,7 @@ header {
 footer {
   padding: 5rem 0;
   width: 100%;
-  color: var(--lu-footer-color);
+  color: var(--lu-light-blue-gray);
   background-color: var(--lu-dark-blue);
   font-size: 1rem;
   border-top: 3px solid #111e2c;
@@ -74,6 +74,12 @@ footer a {
 footer a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+
+blockquote {
+  color: var(--lu-light-blue-gray) !important;
+  border-left: 0.25rem solid var(--lu-light-blue-gray);
+  padding-left: 1rem;
 }
 
 
@@ -270,7 +276,7 @@ li.list-inline-item {
 }
 
 .footer-nav .nav .nav-link.active {
-  color: var(--lu-footer-color);
+  color: var(--lu-light-blue-gray);
   font-weight: bold;
   text-decoration: none;
 }
@@ -280,10 +286,10 @@ li.list-inline-item {
 }
 
 .footer-nav .nav .nav-link {
-  color: var(--lu-footer-color);
+  color: var(--lu-light-blue-gray);
 }
 
 .footer-nav .nav .nav-link:hover {
   text-decoration: underline;
-  color: var(--lu-footer-color);
+  color: var(--lu-light-blue-gray);
 }
