@@ -44,52 +44,8 @@ Along with my role at the University of Liverpool, I'm also:
 * Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/)
 * Fellow of the [Software Sustainability Institute][ssi-fellowship]
 
-## Curriculum Vitae
-
-I keep a full length version of my CV updated and publicly available:
-
-<a class="btn btn-primary mb-3" href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">
-<i class="me-1 fa fa-download" aria-hidden="true"></i>
-Download my CV in PDF
-</a>
-
-<div class="callout">
-
-**Curious about the CV template?** It's typeset in LaTeX using a custom
-template. The source is available from the GitHub repository
-<a class="nowrap" href="https://github.com/leouieda/cv"><i class="mx-1 fab fa-github" aria-hidden="true"></i><code>leouieda/cv</code></a>.
-
-</div>
-
-## Online
-
-You can find out more about my work at:
-
-<ul class="fa-ul">
-<li><i class="fa-li fab fa-github" aria-hidden="true"></i>
-<a href="https://github.com/{{ config.github }}">GitHub</a>
-<span >• @{{ config.github }}</span>
-</li>
-<li><i class="fa-li ai ai-orcid" aria-hidden="true"></i>
-<a href="https://orcid.org/{{ config.orcid }}">ORCID</a>
-<span >• {{ config.orcid }}</span>
-</li>
-<li><i class="fa-li ai ai-impactstory" aria-hidden="true"></i>
-<a href="https://profiles.impactstory.org/u/{{ config.orcid }}">ImpactStory</a>
-</li>
-<li><i class="fa-li ai ai-figshare" aria-hidden="true"></i>
-<a href="http://figshare.com/authors/Leonardo%20Uieda/97471">figshare</a>
-</li>
-<li><i class="fa-li ai ai-google-scholar" aria-hidden="true"></i>
-<a href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ">Google Scholar</a>
-</li>
-<li><i class="fa-li ai ai-publons" aria-hidden="true"></i>
-<a href="https://publons.com/a/1328468/">Publons</a>
-</li>
-<li><i class="fa-li ai ai-researchgate" aria-hidden="true"></i>
-<a href="{{ config.researchgate }}">ResearchGate</a>
-</li>
-</ul>
+![Me teaching git and GitHub at AGU2019](../images/teaching-git-at-agu2019.jpg)
+> Me teaching git and GitHub at [AGU2019](https://github.com/agu-ossi/2019-agu-oss).
 
 </section>
 </div>
@@ -131,6 +87,59 @@ Liverpool, United Kingdom
 <br>
 L69 3GP
 </a>
+
+</section>
+</div>
+<div class="container-fluid page-section">
+<section class="container narrow-page">
+
+## Curriculum Vitae
+
+I keep a full length version of my CV updated and publicly available:
+
+<a class="btn btn-primary mb-3" href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">
+<i class="me-1 fa fa-download" aria-hidden="true"></i>
+Download my CV in PDF
+</a>
+
+<div class="callout">
+
+**Curious about the CV template?** It's typeset in LaTeX using a custom
+template. The source is available from the GitHub repository
+<a class="nowrap" href="https://github.com/leouieda/cv"><i class="mx-1 fab fa-github" aria-hidden="true"></i><code>leouieda/cv</code></a>.
+
+</div>
+
+## Online
+
+You can find out more about my work at:
+
+<ul class="fa-ul">
+<li><i class="fa-li fab fa-github" aria-hidden="true"></i>
+<a target="_blank" href="https://github.com/{{ config.github }}">GitHub</a>
+<span >• @{{ config.github }}</span>
+</li>
+<li><i class="fa-li ai ai-orcid" aria-hidden="true"></i>
+<a target="_blank" href="https://orcid.org/{{ config.orcid }}">ORCID</a>
+<span >• {{ config.orcid }}</span>
+</li>
+<li><i class="fa-li ai ai-impactstory" aria-hidden="true"></i>
+<a target="_blank" href="https://profiles.impactstory.org/u/{{ config.orcid }}">ImpactStory</a>
+</li>
+<li><i class="fa-li ai ai-figshare" aria-hidden="true"></i>
+<a target="_blank" href="http://figshare.com/authors/Leonardo%20Uieda/97471">figshare</a>
+</li>
+<li><i class="fa-li ai ai-google-scholar" aria-hidden="true"></i>
+<a target="_blank" href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ">Google Scholar</a>
+</li>
+<li><i class="fa-li ai ai-publons" aria-hidden="true"></i>
+<a target="_blank" href="https://publons.com/a/1328468/">Publons</a>
+</li>
+<li><i class="fa-li ai ai-researchgate" aria-hidden="true"></i>
+<a target="_blank" href="{{ config.researchgate }}">ResearchGate</a>
+</li>
+</ul>
+
 
 </section>
 </div>

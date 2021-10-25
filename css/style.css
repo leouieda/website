@@ -8,6 +8,7 @@
   --lu-mid-blue: #1a5597;
   --lu-dark-blue: #0b141d;
   --lu-light-blue-gray: #c6e1ff;
+  --lu-neon-glow: #459cff88;
 }
 
 /* Styles for basic elements */
@@ -58,7 +59,8 @@ footer {
   color: var(--lu-light-blue-gray);
   background-color: var(--lu-dark-blue);
   font-size: 1rem;
-  border-top: 3px solid #111e2c;
+  box-shadow: 0 1rem 5rem var(--lu-neon-glow);
+  margin-top: 5rem;
 }
 
 footer code {
@@ -68,7 +70,6 @@ footer code {
 footer a {
   color: #ffffff;
   text-decoration: none;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 footer a:hover {
@@ -187,17 +188,16 @@ li.list-inline-item {
 
 .callout {
   margin: 0 auto 1.5rem;
-  color: var(--bs-gray-800);
+  color: var(--bs-body-color);
   border-left: 0.5rem solid var(--bs-yellow);
-  box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
-  background-color: var(--bs-gray-200);
+  background-color: var(--bs-gray-800);
   /* Set a tiny bottom padding because 0 causes it to ignore the p padding */
   padding: 1rem 1rem 0.001rem;
 }
 
 .callout a {
   text-decoration: none;
-  color: var(--lu-mid-blue);
+  color: var(--lu-light-blue-gray);
 }
 
 .callout a:hover {
