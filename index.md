@@ -4,10 +4,10 @@ banner_image: images/valley-of-fire.jpg
 banner_title: 👋🏽 Olá! I'm Leo Uieda
 banner_position: top right
 banner_subtitle: |
-  Geophysicist
-  <span class="nowrap">• Educator</span>
-  <span class="nowrap">• Scientist</span>
-  <span class="nowrap">• Programmer</span>
+  <span class="nowrap">Geophysicist •</span>
+  <span class="nowrap">Educator •</span>
+  <span class="nowrap">Scientist •</span>
+  <span class="nowrap">Programmer</span>
 container_class:
 template: base.html
 ---
@@ -25,9 +25,10 @@ template: base.html
 * Brazilian geophysicist.
 * Creator of methods for imaging the inside of the Earth from measured
   disturbances in the planet's gravity and magnetic fields.
-* Developer of open-source software (mostly in Python).
+* Open-source software developer: [Fatiando a Terra][fatiando], [Nēnē][nene],
+  [GMT][gmt], and more.
 * Advocate for openness in the scientific process.
-* Leader of the [Computer-Oriented Geoscience Lab](https://www.compgeolab.org).
+* Leader of the [Computer-Oriented Geoscience Lab][compgeolab].
 * Proud father and amateur baker.
 
 </div>
@@ -45,9 +46,10 @@ template: base.html
 </div>
 
 [deoes]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/
-[compeolab]: https://www.compgeolab.org
+[compgeolab]: https://www.compgeolab.org
 [gmt]: https://www.generic-mapping-tools.org
 [pygmt]: https://www.pygmt.org/
 [fatiando]: https://www.fatiando.org
+[nene]: https://nene.leouieda.com
 [ssi-fellowship]: https://software.ac.uk/about/fellows/leonardo-uieda
 [swung]: https://softwareunderground.org/

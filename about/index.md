@@ -110,7 +110,8 @@ template. The source is available from the GitHub repository
 
 </div>
 
-## Online
+
+<h2 class="mt-5">Online</h2>
 
 You can find out more about my work at:
 
@@ -139,7 +140,6 @@ You can find out more about my work at:
 <a target="_blank" href="{{ config.researchgate }}">ResearchGate</a>
 </li>
 </ul>
-
 
 </section>
 </div>
