@@ -151,14 +151,21 @@
         </div>
         <div class="col-lg-6 col-xl-4">
           <p>
-            Source code used to build this site: <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>.
+            Found a typo/mistake?
+            <a target="_blank" href="https://github.com/{{ config.repository }}/edit/{{ config.repository_branch }}/{{ page.source }}">
+              Send a fix through GitHub
+              <i class="fa fa-code-branch" aria-hidden="true"></i>
+            </a>
+          </p>
+          <p>
+            Source code used to build this site: <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>
           </p>
           <p>
             Last updated {{ build.today.strftime('%Y/%m/%d') }} from commit
-            <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>.
+            <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>
           </p>
           <p>
-            Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}.
+            Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
           </p>
           <p>
             Copyright &copy; {{ build.today.year }} {{ config.author }}
