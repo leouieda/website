@@ -7,6 +7,7 @@ brand: LEONARDO UIEDA
 language: en
 keywords: 'science, geoscience, geophysics, software, open-source'
 repository: leouieda/website
+repository_branch: main
 favicon: images/favicon.png
 
 # Social media
