@@ -19,12 +19,12 @@ h1 {
 
 h2 {
   margin-bottom: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h3 {
   margin-bottom: 1rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -36,8 +36,31 @@ a:hover {
   text-decoration: underline;
 }
 
+a code {
+  padding: 0;
+  background-color: unset;
+  border-radius: unset;
+}
+
 code {
   font-size: 1rem;
+  color: var(--bs-body-color);
+  background-color: var(--bs-gray-800);
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.2rem;
+}
+
+pre {
+  padding: 1.5rem;
+  color: var(--bs-body-color);
+  background-color: var(--bs-gray-900);
+  border-radius: 0.2rem;
+}
+
+pre code {
+  padding: 0;
+  background-color: unset;
+  border-radius: unset;
 }
 
 img {
