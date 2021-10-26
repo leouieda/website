@@ -106,6 +106,10 @@ blockquote {
   padding-left: 1rem;
 }
 
+table {
+  margin-bottom: 1rem;
+}
+
 
 /* Tweaks to Bootstrap classes */
 /*****************************************************************************/
