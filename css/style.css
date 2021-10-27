@@ -293,6 +293,15 @@ li.list-inline-item {
   background-color: var(--bs-gray-100);
 }
 
+.paper-info a {
+  text-decoration: none;
+  color: var(--lu-mid-blue);
+}
+
+.paper-info a:hover {
+  text-decoration: underline;
+}
+
 .citation {
   border-left: 0.25rem solid var(--bs-gray-500);
   padding-left: 1rem;

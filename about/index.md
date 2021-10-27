@@ -64,18 +64,57 @@ Me teaching git and GitHub at [AGU2019](https://github.com/agu-ossi/2019-agu-oss
 
 ### Online
 
+<div class="row">
+<div class="col-md-6">
+
+These are best ways to reach me online:
+
 <ul class="fa-ul my-4">
   <li><i class="fa-li fa fa-envelope fa-fw" aria-hidden="true"></i>
-  email: <a href="mailto:Leonardo.Uieda@liverpool.ac.uk">Leonardo.Uieda@liverpool.ac.uk</a>
+  <a href="mailto:Leonardo.Uieda@liverpool.ac.uk">Leonardo.Uieda@liverpool.ac.uk</a>
   </li>
   <li><i class="fa-li fab fa-twitter fa-fw" aria-hidden="true"></i>
   <a href="https://twitter.com/leouieda">@leouieda</a> on Twitter
   </li>
   <li><i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
   On the <a href="https://softwareunderground.org/">Software Underground</a>
-  Slack group
+  Slack
   </li>
 </ul>
+
+</div>
+<div class="col-md-6">
+
+Find out more about my work at:
+
+<ul class="fa-ul">
+  <li><i class="fa-li fab fa-github fa-fw" aria-hidden="true"></i>
+  <a target="_blank" href="https://github.com/{{ config.github }}">GitHub</a>
+  <span >• @{{ config.github }}</span>
+  </li>
+  <li><i class="fa-li ai ai-orcid fa-fw" aria-hidden="true"></i>
+  <a target="_blank" href="https://orcid.org/{{ config.orcid }}">ORCID</a>
+  <span >• {{ config.orcid }}</span>
+  </li>
+  <li><i class="fa-li ai ai-impactstory fa-fw" aria-hidden="true"></i>
+  <a target="_blank" href="https://profiles.impactstory.org/u/{{ config.orcid }}">ImpactStory</a>
+  </li>
+  <li><i class="fa-li ai ai-figshare fa-fw" aria-hidden="true"></i>
+  <a target="_blank" href="http://figshare.com/authors/Leonardo%20Uieda/97471">figshare</a>
+  </li>
+  <li><i class="fa-li ai ai-google-scholar fa-fw" aria-hidden="true"></i>
+  <a target="_blank" href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ">Google Scholar</a>
+  </li>
+  <li><i class="fa-li ai ai-publons fa-fw" aria-hidden="true"></i>
+  <a target="_blank" href="https://publons.com/a/1328468/">Publons</a>
+  </li>
+  <li><i class="fa-li ai ai-researchgate fa-fw" aria-hidden="true"></i>
+  <a target="_blank" href="{{ config.researchgate }}">ResearchGate</a>
+  </li>
+</ul>
+
+</div>
+</div>
 
 ### At the University of Liverpool
 
@@ -118,36 +157,49 @@ template. The source is available from the GitHub repository
 
 </div>
 
+## Education
 
-<h2 class="mt-5">Online</h2>
+{% import "macros.html" as macros %}
 
-You can find out more about my work at:
+{# The education list is defined in about/data.yml #}
+{% for item in page.education %}
 
-<ul class="fa-ul">
-<li><i class="fa-li fab fa-github" aria-hidden="true"></i>
-<a target="_blank" href="https://github.com/{{ config.github }}">GitHub</a>
-<span >• @{{ config.github }}</span>
-</li>
-<li><i class="fa-li ai ai-orcid" aria-hidden="true"></i>
-<a target="_blank" href="https://orcid.org/{{ config.orcid }}">ORCID</a>
-<span >• {{ config.orcid }}</span>
-</li>
-<li><i class="fa-li ai ai-impactstory" aria-hidden="true"></i>
-<a target="_blank" href="https://profiles.impactstory.org/u/{{ config.orcid }}">ImpactStory</a>
-</li>
-<li><i class="fa-li ai ai-figshare" aria-hidden="true"></i>
-<a target="_blank" href="http://figshare.com/authors/Leonardo%20Uieda/97471">figshare</a>
-</li>
-<li><i class="fa-li ai ai-google-scholar" aria-hidden="true"></i>
-<a target="_blank" href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ">Google Scholar</a>
-</li>
-<li><i class="fa-li ai ai-publons" aria-hidden="true"></i>
-<a target="_blank" href="https://publons.com/a/1328468/">Publons</a>
-</li>
-<li><i class="fa-li ai ai-researchgate" aria-hidden="true"></i>
-<a target="_blank" href="{{ config.researchgate }}">ResearchGate</a>
-</li>
-</ul>
+<div class="mb-3">
+{%- set id = loop.index %}
+<h2 class="fs-4 mb-1">
+  {{ item.level|trim }}
+</h2>
+<p class="mb-1">
+  <span class="text-muted">{{ item.year }}</span>
+  |
+  {{ item.institution|trim }}
+</p>
+<p class="mb-1 text-muted fs-6">
+  Thesis: {{ item.title|trim }}
+</p>
+<p class="mb-1 text-muted fs-6">
+  Advisor: {{ item.advisor }}
+</p>
+<p class="text-muted fs-6">
+  doi:<a href="https://doi.org/{{ item.doi }}">{{ item.doi }}</a>
+</p>
+<button class="btn btn-secondary btn-sm me-1 mb-2" type="button"
+    data-bs-toggle="collapse" data-bs-target="#collapse-abstract-{{ id }}"
+    aria-expanded="false" aria-controls="collapse-abstract-{{ id }}">
+  Find out more <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
+</button>
+{{ macros.button_link("https://doi.org/" ~ item.doi, "PDF", type="btn-primary", icon="fa fa-file-pdf") }}
+{{ macros.button_link("https://github.com/" ~ item.github, "Code", type="btn-light", icon="fab fa-github") }}
+{{ macros.button_link(item.slides, "Slides", type="btn-light", icon="fa fa-desktop") }}
+<div id="collapse-abstract-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
+  <h3 class="">About</h3>
+  {{ item.notes }}
+  <h3 class="">Abstract</h3>
+  <p>{{ item.abstract|trim }}</p>
+</div>
+</div>
+
+{% endfor %}
 
 </section>
 </div>

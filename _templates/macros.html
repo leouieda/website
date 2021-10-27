@@ -31,8 +31,6 @@
     {%- else %}
       {%- set doi = paper.preprint %}
     {%- endif %}
-    {%- set citation = "https://citation.crosscite.org/?doi=" ~ doi %}
-    {%- set bibtex = "https://www.doi2bib.org/bib/" ~ doi|urlencode %}
     {%- if paper.openaccess is defined and paper.openaccess %}
       {%- set pdf = "https://doi.org/" ~ paper.doi %}
     {%- elif paper.preprint is defined %}
