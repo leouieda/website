@@ -1,17 +1,191 @@
 presentations:
 
+  - title: |
+      Academia e software livre: Desafios e oportunidades no Brasil e no
+      exterior
+    authors: Uieda, L.
+    year: 2021
+    event: National Observatory’s SEG and EAGE Student Chapter, Brazil
+    invited: true
+    github: leouieda/2021-07-22-on
+    recording: r2x-DN6laj8
+    slides: https://www.leouieda.com/2021-07-22-on
+    slides_embed: |
+      <div class="ratio ratio-16x9">
+      <iframe src="https://www.leouieda.com/2021-07-22-on" frameborder=0></iframe>
+      </div>
+    note: |
+      The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+      using my <a href="https://github.com/leouieda/talk-template">open-source
+      HTML talk template</a>.
+    about: |
+      I had the pleasure of giving this talk to the SEG and EAGE Student
+      Chapter of the Observatório Nacional (where I went to grad school). It
+      was about my path through science and some tips for those wanting to go
+      abroad. Slides and talk were in Portuguese.
+    abstract: |
+      Palestra e bate papo com o National Observatory Greenstone Belt (SEG-EAGE
+      Student Chapter do Observatório Nacional) sobre minha carreira e dicas
+      para os alunos que quiserem trilhar um caminho parecido.
+
+  - title: |
+      Open-science for gravimetry: tools, challenges, and opportunities
+    authors: Uieda, L., Soler, S. R., Pesce, A.
+    year: 2021
+    event: GFZ Helmholtz Centre Potsdam, Germany
+    invited: true
+    github: leouieda/2021-06-22-gfz
+    doi: 10.6084/m9.figshare.14838477
+    recording: z-5dvWfB_SM
+    slides: https://www.leouieda.com/2021-06-22-gfz
+    slides_embed: |
+      <div class="ratio ratio-16x9">
+      <iframe src="https://www.leouieda.com/2021-06-22-gfz" frameborder=0></iframe>
+      </div>
+    note: |
+      The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+      using my <a href="https://github.com/leouieda/talk-template">open-source
+      HTML talk template</a>.
+    about: |
+      <p>
+      This talk is about our recent on the Boule and Harmonica libraries and
+      how they fit into our current and future research plans. It includes a
+      live demo of using these tools to process real ground gravity data.
+      </p>
+      <p>
+      It was an invited talk to the geophysical modelling group at GFZ. Thank
+      you to Angela Maria Gomez Garcia for the invitation.
+      </p>
+    abstract: |
+      The Fatiando a Terra project is a collection of open-source Python
+      libraries for geophysics which cover a range of functionalities, from
+      data download and processing to modeling and inversion. Many of our tools
+      are general purpose but we also focus on gravimetry and magnetometry.
+      Development on the projected started in 2010 and has gone through several
+      iterations as the team matured and established best practices for
+      maintaining software projects in the open.
+      This talk is an overview of the history and current iteration of the
+      project, including a short demonstration of our current capabilities for
+      downloading and processing gravity data. We will then move on to our
+      plans for future directions of the projects and information of how you
+      can get involved. Finally, we will briefly discuss some of the challenges
+      and opportunities of adopting open-science practices.
+
+  - title: "Fatiando a Terra: Open-source tools for geophysics"
+    authors: Uieda, L., Soler, S. R., Pesce, A.
+    year: 2021
+    event: Geophysical Society of Houston
+    invited: true
+    github: fatiando/2021-gsh
+    slides: https://www.fatiando.org/2021-gsh/
+    slides_embed: |
+      <div class="ratio ratio-16x9">
+      <iframe src="https://www.fatiando.org/2021-gsh/" frameborder=0></iframe>
+      </div>
+    note: |
+      The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+      using my <a href="https://github.com/leouieda/talk-template">open-source
+      HTML talk template</a>.
+    about: |
+      This was an invited talk to the Potential Fields group of the GSH. Thank
+      you to <a href="https://www.andreabalza.com/">Andrea Balza Morales</a>
+      for the invitation and for organizing the seminar series.
+    abstract: |
+      The Fatiando a Terra project is a collection of open-source Python
+      libraries for geophysics which cover a range of functionalities, from
+      data download and processing to modeling and inversion. In this
+      opportunity we will present the two libraries that are focused on
+      potential fields: Harmonica and Boule. Boule implements reference
+      ellipsoids (including oblate ellipsoids, spheres, and soon triaxial
+      ellipsoids), conversions between ellipsoidal and geocentric spherical
+      coordinates, and normal gravity calculations. The latter are performed
+      using analytical expressions for gravity fields at any point outside of
+      the ellipsoid. Harmonica provides tools for processing, forward
+      modelling, and inversion of gravity and magnetic data. We will
+      demonstrate its use to compute Bouguer gravity disturbances by forward
+      modelling the topography with prisms, removing a 2nd order regional
+      trend, and interpolating it onto a regular grid at a constant height
+      using the equivalent layer technique. Both libraries are still evolving
+      as we continue to refine their goals and scopes. We invite everyone to
+      get involved in the development, whether it's through coding, writing
+      documentation, or giving feedback.
+
+  - title: "Harmonica and Boule: Modern Python tools for geophysical gravimetry"
+    authors: Uieda, L., Soler, S. R., Pesce, A., Perozzi, L., and Wieczorek, M. A.
+    year: 2021
+    event: EGU General Assembly
+    doi: 10.5194/egusphere-egu21-8291
+    github: fatiando/egu2021
+    poster: https://github.com/fatiando/egu2021/raw/11880b0bbfd182e76ffdf9de30ef192b19b04060/vpico.pdf
+    poster_embed: |
+      <img src="../images/egu2021.jpg" alt="The poster about Boule and Harmonica">
+    citation: |
+      Uieda, L., Soler, S. R., Pesce, A., Perozzi, L., and Wieczorek, M. A.:
+      Harmonica and Boule: Modern Python tools for geophysical gravimetry,
+      EGU General Assembly 2021, online, 19–30 Apr 2021, EGU21-8291,
+      https://doi.org/10.5194/egusphere-egu21-8291, 2021.
+    abstract: |
+      <p>
+      Gravimetry is a routine part of the geophysicists toolset, historically
+      used in geophysics following the geodetic definitions of gravity
+      anomalies and their related “reductions”. Several authors have shown that
+      the geodetic concept of a gravity anomaly does not align with goals of
+      gravimetry in geophysics (the investigation of anomalous density
+      distributions). Much of this confusion likely stems from the lack of
+      widely available tools for performing the corrections needed to arrive at
+      a geophysically meaningful gravity disturbance. For example, free-air
+      corrections are completely unnecessary since analytical expressions for
+      theoretical gravity at any point have existed for over a decade. Since
+      this is not easily done in a spreadsheet or short script, modern tools
+      for processing and modelling gravity data for geophysics are needed.
+      These tools must be trustworthy (i.e., extensively tested) and designed
+      with software development and geophysical best practices in mind.
+      </p>
+      <p>
+      We present the Python libraries Harmonica and Boule, which are part of
+      the <a href="https://www.fatiando.org">Fatiando a Terra</a> project. Both
+      tools are open-source under the permissive BSD license and are developed
+      in the open by a community of geoscientists and programmers.
+      </p>
+      <p>
+      Harmonica provides tools for processing, forward modelling, and inversion
+      of gravity and magnetic data. The first release of Harmonica was focused
+      on implementing methods for processing and interpolation with the
+      equivalent source technique, as well as forward modelling with
+      right-rectangular prisms, point sources, and tesseroids. Current work is
+      directed towards implementing a processing pipeline for gravity data,
+      including topographic corrections in Cartesian and spherical coordinates,
+      atmospheric corrections, and more. The software is still in early stages
+      of development and design and would benefit greatly from community
+      involvement and feedback.
+      </p>
+      <p>
+      Boule implements reference ellipsoids (including oblate ellipsoids,
+      spheres, and soon triaxial ellipsoids), conversions between ellipsoidal
+      and geocentric spherical coordinates, and normal gravity calculations
+      using analytical solutions for gravity fields at any point outside of the
+      ellipsoid. It includes ellipsoids for the Earth as well as other
+      planetary bodies in the solar system, like Mars, the Moon, Venus, and
+      Mercury. This enables the calculation of gravity disturbances for Earth
+      and planetary data without the need for free-air corrections. Boule was
+      created out of the shared needs of Harmonica,
+      <a href="https://github.com/SHTOOLS">SHTools</a>,
+      and <a href="https://github.com/ioshchepkov/pygeoid">pygeoid</a> and is
+      developed with input from developers of these projects.
+      </p>
+      <p>
+      We welcome participation from the wider geophysical community,
+      irrespective of programming skill level and experience, and are actively
+      searching for interested developers and users to get involved in shaping
+      the future of these projects.
+      </p>
+
   - title: Geophysical research powered by open-source
     authors: Uieda, L.
     year: 2020
     invited: true
     event: |
-      CAU Kiel
-      •
-      USP
-      •
-      TU Freiberg
-      •
-      University of Liverpool
+      CAU Kiel • USP • TU Freiberg • University of Liverpool
     github: leouieda/2020-07-01-kiel
     recording: VqI8BX1Yg54
     slides: https://www.leouieda.com/2020-07-01-kiel

@@ -3,7 +3,7 @@ title: Presentations
 banner_image: images/anatolia-himalayas-topography.jpg
 banner_position: center
 banner_title: Presentations
-banner_subtitle: My talks and posters
+banner_subtitle: Slides, posters, abstracts, and recordings of my presentations
 template: base.html
 ---
 
@@ -39,6 +39,9 @@ template: base.html
   {%- if item.slides is defined %}
     {{ macros.button_link(item.slides, "Slides", type="btn-primary", icon="fa fa-desktop") }}
   {%- endif %}
+  {%- if item.poster is defined %}
+    {{ macros.button_link(item.poster, "Poster", type="btn-primary", icon="fa fa-image") }}
+  {%- endif %}
   {%- if item.recording is defined %}
     {{ macros.button_link("https://www.youtube.com/watch?v=" ~ item.recording, "Recording", type="btn-light", icon="fab fa-youtube") }}
   {%- endif %}
@@ -58,11 +61,9 @@ template: base.html
         {%- endif %}
         <h3 class="fs-4">Abstract</h3>
         <p>{{ item.abstract|trim }}</p>
-        <h3 class="fs-4">About</h3>
-        {{ item.about|trim }}
-        {%- if item.citation is defined %}
-          <h3 class="fs-4">Cite as</h3>
-          <blockquote class="mb-4">{{ item.citation|trim }}</blockquote>
+        {%- if item.about is defined %}
+          <h3 class="fs-4">About</h3>
+          {{ item.about|trim }}
         {%- endif %}
       </div>
       <div class="col-lg-6">
@@ -72,9 +73,19 @@ template: base.html
           {{ item.slides_embed|trim }}
           </div>
         {%- endif %}
+        {%- if item.poster_embed is defined %}
+          <h3 class="fs-4">Poster</h3>
+          <div class="mb-3">
+          {{ item.poster_embed|trim }}
+          </div>
+        {%- endif %}
         {%- if item.recording is defined %}
           <h3 class="fs-4">Recording</h3>
           {{ macros.youtube_embed(item.recording) }}
+        {%- endif %}
+        {%- if item.citation is defined %}
+          <h3 class="fs-4">Cite as</h3>
+          <blockquote class="mb-4">{{ item.citation|trim }}</blockquote>
         {%- endif %}
       </div>
     </section>
