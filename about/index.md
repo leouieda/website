@@ -44,8 +44,16 @@ Along with my role at the University of Liverpool, I'm also:
 * Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/)
 * Fellow of the [Software Sustainability Institute][ssi-fellowship]
 
+<figure>
+
 ![Me teaching git and GitHub at AGU2019](../images/teaching-git-at-agu2019.jpg)
-> Me teaching git and GitHub at [AGU2019](https://github.com/agu-ossi/2019-agu-oss).
+
+<figcaption>
+
+Me teaching git and GitHub at [AGU2019](https://github.com/agu-ossi/2019-agu-oss).
+
+</figcaption>
+</figure>
 
 </section>
 </div>

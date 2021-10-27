@@ -14,9 +14,13 @@ base.
 
 Read on for the long version.
 
-![Picture of the POST building](/images/post-building-university-hawaii.jpg)
-*The Pacific Ocean Science and Technology (POST) building in the UH Manoa
-campus. My office is on the top floor with a nice view of downtown Honolulu.*
+<figure>
+<img alt="Picture of the POST building" src="/images/post-building-university-hawaii.jpg">
+<figcaption>
+The Pacific Ocean Science and Technology (POST) building in the UH Manoa
+campus. My office is on the top floor with a nice view of downtown Honolulu.
+</figcaption>
+</figure>
 
 After two and half years as a [Professor at UERJ](/about),
 struggling to teach classes without any experience or time to prepare,
@@ -87,10 +91,16 @@ sort out the trip.
 In the middle of February I hopped on a quick ~24h trip from São Paulo to
 Honolulu and now here I am.
 
-![My new desk and computer setup](/images/university-office-view-hawaii.jpg)
-*My new desk at UH with a great view of the tall buildings of
+<figure>
+<img alt="My new desk and computer" src="/images/university-office-view-hawaii.jpg">
+<figcaption>
+
+My new desk at UH with a great view of the tall buildings of
 [Waikiki](https://en.wikipedia.org/wiki/Waikiki) and downtown Honolulu on a
-nice rainy day.*
+nice rainy day.
+
+</figcaption>
+</figure>
 
 The goal of the project is to build a bridge between GMT (a set C-coded
 command-line programs) and the Python programming language.
