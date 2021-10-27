@@ -29,6 +29,8 @@ navigation:
     id: blog/index
   - name: Publications
     id: publications/index
+  - name: Presentations
+    id: presentations/index
   #- name: Software
     #id: software/index
   #- name: Data

@@ -29,6 +29,11 @@ h3 {
   font-size: 1.5rem;
 }
 
+h4 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
 a {
   text-decoration: none;
   color: var(--lu-blue);
