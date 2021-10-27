@@ -65,7 +65,7 @@ Me teaching git and GitHub at [AGU2019](https://github.com/agu-ossi/2019-agu-oss
 ### Online
 
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-12">
 
 These are best ways to reach me online:
 
@@ -83,35 +83,17 @@ These are best ways to reach me online:
 </ul>
 
 </div>
-<div class="col-md-6">
+<div class="col-md-12">
 
 Find out more about my work at:
 
-<ul class="fa-ul">
-  <li><i class="fa-li fab fa-github fa-fw" aria-hidden="true"></i>
-  <a target="_blank" href="https://github.com/{{ config.github }}">GitHub</a>
-  <span >• @{{ config.github }}</span>
-  </li>
-  <li><i class="fa-li ai ai-orcid fa-fw" aria-hidden="true"></i>
-  <a target="_blank" href="https://orcid.org/{{ config.orcid }}">ORCID</a>
-  <span >• {{ config.orcid }}</span>
-  </li>
-  <li><i class="fa-li ai ai-impactstory fa-fw" aria-hidden="true"></i>
-  <a target="_blank" href="https://profiles.impactstory.org/u/{{ config.orcid }}">ImpactStory</a>
-  </li>
-  <li><i class="fa-li ai ai-figshare fa-fw" aria-hidden="true"></i>
-  <a target="_blank" href="http://figshare.com/authors/Leonardo%20Uieda/97471">figshare</a>
-  </li>
-  <li><i class="fa-li ai ai-google-scholar fa-fw" aria-hidden="true"></i>
-  <a target="_blank" href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ">Google Scholar</a>
-  </li>
-  <li><i class="fa-li ai ai-publons fa-fw" aria-hidden="true"></i>
-  <a target="_blank" href="https://publons.com/a/1328468/">Publons</a>
-  </li>
-  <li><i class="fa-li ai ai-researchgate fa-fw" aria-hidden="true"></i>
-  <a target="_blank" href="{{ config.researchgate }}">ResearchGate</a>
-  </li>
-</ul>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://github.com/{{ config.github }}"><i class="fab fa-github me-1" aria-hidden="true"></i> GitHub</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://orcid.org/{{ config.orcid }}"><i class="ai ai-orcid me-1" aria-hidden="true"></i> ORCID</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://profiles.impactstory.org/u/{{ config.orcid }}"><i class="ai ai-impactstory me-1" aria-hidden="true"></i> ImpactStory</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="http://figshare.com/authors/Leonardo%20Uieda/97471"><i class="ai ai-figshare me-1" aria-hidden="true"></i> figshare</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ"><i class="ai ai-google-scholar me-1" aria-hidden="true"></i> Google Scholar</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://publons.com/a/1328468/"><i class="ai ai-publons me-1" aria-hidden="true"></i> Publons</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.researchgate }}"><i class="ai ai-researchgate me-1" aria-hidden="true"></i> ResearchGate</a>
 
 </div>
 </div>

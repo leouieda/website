@@ -83,15 +83,17 @@
         <div class="col-lg-6">
           <h3 class="fs-4">Abstract</h3>
           <p>{{ paper.abstract|trim }}</p>
+          <h3 class="fs-4">Cite as</h3>
+          <blockquote>{{ paper.citation|trim }}</blockquote>
         </div>
         <div class="col-lg-6">
-          <h3 class="fs-4 mb-4">Article Level Metrics</h3>
-          <div class="altmetric-embed mb-3" data-badge-type="medium-donut" data-badge-details="right" data-doi="{{ doi }}"></div>
-          <span class="__dimensions_badge_embed__ mb-4" data-legend="always" data-doi="{{ doi }}"></span>
-          <h3 class="fs-4">Cite as</h3>
-          <p class="citation">{{ paper.citation|trim }}</p>
           <h3 class="fs-4">BibTex</h3>
           <pre><code>{{ paper.bibtex|trim|escape }}</code></pre>
+          <h3 class="fs-4 mb-4">Article Level Metrics</h3>
+          <div class="alm-badges mb-4">
+          <div class="altmetric-embed mb-3" data-badge-type="medium-donut" data-badge-details="right" data-doi="{{ doi }}"></div>
+          <span class="__dimensions_badge_embed__" data-legend="always" data-doi="{{ doi }}"></span>
+          </div>
         </div>
       </section>
     </div>

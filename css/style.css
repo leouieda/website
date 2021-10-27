@@ -4,8 +4,10 @@
   --bs-body-font-size: 1.1rem;
   --bs-body-bg: #0b141d;
   --bs-body-color: #fefefe;
+  --lu-light-blue: #61abff;
   --lu-blue: #459cff;
   --lu-mid-blue: #1a5597;
+  --lu-darkish-blue: #122130;
   --lu-dark-blue: #0b141d;
   --lu-light-blue-gray: #c6e1ff;
   --lu-neon-glow: #459cff88;
@@ -211,17 +213,7 @@ li.list-inline-item {
 .page-section-light {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  color: var(--bs-gray-800);
-  background-color: var(--bs-gray-300);
-}
-
-.page-section-light a {
-  text-decoration: none;
-  color: var(--lu-mid-blue);
-}
-
-.page-section-light a:hover {
-  text-decoration: underline;
+  background-color: var(--lu-darkish-blue);
 }
 
 .narrow-page {
@@ -240,6 +232,7 @@ li.list-inline-item {
 .callout a {
   text-decoration: none;
   color: var(--lu-light-blue-gray);
+  color: var(--lu-light-blue);
 }
 
 .callout a:hover {
@@ -287,25 +280,16 @@ li.list-inline-item {
 
 .paper-info {
   padding: 1.75rem 1.5rem;
-  border: 1px solid var(--bs-gray-400);
+  border: 1px solid var(--lu-mid-blue);
   border-radius: 5px;
-  color: var(--bs-gray-800);
-  background-color: var(--bs-gray-100);
+  background-color: var(--lu-darkish-blue);
+  font-size: 1rem;
 }
 
-.paper-info a {
-  text-decoration: none;
-  color: var(--lu-mid-blue);
-}
-
-.paper-info a:hover {
-  text-decoration: underline;
-}
-
-.citation {
-  border-left: 0.25rem solid var(--bs-gray-500);
-  padding-left: 1rem;
-  color: var(--bs-gray-600);
+.alm-badges {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.25rem;
 }
 
 .nowrap {
