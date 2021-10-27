@@ -179,10 +179,10 @@
   <script src="/js/bootstrap-5.1/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
-  <!-- Altmetric badge -->
-  <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-  <!-- Dimensions badge -->
-  <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+  {%- if page.enable_alm is defined and page.enable_alm %}
+    <!-- Dimensions badge -->
+    <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+  {%- endif %}
 
 </body>
 </html>

@@ -280,16 +280,10 @@ li.list-inline-item {
 
 .paper-info {
   padding: 1.75rem 1.5rem;
-  border: 1px solid var(--lu-mid-blue);
+  border: 2px solid var(--lu-mid-blue);
   border-radius: 5px;
   background-color: var(--lu-darkish-blue);
   font-size: 1rem;
-}
-
-.alm-badges {
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 0.25rem;
 }
 
 .nowrap {
