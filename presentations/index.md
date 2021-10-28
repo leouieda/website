@@ -59,12 +59,12 @@ template: base.html
             <p><strong>Note:</strong> {{ item.note|trim }}</p>
           </div>
         {%- endif %}
-        <h3 class="fs-4">Abstract</h3>
-        <p>{{ item.abstract|trim }}</p>
         {%- if item.about is defined %}
           <h3 class="fs-4">About</h3>
           {{ item.about|trim }}
         {%- endif %}
+        <h3 class="fs-4">Abstract</h3>
+        <p>{{ item.abstract|trim }}</p>
       </div>
       <div class="col-lg-6">
         {%- if item.slides_embed is defined %}
