@@ -28,7 +28,7 @@ template: base.html
     {%- endif %}
     {{ item.event }}
     {%- if item.doi is defined %}
-      | doi:<a href="https://doi.org/{{ item.doi }}">{{ item.doi }}</a>
+      | doi:<a target="_blank" href="https://doi.org/{{ item.doi }}">{{ item.doi }}</a>
     {%- endif %}
   </p>
   <button class="btn btn-secondary btn-sm me-1 mb-2" type="button"
