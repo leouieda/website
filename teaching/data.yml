@@ -27,6 +27,64 @@ liverpool:
       engaged following along.
       </p>
 
+  - title: "Gravimetry"
+    github: leouieda/gravity-processing
+    description: ENVS258 Environmental Geophysics • University of Liverpool
+    about: |
+      <p>
+      Gravimetry is taught as a 2-week section of the ENVS258 module, focusing
+      on the practical aspects and handling of real data (the theory is covered
+      in a prerequisite module).
+      My take on this was to generate simulated raw data (from an open-access
+      dataset) and walk them through applying gravimeter corrections,
+      calculating absolute gravity by tying to a base station, and removing
+      the effects of the Normal Earth and topography (Bouguer correction).
+      </p>
+      <p>
+      The teaching resources include short lectures and computational
+      practicals using Python to process synthetic data.
+      The slides for lectures are create with
+      <a href="https://revealjs.com/">reveal.js</a> so they can be easily kept
+      under version control and shared with students in HTML form (hosted on
+      GitHub Pages).
+      The practicals are organized into Jupyter notebooks with annotations and
+      the prerequisite code. During delivery of the practicals, I start with
+      a blank version of the notebook and type out the code while I explain
+      what I'm doing. This helps control my pacing and make sure students are
+      engaged following along.
+      </p>
+
+  - title: "Remote sensing"
+    github: leouieda/remote-sensing
+    description: ENVS258 Environmental Geophysics • University of Liverpool
+    about: |
+      <p>
+      The first 4 weeks of the ENVS258 module are a crash-course on satellite
+      remote sensing, including multispectral images, LiDAR and DEMs, and
+      InSAR.
+      There is a practical focus and students learn how to manipulate these
+      data using standard scientific Python tools.
+      The highlight of this part of the module is the report they have to
+      produce by choosing their own study region, downloading public domain
+      imagery, processing it in Python, and writing up their results.
+      Some of the reports are truly inspiring (I've incorporated some into
+      the practicals) and they are always a pleasure to read and provide
+      feedback.
+      </p>
+      <p>
+      The teaching resources include short lectures and computational
+      practicals using Python to process synthetic data.
+      The slides for lectures are create with
+      <a href="https://revealjs.com/">reveal.js</a> so they can be easily kept
+      under version control and shared with students in HTML form (hosted on
+      GitHub Pages).
+      The practicals are organized into Jupyter notebooks with annotations and
+      the prerequisite code. During delivery of the practicals, I start with
+      a blank version of the notebook and type out the code while I explain
+      what I'm doing. This helps control my pacing and make sure students are
+      engaged following along.
+      </p>
+
 
 workshops:
 
@@ -36,11 +94,12 @@ workshops:
     recording: list:PLzmugeDoplFPtWkrCqWWWZGZzPQr_k0Kx
     about: |
       <p>
-      This 2-day course will cover the use of Generic Mapping Tools (GMT) in
-      geodesy using UNIX shell scripting. Lectures and exercises will be given
-      to teach the basic conventions of using GMT, such as plotting grids,
-      images, and vector data (points, lines, polygons). Labs will include both
-      processing and mapping of various data sets relevant to geodesy.
+      This is another online iteration of our 2-day course. It covers the use
+      of Generic Mapping Tools (GMT) in geodesy using UNIX shell scripting.
+      Lectures and exercises will be given to teach the basic conventions of
+      using GMT, such as plotting grids, images, and vector data (points,
+      lines, polygons). Labs will include both processing and mapping of
+      various data sets relevant to geodesy.
       </p>
       <p>
       The short course is taught by the GMT team:
@@ -51,6 +110,105 @@ workshops:
       Xiaohua Xu (Scripps Institution of Oceanography),
       and
       Meghan Jones (University of Hawaii at Manoa).
+      </p>
+
+  - title: "From scattered data to gridded products using Verde"
+    github: fatiando/transform2020
+    description: Transform 2020
+    recording: -xZdNdvzm3E
+    about: |
+      <p>
+      This tutorial was a part of the
+      <a href="https://softwareunderground.org/">Software Underground</a>'s
+      Transform event, an online series of open-access and open-source
+      tutorials about coding and geoscience.
+      The live video was streamed on YouTube and participants asked questions
+      on the Slack workspace, where volunteers would help them along and
+      pass on any feedback to me.
+      The format worked quite well and the video because a useful reference for
+      novices getting into Fatiando a Terra.
+      </p>
+      <h3>Description</h3>
+      <p>
+      This tutorial will be a hands-on tour of
+      <a href="https://www.fatiando.org/verde">Verde</a>, a Python package for
+      processing and gridding geophysical/geospatial data with a twist of
+      machine learning. We'll start with a real dataset and work our way
+      towards producing one or more gridded products. The way there will take
+      us through:
+      </p>
+      <ul>
+      <li>Loading some data</li>
+      <li>Generating and handling coordinates and projections (using pyproj)</li>
+      <li>Splitting training and testing data for validation</li>
+      <li>Data decimation with blocked means/medians to avoid aliasing</li>
+      <li>2D trend estimation</li>
+      <li>Gridding with bi-harmonic splines</li>
+      <li>Combining everything into a data processing pipeline</li>
+      <li>Cross-validation of data distributed spatially on the Earth (including parallel execution with Dask)</li>
+      </ul>
+
+  - title: "Let's build a geophysical inversion with Python"
+    github: compgeolab/2020-aachen-inverse-problems
+    description: RWTH Aachen University graduate school IRTG-2379 Modern Inverse Problems
+    about: |
+      <p>
+      I taught this short online course (3 hours) for the Aachen graduate
+      school on invitation by <a href="https://www.cgre.rwth-aachen.de/cms/CGRE/Das-Lehr-und-Forschungsgebiet/~dnyyj/Prof-Wellmann/">Prof. Florian Wellman</a>.
+      I tried to give it a very hands-on spin where we attempted to code a
+      non-linear gravity inversion live.
+      It worked out much better than I expected!
+      </p>
+      <h3>Description</h3>
+      <p>
+      Inverse problems abound in geophysics. It is the primary way in which we
+      investigate the subsurface of the Earth, which is largely inaccessible to
+      us beyond the first dozen or so kilometers. From measurements acquired on
+      land, sea, air, and from space, geophysicists tease out the inner
+      structure of the Earth - from a few meters to thousands of kilometers
+      deep in the inner core. Observations of disturbances in the Earth's
+      gravity field are one of the key elements used by geophysicists to
+      investigate the crust-mantle interface, the large-scale structure of
+      sedimentary basins (which are reservoirs for water and hydrocarbons), and
+      even the mass balance of the world's ice sheets. However, the gravity
+      inverse problem is particularly challenging due to the physics of
+      potential fields. Unique solutions are difficult to come by and only
+      exist under strict assumptions, which often don't hold for real world
+      scenarios. For these problems, regularization plays a critical role and
+      has been the focus of much research in the past 20 years.
+      </p>
+      <p>
+      In this tutorial, we will work together to solve a 2D gravity inverse
+      problem in Python. Our code will estimate the shape of a sedimentary
+      basin from gravity observations. This non-linear inverse problem will
+      allow us to visually explore the effects of different types of
+      regularization from a geometric perspective (smoothness, equality
+      constraints, and more). We will discuss the challenges involved in real
+      world applications and the difficulties of quantifying the uncertainty in
+      the solutions. The main goal of this tutorial is to impart theoretical
+      and practical skills that can be easily transfered to other domains.
+      </p>
+
+  - title: "The Generic Mapping Tools (GMT) for Geodesy"
+    github: GenericMappingTools/2020-unavco-course
+    description: 2020 UNAVCO Short Courses
+    recording: list:PLzmugeDoplFPq6k7u1ebNbiBzqFA-OwXF
+    about: |
+      <p>
+      This iteration of our 2-day course was moved online due to the COVID-19
+      pandemic. It covers the use of Generic Mapping Tools (GMT) in geodesy
+      using UNIX shell scripting. Lectures and exercises will be given to teach
+      the basic conventions of using GMT, such as plotting grids, images, and
+      vector data (points, lines, polygons). Labs will include both processing
+      and mapping of various data sets relevant to geodesy.
+      </p>
+      <p>
+      The short course is taught by the GMT team:
+      Paul Wessel (University of Hawaii at Manoa),
+      Joaquim Luis (University of Algarve, Portugal),
+      Dongdong Tian (Michigan State University),
+      Xiaohua Xu (Scripps Institution of Oceanography),
+      and myself.
       </p>
 
   - title: "Best practices for developing and sustaining your open-source research software"
@@ -118,6 +276,28 @@ workshops:
         software.
       </li>
       </ol>
+
+  - title: "The Generic Mapping Tools (GMT) for Geodesy"
+    github: GenericMappingTools/2019-unavco-course
+    description: 2019 UNAVCO Short Courses
+    recording: list:PLzmugeDoplFMwr1W7dgmwf26p83ie6ZEN
+    about: |
+      <p>
+      This is our 2-day course covering the use of Generic Mapping Tools (GMT)
+      in geodesy using UNIX shell scripting. Lectures and exercises will be
+      given to teach the basic conventions of using GMT, such as plotting
+      grids, images, and vector data (points, lines, polygons). Labs will
+      include both processing and mapping of various data sets relevant to
+      geodesy.
+      </p>
+      <p>
+      The short course is taught by the GMT team:
+      Paul Wessel (University of Hawaii at Manoa),
+      Joaquim Luis (University of Algarve, Portugal),
+      Dongdong Tian (Michigan State University),
+      Xiaohua Xu (Scripps Institution of Oceanography),
+      and myself.
+      </p>
 
   - title: "Best practices for modern open-source research codes"
     github: agu-ossi/2018-agu-oss
