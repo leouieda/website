@@ -225,6 +225,10 @@ li.list-inline-item {
   max-width: 750px;
 }
 
+.wide-page {
+  max-width: 850px;
+}
+
 .callout {
   margin: 0 auto 1.5rem;
   color: var(--bs-body-color);
