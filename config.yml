@@ -34,6 +34,8 @@ navigation:
     id: presentations/index
   - name: Teaching
     id: teaching/index
+  - name: Software
+    id: software/index
 
 # Don't copy or process these files
 ignore:
