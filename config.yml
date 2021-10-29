@@ -24,8 +24,6 @@ publons: https://publons.com/a/1328468/
 navigation:
   - name: Home
     id: index
-  - name: About
-    id: about/index
   - name: Blog
     id: blog/index
   - name: Publications
@@ -36,6 +34,8 @@ navigation:
     id: teaching/index
   - name: Software
     id: software/index
+  - name: About
+    id: about/index
 
 # Don't copy or process these files
 ignore:

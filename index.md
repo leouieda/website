@@ -13,7 +13,7 @@ template: base.html
 ---
 
 <div class="container-fluid page-section">
-<section class="container narrow-page">
+<section class="container wide-page">
 
 <h2 class="mb-5 text-center">A bit about me</h2>
 

@@ -4,7 +4,6 @@ banner_image: images/github-graph.jpg
 banner_position: center
 banner_title: Software
 banner_subtitle: The open-source software projects with which I'm involved
-container_class: container page-content overflow-hidden wide-page
 template: base.html
 ---
 

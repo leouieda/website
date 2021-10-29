@@ -11,7 +11,7 @@
     {%- endif %}
   {%- endfor %}
 
-  <section class="container page-content overflow-hidden narrow-page">
+  <section class="container page-content overflow-hidden wide-page">
     {%- for item in posts|sort(attribute="date", reverse=True) %}
       <h2 class="fs-4 mb-2 mt-5">
         {{ item.title }}
