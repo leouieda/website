@@ -10,6 +10,17 @@ template: base.html
 
 {%- import "macros.html" as macros %}
 
+<div class="callout callout-note mb-5">
+
+For citation information, see
+[Google Scholar]({{ config.googlescholar }})
+and [Publons]({{ config.publons }}).
+A more complete list of my work can be found on
+[ORCID](https://orcid.org/{{ config.orcid }})
+• {{ config.orcid }} .
+
+</div>
+
 
 {%- for paper in page.papers %}
   {%- set id = loop.index %}

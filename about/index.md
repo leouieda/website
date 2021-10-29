@@ -91,8 +91,8 @@ Find out more about my work at:
 <a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://orcid.org/{{ config.orcid }}"><i class="ai ai-orcid me-1" aria-hidden="true"></i> ORCID</a>
 <a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://profiles.impactstory.org/u/{{ config.orcid }}"><i class="ai ai-impactstory me-1" aria-hidden="true"></i> ImpactStory</a>
 <a class="btn btn-outline-light me-1 mb-2" target="_blank" href="http://figshare.com/authors/Leonardo%20Uieda/97471"><i class="ai ai-figshare me-1" aria-hidden="true"></i> figshare</a>
-<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ"><i class="ai ai-google-scholar me-1" aria-hidden="true"></i> Google Scholar</a>
-<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://publons.com/a/1328468/"><i class="ai ai-publons me-1" aria-hidden="true"></i> Publons</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.googlescholar }}"><i class="ai ai-google-scholar me-1" aria-hidden="true"></i> Google Scholar</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.publons }}"><i class="ai ai-publons me-1" aria-hidden="true"></i> Publons</a>
 <a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.researchgate }}"><i class="ai ai-researchgate me-1" aria-hidden="true"></i> ResearchGate</a>
 
 </div>
