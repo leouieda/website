@@ -1,202 +1,196 @@
 ---
 title: About
-layout: page
-content:
-    - phd
-    - masters
-    - bachelors
-banner: valley-of-fire.jpg
-banner_position: center left
-banner_description: "Overlooking the Valley of Fire national park in Nevada, USA."
+banner_image: images/hawaii-lava-photoshoot.jpg
+banner_position: top left
+banner_title: About me
+banner_subtitle: Who I am and how to contact me
+container_class:
+template: base.html
 ---
 
+<div class="container-fluid page-section">
+<section class="container narrow-page">
 
-{% from "utils.html" import fa, ai %}
+## The slightly longer version
 
-# TL;DR
+I'm first and foremost a Dedicated Involved Loving Father.
+On the rare occasions where I find myself with free time, I enjoy
+playing Incineroar in Smash Bros Ultimate,
+baking sourdough bread,
+making noise with my ukulele and off-tune baritone,
+listening to podcasts,
+and reading sci-fi and fantasy.
+My favorite show by far is Avatar: The Last Airbender.
 
-Geophysicist specializing in the development of methods for determining the
-inner structure of the Earth from geophysical observations, mainly disturbances
-in the Earth's gravity and magnetic fields. Developer of open-source software
-for processing, modeling, and visualizing geophysical data. Advocate for
-openness in the scientific process and the adoption of best practices in
-computational research.
+I work as Lecturer in Geophysics at the University of Liverpool's
+[Department of Earth, Ocean and Ecological Sciences][deoes] in the UK,
+where I'm starting the [Computer-Oriented Geoscience Lab][compeolab].
+Before coming to Liverpool, I was a visiting research scholar at the
+University of Hawaiʻi at Mānoa, where I worked with the
+[Generic Mapping Tools][gmt] team to create [PyGMT][pygmt], a widely-used
+Python library for processing and visualizing geophysical data.
+Prior to Hawaiʻi, I worked for three years as Assistant Professor at the
+Universidade do Estado do Rio de Janeiro, Brazil.
 
-# Summary
+My research and teaching make heavy use of open-source software and computing
+in general to gain insights on the inner workings of the Earth.
+I am one of the core developers and maintainer of the
+[Fatiando a Terra][fatiando] project, a community-developed set of open-source
+Python libraries for the Geosciences.
 
-I am currently Lecturer of Geophysics at the University of Liverpool, where I'm
-starting the <a href="https://www.compgeolab.org">Computer-Oriented Geoscience
-Lab</a>. Our research and teaching make heavy use of open-source software. The
-lab develops and maintains the [Fatiando a Terra](https://www.fatiando.org)
-project, a collection of Python libraries for the Geosciences along with some
-general purpose tools.
+Along with my role at the University of Liverpool, I'm also:
 
-Along with my role at the University, I'm also a
-[Topic Editor for the Journal of Open Source Software](https://joss.theoj.org/),
-a member of the [Advisory Council for EarthArXiv](https://eartharxiv.org/),
-and
-a [Fellow of the Software Sustainability Institute][/blog/ssi-fellowship].
+* Topic Editor for the [Journal of Open Source Software](https://joss.theoj.org/)
+* Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/)
+* Fellow of the [Software Sustainability Institute][ssi-fellowship]
 
-Before coming to Liverpool, I was a Visiting Researcher at the University of
-Hawai'i, USA, where I worked on the <a
-href="https://www.generic-mapping-tools.org">Generic Mapping Tools</a> (GMT), a
-widely-used software for processing and visualizing geophysical data. My main
-contributions were the development of [PyGMT](https://www.pygmt.org) and
-modernizing the team's development process (moving to GitHub, starting a
-Discourse forum, setting up continuous-integration, etc). Prior to Hawai'i, I
-worked for three years as Assistant Professor of Geophysics at the Universidade
-do Estado do Rio de Janeiro, Brazil.
+<figure>
 
-# Curriculum Vitae
+![Me teaching git and GitHub at AGU2019](../images/teaching-git-at-agu2019.jpg)
 
-I keep a PDF version of my CV in a more traditional format.
-It is typeset in Latex using a custom open-source template.
-The source is available on the Github repository
-[leouieda/cv](https://github.com/leouieda/cv).
+<figcaption>
 
-<a href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer"><i class="fa fa-file-pdf-o"></i> Download Curriculum Vitæ</a>
+Me teaching git and GitHub at [AGU2019](https://github.com/agu-ossi/2019-agu-oss).
 
+</figcaption>
+</figure>
 
-# Around the internet
-
-I post about my research on social networking sites and have a moderate
-presence on Twitter (links at the top of the page).
-Most of my research output is available around the internet, usually through
-Github repositories.
-You can find me and my research, code, articles, and data at:
-
-<ul class="fa-ul">
-
-<li><i class="fa-li fa fa-github fa-fw"></i>
-<a href="https://github.com/leouieda">Github</a>:
-<em>software projects, repositories for papers and talks</em>
-</li>
-
-<li><i class="fa-li ai ai-orcid fa-fw"></i>
-<a href="http://orcid.org/0000-0001-6123-9515">ORCID</a> ( 0000-0001-6123-9515 ):
-<em>aggregates all of my scientific output that have DOIs</em>
-</li>
-
-<li><i class="fa-li ai ai-impactstory fa-fw"></i>
-<a href="https://impactstory.org/u/0000-0001-6123-9515">ImpactStory</a>:
-<em>hub for article level metrics and further impact of research</em>
-</li>
-
-<li><i class="fa-li ai ai-google-scholar fa-fw"></i>
-<a href="http://scholar.google.com/citations?user=qfmPrUEAAAAJ">Google Scholar</a>:
-<em>publication list and citation information</em>
-</li>
-
-<li><i class="fa-li ai ai-figshare fa-fw"></i>
-<a href="http://figshare.com/authors/Leonardo%20Uieda/97471">figshare</a>:
-<em>where I publish most supplemental material, slides, posters</em>
-</li>
-
-<li><i class="fa-li ai ai-publons fa-fw"></i>
-<a href="https://publons.com/a/1328468/">Publons</a>:
-<em>registry for my peer-review contributions</em>
-</li>
-
-<li><i class="fa-li ai ai-researchgate fa-fw"></i>
-<a href="https://www.researchgate.net/profile/Leonardo_Uieda">ResearchGate</a>:
-<em>academic social network</em>
-</li>
-
-<li><i class="fa-li ai ai-lattes fa-fw"></i>
-<a href="http://lattes.cnpq.br/8939551682050504">Currículo Lattes</a>:
-<em>Brazilian online resume</em>
-</li>
-
-</ul>
-
-
-# Experience
-
-## Lecturer
-
-<ul class="fa-ul">
-    <li><i class="fa-li fa fa-calendar fa-fw"></i>
-        Aug 2019 - present
-    </li>
-    <li><i class="fa-li fa fa-university fa-fw"></i>
-        Department of Earth, Ocean and Ecological Sciences
-        <br>
-        School of Environmental Sciences
-        <br>
-        <a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/">University of Liverpool</a>, UK
-    </li>
-    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
-        More information about my role and activities can be found in my
-        <a href="https://www.liverpool.ac.uk/environmental-sciences/staff/leonardo-uieda/">institutional profile</a>.
-    </li>
-</ul>
-
-## Visiting Research Scientist
-
-<ul class="fa-ul">
-    <li><i class="fa-li fa fa-calendar fa-fw"></i>
-        Feb 2017 - Aug 2019
-    </li>
-    <li><i class="fa-li fa fa-university fa-fw"></i>
-        Department of Earth Sciences
-        <br>
-        School of Ocean and Earth Science and Technology
-        <br>
-        <a href="http://www.soest.hawaii.edu/GG/index.html">University of Hawai'i at Mānoa</a>, USA
-    </li>
-    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
-        I came to UH on <a href="/blog/hawaii-gmt-postdoc.html">a
-        postdoc scholarship</a> to build a Python wrapper and high-level API
-        for the <a href="https://www.generic-mapping-tools.org">Generic Mapping Tools
-        (GMT)</a>. I ended up getting involved in modernizing the development process of
-        GMT and helping plan for its long term sustainability.
-    </li>
-</ul>
-
-## Assistant Professor of Geophysics
-
-<ul class="fa-ul">
-    <li><i class="fa-li fa fa-calendar fa-fw"></i>
-        Feb 2014 - Feb 2018
-    </li>
-    <li><i class="fa-li fa fa-university fa-fw"></i>
-        Departamento de Geologia Aplicada
-        <br>
-        Faculdade de Geologia
-        <br>
-        <a href="http://www.uerj.br">Universidade do Estado do Rio de Janeiro (UERJ)</a>, Brazil
-    </li>
-    <li><i class="fa-li fa fa-info-circle fa-fw"></i>
-        At UERJ, I developed and taught the
-        <a href="/teaching/geofisica1.html">Geophysics 1 (Gravity and
-        Magnetics)</a> and
-        <a href="/teaching/geofisica2.html">Geophysics 2 (Seismology)</a>
-        courses for the Geology program, the
-        <a href="/teaching/matematica-especial.html">Special Mathematics 1
-        (Programming and Numerical Methods)</a> course for the Oceanography
-        program, and <a href="/teaching">a range of short courses</a>.
-    </li>
-</ul>
-
-
-# Education
-
-<div>
-    {%- for edu in this.content -%}
-        <h3><a href="{{ edu.url }}">{{ edu.title }}  »</a></h3>
-        <ul class="fa-ul">
-            <li><i class="fa-li fa fa-calendar fa-fw"></i>
-                {{ edu.start_date.year}}-{{ edu.date.year }}
-            </li>
-            <li><i class="fa-li fa fa-university fa-fw"></i>
-                {{ edu.institution }}
-            </li>
-            <li><i class="fa-li fa fa-graduation-cap fa-fw"></i>
-                Advisor: {{ edu.advisor }}
-            </li>
-            <li><i class="fa-li fa fa-book fa-fw"></i>
-                Thesis: {{ edu.thesis }}
-            </li>
-        </ul>
-    {%- endfor -%}
+</section>
 </div>
+<div class="container-fluid page-section-light page-section-pattern">
+<section class="container narrow-page">
+
+## Contact
+
+### Online
+
+<div class="row">
+<div class="col-md-12">
+
+These are best ways to reach me online:
+
+<ul class="fa-ul my-4">
+  <li><i class="fa-li fa fa-envelope fa-fw" aria-hidden="true"></i>
+  <a href="mailto:Leonardo.Uieda@liverpool.ac.uk">Leonardo.Uieda@liverpool.ac.uk</a>
+  </li>
+  <li><i class="fa-li fab fa-twitter fa-fw" aria-hidden="true"></i>
+  <a href="https://twitter.com/leouieda">@leouieda</a> on Twitter
+  </li>
+  <li><i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
+  On the <a href="https://softwareunderground.org/">Software Underground</a>
+  Slack
+  </li>
+</ul>
+
+</div>
+<div class="col-md-12">
+
+Find out more about my work at:
+
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://github.com/{{ config.github }}"><i class="fab fa-github me-1" aria-hidden="true"></i> GitHub</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://orcid.org/{{ config.orcid }}"><i class="ai ai-orcid me-1" aria-hidden="true"></i> ORCID</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://profiles.impactstory.org/u/{{ config.orcid }}"><i class="ai ai-impactstory me-1" aria-hidden="true"></i> ImpactStory</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="http://figshare.com/authors/Leonardo%20Uieda/97471"><i class="ai ai-figshare me-1" aria-hidden="true"></i> figshare</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.googlescholar }}"><i class="ai ai-google-scholar me-1" aria-hidden="true"></i> Google Scholar</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.publons }}"><i class="ai ai-publons me-1" aria-hidden="true"></i> Publons</a>
+<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.researchgate }}"><i class="ai ai-researchgate me-1" aria-hidden="true"></i> ResearchGate</a>
+
+</div>
+</div>
+
+### At the University of Liverpool
+
+My office is in the Jane Herdman Building - Room A2.06 (second floor of the
+annex).
+You probably want to **email me first** to make sure I'm in the office (I work
+from home some days of the week).
+
+Here is the full address:
+
+<a href="https://goo.gl/maps/6F7Uj5g2hxEEkKor8">
+Jane Herdman Building
+<br>
+4 Brownlow Street
+<br>
+Liverpool, United Kingdom
+<br>
+L69 3GP
+</a>
+
+</section>
+</div>
+<div class="container-fluid page-section">
+<section class="container narrow-page">
+
+## Curriculum Vitae
+
+I keep a full length version of my CV updated and publicly available:
+
+<a class="btn btn-primary mb-3" href="https://www.leouieda.com/cv/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">
+<i class="me-1 fa fa-download" aria-hidden="true"></i>
+Download my CV in PDF
+</a>
+
+<div class="callout">
+
+**Curious about the CV template?** It's typeset in LaTeX using a custom
+template. The source is available from the GitHub repository
+<a class="nowrap" href="https://github.com/leouieda/cv"><i class="mx-1 fab fa-github" aria-hidden="true"></i><code>leouieda/cv</code></a>.
+
+</div>
+
+## Education
+
+{% import "macros.html" as macros %}
+
+{# The education list is defined in about/data.yml #}
+{% for item in page.education %}
+
+<div class="mb-3">
+{%- set id = loop.index %}
+<h2 class="fs-4 mb-1">
+  {{ item.level|trim }}
+</h2>
+<p class="mb-1">
+  <span class="text-muted">{{ item.year }}</span>
+  |
+  {{ item.institution|trim }}
+</p>
+<p class="mb-1 text-muted fs-6">
+  Thesis: {{ item.title|trim }}
+</p>
+<p class="mb-1 text-muted fs-6">
+  Advisor: {{ item.advisor }}
+</p>
+<p class="text-muted fs-6">
+  doi:<a href="https://doi.org/{{ item.doi }}">{{ item.doi }}</a>
+</p>
+<button class="btn btn-secondary btn-sm me-1 mb-2" type="button"
+    data-bs-toggle="collapse" data-bs-target="#collapse-abstract-{{ id }}"
+    aria-expanded="false" aria-controls="collapse-abstract-{{ id }}">
+  Find out more <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
+</button>
+{{ macros.button_link("https://doi.org/" ~ item.doi, "PDF", type="btn-primary", icon="fa fa-file-pdf") }}
+{{ macros.button_link("https://github.com/" ~ item.github, "Code", type="btn-light", icon="fab fa-github") }}
+{{ macros.button_link(item.slides, "Slides", type="btn-light", icon="fa fa-desktop") }}
+<div id="collapse-abstract-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
+  <h3 class="">About</h3>
+  {{ item.notes }}
+  <h3 class="">Abstract</h3>
+  <p>{{ item.abstract|trim }}</p>
+</div>
+</div>
+
+{% endfor %}
+
+</section>
+</div>
+
+
+[deoes]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/
+[compeolab]: https://www.compgeolab.org
+[gmt]: https://www.generic-mapping-tools.org
+[pygmt]: https://www.pygmt.org/
+[fatiando]: https://www.fatiando.org
+[ssi-fellowship]: https://software.ac.uk/about/fellows/leonardo-uieda
+[swung]: https://softwareunderground.org/

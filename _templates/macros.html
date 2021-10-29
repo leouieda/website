@@ -1,0 +1,19 @@
+{# Macros to make the life easier across the website #}
+
+
+{%- macro button_link(href, text, type="btn-primary", icon="none", size="btn-sm") %}
+  <a class="btn {{ size }} {{ type }} me-1 mb-2" href="{{ href }}" target="_blank">
+    <i class="{{ icon }} me-1" aria-hidden="true"></i>
+    {{ text }}
+  </a>
+{%- endmacro %}
+
+
+{%- macro youtube_link(id) %}
+  {%- if id[:5] == "list:" %}
+    {%- set link = "https://www.youtube.com/playlist?list=" ~ id[5:] %}
+  {%- else %}
+    {%- set link = "https://www.youtube.com/watch?v=" ~ id %}
+  {%- endif %}
+  {{ link }}
+{%- endmacro -%}

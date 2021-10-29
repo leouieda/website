@@ -1,9 +1,6 @@
 ---
 title: "Introducing Verde"
 date: 2018-09-14
-thumbnail: introducing-verde.png
-tags: fatiando, open-source, python
-layout: post
 ---
 
 **Verde is a Python library for processing spatial data (bathymetry, geophysics surveys,
@@ -22,7 +19,7 @@ matrix) of the linear models generally come from elastic deformation theory.
 For example, the bi-harmonic spline ([Sandwell, 1987](https://doi.org/10.1029/GL014i002p00139))
 implemented in `verde.Spline` comes from the deformation of a thin elastic plate.
 
-I submitted a [paper about Verde][/papers/verde] to the
+I submitted a [paper about Verde](/publications) to the
 [Journal of Open Source Software (JOSS)](https://joss.theoj.org/) where it's currently
 awaiting review.
 This is my first time submitting to JOSS, though I have reviewed for it before.
@@ -32,12 +29,12 @@ Unlike many "geoscience computing" journals, you'll actually get great feedback 
 code and project structure.
 
 
-# Dig In
+## Dig In
 
 Verde comes with an [example gallery](http://www.fatiando.org/verde/v1.0.0/gallery/index.html),
 [tutorials](http://www.fatiando.org/verde/v1.0.0/tutorials/overview.html), and
 a range of [sample datasets](http://www.fatiando.org/verde/v1.0.0/sample_data/index.html)
-to get you started (which are managed by [Pooch][/blog/introducing-pooch] under the
+to get you started (which are managed by [Pooch](/blog/introducing-pooch.html) under the
 hood).
 You can install it from [PyPI](https://pypi.org/project/verde/) using `pip`:
 
@@ -56,7 +53,7 @@ The code is hosted on Github under the Fatiando a Terra organization:
 [![The Verde example gallery](/images/verde-gallery.png)](http://www.fatiando.org/verde/v1.0.0/gallery/index.html)
 
 
-# Example
+## Example
 
 Here is an example code that interpolates our
 [sample air temperature dataset](http://www.fatiando.org/verde/v1.0.0/sample_data/texas-wind.html):
@@ -73,15 +70,15 @@ Verde is imported as `vd` in all our documentation. You can access all functions
 directly from the `verde` base package namespace.
 
 ```python
-# Load the air temperature data from Texas
+## Load the air temperature data from Texas
 data = vd.datasets.fetch_texas_wind()
 coordinates = (data.longitude.values, data.latitude.values)
 region = vd.get_region(coordinates)
 
-# Use a Mercator projection for our Cartesian gridder
+## Use a Mercator projection for our Cartesian gridder
 projection = pyproj.Proj(proj="merc", lat_ts=data.latitude.mean())
 
-# The output grid spacing will 15 arc-minutes
+## The output grid spacing will 15 arc-minutes
 spacing = 15 / 60
 ```
 
@@ -145,7 +142,7 @@ grid_full = chain.grid(
     data_names=["temperature"],
 )
 
-# Mask points that are too far away from the original data points.
+## Mask points that are too far away from the original data points.
 grid = vd.distance_mask(
     coordinates, maxdist=4 * spacing * 111e3, grid=grid_full, projection=projection
 )
@@ -181,24 +178,24 @@ tmp = ax.pcolormesh(
 )
 plt.colorbar(tmp, pad=0.01, aspect=50).set_label("Air temperature (C)")
 ax.legend()
-# Use an utility function to add tick labels and land and ocean features to the map.
+## Use an utility function to add tick labels and land and ocean features to the map.
 vd.datasets.setup_texas_wind_map(ax, region=region)
 plt.tight_layout()
 plt.show()
 ```
 
-![Output of the Verde gridding example](/images/verde-spline-example.png)
+![Output of the Verde gridding example](/images/verde-spline-example.jpg)
 
 
-# Getting Involved
+## Getting Involved
 
-Verde is a part of [my large-scale refactor of Fatiando a Terra][/blog/future-of-fatiando]
+Verde is a part of [my large-scale refactor of Fatiando a Terra](/blog/future-of-fatiando.html)
 and there is lot's of room for improvement.
 The 1.0.0 release was focused on setting the look-and-feel of the library and getting
 the essential functionality in there.
 As it stands, Verde can already be used on moderately sized datasets, given that you
 have enough RAM.
-In fact, Verde is the engine behind my work on [3-component GPS interpolation][/talks/aogs2018].
+In fact, Verde is the engine behind my work on [3-component GPS interpolation](https://github.com/leouieda/agu2018).
 
 The code is [BSD licensed](https://github.com/fatiando/verde/blob/master/LICENSE.txt)
 and we would love contributions of any form!

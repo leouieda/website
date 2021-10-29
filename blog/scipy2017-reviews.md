@@ -1,16 +1,13 @@
 ---
 title: "Reviews of our Scipy 2017 talk proposal: Bringing the Generic Mapping Tools to Python"
 date: 2017-05-11
-thumbnail: scipy2017-reviews.png
-layout: post
-tags: pygmt
 ---
 
 This year, [Scipy is using a double-open peer-review
 system](https://scipy2017.scipy.org/ehome/220975/532468/), meaning that both
 authors and reviewers know each others identities.
 These are the reviews that we got for
-[our proposal][/blog/scipy2017-proposal-gmt]
+[our proposal](/blog/scipy2017-proposal-gmt.html)
 and our replies/comments
 (posted with permission from the reviewers).
 **My sincerest thanks to all reviewers and editors for their time and effort**.
@@ -73,7 +70,7 @@ something that `GMT_Call_Module` accepts.
 This work would have to be done manually using SWIG or Cython as well, so
 ctypes is not a disadvantage with regard to this.
 There are some more details about this in
-[our initial design and goals][/blog/gmt-python-design].
+[our initial design and goals](/blog/gmt-python-design.html).
 
 
 
@@ -152,16 +149,8 @@ It'll be much easier to see what the community wants and thinks before we have
 fully committed to an implementation.
 We're very much open and looking forward to getting a ton of questions!
 
----
+<hr class="my-5">
 
 **What would you like to see in a GMT Python library?
 Let us know if there are any questions/suggestions before the conference.
 See you at Scipy in July!**
-
-
----
-
-*Thumbnail image for this post is modified from
-["ScientificReview" by the Center for Scientific
-Review](https://commons.wikimedia.org/wiki/File:ScientificReview.jpg)
-which is in the public domain.*

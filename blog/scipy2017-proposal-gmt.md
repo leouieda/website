@@ -1,9 +1,6 @@
 ---
 title: "Talk proposal for Scipy 2017: Bringing the Generic Mapping Tools to Python"
 date: 2017-03-30
-thumbnail: scipy2017-proposal-gmt.png
-layout: post
-tags: pygmt
 ---
 
 This is the proposal for talk that I co-authored with
@@ -15,14 +12,14 @@ If not, this post can serve as an example of what **not** to do for next time
 
 The submission is on the
 [GenericMappingTools/scipy2017](https://github.com/GenericMappingTools/scipy2017)
-Github repository.
+GitHub repository.
 It covers our [initial ideas about the GMT Python
-interface][/blog/gmt-python-design].
+interface](/blog/gmt-python-design.html).
 
 **UPDATE (8 May 2017):** The proposal was accepted!
 
 **UPDATE (11 May 2017):** I've posted the [reviews we got for the
-proposal][/blog/scipy2017-reviews] along with some comments and replies.
+proposal](/blog/scipy2017-reviews.html) along with some comments and replies.
 
 ---
 

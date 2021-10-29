@@ -1,9 +1,6 @@
 ---
 title: "GMT and open-source at #AGU17 and a GMT/Python online demo"
 date: 2017-12-05
-thumbnail: gmt-at-agu2017.png
-tags: pygmt, gmt
-layout: post
 ---
 
 
@@ -21,11 +18,11 @@ I haven't even started and my calendar is already packed.
 For now, I'll just share the sessions and events in which I'm taking part.
 
 
-# Earth ArXiv meetup
+## Earth ArXiv meetup
 
 *Thursday evening - TBD*
 
-![The Earth ArXiv logo](/images/eartharxiv-banner.png)
+![The Earth ArXiv logo](/images/eartharxiv-banner.jpg)
 
 The [Earth ArXiv](https://eartharxiv.org/) is a brand new community developed
 preprint server for the Earth and Planetary Sciences.
@@ -43,7 +40,7 @@ We don't know where we'll meet yet but keep posted on Slack and Loomio if
 you're interested in joining us.
 
 
-# Panel session in the AGU Data Fair
+## Panel session in the AGU Data Fair
 
 *Wednesday 12:30pm - Room 203*
 
@@ -74,7 +71,7 @@ I'm really looking forward to this panel and getting to meet some new people in
 the process.
 
 
-# Paul's talk about GMT6
+## Paul's talk about GMT6
 
 *Thursday 4:15pm - Room 228*
 
@@ -91,7 +88,7 @@ For all the GMT gurus out there: Don't worry, they're also a huge time saver by
 eliminating many repeated command online options and boilerplate code.
 
 
-# Panel session about open-source software
+## Panel session about open-source software
 
 *Thursday 4-6pm - Room 238*
 
@@ -106,19 +103,19 @@ science, how it's affected the careers of those who make it, and what we can do
 to make it a viable career path for new geoscientists.
 
 My contribution is the abstract
-"[Nurturing reliable and robust open-source scientific software][/talks/agu2017-oss]".
+"[Nurturing reliable and robust open-source scientific software](https://github.com/leouieda/agu2017-oss)".
 
 Many thanks to the chairs and conveners for putting it together.
 I'll surely have a lot more to say after the panel.
 
 
-# Poster about GMT/Python
+## Poster about GMT/Python
 
 *Friday morning - Poster Hall D-F*
 
 Last but not least,
 I'll be presenting the poster
-"[A modern Python interface for the Generic Mapping Tools][/posters/agu2017]"
+"[A modern Python interface for the Generic Mapping Tools](https://github.com/leouieda/agu2017)"
 about my work on [GMT/Python](https://www.gmtpython.xyz).
 Come see the poster and chat with me and Paul!
 I'd love to hear what you want to see in this software.
@@ -126,11 +123,11 @@ I'll also have a laptop and tablets for you to play around with a demo.
 
 ![My AGU 2017 poster](/images/poster-agu2017.png)
 
-You can download a PDF of the poster from [figshare](http://figshare.com) at
-doi:[10.6084/m9.figshare.5662411](https://doi.org/10.6084/m9.figshare.5662411).
+You can download a PDF of the poster from
+[figshare](https://doi.org/10.6084/m9.figshare.5662411).
 
 A lot has happened since
-[my last update after Scipy2017][/blog/gmt-after-scipy2017].
+[my last update after Scipy2017](/blog/gmt-after-scipy2017.html).
 Much of the infrastructure work to interface with the C API is done but there
 is still a lot do.
 Luckily, we just got our
@@ -146,7 +143,7 @@ The notebook is running on the newly re-released
 The Jupyter team did an amazing job!
 
 
-# Come say "Hi"
+## Come say "Hi"
 
 If you'll be at AGU next week, **stop by the poster on Friday or join the panel
 sessions if you want to chat or have any questions/suggestions**.
@@ -155,9 +152,3 @@ If you won't, there is always
 and the [Software Underground](http://softwareunderground.org/) Slack group.
 
 See you in New Orleans!
-
-----
-
-*The photo of Bourbon Street in the thumbnail is copyright Chris Litherland
-and licensed
-[CC-BY-SA](https://commons.wikimedia.org/wiki/File:ChrisLitherlandBourbonSt.jpg).*

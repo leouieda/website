@@ -1,21 +1,18 @@
 ---
 title: A template for reproducible papers
 date: 2018-03-15
-thumbnail: paper-template.png
-layout: post
-tags: open-source, open-science, reproducibility, academia
 ---
 
 At the [PINGA lab](http://www.pinga-lab.org/), we have been experimenting with
 ways to increase the reproducibility of our research by publishing the git
 repositories that accompany our papers.
 You can find them on our
-[Github organzation](https://github.com/pinga-lab).
+[GitHub organzation](https://github.com/pinga-lab).
 I've synthesized the experience of the last 4 years into a template in the
 [pinga-lab/paper-template](https://github.com/pinga-lab/paper-template)
 repository.
 
-![Screenshot of the paper-template Github repository.](/images/paper-template-repository.png)
+![Screenshot of the paper-template GitHub repository.](/images/paper-template-repository.png)
 
 The template reflects the tools we've been using and the type of research that
 we do:
@@ -129,23 +126,21 @@ If you want to use the template to start a new project:
 
         git pull https://github.com/pinga-lab/paper-template.git master
 
-3. Create a new repository on Github.
-4. Push the template code to Github:
+3. Create a new repository on GitHub.
+4. Push the template code to GitHub:
 
         git remote add origin https://github.com/USER/REPOSITORY.git
         git push -u origin master
 
 5. Follow the instruction in the `README.md`.
 
-Alternatively, you can use the "Import repository" option on Github.
+Alternatively, you can use the "Import repository" option on GitHub.
 
-![Screenshot of the Github page for importing code from an existing repository.](/images/paper-template-import-repository.png)
+![Screenshot of the GitHub page for importing code from an existing repository.](/images/paper-template-import-repository.png)
 
 I hope that this template will be useful to people outside of our lab.
 There is definitely still room for improvement and I'm looking forward to
 trying it out on my next project.
 
 *What other features would you like to see in the template?*
-Let me know in the comments (or better yet, [submit a pull
-request](https://github.com/pinga-lab/paper-template)).
 I'd love to know about your experiences and workflows for computational papers.

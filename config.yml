@@ -1,0 +1,46 @@
+# Main site info
+author: Leonardo Uieda
+url: "https://www.leouieda.com"
+site_name: Leonardo Uieda
+site_description: Geophysicist, scientist, programmer, teacher
+brand: LEONARDO UIEDA
+language: en
+keywords: 'science, geoscience, geophysics, software, open-source'
+repository: leouieda/website
+repository_branch: main
+favicon: images/favicon.png
+
+# Social media
+twitter: leouieda
+github: leouieda
+linkedin: https://www.linkedin.com/in/uieda
+youtube: https://www.youtube.com/LeonardoUieda
+orcid: 0000-0001-6123-9515
+researchgate: https://www.researchgate.net/profile/Leonardo-Uieda
+googlescholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
+publons: https://publons.com/a/1328468/
+
+# Menu
+navigation:
+  - name: Home
+    id: index
+  - name: Blog
+    id: blog/index
+  - name: Publications
+    id: publications/index
+  - name: Presentations
+    id: presentations/index
+  - name: Teaching
+    id: teaching/index
+  - name: Software
+    id: software/index
+  - name: About
+    id: about/index
+
+# Don't copy or process these files
+ignore:
+  - README.md
+  - LICENSE.md
+  - environment.yml
+  - Makefile
+  - css/academicons/README.md

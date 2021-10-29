@@ -1,19 +1,18 @@
 ---
 title: Running Jupyter and the Scipy stack on Android
 date: 2017-01-23
-thumbnail: scipy-on-android.png
-layout: post
-tags: tutorial, jupyter, android, python
 ---
 
 
-# TL;DR
+## TL;DR
 
 Install Termux from Google Play, open it and run:
 
-    $ apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev libpng libpng-dev pkg-config
-    $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
-    $ jupyter notebook
+```bash
+$ apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev libpng libpng-dev pkg-config
+$ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
+$ jupyter notebook
+```
 
 Copy the URL printed to the screen (it will look something like
 `http://localhost:8888/?token=longstringofcharacters`)
@@ -21,13 +20,17 @@ and paste it into Chrome/Firefox. Enjoy!
 
 Read on for more tips and a few tweaks.
 
-**UPDATE (25-01-2017):**
+<div class="callout">
+
+**Update (25-01-2017):**
 There were a few dependencies that I had left out of the instructions for
 installing numpy et al. I edited the post to make things more complete and
 clear.
 
+</div>
 
-# Some background
+
+## Some background
 
 I bought my first tablet last October, an
 [NVIDIA Shield K1](https://www.amazon.com/NVIDIA-SHIELD-K1-Tablet-Black/dp/B0171BS9CG/ref=sr_1_2?s=pc&ie=UTF8&qid=1484937529&sr=1-2&keywords=nvidia+shield+k1).
@@ -41,8 +44,7 @@ use and justify the purchase.
 The dream would be to be able to ditch my laptop and do actual work on the
 tablet.
 Mark O'Connor wrote about doing just that on
-[Yield
-Thought](http://yieldthought.com/post/12239282034/swapped-my-macbook-for-an-ipad)
+[Yield Thought](http://yieldthought.com/post/12239282034/swapped-my-macbook-for-an-ipad)
 but he cheats a bit by running everything on a Linode server.
 And how does anyone do scientific programming these days without a Jupyter
 notebook?
@@ -53,7 +55,7 @@ Maybe even play a few games.
 Then I discovered [Termux](https://termux.com/).
 
 
-# Show, don't tell
+## Show, don't tell
 
 Here is a screencast of me running a Jupyter notebook
 server on my tablet.
@@ -62,7 +64,7 @@ Notice that the URL is `localhost:8888/` so this is not a remote server.
 ![Screencast of Termux running the Jupyter notebook on my Shield K1 tablet](/images/termux-running-jupyter.gif)
 
 
-# Setting up your terminal
+## Setting up your terminal
 
 Install Termux from Google Play and open it.
 You'll be dropped into a bash terminal, like the one below.
@@ -73,21 +75,27 @@ Termux uses the `apt` package manager so you can install packages pretty much
 like you would on Debian/Ubuntu.
 
 The first thing I do on any new computer is install git so that I can fetch my
-[configuration files from Github](https://github.com/leouieda/dotfiles):
+[configuration files from GitHub](https://github.com/leouieda/dotfiles):
 
-    $ apt install git
+```bash
+$ apt install git
+```
 
 Before cloning the repository, I need to generate a new SSH key (only required
 if you [use the SSH protocol with git](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)):
 
-    $ apt install openssh
-    $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-    $ cat .ssh/id_rsa.pub  # copy and paste your public key to Github
+```bash
+$ apt install openssh
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+$ cat .ssh/id_rsa.pub  ## copy and paste your public key to GitHub
+```
 
 Then I can clone my [dotfiles](https://github.com/leouieda/dotfiles)
 repository:
 
-    $ git clone git@github.com:leouieda/dotfiles.git
+```bash
+$ git clone git@github.com:leouieda/dotfiles.git
+```
 
 Now my Termux terminal looks just like my Linux terminal on my laptops.
 
@@ -96,7 +104,7 @@ Now my Termux terminal looks just like my Linux terminal on my laptops.
 ![My Linux terminal to compare with termux](/images/termux-linux-terminal.png)
 
 
-# Installing the Scipy stack
+## Installing the Scipy stack
 
 If you're from the pre-Anaconda era, you'll probably remember the frustration
 of trying to `pip install numpy scipy matplotlib`.
@@ -115,25 +123,35 @@ So for now, we have to make do with numpy only.
 First, we must install python it self (version 3.6), the headers files, a C compiler,
 and the FFTW package from Termux:
 
-    $ apt install python python-dev clang fftw
+```bash
+$ apt install python python-dev clang fftw
+```
 
 Now we can install numpy using pip:
 
-    $ LDFLAGS=" -lm -lcompiler_rt" pip install numpy
+```bash
+$ LDFLAGS=" -lm -lcompiler_rt" pip install numpy
+```
 
 For matplotlib, we'll need to install a few more dependencies:
 
-    $ apt install freetype freetype-dev libpng libpng-dev pkg-config
-    $ LDFLAGS=" -lm -lcompiler_rt" pip install matplotlib
+```bash
+$ apt install freetype freetype-dev libpng libpng-dev pkg-config
+$ LDFLAGS=" -lm -lcompiler_rt" pip install matplotlib
+```
 
 And for Jupyter we need to install the zmq library as well:
 
-    $ apt install libzmq libzmq-dev
-    $ LDFLAGS=" -lm -lcompiler_rt" pip install jupyter
+```bash
+$ apt install libzmq libzmq-dev
+$ LDFLAGS=" -lm -lcompiler_rt" pip install jupyter
+```
 
 Finally, we can get pandas:
 
-    $ LDFLAGS=" -lm -lcompiler_rt" pip install pandas
+```bash
+$ LDFLAGS=" -lm -lcompiler_rt" pip install pandas
+```
 
 Now you have access to things like `ipython` on the command-line:
 
@@ -148,7 +166,9 @@ Using `plt.savefig` without using `plt.show()` should also work.
 To get a Jupyter notebook server running, so the same thing you would on any
 other computer:
 
-    $ jupyter notebook
+```bash
+$ jupyter notebook
+```
 
 The server won't automatically open a browser but
 you can copy the URL from the output and paste it into Chrome or Firefox.
@@ -156,10 +176,10 @@ you can copy the URL from the output and paste it into Chrome or Firefox.
 ![Jupyter notebook server running inside Termux](/images/termux-jupyter-startup.png)
 
 
-# Getting comfortable
+## Getting comfortable
 
 While it is possible to do some work using this setup (I wrote part of this
-post on the tablet using Vim and pushing to the [website's Github
+post on the tablet using Vim and pushing to the [website's GitHub
 repo](https://github.com/leouieda/website)), it may not be the most productive
 environment.
 Here are a few tips for making life a little bit easier.
@@ -177,11 +197,10 @@ Here are a few tips for making life a little bit easier.
   when using Vim. Esc shows the homescreen on Android and is a very frustrating
   habit to loose.
 
-![Sreenshot of vim running inside termux writing this post,
-inception style.](/images/termux-vim.png)
+![Sreenshot of vim running inside termux writing this post, inception style.](/images/termux-vim.png)
 
 
-# Things that are still missing
+## Things that are still missing
 
 This setup works and is way beyond what I expected to be able to accomplish
 with a $200 tablet.
@@ -204,15 +223,5 @@ Assuming that you can get conda installed, the major difficulty might
 be finding a continuous integration service that runs Android and setting up
 the infrastructure.
 
-
 **Let me know if you try this out! Is there another setup that you use?  What
 else is missing?  Do you think we'll be able to fully work like this one day?**
-
-
----
-
-*The Jupyter logo was downloaded from their Github repository
-([jupyter/design](https://github.com/jupyter/design)).
-The Android logo is [CC BY 2.5](http://creativecommons.org/licenses/by/2.5)
-Google Inc.,
-[via Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AAndroid_robot.svg).*

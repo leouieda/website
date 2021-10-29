@@ -6,7 +6,7 @@ layout: post
 tags: podcast
 ---
 
-Last year, I posted my [podcast playlist][/blog/podcasts-2016] in response to
+Last year, I posted my [podcast playlist](/blog/podcasts-2016.html) in response to
 [a similar post by John Leeman](http://www.johnrleeman.com/2017/01/03/podcasts-im-listening-to/)
 (of Don't Panic Geocast fame).
 In a recent episode
@@ -64,4 +64,3 @@ this year.
 
 That's it for my list.
 *Do you have any recommendations?*
-

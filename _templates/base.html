@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="{{ config.language }}">
+
+{%- macro make_nav_link(name, id, page, site) %}
+  {% set aria = "" %}
+  {% set class = "nav-link" %}
+  {% if page.id == id or page.parent == id|replace('/index', '') %}
+    {% set class = class + " active" %}
+    {% set aria = 'aria-current="page"' %}
+  {% endif %}
+  <a class="{{ class }}" {{ aria }} href="/{{ site[id].path|replace('index.html', '') }}">{{ name }}</a>
+{%- endmacro %}
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {%- if page.custom_page_title is defined %}
+    {%- set title = page.custom_page_title|striptags|e %}
+  {%- else %}
+    {%- set title = page.title|striptags|e + " | " + config.site_name|striptags|e %}
+  {%- endif %}
+  <title>{{ title }}</title>
+
+  {%- if config.favicon is defined %}
+  <link rel="shortcut icon" href="/{{ config.favicon|e }}"/>
+  {%- endif %}
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap-5.1/bootstrap.min.css">
+  <!-- FontAwsome icons -->
+  <link rel="stylesheet" href="/css/fontawesome/css/all.css">
+  <!-- Academicons icons -->
+  <link rel="stylesheet" href="/css/academicons-1.9.1/css/academicons.min.css">
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  {%- block extrahead %}{% endblock %}
+</head>
+
+<body>
+  <header style="{{ header_style }}">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-labelledby="primary-navigation">
+      <div class="container align-middle">
+        <a class="navbar-brand" href="/">
+          {{ config.brand }}
+        </a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse align-middle" id="navbarNav">
+        <div class="navbar-collapse align-middle" id="navbarNav">
+          <ul class="navbar-nav flex-row flex-wrap">
+            {%- for item in config.navigation %}
+              <li class="nav-item col-4 col-lg-auto">
+                {{ make_nav_link(item.name, item.id, page, site) }}
+              </li>
+            {%- endfor %}
+          </ul>
+          <ul class="navbar-nav ms-lg-auto flex-row flex-wrap">
+            <li class="nav-item col-2 col-lg-auto">
+              <a class="nav-link nav-icon" aria-label="Twitter" href="https://twitter.com/{{ config.twitter }}" target="_blank"><i class="fab fa-twitter fa-lg me-1" title="Twitter" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item col-2 col-lg-auto">
+              <a class="nav-link nav-icon" aria-label="GitHub" href="https://github.com/{{ config.github }}" target="_blank"><i class="fab fa-github fa-lg me-1" title="GitHub" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item col-2 col-lg-auto">
+              <a class="nav-link nav-icon" aria-label="LinkedIn" href="{{ config.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-lg me-1" title="LinkedIn" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item col-2 col-lg-auto">
+              <a class="nav-link nav-icon" aria-label="YouTube" href="{{ config.youtube }}" target="_blank"><i class="fab fa-youtube fa-lg me-1" title="YouTube" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item col-2 col-lg-auto">
+              <a class="nav-link nav-icon" aria-label="ORCID" href="https://orcid.org/{{ config.orcid }}" target="_blank"><i class="ai ai-orcid fa-lg me-1" title="ORCID" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {%- if page.banner_image is defined %}
+      {%- if page.banner_position is defined %}
+        {%- set banner_position = page.banner_position %}
+      {%- else %}
+        {%- set banner_position = "top center" %}
+      {%- endif %}
+      <div class="banner-background" style="background-image: url(/{{ page.banner_image }}); background-position: {{ banner_position }};">
+        <div class="overlay">
+        </div>
+        <section class="container text-center banner">
+          {%- if page.banner_title is defined %}
+            <h1 class="display-3">
+              {{ page.banner_title }}
+            </h1>
+          {%- endif %}
+          {%- if page.banner_subtitle is defined %}
+            <p class="fs-4">
+              {{ page.banner_subtitle }}
+            </p>
+          {%- endif %}
+        </section>
+      </div>
+    {%- endif %}
+  </header>
+
+  <main>
+    {%- block content %}
+      {%- if page.container_class is defined %}
+        {%- set section_class = page.container_class %}
+      {%- else %}
+        {%- set section_class = "container page-content overflow-hidden wide-page" %}
+      {%- endif %}
+      <section class="{{ section_class }}">
+        {{ page.body }}
+      </section>
+    {%- endblock %}
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-xl-8">
+          <nav class="footer-nav" aria-labelledby="secondary-navigation">
+            <ul class="nav">
+              {%- for item in config.navigation %}
+                <li class="nav-item">
+                  {{ make_nav_link(item.name, item.id, page, site) }}
+                </li>
+              {%- endfor %}
+            </ul>
+          </nav>
+          <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+              <a aria-label="Twitter" href="https://twitter.com/{{ config.twitter }}" target="_blank"><i class="fab fa-twitter fa-lg me-2" title="Twitter" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="GitHub" href="https://github.com/{{ config.github }}" target="_blank"><i class="fab fa-github fa-lg me-2" title="GitHub" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="LinkedIn" href="{{ config.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-lg me-2" title="LinkedIn" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="YouTube" href="{{ config.youtube }}" target="_blank"><i class="fab fa-youtube fa-lg me-2" title="YouTube" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a aria-label="ORCID" href="https://orcid.org/{{ config.orcid }}" target="_blank"><i class="ai ai-orcid fa-lg me-2" title="ORCID" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+          <p>
+            Found a typo/mistake?
+            <a target="_blank" href="https://github.com/{{ config.repository }}/edit/{{ config.repository_branch }}/{{ page.source }}">
+              Send a fix through GitHub
+              <i class="fa fa-code-branch" aria-hidden="true"></i>
+            </a>
+          </p>
+          <p>
+            Source code used to build this site: <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>
+          </p>
+          <p>
+            Last updated {{ build.today.strftime('%Y/%m/%d') }} from commit
+            <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>
+          </p>
+          <p>
+            Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
+          </p>
+          <p>
+            Copyright &copy; {{ build.today.year }} {{ config.author }}
+          </p>
+    </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap bundled Javascript (with their dependencies) -->
+  <script src="/js/bootstrap-5.1/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  {%- if page.enable_alm is defined and page.enable_alm %}
+    <!-- Dimensions badge -->
+    <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+  {%- endif %}
+
+</body>
+</html>

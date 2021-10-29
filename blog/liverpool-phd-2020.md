@@ -1,24 +1,21 @@
 ---
 title: "Two PhD studentships at the University of Liverpool"
 date: 2019-12-08
-thumbnail: liverpool-phd-2020.png
-tags: equivalent-layer, moho
-layout: post
 ---
 
 I have two open positions for funded studentships at the University of
 Liverpool.
 **Applications are open until 10 January 2020**.
 
-# Project descriptions
+## Project descriptions
 
 > Follow the links for more detailed versions.
 
 [**Bringing machine learning techniques to geophysical data processing**](https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/phd-studentships/bringingmachinelearningtechniquestogeophysicaldataprocessing.html)
 
 The goal of this project is to investigate the use of existing machine learning
-techniques to process gravity and magnetics data using the [Equivalent Layer
-Method][/papers/paper-polynomial-eqlayer-2013]. The methods and software
+techniques to process gravity and magnetics data using the Equivalent Layer
+Method. The methods and software
 developed during this project can be applied to process large amounts of
 gravity and magnetics data, including airborne and satellite surveys, and
 produce data products that can enable further scientific investigations.
@@ -31,7 +28,7 @@ the Moon and Mars, etc.
 
 The goal of this project is to develop improved inversion methods to determine
 crustal thickness from gravity and gravity gradient data, in particular
-[Uieda and Barbosa (2017)][/papers/paper-moho-inversion-tesseroids-2016].
+Uieda and Barbosa (2017).
 Main objectives are: (1) account for density variation in the oceanic
 lithosphere due to temperature; (2) incorporate seismological estimates of
 crustal thickness in the inversion process; (3) estimate the density contrast
@@ -42,7 +39,7 @@ regional crustal and sedimentary basin models. The inversion methods developed
 in this project can be applied to produce improved crustal thickness estimates
 for South America, Africa, Antarctica, the Moon, Mars, etc.
 
-# The details
+## The details
 
 The funding for these projects comes from the School of Environment Sciences.
 Applicants choose a project when applying and will be judged on their own merit
@@ -63,8 +60,8 @@ GitHub and use the current best practices in software engineering and
 reproducible research.
 
 Applicants are encouraged to read the
-[lab manual](https://www.compgeolab.org/manual/) to familiarize themselves with
+[lab manual](https://www.compgeolab.org/contact/) to familiarize themselves with
 the way we approach science, expectations, our code of conduct, etc.
 
 **If you're interested in applying (or know someone who might be), please
-[get in touch][/contact]!**
+[get in touch](/about)!**

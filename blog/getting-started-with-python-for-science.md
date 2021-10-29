@@ -1,9 +1,6 @@
 ---
 title: "Recommended reading to get started with Python for science and data analysis"
 date: 2017-02-07
-thumbnail: getting-started-python.png
-layout: post
-tags: python, advice
 ---
 
 I get asked a lot in the [Fatiando a Terra](https://www.fatiando.org)
@@ -32,7 +29,7 @@ If you don't have anything in mind, here a few ideas:
   single file.
 * Download data from an online source and fit a trend line to it (for example,
   the temperature data from
-  [my Python workshop at UH][/blog/python-hawaii-2017]).
+  [my Python workshop at UH](/blog/python-hawaii-2017.html)).
 * Implement a common (and simple) method in your field that is only available
   in commercial software.
 
@@ -43,7 +40,7 @@ Finally, here are my recommendations (in order):
    through mountains of string formatting and Fibonacci numbers before you find
    an answer to "How do I load these data?" (and it won't be `numpy.loadtxt`).
 1. **Ignore** any reference that uses Python 2. All support for Python 2.7
-   will end in 2020 and there is no reason to still be using it. 
+   will end in 2020 and there is no reason to still be using it.
 2. **Start** with the [Software Carpentry
    lessons](https://software-carpentry.org/lessons/). Read all of them if you
    can. **Everything there will make your life easier.** If you don't have the
@@ -61,7 +58,7 @@ Finally, here are my recommendations (in order):
    by [Jake VanderPlas](http://staff.washington.edu/jakevdp/).
    There is also [Think Python](http://greenteapress.com/wp/think-python-2e/) by
    the excellent [Allen Downey](http://www.allendowney.com/), which is available
-   for free if you don't have the option to purchace.
+   for free if you don't have the option to purchase.
    **Beware that I have not read these books** so I cannot vouch for them
    (but I have read good reviews online).
 4. Now that you have the basics down, **use the project documentation pages**
@@ -83,24 +80,18 @@ of the following:
 * The [Python Weekly](http://www.pythonweekly.com/) email news letter.
 * The podcasts [Podcast.\_\_init\_\_](https://www.podcastinit.com/) and
   [Talk Python To Me](https://talkpython.fm/). See my [previous post for more
-  podcast recommendations][/blog/podcasts-2016].
+  podcast recommendations](/blog/podcasts-2016.html).
 
 Now go out there and learn a skill that just might save you in these times of
 crisis!
 
-*How did you get started with Python? Do you have anything to add to this list?
-Let me know!*
+**How did you get started with Python? Do you have anything to add to this list?
+Let me know!**
 
-*Update (2017-11-13): Added "Before you start" and the Python Challenge.*
+<div class="callout">
 
-*Update (2018-12-17): Added "Think Python" and a warning about Python 2.*
+Update (2017-11-13): Added "Before you start" and the Python Challenge.
 
+Update (2018-12-17): Added "Think Python" and a warning about Python 2.
 
----
-
-*The open science logo is by [G.emmerich on Wikimedia
-Commons](https://commons.wikimedia.org/wiki/File:Open_Science_Logo.jpg)
-and the picture of the Python book is by
-[Marcus Brown](https://www.flickr.com/photos/marcusjhbrown/14939378037).
-Because both are licensed CC-BY-SA, then so is the thumbnail image for this
-blog post (a composite of the two images).*
+</div>

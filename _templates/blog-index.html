@@ -1,0 +1,28 @@
+{# Template for the blog index page. Cannot be done in the Markdown file
+   because Nene isn't done creating all posts when it renders that template. #}
+{% extends "base.html" %}
+
+{%- block content %}
+  {# Create a list of pages from the blog folder #}
+  {%- set posts = [] %}
+  {%- for id, item in site.items() %}
+    {%- if item.parent == "blog" and id != "blog/index" %}
+      {%- do posts.append(item) %}
+    {%- endif %}
+  {%- endfor %}
+
+  <section class="container page-content overflow-hidden wide-page">
+    {%- for item in posts|sort(attribute="date", reverse=True) %}
+      <h2 class="fs-4 mb-2 mt-5">
+        {{ item.title }}
+      </h2>
+      <p class="text-muted mb-2 fs-6">
+        {{ item.date|replace("-", "/") }}
+      </p>
+      <p class="text-muted">
+        {{ item.body|striptags|trim|truncate(200) }}
+      </p>
+      <a class="btn btn-outline-light" href="/{{ item.path }}">Read more <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
+    {%- endfor %}
+  </section>
+{%- endblock %}

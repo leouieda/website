@@ -1,9 +1,6 @@
 ---
 title: "A year in Hawaii hacking on the Generic Mapping Tools"
 date: 2017-03-02
-thumbnail: hawaii-gmt-postdoc.png
-layout: post
-tags: pygmt, academia
 ---
 
 Back in July of 2016, I applied for a postdoc position to build Python bindings
@@ -17,13 +14,17 @@ base.
 
 Read on for the long version.
 
-![](/images/post-building-university-hawaii.jpg)
-*The Pacific Ocean Science and Technology (POST) building in the UH Manoa
-campus. My office is on the top floor with a nice view of downtown Honolulu.*
+<figure>
+<img alt="Picture of the POST building" src="/images/post-building-university-hawaii.jpg">
+<figcaption>
+The Pacific Ocean Science and Technology (POST) building in the UH Manoa
+campus. My office is on the top floor with a nice view of downtown Honolulu.
+</figcaption>
+</figure>
 
-After two and half years as a [Professor at UERJ][/about],
+After two and half years as a [Professor at UERJ](/about),
 struggling to teach classes without any experience or time to prepare,
-all while finishing [my PhD][/about/phd],
+all while finishing my PhD,
 I was feeling a bit burned-out and eager to do something different.
 Meanwhile, Brazil was (and still is) in a huge economic and political crisis
 and Rio was hit pretty hard.
@@ -67,20 +68,20 @@ After about a month on the lists, this message from Paul came on the CIG list:
 > Opportunity/Affirmative Action Institution.
 
 The requirements seemed to fit me perfectly.
-My [Bachelor's thesis][/about/bachelors] was to developed a
-[C program](http://www.tesseroids.org) and I spent most of [my PhD][/about/phd]
+My [Bachelor's thesis](https://doi.org/10.6084/m9.figshare.963547) was to developed a
+[C program](http://www.tesseroids.org) and I spent most of my PhD
 building a [Python library](https://www.fatiando.org).
 After some careful consideration with my wife and bit of hesitation, I decided
 to apply for the position.
 I consulted my department and they generously agreed to cover my
-geophysics couses ([1][/teaching/geofisica1] and [2][/teaching/geofisica2])
+geophysics courses
 during the year that I would be away.
 So I sent in
 [my CV](https://github.com/leouieda/cv/releases/download/June2016/leonardo_uieda_cv.pdf),
 the [statement of research objectives](https://github.com/leouieda/cv/releases/download/June2016/leonardo_uieda_research_statement.pdf),
 and the [statement of skills](https://github.com/leouieda/cv/releases/download/June2016/leonardo_uieda_skills_statement.pdf).
 As always, the LaTeX sources for all three are on a
-[Github repository](https://github.com/leouieda/cv/tree/June2016) if you want
+[GitHub repository](https://github.com/leouieda/cv/tree/June2016) if you want
 to have a look or need a template to get started.
 
 I did a Skype interview with the very friendly GMT team and after a while I got
@@ -90,10 +91,16 @@ sort out the trip.
 In the middle of February I hopped on a quick ~24h trip from São Paulo to
 Honolulu and now here I am.
 
-![](/images/university-office-view-hawaii.jpg)
-*My new desk at UH with a great view of the tall buildings of
+<figure>
+<img alt="My new desk and computer" src="/images/university-office-view-hawaii.jpg">
+<figcaption>
+
+My new desk at UH with a great view of the tall buildings of
 [Waikiki](https://en.wikipedia.org/wiki/Waikiki) and downtown Honolulu on a
-nice rainy day.*
+nice rainy day.
+
+</figcaption>
+</figure>
 
 The goal of the project is to build a bridge between GMT (a set C-coded
 command-line programs) and the Python programming language.

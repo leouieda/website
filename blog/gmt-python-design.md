@@ -1,27 +1,24 @@
 ---
 title: "Design ideas and goals for the GMT Python interface"
 date: 2017-03-29
-thumbnail: gmt-python-design.png
-layout: post
-tags: pygmt
 ---
 
 As you may already know, I'm away on a [postdoct writing a Python interface
-for the Generic Mapping Tools][/blog/hawaii-gmt-postdoc].
+for the Generic Mapping Tools](/blog/hawaii-gmt-postdoc.html).
 Recently, I started laying out our goals for the project and some of my design
 ideas.
 This all lives on the
 [GenericMappingTools/gmt-python](https://github.com/GenericMappingTools/gmt-python)
-Github repository, which is where the code will eventually be as well.
+GitHub repository, which is where the code will eventually be as well.
 I thought it would be good to post it here as well to have a snapshot of this
 phase of the project for future reference.
 
 I have also submitted a [talk proposal for Scipy 2017 about the
-project][/blog/scipy2017-proposal-gmt].
+project](/blog/scipy2017-proposal-gmt.html).
 
 ---
 
-# Goals
+## Goals
 
 * Provide access to GMT modules from Python using the GMT C API (no system
   calls).
@@ -34,7 +31,7 @@ project][/blog/scipy2017-proposal-gmt].
   newbie-friendly alternatives/aliases (`region=[10, 20, -30, -10]`,
   `projection='M'`, etc).
 
-# Previous work
+## Previous work
 
 To my knowledge, there have been 3 attempts at a GMT Python interface:
 
@@ -54,7 +51,7 @@ the GMT C API directly through a hand-coded Python C extension. This
 might compromise the portability of the package across operating systems
 and makes distribution very painful.
 
-# Design
+## Design
 
 `gmt-python` is made for the future. We will support **only Python 3.5
 or later** and require the [new "modern" mode of
@@ -84,7 +81,7 @@ These functions will be built on top of the low-level library and will
 handle all data conversions and parsing of arguments. This is the part
 of the library with which the user will interact (the GMT Python API).
 
-## The GMT Python API
+### The GMT Python API
 
 Each GMT module has a function in the `gmt` package. Command-line
 arguments are passes as function keyword arguments. Data can be passed
@@ -162,18 +159,18 @@ this calling it a second time through `gmt.show()` would not work. Any
 suggestions are welcome!
 
 
-## Package organization
+### Package organization
 
 The general layout of the Python package will probably look something
 like this:
 
     gmt/
-        c_api/     # Package with low-level wrappers for the C API
+        c_api/     ## Package with low-level wrappers for the C API
             ...
-        modules/  # Defines the functions corresponding to GMT modules
+        modules/  ## Defines the functions corresponding to GMT modules
             ...
 
-## The module functions
+### The module functions
 
 The functions corresponding to GMT modules (`pscoast`, `psconvert`, etc)
 are how the user interacts with the Python API. They will be organized
@@ -190,13 +187,13 @@ Here is what a module function will look like:
 
         Likely derived from the GMT documentation.
         """
-        # Convert any inputs into things the C API can digest
+        ## Convert any inputs into things the C API can digest
         ...
-        # Parse the keyword arguments and make an "args" list
+        ## Parse the keyword arguments and make an "args" list
         ...
-        # Call the module function from the C API with the inputs
+        ## Call the module function from the C API with the inputs
         ...
-        # Process any outputs from the C API into Python data types
+        ## Process any outputs from the C API into Python data types
         ...
         return output
 
@@ -215,7 +212,7 @@ docstrings or parts of them from the command-line help messages by
 passing a Python callback as the `print_func` when creating a GMT
 session.
 
-## The low-level wrappers
+### The low-level wrappers
 
 The low-level wrapper functions will be bare-bones `ctypes` foreign
 functions from the `libgmt.so` shared library. The functions can be
@@ -225,10 +222,10 @@ accessed from Python like so:
 
     libgmt = ct.cdll.LoadLibrary("libgmt.so")
 
-    # Functions are accessed as members of the 'libgmt' object
+    ## Functions are accessed as members of the 'libgmt' object
     GMT_Call_Module = libgmt.GMT_Call_Module
 
-    # Call them like normal Python functions
+    ## Call them like normal Python functions
     GMT_Call_Module(... inputs ...)
 
 The tricky part is making sure the functions get the input types they
@@ -270,7 +267,7 @@ module, for example as `-G` or through redirection (`->`). We can read
 the contents of the virtual file using `GMT_Read_VirtualFile`.
 
 
-# Final thoughts
+## Final thoughts
 
 There are gonna be some rough edges on the C API that will have to get sorted
 before all of this is usable.
@@ -284,4 +281,4 @@ for other languages without so much effort.
 All of this work in its very early stages and I'd love to get some feedback and
 ideas!
 You can leave a comment below or
-[create an issue on the Github repository](https://github.com/GenericMappingTools/gmt-python/issues).
+[create an issue on the GitHub repository](https://github.com/GenericMappingTools/gmt-python/issues).

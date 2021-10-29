@@ -1,9 +1,6 @@
 ---
 title: Podcasts in my playlist
 date: 2017-01-12
-thumbnail: podcasts-2016.png
-layout: post
-tags: podcast
 ---
 
 Last week, John Leeman wrote
@@ -55,7 +52,9 @@ You can also get most of them through Google Play Music or iTunes.
 
 *What are your recommendations?*
 
-----
+<div class="callout callout-note">
 
 ¹ I know I've doing too much Python when I have to fight the urge to capitalize
 "none".
+
+</div>

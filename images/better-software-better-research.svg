@@ -2,23 +2,23 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="264.58334mm"
    height="105.83334mm"
    viewBox="0 0 264.58334 105.83334"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="better-software-better-research.svg"
    inkscape:export-filename="better-software-better-research.png"
    inkscape:export-xdpi="95.999992"
-   inkscape:export-ydpi="95.999992">
+   inkscape:export-ydpi="95.999992"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="592.9527"
-     inkscape:cy="-50.326964"
+     inkscape:zoom="0.29196583"
+     inkscape:cx="1222.7458"
+     inkscape:cy="92.476575"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,11 +38,12 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1080"
+     inkscape:window-width="1600"
+     inkscape:window-height="865"
      inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-y="21"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -51,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -237,85 +238,6 @@
              id="path225"
              inkscape:connector-curvature="0" />
         </g>
-      </g>
-    </g>
-    <g
-       id="g90-8"
-       transform="matrix(1.7726497,0,0,1.7726497,-157.22639,11.430825)"
-       style="fill:#808080">
-      <g
-         transform="translate(-1.1851273)"
-         id="g66-1"
-         style="fill:#808080">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.99801254px;line-height:1.25;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.94995034"
-           x="-264.70651"
-           y="42.831226"
-           id="text12-45"><tspan
-             sodipodi:role="line"
-             x="-264.70651"
-             y="42.831226"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.99801254px;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080;stroke-width:0.94995034"
-             id="tspan14-9">BETTER</tspan><tspan
-             sodipodi:role="line"
-             x="-264.70651"
-             y="90.328743"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.99801254px;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080;stroke-width:0.94995034"
-             id="tspan16-8" /><tspan
-             sodipodi:role="line"
-             x="-264.70651"
-             y="137.82626"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.99801254px;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080;stroke-width:0.94995034"
-             id="tspan18-18" /></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.08168221px;line-height:1.25;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.65204203"
-           x="-262.5249"
-           y="68.714218"
-           id="text24-6"><tspan
-             sodipodi:role="line"
-             x="-262.5249"
-             y="68.714218"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.08168221px;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080;stroke-width:0.65204203"
-             id="tspan26-7">SOFTWARE</tspan></text>
-      </g>
-      <g
-         transform="translate(0,-5.2916667)"
-         id="g74-6"
-         style="fill:#808080">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.01338577px;line-height:1.25;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.65033466"
-           x="-264.29324"
-           y="141.28781"
-           id="text32-6"><tspan
-             sodipodi:role="line"
-             id="tspan30-2"
-             x="-264.29324"
-             y="141.28781"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';fill:#808080;stroke-width:0.65033466">RESEARCH</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.99796677px;line-height:1.25;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9499492"
-           x="-265.7738"
-           y="115.66254"
-           id="text12-4-5"><tspan
-             sodipodi:role="line"
-             x="-265.7738"
-             y="115.66254"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.99796677px;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080;stroke-width:0.9499492"
-             id="tspan14-1-6">BETTER</tspan><tspan
-             sodipodi:role="line"
-             x="-265.7738"
-             y="163.15999"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.99796677px;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080;stroke-width:0.9499492"
-             id="tspan16-1-2" /><tspan
-             sodipodi:role="line"
-             x="-265.7738"
-             y="210.65746"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.99796677px;font-family:Oswald;-inkscape-font-specification:'Oswald Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080;stroke-width:0.9499492"
-             id="tspan18-1-2" /></text>
       </g>
     </g>
   </g>

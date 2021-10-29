@@ -1,9 +1,6 @@
 ---
 title: "The future of Fatiando a Terra"
 date: 2018-03-25
-thumbnail: fatiando.png
-tags: fatiando, open-source, python
-layout: post
 ---
 
 I started developing the [Fatiando a Terra](http://www.fatiando.org) Python
@@ -14,7 +11,7 @@ In this post, I'll explore where I think Fatiando fits in this larger
 ecosystem and how we can better fill our niche.
 
 
-# What is Fatiando a Terra?
+## What is Fatiando a Terra?
 
 *Fatiando* is a Python library for modeling and inversion in geophysics.
 It's composed of different *subpackages*:
@@ -46,7 +43,7 @@ It's composed of different *subpackages*:
   lagged behind.
 
 
-# Fatiando's niche
+## Fatiando's niche
 
 We set out with the goal of modeling the whole Earth using all geophysical
 methods.
@@ -78,13 +75,12 @@ most geophysical methods.
 It is the most sensible approach to build joint inversions of multiple
 geophysical datasets.
 However, there are some inverse problems that don't fit this paradigm, like
-[inverting Moho relief from gravity data][/papers/paper-moho-inversion-tesseroids-2016]
-and some [non-conventional inversion algorithms][/papers/paper-planting-anomalous-densities-2012]
+[inverting Moho relief from gravity data](/publications)
+and some [non-conventional inversion algorithms](/publications)
 (see the animation below).
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe src="https://widgets.figshare.com/articles/91469/embed?show_title=0"
-width="568" height="426" frameborder="0"></iframe>
+<div class="ratio ratio-16x9 mb-3">
+<iframe src="https://widgets.figshare.com/articles/91469/embed?show_title=0" frameborder="0"></iframe>
 </div>
 
 It's no coincidence that Fatiando mostly contains the tools needed to implement
@@ -102,7 +98,7 @@ open-source alternatives out there to commercial software like
 and [Intrepid](https://www.intrepid-geophysics.com/).
 
 
-# The current state
+## The current state
 
 Fatiando has grown over the years as I slowly learned how to develop and
 maintain an open-source Python project.
@@ -134,7 +130,7 @@ The most urgent problems that need to be fixed are:
   metapackage (like Jupyter).
 
 
-# A way forward
+## A way forward
 
 The best way forward for Fatiando that I can see, is to become an ecosystem of
 specialized tools and libraries, rather than a single Python package.
@@ -172,7 +168,7 @@ started working on some of these projects):
 * `moulder`: GUI for 2D gravity and magnetic modeling.
 
 All of these packages will be tied together in the
-[`fatiando` Github organization](https://github.com/fatiando/)
+[`fatiando` GitHub organization](https://github.com/fatiando/)
 and the [fatiando.org](http://www.fatiando.org/) website, which will include
 instructions for installing the entire stack.
 The website will also link to individual packages (as is done right now for the
@@ -208,7 +204,7 @@ This is how I think we could implement this:
    everything is tested and documented.
 
 
-# Help!
+## Help!
 
 The goal of all these changes is to make *Fatiando* better for users and
 developers by making the code more robust and well documented.

@@ -1,12 +1,11 @@
 ---
 title: "GMT/Python update and feedback from Scipy 2017"
 date: 2017-07-26
-thumbnail: gmt-after-scipy2017.png
-layout: post
-tags: pygmt
 ---
 
-Last week [I presented the first working prototype][/talks/scipy2017] of
+{% import "macros.html" as macros %}
+
+Last week [I presented the first working prototype](https://github.com/GenericMappingTools/scipy2017) of
 [GMT/Python](https://www.gmtpython.xyz) at Scipy 2017, which is my favorite
 conference.
 I got a lot of excellent feedback about the project and will need to make some
@@ -16,16 +15,12 @@ show the internals of the library.
 I'll use this post to describe how things are currently implemented, what I
 learned from the feedback, and what changes I'm making to the code base.
 
-Before we dive in, you can watch my talk on Youtube or just take a quick look
+Before we dive in, you can watch my
+[talk on YouTube]({{ macros.youtube_link('93M4How7R24') }})
+ or just take a quick look
 at [my slides](https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4BVnIxYBg/pub?start=false&loop=false&delayms=3000).
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/93M4How7R24" frameborder="0"
-allowfullscreen></iframe>
-</div>
-
-# Running the code
+## Running the code
 
 You can try out the
 [demo notebook](http://nbviewer.jupyter.org/github/GenericMappingTools/scipy2017/blob/master/demo.ipynb)
@@ -50,11 +45,11 @@ Now you can install the GMT/Python version from the talk:
 
 
 
-# Current implementation
+## Current implementation
 
 All our code is hosted on the
 [GenericMappingTools/gmt-python](https://github.com/GenericMappingTools/gmt-python)
-repository on Github.
+repository on GitHub.
 The Python package itself is called `gmt` so that you can `import gmt`
 instead of `import gmt-python` (which looks a bit silly).
 The following example wasn't on the video but it shows what is currently
@@ -63,17 +58,17 @@ possible with the library:
 ```python
 import gmt
 
-# Start a new figure
+## Start a new figure
 gmt.figure()
-# Plot coastlines of North America using readable aliases for the arguments
+## Plot coastlines of North America using readable aliases for the arguments
 gmt.pscoast(region=[-130, -70, 24, 52], projection="B-100/35/33/45/6i",
             land='gray', frame='a', portrait=True, shorelines='thinnest',
             borders='1/thickest', area_thresh=500)
-# Embed the figure in the notebook
+## Embed the figure in the notebook
 gmt.show()
 ```
 
-![](/images/gmt-after-scipy2017/sample-map.png)
+![Map of the coastlines of North America](/images/scipy2017-sample-map.jpg)
 
 
 Here is what the file structure of the `gmt` package looks like:
@@ -97,7 +92,7 @@ Here is what the file structure of the `gmt` package looks like:
     └── utils.py
 
 
-## Low-level wrappers
+### Low-level wrappers
 
 The subpackage `gmt.clib` contains all of the low-level `ctypes` code that
 interfaces with `libgmt`.
@@ -123,7 +118,7 @@ Also included is a `gmt.test()` function that runs all of our tests using
 I'll go over how we run the tests below.
 
 
-## Module wrapper functions
+### Module wrapper functions
 
 This is what a function that wraps a GMT module looks like:
 
@@ -213,7 +208,7 @@ docstring](https://github.com/GenericMappingTools/gmt-python/blob/0e2b118b6276f9
 for a full list.
 
 
-## Tests
+### Tests
 
 The testing code is packaged with the library in `gmt.tests`.
 We use
@@ -243,7 +238,7 @@ When you run the tests, pytest-mpl will generate the figure and compare it to a
 baseline that we have stored in `gmt/tests/baseline`.
 
 
-# Changes after Scipy
+## Changes after Scipy
 
 Paul and I had the chance to talk about the project with a lot of smart and
 interesting people.
@@ -255,7 +250,7 @@ Many thanks to
 [Mike Hearne](https://github.com/mhearne-usgs),
 and [Benjamin Root](https://github.com/WeatherGod).
 
-## Code of conduct
+### Code of conduct
 
 Since a few people seemed interested in contributing to the project,
 I decided to add a
@@ -274,7 +269,7 @@ during an [awesome Pycon talk](https://www.youtube.com/watch?v=6Uj746j9Heo).
 I highly recommend that you take a few minutes to watch it.
 
 
-## Object oriented API
+### Object oriented API
 
 By far the most requested feature was to have an object-oriented API, like that
 of matplotlib.
@@ -304,21 +299,21 @@ The new API will look something like this:
 ```python
 import gmt
 
-# Start a figure
+## Start a figure
 fig1 = gmt.Figure()
-# Start a different figure
+## Start a different figure
 fig2 = gmt.Figure()
 
-# Use the methods in the Figure class to plot things
+## Use the methods in the Figure class to plot things
 fig1.pscoast(region=[-130, -70, 24, 52], projection="B-100/35/33/45/6i",
              land='gray', frame='a', portrait=True, shorelines='thinnest',
              borders='1/thickest', area_thresh=500)
 
-# We can now alternate between figures when plotting
+## We can now alternate between figures when plotting
 fig2.pscoast(region=[-130, -70, 24, 52], projection="B-100/35/33/45/6i",
              land='blue', frame='a', portrait=True)
 
-# Use savefig to save to a file
+## Use savefig to save to a file
 fig1.savefig('north-america.pdf')
 fig2.savefig('north-america-blue.png')
 ```
@@ -379,4 +374,4 @@ But I'm sure a lot of you have different needs and preferences.
 **How would you prefer to display your images?
 What would you like to see in the API?**
 Let me know in the comments or
-[on Github](https://github.com/GenericMappingTools/gmt-python/issues).
+[on GitHub](https://github.com/GenericMappingTools/gmt-python/issues).

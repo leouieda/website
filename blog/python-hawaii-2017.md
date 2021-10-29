@@ -1,27 +1,23 @@
 ---
 title: Thoughts from the Introduction to Python Workshop at UH Manoa
 date: 2017-04-28
-thumbnail: python-hawaii-2017.png
-layout: post
-tags: python, hawaii, python-workshop
 ---
 
 
 Last week, I taught a 3-day Python workshop at the
 [Department of Geology and Geophysics of the University of Hawaii at
 Manoa](http://www.soest.hawaii.edu/GG/index.html),
-where I'm currently [doing a postdoc][/blog/hawaii-gmt-postdoc].
+where I'm currently [doing a postdoc](/blog/hawaii-gmt-postdoc.html).
 It covered the basics of computer programming with Python, starting from the
 very beginning.
 Below are thoughts and information about the workshop, the demographics of
 people who signed up, and the feedback that I got from the participants.
 
-See the [workshop page][/teaching/python-hawaii-2017] and [Github
-repository](https://github.com/leouieda/python-hawaii-2017) for more
-information and links to material used.
+See the [GitHub repository](https://github.com/leouieda/python-hawaii-2017) for
+more information and links to material used.
 
 
-# My goals
+## My goals
 
 I wanted this to be a hands-on workshop of the basic concepts needed to use
 Python for research. Participants who complete the workshop should be able to
@@ -31,7 +27,7 @@ Most importantly, I wanted participants to know what they should type into
 Google to learn more about Python.
 
 
-# Materials
+## Materials
 
 The class is based on a mixture of the
 [Software Carpentry](https://software-carpentry.org/)
@@ -42,12 +38,10 @@ However, I use temperature data from
 [Berkeley Earth](http://berkeleyearth.org/)
 instead of the [Gapminder](http://www.gapminder.org/) and inflammation data
 used by Software Carpentry.
-For example, our goal for the second day of the workshop was to reproduce this
+For example, our goal for the second day of the workshop was to reproduce the
 figure for
 [average temperature variation in Hawaii](http://berkeleyearth.lbl.gov/regions/hawaii)
-from the website:
-
-[![](http://berkeleyearth.lbl.gov/auto/Regional/TAVG/Figures/hawaii-TAVG-Trend.png)](http://berkeleyearth.lbl.gov/regions/hawaii)
+from the [Berkeley Earth](http://berkeleyearth.lbl.gov/regions/hawaii) website.
 
 On the last day, we finished with some code that processed a list of country
 names to download the respective data file (using `requests`), load it into
@@ -68,22 +62,22 @@ I had them write positive and negative feedback on the sticky notes at the
 end of the workshop.
 
 The notebooks that I created during class and some notes for myself are in the
-Github repository (in the `notebooks` and `notes` folders, respectively).
+GitHub repository (in the `notebooks` and `notes` folders, respectively).
 
 
-# Who attended
+## Who attended
 
 I asked all participants to sign up through a Google Form that asked a few
 questions regarding their operating system, background in programming, and
 position at the university.
 The file
 [`demographics.csv`](https://github.com/leouieda/python-hawaii-2017/blob/master/demographics.csv)
-in the Github repository has the anonymous information from this form.
+in the GitHub repository has the anonymous information from this form.
 I wrote some code to analyze the data and generate the figures below using
 [pandas](http://pandas.pydata.org/) and [matplotlib](http://matplotlib.org/).
 You can find in the
 [`demographics-analysis.ipynb`](http://nbviewer.jupyter.org/github/leouieda/python-hawaii-2017/blob/master/demographics-analysis.ipynb)
-Jupyter notebook (also in the Github repo).
+Jupyter notebook (also in the GitHub repo).
 
 First, lets look at how many people signed up and then actually attended each
 day.
@@ -100,7 +94,7 @@ day.
 That is something to keep in mind for the next iteration: **get feedback every
 day**.
 
-![](/images/python-hawaii-2017/education.jpg)
+![Prior education of attendants](/images/python-hawaii-2017/education.jpg)
 
 The experience level of participants was more evenly distributed than I
 expected.
@@ -109,7 +103,7 @@ But the distribution made it challenging to keep everyone motivated and
 following along.
 From the feedback (see below), it seems that I managed it well enough.
 
-![](/images/python-hawaii-2017/programming-languages.jpg)
+![Programming language experience of attendants](/images/python-hawaii-2017/programming-languages.jpg)
 
 Not surprisingly, most participants who already programmed know Matlab.
 What was a bit surprising is how few people reported experience with Fortran.
@@ -117,7 +111,7 @@ Is this a reflection of the age of participants (a lot of young grad students)?
 The number of Fortran users does correlate with the number of faculty who
 signed up, so maybe yes.
 
-![](/images/python-hawaii-2017/position.jpg)
+![Job title of attendants](/images/python-hawaii-2017/position.jpg)
 
 I was very pleased to have someone from the
 [Nā Kūpuna Senior Citizen Visitor Program](https://www.hawaii.edu/diversity/seed-programs/na-kupuna-senior-citizen-visitor-program/)
@@ -126,30 +120,39 @@ We even had an "interested citizen" who studies film production and education
 (a personal friend)!
 
 
-# Feedback
+## Feedback
 
 ![Feedback on the colored sticky notes.](/images/python-hawaii-2017/sticky-note-feedback.jpg)
 
 This is a synthesis from the feedback given by participants on the last day
 (using the pink and blue sticky notes):
 
-| The Good                                        | # | The Bad                                               | # |
-|:------------------------------------------------|:--|:------------------------------------------------------|:--|
-|Instructor style                                 | 5 | Too short                                             | 5 |
-|Examples and exercises                           | 5 | Too fast                                              | 3 |
-|Dense but efficient (learn a lot in little time) |	3 | Too slow                                              | 3 |
-|Using real data                                  | 3 | Hard to multi-task (pay attention + notes + exercise) | 2 |
-|Simple and accessible level                      | 3 | No TA on Monday                                       | 2 |
-|Shared notes                                     | 1 | Instructor took too many tangents when teaching       | 1 |
-|                                                 |   | Too many people                                       | 1 |
-|                                                 |   | Ran late                                              | 1 |
-|                                                 |   | Jupyter Google maps example failed                    | 1 |
+| The Good                                        | # |
+|:------------------------------------------------|:--|
+|Instructor style                                 | 5 |
+|Examples and exercises                           | 5 |
+|Dense but efficient (learn a lot in little time) |	3 |
+|Using real data                                  | 3 |
+|Simple and accessible level                      | 3 |
+|Shared notes                                     | 1 |
+
+| The Bad                                               | # |
+|:------------------------------------------------------|:--|
+| Too short                                             | 5 |
+| Too fast                                              | 3 |
+| Too slow                                              | 3 |
+| Hard to multi-task (pay attention + notes + exercise) | 2 |
+| No TA on Monday                                       | 2 |
+| Instructor took too many tangents when teaching       | 1 |
+| Too many people                                       | 1 |
+| Ran late                                              | 1 |
+| Jupyter Google maps example failed                    | 1 |
 
 It was a very funny coincidence that the exact same number of people complained
 about the pace being either too fast or too slow.
 
 
-# Lessons learned
+## Lessons learned
 
 I was glad to see that the hands-on approach worked and the students
 appreciated using real data during the exercises.

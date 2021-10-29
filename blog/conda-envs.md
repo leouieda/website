@@ -1,27 +1,24 @@
 ---
 title: "Manage project dependencies with conda environments"
 date: 2018-12-26
-thumbnail: conda-envs.png
-tags: reproducibility, tutorial
-layout: post
 ---
 
 > **TL;DR:** Create a conda environment for each project, capture exact versions when
 > possible, automate [activation and updating with a bash function](https://github.com/leouieda/dotfiles/blob/e95f6d951d8ddf6ffa303fdca38ebcf620dc5d6c/.bash/functions.sh#L72).
 
 I often work on several different projects involving software:
-[Python libraries][/blog/introducing-verde],
-[papers][/papers/paper-moho-inversion-tesseroids-2016],
-[presentations][/talks/aogs2018],
-[posters][/posters/agu2018],
+[Python libraries](https://github.com/leouieda),
+[papers](/publications),
+[presentations](/presentations),
 [this website](https://github.com/leouieda/website),
 etc.
 Each project has different dependencies and there is a non-zero chance that these
 dependencies might be in conflict with each other.
 For example, I need Python 2.7 to work on a
-[tesseroid modeling paper][/papers/tesseroid-variable-density] with a student,
-while my current work on [GMT/Python][/blog/hawaii-gmt-postdoc] and
-[GPS interpolation][/posters/agu2018] project are Python 3.5+ only.
+[tesseroid modeling paper](/publications) with a student,
+while my current work on [GMT/Python](/blog/hawaii-gmt-postdoc.html) and
+[GPS interpolation](https://github.com/leouieda/agu2018) project are Python
+3.5+ only.
 Clearly, I can't have everything under the same Python installation.
 That's where virtual environments come in.
 
@@ -41,24 +38,24 @@ In this post, I'll share some more tips and a bash function I made for managing
 environments.
 
 
-# When to create environments
+## When to create environments
 
 First of all, I want to reiterate Eric's second hack:
 **create one conda environment for each project**.
 
 I have been doing this for a few years now and even included a default environment file
-in [my research group's paper template][/blog/paper-template].
+in [my research group's paper template](/blog/paper-template.html).
 As soon as I start a new project repository, I'll create an `environment.yml` with the
 configuration I need:
 
 ```yaml
-# The name of the environment matching the repository name
+## The name of the environment matching the repository name
 name: same-as-repository
-# I prefer conda-forge packages for my projects
+## I prefer conda-forge packages for my projects
 channels:
 - conda-forge
 - defaults
-# Start with Python and include everything you need
+## Start with Python and include everything you need
 dependencies:
 - python=3.7
 - pip
@@ -86,7 +83,7 @@ See the
 for more information on environments.
 
 
-# Be as specific as you can
+## Be as specific as you can
 
 When creating environments for papers, it's a good idea to capture the exact versions of
 every package so that you can rebuild the environment later on.
@@ -102,7 +99,7 @@ conda env export > environment.yml
 ```
 
 
-# Automate the boring parts
+## Automate the boring parts
 
 I have a git repository for
 [nearly everything I do](https://github.com/leouieda?tab=repositories) and most of them
@@ -115,7 +112,7 @@ commands with a bash function:
 ```bash
 function cenv() {
 
-# Usage and help message
+## Usage and help message
 read -r -d '' CENV_HELP <<-'EOF'
 Usage: cenv [COMMAND] [FILE]
 
@@ -134,26 +131,26 @@ EOF
 
     envfile="environment.yml"
 
-    # Parse the command line arguments
-    if [[ $# -gt 2 ]]; then
+    ## Parse the command line arguments
+    if [[ $## -gt 2 ]]; then
         errcho "Invalid argument(s): $@";
         return 1;
-    elif [[ $# == 0 ]]; then
+    elif [[ $## == 0 ]]; then
         cmd="activate"
     elif [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
         echo "$CENV_HELP";
         return 0;
     elif [[ "$1" == "rm" ]]; then
         cmd="delete"
-        if [[ $# == 2 ]]; then
+        if [[ $## == 2 ]]; then
             envfile="$2"
         fi
     elif [[ "$1" == "up" ]]; then
         cmd="update"
-        if [[ $# == 2 ]]; then
+        if [[ $## == 2 ]]; then
             envfile="$2"
         fi
-    elif [[ $# == 1 ]]; then
+    elif [[ $## == 1 ]]; then
         envfile="$1"
         cmd="activate"
     else
@@ -161,16 +158,16 @@ EOF
         return 1;
     fi
 
-    # Check if the file exists
+    ## Check if the file exists
     if [[ ! -e "$envfile" ]]; then
         errcho "Environment file not found:" $envfile;
         return 1;
     fi
 
-    # Get the environment name from the yaml file
+    ## Get the environment name from the yaml file
     envname=$(grep "name: *" $envfile | sed -n -e 's/name: //p')
 
-    # Execute one of these actions: activate, update, delete
+    ## Execute one of these actions: activate, update, delete
     if [[ $cmd == "activate" ]]; then
         source activate "$envname";
     elif [[ $cmd == "update" ]]; then
@@ -233,7 +230,7 @@ It allows you to specify which environment you want your notebook to run under w
 create a new notebook or change the kernel.
 
 
-# Final thoughts
+## Final thoughts
 
 The main takeaways here are:
 
@@ -254,11 +251,4 @@ The exact version of the code shown here is
 Additions and contributions are more than welcome!
 
 
-**What are your conda workflow/productivity hacks? Please share below in the comments or
-on twitter!**
-
-----
-
-*The thumbnail image for this post is derived from
-["Green Anaconda in Trivandrum Zoo" by Mithun.M.Das](https://commons.wikimedia.org/wiki/File:Green_Anaconda_in_Trivandrum_Zoo.jpg)
-and both are licensed CC-BY-SA.*
+**What are your conda workflow/productivity hacks?**

@@ -1,0 +1,27 @@
+{# Template for a blog post #}
+
+{% extends "base.html" %}
+
+{%- block content %}
+<div class="container page-content overflow-hidden narrow-page">
+  <article class="mb-4">
+    <h1>
+      {{ page.title }}
+    </h1>
+    <p class="text-muted mb-4">
+      Date: {{ page.date|replace("-", "/") }}
+    </p>
+    {{ page.body }}
+  </article>
+  <hr class="my-5">
+  <a class="btn btn-outline-light me-3 mb-3" href="/blog">
+    <i class="far fa-arrow-alt-circle-left me-1" aria-hidden="true"></i>
+    Back to the blog
+  </a>
+  <a class="btn btn-primary mb-3" target="_blank" href="https://twitter.com/intent/tweet?text=@{{ config.twitter }}&url={{ config.url }}/{{ page.path }}">
+    <i class="fa fa-comment me-1" aria-hidden="true"></i>
+    <strong>Comments?</strong>
+    Let me know on Twitter
+  </a>
+</div>
+{%- endblock %}
