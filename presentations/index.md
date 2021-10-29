@@ -52,43 +52,37 @@ template: base.html
     {{ macros.button_link("https://github.com/" ~ item.github, "Code", type="btn-light", icon="fab fa-github") }}
   {%- endif %}
   <div id="collapse-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
-    <section class="row gx-5">
-      <div class="col-lg-6">
-        {%- if item.note is defined %}
-          <div class="callout callout-note mb-4">
-            <p><strong>Note:</strong> {{ item.note|trim }}</p>
-          </div>
-        {%- endif %}
-        {%- if item.about is defined %}
-          <h3 class="fs-4">About</h3>
-          {{ item.about|trim }}
-        {%- endif %}
-        <h3 class="fs-4">Abstract</h3>
-        <p>{{ item.abstract|trim }}</p>
+    {%- if item.note is defined %}
+      <div class="callout callout-note mb-4">
+        <p><strong>Note:</strong> {{ item.note|trim }}</p>
       </div>
-      <div class="col-lg-6">
-        {%- if item.slides_embed is defined %}
-          <h3 class="fs-4">Slides</h3>
-          <div class="mb-3">
-          {{ item.slides_embed|trim }}
-          </div>
-        {%- endif %}
-        {%- if item.poster_embed is defined %}
-          <h3 class="fs-4">Poster</h3>
-          <div class="mb-3">
-          {{ item.poster_embed|trim }}
-          </div>
-        {%- endif %}
-        {%- if item.recording is defined %}
-          <h3 class="fs-4">Recording</h3>
-          {{ macros.youtube_embed(item.recording) }}
-        {%- endif %}
-        {%- if item.citation is defined %}
-          <h3 class="fs-4">Cite as</h3>
-          <blockquote class="mb-4">{{ item.citation|trim }}</blockquote>
-        {%- endif %}
+    {%- endif %}
+    {%- if item.about is defined %}
+      <h3 class="fs-4">About</h3>
+      {{ item.about|trim }}
+    {%- endif %}
+    <h3 class="fs-4">Abstract</h3>
+    <p>{{ item.abstract|trim }}</p>
+    {%- if item.slides_embed is defined %}
+      <h3 class="fs-4">Slides</h3>
+      <div class="mb-3">
+      {{ item.slides_embed|trim }}
       </div>
-    </section>
+    {%- endif %}
+    {%- if item.poster_embed is defined %}
+      <h3 class="fs-4">Poster</h3>
+      <div class="mb-3">
+      {{ item.poster_embed|trim }}
+      </div>
+    {%- endif %}
+    {%- if item.recording is defined %}
+      <h3 class="fs-4">Recording</h3>
+      {{ macros.youtube_embed(item.recording) }}
+    {%- endif %}
+    {%- if item.citation is defined %}
+      <h3 class="fs-4">Cite as</h3>
+      <blockquote class="mb-4">{{ item.citation|trim }}</blockquote>
+    {%- endif %}
   </div>
 </div>
 {%- endfor %}

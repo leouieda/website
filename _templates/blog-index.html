@@ -11,12 +11,14 @@
     {%- endif %}
   {%- endfor %}
 
-  <section class="container page-content overflow-hidden">
+  <section class="container page-content overflow-hidden narrow-page">
     {%- for item in posts|sort(attribute="date", reverse=True) %}
       <h2 class="fs-4 mb-2 mt-5">
         {{ item.title }}
-        <span class="text-muted fs-6">({{ item.date|replace("-", "/") }})</span>
       </h2>
+      <p class="text-muted mb-2 fs-6">
+        {{ item.date|replace("-", "/") }}
+      </p>
       <p class="text-muted">
         {{ item.body|striptags|trim|truncate(200) }}
       </p>

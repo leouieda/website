@@ -62,25 +62,19 @@ template: base.html
     {{ macros.button_link("https://github.com/" ~ paper.github, "Code", type="btn-light", icon="fab fa-github") }}
   {%- endif %}
   <div id="collapse-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
-    <section class="row gx-5">
-      <div class="col-lg-6">
-        {%- if paper.note is defined %}
-          <div class="callout callout-note mb-4">
-            <p><strong>Note:</strong> {{ paper.note|trim }}</p>
-          </div>
-        {%- endif %}
-        <h3 class="fs-4">Abstract</h3>
-        <p>{{ paper.abstract|trim }}</p>
+    {%- if paper.note is defined %}
+      <div class="callout callout-note mb-4">
+        <p><strong>Note:</strong> {{ paper.note|trim }}</p>
       </div>
-      <div class="col-lg-6">
-        <h3 class="fs-4">Cite as</h3>
-        <blockquote class="mb-4">{{ paper.citation|trim }}</blockquote>
-        <h3 class="fs-4">BibTex</h3>
-        <pre class="mb-4"><code>{{ paper.bibtex|trim|escape }}</code></pre>
-        <h3 class="fs-4 mb-4">Citations</h3>
-        <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
-      </div>
-    </section>
+    {%- endif %}
+    <h3 class="fs-4">Abstract</h3>
+    <p>{{ paper.abstract|trim }}</p>
+    <h3 class="fs-4">Cite as</h3>
+    <blockquote class="mb-4">{{ paper.citation|trim }}</blockquote>
+    <h3 class="fs-4">BibTex</h3>
+    <pre class="mb-4"><code>{{ paper.bibtex|trim|escape }}</code></pre>
+    <h3 class="fs-4 mb-4">Citations</h3>
+    <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
   </div>
 </div>
 {%- endfor %}
