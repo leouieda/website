@@ -10,10 +10,6 @@ presentations:
     github: leouieda/2021-07-22-on
     recording: r2x-DN6laj8
     slides: https://www.leouieda.com/2021-07-22-on
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://www.leouieda.com/2021-07-22-on" frameborder=0></iframe>
-      </div>
     note: |
       The slides were made with <a href="https://revealjs.com/">reveal.js</a>
       using my <a href="https://github.com/leouieda/talk-template">open-source
@@ -40,10 +36,6 @@ presentations:
     doi: 10.6084/m9.figshare.14838477
     recording: z-5dvWfB_SM
     slides: https://www.leouieda.com/2021-06-22-gfz
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://www.leouieda.com/2021-06-22-gfz" frameborder=0></iframe>
-      </div>
     note: |
       The slides were made with <a href="https://revealjs.com/">reveal.js</a>
       using my <a href="https://github.com/leouieda/talk-template">open-source
@@ -80,10 +72,6 @@ presentations:
     invited: true
     github: fatiando/2021-gsh
     slides: https://www.fatiando.org/2021-gsh/
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://www.fatiando.org/2021-gsh/" frameborder=0></iframe>
-      </div>
     note: |
       The slides were made with <a href="https://revealjs.com/">reveal.js</a>
       using my <a href="https://github.com/leouieda/talk-template">open-source
@@ -193,10 +181,6 @@ presentations:
     github: leouieda/2020-07-01-kiel
     recording: VqI8BX1Yg54
     slides: https://www.leouieda.com/2020-07-01-kiel
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://www.leouieda.com/2020-07-01-kiel" frameborder=0></iframe>
-      </div>
     note: |
       The slides were made with <a href="https://revealjs.com/">reveal.js</a>
       using my <a href="https://github.com/leouieda/talk-template">open-source
@@ -291,10 +275,6 @@ presentations:
     event: EGU General Assembly
     doi: 10.5194/egusphere-egu2020-15729
     slides: https://doi.org/10.6084/m9.figshare.12245372.v1
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQRbUG9XTvZxH-rwviVSMuiJPC7DqpFe3dJKw5ZsxI3mHr9L1Zh94OQBUKnnJBZ3Rej-jj8CsHI16l/embed?start=false&loop=false&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
     citation: |
       Uieda, L. and Soler, S.: Evaluating the accuracy of equivalent-source
       predictions using cross-validation, EGU General Assembly 2020, Online,
@@ -411,10 +391,6 @@ presentations:
     event: Department of Earth, Ocean and Ecological Sciences, University of Liverpool
     doi: 10.6084/m9.figshare.10255832
     slides: https://doi.org/10.6084/m9.figshare.10255832
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTtJDyT_uuUEjPg1qbJ57UrziIYzX7MkNrg4rT9Cmmk3fcmFBGILELzarKeEWZ2i-vsKW4QesOEaLTV/embed?start=false&loop=false&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
     abstract: |
       In this talk, I'll go over some of my work on open-source geophysics
       software (Python and GMT), how we're building communities around them,
@@ -496,10 +472,6 @@ presentations:
     doi: 10.6084/m9.figshare.7203344
     github: leouieda/tgif2018
     slides: https://doi.org/10.6084/m9.figshare.7203344
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTHp4JMV4808ozoUo9GEI-wdn417NJNG-W7wo6wyzXQ76mhUkOjAqFXNf2Jl9Ba_g-hrVqX_388XY0z/embed?start=false&loop=false&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
     abstract: |
       Machine learning is the new trend sweeping across the Earth Sciences.
       From the oil and gas industry to oceanography, these algorithms are being
@@ -528,10 +500,6 @@ presentations:
     recording: 6wMtfZXfTRM
     github: leouieda/scipy2018
     slides: https://doi.org/10.6084/m9.figshare.6814052
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ2ULpSNf0_tHJYIrRvSdFC0e7diKm5vUiX0_eaWtBPKKBr7T_UJLB-5hKJRHGWlDW3wpe8x4EhhZVD/embed?start=false&loop=false&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
     abstract: |
       We are building a Python wrapper for the Generic Mapping Tools (GMT), a
       set of command-line programs used across the Earth, Atmospheric, and
@@ -560,10 +528,6 @@ presentations:
     doi: 10.6084/m9.figshare.6387467
     github: leouieda/aogs2018-gps
     slides: https://doi.org/10.6084/m9.figshare.6387467
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT2blQXTNT6lrJnOOq2GjOdTwQKG4POzYRff8IkrIlb6EZdpFWLobEUe91FYWjBrvSWFv1bfkrO2yBM/embed?start=false&loop=false&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
     abstract: |
       Vertical ground motion at fault systems can be difficult to detect due to
       their small amplitude and contamination from non-tectonic sources, such
@@ -778,10 +742,6 @@ presentations:
     github: GenericMappingTools/scipy2017
     recording: 93M4How7R24
     slides: https://doi.org/10.6084/m9.figshare.7635833
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT8QRHfVZaipp-PMgG6haQMZ-31KEY7xNwauzizOlXJOIAw9rEZM_l7aP4DH5D45Rw022J3qX97gTR7/embed?start=false&loop=false&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
     abstract: |
       The Generic Mapping Tools (GMT) is an open-source software package widely
       used in the geosciences to process and visualize time series and gridded
@@ -808,10 +768,6 @@ presentations:
     doi: 10.6084/m9.figshare.4779766
     github: leouieda/tgif-2017
     slides: https://doi.org/10.6084/m9.figshare.4779766
-    slides_embed: |
-      <div class="ratio ratio-16x9">
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRtGS-6SHTBpiQe94bNbPRHZvZpbOC9MCFkx-UQ_tHNyT6TLkoKVvWhtPv7hu-15lqr6PD3HgKFT4in/embed?start=false&loop=false&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
     abstract: |
       The inner density distribution of the Earth can be inferred from
       disturbances in its gravitational field. However, accomplishing this is
@@ -846,10 +802,6 @@ presentations:
     doi: 10.6084/m9.figshare.1381870
     github: leouieda/iag-04-2015
     slides: https://doi.org/10.6084/m9.figshare.1381870
-    slides_embed: |
-      <div class="ratio ratio-4x3">
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTD07cy0IFbanHxDzc8PTd-YuL0xVidEU676w3uL2SL1FtYlpaHyqaIA1iZDbAPJ4HFADkP-FJOIhH1/embed?start=false&loop=false&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
     abstract: |
       O Fatiando a Terra é uma biblioteca feita na linguagem Python que tem
       como objetivo facilitar o trabalho de pesquisadores e professores na área
@@ -930,10 +882,6 @@ presentations:
     doi: 10.6084/m9.figshare.1155457
     github: leouieda/egu2014
     slides: https://doi.org/10.6084/m9.figshare.1155457
-    slides_embed: |
-      <div class="ratio ratio-4x3">
-      <iframe src="https://widgets.figshare.com/articles/1155457/embed?show_title=0" allowfullscreen frameborder="0"></iframe>
-      </div>
     abstract: |
       Satellite observations of the gravity field have provided geophysicists
       with exceptionally dense and uniform coverage of data over vast areas.

@@ -3,7 +3,7 @@ title: "Advancing research software in the UK through an SSI fellowship"
 date: 2020-01-23
 ---
 
-{% from "macros.html" import youtube_embed %}
+{% import "macros.html" as macros %}
 
 **I have been selected as part of the 2020 cohort of Fellows of the [Software
 Sustainability Institute](https://www.software.ac.uk/)!**
@@ -41,14 +41,13 @@ ourselves and our plans. The SSI even provided
 [a guide for recording a screencast](https://software.ac.uk/fellowship-programme/2019/application-video-guide)
 which was really useful.
 This was my first stab at making a screencast and it turns out to be a lot less
-painful than I expected (apart from hearing my own recorded voice). I put [my
-application video on YouTube](https://youtu.be/fT4QRbdv274) including captions
-based on my script for the video.
+painful than I expected (apart from hearing my own recorded voice).
+
+I put [my application video on YouTube](https://youtu.be/fT4QRbdv274) including
+captions based on my script for the video.
 YouTube made this really easy to do: the text is automatically synced with the
 video (the joys of [tensorflow](https://www.tensorflow.org), probably), so you
 don't have to add time stamps or anything.
-
-{{ youtube_embed("fT4QRbdv274") }}
 
 <button class="btn btn-primary my-2" type="button"
         data-bs-toggle="collapse" data-bs-target="#collapse-transcript"

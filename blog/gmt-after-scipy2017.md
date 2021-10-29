@@ -3,7 +3,7 @@ title: "GMT/Python update and feedback from Scipy 2017"
 date: 2017-07-26
 ---
 
-{% from "macros.html" import youtube_embed %}
+{% import "macros.html" as macros %}
 
 Last week [I presented the first working prototype](https://github.com/GenericMappingTools/scipy2017) of
 [GMT/Python](https://www.gmtpython.xyz) at Scipy 2017, which is my favorite
@@ -15,10 +15,10 @@ show the internals of the library.
 I'll use this post to describe how things are currently implemented, what I
 learned from the feedback, and what changes I'm making to the code base.
 
-Before we dive in, you can watch my talk on YouTube or just take a quick look
+Before we dive in, you can watch my
+[talk on YouTube]({{ macros.youtube_link('93M4How7R24') }})
+ or just take a quick look
 at [my slides](https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4BVnIxYBg/pub?start=false&loop=false&delayms=3000).
-
-{{ youtube_embed("93M4How7R24") }}
 
 ## Running the code
 

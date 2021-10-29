@@ -63,21 +63,11 @@ template: base.html
     {%- endif %}
     <h3 class="fs-4">Abstract</h3>
     <p>{{ item.abstract|trim }}</p>
-    {%- if item.slides_embed is defined %}
-      <h3 class="fs-4">Slides</h3>
-      <div class="mb-3">
-      {{ item.slides_embed|trim }}
-      </div>
-    {%- endif %}
     {%- if item.poster_embed is defined %}
       <h3 class="fs-4">Poster</h3>
       <div class="mb-3">
       {{ item.poster_embed|trim }}
       </div>
-    {%- endif %}
-    {%- if item.recording is defined %}
-      <h3 class="fs-4">Recording</h3>
-      {{ macros.youtube_embed(item.recording) }}
     {%- endif %}
     {%- if item.citation is defined %}
       <h3 class="fs-4">Cite as</h3>
