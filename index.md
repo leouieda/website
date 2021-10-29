@@ -39,7 +39,7 @@ template: base.html
 </div>
 </div>
 
-<a class="btn btn-outline-light mt-3 me-3" href="/about">Longer version + contact <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
+<a class="btn btn-primary mt-3 me-3" href="/about">Longer version + contact <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
 <a class="btn btn-light mt-3" href="https://www.compgeolab.org" target="_blank">My research at the CompGeoLab <i class="fa fa-external-link-square-alt ms-1" aria-hidden="true"></i></a>
 
 </section>

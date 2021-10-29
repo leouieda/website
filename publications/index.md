@@ -60,7 +60,7 @@ Find out more about my research at the
       </span>
     {%- endif %}
     {{ paper.journal }},
-    doi:<a href="https://doi.org/{{ doi }}">{{ doi }}</a>
+    doi:<a target="_blank" href="https://doi.org/{{ doi }}">{{ doi }}</a>
   </p>
   <button class="btn btn-secondary btn-sm me-1 mb-2" type="button"
       data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
