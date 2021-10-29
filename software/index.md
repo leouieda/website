@@ -4,14 +4,11 @@ banner_image: images/github-graph.jpg
 banner_position: center
 banner_title: Software
 banner_subtitle: The open-source software projects with which I'm involved
-container_class:
+container_class: container page-content overflow-hidden wide-page
 template: base.html
 ---
 
 {% import "macros.html" as macros %}
-
-<div class="container-fluid page-section">
-<section class="container wide-page">
 
 ## Nēnē: A no-frills static site generator
 
@@ -36,10 +33,7 @@ used to build my website before, and the
 </div>
 </div>
 
-</section>
-</div>
-<div class="container-fluid page-section">
-<section class="container wide-page">
+<hr class="my-5">
 
 ## Fatiando a Terra
 
@@ -64,10 +58,7 @@ from research to teaching.
 </div>
 </div>
 
-</section>
-</div>
-<div class="container-fluid page-section">
-<section class="container wide-page">
+<hr class="my-5">
 
 ## Generic Mapping Tools (GMT)
 
@@ -80,6 +71,10 @@ open-source. I had the pleasure to
 [join the GMT team](/blog/hawaii-gmt-postdoc.html) during my postdoc working
 on [PyGMT](https://www.pygmt.org).
 
+Recently, my contributions to GMT and PyGMT have been more on the community and
+guidance side than actual coding.
+Thankfully, they don't really need me for the coding parts.
+
 {{ macros.button_link("https://github.com/GenericMappingTools", "GitHub", type="btn-primary", icon="fab fa-github", size="") }}
 {{ macros.button_link("https://www.generic-mapping-tools.org/", "Website", type="btn-light", icon="fa fa-external-link-square-alt", size="") }}
 
@@ -89,10 +84,7 @@ on [PyGMT](https://www.pygmt.org).
 </div>
 </div>
 
-</section>
-</div>
-<div class="container-fluid page-section">
-<section class="container wide-page">
+<hr class="my-5">
 
 ## Tesseroids
 
@@ -116,8 +108,4 @@ cross-compilation, version control, and more.
 <div class="col-8 col-md-3">
   <img src="../images/tesseroids-logo.svg" alt="The Tesseroids logo">
 </div>
-</div>
-
-
-</section>
 </div>
