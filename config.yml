@@ -31,16 +31,8 @@ navigation:
     id: publications/index
   - name: Presentations
     id: presentations/index
-  #- name: Software
-    #id: software/index
-  #- name: Data
-    #id: data/index
-  #- name: Team
-    #id: team/index
-  #- name: News
-    #id: news/index
-  #- name: Contact
-    #id: contact/index
+  - name: Teaching
+    id: teaching/index
 
 # Don't copy or process these files
 ignore:

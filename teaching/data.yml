@@ -1,0 +1,88 @@
+liverpool:
+
+  - title: Remote sensing
+
+
+workshops:
+
+  - title: GMT UNAVCO
+
+
+uerj:
+
+  - title: "Matemática especial: métodos numéricos e programação"
+    github: mat-esp/about
+    location: Universidade do Estado do Rio de Janeiro
+    about: |
+      <p>
+      Introduction to programming and numerical methods for oceanography majors.
+      This course is the first contact the students have with computer
+      programming (using the Python language).
+      I also taught them Git and GitHub and made use of the GitHub Classroom
+      platform.
+      </p>
+      <h4>Ementa</h4>
+      <p>
+      Introdução ao estudo da computação. Conceito de algoritmo e programação
+      estruturada. Linguagens de programação. Procedimentos, funções e módulos.
+      Erros nas aproximações numéricas. Resolução numérica de equações
+      algébricas e transcendentes. Interpolação. Diferenciação e integração
+      numérica. Resolução numérica de equações diferenciais. Resolução de
+      triângulos esféricos. Solução numérica de sistemas lineares. Aplicações à
+      oceanografia.
+      </p>
+
+  - title: "Geofísica 2: Sísmica"
+    github: leouieda/geofisica2
+    location: Universidade do Estado do Rio de Janeiro
+    about: |
+      <p>
+      Introduction to geophysics for geology majors. This is a follow up to
+      Geofísica 1 and covers seismics, seismology, electric and electromagnetic
+      methods.
+      This content was all created and delivered in Portuguese.
+      </p>
+      <h4>Ementa</h4>
+      <p>
+      Método Sísmicos: stress e strain, ondas elásticas, geometria dos caminhos
+      da onda, ondas direta, refratada e refletida, interface, equipamentos
+      para aquisição de dados. Sísmica de refração: refração crítica e
+      head-waves, gráfico tempo-distância (T-X), interfaces horizontais e
+      mergulhantes, aplicações em geologia. Sísmica de reflexão: velocidades
+      sísmicas, Normal-moveout (NMO), Dip-moveout (DMO), empilhamento
+      (stacking), migração, levantamentos 2D e 3D, aplicações na exploração de
+      hidrocarbonetos.
+      Geofísica de Poço (well-log): introdução, perfuração de poços e seus
+      efeitos nas rochas, metodologias mais aplicadas na atualidade, usos na
+      indústria do petróleo e na exploração mineral.
+      Métodos Geoelétricos: equações de maxwell, resistividades de minerais e
+      rochas, aquisição de dados tipos de arranjos geoelétricos, Potencial
+      espontâneo, polarização induzida, exemplos de aplicações em geologia.
+      </p>
+
+  - title: "Geofísica 1: Gravimetria e magnetometria"
+    github: leouieda/geofisica1
+    location: Universidade do Estado do Rio de Janeiro
+    about: |
+      <p>
+      Introduction to geophysics for geology majors. This is the first contact
+      of the students with geophysics. Covers gravimetry and geomagnetism.
+      This content was all created and delivered in Portuguese.
+      </p>
+      <p>
+      This was the first full module that I taught. I had the chance to design
+      the content from scratch, which was both exhausting and rewarding.
+      </p>
+      <h4>Ementa</h4>
+      <p>
+      Comportamento radiométrico de rochas e sua importância no mapeamento
+      geológico e prospecção mineral. Radiação. Levantamentos radiométricos,
+      gamaespectometro. Método gravimétrico: Lei da atração gravitacional,
+      densidade de minerais e rochas, gravimetro, reduções aplicadas aos dados.
+      Método magnetométrico: magnetismo de minerais e rochas, fontes do campo
+      magnético, o IGRF, reduções aplicadas aos dados, campo magnético
+      produzido por corpos de forma geométrica simples e seus equivalentes
+      geológicos; transformações do campo de anomalias: continuação, derivadas,
+      redução ao pólo. Interpretação das anomalias: problema direto; problema
+      inverso e a não unicidade da solução.
+      </p>
