@@ -90,7 +90,7 @@ Thankfully, they don't really need me for the coding parts.
 <div class="row gy-5 gx-5 align-items-start justify-content-center">
 <div class="col-md-9">
 
-A collection of command-line programs for modelling the gravitation attraction
+A collection of command-line programs for modelling the gravitational attraction
 of spherical prisms (tesseroids).
 
 This was my first open-source project. I started working on Tesseroids as part
