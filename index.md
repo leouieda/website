@@ -8,12 +8,8 @@ banner_subtitle: |
   <span class="nowrap">Educator •</span>
   <span class="nowrap">Scientist •</span>
   <span class="nowrap">Programmer</span>
-container_class:
 template: base.html
 ---
-
-<div class="container-fluid page-section">
-<section class="container wide-page">
 
 <h2 class="mb-5 text-center">A bit about me</h2>
 
@@ -39,11 +35,10 @@ template: base.html
 </div>
 </div>
 
-<a class="btn btn-primary mt-3 me-3" href="/about">Longer version + contact <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
-<a class="btn btn-light mt-3" href="https://www.compgeolab.org" target="_blank">CompGeoLab <i class="fa fa-external-link-square-alt ms-1" aria-hidden="true"></i></a>
+<a class="btn btn-primary mt-3 me-2" href="/about">Longer version <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
+<a class="btn btn-light mt-3 me-2" href="/about">Contact me <i class="fa fa-envelope ms-1" aria-hidden="true"></i></a>
+<a class="btn btn-outline-light mt-3" href="https://www.compgeolab.org" target="_blank">CompGeoLab <i class="fa fa-external-link-square-alt ms-1" aria-hidden="true"></i></a>
 
-</section>
-</div>
 
 [deoes]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/
 [compgeolab]: https://www.compgeolab.org

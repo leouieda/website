@@ -277,6 +277,17 @@ workshops:
       </li>
       </ol>
 
+  - title: "Introduction to Python for Earth Science"
+    github: leouieda/2019-06-reu-python
+    description: 2019 Earth Sciences REU program (University of Hawaiʻi at Mānoa)
+    about: |
+      <p>
+      This workshop provided a hands-on introduction to the Python programming
+      language to the undergraduate REU students visiting the University of
+      Hawaiʻi at Mānoa.
+      </p>
+
+
   - title: "Best practices for modern open-source research codes"
     github: agu-ossi/2018-agu-oss
     description: AGU Fall Meeting 2018

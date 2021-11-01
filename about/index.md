@@ -3,13 +3,11 @@ title: About
 banner_image: images/hawaii-lava-photoshoot.jpg
 banner_position: top left
 banner_title: About me
-banner_subtitle: Who I am and how to contact me
-container_class:
+banner_subtitle: A bit more about me and my work
 template: base.html
 ---
 
-<div class="container-fluid page-section">
-<section class="container narrow-page">
+<section class="mb-5">
 
 ## The slightly longer version
 
@@ -44,7 +42,7 @@ Along with my role at the University of Liverpool, I'm also:
 * Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/)
 * Fellow of the [Software Sustainability Institute][ssi-fellowship]
 
-<figure>
+<figure class="mt-5">
 
 ![Me teaching git and GitHub at AGU2019](../images/teaching-git-at-agu2019.jpg)
 
@@ -56,79 +54,7 @@ Me teaching git and GitHub at [AGU2019](https://github.com/agu-ossi/2019-agu-oss
 </figure>
 
 </section>
-</div>
-<div class="container-fluid page-section-light page-section-pattern">
-<section class="container narrow-page">
-
-## Contact
-
-### Online
-
-<div class="row">
-<div class="col-md-12">
-
-These are best ways to reach me online:
-
-<ul class="fa-ul my-4">
-  <li><i class="fa-li fa fa-envelope fa-fw" aria-hidden="true"></i>
-  <a href="mailto:Leonardo.Uieda@liverpool.ac.uk">Leonardo.Uieda@liverpool.ac.uk</a>
-  </li>
-  <li><i class="fa-li fab fa-twitter fa-fw" aria-hidden="true"></i>
-  <a href="https://twitter.com/leouieda">@leouieda</a> on Twitter
-  </li>
-  <li><i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
-  On the <a href="https://softwareunderground.org/">Software Underground</a>
-  Slack
-  </li>
-</ul>
-
-</div>
-<div class="col-md-12">
-
-Find out more about me and my work at:
-
-{%- macro social_button(link, icon, name) -%}
-  <a class="btn btn-light me-2 mb-3" target="_blank" href="{{ link }}"><i class="{{ icon }} me-1" aria-hidden="true"></i> {{ name }}</a>
-{%- endmacro -%}
-
-<div id="social-links">
-{{ social_button("https://github.com/" ~ config.github, icon="fab fa-github", name="GitHub") }}
-{{ social_button(config.linkedin, icon="fab fa-linkedin", name="LinkedIn") }}
-{{ social_button(config.youtube, icon="fab fa-youtube", name="YouTube") }}
-{{ social_button("https://orcid.org/" ~ config.orcid, icon="ai ai-orcid", name="ORCID") }}
-{{ social_button("https://profiles.impactstory.org/u/" ~ config.orcid, icon="ai ai-impactstory", name="ImpactStory") }}
-{{ social_button("http://figshare.com/authors/Leonardo%20Uieda/97471", icon="ai ai-figshare", name="figshare") }}
-{{ social_button(config.googlescholar, icon="ai ai-google-scholar", name="Google Scholar") }}
-{{ social_button(config.publons, icon="ai ai-publons", name="Publons") }}
-{{ social_button(config.researchgate, icon="ai ai-researchgate", name="ResearchGate") }}
-</div>
-
-</div>
-</div>
-
-### At the University of Liverpool
-
-My office is in the Jane Herdman Building - Room A2.06 (second floor of the
-annex).
-You probably want to **email me first** to make sure I'm in the office (I work
-from home some days of the week).
-
-Here is the full address:
-
-> Dr. Leonardo Uieda
-> <br>
-> Jane Herdman Building
-> <br>
-> 4 Brownlow Street
-> <br>
-> Liverpool, United Kingdom
-> <br>
-> L69 3GP
-
-</section>
-</div>
-<div class="container-fluid page-section">
-<section class="container narrow-page">
+<section class="mb-5">
 
 <h2 id="cv">Curriculum Vitae</h2>
 
@@ -146,6 +72,9 @@ template. The source is available from the GitHub repository
 <a class="nowrap" href="https://github.com/leouieda/cv"><i class="mx-1 fab fa-github" aria-hidden="true"></i><code>leouieda/cv</code></a>.
 
 </div>
+
+</section>
+<section class="mb-5">
 
 ## Education
 
@@ -192,7 +121,6 @@ template. The source is available from the GitHub repository
 {% endfor %}
 
 </section>
-</div>
 
 
 [deoes]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/
