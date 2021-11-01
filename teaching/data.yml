@@ -89,13 +89,13 @@ liverpool:
 workshops:
 
   - title: "The Generic Mapping Tools (GMT) for Geodesy"
-    github: GenericMappingTools/2021-unavco-course
-    description: 2021 UNAVCO Short Courses
+    description: 2019-2021 UNAVCO Short Courses
     recording: list:PLzmugeDoplFPtWkrCqWWWZGZzPQr_k0Kx
+    github: GenericMappingTools/2021-unavco-course
     about: |
       <p>
-      This is another online iteration of our 2-day course. It covers the use
-      of Generic Mapping Tools (GMT) in geodesy using UNIX shell scripting.
+      This is our 2-day course covering the use of Generic Mapping Tools (GMT)
+      in geodesy using UNIX shell scripting.
       Lectures and exercises will be given to teach the basic conventions of
       using GMT, such as plotting grids, images, and vector data (points,
       lines, polygons). Labs will include both processing and mapping of
@@ -103,14 +103,36 @@ workshops:
       </p>
       <p>
       The short course is taught by the GMT team:
-      Paul Wessel (University of Hawaii at Manoa),
-      Joaquim Luis (University of Algarve, Portugal),
-      Leonardo Uieda (University of Liverpool, UK),
-      Dongdong Tian (Michigan State University),
-      Xiaohua Xu (Scripps Institution of Oceanography),
+      Paul Wessel,
+      Joaquim Luis,
+      myself,
+      Dongdong Tian,
+      Xiaohua Xu,
       and
-      Meghan Jones (University of Hawaii at Manoa).
+      Meghan Jones.
       </p>
+      <p>
+      We've been teaching this workshop yearly since 2019 and have done both
+      in person and online versions. Below you'll find links to material for
+      individual iterations.
+      </p>
+      <ul>
+      <li>
+        2021: <a target="_blank" href="https://github.com/GenericMappingTools/2021-unavco-course">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          GenericMappingTools/2021-unavco-course</a> (online)
+      </li>
+      <li>
+        2020: <a target="_blank" href="https://github.com/GenericMappingTools/2020-unavco-course">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          GenericMappingTools/2020-unavco-course</a> (online)
+      </li>
+      <li>
+        2019: <a target="_blank" href="https://github.com/GenericMappingTools/2019-unavco-course">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          GenericMappingTools/2019-unavco-course</a> (in person)
+      </li>
+      </ul>
 
   - title: "From scattered data to gridded products using Verde"
     github: fatiando/transform2020
@@ -189,28 +211,6 @@ workshops:
       and practical skills that can be easily transfered to other domains.
       </p>
 
-  - title: "The Generic Mapping Tools (GMT) for Geodesy"
-    github: GenericMappingTools/2020-unavco-course
-    description: 2020 UNAVCO Short Courses
-    recording: list:PLzmugeDoplFPq6k7u1ebNbiBzqFA-OwXF
-    about: |
-      <p>
-      This iteration of our 2-day course was moved online due to the COVID-19
-      pandemic. It covers the use of Generic Mapping Tools (GMT) in geodesy
-      using UNIX shell scripting. Lectures and exercises will be given to teach
-      the basic conventions of using GMT, such as plotting grids, images, and
-      vector data (points, lines, polygons). Labs will include both processing
-      and mapping of various data sets relevant to geodesy.
-      </p>
-      <p>
-      The short course is taught by the GMT team:
-      Paul Wessel (University of Hawaii at Manoa),
-      Joaquim Luis (University of Algarve, Portugal),
-      Dongdong Tian (Michigan State University),
-      Xiaohua Xu (Scripps Institution of Oceanography),
-      and myself.
-      </p>
-
   - title: "Best practices for developing and sustaining your open-source research software"
     github: agu-ossi/2019-agu-oss
     description: AGU Fall Meeting 2019
@@ -276,28 +276,6 @@ workshops:
         software.
       </li>
       </ol>
-
-  - title: "The Generic Mapping Tools (GMT) for Geodesy"
-    github: GenericMappingTools/2019-unavco-course
-    description: 2019 UNAVCO Short Courses
-    recording: list:PLzmugeDoplFMwr1W7dgmwf26p83ie6ZEN
-    about: |
-      <p>
-      This is our 2-day course covering the use of Generic Mapping Tools (GMT)
-      in geodesy using UNIX shell scripting. Lectures and exercises will be
-      given to teach the basic conventions of using GMT, such as plotting
-      grids, images, and vector data (points, lines, polygons). Labs will
-      include both processing and mapping of various data sets relevant to
-      geodesy.
-      </p>
-      <p>
-      The short course is taught by the GMT team:
-      Paul Wessel (University of Hawaii at Manoa),
-      Joaquim Luis (University of Algarve, Portugal),
-      Dongdong Tian (Michigan State University),
-      Xiaohua Xu (Scripps Institution of Oceanography),
-      and myself.
-      </p>
 
   - title: "Best practices for modern open-source research codes"
     github: agu-ossi/2018-agu-oss
