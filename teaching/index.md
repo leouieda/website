@@ -16,7 +16,7 @@ open-source teaching resources (lecture slides, code for computer practicals).
 <div class="callout mb-5">
 
 This list does not cover all of my teaching activities, only the ones with
-more reusable teaching resources. See [my CV](/about) for a full list.
+more reusable teaching resources. See [my CV](/about#cv) for a full list.
 
 </div>
 

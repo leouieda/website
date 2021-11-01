@@ -130,7 +130,7 @@ Here is the full address:
 <div class="container-fluid page-section">
 <section class="container narrow-page">
 
-## Curriculum Vitae
+<h2 id="cv">Curriculum Vitae</h2>
 
 I keep a full length version of my CV updated and publicly available:
 

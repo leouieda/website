@@ -17,10 +17,10 @@ For citation information, see
 and [Publons]({{ config.publons }}).
 A more complete list of my work can be found on
 [ORCID](https://orcid.org/{{ config.orcid }})
-• {{ config.orcid }} .
+• {{ config.orcid }}
 
 Find out more about my research at the
-[Computer-oriented Geoscience Lab](https://www.compgeolab.org/).
+[Computer-Oriented Geoscience Lab](https://www.compgeolab.org/).
 
 </div>
 
