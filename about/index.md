@@ -85,15 +85,23 @@ These are best ways to reach me online:
 </div>
 <div class="col-md-12">
 
-Find out more about my work at:
+Find out more about me and my work at:
 
-<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://github.com/{{ config.github }}"><i class="fab fa-github me-1" aria-hidden="true"></i> GitHub</a>
-<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://orcid.org/{{ config.orcid }}"><i class="ai ai-orcid me-1" aria-hidden="true"></i> ORCID</a>
-<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="https://profiles.impactstory.org/u/{{ config.orcid }}"><i class="ai ai-impactstory me-1" aria-hidden="true"></i> ImpactStory</a>
-<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="http://figshare.com/authors/Leonardo%20Uieda/97471"><i class="ai ai-figshare me-1" aria-hidden="true"></i> figshare</a>
-<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.googlescholar }}"><i class="ai ai-google-scholar me-1" aria-hidden="true"></i> Google Scholar</a>
-<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.publons }}"><i class="ai ai-publons me-1" aria-hidden="true"></i> Publons</a>
-<a class="btn btn-outline-light me-1 mb-2" target="_blank" href="{{ config.researchgate }}"><i class="ai ai-researchgate me-1" aria-hidden="true"></i> ResearchGate</a>
+{%- macro social_button(link, icon, name) -%}
+  <a class="btn btn-light me-2 mb-3" target="_blank" href="{{ link }}"><i class="{{ icon }} me-1" aria-hidden="true"></i> {{ name }}</a>
+{%- endmacro -%}
+
+<div id="social-links">
+{{ social_button("https://github.com/" ~ config.github, icon="fab fa-github", name="GitHub") }}
+{{ social_button(config.linkedin, icon="fab fa-linkedin", name="LinkedIn") }}
+{{ social_button(config.youtube, icon="fab fa-youtube", name="YouTube") }}
+{{ social_button("https://orcid.org/" ~ config.orcid, icon="ai ai-orcid", name="ORCID") }}
+{{ social_button("https://profiles.impactstory.org/u/" ~ config.orcid, icon="ai ai-impactstory", name="ImpactStory") }}
+{{ social_button("http://figshare.com/authors/Leonardo%20Uieda/97471", icon="ai ai-figshare", name="figshare") }}
+{{ social_button(config.googlescholar, icon="ai ai-google-scholar", name="Google Scholar") }}
+{{ social_button(config.publons, icon="ai ai-publons", name="Publons") }}
+{{ social_button(config.researchgate, icon="ai ai-researchgate", name="ResearchGate") }}
+</div>
 
 </div>
 </div>
@@ -107,15 +115,15 @@ from home some days of the week).
 
 Here is the full address:
 
-<a href="https://goo.gl/maps/6F7Uj5g2hxEEkKor8">
-Jane Herdman Building
-<br>
-4 Brownlow Street
-<br>
-Liverpool, United Kingdom
-<br>
-L69 3GP
-</a>
+> Dr. Leonardo Uieda
+> <br>
+> Jane Herdman Building
+> <br>
+> 4 Brownlow Street
+> <br>
+> Liverpool, United Kingdom
+> <br>
+> L69 3GP
 
 </section>
 </div>
