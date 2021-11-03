@@ -105,7 +105,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-xl-8">
-          <nav class="footer-nav" aria-labelledby="secondary-navigation">
+          <nav class="footer-nav mb-4" aria-labelledby="secondary-navigation">
             <ul class="nav">
               {%- for item in config.navigation %}
                 <li class="nav-item">
@@ -149,6 +149,9 @@
           </p>
           <p>
             Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
+          </p>
+          <p>
+          This website does not use cookies or track you in any way.
           </p>
           <p>
             Copyright &copy; {{ build.today.year }} {{ config.author }}

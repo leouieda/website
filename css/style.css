@@ -163,7 +163,6 @@ table {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
-  font-weight: 300;
   margin: 0 0.25rem;
 }
 
@@ -305,7 +304,6 @@ li.list-inline-item {
 }
 
 .footer-nav {
-  margin-bottom: 2rem;
   margin-top: -0.5rem;
 }
 
