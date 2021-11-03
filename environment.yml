@@ -5,5 +5,4 @@ channels:
 dependencies:
     - python==3.9
     - pip
-    - pip:
-        - nene==0.3.*
+    - nene==0.3.*
