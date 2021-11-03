@@ -1,7 +1,7 @@
 ---
 title: Contact
-banner_image: images/liverpool-clock-tower.jpg
-banner_position: top left
+banner_image: images/merseyside-panchromatic.jpg
+banner_position: center
 banner_title: Contact
 banner_subtitle: How to reach me online and offline
 template: base.html
