@@ -9,6 +9,7 @@ keywords: 'science, geoscience, geophysics, software, open-source'
 repository: leouieda/website
 repository_branch: main
 favicon: images/favicon.png
+thumbnail: images/thumbnail/default.png
 
 # Social media
 twitter: leouieda

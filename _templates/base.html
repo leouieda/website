@@ -26,6 +26,31 @@
   <link rel="shortcut icon" href="/{{ config.favicon|e }}"/>
   {%- endif %}
 
+  <!-- Social media cards -->
+  {%- if page.thumbnail is defined -%}
+    {% set thumbnail = page.thumbnail %}
+  {%- else -%}
+    {% set thumbnail = config.thumbnail %}
+  {%- endif -%}
+  {%- if page.description is defined -%}
+    {% set description = page.description|striptags|trim  %}
+  {%- elif page.banner_subtitle -%}
+    {% set description = page.banner_subtitle|striptags|trim %}
+  {%- else -%}
+    {% set description = page.body|striptags|trim|truncate(200) %}
+  {%- endif %}
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{ config.twitter }}">
+  <meta name="twitter:creator" content="@{{ config.twitter }}">
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:image" content="{{ config.url }}/{{ thumbnail }}" />
+  <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
+  <!--<meta property="og:site_name" content="{{ config.site_name }}" />-->
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="/css/bootstrap-5.1/bootstrap.min.css">
   <!-- FontAwsome icons -->
