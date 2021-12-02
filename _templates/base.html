@@ -176,8 +176,13 @@
             Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
           </p>
           <p>
-          This website does not use cookies or track you in any way.
+            This website does not use cookies or track you in any way
           </p>
+          {%- if config.license_notice is defined %}
+            <p>
+              {{ config.license_notice }}
+            </p>
+          {%- endif %}
           <p>
             Copyright &copy; {{ build.today.year }} {{ config.author }}
           </p>
