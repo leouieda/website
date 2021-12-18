@@ -27,7 +27,7 @@ These are best ways to reach me online:
 </ul>
 
 </section>
-<section>
+<section class="mb-5">
 
 ## At the University of Liverpool
 
@@ -47,5 +47,14 @@ Here is the full address:
 > Liverpool, United Kingdom
 > <br>
 > L69 3GP
+
+</section>
+<section>
+
+## Need to send me something encrypted? 🤫
+
+<i class="fas fa-key me-2"></i>
+Here is my GPG public key:
+[`leouieda_pub.key`](../assets/leouieda_pub.key)
 
 </section>
