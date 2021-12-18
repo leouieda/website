@@ -3,6 +3,76 @@ thumbnail: images/thumbnail/presentations.png
 presentations:
 
   - title: |
+      Design useful tools that do one thing well and work together:
+      rediscovering the UNIX philosophy while building the Fatiando a Terra
+      project
+    authors: Uieda, L., Li, L., Soler, S. R., Pesce, A.
+    year: 2021
+    event: AGU Fall Meeting
+    invited: true
+    github: fatiando/agu2021
+    slides: https://www.fatiando.org/agu2021
+    note: |
+      The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+      using my <a href="https://github.com/leouieda/talk-template">open-source
+      HTML talk template</a>.
+    about: |
+      <p>
+      This is an invited presentation about the past, current, and future of
+      the Fatiando a Terra project. We will cover the current functionality,
+      recent developments, and lessons learned along the way.
+      </p>
+      <p>
+      The presentation is centered around a tutorial that walks you through the
+      steps of transforming observed absolute gravity measurements into a grid
+      of residual gravity disturbances at a constant height. The tutorial
+      showcases some of the core utilities of all of our open-source libraries.
+      </p>
+    abstract: |
+      The Fatiando a Terra project (https://www.fatiando.org) was started in
+      2010 as a Python library for visualization, forward modelling, and
+      inversion across different geophysical methods. Over the following 8
+      years, the project attracted new contributors and grew to include
+      cutting-edge methods, toy examples for teaching, and helper functions for
+      visualization. Standards around testing, documentation, and code style
+      evolved and new tools appeared around the ecosystem (such as SimPEG,
+      PyVista, Devito, and pyGIMLi), making some of our functionality redundant
+      and outdated. In an attempt to better interface with the emerging
+      ecosystem, we started a major restructuring of the code base in 2018.
+      This presentation will cover the current available functionality and some
+      of the lessons learned from developing, growing, and maintaining the
+      project, including current challenges and our future plans.
+
+  - title: |
+      Python-based workflows for small-to-medium sized data: what works, what
+      doesn’t, and what can be improved
+    authors: Uieda, L., Soler, S. R.
+    year: 2021
+    event: AGU Fall Meeting
+    invited: true
+    github: compgeolab/agu2021
+    slides: https://www.compgeolab.org/agu2021
+    note: |
+      The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+      using my <a href="https://github.com/leouieda/talk-template">open-source
+      HTML talk template</a>.
+    about: |
+      <p>
+      This is an invited talk for the first part of an "Open Scince in Action"
+      session, with 10 minute talks by panelists followed by a panel
+      discussion.
+      </p>
+    abstract: |
+      In this presentation, we will demonstrate the workflow that we have been
+      establishing at the Computer-Oriented Geoscience Lab for building
+      "repro-packs" for our papers and projects. We use a combination of
+      virtual environments, data download and caching tools, notebooks,
+      Makefiles, and data repositories to provide others with the means to
+      reproduce and build upon our work. We will also share some of the
+      unsolved challenges that we have encountered and our dreams for an ideal
+      workflow.
+
+  - title: |
       Academia e software livre: Desafios e oportunidades no Brasil e no
       exterior
     authors: Uieda, L.
