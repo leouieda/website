@@ -87,6 +87,21 @@ liverpool:
       engaged following along.
       </p>
 
+  - title: "Machine learning"
+    github: leouieda/ml-intro
+    description: ENVS386 Geophysical Data Modelling • University of Liverpool
+    about: |
+      <p>
+      This is a very brief hands-on introduction to machine learning. It will
+      cover some of the common nomenclature, principles, and applications.
+      </p>
+      <p>
+      It's taught as a 2 hour live-coding workshop as part of a larger
+      geophysical inversion module.
+      The GitHub repository contains instructions for running the live session
+      as well as an expected learner profile.
+      </p>
+
 
 workshops:
 
