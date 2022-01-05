@@ -11,8 +11,8 @@ repository_branch: main
 favicon: images/favicon.png
 thumbnail: images/thumbnail/default.png
 license_notice: |
-  Except where noted, all content is licensed
-  <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>
+  Except where otherwise noted, all content is licensed
+  <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
 
 # Social media
 twitter: leouieda
