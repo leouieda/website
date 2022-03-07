@@ -255,6 +255,21 @@ proprietary software workflows.
 ---
 
 <blockquote class="blockquote">
+
+It's already been said by others (and probably much better) but for me it's
+automation and manipulating very large datasets quickly and repeatably.
+I'd also say that for me, coding is a bit like cooking. There are two approaches.
+Firstly the recipe approach, where you follow instructions to do something new, or that you would normally achieve in expensive software. The cooking analogy here being going out for dinner vs cooking a fancy meal at home.
+Secondly, there's the skills based approach. Coding/programming teaches quite a lot of problem solving and lateral thinking. My approach to data curation and storage is a lot better from coding. The cooking analogy here being making a nice meal with a bunch of random leftovers or ingredients with some improvisation. (edited)
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="">Kieran Blacker</a>,
+</p>
+
+---
+
+<blockquote class="blockquote">
 </blockquote>
 <p class="blockquote-footer">
 <a href=""></a>,
