@@ -138,6 +138,17 @@ table {
 .container {
 }
 
+.blockquote {
+  font-size: var(--bs-body-font-size);
+}
+
+.blockquote-footer {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: right;
+  color: var(--lu-light-blue-gray);
+}
+
 .navbar {
   padding: 1rem 0;
   z-index: 3;
