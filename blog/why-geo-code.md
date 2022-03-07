@@ -49,7 +49,7 @@ training in my BSc before choosing geophysics. My suggestions would be:
 
 </blockquote>
 <p class="blockquote-footer">
-[Alex Hobé](https://www.researchgate.net/profile/Alex-Hobe),
+<a href="https://www.researchgate.net/profile/Alex-Hobe">Alex Hobé</a>,
 PhD candidate in Geothermal Energy at Uppsala University
 </p>
 
@@ -92,7 +92,7 @@ future).
 
 </blockquote>
 <p class="blockquote-footer">
-[Florian Wellmann](https://www.cgre.rwth-aachen.de/go/id/qoyf/?lidx=1),
+<a href="https://www.cgre.rwth-aachen.de/go/id/qoyf/?lidx=1">Florian Wellmann</a>,
 Professor at RWTH Aachen University
 </p>
 
@@ -119,10 +119,137 @@ For me learning to code opened a new chapter in my life and how much it changed
 is hard to put into words here.
 **The easiest thing to describe is that it got me the job I have right now and it
 was one of the most empowering experiences in my life.**
+
 </blockquote>
 <p class="blockquote-footer">
-[Stefan Crummenerl](https://github.com/WestfalNamur/https://github.com/WestfalNamur/),
+<a href="https://github.com/WestfalNamur">Stefan Crummenerl</a>,
 Reservoir Engineer at Equinor.
+</p>
+
+---
+
+<blockquote class="blockquote">
+
+Doing any real (geo)statistics really asks for a good programming knowledge.
+From data handling to analysis and understanding.
+There are many things non-coders can not do (they are stuck with commercial
+software).
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="https://github.com/ahartikainen">Ari Hartikainen</a>
+</p>
+
+---
+
+<blockquote class="blockquote">
+
+When they have to type in their weekly report and all their statistics from
+their drilling program by hand,
+then redo when their head of commercial wants it done differently,
+build a 300 layer 3d project and you have to do 25 of them,
+organise all your assays from the last 10 years...
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="">Richard Scott</a>,
+</p>
+
+---
+
+<blockquote class="blockquote">
+
+When I think of core geology skills I think of making maps.
+Possibly the last time they’ll make a contour map by hand is in school.
+After that, they will have to use software to be productive.
+It is crucial to understand how these algorithms work, when to use them, and
+their pitfalls.
+One could learn how krigging works (math), and then code a simple
+implementation to bring it home (learning math by coding).
+
+Also, coding is great for automation.
+Even Petrel, \[a standard commercial software in the oil and gas industry\],
+has a very important area for developing workflows to automate data
+preparation, regrid, and all things needed for statical modeling.
+It is not a real programming language, but it has units of code blocks (for
+loops, if then else, while) that if you had never been exposed to before, might
+make hard to grasp their use and connect the dots to solve your problems.
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="">Rafael Pinto</a>,
+</p>
+
+---
+
+<blockquote class="blockquote">
+
+I'm not a graduated geologist yet, but knowing how to code in Python brought me
+several opportunities in terms of joining research groups and finding
+interesting internships.
+I use Python very often for automation on GIS and for data cleaning to input in
+a few software \[tools\], like MODFLOW.
+I'm also developing some geowebapps in order to allow free and open source data
+processing.
+So far, I have developed only one, and a few more are on the way! You can check
+it out [here](https://share.streamlit.io/rodreras/piper_diagram/main/geoapp_hidro.py).
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="">Rodrigo Brust</a>,
+</p>
+
+---
+
+<blockquote class="blockquote">
+
+I think I've been in their shoes.
+As a second year geology undergrad, I decided to take Computer Science 101
+because someone told me it would be useful.
+I more or less decided it was a waste of my time, mostly because I couldn't
+connect the dots to how it would apply to my studies or career.
+Currently, I think the points that Florian Wellmann brought up around data analysis
+(automation of processing, reproducibility, transparency) are some of the most
+important reasons to code.
+But to someone whose definition of "big data" might be data that takes more
+than a few minutes to transcribe from their field notebook to Excel, this might
+be a bit abstract.
+
+What did start to make it click for me some years later were finding examples
+of geologic workflows done in Python that I could build on top of.
+Great examples are:
+
+* \[Agile Scientific's\] [X Lines of Python series](https://agilescientific.com/blog/category/X+Lines)
+* [Jesse Pisel's 5 minutes of Python](https://github.com/jessepisel/5minutesofpython)
+* [Michael Pyrcz's Python Numerical Demos](https://github.com/GeostatsGuy/PythonNumericalDemos)
+(check out the readme of that repo for 9 reasons scientists should learn to
+code)
+* [Brendon Hall's famous Facies classification using machine learning tutorial](https://doi.org/10.1190/tle35100906.1)
+
+But to answer your actual question:
+the two biggest ways coding has helped me do my job as a geologist in
+industry (apart from data analysis) are task automation and extension of
+proprietary software workflows.
+
+1. A lot of tasks assigned to entry level, and non-entry level for that
+   matter, geologists are repetitive. For example, you might make some geologic
+   interpretations and file them in a standard report or form that you will then
+   pass on to a colleague to make some engineering designs. You may have to do
+   this 10s or more times in a week. A lot of this type of work can be automated
+   with code.
+1. Second, much of the work done by geologists, in my experience (O&G) , is
+   done inside of some large proprietary software package like Petrel, DSG,
+   ArcMap etc. Why should we learn to code if we have these made for us? Rafael
+   Pinto made some good points about this already. I will add that these software
+   packages have great workflows, and you should use them if you are able to. But
+   many times they can't do exactly what you need. In these cases it's a
+   superpower to be able to read the data and your interpretations from these
+   packages into Python, and do a few steps of analysis to get you exactly what
+   you need.
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="">Michael Harty</a>,
 </p>
 
 ---
@@ -130,7 +257,7 @@ Reservoir Engineer at Equinor.
 <blockquote class="blockquote">
 </blockquote>
 <p class="blockquote-footer">
-Florian Wellmann, Professor at RWTH Aachen University
+<a href=""></a>,
 </p>
 
 ---
