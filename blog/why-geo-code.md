@@ -176,7 +176,8 @@ it out [here](https://share.streamlit.io/rodreras/piper_diagram/main/geoapp_hidr
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">Rodrigo Brust</a>,
+<a href="https://www.linkedin.com/in/rodrigobrust/">Rodrigo Brust</a>,
+Senior Undergraduate Geology Student
 </p>
 
 <blockquote class="blockquote mt-5">
