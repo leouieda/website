@@ -3,14 +3,12 @@ title: "Why should geologists learn how to code?"
 date: 2022-03-07
 ---
 
-I've been teaching introductory courses in programming and using programming in
-my geophysics courses for a decade now.
-
 Last week, before the second day of my 4-week "Introduction to Python for
 Geoscientists" workshop, I was asked by a student why they needed to learn how
 to code.
 After all, they are training to become a geologist, not a geophysicist, and
 couldn't see how this would be useful in their future career.
+
 It was a fair question since, by that point, all we had seen were variables and
 basic data types and operations.
 Day 2 of the workshop covers loading that
@@ -21,10 +19,6 @@ though for now they could still have done the same thing with Excel just as
 easily.
 But not being a professional geologist myself, it's hard to come up with
 specific examples.
-I also wanted to stay away from the argument that coding is skill that can help
-you survive a downturn in geoscience by pivoting to data science.
-While true, it's not particularly encouraging for first year students to be
-told that they need to plan to move away from the field.
 
 Luckily, I have access to a wide network of professional geologists who code
 through the [Software Underground](https://softwareunderground.org/) community!
@@ -330,9 +324,9 @@ I'm sure you'll find a lot of ideas to inspire your students:
 * Here are \[two examples\] that discuss about use of coding in handling well logs:
   1. [Understanding the WITSML format in the Volve Oilfield dataset](https://discovervolve.com/2021/01/06/understanding-the-witsml-format-in-the-volve-oilfield-dataset/)
   1. [Navigating Well log formats in the Volve Oilfield data with the Welly library](https://discovervolve.com/2020/09/26/navigating-well-log-formats-in-the-volve-oilfield-data-with-the-welly-library/)
-* We are also coming up with a correlation of logs to further show the use of software.
 * Here's a machine learning concept:
   [Development of a Machine Learning model based on feature selection to predict Volve production rate](https://discovervolve.com/2021/02/23/development-of-a-machine-learning-model-based-on-feature-selection-to-predict-volve-production-rate/)
+* We are also coming up with a correlation of logs to further show the use of software.
 
 </blockquote>
 <p class="blockquote-footer">
@@ -340,17 +334,49 @@ I'm sure you'll find a lot of ideas to inspire your students:
 </p>
 
 <blockquote class="blockquote mt-5">
+
+Geologists are really good at rising a 3D volume in their head. If you can make
+the shift from spatial coordinate systems to other abstract principal
+components, it's a superpower for navigating complex data.
+
+Specific workflows that directly apply:
+
+* Data mining (who likes transcribing tables?)
+* Petrophysics
+* Depositional systems (examples in the work of Zoltan Sylvester at UT and Zane
+  Jobe at CO Mines \[also Pete Burgess at Liverpool\])
+* Image analysis to scale up core, outcrop, and thin-section work
+* Most geologic careers have a significant amount of reporting that few enjoy.
+  Automated the boring stuff so you can spend more time on the fun stuff!
+
+A short review of cognitive/behavioral psychology (Kahneman) will leave a
+geologist unnerved about the reliability of their interpretations.
+Incorporating the modern algorithmic toolkit creates an opportunity to amplify
+interpretive workflows either to achieve consistent outputs, consistently
+calibrated interpretations, or probabilistic interpretations from integrating
+varied data filters or interpretive approaches.
+
 </blockquote>
 <p class="blockquote-footer">
-<a href=""></a>,
+<a href="">Kurt Rucker</a>,
 </p>
 
+---
+
+Hopefully this insight from professional geoscientists will be good inspiration
+and help find the motivation to continue learning about computing.
+It's by no means an easy subject and requires approaching problems with a
+completely different mindset.
+That is difficult to achieve and requires practice to become second nature.
+But it can be done!
 
 By the way, if you are **interested in geoscience and coding/technology at any
 level**, the [Software Underground](https://softwareunderground.org/) is the
 best place to find your peers!
-
 They are a registered non-profit and a legit professional society, the likes of
 which you won't find anywhere is the geoscience space.
 **Signing up for the Slack with over 4000 members is free** and you can also
 join as a paying member to help support the community.
+
+Finally, I want to extend my heartfelt gratitude to the Software Underground
+community for providing all of the answers above and always being keen to help!
