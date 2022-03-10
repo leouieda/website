@@ -228,7 +228,8 @@ proprietary software workflows.
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">Michael Harty</a>,
+<a href="https://mharty3.github.io/">Michael Harty</a>,
+Staff Geologist, Occidental Petroleum
 </p>
 
 <blockquote class="blockquote mt-5">
