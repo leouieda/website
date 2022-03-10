@@ -32,9 +32,7 @@ So I asked them **"How has coding helped you do your job?"**
 
 Here are some of their replies (with slight edits by me marked in `[]`).
 
----
-
-<blockquote class="blockquote">
+<blockquote class="blockquote mt-5">
 
 Although I am not a geologist specifically, I did have a lot of geology
 training in my BSc before choosing geophysics. My suggestions would be:
@@ -53,9 +51,7 @@ training in my BSc before choosing geophysics. My suggestions would be:
 PhD candidate in Geothermal Energy at Uppsala University
 </p>
 
----
-
-<blockquote class="blockquote">
+<blockquote class="blockquote mt-5">
 
 \[Here are\] a couple of points for motivation that I give my students:
 
@@ -96,9 +92,7 @@ future).
 Professor at RWTH Aachen University
 </p>
 
----
-
-<blockquote class="blockquote">
+<blockquote class="blockquote mt-5">
 
 Learning to code helped me to get a better grasp of mathematics as well as you
 can focus on the math part rather then "calculating".
@@ -126,9 +120,7 @@ was one of the most empowering experiences in my life.**
 Reservoir Engineer at Equinor.
 </p>
 
----
-
-<blockquote class="blockquote">
+<blockquote class="blockquote mt-5">
 
 Doing any real (geo)statistics really asks for a good programming knowledge.
 From data handling to analysis and understanding.
@@ -140,9 +132,7 @@ software).
 <a href="https://github.com/ahartikainen">Ari Hartikainen</a>
 </p>
 
----
-
-<blockquote class="blockquote">
+<blockquote class="blockquote mt-5">
 
 When they have to type in their weekly report and all their statistics from
 their drilling program by hand,
@@ -155,9 +145,7 @@ organise all your assays from the last 10 years...
 <a href="">Richard Scott</a>,
 </p>
 
----
-
-<blockquote class="blockquote">
+<blockquote class="blockquote mt-5">
 
 When I think of core geology skills I think of making maps.
 Possibly the last time they’ll make a contour map by hand is in school.
@@ -180,9 +168,7 @@ make hard to grasp their use and connect the dots to solve your problems.
 <a href="">Rafael Pinto</a>,
 </p>
 
----
-
-<blockquote class="blockquote">
+<blockquote class="blockquote mt-5">
 
 I'm not a graduated geologist yet, but knowing how to code in Python brought me
 several opportunities in terms of joining research groups and finding
@@ -199,9 +185,7 @@ it out [here](https://share.streamlit.io/rodreras/piper_diagram/main/geoapp_hidr
 <a href="">Rodrigo Brust</a>,
 </p>
 
----
-
-<blockquote class="blockquote">
+<blockquote class="blockquote mt-5">
 
 I think I've been in their shoes.
 As a second year geology undergrad, I decided to take Computer Science 101
@@ -252,30 +236,115 @@ proprietary software workflows.
 <a href="">Michael Harty</a>,
 </p>
 
----
-
-<blockquote class="blockquote">
+<blockquote class="blockquote mt-5">
 
 It's already been said by others (and probably much better) but for me it's
 automation and manipulating very large datasets quickly and repeatably.
-I'd also say that for me, coding is a bit like cooking. There are two approaches.
-Firstly the recipe approach, where you follow instructions to do something new, or that you would normally achieve in expensive software. The cooking analogy here being going out for dinner vs cooking a fancy meal at home.
-Secondly, there's the skills based approach. Coding/programming teaches quite a lot of problem solving and lateral thinking. My approach to data curation and storage is a lot better from coding. The cooking analogy here being making a nice meal with a bunch of random leftovers or ingredients with some improvisation. (edited)
+I'd also say that for me, coding is a bit like cooking.
+There are two approaches:
+
+1. The recipe approach: you follow instructions to do something
+   new, or that you would normally achieve in expensive software. The cooking
+   analogy here being going out for dinner vs cooking a fancy meal at home.
+1. The skills based approach: coding/programming teaches quite a lot of problem
+   solving and lateral thinking. My approach to data curation and storage is a
+   lot better from coding. The cooking analogy here being making a nice meal with
+   a bunch of random leftovers or ingredients with some improvisation.
 
 </blockquote>
 <p class="blockquote-footer">
 <a href="">Kieran Blacker</a>,
 </p>
 
----
+<blockquote class="blockquote mt-5">
 
-<blockquote class="blockquote">
+I wholeheartedly agree with the others (geology mayor here)!
+To add in on the automation aspect:
+The Data Deluge is real in geoscience - not only in geophysics/hydrogeology/map
+making - but also in some of the more "qualitative" or "old school" geology
+disciplines.
+Instrumentation improves, but so does the amount of data!
+Both width and length increases e.g:
+
+* Micro XRF makes it possible to measure almost the whole periodic table every mm along a core.
+* Mass spec and laser ablation now make it possible to get composition as a line across a mineral in thin section.
+* In situ loggers makes it possible to measure soil water content, ph, temp, gas fluxes, on a minute scale.
+
+All this is super awesome, and (most) equipment output to a CSV. But the times
+where a [\geoscientist\] could manage all their data in Excel are long gone!
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="">Espen Svendsen</a>,
+</p>
+
+<blockquote class="blockquote mt-5">
+
+Only through coding can I find and eventually cope with broken data.
+It might not be easy to appreciate as a student, but "real data" is all too
+regularly broken in weird and wonderful ways and it never stops.
+So being able to identify, triage and then treat brokenness can only be done at
+scale with some degree of computational literacy.
+Data is the foundation of any technical work, but fixing brokenness is
+undervalued, unsexy work.
+So it's an opportunity, and I am not convinced folks outside the subsurface
+domain are suited to do the fixing.
+At least not alone.
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="">Evan Bianco</a>,
+</p>
+
+<blockquote class="blockquote mt-5">
+
+I think the best answer to this is that by learning to code you can do more
+work, easier and better. Not very concrete but let me give you some examples.
+
+By creating a code based pipeline for a certain type of work I do, I can
+generate $10,000 in consulting revenue in 5-10 mins. This is money that goes
+right in my pocket. The same work used to take me days doing it manually. I can
+literally pay myself a full years salary in 60 mins of work a year. Talk about
+freedom.
+
+A friend of mine had a geology job where he had to pull down hourly data,
+summarize and email it out to everyone. He automated it to the point where
+everything was time triggered so he spent literally all his time hanging out
+and learning from different people in the company rather than doing his
+monotonous job. Amazing.
+
+Coding means you can do more. It really gives you freedom to drive your career
+rather than having it dictated to you. I don't think every geoscientist has to
+or even needs to code, but it makes things so much better.
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="">David Thul</a>,
+</p>
+
+<blockquote class="blockquote mt-5">
+
+Please check out [www.discovervolve.com](https://www.discovervolve.com).
+I'm sure you'll find a lot of ideas to inspire your students:
+
+* Here are \[two examples\] that discuss about use of coding in handling well logs:
+  1. [Understanding the WITSML format in the Volve Oilfield dataset](https://discovervolve.com/2021/01/06/understanding-the-witsml-format-in-the-volve-oilfield-dataset/)
+  1. [Navigating Well log formats in the Volve Oilfield data with the Welly library](https://discovervolve.com/2020/09/26/navigating-well-log-formats-in-the-volve-oilfield-data-with-the-welly-library/)
+* We are also coming up with a correlation of logs to further show the use of software.
+* Here's a machine learning concept:
+  [Development of a Machine Learning model based on feature selection to predict Volve production rate](https://discovervolve.com/2021/02/23/development-of-a-machine-learning-model-based-on-feature-selection-to-predict-volve-production-rate/)
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="">Ankit Bansal</a>,
+</p>
+
+<blockquote class="blockquote mt-5">
 </blockquote>
 <p class="blockquote-footer">
 <a href=""></a>,
 </p>
 
----
 
 By the way, if you are **interested in geoscience and coding/technology at any
 level**, the [Software Underground](https://softwareunderground.org/) is the
