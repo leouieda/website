@@ -42,7 +42,7 @@ training in my BSc before choosing geophysics. My suggestions would be:
 </blockquote>
 <p class="blockquote-footer">
 <a href="https://www.researchgate.net/profile/Alex-Hobe">Alex Hobé</a>,
-PhD candidate in Geothermal Energy at Uppsala University
+PhD candidate at the Department of Earth Sciences, Uppsala University, Sweden
 </p>
 
 <blockquote class="blockquote mt-5">
