@@ -124,6 +124,7 @@ software).
 </blockquote>
 <p class="blockquote-footer">
 <a href="https://github.com/ahartikainen">Ari Hartikainen</a>
+Data Scientist
 </p>
 
 <blockquote class="blockquote mt-5">
@@ -136,7 +137,8 @@ organise all your assays from the last 10 years...
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">Richard Scott</a>,
+Richard Scott,
+Data Scientist (Geoscience), OZ Minerals
 </p>
 
 <blockquote class="blockquote mt-5">
@@ -333,7 +335,8 @@ I'm sure you'll find a lot of ideas to inspire your students:
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">Ankit Bansal</a>,
+<a href="https://www.linkedin.com/in/ankit-bansal-3215ba49/">Ankit Bansal</a>,
+Engineer at Oil India Limited
 </p>
 
 <blockquote class="blockquote mt-5">
