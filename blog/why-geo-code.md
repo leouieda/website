@@ -159,7 +159,8 @@ make hard to grasp their use and connect the dots to solve your problems.
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">Rafael Pinto</a>,
+<a href="https://www.linkedin.com/in/rafaelpintoor/">Rafael Pinto</a>,
+Data Analyst, EPAM Systems
 </p>
 
 <blockquote class="blockquote mt-5">
@@ -337,7 +338,7 @@ I'm sure you'll find a lot of ideas to inspire your students:
 
 <blockquote class="blockquote mt-5">
 
-Geologists are really good at rising a 3D volume in their head. If you can make
+Geologists are really good at rotating a 3D volume in their head. If you can make
 the shift from spatial coordinate systems to other abstract principal
 components, it's a superpower for navigating complex data.
 
@@ -360,7 +361,8 @@ varied data filters or interpretive approaches.
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">Kurt Rucker</a>,
+<a href="https://www.linkedin.com/in/kurt-rucker/">Kurt Rucker</a>,
+Applied Science Manager, Verdad Resources
 </p>
 
 ---
