@@ -123,7 +123,7 @@ software).
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="https://github.com/ahartikainen">Ari Hartikainen</a>
+<a href="https://github.com/ahartikainen">Ari Hartikainen</a>,
 Data Scientist
 </p>
 
