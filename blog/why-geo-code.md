@@ -252,7 +252,8 @@ There are two approaches:
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">Kieran Blacker</a>,
+<a href="https://www.linkedin.com/in/kieran-blacker-52895646/">Kieran Blacker</a>,
+Liverpool Geology MSci alumnus | Project Geophysicist, Cathie
 </p>
 
 <blockquote class="blockquote mt-5">
