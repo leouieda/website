@@ -293,7 +293,8 @@ At least not alone.
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">Evan Bianco</a>,
+<a href="https://www.linkedin.com/in/evanbianco/">Evan Bianco</a>,
+Geophysicist, Agile*
 </p>
 
 <blockquote class="blockquote mt-5">
