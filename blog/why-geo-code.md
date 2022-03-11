@@ -42,7 +42,7 @@ training in my BSc before choosing geophysics. My suggestions would be:
 </blockquote>
 <p class="blockquote-footer">
 <a href="https://www.researchgate.net/profile/Alex-Hobe">Alex Hobé</a>,
-PhD candidate at the Department of Earth Sciences, Uppsala University, Sweden
+PhD candidate, Department of Earth Sciences, Uppsala University
 </p>
 
 <blockquote class="blockquote mt-5">
@@ -83,7 +83,7 @@ future).
 </blockquote>
 <p class="blockquote-footer">
 <a href="https://www.cgre.rwth-aachen.de/go/id/qoyf/?lidx=1">Florian Wellmann</a>,
-Professor at RWTH Aachen University
+Professor, RWTH Aachen University
 </p>
 
 <blockquote class="blockquote mt-5">
@@ -111,7 +111,7 @@ was one of the most empowering experiences in my life.**
 </blockquote>
 <p class="blockquote-footer">
 <a href="https://github.com/WestfalNamur">Stefan Crummenerl</a>,
-Reservoir Engineer at Equinor.
+Reservoir Engineer, Equinor
 </p>
 
 <blockquote class="blockquote mt-5">
