@@ -321,7 +321,7 @@ or even needs to code, but it makes things so much better.
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">David Thul</a>,
+Anonymous
 </p>
 
 <blockquote class="blockquote mt-5">
