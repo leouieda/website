@@ -137,7 +137,7 @@ organise all your assays from the last 10 years...
 
 </blockquote>
 <p class="blockquote-footer">
-Richard Scott,
+<a href="https://www.linkedin.com/in/richard-scott-002a994/">Richard Scott</a>,
 Data Scientist (Geoscience), OZ Minerals
 </p>
 
@@ -275,7 +275,8 @@ where a [\geoscientist\] could manage all their data in Excel are long gone!
 
 </blockquote>
 <p class="blockquote-footer">
-<a href="">Espen Svendsen</a>,
+<a href="https://www.linkedin.com/in/espen-bing-svendsen-1b30051bb">Espen Svendsen</a>,
+PhD Fellow in Near-surface Geophysics, University of Copenhagen
 </p>
 
 <blockquote class="blockquote mt-5">
