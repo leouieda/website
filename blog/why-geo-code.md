@@ -371,6 +371,20 @@ varied data filters or interpretive approaches.
 Applied Science Manager, Verdad Resources
 </p>
 
+<blockquote class="blockquote mt-5">
+
+One article I am fond of from my blog is this one:
+[Be a geoscience and data science detective](https://mycarta.wordpress.com/2020/09/16/be-a-geoscience-and-data-science-detective/).
+I like to take apart papers and go a bit beyond. Without having learned a bit
+of coding I could never do that.
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="https://mycarta.wordpress.com">Matteo Niccoli</a>,
+Senior Geophysicist, Birchcliff Energy Ltd.
+</p>
+
+
 ---
 
 Hopefully this insight from professional geoscientists will be good inspiration
