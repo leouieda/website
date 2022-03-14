@@ -1,10 +1,10 @@
 ---
 title: "Why should geologists learn how to code?"
-date: 2022-03-07
+date: 2022-03-14
 ---
 
-Last week, before the second day of my 4-week "Introduction to Python for
-Geoscientists" workshop, I was asked by a student why they needed to learn how
+Before the second day of my 4-week "Introduction to Python for Geoscientists"
+workshop a few weeks ago, I was asked by a student why they needed to learn how
 to code.
 After all, they are training to become a geologist, not a geophysicist, and
 couldn't see how this would be useful in their future career.
