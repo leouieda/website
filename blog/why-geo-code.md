@@ -384,6 +384,34 @@ of coding I could never do that.
 Senior Geophysicist, Birchcliff Energy Ltd.
 </p>
 
+<blockquote class="blockquote mt-5">
+
+Interesting question. Just to be clear, I am a geologist by training
+and background, not a geophysicst, but writing code is still a key part of my
+research and has been for 30 years. The animation \[below\] is an example I am working
+on currently to create virtual mapping areas.
+
+![Animation of a 3D geologic model](../images/3d-geology-model-peter-burgess.gif)
+
+I had a coding class myself as a geology undergraduate in the late 1980s, so
+this issue is not a new one.
+Geologists have been writing code for decades and the number doing it is
+increasing now rapidly.
+I have also worked in industry in the past from 2002-2010, and being able to
+write code in my industry job in the energy sector was absolutely central to
+success of the teams I worked in.
+So coding has been a useful skill for geologists for a long time, but now more
+than ever.
+My advice to you all is that you should embrace the opportunity to learn this
+skill if it is new to you and get ready to use it frequently throughout your
+careers in Earth Science.
+
+</blockquote>
+<p class="blockquote-footer">
+<a href="https://www.liverpool.ac.uk/environmental-sciences/staff/peter-burgess/">Peter Burgess</a>,
+Professor, University of Liverpool
+</p>
+
 
 ---
 
@@ -404,3 +432,6 @@ join as a paying member to help support the community.
 
 Finally, I want to extend my heartfelt gratitude to the Software Underground
 community for providing all of the answers above and always being keen to help!
+
+> **Update (2022-03-18):** Add testimonial contributed by Peter Burgess
+> (including an awesome 3D model animation).
