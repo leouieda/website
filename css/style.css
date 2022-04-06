@@ -24,6 +24,16 @@ h2 {
   font-size: 2rem;
 }
 
+h2 > a {
+  text-decoration: none;
+  color: var(--bs-body-color);
+}
+
+h2 > a:hover {
+  text-decoration: underline;
+  color: var(--bs-body-color);
+}
+
 h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem;

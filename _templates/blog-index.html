@@ -14,9 +14,12 @@
   <section class="container page-content overflow-hidden wide-page">
     {%- for item in posts|sort(attribute="date", reverse=True) %}
       <h2 class="fs-4 mb-2 mt-5">
-        {{ item.title }}
+        <a class="" href="/{{ item.path }}">
+          {{ item.title }}
+        </a>
       </h2>
       <p class="text-muted mb-2 fs-6">
+        <i class="far fa-calendar-alt me-1" aria-hidden="true"></i>
         {{ item.date|replace("-", "/") }}
       </p>
       <p class="text-muted">
