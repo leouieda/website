@@ -1,6 +1,14 @@
 {# Macros to make the life easier across the website #}
 
 
+{%- macro figure(src, caption, style="", class="") -%}
+  <figure class="{{ class }}">
+    <img src="{{ src }}" alt="{{ caption|striptags }}" alt="{{ caption|striptags }}" style="{{ style }}">
+    <figcaption>{{ caption }}</figcaption>
+  </figure>
+{%- endmacro -%}
+
+
 {%- macro button_link(href, text, type="btn-primary", icon="none", size="btn-sm") %}
   <a class="btn {{ size }} {{ type }} me-1 mb-2" href="{{ href }}" target="_blank">
     <i class="{{ icon }} me-1" aria-hidden="true"></i>

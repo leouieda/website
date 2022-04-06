@@ -7,6 +7,8 @@ banner_subtitle: A bit more about me and my work
 template: base.html
 ---
 
+{% from "macros.html" import figure %}
+
 <section class="mb-5">
 
 ## The slightly longer version
@@ -38,20 +40,12 @@ Python libraries for the Geosciences.
 
 Along with my role at the University of Liverpool, I'm also:
 
-* Topic Editor for the [Journal of Open Source Software](https://joss.theoj.org/)
-* Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/)
-* Fellow of the [Software Sustainability Institute][ssi-fellowship]
+* Topic Editor for the [Journal of Open Source Software](https://joss.theoj.org/).
+* Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/).
+* Fellow of the [Software Sustainability Institute][ssi-fellowship].
 
-<figure class="mt-5">
+{{ figure("../images/teaching-git-at-agu2019.jpg", 'Me teaching git and GitHub at <a href="https://github.com/agu-ossi/2019-agu-oss">AGU2019</a>.', class="mt-4") }}
 
-![Me teaching git and GitHub at AGU2019](../images/teaching-git-at-agu2019.jpg)
-
-<figcaption>
-
-Me teaching git and GitHub at [AGU2019](https://github.com/agu-ossi/2019-agu-oss).
-
-</figcaption>
-</figure>
 
 </section>
 <section class="mb-5">
@@ -89,7 +83,7 @@ I keep a full length version of my CV updated and publicly available:
 Download my CV in PDF
 </a>
 
-<div class="callout">
+<div class="callout mt-3">
 
 **Curious about the CV template?** It's typeset in LaTeX using a custom
 template. The source is available from the GitHub repository
