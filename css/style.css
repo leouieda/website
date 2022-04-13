@@ -140,8 +140,20 @@ blockquote {
 
 table {
   margin-bottom: 1rem;
+  width: 100%;
 }
 
+table th, table td {
+  padding: 6px 13px;
+}
+
+table thead {
+  border-bottom: 2px solid var(--lu-mid-blue);
+}
+
+table tr:nth-child(2n) {
+  background-color: var(--lu-darkish-blue);
+}
 
 /* Tweaks to Bootstrap classes */
 /*****************************************************************************/
