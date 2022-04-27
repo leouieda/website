@@ -105,6 +105,36 @@ liverpool:
 
 workshops:
 
+  - title: "A geophysical tour of mid-ocean ridges"
+    description: Transform 2022
+    recording: NzJmRlJCNbQ
+    github: compgeolab/transform2022
+    about: |
+      <p>
+      This is a 2h online workshop delivered for the
+      <a href="https://softwareunderground.org/">Software Underground</a>'s
+      yearly festival of open geoscience:
+      <a href="https://transform.softwareunderground.org/">Transform</a>.
+      </p>
+      <h3>Description</h3>
+      <p>
+      Mid-ocean ridges are the places where the oceanic crust and lithosphere
+      are born. They are large mountain ranges in the deep ocean, stretching
+      all around the globe and with heights rivalling that of the tallest
+      mountains on land. Ridges are also a key part of plate tectonics, a major
+      component of the biogeochemical cycle of the oceans, and the home of
+      unique biological communities.
+      </p>
+      <p>
+      In this tutorial, we'll study the mid-ocean ridges through the lens of
+      geophysics. We'll use open geophysical data (gravity, bathymetry, lithospheric
+      age) and open-source Python tools to try to answer questions like: How do
+      ridges stay so tall? Are they in isostatic equilibrium? Why do ocean basins
+      get deeper as they age? Along the way, we'll also learn how to translate into
+      code the physical models of the cooling of the lithosphere so that we can
+      compare their predictions with our data.
+      </p>
+
   - title: "The Generic Mapping Tools (GMT) for Geodesy"
     description: 2019-2021 UNAVCO Short Courses
     recording: list:PLzmugeDoplFPtWkrCqWWWZGZzPQr_k0Kx
