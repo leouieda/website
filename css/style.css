@@ -393,3 +393,11 @@ li.list-inline-item {
   background-color: #ffffff;
   border-radius: 0.2rem;
 }
+
+
+/* Tweaks to KaTeX */
+/*****************************************************************************/
+/* Enable horizontal scrolling for long equations */
+.katex-display {
+  overflow: auto hidden;
+}
