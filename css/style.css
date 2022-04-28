@@ -5,6 +5,7 @@
   --bs-body-bg: #0b141d;
   --bs-body-color: #fefefe;
   --lu-light-blue: #61abff;
+  --lu-light-blue-dim: #61abff33;
   --lu-blue: #459cff;
   --lu-mid-blue: #1a5597;
   --lu-darkish-blue: #122130;
@@ -17,6 +18,7 @@
 /*****************************************************************************/
 h1 {
   margin-bottom: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -42,6 +44,15 @@ h3 {
 h4 {
   margin-bottom: 1rem;
   font-size: 1.25rem;
+}
+
+hr {
+  color: var(--lu-light-blue-dim);
+  opacity: 1;
+}
+
+hr:not([size]) {
+  height: 2px;
 }
 
 a {
@@ -361,4 +372,24 @@ li.list-inline-item {
 .footer-nav .nav .nav-link:hover {
   text-decoration: underline;
   color: var(--lu-light-blue-gray);
+}
+
+.blog h2 {
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--lu-light-blue-dim);
+}
+
+.blog h3 {
+  margin-top: 2rem;
+}
+
+
+/* Tweaks for rending Jupyter-based blog posts */
+/*****************************************************************************/
+/* Pad images with white to avoid tight margins */
+.jupyter-notebook img {
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 0.2rem;
 }

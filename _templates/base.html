@@ -51,12 +51,15 @@
   <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
   <!--<meta property="og:site_name" content="{{ config.site_name }}" />-->
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/css/bootstrap-5.1/bootstrap.min.css">
-  <!-- FontAwsome icons -->
-  <link rel="stylesheet" href="/css/fontawesome/css/all.css">
-  <!-- Academicons icons -->
-  <link rel="stylesheet" href="/css/academicons-1.9.1/css/academicons.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/pkg/bootstrap-5.1/bootstrap.min.css">
+  <!-- FontAwsome -->
+  <link rel="stylesheet" href="/pkg/fontawesome/css/all.css">
+  <!-- Academicons -->
+  <link rel="stylesheet" href="/pkg/academicons-1.9.1/css/academicons.min.css">
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="/pkg/katex-0.15.3/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB">
+
   <!-- Main CSS stylesheet -->
   <link rel="stylesheet" href="/css/style.css">
 
@@ -179,12 +182,23 @@
     </div>
   </footer>
 
-  <!-- Bootstrap bundled Javascript (with their dependencies) -->
-  <script src="/js/bootstrap-5.1/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="/pkg/bootstrap-5.1/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- KaTeX -->
+  <script defer src="/pkg/katex-0.15.3/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+  <script defer src="/pkg/katex-0.15.3/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+      });
+    });
+  </script>
+  <!-- Dimensions badge -->
   {%- if page.enable_alm is defined and page.enable_alm %}
-    <!-- Dimensions badge -->
     <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
   {%- endif %}
 
