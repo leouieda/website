@@ -109,6 +109,9 @@ workshops:
     description: Transform 2022
     recording: NzJmRlJCNbQ
     github: compgeolab/transform2022
+    note: |
+      You can also read the tutorial directly on this website at
+      <a href="/blog/midocean-ridges.html">"A geophysical tour of mid-ocean ridges"</a>.
     about: |
       <p>
       This is a 2h online workshop delivered for the
