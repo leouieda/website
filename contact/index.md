@@ -17,14 +17,20 @@ These are best ways to reach me online:
   <li><i class="fa-li fa fa-envelope fa-fw" aria-hidden="true"></i>
   <a href="mailto:Leonardo.Uieda@liverpool.ac.uk">Leonardo.Uieda@liverpool.ac.uk</a>
   </li>
+  <li><i class="fa-li fab fa-mastodon fa-fw" aria-hidden="true"></i>
+  <a href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}">@{{ config.mastodon }}@{{ config.mastodon_server }}</a> on Mastodon
+  </li>
   <li><i class="fa-li fab fa-twitter fa-fw" aria-hidden="true"></i>
-  <a href="https://twitter.com/leouieda">@leouieda</a> on Twitter
+  <a href="https://twitter.com/leouieda">@{{ config.twitter }}</a> on Twitter
   </li>
   <li><i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
-  On the <a href="https://softwareunderground.org/">Software Underground</a>
+  @leouieda on the <a href="https://softwareunderground.org/">Software Underground</a>
   Slack
   </li>
 </ul>
+
+
+<a rel="me" href="https://scicomm.xyz/@leouieda">Mastodon</a>
 
 </section>
 <section class="mb-5">
