@@ -394,6 +394,11 @@ li.list-inline-item {
   border-radius: 0.2rem;
 }
 
+.xr-text-repr-fallback {
+  visibility: hidden;
+  height: 0;
+}
+
 
 /* Tweaks to KaTeX */
 /*****************************************************************************/
