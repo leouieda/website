@@ -61,8 +61,10 @@ template: base.html
       <h3 class="fs-4">About</h3>
       {{ item.about|trim }}
     {%- endif %}
-    <h3 class="fs-4">Abstract</h3>
-    <p>{{ item.abstract|trim }}</p>
+    {%- if item.abstract is defined %}
+        <h3 class="fs-4">Abstract</h3>
+        <p>{{ item.abstract|trim }}</p>
+    {%- endif %}
     {%- if item.poster_embed is defined %}
       <h3 class="fs-4">Poster</h3>
       <div class="mb-3">

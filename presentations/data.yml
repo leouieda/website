@@ -3,6 +3,24 @@ thumbnail: images/thumbnail/presentations.png
 presentations:
 
   - title: |
+      Getting started with Open Science
+    authors: Uieda, L.
+    year: 2022
+    event: SPIN-ITN workshop
+    invited: true
+    github: leouieda/2022-05-06-spin-open-science
+    slides: https://www.leouieda.com/2022-05-06-spin-open-science
+    note: |
+      The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+      using my <a href="https://github.com/leouieda/talk-template">open-source
+      HTML talk template</a>.
+    about: |
+      <p>
+      Presentation for a short workshop about open science practices for the
+      <a href="">SPIN: Seismological Parameters and INstrumentation doctoral training network</a>.
+      </p>
+
+  - title: |
       Design useful tools that do one thing well and work together:
       rediscovering the UNIX philosophy while building the Fatiando a Terra
       project
