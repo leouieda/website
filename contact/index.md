@@ -29,9 +29,6 @@ These are best ways to reach me online:
   </li>
 </ul>
 
-
-<a rel="me" href="https://scicomm.xyz/@leouieda">Mastodon</a>
-
 </section>
 <section class="mb-5">
 
