@@ -4,6 +4,7 @@ banner_image: images/hawaii-lava-photoshoot.jpg
 banner_position: top left
 banner_title: About me
 banner_subtitle: A bit more about me and my work
+thumbnail: images/thumbnail/about.png
 template: base.html
 ---
 
@@ -98,8 +99,8 @@ template. The source is available from the GitHub repository
 
 {% import "macros.html" as macros %}
 
-{# The education list is defined in about/data.yml #}
-{% for item in page.education %}
+{# The edu list is defined in about/edu.yml #}
+{% for item in page.edu %}
 
 <div class="mb-3">
 {%- set id = loop.index %}
