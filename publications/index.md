@@ -25,6 +25,7 @@ Find out more about my research at the
 </div>
 
 {%- for paper in page.papers %}
+  {%- set anchor = paper.title|trim|lower|replace("\n", " ")|replace(":", "")|replace(" ", "-")|urlencode %}
   {%- set id = loop.index %}
   {%- if paper.doi is defined %}
     {%- set doi = paper.doi %}
@@ -39,8 +40,11 @@ Find out more about my research at the
     {%- set pdf = paper.pdf %}
   {%- endif %}
 <div class="mb-5">
-  <h2 class="fs-4 mb-1">
-    {{ paper.title|trim }}
+  <h2 class="fs-4 mb-1" id="{{ anchor }}">
+    <a href="#{{ anchor }}">
+      {{ paper.title|trim }}
+      <i class="anchor fas fa-link fa-xs" aria-hidden="true"></i>
+    </a>
   </h2>
   <p class="mb-1">
     <span class="text-muted">{{ paper.year }}</span>

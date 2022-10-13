@@ -11,9 +11,13 @@ template: base.html
 
 {%- for item in page.presentations %}
   {%- set id = loop.index %}
+  {%- set anchor = item.title|trim|lower|replace("\n", " ")|replace(":", "")|replace(" ", "-")|urlencode %}
 <div class="mb-5">
-  <h2 class="fs-4 mb-1">
-    {{ item.title|trim }}
+  <h2 class="fs-4 mb-1" id="{{ anchor }}">
+    <a href="#{{ anchor }}">
+      {{ item.title|trim }}
+      <i class="anchor fas fa-link fa-xs" aria-hidden="true"></i>
+    </a>
   </h2>
   <p class="mb-1 fs-6">
     <span class="text-muted">{{ item.year }}</span> |
