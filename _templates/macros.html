@@ -3,7 +3,7 @@
 
 {%- macro figure(src, caption, style="", class="") -%}
   <figure class="{{ class }}">
-    <img src="{{ src }}" alt="{{ caption|striptags }}" alt="{{ caption|striptags }}" style="{{ style }}">
+    <img src="{{ src }}" alt="{{ caption|striptags }}" style="{{ style }}">
     <figcaption>{{ caption }}</figcaption>
   </figure>
 {%- endmacro -%}
