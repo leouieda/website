@@ -15,18 +15,30 @@ template: base.html
 These are best ways to reach me online:
 
 <ul class="fa-ul my-4">
-  <li><i class="fa-li fa fa-envelope fa-fw" aria-hidden="true"></i>
-  <a href="mailto:Leonardo.Uieda@liverpool.ac.uk">Leonardo.Uieda@liverpool.ac.uk</a>
+  <li>
+    <i class="fa-li fa fa-envelope fa-fw" aria-hidden="true"></i>
+    Email:
+    <a href="mailto:Leonardo.Uieda@liverpool.ac.uk">Leonardo.Uieda@liverpool.ac.uk</a>
   </li>
-  <li><i class="fa-li fab fa-mastodon fa-fw" aria-hidden="true"></i>
-  <a href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}">@{{ config.mastodon }}@{{ config.mastodon_server }}</a> on Mastodon
+  <li>
+    <i class="fa-li fab fa-mastodon fa-fw" aria-hidden="true"></i>
+    Mastodon:
+    <a target="_blank" href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}">{{ config.mastodon }}@{{ config.mastodon_server }}</a>
   </li>
-  <li><i class="fa-li fab fa-twitter fa-fw" aria-hidden="true"></i>
-  <a href="https://twitter.com/leouieda">@{{ config.twitter }}</a> on Twitter
+  <li>
+    <i class="fa-li fas fa-comment fa-fw" aria-hidden="true"></i>
+    Matrix:
+    <a target="_blank" href="https://matrix.to/#/{{ config.matrix }}">{{ config.matrix }}</a>
   </li>
-  <li><i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
-  @leouieda on the <a href="https://softwareunderground.org/">Software Underground</a>
-  Slack
+  <li>
+    <i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
+    Slack:
+    @leouieda on the <a target="_blank" href="https://softwareunderground.org/">Software Underground</a>
+  </li>
+  <li>
+    <i class="fa-li fas fa-key fa-fw" aria-hidden="true"></i>
+    GPG public key:
+    <a href="../assets/leouieda.asc"><code>leouieda.asc</code></a>
   </li>
 </ul>
 
@@ -35,7 +47,7 @@ These are best ways to reach me online:
 
 ## At the University of Liverpool
 
-My office is in the Jane Herdman Building - Room A2.06 (second floor of the
+My office is in the Jane Herdman Building - Room A1.08 (first floor of the
 annex).
 You probably want to **email me first** to make sure I'm in the office (I work
 from home some days of the week).
@@ -51,14 +63,5 @@ Here is the full address:
 > Liverpool, United Kingdom
 > <br>
 > L69 3GP
-
-</section>
-<section>
-
-## Need to send me something encrypted? 🤫
-
-<i class="fas fa-key me-2"></i>
-Here is my GPG public key:
-[`leouieda_pub.key`](../assets/leouieda_pub.key)
 
 </section>
