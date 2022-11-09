@@ -41,9 +41,10 @@ Python libraries for the Geosciences.
 
 Along with my role at the University of Liverpool, I'm also:
 
-* Topic Editor for the [Journal of Open Source Software](https://joss.theoj.org/).
-* Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/).
+* Board Member of the [Software Underground][swung].
 * Fellow of the [Software Sustainability Institute][ssi-fellowship].
+* (Former) Topic Editor for the [Journal of Open Source Software](https://joss.theoj.org/).
+* (Former) Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/).
 
 {{ figure("../images/teaching-git-at-agu2019.jpg", 'Me teaching git and GitHub at <a href="https://github.com/agu-ossi/2019-agu-oss">AGU2019</a>.', class="mt-4") }}
 
