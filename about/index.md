@@ -65,10 +65,9 @@ Find out more about me and my work at:
 {{ social_button("https://" ~ config.mastodon_server ~ "/@" ~ config.mastodon, icon="fab fa-mastodon", name="Mastodon") }}
 {{ social_button(config.linkedin, icon="fab fa-linkedin", name="LinkedIn") }}
 {{ social_button(config.youtube, icon="fab fa-youtube", name="YouTube") }}
-{{ social_button("https://twitter.com/" ~ config.twitter, icon="fab fa-twitter", name="Twitter") }}
 {{ social_button("https://orcid.org/" ~ config.orcid, icon="ai ai-orcid", name="ORCID") }}
 {{ social_button("https://profiles.impactstory.org/u/" ~ config.orcid, icon="ai ai-impactstory", name="ImpactStory") }}
-{{ social_button("http://figshare.com/authors/Leonardo%20Uieda/97471", icon="ai ai-figshare", name="figshare") }}
+{{ social_button(config.figshare, icon="ai ai-figshare", name="figshare") }}
 {{ social_button(config.googlescholar, icon="ai ai-google-scholar", name="Google Scholar") }}
 {{ social_button(config.publons, icon="ai ai-publons", name="Publons") }}
 {{ social_button(config.researchgate, icon="ai ai-researchgate", name="ResearchGate") }}

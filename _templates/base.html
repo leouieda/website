@@ -41,15 +41,12 @@
   {%- endif %}
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@{{ config.twitter }}">
-  <meta name="twitter:creator" content="@{{ config.twitter }}">
   <!-- OpenGraph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:image" content="{{ config.url }}/{{ thumbnail }}" />
   <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
-  <!--<meta property="og:site_name" content="{{ config.site_name }}" />-->
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="/pkg/bootstrap-5.1/bootstrap.min.css">
@@ -156,9 +153,6 @@
         </li>
         <li class="list-inline-item">
           <a aria-label="YouTube" href="{{ config.youtube }}" target="_blank"><i class="fab fa-youtube fa-lg me-2" title="YouTube" aria-hidden="true"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a aria-label="Twitter" href="https://twitter.com/{{ config.twitter }}" target="_blank"><i class="fab fa-twitter fa-lg me-2" title="Twitter" aria-hidden="true"></i></a>
         </li>
         <li class="list-inline-item">
           <a aria-label="ORCID" href="https://orcid.org/{{ config.orcid }}" target="_blank"><i class="ai ai-orcid fa-lg me-2" title="ORCID" aria-hidden="true"></i></a>
