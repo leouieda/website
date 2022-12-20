@@ -392,14 +392,16 @@ h2:hover .anchor {
   visibility: visible;
 }
 
+/* Pad images with white to avoid tight margins */
+.pad-images img {
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
+
 
 /* Tweaks for rending Jupyter-based blog posts */
 /*****************************************************************************/
-/* Pad images with white to avoid tight margins */
-.jupyter-notebook img {
-  padding: 0.5rem;
-  background-color: #ffffff;
-  border-radius: 0.2rem;
+.jupyter-notebook {
 }
 
 

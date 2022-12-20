@@ -4,8 +4,8 @@
 
 {%- block content %}
 <div class="container page-content overflow-hidden narrow-page">
-  {% if page.type == "ipynb" %}
-    {% set extra_classes = "jupyter-notebook" %}
+  {% if page.article_class is defined %}
+    {% set extra_classes = page.article_class %}
   {% else %}
     {% set extra_classes = "" %}
   {% endif %}
