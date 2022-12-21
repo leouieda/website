@@ -1,6 +1,6 @@
 ---
 title: Publications
-banner_image: images/arctic-bathymetry.jpg
+banner_image: images/pacific-bathymetry.jpg
 banner_position: top left
 banner_title: Publications
 banner_subtitle: A full list of all of my academic publications
