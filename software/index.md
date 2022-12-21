@@ -9,31 +9,6 @@ template: base.html
 
 {% import "macros.html" as macros %}
 
-## Nēnē: A no-frills static site generator
-
-<div class="row gy-5 gx-5 align-items-start justify-content-center">
-<div class="col-md-9">
-
-Nēnē is the side project that I use to blow off steam and experiment with
-Python without the pressures of backwards compatibility and testing that my
-research software work requires.
-It's also what I use to build this website.
-
-The name is a nod to [Urubu](https://github.com/jandecaluwe/urubu), which I
-used to build my website before, and the
-[unforgettable time I spent in Hawai'i](/blog/hawaii-gmt-postdoc.html).
-
-{{ macros.button_link("https://github.com/leouieda/nene", "GitHub", type="btn-primary", icon="fab fa-github", size="") }}
-{{ macros.button_link("https://nene.leouieda.com/", "Website", type="btn-light", icon="fa fa-external-link-square-alt", size="") }}
-
-</div>
-<div class="col-8 col-md-3">
-  <img src="../images/nene-logo.svg" alt="The Nēnē logo">
-</div>
-</div>
-
-<hr class="my-5">
-
 ## Fatiando a Terra
 
 <div class="row gy-5 gx-5 align-items-start justify-content-center">
@@ -54,6 +29,60 @@ from research to teaching.
 </div>
 <div class="col-8 col-md-3">
   <img src="../images/fatiando-logo.svg" alt="The Fatiando logo">
+</div>
+</div>
+
+<hr class="my-5">
+
+## xlandsat
+
+<div class="row gy-5 gx-5 align-items-start justify-content-center">
+<div class="col-md-9">
+
+A small Python library for loading Landsat multi-spectral remote sensing scenes
+from downloaded from [USGS EarthExplorer](https://earthexplorer.usgs.gov/) into
+``xarray.Dataset`` containers. It takes care of reading the metadata and
+organizing the bands into a single data structure for easier manipulation,
+processing, and visualization.
+
+`xlandsat` started as code I wrote for my
+[remote sensing class at Liverpool](../teaching) which I made into a package to
+make sure students can get started manipulating data with as little overhead as
+possible.
+It's also what I used to make some
+[pretty images of the 2022 Mauna Loa volcano eruption](../blog/mauna-loa.html).
+
+{{ macros.button_link("https://github.com/compgeolab/xlandsat", "GitHub", type="btn-primary", icon="fab fa-github", size="") }}
+{{ macros.button_link("https://www.compgeolab.org/xlandsat", "Website", type="btn-light", icon="fa fa-external-link-square-alt", size="") }}
+
+</div>
+<div class="col-8 col-md-3">
+  <img src="../images/xlandsat-logo.svg" alt="The xlandsat logo">
+</div>
+</div>
+
+<hr class="my-5">
+
+## Nēnē
+
+<div class="row gy-5 gx-5 align-items-start justify-content-center">
+<div class="col-md-9">
+
+Nēnē is a no-frills static site generator. It's the side project that I use to
+blow off steam and experiment with Python without the pressures of backwards
+compatibility and testing that my research software work requires.
+It's also what I use to build this website.
+
+The name is a nod to [Urubu](https://github.com/jandecaluwe/urubu), which I
+used to build my website before, and the
+[unforgettable time I spent in Hawai'i](/blog/hawaii-gmt-postdoc.html).
+
+{{ macros.button_link("https://github.com/leouieda/nene", "GitHub", type="btn-primary", icon="fab fa-github", size="") }}
+{{ macros.button_link("https://nene.leouieda.com/", "Website", type="btn-light", icon="fa fa-external-link-square-alt", size="") }}
+
+</div>
+<div class="col-8 col-md-3">
+  <img src="../images/nene-logo.svg" alt="The Nēnē logo">
 </div>
 </div>
 
