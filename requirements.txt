@@ -1,1 +1,1 @@
-nene[jupyter]==0.6.*
+nene[jupyter]==0.8.*

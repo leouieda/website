@@ -8,7 +8,7 @@
     {% set class = class + " active" %}
     {% set aria = 'aria-current="page"' %}
   {% endif %}
-  <a class="{{ class }}" {{ aria }} href="/{{ site[id].path|replace('index.html', '') }}">{{ name }}</a>
+  <a class="{{ class }}" {{ aria }} href="{{ site[id].path|relative_to(page.path) }}">{{ name }}</a>
 {%- endmacro %}
 
 <head>
@@ -23,7 +23,7 @@
   <title>{{ title }}</title>
 
   {%- if config.favicon is defined %}
-  <link rel="shortcut icon" href="/{{ config.favicon|e }}"/>
+  <link rel="shortcut icon" href="{{ config.favicon|relative_to(page.path)|e }}"/>
   {%- endif %}
 
   <!-- Social media cards -->
@@ -49,16 +49,16 @@
   <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="/pkg/bootstrap-5.1/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ "pkg/bootstrap-5.1/bootstrap.min.css"|relative_to(page.path) }}">
   <!-- FontAwsome -->
-  <link rel="stylesheet" href="/pkg/fontawesome/css/all.css">
+  <link rel="stylesheet" href="{{ "pkg/fontawesome/css/all.css"|relative_to(page.path) }}">
   <!-- Academicons -->
-  <link rel="stylesheet" href="/pkg/academicons-1.9.1/css/academicons.min.css">
+  <link rel="stylesheet" href="{{ "pkg/academicons-1.9.1/css/academicons.min.css"|relative_to(page.path) }}">
   <!-- KaTeX -->
-  <link rel="stylesheet" href="/pkg/katex-0.15.3/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB">
+  <link rel="stylesheet" href="{{ "pkg/katex-0.15.3/katex.min.css"|relative_to(page.path) }}" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB">
 
   <!-- Main CSS stylesheet -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ "css/style.css"|relative_to(page.path) }}">
 
   <!-- Plausible analytics for anonymous usage statistics -->
   <script defer data-domain="leouieda.com" src="https://plausible.io/js/plausible.js"></script>
@@ -70,7 +70,7 @@
   <header style="{{ header_style }}">
     <nav class="navbar navbar-expand-lg navbar-dark" aria-labelledby="primary-navigation">
       <div class="container align-middle">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="{{ "index.html"|relative_to(page.path) }}">
           {{ config.brand }}
         </a>
         <button class="navbar-toggler" type="button"
@@ -80,7 +80,6 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse align-middle" id="navbarNav">
-        <div class="navbar-collapse align-middle" id="navbarNav">
           <ul class="navbar-nav ms-lg-auto flex-row flex-wrap">
             {%- for item in config.navigation %}
               <li class="nav-item col-6 col-lg-auto">
@@ -97,7 +96,7 @@
       {%- else %}
         {%- set banner_position = "top center" %}
       {%- endif %}
-      <div class="banner-background" style="background-image: url(/{{ page.banner_image }}); background-position: {{ banner_position }};">
+      <div class="banner-background" style="background-image: url({{ page.banner_image|relative_to(page.path) }}); background-position: {{ banner_position }};">
         <div class="overlay">
         </div>
         <section class="container text-center banner">
@@ -181,10 +180,10 @@
   </footer>
 
   <!-- Bootstrap -->
-  <script src="/pkg/bootstrap-5.1/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="{{ "pkg/bootstrap-5.1/bootstrap.bundle.min.js"|relative_to(page.path) }}" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <!-- KaTeX -->
-  <script defer src="/pkg/katex-0.15.3/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
-  <script defer src="/pkg/katex-0.15.3/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  <script defer src="{{ "pkg/katex-0.15.3/katex.min.js"|relative_to(page.path) }}" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+  <script defer src="{{ "pkg/katex-0.15.3/auto-render.min.js"|relative_to(page.path) }}" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       renderMathInElement(document.body, {
