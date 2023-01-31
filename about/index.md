@@ -10,6 +10,10 @@ template: base.html
 
 {% from "macros.html" import figure %}
 
+{%- macro social_button(link, icon, name) -%}
+  <a class="btn btn-outline-light me-2 mb-3" target="_blank" href="{{ link }}"><i class="{{ icon }} me-1" aria-hidden="true"></i> {{ name }}</a>
+{%- endmacro -%}
+
 <section class="mb-5">
 
 ## The slightly longer version
@@ -48,30 +52,6 @@ Along with my role at the University of Liverpool, I'm also:
 
 {{ figure("../images/teaching-git-at-agu2019.jpg", 'Me teaching git and GitHub at <a href="https://github.com/agu-ossi/2019-agu-oss">AGU2019</a>.', class="mt-4") }}
 
-
-</section>
-<section class="mb-5">
-
-<h2>Online</h2>
-
-Find out more about me and my work at:
-
-{%- macro social_button(link, icon, name) -%}
-  <a class="btn btn-outline-light me-2 mb-3" target="_blank" href="{{ link }}"><i class="{{ icon }} me-1" aria-hidden="true"></i> {{ name }}</a>
-{%- endmacro -%}
-
-<div id="social-links">
-{{ social_button("https://github.com/" ~ config.github, icon="fab fa-github", name="GitHub") }}
-{{ social_button("https://" ~ config.mastodon_server ~ "/@" ~ config.mastodon, icon="fab fa-mastodon", name="Mastodon") }}
-{{ social_button(config.linkedin, icon="fab fa-linkedin", name="LinkedIn") }}
-{{ social_button(config.youtube, icon="fab fa-youtube", name="YouTube") }}
-{{ social_button("https://orcid.org/" ~ config.orcid, icon="ai ai-orcid", name="ORCID") }}
-{{ social_button("https://profiles.impactstory.org/u/" ~ config.orcid, icon="ai ai-impactstory", name="ImpactStory") }}
-{{ social_button(config.figshare, icon="ai ai-figshare", name="figshare") }}
-{{ social_button(config.googlescholar, icon="ai ai-google-scholar", name="Google Scholar") }}
-{{ social_button(config.publons, icon="ai ai-publons", name="Publons") }}
-{{ social_button(config.researchgate, icon="ai ai-researchgate", name="ResearchGate") }}
-</div>
 
 </section>
 <section class="mb-5">
