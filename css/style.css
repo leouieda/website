@@ -224,10 +224,6 @@ li.nav-item {
   margin-bottom: 0;
 }
 
-li.list-inline-item {
-  margin-bottom: 0;
-}
-
 .fa-li {
   line-height: inherit !important;
 }
@@ -398,6 +394,9 @@ h2:hover .anchor {
   background-color: #ffffff;
 }
 
+.online-profile-icons > li {
+  margin-bottom: 1.5rem;
+}
 
 /* Tweaks for rending Jupyter-based blog posts */
 /*****************************************************************************/
