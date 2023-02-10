@@ -224,12 +224,11 @@ table tr:nth-child(2n) {
   font-size: 1rem;
   color: var(--bs-gray-300);
   font-weight: normal;
-  border: 1px solid var(--bs-gray-300);
-  padding: 7px;
+  border: none;
 }
 
 .navbar-dark .navbar-toggler:focus {
-  box-shadow: 0 0 0 .1rem;
+  box-shadow: none;
 }
 
 li.nav-item {
