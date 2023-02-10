@@ -9,9 +9,9 @@ date: 2017-01-23
 Install Termux from Google Play, open it and run:
 
 ```bash
-$ apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev libpng libpng-dev pkg-config
-$ LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
-$ jupyter notebook
+apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev libpng libpng-dev pkg-config
+LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
+jupyter notebook
 ```
 
 Copy the URL printed to the screen (it will look something like
@@ -78,23 +78,23 @@ The first thing I do on any new computer is install git so that I can fetch my
 [configuration files from GitHub](https://github.com/leouieda/dotfiles):
 
 ```bash
-$ apt install git
+apt install git
 ```
 
 Before cloning the repository, I need to generate a new SSH key (only required
 if you [use the SSH protocol with git](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)):
 
 ```bash
-$ apt install openssh
-$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-$ cat .ssh/id_rsa.pub  ## copy and paste your public key to GitHub
+apt install openssh
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+cat .ssh/id_rsa.pub  ## copy and paste your public key to GitHub
 ```
 
 Then I can clone my [dotfiles](https://github.com/leouieda/dotfiles)
 repository:
 
 ```bash
-$ git clone git@github.com:leouieda/dotfiles.git
+git clone git@github.com:leouieda/dotfiles.git
 ```
 
 Now my Termux terminal looks just like my Linux terminal on my laptops.
@@ -124,33 +124,33 @@ First, we must install python it self (version 3.6), the headers files, a C comp
 and the FFTW package from Termux:
 
 ```bash
-$ apt install python python-dev clang fftw
+apt install python python-dev clang fftw
 ```
 
 Now we can install numpy using pip:
 
 ```bash
-$ LDFLAGS=" -lm -lcompiler_rt" pip install numpy
+LDFLAGS=" -lm -lcompiler_rt" pip install numpy
 ```
 
 For matplotlib, we'll need to install a few more dependencies:
 
 ```bash
-$ apt install freetype freetype-dev libpng libpng-dev pkg-config
-$ LDFLAGS=" -lm -lcompiler_rt" pip install matplotlib
+apt install freetype freetype-dev libpng libpng-dev pkg-config
+LDFLAGS=" -lm -lcompiler_rt" pip install matplotlib
 ```
 
 And for Jupyter we need to install the zmq library as well:
 
 ```bash
-$ apt install libzmq libzmq-dev
-$ LDFLAGS=" -lm -lcompiler_rt" pip install jupyter
+apt install libzmq libzmq-dev
+LDFLAGS=" -lm -lcompiler_rt" pip install jupyter
 ```
 
 Finally, we can get pandas:
 
 ```bash
-$ LDFLAGS=" -lm -lcompiler_rt" pip install pandas
+LDFLAGS=" -lm -lcompiler_rt" pip install pandas
 ```
 
 Now you have access to things like `ipython` on the command-line:
@@ -167,7 +167,7 @@ To get a Jupyter notebook server running, so the same thing you would on any
 other computer:
 
 ```bash
-$ jupyter notebook
+jupyter notebook
 ```
 
 The server won't automatically open a browser but
