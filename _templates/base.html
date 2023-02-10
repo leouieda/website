@@ -1,16 +1,6 @@
+{%- from "macros.html" import nav_link, social_icon -%}
 <!DOCTYPE html>
 <html lang="{{ config.language }}">
-
-{%- macro make_nav_link(name, id, page, site) %}
-  {% set aria = "" %}
-  {% set class = "nav-link" %}
-  {% if page.id == id or page.parent == id|replace('/index', '') %}
-    {% set class = class + " active" %}
-    {% set aria = 'aria-current="page"' %}
-  {% endif %}
-  <a class="{{ class }}" {{ aria }} href="{{ site[id].path|relative_to(page.path) }}">{{ name }}</a>
-{%- endmacro %}
-
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -67,7 +57,7 @@
 </head>
 
 <body>
-  <header style="{{ header_style }}">
+  <header>
     <nav class="navbar navbar-expand-lg navbar-dark" aria-labelledby="primary-navigation">
       <div class="container align-middle">
         <a class="navbar-brand" href="{{ "index.html"|relative_to(page.path) }}">
@@ -77,13 +67,13 @@
                 data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span><i class="fas fa-bars" aria-hidden="true"></i> Menu</span>
         </button>
         <div class="collapse navbar-collapse align-middle" id="navbarNav">
           <ul class="navbar-nav ms-lg-auto flex-row flex-wrap">
             {%- for item in config.navigation %}
               <li class="nav-item col-6 col-lg-auto">
-                {{ make_nav_link(item.name, item.id, page, site) }}
+                {{ nav_link(item, page, site) }}
               </li>
             {%- endfor %}
           </ul>
@@ -134,45 +124,44 @@
         <ul class="nav">
           {%- for item in config.navigation %}
             <li class="nav-item">
-              {{ make_nav_link(item.name, item.id, page, site) }}
+              {{ nav_link(item, page, site) }}
             </li>
           {%- endfor %}
         </ul>
       </nav>
       <ul class="list-inline online-profile-icons my-3">
         <li class="list-inline-item">
-          <!-- The rel="me" attribute verifies for Mastodon that I own this domain -->
-          <a rel="me" aria-label="Mastodon" href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}" target="_blank"><i class="fab fa-mastodon fa-lg me-2" title="Mastodon" aria-hidden="true"></i></a>
+          {{ social_icon("Mastodon", "fab fa-mastodon", "https://" + config.mastodon_server + "/@" + config.mastodon) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="LinkedIn" href="{{ config.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-lg me-2" title="LinkedIn" aria-hidden="true"></i></a>
+          {{ social_icon("LinkedIn", "fab fa-linkedin", "https://www.linkedin.com/in/" + config.linkedin) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="GitHub" href="https://github.com/{{ config.github }}" target="_blank"><i class="fab fa-github fa-lg me-2" title="GitHub" aria-hidden="true"></i></a>
+          {{ social_icon("GitHub", "fab fa-github", "https://github.com/" + config.github) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="YouTube" href="{{ config.youtube }}" target="_blank"><i class="fab fa-youtube fa-lg me-2" title="YouTube" aria-hidden="true"></i></a>
+          {{ social_icon("YouTube", "fab fa-youtube", "https://www.youtube.com/@" + config.youtube) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="ORCID" href="https://orcid.org/{{ config.orcid }}" target="_blank"><i class="ai ai-orcid fa-lg me-2" title="ORCID" aria-hidden="true"></i></a>
+          {{ social_icon("ORCID", "ai ai-orcid", "https://orcid.org/" + config.orcid) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="ImpactStory" href="https://profiles.impactstory.org/u/{{ config.orcid }}" target="_blank"><i class="ai ai-impactstory fa-lg me-2" title="ImpactStory" aria-hidden="true"></i></a>
+          {{ social_icon("ImpactStory", "ai ai-impactstory", "https://profiles.impactstory.org/u/" + config.orcid) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="figshare" href="{{ config.figshare }}" target="_blank"><i class="ai ai-figshare fa-lg me-2" title="figshare" aria-hidden="true"></i></a>
+          {{ social_icon("figshare", "ai ai-figshare", config.figshare) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="ResearcherID" href="https://www.webofscience.com/wos/author/rid/{{ config.researcherid }}" target="_blank"><i class="ai ai-researcherid fa-lg me-2" title="ResearcherID" aria-hidden="true"></i></a>
+          {{ social_icon("ResearcherID", "ai ai-researcherid", "https://www.webofscience.com/wos/author/rid/" + config.researcherid) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="Currículo Lattes" href="https://lattes.cnpq.br/{{ config.lattes }}" target="_blank"><i class="ai ai-lattes fa-lg me-2" title="Currículo Lattes" aria-hidden="true"></i></a>
+          {{ social_icon("Currículo Lattes", "ai ai-lattes", "https://lattes.cnpq.br/" + config.lattes) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="ResearchGate" href="{{ config.researchgate }}" target="_blank"><i class="ai ai-researchgate fa-lg me-2" title="ResearchGate" aria-hidden="true"></i></a>
+          {{ social_icon("ResearchGate", "ai ai-researchgate", config.researchgate) }}
         </li>
         <li class="list-inline-item">
-          <a aria-label="Google Scholar" href="{{ config.googlescholar }}" target="_blank"><i class="ai ai-google-scholar fa-lg me-2" title="Google Scholar" aria-hidden="true"></i></a>
+          {{ social_icon("Google Scholar", "ai ai-google-scholar", config.googlescholar) }}
         </li>
       </ul>
       <p>

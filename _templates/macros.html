@@ -9,15 +9,34 @@
 {%- endmacro -%}
 
 
-{%- macro button_link(href, text, type="btn-primary", icon="none", size="btn-sm") %}
+{%- macro button_link(href, text, type="btn-primary", icon="none", size="btn-sm") -%}
   <a class="btn {{ size }} {{ type }} me-1 mb-2" href="{{ href }}" target="_blank">
     <i class="{{ icon }} me-1" aria-hidden="true"></i>
     {{ text }}
   </a>
-{%- endmacro %}
+{%- endmacro -%}
 
 
-{%- macro youtube_link(id) %}
+{%- macro nav_link(item, page, site) -%}
+  {% set aria = "" %}
+  {% set class = "nav-link" %}
+  {% if page.id == item.id or page.parent == id|replace('/index', '') %}
+    {% set class = class + " active" %}
+    {% set aria = 'aria-current="page"' %}
+  {% endif %}
+  <a class="{{ class }}" {{ aria }} href="{{ site[item.id].path|relative_to(page.path) }}">{{ item.name }}</a>
+{%- endmacro -%}
+
+
+{%- macro social_icon(title, icon, url) -%}
+  {# The rel="me" attribute verifies for these profiles that I own this domain #}
+  <a rel="me" aria-label="{{ title }}" href="{{ url }}" target="_blank">
+    <i class="{{ icon }} fa-lg me-2" title="{{ title }}" aria-hidden="true"></i>
+  </a>
+{%- endmacro -%}
+
+
+{%- macro youtube_link(id) -%}
   {%- if id[:5] == "list:" %}
     {%- set link = "https://www.youtube.com/playlist?list=" ~ id[5:] %}
   {%- else %}

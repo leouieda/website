@@ -81,7 +81,7 @@ code {
 pre {
   padding: 1.5rem;
   color: var(--bs-body-color);
-  background-color: var(--bs-gray-900);
+  background-color: var(--bs-gray-800);
   border-radius: 0.2rem;
 }
 
@@ -218,6 +218,18 @@ table tr:nth-child(2n) {
 
 .navbar-dark .navbar-nav .nav-link.nav-icon:hover {
   border-bottom: none;
+}
+
+.navbar-dark .navbar-toggler {
+  font-size: 1rem;
+  color: var(--bs-gray-300);
+  font-weight: normal;
+  border: 1px solid var(--bs-gray-300);
+  padding: 7px;
+}
+
+.navbar-dark .navbar-toggler:focus {
+  box-shadow: 0 0 0 .1rem;
 }
 
 li.nav-item {
