@@ -1,0 +1,799 @@
+- title: Gradient-boosted equivalent sources
+  year: 2021
+  doi: 10.1093/gji/ggab297
+  authors: [Santiago, Me]
+  journal: Geophysical Journal International
+  preprint: 10.31223/X58G7C
+  data: 10.6084/m9.figshare.13604360
+  github: compgeolab/eql-gradient-boosted
+  abstract: |
+    The equivalent source technique is a powerful and widely used method for
+    processing gravity and magnetic data. Nevertheless, its major drawback is
+    the large computational cost in terms of processing time and computer
+    memory. We present two techniques for reducing the computational cost of
+    equivalent source processing: block-averaging source locations and the
+    gradient-boosted equivalent source algorithm. Through block-averaging,
+    we reduce the number of source coefficients that must be estimated
+    while retaining the minimum desired resolution in the final processed
+    data. With the gradient boosting method, we estimate the sources
+    coefficients in small batches along overlapping windows, allowing us to
+    reduce the computer memory requirements arbitrarily to conform to the
+    constraints of the available hardware. We show that the combination of
+    block-averaging and gradient-boosted equivalent sources is capable of
+    producing accurate interpolations through tests against synthetic data.
+    Moreover, we demonstrate the feasibility of our method by gridding a
+    gravity dataset covering Australia with over 1.7 million observations
+    using a modest personal computer.
+    <img src="/images/eql-gradient-boosted-visual-abstract.jpg" class="mt-4" alt="A visual abstract explaining the core concepts of the algorithm.">
+  note: |
+    This research was done entirely with open-source software and open data!
+    This means that anyone should be able to fully reproduce our results
+    using the information in the paper and the material in the associated
+    GitHub repository. This is the final part of Santiago's PhD thesis.
+  citation: |
+    Soler, S. R., & Uieda, L. (2021). Gradient-boosted equivalent sources.
+    Geophysical Journal International, 227(3), 1768–1783.
+    https://doi.org/10.1093/gji/ggab297
+  bibtex: |
+    @article{Soler2021,
+      doi = {10.1093/gji/ggab297},
+      url = {https://doi.org/10.1093/gji/ggab297},
+      year = {2021},
+      month = aug,
+      publisher = {Oxford University Press ({OUP})},
+      volume = {227},
+      number = {3},
+      pages = {1768--1783},
+      author = {Santiago R Soler and Leonardo Uieda},
+      title = {Gradient-boosted equivalent sources},
+      journal = {Geophysical Journal International}
+    }
+
+- title: "Pooch: A friend to fetch your data files"
+  year: 2020
+  doi: 10.21105/joss.01943
+  openaccess: true
+  authors: [Me, Santiago, Remi, Hugo, MattTurk, Shapero, Anderson, Leeman]
+  journal: Journal of Open Source Software
+  github: fatiando/pooch
+  abstract: |
+    Scientific software is usually created to acquire, analyze, model, and
+    visualize data. As such, many software libraries include sample datasets
+    in their distributions for use in documentation, tests, benchmarks, and
+    workshops. A common approach is to include smaller datasets in the GitHub
+    repository directly and package them with the source and binary
+    distributions (e.g., scikit-learn and scikit-image do this). As data
+    files increase in size, it becomes unfeasible to store them in GitHub
+    repositories. Thus, larger datasets require writing code to download the
+    files from a remote server to the user's computer. The same problem is
+    faced by scientists using version control to manage their research
+    projects. While downloading a data file over HTTPS can be done easily
+    with modern Python libraries, it is not trivial to manage a set of files,
+    keep them updated, and check for corruption. For example, scikit-learn,
+    Cartopy, and PyVista all include code dedicated to this particular task.
+    Instead of scientists and library authors recreating the same code, it
+    would be best to have a minimalistic and easy to set up tool for fetching
+    and maintaining data files.
+    Pooch is a Python library that fills this gap. It manages a data registry
+    (containing file names, SHA-256 cryptographic hashes, and download URLs) by
+    downloading files from one or more remote servers and storing them in a local
+    data cache. Pooch is written in pure Python and has minimal dependencies. It
+    can be easily installed from the Python Package Index (PyPI) and conda-forge on
+    a wide range of Python versions: 2.7 (up to Pooch 0.6.0) and from 3.5 to 3.8.
+  note: |
+    This paper marks the release of
+    <a href="http://www.fatiando.org/pooch">Pooch</a> v0.7.1,
+    a Python library for downloading and managing data files.
+    Pooch is a part of the new ecosystem of packages in
+    <a href="https://www.fatiando.org">Fatiando a Terra</a>.
+    The peer-review at JOSS is open and can be found on GitHub issue
+    <a href="https://github.com/openjournals/joss-reviews/issues/1943">openjournals/joss-reviews#1943</a>.
+  citation: |
+    Uieda, L., Soler, S., Rampin, R., van Kemenade, H., Turk, M., Shapero,
+    D., et al. (2020). Pooch: A friend to fetch your data files. Journal of
+    Open Source Software, 5(45), 1943. https://doi.org/10.21105/joss.01943
+  bibtex: |
+    @article{Uieda2020,
+      doi = {10.21105/joss.01943},
+      url = {https://doi.org/10.21105/joss.01943},
+      year = {2020},
+      month = jan,
+      publisher = {The Open Journal},
+      volume = {5},
+      number = {45},
+      pages = {1943},
+      author = {Leonardo Uieda and Santiago Soler and R{\'{e}}mi Rampin and Hugo van Kemenade and Matthew Turk and Daniel Shapero and Anderson Banihirwe and John Leeman},
+      title = {Pooch: A friend to fetch your data files},
+      journal = {Journal of Open Source Software}
+    }
+
+- title: The Generic Mapping Tools Version 6
+  year: 2019
+  doi: 10.1029/2019GC008515
+  authors: [Paul, Joaquim, Me, Remko, Florian, Walter, Dongdong]
+  journal: Geochemistry, Geophysics, Geosystems
+  openaccess: true
+  data: 10.6084/m9.figshare.8171339
+  github: GenericMappingTools/gmt
+  abstract: |
+    The Generic Mapping Tools (GMT) software is ubiquitous in the Earth and
+    Ocean sciences. As a cross-platform tool producing high quality maps and
+    figures, it is used by tens of thousands of scientists around the world.
+    The basic syntax of GMT scripts has evolved very slowly since the 1990s,
+    despite the fact that GMT is generally perceived to have a steep learning
+    curve with many pitfalls for beginners and experienced users alike.
+    Reducing these pitfalls means changing the interface, which would break
+    compatibility with thousands of existing scripts. With the latest GMT
+    version 6, we solve this conundrum by introducing a new "modern mode" to
+    complement the interface used in previous versions, which GMT 6 now calls
+    "classic mode". GMT 6 defaults to classic mode and thus is a recommended
+    upgrade for all GMT 5 users. Nonetheless, new users should take advantage
+    of modern mode to make shorter scripts, quickly access commonly used
+    global data sets, and take full advantage of the new tools to draw
+    subplots, place insets, and create animations.
+  note: |
+    This paper marks the release of GMT version 6. Most of the work done for
+    this release had the goal of reducing barriers to entry for new users.
+    The user experience as a whole has been improved and these changes are
+    the foundation for my work on PyGMT. The development of the new modern
+    mode was funded by our NSF EarthScope grant.
+  citation: |
+    Wessel, P., Luis, J. F., Uieda, L., Scharroo, R., Wobbe, F., Smith, W. H.
+    F., & Tian, D. (2019). The Generic Mapping Tools Version 6. Geochemistry,
+    Geophysics, Geosystems, 20(11), 5556–5564.
+    https://doi.org/10.1029/2019gc008515
+  bibtex: |
+    @article{Wessel2019,
+      doi = {10.1029/2019gc008515},
+      url = {https://doi.org/10.1029/2019gc008515},
+      year = {2019},
+      month = nov,
+      publisher = {American Geophysical Union ({AGU})},
+      volume = {20},
+      number = {11},
+      pages = {5556--5564},
+      author = {P. Wessel and J. F. Luis and L. Uieda and R. Scharroo and F. Wobbe and W. H. F. Smith and D. Tian},
+      title = {The Generic Mapping Tools Version 6},
+      journal = {Geochemistry,  Geophysics,  Geosystems}
+    }
+
+- title: |
+    Gravitational field calculation in spherical coordinates using variable
+    densities in depth
+  year: 2019
+  doi: 10.1093/gji/ggz277
+  preprint: 10.31223/osf.io/3548g
+  authors: [Santiago, Agustina, Gimenez, Me]
+  journal: Geophysical Journal International
+  data: 10.6084/m9.figshare.8239622
+  github: pinga-lab/tesseroid-variable-density
+  abstract: |
+    We present a new methodology to compute the gravitational fields
+    generated by tesseroids (spherical prisms) whose density varies with
+    depth according to an arbitrary continuous function. It approximates the
+    gravitational fields through the Gauss-Legendre Quadrature along with two
+    discretization algorithms that automatically control its accuracy by
+    adaptively dividing the tesseroid into smaller ones. The first one is a
+    preexisting two dimensional adaptive discretization algorithm that
+    reduces the errors due to the distance between the tesseroid and the
+    computation point. The second is a new density-based discretization
+    algorithm that decreases the errors introduced by the variation of the
+    density function with depth. The amount of divisions made by each
+    algorithm is indirectly controlled by two parameters: the distance-size
+    ratio and the delta ratio. We have obtained analytical solutions for a
+    spherical shell with radially variable density and compared them to the
+    results of the numerical model for linear, exponential, and sinusoidal
+    density functions. These comparisons allowed us to obtain optimal values
+    for the distance-size and delta ratios that yield an accuracy of 0.1% of
+    the analytical solutions. The resulting optimal values of distance-size
+    ratio for the gravitational potential and its gradient are 1 and 2.5,
+    respectively. The density-based discretization algorithm produces no
+    discretizations in the linear density case, but a delta ratio of 0.1 is
+    needed for the exponential and the sinusoidal density functions. These
+    values can be extrapolated to cover most common use cases. However, the
+    distance-size and delta ratios can be configured by the user to increase
+    the accuracy of the results at the expense of computational speed.
+    Lastly, we apply this new methodology to model the Neuquén Basin, a
+    foreland basin in Argentina with a maximum depth of over 5000 m, using an
+    exponential density function.
+  note: |
+    This paper builds upon my work on <a href="/software">Tesseroids</a> and
+    extends the methodology to work for depth-variable densities. Santiago
+    led this project, did most of the work and a large part of the writing of
+    the paper. This is the first paper of his PhD thesis.
+  citation: |
+    Soler, S. R., Pesce, A., Gimenez, M. E., & Uieda, L. (2019).
+    Gravitational field calculation in spherical coordinates using variable
+    densities in depth. Geophysical Journal International, 218(3), 2150–2164.
+    https://doi.org/10.1093/gji/ggz27
+  bibtex: |
+    @article{Soler2019,
+      doi = {10.1093/gji/ggz277},
+      url = {https://doi.org/10.1093/gji/ggz277},
+      year = {2019},
+      month = jun,
+      publisher = {Oxford University Press ({OUP})},
+      volume = {218},
+      number = {3},
+      pages = {2150--2164},
+      author = {Santiago R Soler and Agustina Pesce and Mario E Gimenez and Leonardo Uieda},
+      title = {Gravitational field calculation in spherical coordinates using variable densities in depth},
+      journal = {Geophysical Journal International}
+    }
+
+- title: |
+    Efficient 3D large-scale forward-modeling and inversion of gravitational
+    fields in spherical coordinates with application to lunar mascons
+  year: 2019
+  doi: 10.1029/2019JB017691
+  preprint: 10.31223/osf.io/dzf9j
+  data: 10.6084/m9.figshare.7300523
+  authors: [Guangdong, Bo, Me, JLiu, MKaban, LChen, RGuo]
+  journal: "Journal of Geophysical Research: Solid Earth"
+  abstract: |
+    An efficient forward modeling algorithm for calculation of gravitational
+    fields in spherical coordinates is developed for 3D large‐scale gravity
+    inversion problems. 3D Gauss‐Legendre quadrature (GLQ) is used to
+    calculate the gravitational fields of mass distributions discretized into
+    tesseroids. Equivalence relations in the kernel matrix of the
+    forward‐modeling are exploited to decrease storage and computation time.
+    The numerical tests demonstrate that the computation time of the proposed
+    algorithm is reduced by approximately two orders of magnitude, and the
+    memory requirement is reduced by N'λ times compared with the traditional
+    GLQ method, where N'λ is the number of the model elements in the
+    longitudinal direction. These significant improvements in computational
+    efficiency and storage make it possible to calculate and store the dense
+    Jacobian matrix in 3D large‐scale gravity inversions. The equivalence
+    relations can be applied to the Taylor series method or combined with the
+    adaptive discretization to ensure high accuracy. To further illustrate
+    the capability of the algorithm, we present a regional synthetic example.
+    The inverted results show density distributions consistent with the
+    actual model. The computation took about 6.3 hours and 0.88 GB of memory
+    compared with about a dozen days and 245.86 GB for the traditional 3D GLQ
+    method. Finally, the proposed algorithm is applied to the gravity field
+    derived from the latest lunar gravity model GL1500E. 3D density
+    distributions of the Imbrium and Serenitatis basins are obtained, and
+    high‐density bodies are found at the depths 10‐60 km, likely indicating a
+    significant uplift of the high‐density mantle beneath the two mascon
+    basins.
+  note: |
+    This new collaboration that came about in an unexpected way. Leo reviewed
+    an initial version of this paper and it ended up being rejected by the
+    journal. After which, the authors reached out and kindly asked if he
+    wanted to help improve the paper further. We worked on this for the
+    better part of a year, adding the inversion and lunar mascon application.
+  citation: |
+    Zhao, G., Chen, B., Uieda, L., Liu, J., Kaban, M. K., Chen, L., & Guo, R.
+    (2019). Efficient 3‐D Large‐Scale Forward Modeling and Inversion of
+    Gravitational Fields in Spherical Coordinates With Application to Lunar
+    Mascons. Journal of Geophysical Research: Solid Earth, 124(4), 4157–4173.
+    https://doi.org/10.1029/2019jb017691
+  bibtex: |
+    @article{Zhao2019,
+      doi = {10.1029/2019jb017691},
+      url = {https://doi.org/10.1029/2019jb017691},
+      year = {2019},
+      month = apr,
+      publisher = {American Geophysical Union ({AGU})},
+      volume = {124},
+      number = {4},
+      pages = {4157--4173},
+      author = {Guangdong Zhao and Bo Chen and Leonardo Uieda and Jianxin Liu and Mikhail K. Kaban and Longwei Chen and Rongwen Guo},
+      title = {Efficient 3-D Large-Scale Forward Modeling and Inversion of Gravitational Fields in Spherical Coordinates With Application to Lunar Mascons},
+      journal = {Journal of Geophysical Research: Solid Earth}
+    }
+
+- title: "Verde: Processing and gridding spatial data using Green's functions"
+  year: 2018
+  doi: 10.21105/joss.00957
+  openaccess: true
+  authors: [Me]
+  journal: Journal of Open Source Software
+  github: fatiando/verde
+  abstract: |
+    Verde is a Python library for gridding spatial data using different
+    Green's functions. It differs from the radial basis functions in
+    <code>scipy.interpolate</code> by providing an API inspired by
+    scikit-learn. The Verde API should be familiar to scikit-learn users but
+    is tweaked to work with spatial data, which has Cartesian or geographic
+    coordinates and multiple data components instead of an <code>X</code>
+    feature matrix and <code>y</code> label vector. The library also includes
+    more specialized Green's functions, utilities for trend estimation and
+    data decimation (which are often required prior to gridding), and more.
+    Some of these interpolation and data processing methods already exist in
+    the Generic Mapping Tools (GMT), a command-line program popular in the
+    Earth Sciences. However, there are no model selection tools in GMT and it
+    can be difficult to separate parts of the processing that are done
+    internally by its modules. Verde is designed to be modular, easily
+    extended, and integrated into the scientific Python ecosystem. It can be
+    used to implement new interpolation methods by subclassing the
+    <code>verde.base.BaseGridder</code> class, requiring only the
+    implementation of the new Green's function. For example, it is currently
+    being used to develop a method for interpolation of 3-component GPS data.
+  note: |
+    This paper marks the release of
+    <a href="http://www.fatiando.org/verde">Verde</a> v1.0.0,
+    a Python library for processing and gridding spatial data.
+    Verde is a part of the new ecosystem of packages in
+    <a href="https://www.fatiando.org">Fatiando a Terra</a>.
+    The peer-review at JOSS is open and can be found on GitHub issue
+    <a href="https://github.com/openjournals/joss-reviews/issues/957">openjournals/joss-reviews#957</a>.
+  citation: |
+    Uieda, L. (2018). Verde: Processing and gridding spatial data using
+    Green's functions. Journal of Open Source Software, 3(30), 957.
+    https://doi.org/10.21105/joss.00957
+  bibtex: |
+    @article{Uieda2018,
+      doi = {10.21105/joss.00957},
+      url = {https://doi.org/10.21105/joss.00957},
+      year = {2018},
+      month = oct,
+      publisher = {The Open Journal},
+      volume = {3},
+      number = {30},
+      pages = {957},
+      author = {Leonardo Uieda},
+      title = {Verde: Processing and gridding spatial data using Green's functions},
+      journal = {Journal of Open Source Software}
+    }
+
+- title: |
+    Fast non-linear gravity inversion in spherical coordinates with
+    application to the South American Moho
+  year: 2017
+  doi: 10.1093/gji/ggw390
+  authors: [Me, Val]
+  journal: Geophysical Journal International
+  preprint: 10.31223/osf.io/9ba4m
+  data: 10.6084/m9.figshare.3987267
+  github: pinga-lab/paper-moho-inversion-tesseroids
+  abstract: |
+    Estimating the relief of the Moho from gravity data is a computationally
+    intensive non-linear inverse problem. What is more, the modeling must take the
+    Earths curvature into account when the study area is of regional scale or
+    greater. We present a regularized non-linear gravity inversion method that has
+    a low computational footprint and employs a spherical Earth approximation. To
+    achieve this, we combine the highly efficient Bott's method with smoothness
+    regularization and a discretization of the anomalous Moho into tesseroids
+    (spherical prisms). The computational efficiency of our method is attained by
+    harnessing the fact that all matrices involved are sparse. The inversion
+    results are controlled by three hyper-parameters: the regularization parameter,
+    the anomalous Moho density-contrast, and the reference Moho depth. We
+    estimate the regularization parameter using the method of hold-out
+    cross-validation. Additionally, we estimate the density-contrast and the
+    reference depth using knowledge of the Moho depth at certain points. We apply
+    the proposed method to estimate the Moho depth for the South American
+    continent using satellite gravity data and seismological data. The final Moho
+    model is in accordance with previous gravity-derived models and seismological
+    data. The misfit to the gravity and seismological data is worse in the Andes
+    and best in oceanic areas, central Brazil and Patagonia, and along the
+    Atlantic coast. Similarly to previous results, the model suggests a thinner
+    crust of 30-35 km under the Andean foreland basins. Discrepancies with the
+    seismological data are greatest in the Guyana Shield, the central Solimões
+    and Amazonas Basins, the Paraná Basin, and the Borborema province. These
+    differences suggest the existence of crustal or mantle density anomalies that
+    were unaccounted for during gravity data processing.
+    <img src="/images/south-american-moho.jpg" class="mt-4" alt="Estimated depth to the crust-mantle interface (Moho) from satellite measurements of gravity disturbances.">
+  note: |
+    This paper is one of the chapters of my PhD thesis. It describes a new
+    gravity inversion method to estimate the depth of the crust-mantle
+    interface (the Moho). The inversion builds upon my work on tesseroid
+    modelling.
+  citation: |
+    Uieda, L., & Barbosa, V. C. F. (2016). Fast nonlinear gravity inversion
+    in spherical coordinates with application to the South American Moho.
+    Geophysical Journal International, 208(1), 162–176.
+    https://doi.org/10.1093/gji/ggw390
+  bibtex: |
+    @article{Uieda2016,
+      doi = {10.1093/gji/ggw390},
+      url = {https://doi.org/10.1093/gji/ggw390},
+      year = {2016},
+      month = oct,
+      publisher = {Oxford University Press ({OUP})},
+      volume = {208},
+      number = {1},
+      pages = {162--176},
+      author = {Leonardo Uieda and Val{\'{e}}ria C.F. Barbosa},
+      title = {Fast nonlinear gravity inversion in spherical coordinates with application to the South American Moho},
+      journal = {Geophysical Journal International}
+    }
+
+- title: "Tesseroids: forward modeling gravitational fields in spherical coordinates"
+  year: 2016
+  doi: 10.1190/geo2015-0204.1
+  authors: [Me, Val, Carla]
+  journal: Geophysics
+  pdf: ../pdf/tesseroids.pdf
+  github: pinga-lab/paper-tesseroids
+  abstract: |
+    We present the open-source software Tesseroids, a set of command-line
+    programs to perform the forward modeling of gravitational fields in
+    spherical coordinates.  The software is implemented in the C programming
+    language and uses tesseroids (spherical prisms) for the discretization of
+    the subsurface mass distribution.  The gravitational fields of tesseroids
+    are calculated numerically using the Gauss-Legendre Quadrature (GLQ).  We
+    have improved upon an adaptive discretization algorithm to guarantee the
+    accuracy of the GLQ integration.  Our implementation of adaptive
+    discretization uses a "stack" based algorithm instead of recursion to
+    achieve more control over execution errors and corner cases.  The
+    algorithm is controlled by a scalar value called the distance-size ratio
+    (D) that determines the accuracy of the integration as well as the
+    computation time.  We determined optimal values of D for the
+    gravitational potential, gravitational acceleration, and gravity gradient
+    tensor by comparing the computed tesseroids effects with those of a
+    homogeneous spherical shell.  The values required for a maximum relative
+    error of 0.1% of the shell effects are D = 1 for the gravitational
+    potential, D = 1.5 for the gravitational acceleration, and D = 8 for the
+    gravity gradients.  Contrary to previous assumptions, our results show
+    that the potential and its first and second derivatives require different
+    values of D to achieve the same accuracy. These values were incorporated
+    as defaults in the software.
+  note: |
+    This paper describes the algorithms used in version 1.2.0 of the
+    open-source software <a href="/software">Tesseroids</a>.
+    It's also one of the chapters of my PhD thesis.
+  citation: |
+    Uieda, L., Barbosa, V. C. F., & Braitenberg, C. (2016). Tesseroids:
+    Forward-modeling gravitational fields in spherical coordinates.
+    GEOPHYSICS, 81(5), F41–F48. https://doi.org/10.1190/geo2015-0204.1
+  bibtex: |
+    @article{Uieda2016,
+      doi = {10.1190/geo2015-0204.1},
+      url = {https://doi.org/10.1190/geo2015-0204.1},
+      year = {2016},
+      month = sep,
+      publisher = {Society of Exploration Geophysicists},
+      volume = {81},
+      number = {5},
+      pages = {F41--F48},
+      author = {Leonardo Uieda and Val{\'{e}}ria C. F. Barbosa and Carla Braitenberg},
+      title = {Tesseroids: Forward-modeling gravitational fields in spherical coordinates},
+      journal = {{GEOPHYSICS}}
+    }
+
+- title: |
+    How two gravity-gradient inversion methods can be used to reveal
+    different geologic features of ore deposit — A case study from the
+    Quadrilátero Ferrífero (Brazil)
+  year: 2016
+  doi: 10.1016/j.jappgeo.2016.04.011
+  authors: [Dio, Me, Val]
+  journal: Journal of Applied Geophysics
+  pdf: ../pdf/quadrilatero-2016.pdf
+  abstract: |
+    Airborne gravity gradiometry data have been recently used in mining
+    surveys to map the 3D geometry of ore deposits. This task can be achieved
+    by different gravity-gradient inversion methods, many of which use a
+    voxel-based discretization of the Earth's subsurface. To produce a unique
+    and stable solution, an inversion method introduces particular
+    constraints. One constraining inversion introduces a depth-weighting
+    function in the first-order Tikhonov regularization imposing a smoothing
+    on the density-contrast distributions that are not restricted to
+    near-surface regions. Another gravity-gradient inversion, the method of
+    planting anomalous densities, imposes compactness and sharp boundaries on
+    the density-contrast distributions. We used these two inversion methods
+    to invert the airborne gravity-gradient data over the iron-ore deposit at
+    the southern flank of the Gandarela syncline in Quadrilátero Ferrífero
+    (Brazil). Because these methods differ from each other in the particular
+    constraint used, the estimated 3D density-contrast distributions reveal
+    different geologic features of ore deposit. The depth-weighting smoothing
+    inversion reveals variable dip directions along the strike of the
+    retrieved iron-ore body. The planting anomalous density inversion
+    estimates a compact iron-ore mass with a single density contrast, which
+    reveals a variable volume of the iron ore along its strike increasing
+    towards the hinge zone of the Gandarela syncline which is the zone of
+    maximum compression. The combination of the geologic features inferred
+    from each estimate leads to a synergistic effect, revealing that the
+    iron-ore deposit is strongly controlled by the Gandarela syncline.
+  citation: |
+    Carlos, D. U., L. Uieda, and V. C. F. Barbosa (2016), How two
+    gravity-gradient inversion methods can be used to reveal different
+    geologic features of ore deposit — A case study from the Quadrilátero
+    Ferrífero (Brazil), Journal of Applied Geophysics,
+    doi:10.1016/j.jappgeo.2016.04.011.
+  bibtex: |
+    @article{Carlos2016,
+      doi = {10.1016/j.jappgeo.2016.04.011},
+      url = {https://doi.org/10.1016/j.jappgeo.2016.04.011},
+      year = {2016},
+      month = jul,
+      publisher = {Elsevier {BV}},
+      volume = {130},
+      pages = {153--168},
+      author = {Dion{\'{\i}}sio U. Carlos and Leonardo Uieda and Valeria C.F. Barbosa},
+      title = {How two gravity-gradient inversion methods can be used to reveal different geologic features of ore deposit {\textemdash} A case study from the Quadril{\'{a}}tero Ferr{\'{\i}}fero (Brazil)},
+      journal = {Journal of Applied Geophysics}
+    }
+
+- title: |
+    Estimation of the total magnetization direction of approximately
+    spherical bodies
+  year: 2015
+  doi: 10.5194/npg-22-215-2015
+  authors: [Bi, Dai, Val, Me]
+  journal: Nonlinear Processes in Geophysics
+  openaccess: true
+  data: 10.5281/zenodo.16191
+  github: pinga-lab/Total-magnetization-of-spherical-bodies
+  abstract: |
+    We have developed a fast total-field anomaly inversion to estimate the
+    magnetization direction of multiple sources with approximately spherical
+    shapes and known centres. Our method is an overdetermined inverse problem
+    that can be applied to interpret multiple sources with different but
+    homogeneous magnetization directions. It requires neither the prior
+    computation of any transformation-like reduction to the pole nor the use
+    of regularly spaced data on a horizontal grid. The method contains
+    flexibility to be implemented as a linear or non-linear inverse problem,
+    which results, respectively, in a least-squares or robust estimate of the
+    components of the magnetization vector of the sources. Applications to
+    synthetic data show the robustness of our method against interfering
+    anomalies and errors in the location of the sources' centre. Besides, we
+    show the feasibility of applying the upward continuation to interpret
+    non-spherical sources. Applications to field data over the Goiás alkaline
+    province (GAP), Brazil, show the good performance of our method in
+    estimating geologically meaningful magnetization directions. The results
+    obtained for a region of the GAP, near to the alkaline complex of
+    Diorama, suggest the presence of non-outcropping sources marked by strong
+    remanent magnetization with inclination and declination close to −70.35
+    and −19.81°, respectively. This estimated magnetization direction leads
+    to predominantly positive reduced-to-the-pole anomalies, even for other
+    region of the GAP, in the alkaline complex of Montes Claros de Goiás.
+    These results show that the non-outcropping sources near to the alkaline
+    complex of Diorama have almost the same magnetization direction of those
+    ones in the alkaline complex of Montes Claros de Goiás, strongly
+    suggesting that these sources have been emplaced in the crust within
+    almost the same geological time interval.
+  citation: |
+    Oliveira Jr., V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda (2015),
+    Estimation of the total magnetization direction of approximately
+    spherical bodies, Nonlin. Processes Geophys., 22(2), 215-232,
+    doi:10.5194/npg-22-215-2015.
+  note: |
+    This paper has undergone open peer-review. The original submission,
+    reviews, and replies can be viewed at
+    <a href="https://doi.org/10.5194/npgd-1-1465-2014">the journal website</a>.
+  bibtex: |
+    @article{Oliveira2015,
+      doi = {10.5194/npg-22-215-2015},
+      url = {https://doi.org/10.5194/npg-22-215-2015},
+      year = {2015},
+      month = apr,
+      publisher = {Copernicus {GmbH}},
+      volume = {22},
+      number = {2},
+      pages = {215--232},
+      author = {V. C. Oliveira and D. P. Sales and V. C. F. Barbosa and L. Uieda},
+      title = {Estimation of the total magnetization direction of approximately spherical bodies},
+      journal = {Nonlinear Processes in Geophysics}
+    }
+
+- title: |
+    Imaging iron ore from the Quadrilátero Ferrífero (Brazil) using
+    geophysical inversion and drill hole data
+  year: 2014
+  doi: 10.1016/j.oregeorev.2014.02.011
+  authors: [Dio, Me, Val]
+  journal: Ore Geology Reviews
+  pdf: ../pdf/quadrilatero-2014.pdf
+  abstract: |
+    The Quadrilátero Ferrífero in southeastern Brazil hosts one of the
+    largest concentrations of lateritic iron ore deposits in the world. Our
+    study area is over the southern flank of the Gandarela syncline which is
+    one of the regional synclines of the Quadrilátero Ferrífero. The
+    Gandarela syncline is considered the Brazilian megastructure with the
+    highest perspectives for iron ore exploration. Most of the iron-ore
+    deposits from the Quadrilátero Ferrífero are non-outcropping bodies
+    hosted in the oxidized, metamorphosed and heterogeneously deformed banded
+    iron formations. Therefore, the assessment of the 3D geometry of the
+    iron-ore body is of the utmost importance for estimating reserves and
+    production development planning. We carried out a quantitative
+    interpretation of the iron-ore deposit of the southern flank of the
+    Gandarela syncline using a 3D inversion of airborne gravity-gradient data
+    to estimate the shape of the iron-ore mineralization. The retrieved body
+    is characterized by a high-density zone associated with the
+    northeast-elongated iron formation. The thickness and the width of the
+    retrieved iron-ore body vary along its strike increasing southwestward.
+    The presence of a large volume of iron ore in the southwest portion of
+    the study area may be due to the hinge zone of the Gandarela syncline,
+    which is the zone of maximum compression. Our estimated iron-ore mass
+    reveals variable dip directions. In the southernmost, central and
+    northernmost portions of the study area, the estimated iron body dips,
+    respectively, inwards, vertically and outwards with respect to the
+    syncline axis. Previous geological mapping indicated continuous
+    mineralization. However, our result suggests a quasi-continuous iron-ore
+    body. In the central part of the study area, the estimated iron-ore body
+    is segmented into two parts. This breakup may be related to the
+    northwest-trending faults, which are perpendicular to the
+    northeast-trending axis of the Gandarela syncline. Our estimated iron-ore
+    mass agrees reasonably well with the information provided from the
+    lithologic logging data of drill holes. In this geophysical study, the
+    estimated iron-ore reserves are approximately 3 billion tons.
+  citation: |
+    Carlos, D. U., L. Uieda, and V. C. F. Barbosa (2014), Imaging iron ore
+    from the Quadrilátero Ferrífero (Brazil) using geophysical inversion and
+    drill hole data, Ore Geology Reviews, 61, 268-285,
+    doi:10.1016/j.oregeorev.2014.02.011
+  bibtex: |
+    @article{Carlos2014,
+      doi = {10.1016/j.oregeorev.2014.02.011},
+      url = {https://doi.org/10.1016/j.oregeorev.2014.02.011},
+      year = {2014},
+      month = sep,
+      publisher = {Elsevier {BV}},
+      volume = {61},
+      pages = {268--285},
+      author = {Dion{\'{\i}}sio U. Carlos and Leonardo Uieda and Valeria C.F. Barbosa},
+      title = {Imaging iron ore from the Quadril{\'{a}}tero Ferr{\'{\i}}fero (Brazil) using geophysical inversion and drill hole data},
+      journal = {Ore Geology Reviews}
+    }
+
+- title: |
+    Estimating the nature and the horizontal and vertical positions of 3D
+    magnetic sources using Euler deconvolution
+  year: 2013
+  doi: 10.1190/geo2012-0515.1
+  data: 10.6084/m9.figshare.649433
+  authors: [Figura, Val, Me, Bi, JB]
+  journal: Geophysics
+  pdf: ../pdf/euler-plateau-2013.pdf
+  abstract: |
+    We have developed a new method that drastically reduces the number of the
+    source location estimates in Euler deconvolution to only one per anomaly.
+    Our method employs the analytical estimators of the base level and of the
+    horizontal and vertical source positions in Euler deconvolution as a
+    function of the x- and y-coordinates of the observations. By assuming any
+    tentative structural index (defining the geometry of the sources), our
+    method automatically locates plateaus, on the maps of the horizontal
+    coordinate estimates, indicating consistent estimates that are very close
+    to the true corresponding coordinates. These plateaus are located in the
+    neighborhood of the highest values of the anomaly and show a contrasting
+    behavior with those estimates that form inclined planes at the anomaly
+    borders. The plateaus are automatically located on the maps of the
+    horizontal coordinate estimates by fitting a first-degree polynomial to
+    these estimates in a moving-window scheme spanning all estimates. The
+    positions where the angular coefficient estimates are closest to zero
+    identify the plateaus of the horizontal coordinate estimates. The sample
+    means of these horizontal coordinate estimates are the best horizontal
+    location estimates. After mapping each plateau, our method takes as the
+    best structural index the one that yields the minimum correlation between
+    the total-field anomaly and the estimated base level over each plateau.
+    By using the estimated structural index for each plateau, our approach
+    extracts the vertical coordinate estimates over the corresponding
+    plateau. The sample means of these estimates are the best depth location
+    estimates in our method. When applied to synthetic data, our method
+    yielded good results if the bodies produce weak- and mid-interfering
+    anomalies. A test on real data over intrusions in the Goiás Alkaline
+    Province, Brazil, retrieved sphere-like sources suggesting 3D bodies.
+  citation: |
+    Melo, F. F., V. C. F. Barbosa, L. Uieda, V. C. Oliveira Jr, and J. B. C.
+    Silva (2013), Estimating the nature and the horizontal and vertical
+    positions of 3D magnetic sources using Euler deconvolution, Geophysics,
+    78(6), J87-J98, doi:10.1190/geo2012-0515.1
+  bibtex: |
+    @article{melo2013,
+      title = {Estimating the nature and the horizontal and vertical positions of 3D magnetic sources using {Euler} deconvolution},
+      volume = {78},
+      issn = {0016-8033, 1942-2156},
+      doi = {10.1190/geo2012-0515.1},
+      number = {6},
+      journal = {GEOPHYSICS},
+      author = {Melo, Felipe F. and Barbosa, Valeria C. F. and Uieda, Leonardo and Oliveira, Vanderlei C. and Silva, João B. C.},
+      month = oct,
+      year = {2013},
+      pages = {J87--J98}
+    }
+
+- title: Polynomial equivalent layer
+  year: 2013
+  doi: 10.1190/geo2012-0196.1
+  authors: [Bi, Val, Me]
+  journal: Geophysics
+  pdf: ../pdf/polynomial-eqlayer-2013.pdf
+  abstract: |
+    We have developed a new cost-effective method for processing
+    large-potential-field data sets via the equivalent-layer technique. In
+    this approach, the equivalent layer is divided into a regular grid of
+    equivalent-source windows. Inside each window, the physical-property
+    distribution is described by a bivariate polynomial. Hence, the
+    physical-property distribution within the equivalent layer is assumed to
+    be a piecewise polynomial function defined on a set of equivalent-source
+    windows. We perform any linear transformation of a large set of data as
+    follows. First, we estimate the polynomial coefficients of all
+    equivalent-source windows by using a linear regularized inversion.
+    Second, we transform the estimated polynomial coefficients of all windows
+    into the physical-property distribution within the whole equivalent
+    layer. Finally, we premultiply this distribution by the matrix of Green's
+    functions associated with the desired transformation to obtain the
+    transformed data. The regularized inversion deals with a linear system of
+    equations with dimensions based on the total number of polynomial
+    coefficients within all equivalent-source windows. This contrasts with
+    the classical approach of directly estimating the physical-property
+    distribution within the equivalent layer, which leads to a system based
+    on the number of data. Because the number of data is much larger than the
+    number of polynomial coefficients, the proposed polynomial representation
+    of the physical-property distribution within an equivalent layer
+    drastically reduces the number of parameters to be estimated. By
+    comparing the total number of floating-point operations required to
+    estimate an equivalent layer via our method with the classical approach,
+    both formulated with Cholesky's decomposition, we can verify that the
+    computation time required for building the linear system and for solving
+    the linear inverse problem can be reduced by as many as three and four
+    orders of magnitude, respectively. Applications to synthetic and real
+    data show that our method performs the standard linear transformations of
+    potential-field data accurately.
+  citation: |
+    Oliveira Jr, V. C., V. C. F. Barbosa, and L. Uieda (2013), Polynomial
+    equivalent layer, Geophysics, 78(1), G1–G13, doi:10.1190/geo2012-0196.1
+  bibtex: |
+    @article{oliveira2013,
+        title = {Polynomial equivalent layer},
+        volume = {78},
+        issn = {0016-8033, 1942-2156},
+        doi = {10.1190/geo2012-0196.1},
+        number = {1},
+        journal = {GEOPHYSICS},
+        author = {Oliveira Jr., Vanderlei C. and Barbosa, Valéria C. F. and Uieda, Leonardo},
+        month = jan,
+        year = {2013},
+        pages = {G1--G13},
+    }
+
+- title: Robust 3D gravity gradient inversion by planting anomalous densities
+  year: 2012
+  doi: 10.1190/geo2011-0388.1
+  authors: [Me, Val]
+  journal: Geophysics
+  pdf: ../pdf/planting-inversion-2012.pdf
+  data: 10.6084/m9.figshare.91574
+  github: pinga-lab/paper-planting-densities
+  abstract: |
+    We have developed a new gravity gradient inversion method for estimating
+    a 3D density-contrast distribution defined on a grid of rectangular
+    prisms. Our method consists of an iterative algorithm that does not
+    require the solution of an equation system. Instead, the solution grows
+    systematically around user-specified prismatic elements, called “seeds,”
+    with given density contrasts. Each seed can be assigned a different
+    density-contrast value, allowing the interpretation of multiple sources
+    with different density contrasts and that produce interfering signals. In
+    real world scenarios, some sources might not be targeted for the
+    interpretation. Thus, we developed a robust procedure that neither
+    requires the isolation of the signal of the targeted sources prior to the
+    inversion nor requires substantial prior information about the
+    nontargeted sources. In our iterative algorithm, the estimated sources
+    grow by the accretion of prisms in the periphery of the current estimate.
+    In addition, only the columns of the sensitivity matrix corresponding to
+    the prisms in the periphery of the current estimate are needed for the
+    computations. Therefore, the individual columns of the sensitivity matrix
+    can be calculated on demand and deleted after an accretion takes place,
+    greatly reducing the demand for computer memory and processing time.
+    Tests on synthetic data show the ability of our method to correctly
+    recover the geometry of the targeted sources, even when interfering
+    signals produced by nontargeted sources are present. Inverting the data
+    from an airborne gravity gradiometry survey flown over the iron ore
+    province of Quadrilátero Ferrífero, southeastern Brazil, we estimated a
+    compact iron ore body that is in agreement with geologic information and
+    previous interpretations.
+  note: |
+    This was my first publication in a scientific journal and the topic of my
+    Masters dissertation. The inversion method proposed in this paper is
+    implemented in the open-source Fatiando a Terra Python library as the
+    <code>fatiando.gravmag.harvester</code> module, introduced in version
+    0.1.
+  citation: |
+    Uieda, L., and V. C. F. Barbosa (2012), Robust 3D gravity gradient
+    inversion by planting anomalous densities, Geophysics, 77(4), G55-G66,
+    doi:10.1190/geo2011-0388.1
+  bibtex: |
+    @article{uieda2012,
+        title = {Robust 3D gravity gradient inversion by planting anomalous densities},
+        volume = {77},
+        issn = {00168033},
+        doi = {10.1190/geo2011-0388.1},
+        number = {4},
+        journal = {Geophysics},
+        author = {Uieda, Leonardo and Barbosa, Valéria C. F.},
+        year = {2012},
+        pages = {G55--G66},
+    }
+
