@@ -48,12 +48,17 @@
 
 {%- macro publication_list(publications, author_names) -%}
 {%- for paper in publications %}
-  {%- set anchor = paper.doi|trim|lower|replace(".", "")|replace("/", "") %}
-  {%- set id = anchor %}
   {%- if paper.doi is defined %}
     {%- set doi = paper.doi %}
-  {%- else %}
+  {%- elif paper.preprint %}
     {%- set doi = paper.preprint %}
+  {%- endif %}
+  {%- if doi is defined %}
+    {%- set anchor = paper.doi|trim|lower|replace(".", "")|replace("/", "") %}
+  {%- elif paper.github is defined %}
+    {%- set anchor = paper.github|trim|lower|replace(".", "")|replace("/", "-") %}
+  {%- else  %}
+    {%- set anchor = paper.year ~ loop.index %}
   {%- endif %}
   {%- if paper.openaccess is defined and paper.openaccess %}
     {%- set pdf = "https://doi.org/" ~ paper.doi %}
@@ -62,6 +67,7 @@
   {%- elif paper.pdf is defined %}
     {%- set pdf = paper.pdf %}
   {%- endif %}
+  {%- set id = anchor %}
   <div class="mb-2">
     <h3 class="fs-5 mb-1" id="{{ anchor }}">
       <a href="#{{ anchor }}">
@@ -82,19 +88,32 @@
     </p>
     <p class="mb-2 text-muted fs-6">
       ({{ paper.year }})
-      {%- if paper.journal is defined  %}
-        {{ paper.journal }},
+      {%- if paper.journal is defined %}
+        {{ paper.journal }}
       {%- elif paper.conference is defined %}
-        {{ paper.conference }},
+        {{ paper.conference }}
       {%- endif %}
-      doi:<a target="_blank" href="https://doi.org/{{ doi }}">{{ doi }}</a>
+      {%- if doi is defined -%}
+        , doi:<a target="_blank" href="https://doi.org/{{ doi }}">{{ doi }}</a>
+      {%- endif -%}
     </p>
     <button class="btn btn-secondary btn-sm me-1 mb-2" type="button"
         data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
         aria-expanded="false" aria-controls="collapse-{{ id }}">
       Find out more <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
     </button>
-    {{ button_link(pdf, "Open-access PDF", type="btn-primary", icon="fa fa-file-pdf") }}
+    {%- if pdf is defined %}
+      {{ button_link(pdf, "Open-access PDF", type="btn-primary", icon="fa fa-file-pdf") }}
+    {%- endif %}
+    {%- if paper.slides is defined %}
+      {{ button_link(paper.slides, "Slides", type="btn-primary", icon="fa fa-desktop") }}
+    {%- endif %}
+    {%- if paper.poster is defined %}
+      {{ button_link(paper.poster, "Poster", type="btn-primary", icon="fa fa-image") }}
+    {%- endif %}
+    {%- if paper.recording is defined %}
+      {{ button_link("https://www.youtube.com/watch?v=" ~ paper.recording, "Recording", type="btn-light", icon="fab fa-youtube") }}
+    {%- endif %}
     {%- if paper.data is defined %}
       {{ button_link("https://doi.org/" ~ paper.data, "Data", type="btn-light", icon="fa fa-chart-bar") }}
     {%- endif %}
@@ -111,10 +130,24 @@
           </p>
         </div>
       {%- endif %}
-      <h4 class="fs-4">Abstract</h4>
-      <p>{{ paper.abstract|trim }}</p>
-      <h4 class="fs-4 mb-4">Citations</h4>
-      <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
+      {%- if paper.poster_embed is defined %}
+        <h4 class="fs-4">Poster</h4>
+        <div class="mb-3">
+        {{ paper.poster_embed|trim }}
+        </div>
+      {%- endif %}
+      {%- if paper.about is defined %}
+        <h4 class="fs-4">About</h4>
+        {{ paper.about|trim }}
+      {%- endif %}
+      {%- if paper.abstract is defined %}
+        <h4 class="fs-4">Abstract</h4>
+        <p>{{ paper.abstract|trim }}</p>
+      {%- endif %}
+      {%- if doi is defined %}
+        <h4 class="fs-4 mb-4">Citations</h4>
+        <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
+      {%- endif %}
     </div>
   </div>
 {%- endfor %}
