@@ -54,7 +54,7 @@
     {%- set doi = paper.preprint %}
   {%- endif %}
   {%- if doi is defined %}
-    {%- set anchor = paper.doi|trim|lower|replace(".", "")|replace("/", "") %}
+    {%- set anchor = doi|trim|lower|replace(".", "")|replace("/", "") %}
   {%- elif paper.github is defined %}
     {%- set anchor = paper.github|trim|lower|replace(".", "")|replace("/", "-") %}
   {%- else  %}
@@ -97,13 +97,15 @@
         , doi:<a target="_blank" href="https://doi.org/{{ doi }}">{{ doi }}</a>
       {%- endif -%}
     </p>
-    <button class="btn btn-secondary btn-sm me-1 mb-2" type="button"
-        data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
+    <button
+        class="hidden-section-toggle btn btn-secondary btn-sm me-1 mb-2 collapsed"
+        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
         aria-expanded="false" aria-controls="collapse-{{ id }}">
-      Find out more <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
+      <i class="hidden-section-toggle-icon fa fa-chevron-circle-down me-1" aria-hidden="true"></i>
+      More information
     </button>
     {%- if pdf is defined %}
-      {{ button_link(pdf, "Open-access PDF", type="btn-primary", icon="fa fa-file-pdf") }}
+      {{ button_link(pdf, "Free PDF", type="btn-primary", icon="fa fa-file-pdf") }}
     {%- endif %}
     {%- if paper.slides is defined %}
       {{ button_link(paper.slides, "Slides", type="btn-primary", icon="fa fa-desktop") }}
@@ -115,10 +117,10 @@
       {{ button_link("https://www.youtube.com/watch?v=" ~ paper.recording, "Recording", type="btn-light", icon="fab fa-youtube") }}
     {%- endif %}
     {%- if paper.data is defined %}
-      {{ button_link("https://doi.org/" ~ paper.data, "Data", type="btn-light", icon="fa fa-chart-bar") }}
+      {{ button_link("https://doi.org/" ~ paper.data, "Open data", type="btn-light", icon="fa fa-chart-bar") }}
     {%- endif %}
     {%- if paper.github is defined %}
-      {{ button_link("https://github.com/" ~ paper.github, "Code", type="btn-light", icon="fab fa-github") }}
+      {{ button_link("https://github.com/" ~ paper.github, "Source code", type="btn-light", icon="fab fa-github") }}
     {%- endif %}
     <div id="collapse-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
       {%- if paper.note is defined %}
@@ -138,7 +140,7 @@
       {%- endif %}
       {%- if paper.about is defined %}
         <h4 class="fs-4">About</h4>
-        {{ paper.about|trim }}
+        <p>{{ paper.about|trim }}</p>
       {%- endif %}
       {%- if paper.abstract is defined %}
         <h4 class="fs-4">Abstract</h4>
@@ -149,6 +151,27 @@
         <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
       {%- endif %}
     </div>
+  </div>
+{%- endfor %}
+{%- endmacro -%}
+
+
+{%- macro publication_sections(sections, page, author_names) -%}
+{%- for data, title in sections %}
+  {%- if loop.first %}
+    {% set toggle_class = "" %}
+    {% set collapse_class = "show" %}
+  {%- else %}
+    {% set toggle_class = "collapsed" %}
+    {% set collapse_class = "" %}
+  {%- endif %}
+  <h2>
+    <a class="hidden-section-toggle {{ toggle_class }}" data-bs-toggle="collapse" href="#collapse-{{ data }}" aria-controls="collapse-{{ data }}" aria-expanded="false" role="button">
+    <i class="hidden-section-toggle-icon fas fa-chevron-down text-muted fs-4 me-3" aria-hidden="true"></i>{{ title }}</a>
+    <span class="publication-count badge bg-secondary fs-6 ms-2">{{ page[data]|length }}</span>
+  </h2>
+  <div id="collapse-{{ data }}" class="hidden-section collapse {{ collapse_class }}">
+  {{ publication_list(page[data], author_names) }}
   </div>
 {%- endfor %}
 {%- endmacro -%}

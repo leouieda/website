@@ -6,10 +6,13 @@ banner_title: Presentations
 banner_subtitle: Slides, posters, abstracts, and recordings of my presentations
 thumbnail: images/thumbnail/presentations.png
 template: base.html
+sections:
+    - [invited, Invited conference presentations]
+    - [seminars, Department seminars]
+    - [conferences, Conference presentations]
+    - [other, Other presentations]
 ---
 
 {%- import "macros.html" as macros %}
 
-## Invited
-
-{{ macros.publication_list(page.invited, config.coauthors) }}
+{{ macros.publication_sections(page.sections, page, config.coauthors) }}

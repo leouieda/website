@@ -1,45 +1,23 @@
 - title: |
-    Getting started with Open Science
-  authors: Uieda, L.
-  year: 2022
-  event: SPIN-ITN workshop
-  github: leouieda/2022-05-06-spin-open-science
-  slides: https://www.leouieda.com/2022-05-06-spin-open-science
-  note: |
-    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
-    using my <a href="https://github.com/leouieda/talk-template">open-source
-    HTML talk template</a>.
-  about: |
-    <p>
-    Presentation for a short workshop about open science practices for the
-    <a href="">SPIN: Seismological Parameters and INstrumentation doctoral training network</a>.
-    </p>
-
-- title: |
     Design useful tools that do one thing well and work together:
     rediscovering the UNIX philosophy while building the Fatiando a Terra
     project
-  authors: Uieda, L., Li, L., Soler, S. R., Pesce, A.
+  authors: [Me, LLi, Santiago, Agustina]
   year: 2021
-  event: AGU Fall Meeting
+  conference: AGU Fall Meeting
   github: fatiando/agu2021
   slides: https://www.fatiando.org/agu2021
   note: |
-    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
-    using my <a href="https://github.com/leouieda/talk-template">open-source
-    HTML talk template</a>.
-  about: |
-    <p>
     This is an invited presentation about the past, current, and future of
     the Fatiando a Terra project. We will cover the current functionality,
     recent developments, and lessons learned along the way.
-    </p>
-    <p>
     The presentation is centered around a tutorial that walks you through the
     steps of transforming observed absolute gravity measurements into a grid
     of residual gravity disturbances at a constant height. The tutorial
     showcases some of the core utilities of all of our open-source libraries.
-    </p>
+    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+    using my <a href="https://github.com/leouieda/talk-template">open-source
+    HTML talk template</a>.
   abstract: |
     The Fatiando a Terra project (https://www.fatiando.org) was started in
     2010 as a Python library for visualization, forward modelling, and
@@ -57,22 +35,19 @@
 
 - title: |
     Python-based workflows for small-to-medium sized data: what works, what
-    doesn’t, and what can be improved
-  authors: Uieda, L., Soler, S. R.
+    doesn't, and what can be improved
+  authors: [Me, Santiago]
   year: 2021
-  event: AGU Fall Meeting
+  conference: AGU Fall Meeting
   github: compgeolab/agu2021
   slides: https://www.compgeolab.org/agu2021
   note: |
-    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
-    using my <a href="https://github.com/leouieda/talk-template">open-source
-    HTML talk template</a>.
-  about: |
-    <p>
     This is an invited talk for the first part of an "Open Scince in Action"
     session, with 10 minute talks by panelists followed by a panel
     discussion.
-    </p>
+    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+    using my <a href="https://github.com/leouieda/talk-template">open-source
+    HTML talk template</a>.
   abstract: |
     In this presentation, we will demonstrate the workflow that we have been
     establishing at the Computer-Oriented Geoscience Lab for building
@@ -83,65 +58,50 @@
     unsolved challenges that we have encountered and our dreams for an ideal
     workflow.
 
-- title: |
-    Academia e software livre: Desafios e oportunidades no Brasil e no
-    exterior
-  authors: Uieda, L.
-  year: 2021
-  event: National Observatory’s SEG and EAGE Student Chapter, Brazil
-  github: leouieda/2021-07-22-on
-  recording: r2x-DN6laj8
-  slides: https://www.leouieda.com/2021-07-22-on
+- title: "Nurturing reliable and robust open-source scientific software"
+  authors: [Me, Paul]
+  year: 2017
+  conference: AGU Fall Meeting
+  invited: true
+  github: leouieda/agu2017-oss
+  recording: 0GO4ZZ5Ry6M
   note: |
-    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
-    using my <a href="https://github.com/leouieda/talk-template">open-source
-    HTML talk template</a>.
-  about: |
-    <p>
-    I had the pleasure of giving this talk to the SEG and EAGE Student
-    Chapter of the Observatório Nacional (where I went to grad school). It
-    was about my path through science and some tips for those wanting to go
-    abroad. Slides and talk were in Portuguese.
-    </p>
+    I was invited to this panel session on
+    <a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Session/30500">Open-Source Software in the Geosciences</a>
+    along with Kerry Key, Brian Savage, Gary D Egbert, Colin Andrew Zelt, and
+    Lion Krischer. Many thanks to the chairs Lindsey Heagy, Anna Kelbert and
+    Louise Pellerin for putting this together.
   abstract: |
-    Palestra e bate papo com o National Observatory Greenstone Belt (SEG-EAGE
-    Student Chapter do Observatório Nacional) sobre minha carreira e dicas
-    para os alunos que quiserem trilhar um caminho parecido.
-
-- title: |
-    Open-science for gravimetry: tools, challenges, and opportunities
-  authors: Uieda, L., Soler, S. R., Pesce, A.
-  year: 2021
-  event: GFZ Helmholtz Centre Potsdam, Germany
-  github: leouieda/2021-06-22-gfz
-  doi: 10.6084/m9.figshare.14838477
-  recording: z-5dvWfB_SM
-  slides: https://www.leouieda.com/2021-06-22-gfz
-  note: |
-    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
-    using my <a href="https://github.com/leouieda/talk-template">open-source
-    HTML talk template</a>.
-  about: |
-    <p>
-    This talk is about our recent on the Boule and Harmonica libraries and
-    how they fit into our current and future research plans. It includes a
-    live demo of using these tools to process real ground gravity data.
-    </p>
-    <p>
-    It was an invited talk to the geophysical modelling group at GFZ. Thank
-    you to Angela Maria Gomez Garcia for the invitation.
-    </p>
-  abstract: |
-    The Fatiando a Terra project is a collection of open-source Python
-    libraries for geophysics which cover a range of functionalities, from
-    data download and processing to modeling and inversion. Many of our tools
-    are general purpose but we also focus on gravimetry and magnetometry.
-    Development on the projected started in 2010 and has gone through several
-    iterations as the team matured and established best practices for
-    maintaining software projects in the open.
-    This talk is an overview of the history and current iteration of the
-    project, including a short demonstration of our current capabilities for
-    downloading and processing gravity data. We will then move on to our
-    plans for future directions of the projects and information of how you
-    can get involved. Finally, we will briefly discuss some of the challenges
-    and opportunities of adopting open-science practices.
+    Scientific results are increasingly the product of software. The
+    reproducibility and validity of published results cannot be ensured
+    without access to the source code of the software used to produce them.
+    Therefore, the code itself is a fundamental part of the methodology and
+    must be published along with the results. With such a reliance on
+    software, it is troubling that most scientists do not receive formal
+    training in software development. Tools such as version control,
+    continuous integration, and automated testing are routinely used in
+    industry to ensure the correctness and robustness of software. However,
+    many scientist do not even know of their existence (although efforts like
+    Software Carpentry are having an impact on this issue). Publishing the
+    source code is only the first step in creating an open-source project.
+    For a project to grow it must provide documentation, participation
+    guidelines, and a welcoming environment for new contributors. Expanding
+    the project community is often more challenging than the technical
+    aspects of software development. Maintainers must invest time to enforce
+    the rules of the project and to onboard new members, which can be
+    difficult to justify in the context of the “publish or perish” mentality.
+    This problem will continue as long as software contributions are not
+    recognized as valid scholarship by hiring and tenure committees.
+    Furthermore, there are still unsolved problems in providing attribution
+    for software contributions. Many journals and metrics of academic
+    productivity do not recognize citations to sources other than traditional
+    publications. Thus, some authors choose to publish an article about the
+    software and use it as a citation marker. One issue with this approach is
+    that updating the reference to include new contributors involves writing
+    and publishing a new article. A better approach would be to cite a
+    permanent archive of individual versions of the source code in services
+    such as Zenodo. However, citations to these sources are not always
+    recognized when computing citation metrics. In summary, the widespread
+    development of reliable and robust open-source software relies on the
+    creation of formal training programs in software development best
+    practices and the recognition of software as a valid form of scholarship.
