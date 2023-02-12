@@ -32,8 +32,6 @@ from research to teaching.
 </div>
 </div>
 
-<hr class="my-5">
-
 ## xlandsat
 
 <div class="row gy-5 gx-5 align-items-start justify-content-center">
@@ -61,8 +59,6 @@ It's also what I used to make some
 </div>
 </div>
 
-<hr class="my-5">
-
 ## Nēnē
 
 <div class="row gy-5 gx-5 align-items-start justify-content-center">
@@ -85,8 +81,6 @@ used to build my website before, and the
   <img src="../images/nene-logo.svg" alt="The Nēnē logo">
 </div>
 </div>
-
-<hr class="my-5">
 
 ## Generic Mapping Tools (GMT)
 
@@ -111,8 +105,6 @@ Thankfully, they don't really need me for the coding parts.
   <img src="../images/gmt-logo.png" alt="The GMT logo">
 </div>
 </div>
-
-<hr class="my-5">
 
 ## Tesseroids
 

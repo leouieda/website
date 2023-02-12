@@ -85,9 +85,9 @@ template. The source is available from the GitHub repository
 
 <div class="mb-3">
 {%- set id = loop.index %}
-<h2 class="fs-4 mb-1">
+<h3 class="fs-4 mb-1">
   {{ item.level|trim }}
-</h2>
+</h3>
 <p class="mb-1">
   <span class="text-muted">{{ item.year }}</span>
   |
