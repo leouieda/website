@@ -165,13 +165,11 @@
     {% set toggle_class = "collapsed" %}
     {% set collapse_class = "" %}
   {%- endif %}
-  <h2>
+  <h2 class="hidden-section-title">
     <a class="hidden-section-toggle {{ toggle_class }}" data-bs-toggle="collapse" href="#collapse-{{ data }}" aria-controls="collapse-{{ data }}" aria-expanded="false" role="button">
+    <i class="hidden-section-toggle-icon fas fa-chevron-down text-muted me-1" aria-hidden="true"></i>
     {{ title }}
-    <span class="hidden-section-toggle-icons">
-      <span class="publication-count badge bg-secondary me-2">{{ page[data]|length }}</span>
-      <i class="hidden-section-toggle-icon fas fa-chevron-down text-muted" aria-hidden="true"></i>
-    </span>
+    <span class="publication-count badge bg-secondary ms-1">{{ page[data]|length }}</span>
     </a>
   </h2>
   <div id="collapse-{{ data }}" class="hidden-section collapse {{ collapse_class }}">

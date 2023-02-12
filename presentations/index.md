@@ -10,7 +10,7 @@ sections:
     - [invited, Invited conference presentations]
     - [seminars, Department seminars]
     - [conferences, Conference presentations]
-    - [other, Other presentations]
+    - [other, Other]
 ---
 
 {%- import "macros.html" as macros %}

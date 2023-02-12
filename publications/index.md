@@ -11,7 +11,7 @@ sections:
     - [preprints, Preprints]
     - [papers, Papers]
     - [proceedings, Conference proceedings]
-    - [other, Other publications]
+    - [other, Other]
 ---
 
 {%- import "macros.html" as macros %}

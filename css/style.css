@@ -302,15 +302,11 @@ li.nav-item {
   margin-top: -2rem;
 }
 
-.hidden-section-toggle-icons {
-  float: right;
-}
-
-.hidden-section-toggle-icons i {
+.hidden-section-title i {
   vertical-align: middle;
 }
 
-.hidden-section-toggle-icons .badge {
+.hidden-section-title .badge {
   vertical-align: middle;
 }
 
