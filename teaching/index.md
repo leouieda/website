@@ -4,6 +4,7 @@ banner_image: images/teaching-git-at-agu2019.jpg
 banner_position: center right
 banner_title: Teaching
 banner_subtitle: Open-source material for my classes and workshops
+thumbnail: images/thumbnail/teaching.png
 template: base.html
 ---
 
@@ -24,9 +25,9 @@ more reusable teaching resources. See [my CV](/about#cv) for a full list.
 {%- for item in courses %}
   {%- set id = base_id ~ "-" ~ loop.index %}
 <div class="mb-3">
-  <h2 class="fs-4 mb-1">
+  <h3 class="fs-4 mb-1">
     {{ item.title|trim }}
-  </h2>
+  </h3>
   <p class="text-muted fs-6">
     {{ item.description|trim }}
   </p>
@@ -59,13 +60,11 @@ more reusable teaching resources. See [my CV](/about#cv) for a full list.
 
 {{ course_list(page.liverpool, base_id="liverpool") }}
 
-<hr class="my-5">
 
 ## Workshops and short courses
 
 {{ course_list(page.workshops, base_id="workshops") }}
 
-<hr class="my-5">
 
 ## Universidade do Estado do Rio de Janeiro
 

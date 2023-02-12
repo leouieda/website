@@ -54,3 +54,83 @@ ignore:
   - environment.yml
   - Makefile
   - css/academicons/README.md
+
+# My co-authors
+coauthors:
+  Me: Uieda, L
+  Val: Barbosa, VCF
+  Bi: Oliveira Jr, VC
+  Paul: Wessel, P
+  Joaquim: Luis, J
+  Remko: Scharroo, R
+  Florian: Wobbe, F
+  Walter: Smith, WHF
+  Dongdong: Tian, D
+  Bridget: Smith-Konter, B
+  Eric: Xu, X
+  David: Sandwell, DT
+  Carla: Braitenberg, C
+  Naomi: Ussami, N
+  Manoel: D'Agrella-Filho, MS
+  JB: Silva, JBC
+  Dai: Sales, DP
+  Figura: Melo, FF
+  Dio: Carlos, DU
+  BragaVale: Braga, MA
+  YLi: Li, Y
+  Angeli: Angeli, G
+  Peres: Peres, G
+  Everton: Bomfim, EP
+  Eder: Molina, E
+  Gomes: Gomes, AAS
+  Santiago: Soler, SR
+  Agustina: Pesce, A
+  Gimenez: Gimenez, ME
+  Kristoffer: Hallam, KAT
+  Guangdong: Zhao, G
+  Bo: Chen, B
+  JLiu: Liu, J
+  LChen: Chen, L
+  RGuo: Guo, R
+  MKaban: Kaban, MK
+  Lindsey: Heagy, LJ
+  Lion: Krischer, L
+  Rene: Gassmoeller, R
+  Bane: Sullivan, CB
+  Jens: Klump, JF
+  LBarba: Barba, LA
+  JBazan: Bazan, J
+  JBrown: Brown, J
+  RGuimera: Guimera, RV
+  MGymrek: Gymrek, M
+  AHanna: Alex Hanna
+  KHuff: Huff, KD
+  DKatz: Katz, DS
+  CMadan: Madan, CR
+  KMoerman: Moerman, KM
+  KNiemeyer: Niemeyer, KE
+  JPoulson: Poulson, JL
+  PPrins: Prins, P
+  KRam: Ram, K
+  ARokem: Rokem, A
+  Arfon: Smith, AM
+  GThiruvathukal: Thiruvathukal, GK
+  KThyng: Thyng, KM
+  BWilson: Wilson, BE
+  Yehudi: Yehudi, Y
+  Remi: Rampin, R
+  Hugo: van Kemenade, H
+  MattTurk: Turk, M
+  Shapero: Shapero, D
+  Anderson: Banihirwe, A
+  Leeman: Leeman, J
+  JEbbing: Ebbing, J
+  AGuy: Guy, A
+  JFarquharson: Farquharson, J
+  AKushnir: Kushnir, A
+  FWadsworth: Wadsworth, F
+  LPerozzi: Perozzi, L
+  MWieczorek: Wieczorek, MA
+  LLi: Li, L
+  Ricardo: Trindade, RIF
+

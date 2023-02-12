@@ -22,8 +22,11 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-size: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--lu-light-blue-dim);
 }
 
 h2 > a {
@@ -38,7 +41,18 @@ h2 > a:hover {
 
 h3 {
   margin-bottom: 1rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
+}
+
+h3 > a {
+  text-decoration: none;
+  color: var(--bs-body-color);
+}
+
+h3 > a:hover {
+  text-decoration: underline;
+  color: var(--bs-body-color);
 }
 
 h4 {
@@ -243,6 +257,11 @@ li.nav-item {
   color: var(--bs-gray-500) !important;
 }
 
+.badge {
+  padding: .35em .45em;
+  vertical-align: middle;
+}
+
 .altmetric-embed img {
   width: auto;
 }
@@ -250,7 +269,7 @@ li.nav-item {
 /* Custom classes */
 /*****************************************************************************/
 .page-content {
-  padding-top: 7rem;
+  padding-top: 5rem;
   padding-bottom: 10rem;
 }
 
@@ -277,6 +296,19 @@ li.nav-item {
 
 .wide-page {
   max-width: 850px;
+}
+
+.hidden-section-toggle:not(.collapsed) .hidden-section-toggle-icon {
+  transform: rotate(-180deg);
+}
+
+.hidden-section  {
+  overflow: hidden;
+  margin-top: -2rem;
+}
+
+.publication-count {
+  font-size: 0.9rem;
 }
 
 .callout {
@@ -381,21 +413,12 @@ li.nav-item {
   color: var(--lu-light-blue-gray);
 }
 
-.blog h2 {
-  margin-top: 4rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid var(--lu-light-blue-dim);
-}
-
-.blog h3 {
-  margin-top: 2rem;
-}
-
 .anchor {
   visibility: hidden;
+  width: 0;
 }
 
-h2:hover .anchor {
+h3:hover .anchor {
   visibility: visible;
 }
 
