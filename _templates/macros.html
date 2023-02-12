@@ -167,8 +167,12 @@
   {%- endif %}
   <h2>
     <a class="hidden-section-toggle {{ toggle_class }}" data-bs-toggle="collapse" href="#collapse-{{ data }}" aria-controls="collapse-{{ data }}" aria-expanded="false" role="button">
-    <i class="hidden-section-toggle-icon fas fa-chevron-down text-muted fs-4 me-3" aria-hidden="true"></i>{{ title }}</a>
-    <span class="publication-count badge bg-secondary fs-6 ms-2">{{ page[data]|length }}</span>
+    {{ title }}
+    <span class="hidden-section-toggle-icons">
+      <span class="publication-count badge bg-secondary me-2">{{ page[data]|length }}</span>
+      <i class="hidden-section-toggle-icon fas fa-chevron-down text-muted" aria-hidden="true"></i>
+    </span>
+    </a>
   </h2>
   <div id="collapse-{{ data }}" class="hidden-section collapse {{ collapse_class }}">
   {{ publication_list(page[data], author_names) }}

@@ -259,7 +259,6 @@ li.nav-item {
 
 .badge {
   padding: .35em .45em;
-  vertical-align: middle;
 }
 
 .altmetric-embed img {
@@ -298,17 +297,29 @@ li.nav-item {
   max-width: 850px;
 }
 
-.hidden-section-toggle:not(.collapsed) .hidden-section-toggle-icon {
-  transform: rotate(-180deg);
-}
-
 .hidden-section  {
   overflow: hidden;
   margin-top: -2rem;
 }
 
+.hidden-section-toggle-icons {
+  float: right;
+}
+
+.hidden-section-toggle-icons i {
+  vertical-align: middle;
+}
+
+.hidden-section-toggle-icons .badge {
+  vertical-align: middle;
+}
+
+.hidden-section-toggle:not(.collapsed) .hidden-section-toggle-icon {
+  transform: rotate(-180deg);
+}
+
 .publication-count {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .callout {
