@@ -87,18 +87,18 @@
       {%- endfor %}
     </p>
     <p class="mb-2 text-muted fs-6">
-      ({{ paper.year }})
-      {%- if paper.journal is defined %}
-        {{ paper.journal }}
-      {%- elif paper.conference is defined %}
-        {{ paper.conference }}
-      {%- endif %}
+      {{ paper.year }}
+      {%- if paper.journal is defined -%}
+        . {{ paper.journal }}
+      {%- elif paper.conference is defined -%}
+        . {{ paper.conference }}
+      {%- endif -%}
       {%- if doi is defined -%}
-        , doi:<a target="_blank" href="https://doi.org/{{ doi }}">{{ doi }}</a>
+        . doi:<a target="_blank" href="https://doi.org/{{ doi }}">{{ doi }}</a>
       {%- endif -%}
     </p>
     <button
-        class="hidden-section-toggle btn btn-secondary btn-sm me-1 mb-2 collapsed"
+        class="hidden-section-toggle btn btn-outline-light btn-sm me-1 mb-2 collapsed"
         type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
         aria-expanded="false" aria-controls="collapse-{{ id }}">
       <i class="hidden-section-toggle-icon fa fa-chevron-circle-down me-1" aria-hidden="true"></i>

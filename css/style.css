@@ -265,6 +265,30 @@ li.nav-item {
   width: auto;
 }
 
+.btn-outline-light:focus {
+  box-shadow: none;
+}
+
+.btn-outline-light:focus:active {
+  box-shadow: none;
+}
+
+.btn-light:focus {
+  box-shadow: none;
+}
+
+.btn-light:focus:active {
+  box-shadow: none;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:focus:active {
+  box-shadow: none;
+}
+
 /* Custom classes */
 /*****************************************************************************/
 .page-content {
@@ -312,10 +336,7 @@ li.nav-item {
 
 .hidden-section-toggle:not(.collapsed) .hidden-section-toggle-icon {
   transform: rotate(-180deg);
-}
-
-.publication-count {
-  font-size: 0.8rem;
+  color: var(--lu-light-blue) !important;
 }
 
 .callout {
