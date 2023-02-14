@@ -3,21 +3,19 @@
 {% extends "base.html" %}
 
 {%- block content %}
-  <section class="container page-content overflow-hidden wide-page">
-    {%- for item in site["blog/index"]["siblings"]|sort(attribute="date", reverse=True) %}
-      <h2 class="fs-4 mb-2 mt-5">
-        <a class="" href="/{{ item.path }}">
-          {{ item.title }}
-        </a>
-      </h2>
-      <p class="text-muted mb-2 fs-6">
-        <i class="far fa-calendar-alt me-1" aria-hidden="true"></i>
-        {{ item.date|replace("-", "/") }}
-      </p>
-      <p class="text-muted">
-        {{ item.body|striptags|trim|truncate(200) }}
-      </p>
-      <a class="btn btn-outline-light" href="/{{ item.path }}">Read more <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
-    {%- endfor %}
-  </section>
+  {%- for item in site["blog/index"]["siblings"]|sort(attribute="date", reverse=True) %}
+    <h2 class="fs-4 mb-2 mt-5">
+      <a class="" href="/{{ item.path }}">
+        {{ item.title }}
+      </a>
+    </h2>
+    <p class="text-muted mb-2 fs-6">
+      <i class="far fa-calendar-alt me-1" aria-hidden="true"></i>
+      {{ item.date|replace("-", "/") }}
+    </p>
+    <p class="text-muted">
+      {{ item.body|striptags|trim|truncate(200) }}
+    </p>
+    <a class="btn btn-outline-light" href="/{{ item.path }}">Read more <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
+  {%- endfor %}
 {%- endblock %}

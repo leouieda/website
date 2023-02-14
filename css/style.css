@@ -314,10 +314,6 @@ li.nav-item {
 }
 
 .narrow-page {
-  max-width: 750px;
-}
-
-.wide-page {
   max-width: 850px;
 }
 

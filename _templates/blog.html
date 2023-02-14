@@ -3,7 +3,6 @@
 {% extends "base.html" %}
 
 {%- block content %}
-<div class="container page-content overflow-hidden narrow-page">
   {% if page.article_class is defined %}
     {% set extra_classes = page.article_class %}
   {% else %}
@@ -25,5 +24,4 @@
       Back to the blog
     </a>
   </div>
-</div>
 {%- endblock %}

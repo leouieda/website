@@ -4,10 +4,10 @@ banner_image: images/valley-of-fire.jpg
 banner_title: 👋🏽 Olá! I'm Leo Uieda
 banner_position: top right
 banner_subtitle: |
-  <span class="nowrap">Geophysicist •</span>
-  <span class="nowrap">Educator •</span>
-  <span class="nowrap">Scientist •</span>
-  <span class="nowrap">Programmer</span>
+  <span class="nowrap">Geophysicist</span>
+  <span class="nowrap">• Educator</span>
+  <span class="nowrap">• Scientist</span>
+  <span class="nowrap">• Programmer</span>
 template: base.html
 ---
 
