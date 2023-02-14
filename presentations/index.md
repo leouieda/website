@@ -1,7 +1,7 @@
 ---
 title: Presentations
-banner_image: images/anatolia-himalayas-topography.jpg
-banner_position: center
+banner_image: images/amazon-delta.jpg
+banner_position: bottom left
 banner_title: Presentations
 banner_subtitle: Slides, posters, abstracts, and recordings of my presentations
 thumbnail: images/thumbnail/presentations.png
