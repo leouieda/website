@@ -98,29 +98,29 @@
       {%- endif -%}
     </p>
     <button
-        class="hidden-section-toggle btn btn-outline-light btn-sm me-1 mb-2 collapsed"
+        class="hidden-section-toggle btn btn-dark btn-sm me-1 mb-2 collapsed"
         type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
         aria-expanded="false" aria-controls="collapse-{{ id }}">
       <i class="hidden-section-toggle-icon fa fa-chevron-circle-down me-1" aria-hidden="true"></i>
       More information
     </button>
     {%- if pdf is defined %}
-      {{ button_link(pdf, "Free PDF", type="btn-primary", icon="fa fa-file-pdf") }}
+      {{ button_link(pdf, "Free PDF", type="btn-dark", icon="fa fa-file-pdf") }}
     {%- endif %}
     {%- if paper.slides is defined %}
-      {{ button_link(paper.slides, "Slides", type="btn-primary", icon="fa fa-desktop") }}
+      {{ button_link(paper.slides, "Slides", type="btn-dark", icon="fa fa-desktop") }}
     {%- endif %}
     {%- if paper.poster is defined %}
-      {{ button_link(paper.poster, "Poster", type="btn-primary", icon="fa fa-image") }}
+      {{ button_link(paper.poster, "Poster", type="btn-dark", icon="fa fa-image") }}
     {%- endif %}
     {%- if paper.recording is defined %}
-      {{ button_link("https://www.youtube.com/watch?v=" ~ paper.recording, "Recording", type="btn-light", icon="fab fa-youtube") }}
+      {{ button_link("https://www.youtube.com/watch?v=" ~ paper.recording, "Recording", type="btn-dark", icon="fab fa-youtube") }}
     {%- endif %}
     {%- if paper.data is defined %}
-      {{ button_link("https://doi.org/" ~ paper.data, "Open data", type="btn-light", icon="fa fa-chart-bar") }}
+      {{ button_link("https://doi.org/" ~ paper.data, "Open data", type="btn-dark", icon="fa fa-chart-bar") }}
     {%- endif %}
     {%- if paper.github is defined %}
-      {{ button_link("https://github.com/" ~ paper.github, "Source code", type="btn-light", icon="fab fa-github") }}
+      {{ button_link("https://github.com/" ~ paper.github, "Source code", type="btn-dark", icon="fab fa-github") }}
     {%- endif %}
     <div id="collapse-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
       {%- if paper.note is defined %}

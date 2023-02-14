@@ -273,6 +273,14 @@ li.nav-item {
   box-shadow: none;
 }
 
+.btn-dark:focus {
+  box-shadow: none;
+}
+
+.btn-dark:focus:active {
+  box-shadow: none;
+}
+
 .btn-light:focus {
   box-shadow: none;
 }
@@ -332,6 +340,10 @@ li.nav-item {
 
 .hidden-section-toggle:not(.collapsed) .hidden-section-toggle-icon {
   transform: rotate(-180deg);
+  color: inherit;
+}
+
+.hidden-section-toggle.collapsed .hidden-section-toggle-icon {
   color: var(--lu-light-blue) !important;
 }
 

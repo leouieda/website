@@ -107,15 +107,15 @@
 
   <main>
     {%- if page.container_class is defined %}
-      {%- set section_class = page.container_class %}
+      {%- set container_class = page.container_class %}
     {%- else %}
-      {%- set section_class = "container page-content overflow-hidden narrow-page" %}
+      {%- set container_class = "container page-content overflow-hidden narrow-page" %}
     {%- endif %}
-    <section class="{{ section_class }}">
+    <div class="{{ container_class }}">
       {%- block content %}
         {{ page.body }}
       {%- endblock %}
-    </section>
+    </div>
   </main>
 
   <footer>
