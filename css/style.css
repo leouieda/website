@@ -468,6 +468,12 @@ h3:hover .anchor {
   margin-bottom: 1.5rem;
 }
 
+hr.section-separator {
+  margin: 5rem 0;
+  height: 2px !important;
+  color: var(--bs-gray-500);
+}
+
 /* Tweaks for rending Jupyter-based blog posts */
 /*****************************************************************************/
 .jupyter-notebook {
