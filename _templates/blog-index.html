@@ -2,6 +2,8 @@
    because Nene isn't done creating all posts when it renders that template. #}
 {% extends "base.html" %}
 
+{% import "macros.html" as macros %}
+
 {%- block content %}
   {%- for item in site["blog/index"]["siblings"]|sort(attribute="date", reverse=True) %}
     <h2 class="fs-4 mb-2 mt-5">
@@ -16,6 +18,6 @@
     <p class="text-muted">
       {{ item.body|striptags|trim|truncate(200) }}
     </p>
-    <a class="btn btn-outline-light" href="/{{ item.path }}">Read more <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
+    {{ macros.button_link(item.path|relative_to(page.path), "Read more", type="btn-outline-light", icon="far fa-arrow-alt-circle-right", icon_position="end") }}
   {%- endfor %}
 {%- endblock %}

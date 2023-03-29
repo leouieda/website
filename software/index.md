@@ -23,8 +23,8 @@ I've been working on Fatiando since around 2010 when I started my MSc.
 It's been the main focus of my career and it permeates all aspects of my work,
 from research to teaching.
 
-{{ macros.button_link("https://github.com/fatiando", "GitHub", type="btn-primary", icon="fab fa-github", size="") }}
-{{ macros.button_link("https://www.fatiando.org", "Website", type="btn-light", icon="fa fa-external-link-square-alt", size="") }}
+{{ macros.button_link("https://github.com/fatiando", "GitHub", type="btn-primary", icon="fab fa-github") }}
+{{ macros.button_link("https://www.fatiando.org", "Website", type="btn-light", icon="fa fa-external-link-square-alt") }}
 
 </div>
 <div class="col-8 col-md-3">
@@ -50,8 +50,8 @@ possible.
 It's also what I used to make some
 [pretty images of the 2022 Mauna Loa volcano eruption](../blog/mauna-loa.html).
 
-{{ macros.button_link("https://github.com/compgeolab/xlandsat", "GitHub", type="btn-primary", icon="fab fa-github", size="") }}
-{{ macros.button_link("https://www.compgeolab.org/xlandsat", "Website", type="btn-light", icon="fa fa-external-link-square-alt", size="") }}
+{{ macros.button_link("https://github.com/compgeolab/xlandsat", "GitHub", type="btn-primary", icon="fab fa-github") }}
+{{ macros.button_link("https://www.compgeolab.org/xlandsat", "Website", type="btn-light", icon="fa fa-external-link-square-alt") }}
 
 </div>
 <div class="col-8 col-md-3">
@@ -73,8 +73,8 @@ The name is a nod to [Urubu](https://github.com/jandecaluwe/urubu), which I
 used to build my website before, and the
 [unforgettable time I spent in Hawai'i](/blog/hawaii-gmt-postdoc.html).
 
-{{ macros.button_link("https://github.com/leouieda/nene", "GitHub", type="btn-primary", icon="fab fa-github", size="") }}
-{{ macros.button_link("https://nene.leouieda.com/", "Website", type="btn-light", icon="fa fa-external-link-square-alt", size="") }}
+{{ macros.button_link("https://github.com/leouieda/nene", "GitHub", type="btn-primary", icon="fab fa-github") }}
+{{ macros.button_link("https://nene.leouieda.com/", "Website", type="btn-light", icon="fa fa-external-link-square-alt") }}
 
 </div>
 <div class="col-8 col-md-3">
@@ -97,8 +97,8 @@ Recently, my contributions to GMT and PyGMT have been more on the community and
 guidance side than actual coding.
 Thankfully, they don't really need me for the coding parts.
 
-{{ macros.button_link("https://github.com/GenericMappingTools", "GitHub", type="btn-primary", icon="fab fa-github", size="") }}
-{{ macros.button_link("https://www.generic-mapping-tools.org/", "Website", type="btn-light", icon="fa fa-external-link-square-alt", size="") }}
+{{ macros.button_link("https://github.com/GenericMappingTools", "GitHub", type="btn-primary", icon="fab fa-github") }}
+{{ macros.button_link("https://www.generic-mapping-tools.org/", "Website", type="btn-light", icon="fa fa-external-link-square-alt") }}
 
 </div>
 <div class="col-8 col-md-3">
@@ -121,8 +121,8 @@ of my BSc dissertation project with
 Through Tesseroids, I learned about documentation, unit tests,
 cross-compilation, version control, and more.
 
-{{ macros.button_link("https://github.com/leouieda/tesseroids", "GitHub", type="btn-primary", icon="fab fa-github", size="") }}
-{{ macros.button_link("https://tesseroids.leouieda.com/", "Website", type="btn-light", icon="fa fa-external-link-square-alt", size="") }}
+{{ macros.button_link("https://github.com/leouieda/tesseroids", "GitHub", type="btn-primary", icon="fab fa-github") }}
+{{ macros.button_link("https://tesseroids.leouieda.com/", "Website", type="btn-light", icon="fa fa-external-link-square-alt") }}
 
 </div>
 <div class="col-8 col-md-3">

@@ -16,20 +16,22 @@ template: base.html
 
 <section class="mb-5">
 
-## The slightly longer version
+## Who am I?
 
 I'm first and foremost a Dedicated Involved Loving Father.
 On the rare occasions where I find myself with free time, I enjoy
-playing Incineroar in Smash Bros Ultimate,
+playing Incineroar in [Super Smash Bros Ultimate][smash],
 baking sourdough bread,
 making noise with my ukulele and off-tune baritone,
 listening to podcasts,
 and reading sci-fi and fantasy.
-My favorite show by far is Avatar: The Last Airbender.
+My favorite show is by far [Avatar: The Last Airbender][avatar]
+and I've been sucked into the [Cosmere books][cosmere] by
+[Brandon Sanderson][sanderson].
 
 I work as Lecturer in Geophysics at the University of Liverpool's
 [Department of Earth, Ocean and Ecological Sciences][deoes] in the UK,
-where I'm starting the [Computer-Oriented Geoscience Lab][compeolab].
+where I started the [Computer-Oriented Geoscience Lab][compeolab].
 Before coming to Liverpool, I was a visiting research scholar at the
 University of Hawaiʻi at Mānoa, where I worked with the
 [Generic Mapping Tools][gmt] team to create [PyGMT][pygmt], a widely-used
@@ -42,13 +44,6 @@ in general to gain insights on the inner workings of the Earth.
 I am one of the core developers and maintainer of the
 [Fatiando a Terra][fatiando] project, a community-developed set of open-source
 Python libraries for the Geosciences.
-
-Along with my role at the University of Liverpool, I'm also:
-
-* Board Member of the [Software Underground][swung].
-* Fellow of the [Software Sustainability Institute][ssi-fellowship].
-* (Former) Topic Editor for the [Journal of Open Source Software](https://joss.theoj.org/).
-* (Former) Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/).
 
 {{ figure("../images/teaching-git-at-agu2019.jpg", 'Me teaching git and GitHub at <a href="https://github.com/agu-ossi/2019-agu-oss">AGU2019</a>.', class="mt-4") }}
 
@@ -130,3 +125,7 @@ template. The source is available from the GitHub repository
 [fatiando]: https://www.fatiando.org
 [ssi-fellowship]: https://software.ac.uk/about/fellows/leonardo-uieda
 [swung]: https://softwareunderground.org/
+[smash]: https://en.wikipedia.org/wiki/Super_Smash_Bros._Ultimate
+[sanderson]: https://en.wikipedia.org/wiki/Brandon_Sanderson
+[cosmere]: https://coppermind.net/
+[avatar]: https://en.wikipedia.org/wiki/Avatar%3A_The_Last_Airbender

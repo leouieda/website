@@ -193,6 +193,11 @@
     boosts research productivity and what are the tools we use every day. I
     hope to help people find these tools and lead by example in the
     <a href="https://www.compgeolab.org">Computer-Oriented Geoscience Lab</a>.
+  abstract: |
+    In this talk, I'll go over some of my work on open-source geophysics
+    software (Python and GMT), how we're building communities around them,
+    and how this ties into my current research and efforts towards
+    reproducibility.
     <figure>
     <img src="../images/liverpool-oss-seminar-2019.jpg" alt="Photo of me presenting with a funny face.">
     <figcaption>
@@ -201,11 +206,6 @@
     picture above.
     </figcaption>
     </figure>
-  abstract: |
-    In this talk, I'll go over some of my work on open-source geophysics
-    software (Python and GMT), how we're building communities around them,
-    and how this ties into my current research and efforts towards
-    reproducibility.
 
 - title: "Machine learning lessons for geophysics"
   authors: [Me]
