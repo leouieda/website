@@ -58,7 +58,8 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark" aria-labelledby="primary-navigation">
+    {# Use same label for both navs: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Navigation_Role #}
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main">
       <div class="container align-middle">
         <a class="navbar-brand" href="{{ "index.html"|relative_to(page.path) }}">
           {{ config.brand }}
@@ -120,7 +121,8 @@
 
   <footer>
     <div class="container">
-      <nav class="footer-nav mb-4" aria-labelledby="secondary-navigation">
+      {# Use same label for both navs: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Navigation_Role #}
+      <nav class="footer-nav mb-4" aria-label="Main">
         <ul class="nav">
           {%- for item in config.navigation %}
             <li class="nav-item">
