@@ -3,7 +3,7 @@ title: About
 banner_image: images/hawaii-lava-photoshoot.jpg
 banner_position: top left
 banner_title: About me
-banner_subtitle: A bit more about me and what I do
+banner_subtitle: More about me and what I do
 thumbnail: images/thumbnail/about.png
 template: base.html
 ---
@@ -48,3 +48,29 @@ Python libraries for the Geosciences.
 [sanderson]: https://en.wikipedia.org/wiki/Brandon_Sanderson
 [cosmere]: https://coppermind.net/
 [avatar]: https://en.wikipedia.org/wiki/Avatar%3A_The_Last_Airbender
+
+<div class="callout callout-note mt-4">
+
+**Looking for a career summary?** I keep a short-form CV somewhat updated:
+<a class="nowrap" href="https://www.leouieda.com/cv/leonardo_uieda_cv_summary.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">
+<i class="fa fa-download" aria-hidden="true"></i>
+Download the PDF
+</a>
+
+**Curious about the CV template?** It's typeset in LaTeX and the source is
+available from the GitHub repository
+<a class="nowrap" href="https://github.com/leouieda/cv"><i class="mx-1 fab fa-github" aria-hidden="true"></i><code>leouieda/cv</code></a>.
+
+</div>
+
+## Professional Appointments
+
+{{ macros.cv_section(page.work, config.coauthors, section_id="work") }}
+
+## Education
+
+{{ macros.cv_section(page.edu, config.coauthors, section_id="edu") }}
+
+## Grants & Fellowships
+
+{{ macros.cv_section(page.grants, config.coauthors, section_id="grants") }}

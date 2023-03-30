@@ -42,8 +42,6 @@ navigation:
     id: index
   - name: About
     id: about/index
-  - name: CV
-    id: cv/index
   - name: Blog
     id: blog/index
   - name: Publications
