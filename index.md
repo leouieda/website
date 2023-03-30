@@ -27,11 +27,13 @@ template: home.html
 * Brazilian geophysicist, currently living in the UK
 * Creator of methods for imaging the inside of the Earth from measured
   disturbances in the planet's gravity and magnetic fields, from global to
-  micro scale 🛰️🔬🌎
-* Open-source software developer: [Fatiando a Terra][fatiando], [PyGMT][pygmt],
-  and more
-* Advocate for openness in the scientific process
-* Leader of the [Computer-Oriented Geoscience Lab][compgeolab]
+  microscopic scale 🛰️🔬🌎
+* Open-source software developer:
+  [Fatiando a Terra]({{ config.links.fatiando }}),
+  [PyGMT]({{ config.links.pygmt }}),
+  and [more]({{ site["software/index"].path|relative_to(page.path) }})
+* Committed to open practices in teaching and research
+* Leader of the [Computer-Oriented Geoscience Lab]({{ config.links.compgeolab }})
 * Proud father and amateur baker
 
 </div>
@@ -39,13 +41,4 @@ template: home.html
 
 {{ macros.button_link(site["about/index"].path|relative_to(page.path), "More about me", icon="far fa-arrow-alt-circle-right", external="false") }}
 {{ macros.button_link(site["contact/index"].path|relative_to(page.path), "Contact", type="btn-light", icon="fa fa-envelope", external="false") }}
-{{ macros.button_link("https://www.compgeolab.org", "CompGeoLab", type="btn-outline-light", icon="fa fa-external-link-square-alt") }}
-
-
-[deoes]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/
-[compgeolab]: https://www.compgeolab.org
-[pygmt]: https://www.pygmt.org/
-[fatiando]: https://www.fatiando.org
-[nene]: https://nene.leouieda.com
-[ssi-fellowship]: https://software.ac.uk/about/fellows/leonardo-uieda
-[swung]: https://softwareunderground.org/
+{{ macros.button_link(config.links.compgeolab, "CompGeoLab", type="btn-outline-light", icon="fa fa-external-link-square-alt") }}

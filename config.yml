@@ -1,5 +1,6 @@
 # Main site info
 author: Leonardo Uieda
+email: uieda@liverpool.ac.uk
 url: "https://www.leouieda.com"
 site_name: Leonardo Uieda
 site_description: Geophysicist, scientist, programmer, teacher
@@ -28,12 +29,21 @@ researchgate: https://www.researchgate.net/profile/Leonardo-Uieda
 googlescholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
 figshare: https://figshare.com/authors/Leonardo_Uieda/97471
 
+links:
+  compgeolab: https://www.compgeolab.org
+  fatiando: https://www.fatiando.org
+  pygmt: https://www.pygmt.org
+  gmt: https://www.generic-mapping-tools.org
+  swung: https://softwareunderground.org
+
 # Menu
 navigation:
   - name: Home
     id: index
   - name: About
     id: about/index
+  - name: CV
+    id: cv/index
   - name: Blog
     id: blog/index
   - name: Publications

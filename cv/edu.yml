@@ -1,14 +1,17 @@
-- level: PhD in Geophysics
-  institution: Observatório Nacional, Brazil
-  title: |
-    Forward modeling and inversion of gravitational fields in spherical
-    coordinates
+- title: PhD in Geophysics
+  institution: Observatório Nacional
+  country: Brazil
+  thesis: Forward modeling and inversion of gravitational fields in spherical coordinates
   advisor: Valéria C. F. Barbosa
   github: leouieda/phd-thesis
-  doi: 10.6084/m9.figshare.16883689.v1
-  year: 2016
+  doi: 10.6084/m9.figshare.16883689
+  year: 2011-2016
   slides: https://speakerdeck.com/leouieda/phd-defense
-  notes: |
+  note: |
+    I received the Brazilian Geophysical Society (SBGf)
+    <a href="https://sbgf.org.br/premiacoes">Best PhD Thesis of 2015-2017</a>
+    award for my work.
+  about: |
     <p>
     After my Master's degree, I stayed at the Observatório Nacional for my
     PhD, also with <a href="https://www.pinga-lab.org/people/barbosa.html">Valéria C. F. Barbosa</a>.
@@ -69,16 +72,16 @@
     density-anomalies in the crust or upper mantle, as has been suggested in
     the literature.
 
-- level: MSc in Geophysics
-  institution: Observatório Nacional, Brazil
-  title: |
-    Robust 3D gravity gradient inversion by planting anomalous densities
+- title: MSc in Geophysics
+  institution: Observatório Nacional
+  country: Brazil
+  thesis: Robust 3D gravity gradient inversion by planting anomalous densities
   advisor: Valéria C. F. Barbosa
   github: pinga-lab/paper-planting-densities
   doi: 10.6084/m9.figshare.16882300.v1
-  year: 2011
+  year: 2010 - 2011
   slides: https://speakerdeck.com/leouieda/masters-defense
-  notes: |
+  about: |
     <p>
     I did my Master's degree in Geophysics at the Observatório Nacional in
     Rio de Janeiro, Brazil, under the supervision of <a
@@ -127,16 +130,30 @@
     compact iron ore body that is in agreement with geologic information and
     previous interpretations.
 
-- level: BSc in Geophysics
-  institution: Universidade de São Paulo, Brazil
-  title: |
-    Cálculo do tensor gradiente gravimétrico utilizando tesseroides
+- title: International Exchange
+  institution: York University
+  country: Canada
+  year: 2008 - 2009
+  about: |
+    <p>
+    In the fourth year of my BSc degree, I went on an international exchange
+    program to York University to study in their Geomatics Engineering degree.
+    I spent the year learning about geodesy, gravimetry, positioning, and
+    least-squares adjustment, all of which I still use to this day.
+    I also had a great time in Toronto and got to make a bunch of international
+    friends.
+    </p>
+
+- title: BSc in Geophysics
+  institution: Universidade de São Paulo
+  country: Brazil
+  thesis: Cálculo do tensor gradiente gravimétrico utilizando tesseroides
   advisor: Naomi Ussami
   github: leouieda/barchelor-thesis
   doi: 10.6084/m9.figshare.963547
-  year: 2009
+  year: 2004 - 2009
   slides: https://speakerdeck.com/leouieda/bachelors-defense
-  notes: |
+  about: |
     <p>
     My Bachelor's degree in Geophysics is from the Universidade de São Paulo,
     Brazil, where I studied from 2004 until 2009. I did an undergraduate

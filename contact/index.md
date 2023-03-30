@@ -18,7 +18,7 @@ These are best ways to reach me online:
   <li>
     <i class="fa-li fa fa-envelope fa-fw" aria-hidden="true"></i>
     Email:
-    <a href="mailto:Leonardo.Uieda@liverpool.ac.uk">Leonardo.Uieda@liverpool.ac.uk</a>
+    <a href="mailto:{{ config.email }}">{{ config.email }}</a>
   </li>
   <li>
     <i class="fa-li fab fa-mastodon fa-fw" aria-hidden="true"></i>
@@ -33,7 +33,7 @@ These are best ways to reach me online:
   <li>
     <i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
     Slack:
-    @leouieda on the <a target="_blank" href="https://softwareunderground.org/">Software Underground</a>
+    @leouieda on the <a target="_blank" href="{{ config.links.swung }}">Software Underground</a>
   </li>
   <li>
     <i class="fa-li fas fa-key fa-fw" aria-hidden="true"></i>
