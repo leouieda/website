@@ -1,6 +1,7 @@
 {# Template for a blog post #}
-
 {% extends "base.html" %}
+
+{% import "macros.html" as macros %}
 
 {%- block content %}
   {% if page.article_class is defined %}
@@ -19,9 +20,6 @@
     {{ page.body }}
   </article>
   <div class="mt-5">
-    <a class="btn btn-outline-light me-3 mb-3" href="/blog">
-      <i class="far fa-arrow-alt-circle-left me-1" aria-hidden="true"></i>
-      Back to the blog
-    </a>
+    {{ macros.button_link(site["blog/index"].path|relative_to(page.path), "Back to the blog", type="btn-outline-light", icon="far fa-arrow-alt-circle-left", size="", external="false") }}
   </div>
 {%- endblock %}

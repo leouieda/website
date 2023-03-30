@@ -14,9 +14,7 @@ all posts when it renders that template.
     <h2>Latest blog posts</h2>
     {%- for item in (site["blog/index"]["siblings"]|sort(attribute="date", reverse=True))[:2] %}
       <h3 class="fs-4 mb-2 mt-5">
-        <a class="" href="/{{ item.path }}">
-          {{ item.title }}
-        </a>
+        {{ item.title }}
       </h3>
       <p class="text-muted mb-2 fs-6">
         <i class="far fa-calendar-alt me-1" aria-hidden="true"></i>
@@ -25,7 +23,7 @@ all posts when it renders that template.
       <p class="text-muted">
         {{ item.body|striptags|trim|truncate(200) }}
       </p>
-      {{ macros.button_link(item.path|relative_to(page.path), "Read more", type="btn-outline-light", icon="far fa-arrow-alt-circle-right", icon_position="end") }}
+      {{ macros.button_link(item.path|relative_to(page.path), "Read more", type="btn-outline-light", icon="far fa-arrow-alt-circle-right", icon_position="end", external="false") }}
     {%- endfor %}
   </div>
 {%- endblock %}

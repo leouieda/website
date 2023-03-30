@@ -11,6 +11,9 @@ banner_subtitle: |
 template: home.html
 ---
 
+{% import "macros.html" as macros %}
+
+
 <h2 class="">A bit about me</h2>
 
 <div class="row align-items-center justify-content-center gy-3 mb-4">
@@ -34,9 +37,9 @@ template: home.html
 </div>
 </div>
 
-<a class="btn btn-primary mt-3 me-2" href="/about"><i class="far fa-arrow-alt-circle-right me-1" aria-hidden="true"></i> Longer version</a>
-<a class="btn btn-light mt-3 me-2" href="/contact"><i class="fa fa-envelope me-1" aria-hidden="true"></i> Contact me</a>
-<a class="btn btn-outline-light mt-3" href="https://www.compgeolab.org" target="_blank"><i class="fa fa-external-link-square-alt me-1" aria-hidden="true"></i> CompGeoLab</a>
+{{ macros.button_link(site["about/index"].path|relative_to(page.path), "More about me", icon="far fa-arrow-alt-circle-right", external="false") }}
+{{ macros.button_link(site["contact/index"].path|relative_to(page.path), "Contact", type="btn-light", icon="fa fa-envelope", external="false") }}
+{{ macros.button_link("https://www.compgeolab.org", "CompGeoLab", type="btn-outline-light", icon="fa fa-external-link-square-alt") }}
 
 
 [deoes]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/

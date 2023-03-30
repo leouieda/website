@@ -9,8 +9,12 @@
 {%- endmacro -%}
 
 
-{%- macro button_link(href, text, type="btn-primary", icon="none", size="btn-sm", icon_position="start") -%}
-  <a class="btn {{ size }} {{ type }} me-1 mb-2" href="{{ href }}" target="_blank">
+{%- macro button_link(href, text, type="btn-primary", icon="none", size="btn-sm", icon_position="start", external="true") -%}
+  {%- set extra = "" -%}
+  {%- if external == "true" -%}
+    {%- set extra = extra ~ ' target="_blank"' -%}
+  {%- endif -%}
+  <a class="btn {{ size }} {{ type }} me-1 mb-2" href="{{ href }}"{{ extra }}>
     {%- if icon_position == "start" -%}
       <i class="{{ icon }} me-1" aria-hidden="true"></i>
     {%- endif -%}
