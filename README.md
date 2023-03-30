@@ -46,13 +46,10 @@ I can't guarantee that things will work without my specific folder structure.
 
 The site is automatically built and deployed to
 [leouieda/leouieda.github.com](https://github.com/leouieda/leouieda.github.com)
-every time a commit is pushed to the *master* branch.
+every time a commit is pushed to the *main* branch.
 See files `.github/workflows/build.yml`.
 
 ## License
 
-[![Creative Commons
-License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 Except were otherwise noted, this work is licensed under a
-[Creative Commons Attribution 4.0 International
-License](http://creativecommons.org/licenses/by/4.0/).
+[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
