@@ -222,12 +222,13 @@ table tr:nth-child(2n) {
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
   margin: 0 0.25rem;
+  border-bottom: 2px solid transparent;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
   text-decoration: none;
   color: #ffffff;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ffffff;
 }
 
 .navbar-dark .navbar-nav .nav-link.nav-icon:hover {
