@@ -26,8 +26,12 @@ available from the GitHub repository
 
 ## Professional Appointments
 
-{{ macros.cv_section(page.work, site.author_names, section_id="edu") }}
+{{ macros.cv_section(page.work, config.coauthors, section_id="work") }}
 
 ## Education
 
-{{ macros.cv_section(page.edu, site.author_names, section_id="edu") }}
+{{ macros.cv_section(page.edu, config.coauthors, section_id="edu") }}
+
+## Grants & Fellowships
+
+{{ macros.cv_section(page.grants, config.coauthors, section_id="grants") }}
