@@ -115,7 +115,7 @@
     reproduction of the Ferguson COVID-19 modelling results. Funny enough,
     this talk is heavily inspired on the last talk I gave there in 2015.
     <figure>
-    <img src="../images/2020-geophysics-oss-talk/usp.jpg" atl="Screenshot from the recording">
+    <img src="../images/2020-geophysics-oss-talk/usp.jpg" alt="Screenshot from the recording">
     <figcaption>
     Screen shot of the live Q&amp;A session after the talk, taken by
     <a href="https://www.linkedin.com/in/eduardo-fernandes-henriques-138394190">Eduardo Fernandes Henriques</a>.
@@ -172,7 +172,7 @@
     projects I'm developing, how that's shaped my research, and plans for the
     future.
     <figure>
-    <img src="../images/2020-geophysics-oss-talk/liverpool-gdsl.jpg" atl="Photo of me presenting with a funny face.">
+    <img src="../images/2020-geophysics-oss-talk/liverpool-gdsl.jpg" alt="Photo of me presenting with a funny face.">
     <figcaption>
     Photo of the presentation at the
     <a href="https://www.liverpool.ac.uk/geographic-data-science/">Geographic Data Science Lab</a>,
