@@ -26,7 +26,7 @@ jobs:
         run: nene
 
       - name: Create a symlink to the custom 404 page
-        run: ln -s _build/page-not-found.html _build/404.html
+        run: ln -sf _build/page-not-found.html _build/404.html
 
       - name: Push to leouieda.github.io
         if: success() && github.event_name == 'push'
