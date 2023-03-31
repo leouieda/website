@@ -25,6 +25,9 @@ jobs:
       - name: Build the website
         run: nene
 
+      - name: Create a symlink to the custom 404 page
+        run: ln -s _build/page-not-found.html _build/404.html
+
       - name: Push to leouieda.github.io
         if: success() && github.event_name == 'push'
         # Don't use tags: https://julienrenaux.fr/2019/12/20/github-actions-security-risk/
