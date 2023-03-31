@@ -60,6 +60,7 @@ ignore:
   - README.md
   - LICENSE.md
   - environment.yml
+  - requirements.txt
   - Makefile
   - css/academicons/README.md
 
