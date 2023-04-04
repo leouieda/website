@@ -295,6 +295,14 @@
         {{ item.poster_embed|trim }}
         </div>
       {%- endif %}
+      {%- if item.roles is defined %}
+        <h4 class="fs-4">Internal Roles</h4>
+        <ul>
+        {%- for role in item.roles %}
+          <li>{{ role["date"] }}: <strong>{{ role["title"] }}</strong></li>
+        {%- endfor %}
+        </ul>
+      {%- endif %}
       {%- if item.about is defined %}
         <h4 class="fs-4">About</h4>
         {{ item.about|trim }}
