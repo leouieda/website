@@ -29,11 +29,16 @@
   {%- else -%}
     {% set description = page.body|striptags|trim|truncate(200) %}
   {%- endif %}
+  {%- if page.custom_page_title is defined %}
+    {%- set ogtitle = page.custom_page_title|striptags|e %}
+  {%- else %}
+    {%- set ogtitle = page.title|striptags|e %}
+  {%- endif %}
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <!-- OpenGraph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:title" content="{{ ogtitle }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:image" content="{{ config.url }}/{{ thumbnail }}" />
   <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
