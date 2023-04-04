@@ -67,6 +67,10 @@ available from the GitHub repository
 
 {{ macros.cv_section(page.work, config.coauthors, section_id="work") }}
 
+## Community Service
+
+{{ macros.cv_section(page.community, config.coauthors, section_id="community") }}
+
 ## Education
 
 {{ macros.cv_section(page.edu, config.coauthors, section_id="edu") }}

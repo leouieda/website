@@ -1,0 +1,47 @@
+- title: Board Member
+  institution: Software Underground
+  year: 2022 - present
+  about: |
+    <p>
+    The <a target="_blank" href="https://softwareunderground.org">Software Underground</a>
+    is a non-profit professional society for people at the intersection of
+    geoscience and computing.
+    I have been active in the Software Underground community since its
+    inception in 2014 and was very happy to join the Board in 2022.
+    </p>
+
+- title: Advisory Council Member
+  institution: pyOpenSci
+  year: 2022 - present
+  about: |
+    <p>
+    <a target="_blank" href="https://www.pyopensci.org">pyOpenSci</a> is a
+    non-profit looking to connect, curate, and improve open-source scientific
+    software in the Python language.
+    I joined their Advisory Council in 2022 to help develop community norms and
+    guidance around tooling and techniques in software engineering.
+    </p>
+
+- title: Topic Editor
+  institution: Journal of Open Source Software
+  year: 2019 - 2022
+  about: |
+    <p>
+    <a target="_blank" href="https://joss.theoj.org">JOSS</a> is a developer
+    friendly, diamond open-access journal for research software packages.
+    I joined the editorial team in 2019 as Topic Editor for Geoscience.
+    I reluctantly left the editorial team in 2022 because of the increased
+    workload brought on by my new admin roles at the University of Liverpool.
+    </p>
+
+- title: Advisory Council Member
+  institution: EarthArXiv
+  year: 2019 - 2022
+  about: |
+    <p>
+    <a target="_blank" href="https://www.eartharxiv.org">EarthArXiv</a> is a
+    non-profit preprint server for the Earth Sciences.
+    I joined their Advisory Council in 2019 and participated in discussions
+    about how to setup and improve the platform, as well as in moderating
+    submissions. I left the Council in 2022 when my 3 year term was up.
+    </p>
