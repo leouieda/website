@@ -59,6 +59,7 @@ navigation:
 ignore:
   - README.md
   - LICENSE.md
+  - CODE_OF_CONDUCT.md
   - environment.yml
   - requirements.txt
   - Makefile
