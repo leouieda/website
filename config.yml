@@ -14,6 +14,7 @@ thumbnail: images/thumbnail/default.png
 license_notice: |
   Except where otherwise noted, all content is licensed
   <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
+coc: https://github.com/leouieda/website/blob/main/CODE_OF_CONDUCT.md
 
 # Social media
 github: leouieda
@@ -64,6 +65,7 @@ ignore:
   - requirements.txt
   - Makefile
   - css/academicons/README.md
+  - giscus.json
 
 # My co-authors
 coauthors:

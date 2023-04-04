@@ -1,0 +1,4 @@
+{
+  "origins": ["https://www.leouieda.com"],
+  "originsRegex": ["http://localhost:[0-9]+"]
+}
