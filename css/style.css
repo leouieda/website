@@ -243,7 +243,7 @@ table tr:nth-child(2n) {
 }
 
 .navbar-dark .navbar-toggler:focus {
-  box-shadow: none;
+  box-shadow: 0 0 0 .1rem;
 }
 
 li.nav-item {
@@ -264,38 +264,6 @@ li.nav-item {
 
 .altmetric-embed img {
   width: auto;
-}
-
-.btn-outline-light:focus {
-  box-shadow: none;
-}
-
-.btn-outline-light:focus:active {
-  box-shadow: none;
-}
-
-.btn-dark:focus {
-  box-shadow: none;
-}
-
-.btn-dark:focus:active {
-  box-shadow: none;
-}
-
-.btn-light:focus {
-  box-shadow: none;
-}
-
-.btn-light:focus:active {
-  box-shadow: none;
-}
-
-.btn-primary:focus {
-  box-shadow: none;
-}
-
-.btn-primary:focus:active {
-  box-shadow: none;
 }
 
 /* Custom classes */
