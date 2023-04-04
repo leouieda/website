@@ -2,7 +2,7 @@
   institution: Royal Society (International Exchanges 2021 Round 3)
   award: "IES\\R3\\213141"
   award_link: https://www.compgeolab.org/news/rsoc-mag-microscopy-2022.html
-  award_amount: £10,500
+  award_amount: GBP 10,500
   authors: [Me, Ricardo]
   year: 2022 - 2024
   abstract: |
@@ -24,3 +24,115 @@
     bring together experts from both large scale geophysics and micrometer
     scale paleomagnetism to explore the possibilities and help define future
     directions of research.
+
+- title: SSI Fellowship
+  institution: Software Sustainability Institute
+  award: 2020 Fellow
+  award_link: https://www.software.ac.uk/about/fellows/leonardo-uieda
+  award_amount: GBP 3,000
+  authors: [Me]
+  year: 2020
+  abstract: |
+    The SSI has a yearly fellowship program to fund the organization of
+    communities around scientific software (creating of local user groups,
+    workshops, hackathons, etc).
+    My original plan for the Fellowship was to run some Software Carpentry
+    workshops in Liverpool and to develop lesson material for transitioning
+    from coder to open-source software maintainer (based on our AGU workshops).
+    Due to the COVID19 pandemic, I wasn't able to execute these plans.
+    Instead, in 2022 I organized the
+    <a href="https://hackmd.io/@leouieda/uk-geo-code-meetup">Geo+Code</a> event
+    as part of my Fellowship.
+
+- title: A Sustainable Plan for the Future of the Generic Mapping Tools
+  institution: National Science Foundation (NSF-EAR)
+  award: 1948602
+  award_link: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1948602
+  award_amount: USD 757,597
+  authors: [Paul, Me]
+  year: 2020 - 2023
+  doi: 10.6084/m9.figshare.12235727
+  abstract: |
+    The Generic Mapping Tools (GMT) is open source software infrastructure used
+    in the Earth, ocean, and planetary geosciences. GMT supports other software
+    platforms and delivers data processing and visualizations (graphs, charts,
+    maps) that promote new discoveries and their dissemination to society. The
+    primary goal of this project is to transition GMT to a governance structure
+    that includes a broader and more diverse community of developers. This
+    project will (1) recruit and train new and diverse developers, (2) build a
+    broad and sustainable developer community, and (3) modernize, simplify, and
+    strengthen the GMT software. The first two tasks are critical social
+    activities while the last is technical, involving code hardening,
+    interoperability improvements, interface modernization, documentation
+    completion, and data upgrades. This project will provide training in
+    cutting-edge computational software development and data analysis, along
+    with engaging undergraduate students in scientifically challenging tasks
+    related to the GMT project. The project will also facilitate ongoing user
+    training and developer workshops.
+    This project is based on a vision for the future of GMT that incorporates
+    how governance, communications, developer recruitment and training will
+    evolve in the next decade. The project will design and implement a
+    sustainable model for GMT maintenance and curation, and execute a series of
+    essential technical improvements. These improvements will address a)
+    automated testing and verification of results, b) development of
+    GMT-powered software libraries in other languages (Python, MATLAB, Julia)
+    and c) the recruitment of new and enthusiastic developers so that GMT may
+    continue to be maintained and evolve in a changing computational landscape.
+    In addition, GMT products such as coastline maps will be revised with
+    modern high-resolution data as well as technical documentation of how
+    updates are produced. Finally, this project will advance GMT to a
+    sustainable environment that results in lower maintenance, greater
+    confidence in GMT products, and a more engaged community of users and
+    developers.
+
+- title: "The EarthScope/GMT Analysis and Visualization Toolbox"
+  institution: National Science Foundation (NSF-EAR)
+  award: 1829371
+  award_link: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1829371
+  award_amount: USD 174,975
+  authors: [Paul, Me, Bridget]
+  year: 2018 - 2020
+  abstract: |
+    Research under the EarthScope umbrella involves both data processing and
+    display of results. The Generic Mapping Tools (GMT) is a set of scientific
+    analysis and plotting modules that are widely used in the Earth Sciences,
+    particularly because they allow for specialized processing and imaging
+    suitable for the geosciences. GMT is a long-lived (~30 years) and robust
+    NSF-funded software toolset that originated in the ocean sciences but has
+    spread to all aspects of the geosciences and beyond. This project will add
+    numerous enhancements to GMT, including a much simplified usage syntax
+    called modern mode. In addition, new modules for simplifying the creation
+    of animations, 3-D stacking and interpolation of grids, conversion of
+    imagery for placement in Google Earth, and greatly improved interactive
+    documentation will be built during the project.
+    The Generic Mapping Tools (GMT) scripting has remained remarkably similar
+    over its 30 years of existence. Because thousands of GMT classic scripts
+    have been written, making major changes has been problematic, even if such
+    changes would simplify its usage. The proposed modern mode will solve this
+    dilemma as it introduces two new commands (begin and end) that starts and
+    end a modern mode session. Hence it is not possible to accidentally enter
+    modern mode without the use of those commands, thus allowing all existing
+    GMT scripts to run unchanged. Once in modern mode, the required syntax will
+    be simplified to avoid repetitive options and the user will no longer be
+    responsible for assembling a composite PostScript file. The default output
+    format will be PDF but more than one format may be selected, including
+    standard raster image formats. Improved interactive documentation will be
+    added to showcase modern mode (while maintaining the documentation for
+    classic mode). To strengthen EarthScope science there will be new modules
+    for 3-D grid stacking and interpolation, KML image quadtree building for
+    Google Earth, and a new animation module that vastly simplifies the task of
+    building scientific animations. It is anticipated that UNAVCO will assist
+    with annual workshops aimed at EarthScope scientists using GMT in shell,
+    MATLAB, or Python environments.
+
+- title: "Projeto Qualitec (Nível Superior): Laboratório de Geofísica de Exploração (LAGEX)"
+  institution: Universidade do Estado do Rio de Janeiro (UERJ)
+  authors: [Me]
+  year: 2014 - 2018
+  doi: 10.6084/m9.figshare.22548751.v1
+  abstract: |
+    This internal grant funded a full-time graduate technician for the
+    Exploration Geophysics Lab (LAGEX) on a 4-year contract. The technician was
+    responsible for maintaining the computer hardware we had, working on our
+    open-source software <a href="https://www.fatiando.org">Fatiando a Terra</a>,
+    and aiding in the teaching done in the lab.
