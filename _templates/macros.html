@@ -199,9 +199,9 @@
   {%- set id = anchor %}
   <div class="mb-4">
     <h3 class="fs-5 mt-0 mb-1" id="{{ anchor }}">
-    <span class="mb-1 text-muted fs-6">
-      {{ item.year }}.
-    </span>
+      <span class="me-1 text-muted fs-6">
+        {{ item.year }}:
+      </span>
       <span class="fw-bold">{{ item.title|trim }}</span>
     </h3>
     {%- if item.department is defined %}
