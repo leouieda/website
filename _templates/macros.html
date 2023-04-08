@@ -197,121 +197,141 @@
     {%- set pdf = item.pdf %}
   {%- endif %}
   {%- set id = anchor %}
-  <div class="mb-4">
-    <h3 class="fs-5 mt-0 mb-1" id="{{ anchor }}">
-      <span class="me-1 text-muted fs-6">
-        {{ item.year }}:
-      </span>
-      <span class="fw-bold">{{ item.title|trim }}</span>
-    </h3>
-    {%- if item.department is defined %}
-      <p class="mb-1 text-muted fs-6">
-        {{ item.department }}
-      </p>
-    {%- endif %}
-    {%- if item.institution is defined %}
-      <p class="mb-1 text-muted fs-6">
-        {{ item.institution }}{%- if item.country is defined %}, {{ item.country }}{%- endif %}
-      </p>
-    {%- endif %}
-    {%- if item.event is defined %}
-      <p class="mb-1 text-muted fs-6">
-        {{ item.event }}
-      </p>
-    {%- endif %}
-    {%- if item.authors is defined %}
-      <p class="mb-1 text-muted fs-6">
-        {%- for author in item.authors %}
-          {%- if author == "Me" %}
-            <strong>{{ author_names[author] }}</strong>
-          {%- else %}
-            {{ author_names[author] }}
-          {%- endif %}
-          {%- if not loop.last -%},{%- endif -%}
-        {%- endfor %}
-      </p>
-    {%- endif %}
-    <button
-        class="hidden-section-toggle btn btn-dark btn-sm mt-1 collapsed"
-        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
-        aria-expanded="false" aria-controls="collapse-{{ id }}">
-      <i class="hidden-section-toggle-icon fa fa-chevron-circle-down me-1" aria-hidden="true"></i>
-      More information
-    </button>
-    <div id="collapse-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
-      <div class="mb-4">
-        {%- if pdf is defined %}
-          {{ button_link(pdf, "Free PDF", type="btn-light", icon="fa fa-file-pdf") }}
+  <h3 class="fs-5 mb-1" id="{{ anchor }}">
+    <span class="me-1 text-muted fs-6">
+      {{ item.year }}:
+    </span>
+    <span class="fw-bold">{{ item.title|trim }}</span>
+  </h3>
+  {%- if item.department is defined %}
+    <p class="mb-1 text-muted fs-6">
+      {{ item.department }}
+    </p>
+  {%- endif %}
+  {%- if item.institution is defined %}
+    <p class="mb-1 text-muted fs-6">
+      {{ item.institution }}{%- if item.country is defined %}, {{ item.country }}{%- endif %}
+    </p>
+  {%- endif %}
+  {%- if item.event is defined %}
+    <p class="mb-1 text-muted fs-6">
+      {{ item.event }}
+    </p>
+  {%- endif %}
+  {%- if item.authors is defined %}
+    <p class="mb-1 text-muted fs-6">
+      {%- for author in item.authors %}
+        {%- if author == "Me" %}
+          <strong>{{ author_names[author] }}</strong>
+        {%- else %}
+          {{ author_names[author] }}
         {%- endif %}
-        {%- if item.slides is defined %}
-          {{ button_link(item.slides, "Slides", type="btn-light", icon="fa fa-desktop") }}
-        {%- endif %}
-        {%- if item.poster is defined %}
-          {{ button_link(item.poster, "Poster", type="btn-light", icon="fa fa-image") }}
-        {%- endif %}
-        {%- if item.recording is defined %}
-          {{ button_link("https://www.youtube.com/watch?v=" ~ item.recording, "Recording", type="btn-light", icon="fab fa-youtube") }}
-        {%- endif %}
-        {%- if item.data is defined %}
-          {{ button_link("https://doi.org/" ~ item.data, "Open data", type="btn-light", icon="fa fa-chart-bar") }}
-        {%- endif %}
-        {%- if item.github is defined %}
-          {{ button_link("https://github.com/" ~ item.github, "Source code", type="btn-light", icon="fab fa-github") }}
-        {%- endif %}
-      </div>
-      {%- if item.note is defined %}
-        <div class="callout callout-note">
-          <p>
-            <i class="fas fa-info-circle" aria-hidden="true"></i>
-            <strong>Note:</strong>
-            {{ item.note|trim }}
-          </p>
-        </div>
+        {%- if not loop.last -%},{%- endif -%}
+      {%- endfor %}
+    </p>
+  {%- endif %}
+  <button
+      class="hidden-section-toggle btn btn-dark btn-sm mt-1 collapsed"
+      type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
+      aria-expanded="false" aria-controls="collapse-{{ id }}">
+    <i class="hidden-section-toggle-icon fa fa-chevron-circle-down me-1" aria-hidden="true"></i>
+    More information
+  </button>
+  <div id="collapse-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
+    <div class="mb-4">
+      {%- if pdf is defined %}
+        {{ button_link(pdf, "Free PDF", type="btn-light", icon="fa fa-file-pdf") }}
       {%- endif %}
-      {%- if item.thesis is defined %}
-        <p><strong>Thesis:</strong> {{ item.thesis }}</p>
+      {%- if item.slides is defined %}
+        {{ button_link(item.slides, "Slides", type="btn-light", icon="fa fa-desktop") }}
       {%- endif %}
-      {%- if item.advisor is defined %}
-        <p><strong>Advisor:</strong> {{ item.advisor }}</p>
+      {%- if item.poster is defined %}
+        {{ button_link(item.poster, "Poster", type="btn-light", icon="fa fa-image") }}
       {%- endif %}
-      {%- if item.award is defined %}
-        <p>
-          <strong>Award: </strong>
-          {%- if item.award_link is defined -%}
-            <a href="{{ item.award_link }}" target="_blank">
-          {%- endif -%}
-          {{ item.award }}
-          {%- if item.award_link is defined -%}
-            </a>
-          {%- endif -%}
-        </p>
+      {%- if item.recording is defined %}
+        {{ button_link("https://www.youtube.com/watch?v=" ~ item.recording, "Recording", type="btn-light", icon="fab fa-youtube") }}
       {%- endif %}
-      {%- if item.award_amount is defined %}
-        <p><strong>Amount:</strong> {{ item.award_amount }}</p>
+      {%- if item.data is defined %}
+        {{ button_link("https://doi.org/" ~ item.data, "Open data", type="btn-light", icon="fa fa-chart-bar") }}
       {%- endif %}
-      {%- if item.poster_embed is defined %}
-        <h4 class="fs-4">Poster</h4>
-        <div class="mb-3">
-        {{ item.poster_embed|trim }}
-        </div>
-      {%- endif %}
-      {%- if item.roles is defined %}
-        <h4 class="fs-4">Internal Roles</h4>
-        <ul>
-        {%- for role in item.roles %}
-          <li>{{ role["date"] }}: <strong>{{ role["title"] }}</strong></li>
-        {%- endfor %}
-        </ul>
-      {%- endif %}
-      {%- if item.about is defined %}
-        <h4 class="fs-4">About</h4>
-        {{ item.about|trim }}
-      {%- endif %}
-      {%- if item.abstract is defined %}
-        <h4 class="fs-4">Abstract</h4>
-        <p>{{ item.abstract|trim }}</p>
+      {%- if item.github is defined %}
+        {{ button_link("https://github.com/" ~ item.github, "Source code", type="btn-light", icon="fab fa-github") }}
       {%- endif %}
     </div>
+    {%- if item.note is defined %}
+      <div class="callout callout-note">
+        <p>
+          <i class="fas fa-info-circle" aria-hidden="true"></i>
+          <strong>Note:</strong>
+          {{ item.note|trim }}
+        </p>
+      </div>
+    {%- endif %}
+    {%- if item.thesis is defined %}
+      <p><strong>Thesis:</strong> {{ item.thesis }}</p>
+    {%- endif %}
+    {%- if item.advisor is defined %}
+      <p><strong>Advisor:</strong> {{ item.advisor }}</p>
+    {%- endif %}
+    {%- if item.award is defined %}
+      <p>
+        <strong>Award: </strong>
+        {%- if item.award_link is defined -%}
+          <a href="{{ item.award_link }}" target="_blank">
+        {%- endif -%}
+        {{ item.award }}
+        {%- if item.award_link is defined -%}
+          </a>
+        {%- endif -%}
+      </p>
+    {%- endif %}
+    {%- if item.award_amount is defined %}
+      <p><strong>Amount:</strong> {{ item.award_amount }}</p>
+    {%- endif %}
+    {%- if item.poster_embed is defined %}
+      <h4 class="fs-4">Poster</h4>
+      <div class="mb-3">
+      {{ item.poster_embed|trim }}
+      </div>
+    {%- endif %}
+    {%- if item.roles is defined %}
+      <h4 class="fs-4">Internal Roles</h4>
+      <ul>
+      {%- for role in item.roles %}
+        <li>{{ role["date"] }}: <strong>{{ role["title"] }}</strong></li>
+      {%- endfor %}
+      </ul>
+    {%- endif %}
+    {%- if item.about is defined %}
+      <h4 class="fs-4">About</h4>
+      {{ item.about|trim }}
+    {%- endif %}
+    {%- if item.abstract is defined %}
+      <h4 class="fs-4">Abstract</h4>
+      <p>{{ item.abstract|trim }}</p>
+    {%- endif %}
+  </div>
+{%- endfor %}
+{%- endmacro -%}
+
+
+{%- macro cv_sections(sections, page, author_names) -%}
+{%- for data, title in sections %}
+  {%- if loop.first %}
+    {% set toggle_class = "" %}
+    {% set collapse_class = "show" %}
+  {%- else %}
+    {% set toggle_class = "collapsed" %}
+    {% set collapse_class = "" %}
+  {%- endif %}
+  <h2 class="hidden-section-title">
+    <a class="hidden-section-toggle {{ toggle_class }}" data-bs-toggle="collapse" href="#collapse-{{ data }}" aria-controls="collapse-{{ data }}" aria-expanded="false" role="button">
+    <i class="hidden-section-toggle-icon fas fa-chevron-down text-muted me-1" aria-hidden="true"></i>
+    {{ title }}
+    </a>
+  </h2>
+  <div id="collapse-{{ data }}" class="hidden-section collapse {{ collapse_class }}">
+    {{ cv_section(page[data], author_names, section_id=data) }}
   </div>
 {%- endfor %}
 {%- endmacro -%}

@@ -48,33 +48,3 @@ Python libraries for the Geosciences.
 [sanderson]: https://en.wikipedia.org/wiki/Brandon_Sanderson
 [cosmere]: https://coppermind.net/
 [avatar]: https://en.wikipedia.org/wiki/Avatar%3A_The_Last_Airbender
-
-<div class="callout callout-note mt-4">
-
-**Looking for a career summary?** I keep a short-form CV somewhat updated:
-<a class="nowrap" href="https://www.leouieda.com/cv/leonardo_uieda_cv_summary.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">
-<i class="fa fa-download" aria-hidden="true"></i>
-Download the PDF
-</a>
-
-**Curious about the CV template?** It's typeset in LaTeX and the source is
-available from the GitHub repository
-<a class="nowrap" href="https://github.com/leouieda/cv"><i class="mx-1 fab fa-github" aria-hidden="true"></i><code>leouieda/cv</code></a>.
-
-</div>
-
-## Professional Appointments
-
-{{ macros.cv_section(page.work, config.coauthors, section_id="work") }}
-
-## Community Service
-
-{{ macros.cv_section(page.community, config.coauthors, section_id="community") }}
-
-## Education
-
-{{ macros.cv_section(page.edu, config.coauthors, section_id="edu") }}
-
-## Grants & Fellowships
-
-{{ macros.cv_section(page.grants, config.coauthors, section_id="grants") }}
