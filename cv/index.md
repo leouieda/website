@@ -2,7 +2,7 @@
 title: CV
 banner_image: images/anatolia-himalayas-topography.jpg
 banner_title: Curriculum Vitæ
-banner_subtitle: My academic CV with pretty everything I ever did
+banner_subtitle: My academic CV, with most things I ever did
 thumbnail: images/thumbnail/default.png
 template: base.html
 sections:
