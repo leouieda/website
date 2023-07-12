@@ -1,8 +1,9 @@
 ---
 title: Curriculum Vitæ
-banner_image: images/anatolia-himalayas-topography.jpg
+banner_image: images/teaching-git-at-agu2019.jpg
+banner_position: center right
 banner_title: Curriculum Vitæ
-banner_subtitle: My academic CV, with most things I ever did
+banner_subtitle: My academic CV, containing most things I have done so far in my career
 thumbnail: images/thumbnail/default.png
 template: base.html
 sections:
@@ -33,7 +34,7 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
 <hr>
 <p id="navigation">
 <i class="fas fa-list" aria-hidden="true"></i>
-Sections:
+Section navigation
 </p>
 <nav aria-label="Page">
   <ul role="list" class="list-inline">

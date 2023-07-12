@@ -223,6 +223,10 @@ iframe {
   aspect-ratio: 16 / 9;
 }
 
+img {
+  width: 100%;
+}
+
 code {
   padding: 0.1em 0.25em;
 }
@@ -237,7 +241,7 @@ pre > code {
 }
 
 figcaption {
-  margin-top: 0.5em;
+  margin-top: 1em;
   line-height: 1.25;
 }
 
