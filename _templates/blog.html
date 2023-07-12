@@ -13,14 +13,21 @@
     <h1>
       {{ page.title }}
     </h1>
-    <p class="text-muted font-small">
-      <i class="far fa-calendar-alt me-1" aria-hidden="true"></i>
+    <time class="text-muted" datetime="{{ page.date }}">
+      <i class="far fa-calendar-alt" aria-hidden="true"></i>
       {{ page.date|replace("-", "/") }}
-    </p>
+    </time>
     {{ page.body }}
   </article>
 
-  {{ macros.button_link(site["blog/index"].path|relative_to(page.path), "Back to the blog", type="btn-outline-light", icon="far fa-arrow-alt-circle-left", size="", external="false") }}
+  <hr>
+
+  <p class="text-right">
+    <a href="{{ site["blog/index"].path|relative_to(page.path) }}">
+      <i class="far fa-arrow-alt-circle-left" aria-hidden="true"></i>
+      Back to the blog
+    </a>
+  </p>
 
   <section class="comments flow">
     <p>

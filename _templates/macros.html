@@ -27,20 +27,20 @@
 
 
 {%- macro nav_link(item, page, site) -%}
-  {% set aria = "" %}
-  {% set class = "nav-link" %}
-  {% if page.id == item.id or page.parent == id|replace('/index', '') %}
-    {% set class = class + " active" %}
-    {% set aria = 'aria-current="page"' %}
-  {% endif %}
+  {%- set aria = "" -%}
+  {%- set class = "" -%}
+  {%- if page.id == item.id or page.parent == item.id|replace('/index', '') -%}
+    {%- set class = "active" -%}
+    {%- set aria = 'aria-current="page"' -%}
+  {%- endif -%}
   <a class="{{ class }}" {{ aria }} href="{{ site[item.id].path|relative_to(page.path) }}">{{ item.name }}</a>
 {%- endmacro -%}
 
 
 {%- macro social_icon(title, icon, url) -%}
-  {# The rel="me" attribute verifies for these profiles that I own this domain #}
+  <!-- The rel="me" attribute verifies for these profiles that I own this domain -->
   <a rel="me" aria-label="{{ title }}" href="{{ url }}" target="_blank">
-    <i class="{{ icon }} fa-lg me-2" title="{{ title }}" aria-hidden="true"></i>
+    <i class="{{ icon }} fa-lg" title="{{ title }}" aria-hidden="true"></i>
   </a>
 {%- endmacro -%}
 

@@ -71,127 +71,119 @@
 
 <body>
   <header>
-    {#-
-      Use same label for both navs:
-      https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Navigation_Role
-    #}
-    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main">
-      <div class="container align-middle">
-        <span class="navbar-brand">
-          {{ config.brand }}
-        </span>
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span><i class="fas fa-bars" aria-hidden="true"></i> Menu</span>
-        </button>
-        <div class="collapse navbar-collapse align-middle" id="navbarNav">
-          <ul class="navbar-nav ms-lg-auto flex-row flex-wrap">
-            {%- for item in config.navigation %}
-              <li class="nav-item col-6 col-lg-auto">
-                {{ macros.nav_link(item, page, site) }}
-              </li>
-            {%- endfor %}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="header-nav spread">
+      <a class="font-bold" href="/">
+        {{ config.brand }}
+      </a>
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+          {%- for item in config.navigation %}
+            <li>
+              {{ macros.nav_link(item, page, site) }}
+            </li>
+          {%- endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flow">
     {%- if page.banner_image is defined %}
       {%- if page.banner_position is defined %}
         {%- set banner_position = page.banner_position %}
       {%- else %}
         {%- set banner_position = "top center" %}
       {%- endif %}
-      <div class="banner-background" style="background-image: url({{ page.banner_image|relative_to(page.path) }}); background-position: {{ banner_position }};">
-        <div class="overlay">
+      <div class="banner"
+           style="background-image: url({{ page.banner_image|relative_to(page.path) }}); background-position: {{ banner_position }};" >
+        <div class="banner-overlay">
         </div>
-        <section class="container text-center banner">
+        <div class="banner-text flow">
           {%- if page.banner_title is defined %}
-            <h1 class="display-3">
+            <h1>
               {{ page.banner_title }}
             </h1>
           {%- endif %}
           {%- if page.banner_subtitle is defined %}
-            <p class="fs-4">
+            <p>
               {{ page.banner_subtitle }}
             </p>
           {%- endif %}
-        </section>
+        </div>
       </div>
     {%- endif %}
-  </header>
 
-  <main class="flow">
-    {%- block content %}
-      {{ page.body }}
-    {%- endblock %}
+    <div class="content flow">
+      {%- block content %}
+        {{ page.body }}
+      {%- endblock %}
+    </div>
   </main>
 
   <footer class="flow">
-    <nav class="footer-nav" aria-label="Main">
-      <ul class="nav">
-        {%- for item in config.navigation %}
-          <li class="nav-item">
-            {{ macros.nav_link(item, page, site) }}
-          </li>
-        {%- endfor %}
+    <nav aria-label="Main">
+      <ul class="list-inline" role="list">
+      {%- for item in config.navigation %}
+        <li>
+          {{ macros.nav_link(item, page, site) }}
+        </li>
+      {%- endfor %}
       </ul>
     </nav>
-    <ul class="list-inline online-profile-icons my-3">
-      <li class="list-inline-item">
+    <ul class="list-inline social-icons" role="list">
+      <li>
         {{ macros.social_icon("Mastodon", "fab fa-mastodon", "https://" + config.mastodon_server + "/@" + config.mastodon) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("LinkedIn", "fab fa-linkedin", "https://www.linkedin.com/in/" + config.linkedin) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("GitHub", "fab fa-github", "https://github.com/" + config.github) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("YouTube", "fab fa-youtube", "https://www.youtube.com/@" + config.youtube) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("ORCID", "ai ai-orcid", "https://orcid.org/" + config.orcid) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("ImpactStory", "ai ai-impactstory", "https://profiles.impactstory.org/u/" + config.orcid) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("figshare", "ai ai-figshare", config.figshare) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("ResearcherID", "ai ai-researcherid", "https://www.webofscience.com/wos/author/rid/" + config.researcherid) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("Currículo Lattes", "ai ai-lattes", "https://lattes.cnpq.br/" + config.lattes) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("ResearchGate", "ai ai-researchgate", config.researchgate) }}
       </li>
-      <li class="list-inline-item">
+      <li>
         {{ macros.social_icon("Google Scholar", "ai ai-google-scholar", config.googlescholar) }}
       </li>
     </ul>
-    <p>
-      Copyright &copy; {{ build.today.year }} {{ config.author }}.
-      {%- if config.license_notice is defined %}
-        {{ config.license_notice }}
-      {%- endif %}
-    </p>
-    <p>
-      Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
-      from source code at
-      <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>
-      (<a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>).
-    </p>
-    <p>
-      Found a typo/mistake?
-      <a target="_blank" href="https://github.com/{{ config.repository }}/edit/{{ config.repository_branch }}/{{ page.source }}">
-        Send a fix through GitHub
-        <i class="fa fa-code-branch" aria-hidden="true"></i>
-      </a>
-    </p>
+    <section class="footer-text flow">
+      <p>
+        Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
+        from source code at
+        <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>
+        (<a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>).
+        Found a typo/mistake?
+        <a target="_blank" href="https://github.com/{{ config.repository }}/edit/{{ config.repository_branch }}/{{ page.source }}">
+          Send a fix through GitHub
+          <i class="fa fa-code-branch" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p>
+        Copyright &copy; {{ build.today.year }} {{ config.author }}.
+        {%- if config.license_notice is defined %}
+          {{ config.license_notice }}
+        {%- endif %}
+      </p>
+    </section>
   </footer>
 
   <!-- KaTeX -->

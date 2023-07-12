@@ -1,8 +1,9 @@
-/* Typography and colors */
+/* Typography and colors for main elements */
 /*****************************************************************************/
 :root {
+  /* Colors */
   --color-dark: #0b141d;
-  --color-medium: #282c31;
+  --color-medium: #122130;
   --color-light: #f5f5f5;
   --color-primary: #459cff;
   --color-secondary: #b1d6ff;
@@ -10,24 +11,32 @@
   --color-info: #ffc107;
   --color-warning: #dc3545;
   --color-neon: #459cff88;
+  --color-primary-muted: #459cff33;
+
   /* Type scale calculated using https://utopia.fyi/type/calculator */
-  --size--1: clamp(0.90rem, calc(0.87rem + 0.17vw), 1.00rem);
+  --size--1: clamp(0.94rem, calc(0.90rem + 0.18vw), 1.04rem);
   --size-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
   --size-1: clamp(1.41rem, calc(1.35rem + 0.27vw), 1.56rem);
   --size-2: clamp(1.76rem, calc(1.69rem + 0.34vw), 1.95rem);
   --size-3: clamp(2.20rem, calc(2.11rem + 0.42vw), 2.44rem);
   --size-4: clamp(2.75rem, calc(2.64rem + 0.53vw), 3.05rem);
-  /*--bs-body-font-size: 1.1rem;*/
-  /*--bs-body-bg: #0b141d;*/
-  /*--bs-body-color: #fefefe;*/
-  /*--lu-light-blue: #61abff;*/
-  /*--lu-light-blue-dim: #61abff33;*/
-  /*--lu-blue: #459cff;*/
-  /*--lu-mid-blue: #1a5597;*/
-  /*--lu-darkish-blue: #122130;*/
-  /*--lu-dark-blue: #0b141d;*/
-  /*--lu-light-blue-gray: #c6e1ff;*/
-  /*--lu-neon-glow: #459cff88;*/
+  --size-5: clamp(3.43rem, calc(3.30rem + 0.66vw), 3.82rem);
+
+  /* Space scale calculated using https://utopia.fyi/space/calculator/ */
+  --space-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
+  --space-2xs: clamp(0.56rem, calc(0.54rem + 0.10vw), 0.63rem);
+  --space-xs: clamp(0.88rem, calc(0.85rem + 0.10vw), 0.94rem);
+  --space-s: clamp(1.13rem, calc(1.08rem + 0.21vw), 1.25rem);
+  --space-m: clamp(1.69rem, calc(1.63rem + 0.31vw), 1.88rem);
+  --space-l: clamp(2.25rem, calc(2.17rem + 0.42vw), 2.50rem);
+  --space-xl: clamp(3.38rem, calc(3.25rem + 0.63vw), 3.75rem);
+  --space-2xl: clamp(4.50rem, calc(4.33rem + 0.83vw), 5.00rem);
+  --space-3xl: clamp(6.75rem, calc(6.50rem + 1.25vw), 7.50rem);
+  --space-4xl: clamp(10.13rem, calc(9.75rem + 1.88vw), 11.25rem);
+
+  /* Spaces and other sizes */
+  --gutter: var(--space-s);
+  --block-border: 0.2em;
 }
 
 body {
@@ -60,6 +69,7 @@ h1 {
 
 h2 {
   font-size: var(--size-3);
+  border-bottom: 2px solid var(--color-primary-muted);
 }
 
 h3 {
@@ -70,8 +80,16 @@ ul,
 ol {
 }
 
+hr {
+  height: 2px;
+  color: var(--color-primary-muted);
+  opacity: 1;
+  height: 2px;
+}
+
 blockquote {
-  font-size: var(--size-1);
+  border-left: var(--block-border) solid var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 code {
@@ -96,8 +114,50 @@ figcaption {
 
 footer {
   color: var(--color-secondary);
-  font-size: var(--size--1);
-  box-shadow: 0 1rem 5rem var(--color-neon);
+  box-shadow: 0 1em 5em var(--color-neon);
+}
+
+footer nav a {
+  color: var(--color-secondary);
+}
+
+header {
+}
+
+header a {
+  color: var(--color-secondary);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+table tr:nth-child(2n) {
+  background-color: var(--color-medium);
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--color-secondary);
+  text-decoration: none;
+}
+
+time {
+  display: block;
 }
 
 
@@ -107,25 +167,50 @@ footer {
   margin-block-start: var(--flow-space, 1em);
 }
 
-:is(h1, h2, h3, blockquote) {
+:is(h1, h2, h3, blockquote, hr) {
   --flow-space: 1.5em;
+}
+
+hr {
+  --flow-space: 2em;
 }
 
 :is(ul, ol) {
   --flow-space: 0.5em;
 }
 
-/* Widths, sizes, spaces */
-/*****************************************************************************/
-main {
-  max-width: 65ch;
-  margin: auto;
-  padding: 0 1em;
+/* Flow elements inside blockquotes and callouts automatically */
+blockquote > * + *, .callout > * + * {
+  margin-block-start: 0.5em;
 }
 
+
+/* Widths, sizes, spaces for main tags */
+/*****************************************************************************/
 footer {
-  padding: 5em 1em;
-  margin-top: 10em;
+  padding: var(--space-xl) var(--gutter);
+  margin-top: var(--space-3xl);
+}
+
+footer > * + * {
+  --flow-space: 2em;
+}
+
+footer > .footer-text {
+  --flow-space: 5em;
+}
+
+.banner-text > * + * {
+  --flow-space: 1.5em;
+}
+
+.footer-text > * + * {
+  --flow-space: 0.5em;
+}
+
+blockquote {
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
 iframe {
@@ -138,7 +223,7 @@ code {
 }
 
 pre {
-  padding: 1em;
+  padding: var(--gutter);
   overflow: auto;
 }
 
@@ -148,19 +233,38 @@ pre > code {
 
 figcaption {
   margin-top: 0.5em;
+  line-height: 1.25;
+}
+
+table {
+  width: 100%;
+}
+
+table th, table td {
+  padding: 0.25em 0.5em;
+}
+
+nav a {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
 
 
 /* Blocks */
 /*****************************************************************************/
-.callout {
-  border-left: 0.35em solid var(--color-info);
-  background-color: var(--color-medium);
-  padding: 1em;
+.content {
+  margin-top: var(--space-xl);
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
-.callout > * + * {
-  margin-block-start: var(--flow-space, 0.5em);
+.callout {
+  border-left: var(--block-border) solid var(--color-info);
+  background-color: var(--color-medium);
+  padding: var(--gutter);
 }
 
 .callout-warning {
@@ -173,9 +277,66 @@ figcaption {
 
 .comments {
   text-align: center;
+  color: var(--color-secondary);
+  font-size: var(--size--1);
+  --flow-space: 2em;
+}
+
+.blockquote-footer {
+  text-align: right;
   font-size: var(--size--1);
   color: var(--color-secondary);
-  --flow-space: 2em;
+  --flow-space: 0.5em;
+}
+
+.blockquote-footer::before {
+  content: "— ";
+}
+
+.header-nav {
+  padding: var(--gutter);
+}
+
+.banner {
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+  width: 100%;
+}
+
+.banner-overlay {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: url("/images/noise.png");
+}
+
+.banner-text {
+  z-index: 3;
+  position: relative;
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-4xl);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  font-size: var(--size-1);
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: var(--size-5);
+}
+
+.footer-text {
+  font-size: var(--size--1);
+}
+
+.social-icons a {
+  color: var(--color-secondary);
+}
+
+.social-icons a:hover {
+  color: var(--color-primary);
 }
 
 
@@ -185,16 +346,37 @@ figcaption {
   color: var(--color-secondary);
 }
 
+.text-right {
+  text-align: right;
+}
+
 .font-small {
   font-size: var(--size--1);
 }
 
-
-/* Little details */
-/*****************************************************************************/
-h2 {
-  border-bottom: 2px solid #61abff33;
+.font-bold {
+  font-weight: bold;
 }
+
+.list-inline {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: var(--gutter);
+  padding-left: 0;
+  line-height: 1;
+}
+
+.spread {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter);
+  justify-content: space-between;
+}
+
+
 
 /* Styles for basic elements */
 /*****************************************************************************/
