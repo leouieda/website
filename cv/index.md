@@ -10,6 +10,8 @@ sections:
     - [community, Community Service]
     - [edu, Education]
     - [grants, Grants & Fellowships]
+    - [preprints, Preprints]
+    - [papers, Papers]
     - [media, Media & Outreach]
 ---
 
@@ -30,8 +32,8 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
   {%- for item in page[data] %}
   <div>
   <p>
-  <span class="text-muted font-small">{{ item.year }}</span>:
-  <strong>{{ item.title|trim }}.</strong>
+  <span class="text-muted font-small">{{ item.year }}.</span>
+  {{ item.title|trim }}.
   {%- if item.institution is defined %}
   <span class="text-muted">
   {{ item.institution|trim }}{%- if item.country is defined %}, {{ item.country }}{%- endif %}.
@@ -63,9 +65,24 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
     <a href="https://doi.org/{{ item.doi }}" target="_blank">{{ item.doi }}</a>
     </p>
   {%- endif %}
+  {%- if item.preprint is defined %}
+    <p><strong>Preprint (open access):</strong>
+    <a href="https://doi.org/{{ item.preprint }}" target="_blank">{{ item.preprint }}</a>
+    </p>
+  {%- endif %}
   {%- if item.github is defined %}
     <p><strong>GitHub:</strong>
     <a href="https://github.com/{{ item.github }}" target="_blank">{{ item.github }}</a>
+    </p>
+  {%- endif %}
+  {%- if item.data is defined %}
+    <p><strong>Data and code archive:</strong>
+    <a href="https://doi.org/{{ item.data }}" target="_blank">{{ item.data }}</a>
+    </p>
+  {%- endif %}
+  {%- if item.pdf is defined %}
+    <p><strong>PDF download:</strong>
+    <a href="{{ item.pdf }}" target="_blank">{{ item.pdf[7:] }}</a>
     </p>
   {%- endif %}
   {%- if item.slides is defined %}
@@ -87,6 +104,9 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
   {%- if item.award_amount is defined %}
     <p><strong>Amount:</strong> {{ item.award_amount }}</p>
   {%- endif %}
+  {%- if item.journal is defined %}
+    <p><strong>Journal:</strong> {{ item.journal }}</p>
+  {%- endif %}
   {%- if item.about is defined %}
     <p><strong>About:</strong> {{ item.about }}</p>
   {%- endif %}
@@ -97,6 +117,9 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
       <li>{{ role["date"] }}: <strong>{{ role["title"] }}</strong></li>
     {%- endfor %}
     </ul>
+  {%- endif %}
+  {%- if item.citation is defined %}
+    <p><strong>Citation:</strong> {{ item.citation}}</p>
   {%- endif %}
   {%- if item.abstract is defined %}
     <p><strong>Abstract:</strong> {{ item.abstract }}</p>

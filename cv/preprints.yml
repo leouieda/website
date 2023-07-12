@@ -1,0 +1,82 @@
+- title: Full vector inversion of magnetic microscopy images using Euler deconvolution as a priori information
+  year: 2023
+  authors: [Gelson, Me, Ricardo, Janine, Roger]
+  journal: EarthArXiv
+  doi: 10.31223/X5QD5Z
+  abstract: |
+    Very small magnetic particles in rocks and other materials can store
+    information about what the Earth’s magnetic field was like in the past. But
+    not all particles are good recorders of this magnetic information, and some
+    may have recorded different overlapping directions and strengths. So it is
+    important to measure each particle separately in order to identify and
+    separate the good recorders from the bad ones. A device called a "quantum
+    diamond microscope" is able to measure the magnetic field near the surface
+    of a rock sample at microscopic scale. We propose a new method for
+    processing data from this microscope that is able to find out the
+    individual magnetizations of large amounts of small magnetic particles
+    automatically. We created a computer program to execute the method, which
+    calculates the 3D position and magnetization of each particle using the
+    simple model of a magnetic dipole. We tested the method on simulated data,
+    using fake magnetic particles for which we know the correct magnetization
+    and position, and real data, both of which showed good results in most
+    cases. The method we created has the potential to enable the widespread
+    study of the magnetism of natural materials with more detail than before.
+  about: |
+    The idea for this work came from combining the group's expertise in applied
+    geophysics and paleomagnetism. This is the first contribution from Gelson
+    F. Souza Junior's PhD project.
+  citation: |
+    Souza Junior, G.F., Uieda, L., Trindade, R.I.F., Carmo, J., and Fu, R.
+    (2023). Full vector inversion of magnetic microscopy images using Euler
+    deconvolution as a priori information. EarthArXiv.
+    doi:10.31223/x5qd5z
+  bibtex: |
+    @article{SouzaJunior2023,
+      doi = {10.31223/x5qd5z},
+      url = {https://doi.org/10.31223/x5qd5z},
+      year = {2023},
+      month = jun,
+      publisher = {California Digital Library ({CDL})},
+      journal = {Earth{A}r{X}iv},
+      author = {Gelson Ferreira de Souza Junior and Leonardo Uieda and Ricardo Ferreira da Trindade and Janine Carmo and Roger Fu},
+      title = {Full vector inversion of magnetic microscopy images using Euler deconvolution as a priori information}
+    }
+
+- title: Giving software its due through community-driven review and publication
+  year: 2019
+  authors: [LBarba, JBazan, JBrown, RGuimera, MGymrek, AHanna, Lindsey, KHuff, DKatz, CMadan, KMoerman, KNiemeyer, JPoulson, PPrins, KRam, ARokem, Arfon, GThiruvathukal, KThyng, Me, BWilson, Yehudi]
+  journal: OSF Preprints
+  doi: 10.31219/osf.io/f4vx6
+  abstract: |
+    A recent editorial in Nature Methods, "Giving Software its Due",
+    described challenges related to the development of research software and
+    highlighted, in particular, the challenge of software publication and
+    citation. Here, we call attention to a system that we have developed that
+    enables community-driven software review, publication, and
+    citation: The Journal of Open Source Software (JOSS) is an open-source
+    project and an open access journal that provides a light-weight
+    publishing process for research software. Focused on and based in open
+    platforms and on a community of contributors, JOSS evidently satisfies a
+    pressing need, having already published more than 500 articles in
+    approximately three years of existence.
+  about: |
+    This correspondence was written by the editorial board of the
+    <a href="https://joss.theoj.org/">Journal of Open Source Software</a> in
+    response to the Nature Methods editorial
+    <a href="https://doi.org/10.1038/s41592-019-0350-x">"Giving Software its Due"</a>.
+    It was not accepted as a comment on the editorial so we published it as a
+    preprint instead.
+  citation: |
+    Barba, L. A., Bazán, J., Brown, J., Guimera, R. V., Gymrek, M., Hanna,
+    A., et al. (2019). Giving software its due through community-driven
+    review and publication. OSF Preprints. doi:10.31219/osf.io/f4vx6
+  bibtex: |
+    @article{Barba2019,
+      doi = {10.31219/osf.io/f4vx6},
+      url = {https://doi.org/10.31219/osf.io/f4vx6},
+      year = {2019},
+      month = apr,
+      publisher = {Center for Open Science},
+      author = {Lorena A. Barba and Juanjo Baz{\'{a}}n and Jed Brown and Roman Valls Guimera and Melissa Gymrek and Alex Hanna and Lindsey Justine Heagy and Kathryn D. Huff and Daniel S. Katz and Christopher R Madan and Kevin Mattheus Moerman and Kyle Evan Niemeyer and Jack L. Poulson and Pjotr Prins and Karthik Ram and Ariel Rokem and Arfon M. Smith and George K. Thiruvathukal and Kristen M. Thyng and Leonardo Uieda and Bruce E. Wilson and Yo Yehudi},
+      title = {Giving software its due through community-driven review and publication}
+    }
