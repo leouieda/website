@@ -160,6 +160,11 @@ time {
   display: block;
 }
 
+details {
+  font-size: var(--size--1);
+  color: var(--color-secondary);
+}
+
 
 /* Flow and rythm */
 /*****************************************************************************/
@@ -368,6 +373,10 @@ nav a {
   font-weight: bold;
 }
 
+.flow-small {
+  --flow-space: 0.5em;
+}
+
 .list-inline {
   align-items: center;
   display: flex;
@@ -386,6 +395,12 @@ nav a {
   justify-content: space-between;
 }
 
+
+/* Specific classes and IDs */
+/*****************************************************************************/
+.authors-me {
+  text-decoration: underline;
+}
 
 
 /* Styles for basic elements */

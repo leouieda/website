@@ -33,4 +33,83 @@ of my CV. This HTML version should be more accessible and easier to maintain.
 
 </div>
 
-{{ macros.cv_sections(page.sections, page, config.coauthors) }}
+{%- for data, title in page.sections %}
+  <h2 id="data">{{ title }}</h2>
+  {%- for item in page[data] %}
+  <div>
+  <p>
+  <span class="text-muted font-small">{{ item.year }}</span>:
+  <strong>{{ item.title|trim }}.</strong>
+  {%- if item.institution is defined %}
+  <span class="text-muted">
+  {{ item.institution|trim }}{%- if item.country is defined %}, {{ item.country }}{%- endif %}.
+  </span>
+  {%- endif %}
+  </p>
+  <details class="flow flow-small">
+  <summary>More information</summary>
+  {%- if item.department is defined %}
+    <p><strong>Department:</strong> {{ item.department }}</p>
+  {%- endif %}
+  {%- if item.funder is defined %}
+    <p><strong>Funding agency:</strong> {{ item.funder }}</p>
+  {%- endif %}
+  {%- if item.authors is defined %}
+    <p><strong>Authors:</strong>
+      {%- for author in item.authors %}
+        {%- if author == "Me" %}
+          <span class="authors-me">{{ config.coauthors[author] }}</span>
+        {%- else %}
+          {{ config.coauthors[author] }}
+        {%- endif %}
+        {%- if not loop.last -%},{%- endif -%}
+      {%- endfor %}
+    </p>
+  {%- endif %}
+  {%- if item.doi is defined %}
+    <p><strong>doi:</strong>
+    <a href="https://doi.org/{{ item.doi }}" target="_blank">{{ item.doi }}</a>
+    </p>
+  {%- endif %}
+  {%- if item.github is defined %}
+    <p><strong>GitHub:</strong>
+    <a href="https://github.com/{{ item.github }}" target="_blank">{{ item.github }}</a>
+    </p>
+  {%- endif %}
+  {%- if item.slides is defined %}
+    <p><strong>Slides:</strong>
+    <a href="{{ item.slides }}" target="_blank">{{ item.slides }}</a>
+    </p>
+  {%- endif %}
+  {%- if item.thesis is defined %}
+    <p><strong>Thesis:</strong> {{ item.thesis }}</p>
+  {%- endif %}
+  {%- if item.advisor is defined %}
+    <p><strong>Advisor:</strong> {{ item.advisor }}</p>
+  {%- endif %}
+  {%- if item.award is defined %}
+    <p><strong>Award:</strong>
+    <a href="{{ item.award_link }}" target="_blank">{{ item.award }}</a>
+    </p>
+  {%- endif %}
+  {%- if item.award_amount is defined %}
+    <p><strong>Amount:</strong> {{ item.award_amount }}</p>
+  {%- endif %}
+  {%- if item.about is defined %}
+    <p><strong>About:</strong> {{ item.about }}</p>
+  {%- endif %}
+  {%- if item.roles is defined %}
+    <p><strong>Roles:</strong>
+    <ul>
+    {%- for role in item.roles %}
+      <li>{{ role["date"] }}: <strong>{{ role["title"] }}</strong></li>
+    {%- endfor %}
+    </ul>
+  {%- endif %}
+  {%- if item.abstract is defined %}
+    <p><strong>Abstract:</strong> {{ item.abstract }}</p>
+  {%- endif %}
+  </details>
+  </div>
+  {%- endfor %}
+{%- endfor %}

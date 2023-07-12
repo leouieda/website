@@ -4,14 +4,12 @@
   country: UK
   year: 2019 - present
   about: |
-    <p>
     After 2.5 years in Hawaiʻi, I was offered a position to join the Geophysics group
     of the University of Liverpool's
     <a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/">Department
     of Earth, Ocean and Ecological Sciences</a>.
     This was an exciting opportunity to start my own research group and
     navigate the UK system, which was entirely new to me.
-    </p>
   roles:
     - date: 2020 - present
       title: Programme Director for Geophysics
@@ -22,31 +20,17 @@
     - date: 2020 - 2022
       title: Department committee for web presence (website, social media, etc.)
 
-- title: Affiliate Researcher
+- title: Visiting Researcher
   institution: University of Hawaiʻi at Mānoa
   department: Department of Earth Sciences - School of Ocean and Earth Science and Technology
   country: USA
-  year: 2018 - 2022
+  year: 2017 - 2019
   about: |
-    <p>
-    After my initial leave from UERJ was done, I decided to quit that job and
-    stay in Hawaiʻi a bit longer. I transitioned into this soft-money position
-    to be able to apply for grants that could sustain myself and the GMT
-    project beyond the funding we had available.
-    </p>
-
-- title: Visiting Research Scholar
-  institution: University of Hawaiʻi at Mānoa
-  department: Department of Earth Sciences - School of Ocean and Earth Science and Technology
-  country: USA
-  year: 2017 - 2018
-  about: |
-    <p>
     This was a mix of a sabbatical from UERJ and a postdoc position. I took a
     leave of absence for 1 year to work with the Generic Mapping Tools team to
     create PyGMT, a widely-used Python library for processing and visualizing
-    geophysical data.
-    </p>
+    geophysical data. After this first year was done, I quit my job at UERJ and
+    stayed in this role, which was funded for 2.5 years.
 
 - title: Assistant Professor
   institution: Universidade do Estado do Rio de Janeiro
@@ -54,13 +38,11 @@
   country: Brazil
   year: 2014 - 2018
   about: |
-    <p>
     This was my first academic position, which I got while still working on my
     PhD thesis.
     It was a great opportunity to gain some experience,
     particularly in teaching, which turned out to be the thing I like the most
     about the job.
-    </p>
   roles:
     - date: 2015
       title: Chair of the Election Committee for the deans of the University and the School of Geology

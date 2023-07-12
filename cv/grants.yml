@@ -1,5 +1,5 @@
 - title: "Towards individual-grain paleomagnetism: Translating regional-scale geophysics to the nascent field of magnetic microscopy"
-  institution: Royal Society (International Exchanges 2021 Round 3)
+  funder: Royal Society (International Exchanges 2021 Round 3)
   award: "IES\\R3\\213141"
   award_link: https://www.compgeolab.org/news/rsoc-mag-microscopy-2022.html
   award_amount: GBP 10,500
@@ -25,8 +25,8 @@
     scale paleomagnetism to explore the possibilities and help define future
     directions of research.
 
-- title: SSI Fellowship
-  institution: Software Sustainability Institute
+- title: Software Sustainability Institute Fellowship
+  funder: Software Sustainability Institute
   award: 2020 Fellow
   award_link: https://www.software.ac.uk/about/fellows/leonardo-uieda
   award_amount: GBP 3,000
@@ -45,7 +45,7 @@
     as part of my Fellowship.
 
 - title: A Sustainable Plan for the Future of the Generic Mapping Tools
-  institution: National Science Foundation (NSF-EAR)
+  funder: National Science Foundation (NSF-EAR)
   award: 1948602
   award_link: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1948602
   award_amount: USD 757,597
@@ -86,7 +86,7 @@
     developers.
 
 - title: "The EarthScope/GMT Analysis and Visualization Toolbox"
-  institution: National Science Foundation (NSF-EAR)
+  funder: National Science Foundation (NSF-EAR)
   award: 1829371
   award_link: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1829371
   award_amount: USD 174,975
@@ -126,7 +126,7 @@
     MATLAB, or Python environments.
 
 - title: "Projeto Qualitec (Nível Superior): Laboratório de Geofísica de Exploração"
-  institution: Universidade do Estado do Rio de Janeiro (UERJ)
+  funder: Universidade do Estado do Rio de Janeiro (UERJ)
   authors: [Me]
   year: 2014 - 2018
   doi: 10.6084/m9.figshare.22548751.v1
