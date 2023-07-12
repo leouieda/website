@@ -47,8 +47,6 @@ navigation:
     id: cv/index
   - name: Blog
     id: blog/index
-  - name: Publications
-    id: publications/index
   - name: Presentations
     id: presentations/index
   - name: Teaching
