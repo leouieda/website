@@ -6,13 +6,16 @@ banner_subtitle: My academic CV, with most things I ever did
 thumbnail: images/thumbnail/default.png
 template: base.html
 sections:
-    - [work, Professional Appointments]
-    - [community, Community Service]
+    - [work, Professional appointments]
+    - [community, Community service]
     - [edu, Education]
-    - [grants, Grants & Fellowships]
+    - [grants, Grants & fellowships]
     - [preprints, Preprints]
     - [papers, Papers]
-    - [media, Media & Outreach]
+    - [other-publications, Other publications]
+    - [proceedings, Conference proceedings]
+    - [media, Media & outreach]
+    - [supervision, Student supervision]
 ---
 
 {% import "macros.html" as macros %}
@@ -27,8 +30,21 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
 
 </div>
 
+<hr>
+<p id="navigation">
+<i class="fas fa-list" aria-hidden="true"></i>
+Sections:
+</p>
+<nav aria-label="Page">
+  <ul role="list" class="list-inline">
+  {%- for data, title in page.sections %}
+    <li><a href="#{{ data }}">{{ title }}</a></li>
+  {%- endfor %}
+  </ul>
+</nav>
+
 {%- for data, title in page.sections %}
-  <h2 id="data">{{ title }}</h2>
+  <h2 id="{{ data }}">{{ title }}</h2>
   {%- for item in page[data] %}
   <div>
   <p>
@@ -42,12 +58,6 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
   </p>
   <details class="flow flow-small">
   <summary>More information</summary>
-  {%- if item.department is defined %}
-    <p><strong>Department:</strong> {{ item.department }}</p>
-  {%- endif %}
-  {%- if item.funder is defined %}
-    <p><strong>Funding agency:</strong> {{ item.funder }}</p>
-  {%- endif %}
   {%- if item.authors is defined %}
     <p><strong>Authors:</strong>
       {%- for author in item.authors %}
@@ -90,11 +100,20 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
     <a href="{{ item.slides }}" target="_blank">{{ item.slides }}</a>
     </p>
   {%- endif %}
+  {%- if item.department is defined %}
+    <p><strong>Department:</strong> {{ item.department }}</p>
+  {%- endif %}
   {%- if item.thesis is defined %}
     <p><strong>Thesis:</strong> {{ item.thesis }}</p>
   {%- endif %}
+  {%- if item.funder is defined %}
+    <p><strong>Funding agency:</strong> {{ item.funder }}</p>
+  {%- endif %}
   {%- if item.advisor is defined %}
     <p><strong>Advisor:</strong> {{ item.advisor }}</p>
+  {%- endif %}
+  {%- if item.coadvisor is defined %}
+    <p><strong>Co-advisor(s):</strong> {{ item.coadvisor }}</p>
   {%- endif %}
   {%- if item.award is defined %}
     <p><strong>Award:</strong>
@@ -106,6 +125,9 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
   {%- endif %}
   {%- if item.journal is defined %}
     <p><strong>Journal:</strong> {{ item.journal }}</p>
+  {%- endif %}
+  {%- if item.conference is defined %}
+    <p><strong>Conference:</strong> {{ item.conference }}</p>
   {%- endif %}
   {%- if item.about is defined %}
     <p><strong>About:</strong> {{ item.about }}</p>
@@ -127,4 +149,10 @@ It's typeset in LaTeX and the source is available from the GitHub repository:
   </details>
   </div>
   {%- endfor %}
+  <p class="">
+    <a href="#navigation">
+      <i class="far fa-arrow-alt-circle-up" aria-hidden="true"></i>
+      Back to the top
+    </a>
+  </p>
 {%- endfor %}

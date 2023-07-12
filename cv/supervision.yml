@@ -1,0 +1,135 @@
+- title: PhD - India Uppal
+  thesis: "Improving estimates of Antarctic geothermal heat flow from geophysical data"
+  year: 2021 - present
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+  coadvisor: Vanderlei C. Oliveira Jr., Richard Holme
+
+- title: PhD - Gelson Ferreira de Souza Junior
+  thesis: "Micropaleomagnetismo"
+  year: 2021 - present
+  institution: Universidade de São Paulo
+  country: Brasil
+  funder: FAPESP
+  advisor: Leonardo Uieda
+  coadvisor: Ricardo I. F. Trindade
+
+- title: PhD -  Santiago Rubén Soler
+  thesis: "Modelos de Inversión Conjunta de Datos Gravimétricos y Función del Receptor a través del Uso de Tesseroides"
+  year: 2016 - 2021
+  doi: 10.6084/m9.figshare.16906909
+  institution: Universidad Nacional de San Juan
+  country: Argentina
+  funder: Consejo Nacional de Investigaciones Científicas y Técnicas
+  advisor: Mario E. Gimenez
+  coadvisor: Leonardo Uieda
+  abstract: |
+    En esta Tesis presentamos dos nuevas metodologías para el modelado y
+    procesamiento de datos gravimétricos. La primera consiste en un método para
+    el modelado directo de los campos gravitatorios generados por teseroides de
+    densidades que varían de manera continua en la dirección radial. Este
+    resuelve las integrales volumétricas involucradas mediante una Cuadratura de
+    Gauss-Legendre junto a un algoritmo de discretización adaptativa
+    bidimensional y un nuevo algoritmo de discretización basado en la densidad.
+    La segunda metodología consiste en las fuentes equivalentes potenciadas por
+    gradiente, las cuales permiten realizar interpolaciones y continuaciones
+    ascendentes de grandes cantidades de datos gravimétricos mediante la técnica
+    de fuentes equivalentes en conjunto con un algoritmo de potenciación del
+    gradiente. Ambas metodologías fueron aplicadas sobre datos reales: se utilizó
+    el nuevo modelo directo de teseroides para modelar la Cuenca Neuquina
+    (Argentina) con un perfil de densidad exponencial, y mediantes las fuentes
+    equivalentes potenciadas por el gradiente conseguimos grillar un conjunto de
+    más de 1.7 millones de datos de gravedad sobre la superficie de Australia.
+    Por último, presentamos un recorrido sobre el desarrollo del proyecto de
+    software de código abierto para Geofísica: Fatiando a Terra. Recorremos su
+    historia, describimos los paquetes que forman parte del proyecto y
+    enumeramos las mejores prácticas que se aplican para poder desarrollarlas.
+    Además intentamos evaluar qué impacto posee el proyecto sobre la comunidad
+    geocientista internacional, cómo los y las integrantes de la comunidad de
+    Fatiando a Terra interactúan entre sí y cómo lo hacen con las otras
+    comunidades de software científico.
+
+- title: MESci - Aidan Hernaman
+  thesis: "Estimating the accuracy of Moho depth estimates from gravity inversion"
+  year: 2020 - 2021
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Hamed R. H. Al-Salehi
+  thesis: "Integration of ground and satellite gravity data at continental scales"
+  year: 2021 - 2023
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Laura Nicholls
+  thesis: "An open-source Python implementation of the gravitational fields of ellipsoids"
+  year: 2021 - 2022
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Sarah Askevold
+  thesis: "An open-source Python implementation of k-nearest-neighbor interpolation"
+  year: 2021 - 2022
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Daniel P. Gilbert
+  thesis: "Automatic gridding of gravity and magnetic data"
+  year: 2020 - 2021
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Ali A. A. Alhazmi
+  thesis: "Ensemble learning methods for geophysical data interpolation"
+  year: 2020 - 2021
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Majed M. A. Abura
+  thesis: "An open-source implementation of spherical interpolation in Python"
+  year: 2020 - 2021
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Mustafa M. M. Alordowny
+  thesis: "An open-source implementation of gravity modeling with ellipsoidal prisms in Python"
+  year: 2020 - 2021
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Steven Heer
+  thesis: "Modelling of granitic intrusions associated with the Paraná-Etendeka Large Igneous Province using ground and satellite gravity data"
+  year: 2019 - 2020
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Charles Thomson
+  thesis: "Separating crustal gravity signals from the effects of the Moho"
+  year: 2019 - 2020
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Alexander Borges
+  thesis: "Refining the crustal thickness of Mars by optimizing the Bouguer correction"
+  year: 2019 - 2020
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: BSc - Lottie Cooper
+  thesis: "Depth estimation for large-scale anomalies in satellite gravity and gravity gradient data"
+  year: 2019 - 2020
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda

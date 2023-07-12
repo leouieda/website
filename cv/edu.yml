@@ -3,6 +3,7 @@
   country: Brazil
   thesis: Forward modeling and inversion of gravitational fields in spherical coordinates
   advisor: Valéria C. F. Barbosa
+  funder: CAPES
   github: leouieda/phd-thesis
   doi: 10.6084/m9.figshare.16883689
   year: 2011 - 2016
@@ -58,6 +59,7 @@
   country: Brazil
   thesis: Robust 3D gravity gradient inversion by planting anomalous densities
   advisor: Valéria C. F. Barbosa
+  funder: CAPES
   github: pinga-lab/paper-planting-densities
   doi: 10.6084/m9.figshare.16882300.v1
   year: 2010 - 2011

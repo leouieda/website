@@ -1,0 +1,271 @@
+- title: A Single Euler Solution Per Anomaly
+  year: 2014
+  doi: 10.3997/2214-4609.20140891
+  authors: [Figura, Val, Me, Bi, JB]
+  conference: 76th EAGE Conference and Exhibition
+  pdf: ../pdf/eage-euler-2014.pdf
+  abstract: |
+    We developed a method that drastically reduces the number of the source
+    location estimates in Euler deconvolution to only one per anomaly. We use
+    the analytical estimators of the Euler solutions. Our approach consists in
+    detecting automatically the regions of the anomaly producing consistent
+    estimates of the source horizontal coordinates. These regions form plateaus
+    in the horizontal coordinate estimates using any structural index (defining
+    the geometry of the sources). We identify these plateaus by fitting a
+    first-degree polynomial to the horizontal coordinate estimates with a
+    moving-window operator which spans these estimates. The places where the
+    angular-coefficients estimates are closest to zero identify the plateaus of
+    the horizontal coordinate estimates where consistent estimates of the
+    horizontal source positions are found. The sample means of these horizontal
+    coordinate estimates are the best estimates. The best structural index is
+    the one that yields the minimum correlation between the total-field anomaly
+    and the estimated base level over each plateau. By using the estimated
+    structural index for each plateau, we extract the depth estimates over the
+    corresponding plateau. The sample means of these estimates are the best
+    depth estimates. Test on real data over alkaline bodies, central Brazil,
+    retrieved sphere-like sources suggesting 3D bodies.
+
+- title: Modeling the Earth with Fatiando a Terra
+  year: 2013
+  openaccess: true
+  doi: 10.25080/Majora-8b375195-010
+  authors: [Me, Bi, Val]
+  conference: Proceedings of the 12th Python in Science Conference
+  github: leouieda/scipy2013
+  abstract: |
+    Geophysics is the science of using physical observations of the Earth to
+    infer its inner structure. Generally, this is done with a variety of
+    numerical modeling techniques and inverse problems. The development of new
+    algorithms usually involves copy and pasting of code, which leads to errors
+    and poor code reuse. Fatiando a Terra is a Python library that aims to
+    automate common tasks and unify the modeling pipeline inside of the Python
+    language. This allows users to replace the traditional shell scripting with
+    more versatile and powerful Python scripting. The library can also be used
+    as an API for developing stand-alone programs. Algorithms implemented in
+    Fatiando a Terra can be combined to build upon existing functionality. This
+    flexibility facilitates prototyping of new algorithms and quickly building
+    interactive teaching exercises. In the future, we plan to continuously
+    implement sample problems to help teach geophysics as well as classic and
+    state-of-the-art algorithms.
+
+- title: |
+    Use of the "shape-of-anomaly" data misfit in 3D inversion by planting
+    anomalous densities
+  year: 2012
+  doi: 10.1190/segam2012-0383.1
+  authors: [Me, Val]
+  conference: SEG Technical Program Expanded Abstracts
+  github: leouieda/seg2012
+  pdf: ../pdf/seg-2012.pdf
+  abstract: |
+    We present an improvement to the method of 3D gravity gradient inversion by
+    planting anomalous densities. This method estimates a density-contrast
+    distribution defined on a grid of right-rectangular prisms. Instead of
+    solving large equation systems, the method uses a systematic search
+    algorithm to grow the solution, one prism at a time, around user-specified
+    prisms called “seeds”. These seeds have known density contrasts and the
+    solution is constrained to be concentrated around the seeds as well as have
+    their density contrasts. Thus, prior geologic and geophysical information
+    are incorporated into the inverse problem through the seeds. However, this
+    leads to a strong dependence of the solution on the correct location,
+    density contrast, and number of seeds used. Our improvement to this method
+    consists of using the “shape-of-anomaly” data-misfit function in
+    conjunction with the l2-norm data-misfit function. The shape-of-anomaly
+    function measures the different in shape between the observed and predicted
+    data and is insensitive to differences in amplitude. Tests on synthetic and
+    real data show that the improved method not only has an increased
+    robustness with respect to the number of seeds and their locations, but
+    also provides a better fit of the observed data.
+
+- title: |
+    Iron ore interpretation using gravity-gradient inversions in the Carajás,
+    Brazil
+  year: 2012
+  doi: 10.1190/segam2012-0525.1
+  authors: [Dio, Me, YLi, Val, BragaVale, Angeli, Peres]
+  conference: SEG Technical Program Expanded Abstracts
+  pdf: ../pdf/seg-carlos-2012.pdf
+  abstract: |
+    We have interpreted the airborne gravity gradiometry data from Carajás
+    Mineral Province (CMP), Brazil, by using two different 3D inversion methods.
+    Both inversion methods parameterized the Earth's subsurface into prismatic
+    cells and estimate the 3D density-contrast distribution that retrieves an
+    image of geologic sources subject to an acceptable data misfit. The first
+    inversion method imposes smoothness on the solution by solving a linear
+    system that minimizes an depth weighted L2 model objective function of
+    density-contrast distribution. The second imposes compactness on the solution
+    by using an iterative growth algorithm solved by a systematic search
+    algorithm that accretes mass around user-specified prisms called “seeds”.
+    Using these two inversion methods, the interpretation of full tensor gravity
+    gradiometry data from an iron ore deposit in the area named N1 at CMP shows
+    the consistent geometry and the depth of iron orebody. To date, the maximum
+    depth of the iron orebody is assumed to be 200 m based on the maximum depth
+    attained by the deepest well drilled in this study area. However, both
+    inversion results exhibit a source whose maximum bottom depth is greater than
+    200 m. These results give rise two interpretations: i) the iron orebody may
+    present its depth to the bottom greater than the maximum depth of 200 m
+    attained by the deepest borehole; or ii) the iron orebody may be 200 m deep
+    and the rocks below may be jaspilite whose density is close to that of soft
+    hematite.
+
+- title: |
+    Optimal forward calculation method of the Marussi tensor due to a geologic
+    structure at GOCE height
+  year: 2011
+  authors: [Me, Everton, Carla, Eder]
+  conference: Proceedings of the 4th International GOCE User Workshop
+  pdf: ../pdf/goce-2011.pdf
+  github: leouieda/goce2011
+  abstract: |
+    The new observations of GOCE present a challenge to develop new calculation
+    methods that take into account the sphericity of the Earth. We address this
+    problem by using a discretization with a series of tesseroids. There is no
+    closed formula giving the gravitational fields of the tesseroid and
+    numerical integration methods must be used, such as the Gauss Legendre
+    Cubature (GLC). A problem that arises is that the computation times with
+    the tesseroids are high. Therefore, it is important to optimize the
+    computations while maintaining the desired accuracy. This optimization was
+    done using an adaptive computation scheme that consists of using a fixed
+    GLC order and recursively subdividing the tesseroids. We have obtained an
+    optimum ratio between the size of the tesseroid and its distance from the
+    computation point. Furthermore, we show that this size-to-distance ratio is
+    different for the gravitational attraction than for the gravity gradient
+    tensor.
+
+- title: 3D gravity inversion by planting anomalous densities
+  year: 2011
+  doi: 10.1190/sbgf2011-179
+  authors: [Me, Val]
+  conference: 12th International Congress of the Brazilian Geophysical Society
+  pdf: ../pdf/sbgf-2011.pdf
+  github: leouieda/sbgf2011
+  abstract: |
+    This paper presents a novel gravity inversion method for estimating a 3D
+    density-contrast distribution defined on a grid of prisms. Our method
+    consists of an iterative algorithm that does not require the solution of a
+    large equation system. Instead, the solution grows systematically around
+    user-specified prismatic elements called “seeds”. Each seed can have a
+    different density contrast, allowing the interpretation of multiple bodies
+    with different density contrasts and interfering gravitational effects. The
+    compactness of the solution around the seeds is imposed by means of a
+    regularizing function. The solution grows by the accretion of neighboring
+    prisms of the current solution. The prisms for the accretion are chosen by
+    systematically searching the set of current neighboring prisms. Therefore,
+    this approach allows that the columns of the Jacobian matrix be calculated
+    on demand. This is a known technique from computer science called “lazy
+    evaluation”, which greatly reduces the demand of computer memory and
+    processing time. Test on synthetic data and on real data collected over the
+    ultramafic Cana Brava complex, central Brazil, confirmed the ability of our
+    method in detecting sharp and compact bodies.
+
+- title: Robust 3D gravity gradient inversion by planting anomalous densities
+  year: 2011
+  doi: 10.1190/1.3628201
+  authors: [Me, Val]
+  conference: SEG Technical Program Expanded Abstracts
+  pdf: ../pdf/seg-2011.pdf
+  github: leouieda/seg2011
+  abstract: |
+    We present a new gravity gradient inversion method for estimating a 3D
+    density‐contrast distribution defined on a grid of prisms. Our method
+    consists of an iterative algorithm that does not require the solution of a
+    large equation system. Instead, the solution grows systematically around
+    user‐specified prismatic elements called “seeds”. Each seed can be assigned
+    a different density contrast, allowing the interpretation of multiple
+    bodies with different density contrasts and that produce interfering
+    gravitational effects. The compactness of the solution around the seeds is
+    imposed by means of a regularizing function. The solution grows by the
+    accretion of neighboring prisms of the current solution. The prisms for the
+    accretion are chosen by systematically searching the set of current
+    neighboring prisms. Therefore, this approach allows that the columns of the
+    Jacobian matrix be calculated on demand, which greatly reduces the demand
+    of computer memory and processing time. Tests on synthetic data and on real
+    data collected over an iron ore province of Quadrilátero Ferrífero,
+    southeastern Brazil, confirmed the ability of our method in detecting sharp
+    and compact bodies.
+
+- title: 3D gravity gradient inversion by planting density anomalies
+  year: 2011
+  doi: 10.3997/2214-4609.20149567
+  authors: [Me, Val]
+  conference: 73th EAGE Conference and Exhibition incorporating SPE EUROPEC
+  pdf: ../pdf/eage-2011.pdf
+  github: leouieda/eage2011
+  abstract: |
+    This paper presents a novel gravity inversion method for estimating a 3D
+    density-contrast distribution defined on a grid of prisms. Our method
+    consists of an iterative algorithm that does not require the solution of a
+    large equation system. Instead, the solution grows systematically around
+    user-specified prismatic elements called “seeds”. Each seed can have a
+    different density contrast, allowing the interpretation of multiple bodies
+    with different density contrasts and interfering gravitational effects. The
+    compactness of the solution around the seeds is imposed by means of a
+    regularizing function. The solution grows by the accretion of neighboring
+    prisms of the current solution. The prisms for the accretion are chosen by
+    systematically searching the set of current neighboring prisms. Therefore,
+    this approach allows that the columns of the Jacobian matrix be calculated
+    on demand. This is a known technique from computer science called “lazy
+    evaluation”, which greatly reduces the demand of computer memory and
+    processing time. Test on synthetic data and on real data collected over the
+    ultramafic Cana Brava complex, central Brazil, confirmed the ability of our
+    method in detecting sharp and compact bodies.
+
+- title: |
+    In-depth imaging of an iron orebody from Quadrilatero Ferrifero using 3D
+    gravity gradient inversion
+  year: 2011
+  doi: 10.1190/1.3628219
+  authors: [Dio, Me, Val, BragaVale, Gomes]
+  conference: SEG Technical Program Expanded Abstracts
+  pdf: ../pdf/seg-carlos-2011.pdf
+  abstract: |
+    We have interpreted the airborne gravity gradiometry data from Quadrilátero
+    Ferrífero, an iron ore province in southeastern Brazil. Aiming at
+    retrieving the geometry of the iron body, we have used a fast and novel
+    gravity inversion method for estimating a 3D density‐contrast distribution
+    defined on a grid of prisms. This inversion approach combines robust
+    data‐fitting with an iterative procedure that does not require the solution
+    of a large equation system. By using a systematic search algorithm, the
+    estimated mass grows around prismatic elements called “seeds”. The
+    interpreter specifies the locations and the associated density contrasts of
+    the seeds. Automatically, the inversion method fits the observations and
+    favors compact gravity sources closest to the seeds. To produce a more
+    robust data fitting than least‐squares fit, the inversion method minimizes
+    the L1—norm of the residuals. Hence, it allows the presence of large
+    residuals, so that outliers produced by non‐targeted bodies can be handled.
+    By using 126 seeds which were assigned density contrasts of 0.5 g.cm−3 and
+    whose locations were based on our knowledge about the QF area, we have
+    retrieved a continuous elongated iron body that fits the observed
+    components of the gravity gradient. Our inversion result agrees reasonably
+    with previous geophysical interpretations. In addition, our result honors
+    the borehole information about the iron body depth.
+
+- title: |
+    Inversão de Dados de Aerogradiometria Gravimétrica 3D-FTG Aplicada a
+    Exploração Mineral na Região do Quadrilátero Ferrífero
+  year: 2011
+  doi: 10.1190/sbgf2011-243
+  authors: [Dio, Val, Me, BragaVale]
+  conference: 12th International Congress of the Brazilian Geophysical Society
+  pdf: ../pdf/sbgf-carlos-2011.pdf
+  abstract: |
+    We have interpreted the airborne gravity gradiometry data from Quadrilátero
+    Ferrífero, an iron ore province in southeastern Brazil. Aiming at
+    retrieving the geometry of the iron body, we have used a fast and novel
+    gravity inversion method for estimating a 3D density-contrast distribution
+    defined on a grid of prisms. This inversion approach combines robust
+    data-fitting with an iterative procedure that does not require the solution
+    of a large equation system. By using a systematic search algorithm, the
+    estimated mass grows around prismatic elements called “seeds”. The
+    interpreter specifies the locations and the associated density contrasts of
+    the seeds. Automatically, the inversion method fits the observations and
+    favors compact gravity sources closest to the seeds. To produce a more
+    robust data fitting than least-squares fit, the inversion method minimizes
+    the L1–norm of the residuals. Hence, it allows the presence of large
+    residuals, so that outliers produced by non-targeted bodies can be handled.
+    By using 126 seeds which were assigned density contrasts of 0.5 g.cm-3 and
+    whose locations were based on our knowledge about the QF area, we have
+    retrieved a continuous elongated iron body that fits the observed
+    components of the gravity gradient. Our inversion result agrees reasonably
+    with previous geophysical interpretations. In addition, our result honors
+    the borehole information about the iron body depth.
