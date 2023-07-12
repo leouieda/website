@@ -71,7 +71,7 @@
 
 <body>
   <header>
-    <div class="header-nav spread">
+    <div class="header-nav spread wrapper">
       <a class="font-bold" href="/">
         {{ config.brand }}
       </a>
@@ -121,69 +121,71 @@
   </main>
 
   <footer class="flow">
-    <nav aria-label="Main">
-      <ul class="list-inline" role="list">
-      {%- for item in config.navigation %}
+    <div class="wrapper flow">
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+        {%- for item in config.navigation %}
+          <li>
+            {{ macros.nav_link(item, page, site) }}
+          </li>
+        {%- endfor %}
+        </ul>
+      </nav>
+      <ul class="list-inline social-icons" role="list">
         <li>
-          {{ macros.nav_link(item, page, site) }}
+          {{ macros.social_icon("Mastodon", "fab fa-mastodon", "https://" + config.mastodon_server + "/@" + config.mastodon) }}
         </li>
-      {%- endfor %}
+        <li>
+          {{ macros.social_icon("LinkedIn", "fab fa-linkedin", "https://www.linkedin.com/in/" + config.linkedin) }}
+        </li>
+        <li>
+          {{ macros.social_icon("GitHub", "fab fa-github", "https://github.com/" + config.github) }}
+        </li>
+        <li>
+          {{ macros.social_icon("YouTube", "fab fa-youtube", "https://www.youtube.com/@" + config.youtube) }}
+        </li>
+        <li>
+          {{ macros.social_icon("ORCID", "ai ai-orcid", "https://orcid.org/" + config.orcid) }}
+        </li>
+        <li>
+          {{ macros.social_icon("ImpactStory", "ai ai-impactstory", "https://profiles.impactstory.org/u/" + config.orcid) }}
+        </li>
+        <li>
+          {{ macros.social_icon("figshare", "ai ai-figshare", config.figshare) }}
+        </li>
+        <li>
+          {{ macros.social_icon("ResearcherID", "ai ai-researcherid", "https://www.webofscience.com/wos/author/rid/" + config.researcherid) }}
+        </li>
+        <li>
+          {{ macros.social_icon("Currículo Lattes", "ai ai-lattes", "https://lattes.cnpq.br/" + config.lattes) }}
+        </li>
+        <li>
+          {{ macros.social_icon("ResearchGate", "ai ai-researchgate", config.researchgate) }}
+        </li>
+        <li>
+          {{ macros.social_icon("Google Scholar", "ai ai-google-scholar", config.googlescholar) }}
+        </li>
       </ul>
-    </nav>
-    <ul class="list-inline social-icons" role="list">
-      <li>
-        {{ macros.social_icon("Mastodon", "fab fa-mastodon", "https://" + config.mastodon_server + "/@" + config.mastodon) }}
-      </li>
-      <li>
-        {{ macros.social_icon("LinkedIn", "fab fa-linkedin", "https://www.linkedin.com/in/" + config.linkedin) }}
-      </li>
-      <li>
-        {{ macros.social_icon("GitHub", "fab fa-github", "https://github.com/" + config.github) }}
-      </li>
-      <li>
-        {{ macros.social_icon("YouTube", "fab fa-youtube", "https://www.youtube.com/@" + config.youtube) }}
-      </li>
-      <li>
-        {{ macros.social_icon("ORCID", "ai ai-orcid", "https://orcid.org/" + config.orcid) }}
-      </li>
-      <li>
-        {{ macros.social_icon("ImpactStory", "ai ai-impactstory", "https://profiles.impactstory.org/u/" + config.orcid) }}
-      </li>
-      <li>
-        {{ macros.social_icon("figshare", "ai ai-figshare", config.figshare) }}
-      </li>
-      <li>
-        {{ macros.social_icon("ResearcherID", "ai ai-researcherid", "https://www.webofscience.com/wos/author/rid/" + config.researcherid) }}
-      </li>
-      <li>
-        {{ macros.social_icon("Currículo Lattes", "ai ai-lattes", "https://lattes.cnpq.br/" + config.lattes) }}
-      </li>
-      <li>
-        {{ macros.social_icon("ResearchGate", "ai ai-researchgate", config.researchgate) }}
-      </li>
-      <li>
-        {{ macros.social_icon("Google Scholar", "ai ai-google-scholar", config.googlescholar) }}
-      </li>
-    </ul>
-    <section class="footer-text flow">
-      <p>
-        Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
-        from source code at
-        <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>
-        (<a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>).
-        Found a typo/mistake?
-        <a target="_blank" href="https://github.com/{{ config.repository }}/edit/{{ config.repository_branch }}/{{ page.source }}">
-          Send a fix through GitHub
-          <i class="fa fa-code-branch" aria-hidden="true"></i>
-        </a>
-      </p>
-      <p>
-        Copyright &copy; {{ build.today.year }} {{ config.author }}.
-        {%- if config.license_notice is defined %}
-          {{ config.license_notice }}
-        {%- endif %}
-      </p>
-    </section>
+      <section class="footer-text flow">
+        <p>
+          Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
+          from source code at
+          <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>
+          (<a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>).
+          Found a typo/mistake?
+          <a target="_blank" href="https://github.com/{{ config.repository }}/edit/{{ config.repository_branch }}/{{ page.source }}">
+            Send a fix through GitHub
+            <i class="fa fa-code-branch" aria-hidden="true"></i>
+          </a>
+        </p>
+        <p>
+          Copyright &copy; {{ build.today.year }} {{ config.author }}.
+          {%- if config.license_notice is defined %}
+            {{ config.license_notice }}
+          {%- endif %}
+        </p>
+      </section>
+    </div>
   </footer>
 
   <!-- KaTeX -->
