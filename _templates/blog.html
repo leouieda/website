@@ -9,27 +9,26 @@
   {% else %}
     {% set extra_classes = "" %}
   {% endif %}
-  <article class="mb-4 blog {{ extra_classes }}">
+  <article class="flow {{ extra_classes }}">
     <h1>
       {{ page.title }}
     </h1>
-    <p class="text-muted mb-4">
+    <p class="text-muted font-small">
       <i class="far fa-calendar-alt me-1" aria-hidden="true"></i>
       {{ page.date|replace("-", "/") }}
     </p>
     {{ page.body }}
   </article>
-  <div class="mt-5">
-    {{ macros.button_link(site["blog/index"].path|relative_to(page.path), "Back to the blog", type="btn-outline-light", icon="far fa-arrow-alt-circle-left", size="", external="false") }}
-  </div>
-  <section class="comments mt-5">
-    <p class="fs-6 mb-1 text-center">
+
+  {{ macros.button_link(site["blog/index"].path|relative_to(page.path), "Back to the blog", type="btn-outline-light", icon="far fa-arrow-alt-circle-left", size="", external="false") }}
+
+  <section class="comments flow">
+    <p>
       <strong>Questions or comments? Leave them below!</strong>
-    </p>
-    <p class="fs-6 mb-5 text-center">
+      <br>
       Anyone taking part in discussions must follow the
       <a href="{{ config.coc }}" target="_blank">Code of Conduct</a>.
-    <p>
+    </p>
     <script src="https://giscus.app/client.js"
         data-repo="leouieda/website"
         data-repo-id="MDEwOlJlcG9zaXRvcnkxNTM0MTczNg=="
