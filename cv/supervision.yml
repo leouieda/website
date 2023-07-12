@@ -50,16 +50,16 @@
     Fatiando a Terra interactúan entre sí y cómo lo hacen con las otras
     comunidades de software científico.
 
-- title: MESci - Aidan Hernaman
-  thesis: "Estimating the accuracy of Moho depth estimates from gravity inversion"
-  year: 2020 - 2021
+- title: BSc - Hamed R. H. Al-Salehi
+  thesis: "Integration of ground and satellite gravity data at continental scales"
+  year: 2021 - 2023
   institution: University of Liverpool
   country: UK
   advisor: Leonardo Uieda
 
-- title: BSc - Hamed R. H. Al-Salehi
-  thesis: "Integration of ground and satellite gravity data at continental scales"
-  year: 2021 - 2023
+- title: BSc - Junpeng Liu
+  thesis: "The CO2 emission cause by football spectators in the city of Liverpool"
+  year: 2022 - 2023
   institution: University of Liverpool
   country: UK
   advisor: Leonardo Uieda
@@ -74,6 +74,13 @@
 - title: BSc - Sarah Askevold
   thesis: "An open-source Python implementation of k-nearest-neighbor interpolation"
   year: 2021 - 2022
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: MESci - Aidan Hernaman
+  thesis: "Estimating the accuracy of Moho depth estimates from gravity inversion"
+  year: 2020 - 2021
   institution: University of Liverpool
   country: UK
   advisor: Leonardo Uieda
