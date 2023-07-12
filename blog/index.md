@@ -3,7 +3,7 @@ title: Blog
 banner_image: images/mauna-loa.jpg
 banner_position: center
 banner_title: Blog
-banner_subtitle: Random thoughts, opinions, updates, and tutorials.
+banner_subtitle: Random thoughts, opinions, updates, and tutorials
 template: blog-index.html
 ---
 

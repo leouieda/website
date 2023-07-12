@@ -5,14 +5,15 @@
 {% import "macros.html" as macros %}
 
 {%- block content %}
+  <ul class="flow" role="list">
   {%- for item in site["blog/index"]["siblings"]|sort(attribute="date", reverse=True) %}
-    <h2 class="fs-4 mb-2 mt-5">
-      <a href="{{ item.path|relative_to(page.path) }}">
-        {{ item.title }} <i class="far fa-arrow-alt-circle-right fa-xs" aria-hidden="true"></i>
+    <li>
+      <a class="font-large" href="{{ item.path|relative_to(page.path) }}">
+        {{ item.title }}
       </a>
-    </h2>
-    <p class="text-muted">
-      {{ item.body|striptags|trim|truncate(200) }}
-    </p>
+      <br>
+      <p class="font-small text-muted">{{ item.body|striptags|trim|truncate(200) }}</p>
+    </li>
   {%- endfor %}
+  </ul>
 {%- endblock %}

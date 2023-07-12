@@ -360,6 +360,10 @@ nav a {
   font-size: var(--size--1);
 }
 
+.font-large {
+  font-size: var(--size-1);
+}
+
 .font-bold {
   font-weight: bold;
 }
