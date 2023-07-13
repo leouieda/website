@@ -16,6 +16,7 @@ sections:
     - [other-publications, Other publications]
     - [proceedings, Conference proceedings]
     - [media, Media & outreach]
+    - [awards, Awards & honors]
     - [supervision-phd, PhD students]
     - [supervision-msc, MSc students]
     - [supervision-bsc, BSc students]
