@@ -9,17 +9,6 @@
 {%- endmacro -%}
 
 
-{%- macro nav_link(item, page, site) -%}
-  {%- set aria = "" -%}
-  {%- set class = "" -%}
-  {%- if page.id == item.id or page.parent == item.id|replace('/index', '') -%}
-    {%- set class = "active" -%}
-    {%- set aria = 'aria-current="page"' -%}
-  {%- endif -%}
-  <a class="{{ class }}" {{ aria }} href="{{ site[item.id].path|relative_to(page.path) }}">{{ item.name }}</a>
-{%- endmacro -%}
-
-
 {%- macro social_icon(title, icon, url) -%}
   <!-- The rel="me" attribute verifies for these profiles that I own this domain -->
   <a rel="me" aria-label="{{ title }}" href="{{ url }}" target="_blank">
@@ -37,6 +26,22 @@
     {%- endif %}
     {%- if not loop.last -%},{%- endif -%}
   {%- endfor %}
+{%- endmacro -%}
+
+
+{%- macro nav_link(item, page, site) -%}
+  {%- set aria = "" -%}
+  {%- set class = "" -%}
+  {%- if page.id == item.id or page.parent == item.id|replace('/index', '') -%}
+    {%- set class = "active" -%}
+    {%- set aria = 'aria-current="page"' -%}
+  {%- endif -%}
+  <a class="{{ class }}" {{ aria }} href="{{ site[item.id].path|relative_to(page.path) }}">{{ item.name }}</a>
+{%- endmacro -%}
+
+
+{%- macro page_link(id, page, site) -%}
+  <a href="{{ site[id].path|relative_to(page.path) }}">{{ site[id].title }}</a>
 {%- endmacro -%}
 
 
@@ -78,137 +83,4 @@
       <i class="{{ icon }} ms-1" aria-hidden="true"></i>
     {%- endif %}
   </a>
-{%- endmacro -%}
-
-
-{%- macro publication_list(publications, author_names) -%}
-{%- for paper in publications %}
-  {%- if paper.doi is defined %}
-    {%- set doi = paper.doi %}
-  {%- elif paper.preprint %}
-    {%- set doi = paper.preprint %}
-  {%- endif %}
-  {%- if doi is defined %}
-    {%- set anchor = doi|trim|lower|replace(".", "")|replace("/", "") %}
-  {%- elif paper.github is defined %}
-    {%- set anchor = paper.github|trim|lower|replace(".", "")|replace("/", "-") %}
-  {%- else  %}
-    {%- set anchor = paper.year ~ loop.index %}
-  {%- endif %}
-  {%- if paper.openaccess is defined and paper.openaccess %}
-    {%- set pdf = "https://doi.org/" ~ paper.doi %}
-  {%- elif paper.preprint is defined %}
-    {%- set pdf = "https://doi.org/" ~ paper.preprint %}
-  {%- elif paper.pdf is defined %}
-    {%- set pdf = paper.pdf %}
-  {%- endif %}
-  {%- set id = anchor %}
-  <div class="mb-2">
-    <h3 class="fs-5 mb-1" id="{{ anchor }}">
-      <a href="#{{ anchor }}">
-        {{ paper.title|trim }}
-        <i class="anchor fas fa-link fa-xs" aria-hidden="true"></i>
-      </a>
-    </h3>
-    <p class="mb-1 text-muted fs-6">
-      {{ paper.year }}.
-      {%- for author in paper.authors %}
-        {%- if author == "Me" %}
-          <strong>{{ author_names[author] }}</strong>
-        {%- else %}
-          {{ author_names[author] }}
-        {%- endif %}
-        {%- if not loop.last -%},{%- endif -%}
-      {%- endfor %}
-    </p>
-    {%- if paper.conference is defined -%}
-      <p class="mb-1 text-muted fs-6">
-        {{ paper.conference }}
-      </p>
-    {%- endif -%}
-    {%- if doi is defined -%}
-      <p class="mb-1 text-muted fs-6">
-        doi:<a target="_blank" href="https://doi.org/{{ doi }}">{{ doi }}</a>
-      </p>
-    {%- endif -%}
-    <button
-        class="hidden-section-toggle btn btn-dark btn-sm mt-1 collapsed"
-        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
-        aria-expanded="false" aria-controls="collapse-{{ id }}">
-      <i class="hidden-section-toggle-icon fa fa-chevron-circle-down me-1" aria-hidden="true"></i>
-      More information
-    </button>
-    <div id="collapse-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
-      <div class="mb-4">
-        {%- if pdf is defined %}
-          {{ button_link(pdf, "Free PDF", type="btn-light", icon="fa fa-file-pdf") }}
-        {%- endif %}
-        {%- if paper.slides is defined %}
-          {{ button_link(paper.slides, "Slides", type="btn-light", icon="fa fa-desktop") }}
-        {%- endif %}
-        {%- if paper.poster is defined %}
-          {{ button_link(paper.poster, "Poster", type="btn-light", icon="fa fa-image") }}
-        {%- endif %}
-        {%- if paper.recording is defined %}
-          {{ button_link("https://www.youtube.com/watch?v=" ~ paper.recording, "Recording", type="btn-light", icon="fab fa-youtube") }}
-        {%- endif %}
-        {%- if paper.data is defined %}
-          {{ button_link("https://doi.org/" ~ paper.data, "Open data", type="btn-light", icon="fa fa-chart-bar") }}
-        {%- endif %}
-        {%- if paper.github is defined %}
-          {{ button_link("https://github.com/" ~ paper.github, "Source code", type="btn-light", icon="fab fa-github") }}
-        {%- endif %}
-      </div>
-      {%- if paper.note is defined %}
-        <div class="callout callout-note mb-4">
-          <p>
-            <i class="fas fa-info-circle" aria-hidden="true"></i>
-            <strong>Note:</strong>
-            {{ paper.note|trim }}
-          </p>
-        </div>
-      {%- endif %}
-      {%- if paper.poster_embed is defined %}
-        <h4 class="fs-4">Poster</h4>
-        <div class="mb-3">
-        {{ paper.poster_embed|trim }}
-        </div>
-      {%- endif %}
-      {%- if paper.about is defined %}
-        <h4 class="fs-4">About</h4>
-        <p>{{ paper.about|trim }}</p>
-      {%- endif %}
-      {%- if paper.abstract is defined %}
-        <h4 class="fs-4">Abstract</h4>
-        <p>{{ paper.abstract|trim }}</p>
-      {%- endif %}
-      {%- if doi is defined %}
-        <h4 class="fs-4 mb-4">Citations</h4>
-        <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
-      {%- endif %}
-    </div>
-  </div>
-{%- endfor %}
-{%- endmacro -%}
-
-
-{%- macro publication_sections(sections, page, author_names) -%}
-{%- for data, title in sections %}
-  {%- if loop.first %}
-    {% set toggle_class = "" %}
-    {% set collapse_class = "show" %}
-  {%- else %}
-    {% set toggle_class = "collapsed" %}
-    {% set collapse_class = "" %}
-  {%- endif %}
-  <h2 class="hidden-section-title">
-    <a class="hidden-section-toggle {{ toggle_class }}" data-bs-toggle="collapse" href="#collapse-{{ data }}" aria-controls="collapse-{{ data }}" aria-expanded="false" role="button">
-    <i class="hidden-section-toggle-icon fas fa-chevron-down text-muted me-1" aria-hidden="true"></i>
-    {{ title }}
-    </a>
-  </h2>
-  <div id="collapse-{{ data }}" class="hidden-section collapse {{ collapse_class }}">
-  {{ publication_list(page[data], author_names) }}
-  </div>
-{%- endfor %}
 {%- endmacro -%}
