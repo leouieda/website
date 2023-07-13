@@ -1,0 +1,94 @@
+- title: "Step-by-step NMO correction"
+  year: 2017
+  doi: 10.1190/tle36020179.1
+  openaccess: true
+  authors: [Me]
+  journal: The Leading Edge
+  github: pinga-lab/nmo-tutorial
+  abstract: |
+    Open any text book about seismic data processing and you will inevitably
+    find a section about the normal moveout (NMO) correction. When applied to
+    a common midpoint (CMP) section, the correction is supposed to turn the
+    hyperbola associated with a reflection into a straight horizontal line.
+    What most text books won't tell you is <strong>how, exactly, do you apply
+    this equation to the data?</strong>
+    <br class="mb-3">
+    Read on and I'll explain step-by-step how the algorithm for NMO
+    correction from Yilmaz (2001) works and how to implement it in Python.
+    The accompanying Jupyter notebook contains the full source code, with
+    documentation and tests for each function.
+    <img src="/images/nmo-tutorial.png" class="mt-4" alt="Example figure from the paper showing the application of the NMO code to a synthetic seismic section.">
+  about: |
+    This is a part of The Leading Edge
+    <a href="https://doi.org/10.1190/tle35020190.1">geophysics tutorials series</a>.
+    All tutorials are open-access and include open-source code examples.
+    The text is also included on the <a href="http://wiki.seg.org/wiki/Step-by-step_NMO_correction">SEG Wiki</a>!
+    The code and idea for this tutorial came from my Introduction to
+    Geophysics courses at UERJ. I came across the problem of implementing NMO
+    correction while preparing my lecture and practical exercises on this
+    topic. This is a clear example of how learning happens both ways in a
+    classroom.
+  citation: |
+    Uieda, L. (2017), Step-by-step NMO correction, The Leading Edge, 36(2),
+    179-180, doi:10.1190/tle36020179.1
+  bibtex: |
+    @article{Uieda2017,
+      doi = {10.1190/tle36020179.1},
+      url = {https://doi.org/10.1190/tle36020179.1},
+      year = {2017},
+      month = feb,
+      publisher = {Society of Exploration Geophysicists},
+      volume = {36},
+      number = {2},
+      pages = {179--180},
+      author = {Leonardo Uieda},
+      title = {Step-by-step {NMO} correction},
+      journal = {The Leading Edge}
+    }
+
+- title: " Geophysical tutorial: Euler deconvolution of potential-field data"
+  year: 2014
+  openaccess: true
+  doi: 10.1190/tle33040448.1
+  data: 10.6084/m9.figshare.923450
+  github: pinga-lab/paper-tle-euler-tutorial
+  authors: [Me, Bi, Val]
+  journal: The Leading Edge
+  abstract: |
+    In this tutorial we'll talk about a widely used method of interpretation
+    for potential-field data called Euler deconvolution. Our goal is to
+    demonstrate its usefulness and, most importantly, call attention to some
+    pitfalls encountered in the interpretation of the results. The code and
+    synthetic data required to reproduce our results and figures can be found
+    in the accompanying IPython notebooks. The notebooks also expand
+    the analysis presented here. We encourage you to download the data and
+    try it on your software of choice. For this tutorial we'll use the
+    implementation in the open-source Python package Fatiando a Terra.
+  about: |
+    This article is part of the
+    <a href="http://wiki.seg.org/wiki/Geophysical_tutorials">Geophysical Tutorials</a>
+    series in The Leading Edge,
+    started by <a href="http://agilegeoscience.com">Matt Hall</a>.
+    All tutorials are open-access and include open-source code examples.
+    The <a href="https://doi.org/10.1190/tle35020190.1">February 2016 tutorial</a>
+    by Matt provides an introduction to the series.
+    The tutorial is also available at the
+    <a href="http://wiki.seg.org/wiki/Euler_deconvolution_of_potential_field_data_%28tutorial%29">SEG wiki</a>
+    where it can edited and improved.
+  citation: |
+    Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2014), Geophysical
+    tutorial: Euler deconvolution of potential-field data, The Leading Edge,
+    33(4), 448-450, doi:10.1190/tle33040448.1
+  bibtex: |
+    @article{uieda2014,
+      title = {Geophysical tutorial: {Euler} deconvolution of potential-field data},
+      volume = {33},
+      issn = {1070-485X, 1938-3789},
+      doi = {10.1190/tle33040448.1},
+      number = {4},
+      journal = {The Leading Edge},
+      author = {Uieda, Leonardo and Oliveira Jr., Vanderlei C. and Barbosa, Valéria C. F.},
+      month = apr,
+      year = {2014},
+      pages = {448--450}
+    }

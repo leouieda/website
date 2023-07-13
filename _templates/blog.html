@@ -1,50 +1,19 @@
-{# Template for a blog post #}
+{# Template for the blog index page. Cannot be done in the Markdown file
+   because Nene isn't done creating all posts when it renders that template. #}
 {% extends "base.html" %}
 
 {% import "macros.html" as macros %}
 
 {%- block content %}
-  {% if page.article_class is defined %}
-    {% set extra_classes = page.article_class %}
-  {% else %}
-    {% set extra_classes = "" %}
-  {% endif %}
-  <article class="mb-4 blog {{ extra_classes }}">
-    <h1>
-      {{ page.title }}
-    </h1>
-    <p class="text-muted mb-4">
-      <i class="far fa-calendar-alt me-1" aria-hidden="true"></i>
-      {{ page.date|replace("-", "/") }}
-    </p>
-    {{ page.body }}
-  </article>
-  <div class="mt-5">
-    {{ macros.button_link(site["blog/index"].path|relative_to(page.path), "Back to the blog", type="btn-outline-light", icon="far fa-arrow-alt-circle-left", size="", external="false") }}
-  </div>
-  <section class="comments mt-5">
-    <p class="fs-6 mb-1 text-center">
-      <strong>Questions or comments? Leave them below!</strong>
-    </p>
-    <p class="fs-6 mb-5 text-center">
-      Anyone taking part in discussions must follow the
-      <a href="{{ config.coc }}" target="_blank">Code of Conduct</a>.
-    <p>
-    <script src="https://giscus.app/client.js"
-        data-repo="leouieda/website"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkxNTM0MTczNg=="
-        data-category="Comments"
-        data-category-id="DIC_kwDOAOoYqM4CVhZh"
-        data-mapping="og:title"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="dark_protanopia"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-    </script>
-  </section>
+  <ul class="flow" role="list">
+  {%- for item in site["blog/index"]["siblings"]|sort(attribute="date", reverse=True) %}
+    <li>
+      <a class="font-large" href="{{ item.path|relative_to(page.path) }}">
+        {{ item.title }}
+      </a>
+      <br>
+      <p class="font-small text-muted">{{ item.body|striptags|trim|truncate(200) }}</p>
+    </li>
+  {%- endfor %}
+  </ul>
 {%- endblock %}

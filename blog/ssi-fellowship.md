@@ -49,12 +49,11 @@ YouTube made this really easy to do: the text is automatically synced with the
 video (the joys of [tensorflow](https://www.tensorflow.org), probably), so you
 don't have to add time stamps or anything.
 
-<button class="btn btn-primary my-2" type="button"
-        data-bs-toggle="collapse" data-bs-target="#collapse-transcript"
-        aria-expanded="false" aria-controls="collapse-transcript">
-  Read the transcript <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
-</button>
-<div id="collapse-transcript" class="collapse overflow-hidden">
+**Keep posted for more information on the fellowship activities and
+[reach out](/about) if you want to get involved!**
+
+Application video transcript:
+
 <blockquote>
 
 Hello! My name is Leonardo Uieda. I'm a Lecturer of Geophysics at the
@@ -143,7 +142,3 @@ software community. I have much to learn from everyone and would love to work
 together to make UK science the best it can be.
 
 </blockquote>
-</div>
-
-**Keep posted for more information on the fellowship activities and
-[reach out](/about) if you want to get involved!**

@@ -1,9 +1,6 @@
 ---
 title: Podcasts in my playlist (2018 edition)
 date: 2018-03-09
-thumbnail: podcasts-2018.png
-layout: post
-tags: podcast
 ---
 
 Last year, I posted my [podcast playlist](/blog/podcasts-2016.html) in response to

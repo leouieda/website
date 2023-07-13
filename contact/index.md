@@ -1,20 +1,17 @@
 ---
 title: Contact
-banner_image: images/merseyside-panchromatic.jpg
+banner_image: images/amazon-delta.jpg
 banner_position: center
 banner_title: Contact
 banner_subtitle: How to reach me online and offline
-thumbnail: images/thumbnail/contact.png
 template: base.html
 ---
-
-<section class="mb-5">
 
 ## Online
 
 These are best ways to reach me online:
 
-<ul class="fa-ul my-4">
+<ul class="fa-ul">
   <li>
     <i class="fa-li fa fa-envelope fa-fw" aria-hidden="true"></i>
     Email:
@@ -42,9 +39,6 @@ These are best ways to reach me online:
   </li>
 </ul>
 
-</section>
-<section class="mb-5">
-
 ## At the University of Liverpool
 
 My office is in the Jane Herdman Building - Room A1.08 (first floor of the
@@ -63,5 +57,3 @@ Here is the full address:
 > Liverpool, United Kingdom
 > <br>
 > L69 3GP
-
-</section>

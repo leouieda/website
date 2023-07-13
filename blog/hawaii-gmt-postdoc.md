@@ -15,7 +15,7 @@ base.
 Read on for the long version.
 
 <figure>
-<img alt="Picture of the POST building" src="/images/post-building-university-hawaii.jpg">
+<img alt="Picture of the POST building" src="../images/post-building-university-hawaii.jpg">
 <figcaption>
 The Pacific Ocean Science and Technology (POST) building in the UH Manoa
 campus. My office is on the top floor with a nice view of downtown Honolulu.

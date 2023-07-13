@@ -1,0 +1,117 @@
+- title: "ENVS398 Global Geophysics and Geodynamics"
+  year: 2020 - 2023
+  github: leouieda/lithosphere
+  institution: University of Liverpool
+  about: |
+    I teach the lithosphere dynamics half of the ENVS398 module,
+    the other half being the mantle and core covered by Andy Biggin.
+    In my section, we take a look at the Earth's lithosphere from a
+    geophysical point of view. We cover available global datasets (gravity,
+    magnetics, topography/bathymetry, heat flow, seismic) and geophysical
+    models that seek to explain these observations.
+    The teaching resources include short lectures and computational
+    practicals using Python to explore real data and generate model
+    predictions.
+    The slides for lectures are create with
+    <a href="https://revealjs.com/">reveal.js</a> so they can be easily kept
+    under version control and shared with students in HTML form (hosted on
+    GitHub Pages).
+    The practicals are organized into Jupyter notebooks with annotations and
+    the prerequisite code. During delivery of the practicals, I start with
+    a blank version of the notebook and type out the code while I explain
+    what I'm doing. This helps control my pacing and make sure students are
+    engaged following along.
+
+- title: "ENVS258 Environmental Geophysics"
+  year: 2020 - 2023
+  github: leouieda/remote-sensing
+  institution: University of Liverpool
+  about: |
+    This is a bit of a strage module.
+    During the first 4 weeks of ENVS258, I teach a crash-course on satellite
+    remote sensing, including multispectral images, LiDAR and DEMs, and InSAR.
+    There is a practical focus and students learn how to manipulate these data
+    using scientific Python tools. The highlight of this part of the module is
+    the report they have to produce by choosing their own study region,
+    downloading public domain imagery, processing it in Python, and writing up
+    their results. Some of the reports are truly inspiring (I've incorporated
+    some into the practicals) and they are always a pleasure to read and
+    provide feedback.
+    The next 4 weeks are a field-based course in Everton Park where students
+    get to use every piece of geophysics kit we have (GPR, seismic, dGPS,
+    magnetic gradiometry, EM31, ERT), each taught by a different lecturer (I
+    was in charge of the GPR).
+
+- title: "ENVS386 Geophysical Data Modelling"
+  year: 2020 - 2023
+  github: leouieda/ml-intro
+  institution: University of Liverpool
+  about: |
+    I teach the non-linear inverse problems and machine learning parts of
+    this module, with Richard Holme handling all the rest.
+
+- title: "ENVS101/106 Study Skills and GIS"
+  year: 2020 - 2023
+  institution: University of Liverpool
+  about: |
+    This module consists of small-group tutorials and short workshops, taught
+    across the year. I was responsible for some tutorial groups and taught a
+    4-week introduction to Python workshop.
+
+- title: "ENVS123 Introduction to Geoscience and Earth History"
+  year: 2019 - 2021
+  institution: University of Liverpool
+  about: |
+    This was an introduction to Earth Sciences module that was taught for
+    students from across the School of Environmental Science. It was taught by
+    several lecturers, each handling something closer to their expertise. I was
+    responsible for the Earth structure, isostasy, and gravimetry parts.
+
+- title: "ENVS363 Geophysics Field School"
+  year: 2019 - 2020
+  institution: University of Liverpool
+  about: |
+    This is our final-year field trip for the Geophysics degrees. Until 2019,
+    this was a 10-day trip to Tenerife that involved surveys in the Teide
+    caldera and an island-wide gravity and magnetic survey. In 2020, we were
+    forced to move this class online. After that, my involvement with the
+    module stopped as I shifted to other modules.
+
+- title: "FGEL04-12422 Geofísica II"
+  github: leouieda/geofisica2
+  year: 2014 - 2016
+  institution: Universidade do Estado do Rio de Janeiro
+  about: |
+    The second introduction to geophysics for the Geology BSc. This is a follow
+    up to Geofísica I and covers seismics, seismology, electric and
+    electromagnetic methods. This content was all created and delivered in
+    Portuguese. I also had the chance to design this module entirely from
+    scratch since it was brand new.
+
+- title: "FGEL04-12421 Geofísica I"
+  github: leouieda/geofisica1
+  year: 2014 - 2016
+  institution: Universidade do Estado do Rio de Janeiro
+  about: |
+    Introduction to geophysics for the Geology BSc, covering mostly
+    potential-field methods. This is the first contact of the students with
+    geophysics. This content was all created and delivered in Portuguese. This
+    was the first full module that I taught at UERJ. I had the chance to design
+    the content from scratch, which was both exhausting and rewarding.
+
+- title: "IME03-1366 Matemática Especial I"
+  year: 2014 - 2016
+  github: mat-esp/about
+  institution: Universidade do Estado do Rio de Janeiro
+  about: |
+    Introduction to programming and numerical methods for the Oceanography BSc
+    students. This course is the first contact the students have with computer
+    programming (using the Python language). I also taught them Git and GitHub
+    and made use of the GitHub Classroom platform.
+
+- title: "FGEL01-00805 Geologia Geral I"
+  year: 2015
+  institution: Universidade do Estado do Rio de Janeiro
+  about: |
+    I covered this introduction to geology module for the Oceanography BSc for
+    1 year before handing it over to someone else.

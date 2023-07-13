@@ -3,14 +3,14 @@ author: Leonardo Uieda
 email: uieda@liverpool.ac.uk
 url: "https://www.leouieda.com"
 site_name: Leonardo Uieda
-site_description: Geophysicist, scientist, programmer, teacher
+site_description: Geophysicist, Educator, Scientist, Programmer, Dad
 brand: LEONARDO UIEDA
 language: en
 keywords: 'science, geoscience, geophysics, software, open-source'
 repository: leouieda/website
 repository_branch: main
 favicon: images/favicon.png
-thumbnail: images/thumbnail/default.png
+thumbnail: images/thumbnail.jpg
 license_notice: |
   Except where otherwise noted, all content is licensed
   <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
@@ -41,20 +41,14 @@ links:
 navigation:
   - name: Home
     id: index
-  - name: About
-    id: about/index
-  - name: CV
-    id: cv/index
   - name: Blog
     id: blog/index
-  - name: Publications
-    id: publications/index
-  - name: Presentations
-    id: presentations/index
-  - name: Teaching
-    id: teaching/index
+  - name: About
+    id: about/index
   - name: Software
     id: software/index
+  - name: CV
+    id: cv/index
   - name: Contact
     id: contact/index
 
@@ -150,3 +144,13 @@ coauthors:
   Gelson: Souza Junior, GF
   Janine: Carmo, J
   Roger: Fu, R
+  RNijzink: Nijzink, RC
+  NDrost: Drost, N
+  FPianosi: Pianosi, F
+  SSchymanski: Schymanski, S
+  MTso: Tso, M
+  Max: Jones, M
+  WeiJi: Leong, WJ
+  ABelem: Belem, A
+  Sacek: Sacek, V
+  Bianchi: Bianchi, M

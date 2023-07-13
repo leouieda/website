@@ -1,36 +1,163 @@
 ---
-title: CV
-banner_image: images/anatolia-himalayas-topography.jpg
+title: Curriculum Vitæ
+banner_image: images/teaching-git-at-agu2019.jpg
+banner_position: center right
 banner_title: Curriculum Vitæ
-banner_subtitle: My academic CV, with most things I ever did
-thumbnail: images/thumbnail/default.png
+banner_subtitle: A list of pretty much everything I've done so far in my career
 template: base.html
 sections:
-    - [work, Professional Appointments]
-    - [community, Community Service]
+    - [work, Professional appointments]
+    - [community, Community service]
     - [edu, Education]
-    - [grants, Grants & Fellowships]
+    - [grants, Grants & fellowships]
+    - [awards, Awards & honors]
+    - [preprints, Preprints]
+    - [papers, Papers]
+    - [proceedings, Conference proceedings]
+    - [other-publications, Other publications]
+    - [presentations-invited, Invited talks]
+    - [presentations-department, Department seminars]
+    - [presentations-conference, Conference presentations]
+    - [presentations-other, Other presentations]
+    - [teaching-classes, University courses]
+    - [teaching-workshops, Workshops]
+    - [media, Media & outreach]
+    - [examiner-thesis, Thesis examination]
+    - [convener, Conference sessions and events]
+    - [supervision-phd, PhD students]
+    - [supervision-msc, MSc students]
+    - [supervision-bsc, BSc students]
 ---
 
 {% import "macros.html" as macros %}
 
-<div class="callout callout-note mt-4">
+<div class="callout">
 
 **Looking for a career summary?**
-I keep a short-form CV somewhat updated in PDF format:
-<a class="nowrap" href="https://github.com/leouieda/cv/raw/pdf/leonardo_uieda_cv_summary.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer"><i class="fa fa-download" aria-hidden="true"></i> Download the PDF</a>.
-It's typeset in LaTeX and the source is available from the GitHub repository:
-<a class="nowrap" href="https://github.com/leouieda/cv"><i class="mx-1 fab fa-github" aria-hidden="true"></i><code>leouieda/cv</code></a>.
+I keep a somewhat updated
+<a href="https://github.com/leouieda/cv/raw/pdf/leonardo_uieda_cv_summary.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">short-form CV in PDF format</a>.
+It's typeset in LaTeX and the source is available from the
+{{ macros.github_link("leouieda/cv") }} GitHub repository.
 
 </div>
 
-<div class="callout mt-4">
+<hr>
+<p id="navigation">
+  <i class="fas fa-list" aria-hidden="true"></i>
+  CV sections
+</p>
+<nav aria-label="Page">
+  <ul role="list" class="list-inline">
+  {%- for data, title in page.sections %}
+    <li><a href="#{{ data }}">{{ title }}</a></li>
+  {%- endfor %}
+  </ul>
+</nav>
 
-<i class="fa fa-tools me-1" aria-hidden="true"></i>
-**This is a work in progress.** I'm currently migrating information from the
-<a class="nowrap" href="https://github.com/leouieda/cv/raw/pdf/leonardo_uieda_cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">PDF version</a>
-of my CV. This HTML version should be more accessible and easier to maintain.
-
-</div>
-
-{{ macros.cv_sections(page.sections, page, config.coauthors) }}
+{%- for data, title in page.sections %}
+  <h2 id="{{ data }}">{{ title }}</h2>
+  {%- for item in page[data] %}
+    <div>
+      <p>
+        <span class="text-muted font-small">{{ item.year }}.</span>
+        {{ item.title|trim }}.
+        {%- if item.institution is defined %}
+          <span class="text-muted">
+          {{ item.institution|trim }}{%- if item.country is defined %}, {{ item.country }}{%- endif %}.
+          </span>
+        {%- endif %}
+      </p>
+    <details>
+      <summary>More information</summary>
+      <div class="details-body flow flow-small">
+        {%- if item.authors is defined %}
+          <p><strong>Authors:</strong> {{ macros.author_list(item.authors, config) }}</p>
+        {%- endif %}
+        {%- if item.doi is defined %}
+          <p><strong>DOI:</strong> {{ macros.doi_link(item.doi) }}</p>
+        {%- endif %}
+        {%- if item.preprint is defined %}
+          <p><strong>Preprint DOI (open access):</strong> {{ macros.doi_link(item.preprint) }}</p>
+        {%- endif %}
+        {%- if item.github is defined %}
+          <p><strong>GitHub:</strong> {{ macros.github_link(item.github) }}</p>
+        {%- endif %}
+        {%- if item.recording is defined %}
+          <p><strong>Recording:</strong> {{ macros.youtube_link(item.recording) }}</p>
+        {%- endif %}
+        {%- if item.data is defined %}
+          <p><strong>Data and code archive DOI:</strong> {{ macros.doi_link(item.data) }}</p>
+        {%- endif %}
+        {%- if item.pdf is defined %}
+          <p><strong>PDF download:</strong> <a href="{{ item.pdf }}" target="_blank">{{ item.pdf[7:] }}</a></p>
+        {%- endif %}
+        {%- if item.slides is defined %}
+          <p><strong>Slides:</strong> <a href="{{ item.slides }}" target="_blank">{{ item.slides }}</a></p>
+        {%- endif %}
+        {%- if item.poster is defined %}
+          <p><strong>Poster:</strong> <a href="{{ item.poster }}" target="_blank">{{ item.poster }}</a></p>
+        {%- endif %}
+        {%- if item.department is defined %}
+          <p><strong>Department:</strong> {{ item.department }}</p>
+        {%- endif %}
+        {%- if item.thesis is defined %}
+          <p><strong>Thesis:</strong> {{ item.thesis }}</p>
+        {%- endif %}
+        {%- if item.funder is defined %}
+          <p><strong>Funding agency:</strong> {{ item.funder }}</p>
+        {%- endif %}
+        {%- if item.committee is defined %}
+          <p><strong>Committee:</strong> {{ item.committee }}</p>
+        {%- endif %}
+        {%- if item.advisor is defined %}
+          <p><strong>Advisor:</strong> {{ item.advisor }}</p>
+        {%- endif %}
+        {%- if item.coadvisor is defined %}
+          <p><strong>Co-advisor(s):</strong> {{ item.coadvisor }}</p>
+        {%- endif %}
+        {%- if item.award is defined %}
+          <p><strong>Award:</strong> <a href="{{ item.award_link }}" target="_blank">{{ item.award }}</a></p>
+        {%- endif %}
+        {%- if item.award_amount is defined %}
+          <p><strong>Amount:</strong> {{ item.award_amount }}</p>
+        {%- endif %}
+        {%- if item.journal is defined %}
+          <p><strong>Journal:</strong> {{ item.journal }}</p>
+        {%- endif %}
+        {%- if item.event is defined %}
+          <p><strong>Event:</strong> {{ item.event }}</p>
+        {%- endif %}
+        {%- if item.conference is defined %}
+          <p><strong>Conference:</strong> {{ item.conference }}</p>
+        {%- endif %}
+        {%- if item.about is defined %}
+          <p><strong>About:</strong> {{ item.about }}</p>
+        {%- endif %}
+        {%- if item.roles is defined %}
+          <p><strong>Roles:</strong>
+          <ul>
+          {%- for role in item.roles %}
+            <li>{{ role.date }}: {{ role.title }}</li>
+          {%- endfor %}
+          </ul>
+        {%- endif %}
+        {%- if item.citation is defined %}
+          <p><strong>Citation:</strong> {{ item.citation}}</p>
+        {%- endif %}
+        {%- if item.poster_img is defined %}
+          <img src="{{ item.poster_img }}" alt="Screenshot of the poster">
+        {%- endif %}
+        {%- if item.abstract is defined %}
+          <p><strong>Abstract:</strong> {{ item.abstract }}</p>
+        {%- endif %}
+      </div>
+    </details>
+  </div>
+  {%- endfor %}
+  <p class="">
+    <a href="#navigation">
+      <i class="far fa-arrow-alt-circle-up" aria-hidden="true"></i>
+      Back to the top
+    </a>
+  </p>
+{%- endfor %}

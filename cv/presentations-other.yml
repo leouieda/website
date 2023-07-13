@@ -1,0 +1,35 @@
+- title: Getting started with Open Science
+  authors: [Me]
+  year: 2022
+  conference: SPIN-ITN workshop
+  github: leouieda/2022-05-06-spin-open-science
+  slides: https://www.leouieda.com/2022-05-06-spin-open-science
+  about: |
+    Presentation for a short workshop about open science practices for the
+    <a href="https://spin-itn.eu/">SPIN: Seismological Parameters and
+    INstrumentation doctoral training network</a>.
+    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+    using my <a href="https://github.com/leouieda/talk-template">open-source
+    HTML talk template</a>.
+
+- title: |
+    Academia e software livre: Desafios e oportunidades no Brasil e no
+    exterior
+  authors: [Me]
+  year: 2021
+  conference: National Observatory's SEG and EAGE Student Chapter, Brazil
+  github: leouieda/2021-07-22-on
+  recording: r2x-DN6laj8
+  slides: https://www.leouieda.com/2021-07-22-on
+  about: |
+    I had the pleasure of giving this talk to the SEG and EAGE Student
+    Chapter of the Observatório Nacional (where I went to grad school). It
+    was about my path through science and some tips for those wanting to go
+    abroad. Slides and talk were in Portuguese.
+    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+    using my <a href="https://github.com/leouieda/talk-template">open-source
+    HTML talk template</a>.
+  abstract: |
+    Palestra e bate papo com o National Observatory Greenstone Belt (SEG-EAGE
+    Student Chapter do Observatório Nacional) sobre minha carreira e dicas
+    para os alunos que quiserem trilhar um caminho parecido.

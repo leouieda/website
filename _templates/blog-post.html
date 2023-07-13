@@ -1,0 +1,56 @@
+{# Template for a blog post #}
+{% extends "base.html" %}
+
+{% import "macros.html" as macros %}
+
+{%- block content %}
+  {% if page.article_class is defined %}
+    {% set extra_classes = page.article_class %}
+  {% else %}
+    {% set extra_classes = "" %}
+  {% endif %}
+  <article class="flow {{ extra_classes }}">
+    <h1>
+      {{ page.title }}
+    </h1>
+    <time class="text-muted" datetime="{{ page.date }}">
+      <i class="far fa-calendar-alt" aria-hidden="true"></i>
+      {{ page.date|replace("-", "/") }}
+    </time>
+    {{ page.body }}
+  </article>
+
+  <hr>
+
+  <p class="text-right">
+    <a href="{{ site["blog/index"].path|relative_to(page.path) }}">
+      <i class="far fa-arrow-alt-circle-left" aria-hidden="true"></i>
+      Back to the blog
+    </a>
+  </p>
+
+  <section class="comments flow">
+    <p>
+      <strong>Questions or comments? Leave them below!</strong>
+      <br>
+      Anyone taking part in discussions must follow the
+      <a href="{{ config.coc }}" target="_blank">Code of Conduct</a>.
+    </p>
+    <script src="https://giscus.app/client.js"
+        data-repo="leouieda/website"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxNTM0MTczNg=="
+        data-category="Comments"
+        data-category-id="DIC_kwDOAOoYqM4CVhZh"
+        data-mapping="og:title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark_protanopia"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </section>
+{%- endblock %}

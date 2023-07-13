@@ -1,0 +1,921 @@
+- title: "Harmonica and Boule: Modern Python tools for geophysical gravimetry"
+  authors: [Me, Santiago, Agustina, LPerozzi, MWieczorek]
+  year: 2021
+  conference: EGU General Assembly
+  doi: 10.5194/egusphere-egu21-8291
+  github: fatiando/egu2021
+  poster: https://github.com/fatiando/egu2021/blob/main/vpico.png
+  poster_img: ../images/egu2021.jpg
+  abstract: |
+    Gravimetry is a routine part of the geophysicists toolset, historically
+    used in geophysics following the geodetic definitions of gravity
+    anomalies and their related “reductions”. Several authors have shown that
+    the geodetic concept of a gravity anomaly does not align with goals of
+    gravimetry in geophysics (the investigation of anomalous density
+    distributions). Much of this confusion likely stems from the lack of
+    widely available tools for performing the corrections needed to arrive at
+    a geophysically meaningful gravity disturbance. For example, free-air
+    corrections are completely unnecessary since analytical expressions for
+    theoretical gravity at any point have existed for over a decade. Since
+    this is not easily done in a spreadsheet or short script, modern tools
+    for processing and modelling gravity data for geophysics are needed.
+    These tools must be trustworthy (i.e., extensively tested) and designed
+    with software development and geophysical best practices in mind.
+    We present the Python libraries Harmonica and Boule, which are part of
+    the <a href="https://www.fatiando.org">Fatiando a Terra</a> project. Both
+    tools are open-source under the permissive BSD license and are developed
+    in the open by a community of geoscientists and programmers.
+    Harmonica provides tools for processing, forward modelling, and inversion
+    of gravity and magnetic data. The first release of Harmonica was focused
+    on implementing methods for processing and interpolation with the
+    equivalent source technique, as well as forward modelling with
+    right-rectangular prisms, point sources, and tesseroids. Current work is
+    directed towards implementing a processing pipeline for gravity data,
+    including topographic corrections in Cartesian and spherical coordinates,
+    atmospheric corrections, and more. The software is still in early stages
+    of development and design and would benefit greatly from community
+    involvement and feedback.
+    Boule implements reference ellipsoids (including oblate ellipsoids,
+    spheres, and soon triaxial ellipsoids), conversions between ellipsoidal
+    and geocentric spherical coordinates, and normal gravity calculations
+    using analytical solutions for gravity fields at any point outside of the
+    ellipsoid. It includes ellipsoids for the Earth as well as other
+    planetary bodies in the solar system, like Mars, the Moon, Venus, and
+    Mercury. This enables the calculation of gravity disturbances for Earth
+    and planetary data without the need for free-air corrections. Boule was
+    created out of the shared needs of Harmonica,
+    <a href="https://github.com/SHTOOLS">SHTools</a>,
+    and <a href="https://github.com/ioshchepkov/pygeoid">pygeoid</a> and is
+    developed with input from developers of these projects.
+    We welcome participation from the wider geophysical community,
+    irrespective of programming skill level and experience, and are actively
+    searching for interested developers and users to get involved in shaping
+    the future of these projects.
+
+- title: "Evaluating the accuracy of equivalent-source predictions using cross-validation"
+  authors: [Me, Santiago]
+  year: 2020
+  conference: EGU General Assembly
+  doi: 10.5194/egusphere-egu2020-15729
+  slides: https://doi.org/10.6084/m9.figshare.12245372.v1
+  about: |
+    Presented at EGU 2020 (online because of COVID-19), session
+    <a href="https://meetingorganizer.copernicus.org/EGU2020/session/35332">G4.3:
+    Acquisition and processing of gravity and magnetic field data and their integrative interpretation</a>.
+    Details some of the work we've been doing in <a href="https://www.fatiando.org/verde">Verde</a> and
+    <a href="https://www.fatiando.org/harmonica">Harmonica</a> for machine-learning style
+    interpolation with equivalent-sources.
+    In particular, applying state-of-the-art cross-validation strategies to
+    estimate interpolation accuracy and tune equivalent-source parameters.
+  abstract: |
+    We investigate the use of cross-validation (CV) techniques to estimate
+    the accuracy of equivalent-source (also known as equivalent-layer) models
+    for interpolation and processing of potential-field data. Our preliminary
+    results indicate that some common CV algorithms (e.g., random
+    permutations and k-folds) tend to overestimate the accuracy. We have
+    found that blocked CV methods, where the data are split along spatial
+    blocks instead of randomly, provide more conservative and realistic
+    accuracy estimates. Beyond evaluating an equivalent-source model's
+    performance, cross-validation can be used to automatically determine
+    configuration parameters, like source depth and amount of regularization,
+    that maximize prediction accuracy and avoid over-fitting.
+    Widely used in gravity and magnetic data processing, the
+    equivalent-source technique consists of a linear model (usually point
+    sources) used to predict the observed field at arbitrary locations.
+    Upward-continuation, interpolation, gradient calculations, leveling, and
+    reduction-to-the-pole can be performed simultaneously by using the model
+    to make predictions (i.e., forward modelling). Likewise, the use of
+    linear models to make predictions is the backbone of many machine
+    learning (ML) applications. The predictive performance of ML models is
+    usually evaluated through cross-validation, in which the data are split
+    (usually randomly) into a training set and a validation set. Models are
+    fit on the training set and their predictions are evaluated using the
+    validation set using a goodness-of-fit metric, like the mean square error
+    or the R² coefficient of determination. Many cross-validation methods
+    exist in the literature, varying in how the data are split and how this
+    process is repeated. Prior research from the statistical modelling of
+    ecological data suggests that prediction accuracy is usually
+    overestimated by traditional CV methods when the data are spatially
+    auto-correlated. This issue can be mitigated by splitting the data along
+    spatial blocks rather than randomly. We conducted experiments on
+    synthetic gravity data to investigate the use of traditional and blocked
+    CV methods in equivalent-source interpolation. We found that the
+    overestimation problem also occurs and that more conservative accuracy
+    estimates are obtained when applying blocked versions of random
+    permutations and k-fold. Further studies need to be conducted to
+    generalize these findings to upward-continuation, reduction-to-the-pole,
+    and derivative calculation.
+    Open-source software implementations of the equivalent-source and blocked
+    cross-validation (in progress) methods are available in the Python
+    libraries Harmonica and Verde, which are part of the Fatiando a Terra
+    project.
+
+- title: "PyGMT: Accessing the Generic Mapping Tools from Python"
+  authors: [Me, Paul]
+  year: 2019
+  conference: AGU Fall Meeting
+  doi: 10.6084/m9.figshare.11320280
+  github: leouieda/agu2019
+  poster: https://doi.org/10.6084/m9.figshare.11320280
+  poster_img: ../images/agu2019-pygmt.jpg
+  about: |
+    This is an update on the progress we've made in
+    <a href="https://www.pygmt.org">PyGMT</a>.
+    There are examples of some of the new features implemented by myself and
+    contributors, as well as the main problems we're facing and a call for
+    volunteers.
+    The main feedback we got during the meeting is that the API is not very
+    intuitive for people unfamiliar with GMT (which I expect to be the
+    majority of users). This has got me thinking of ways to move away from
+    the direct mapping of GMT modules to PyGMT functions. Instead, we should
+    implement something that makes sense in Python and call whatever GMT
+    modules we need to get that done under the hood.
+  abstract: |
+    For almost 30 years, the Generic Mapping Tools (GMT) have provided the
+    Earth, Ocean, and Planetary Sciences with an open-source toolbox for
+    processing and visualizing spatial data (bathymetry, gravity, magnetic,
+    earthquake focal mechanisms, and more). In many fields, GMT is the de
+    facto standard for creating high-resolution publication quality maps,
+    figures, and animations. Since version 5, GMT has provided a C language
+    Application Programming Interface (API) that allows other programs to
+    access its core functionality. We are using this bridge to develop
+    <a href="https://www.pygmt.org">PyGMT</a>
+    (formerly GMT/Python), an open-source library that allows
+    users of the Python programming language to leverage the almost thirty
+    years of continuous GMT development. PyGMT is designed to integrate with
+    the existing scientific Python ecosystem, including popular packages such
+    as numpy, pandas, and xarray. PyGMT integrates seamlessly with the
+    Jupyter notebook, allowing high-quality figures to be generated
+    interactively both in a personal computer and in cloud computing
+    environments compatible with Jupyter. We will present the design and
+    usage of the software package, latest developments and updates, and
+    lessons learned during its implementation.
+
+- title: "Coupled interpolation of three-component GPS velocities"
+  authors: [Me, Eric, Paul, David]
+  year: 2018
+  conference: AGU Fall Meeting
+  doi: 10.6084/m9.figshare.7440683
+  github: leouieda/agu2018
+  poster: https://doi.org/10.6084/m9.figshare.7440683
+  poster_img: ../images/agu2018.jpg
+  about: |
+    This is update on my GPS interpolation work (see the AOGS2018 presentation).
+    The implementation is entirely based on the
+    <a href="https://www.fatiando.org/verde">Verde library</a> (there is an
+    <a href="/blog/introducing-verde.html">introduction to what it can do on
+    the blog</a>). This was the first test of the Verde API and I'm glad to
+    say that it passed with flying colors. Implementing the new methods was
+    very straight forward and all the tools in Verde made the entire data
+    processing and model selection pipeline simple and easy.
+  abstract: |
+    GPS/GNSS measurements of deformation have high accuracy and temporal
+    resolution but are spatially sparse. Conversely, InSAR provides great
+    spatial resolution but is limited by the satellite look angle,
+    atmospheric noise, and the delay between repeat passes. The sparse GPS
+    data often need to be interpolated on regular grids to be used as
+    constraints during InSAR processing or to calculate strain rates. The
+    interpolation is routinely done separately for each component of the
+    velocity field using minimum curvature or specialized geostatistical
+    algorithms. Recently, a joint interpolation of the horizontal components
+    has been proposed. It estimates forces on a thin elastic sheet that fit
+    the observed data and subsequently uses the estimated model to predict
+    data on regular grids or arbitrary points. The Green’s functions for the
+    physical model serve as a coupling between the two vector components
+    through elasticity theory. We propose an extension of this method to 3D,
+    using the elastic Green’s functions to couple the horizontal and vertical
+    components. This enables the inclusion of vector data projected in
+    arbitrary directions, such as InSAR line-of-sight velocities. The degree
+    of coupling can be controlled through the Poisson’s ratio of the medium.
+    We apply damping regularization to smooth the model and avoid
+    instabilities in the inverse problem. Furthermore, we automatically
+    select optimal values for the Poisson’s ratio and regularization
+    parameter through cross-validation, which is common in machine learning
+    applications. We compare the performance of the coupled model with
+    uncoupled alternatives to grid 2- and 3-component GPS velocities and
+    calculate derivatives through finite-differences approximations. We will
+    present preliminary results from applications to GPS data from the
+    Himalayas and the calibration of InSAR data products. A future goal is to
+    integrate InSAR line-of-sight velocities in a joint interpolation with
+    GPS velocities.
+
+- title: "Building an object-oriented Python interface for the Generic Mapping Tools"
+  authors: [Me, Paul]
+  year: 2018
+  conference: SciPy 2018
+  doi: 10.6084/m9.figshare.6814052
+  recording: 6wMtfZXfTRM
+  github: leouieda/scipy2018
+  slides: https://doi.org/10.6084/m9.figshare.6814052
+  about: |
+    This was the second talk I gave at SciPy about
+    <a href="https://www.pygmt.org">GMT/Python</a>, a wrapper that
+    <a href="/blog/hawaii-gmt-postdoc.html">I'm building for the Generic
+    Mapping Tools</a>.
+    It showed the progress that we made in the past year, what our struggles
+    and successes were, and our plans for the future.
+  abstract: |
+    We are building a Python wrapper for the Generic Mapping Tools (GMT), a
+    set of command-line programs used across the Earth, Atmospheric, and
+    Ocean Sciences to process and visualize geographic data. At SciPy 2017,
+    we presented the project goals and an initial prototype. The feedback
+    received led to improvements in the design of the library, mainly the
+    creation of an object-oriented API. We will present the newest
+    developments including support for numpy arrays and pandas Dataframes,
+    interactive visualization in the Jupyter notebook using NASA WorldWind,
+    and more. Once again, we seek feedback from the community to guide us
+    moving forward.
+
+- title: "Joint interpolation of 3-component GPS velocities constrained by elasticity"
+  authors: [Me, David, Paul]
+  year: 2018
+  conference: AOGS 15th Annual Meeting
+  doi: 10.6084/m9.figshare.6387467
+  github: leouieda/aogs2018-gps
+  slides: https://doi.org/10.6084/m9.figshare.6387467
+  about: |
+    This talk is about some early results from a collaboration me and Paul
+    have with <a href="http://topex.ucsd.edu/sandwell/">David Sandwell</a>.
+    The project was started by Paul and Dave as a follow up to their
+    <a href="https://doi.org/10.1002/2016GL070340">2016 paper about
+    interpolating 2D vector data</a>.
+    We're expanding it into 3D and ironing out some kinks in the methodology.
+    I picked it up at the beginning of the year and have been slowly trying
+    things out. It was a great chance to play with some tools from machine
+    learning since this is a supervised prediction problem. Unlike most
+    geophysical inversion, we're not really interested in the estimated
+    parameters themselves. They are only a means to predict new values (on a
+    regular grid in the case of gridding). I started implementing the tools I
+    would need in a Python library called
+    <a href="https://github.com/fatiando/verde">Verde</a>, which served as
+    the basis for the results shown in the presentation.
+  abstract: |
+    Vertical ground motion at fault systems can be difficult to detect due to
+    their small amplitude and contamination from non-tectonic sources, such
+    as ground water loading. However, it may play an important role in our
+    understanding of the earthquake cycle and the associated seismic hazards.
+    Ground motion measurements from GPS are often sparse and must be
+    interpolated onto a regular grid (e.g., for computing strain rate),
+    ideally taking into account the varying degrees of uncertainty of the
+    data. Traditionally, each vector component is interpolated separately
+    using minimum curvature or biharmonic spline methods. Recently, a joint
+    interpolation of the two horizontal components has been developed using
+    the Green's functions for a point force deforming a thin elastic sheet.
+    The elasticity constraints provide a coupling between the two vector
+    components and lead to improved results because the underlying physics of
+    the method approximately matches that of the GPS observations. We propose
+    an expansion of this method into 3D in order to incorporate vertical GPS
+    velocity measurements. To smooth the model and avoid singularities, we
+    formulate the interpolation as a weighted least-squares inverse problem
+    with damping regularization. Optimal values of the regularization
+    parameter and the Poisson's ratio of the elastic medium are determined
+    through K-fold cross-validation, a technique often used in machine
+    learning for model selection. Additionally, the cross-validation provides
+    a measure of the accuracy of model predictions and eliminates the need
+    for manual configuration. The computational load of the inversion is
+    lessened by imposing a cutoff distance to the Green's functions
+    computations, which makes the sensitivity matrix sparse. We will present
+    preliminary results from an application to EarthScope GPS data from the
+    San Andreas Fault system. In the future, we aim to develop a joint
+    inversion of 3D GPS and InSAR line-of-sight velocities to improve data
+    coverage.
+
+- title: "Integrating the Generic Mapping Tools with the Scientific Python ecosystem"
+  authors: [Me, Paul]
+  year: 2018
+  conference: AOGS 15th Annual Meeting
+  doi: 10.6084/m9.figshare.6399944
+  github: leouieda/aogs2018-gmtpython
+  poster: https://doi.org/10.6084/m9.figshare.6399944
+  poster_img: ../images/aogs2018.jpg
+  about: |
+    This is the third presentation I gave about my work on
+    <a href="http://www.pygmt.org/">GMT/Python</a>. This is by far the nicest
+    poster I have ever designed.
+    It showcases the new support for <code>gmt.Figure.grdimage</code>, the
+    built-in Earth relief datasets in GMT6, and plotting vectors with
+    <code>gmt.Figure.plot</code>. I wanted to have a more sophisticated
+    showcase of <code>grdimage</code> but I ran into some bugs before the
+    conference and wasn't able to finish it in time. Still, I'm amazed at how
+    few lines of code are required to make the figure in the poster. The more
+    I get to know GMT, the more I'm impressed by how much thought and
+    attention was, and still is, poured into it.
+  abstract: |
+    The Generic Mapping Tools (GMT) are used throughout the geosciences to
+    processes spatial data and create publication quality data
+    visualizations, such as contour maps, earthquake focal mechanism
+    solutions, and animations. The software is programmed in the C language
+    and is accessed through a command-line interface. Recent versions of GMT
+    also provide an Application Programming Interface (API) that allows
+    access to the core functionality from other programming languages,
+    potentially expanding the reach of GMT far beyond the current user base.
+    A GMT toolbox for Matlab using the API has already been released, and an
+    experimental interface from the Julia language is being developed. We are
+    building a software library to interface GMT with the Python programming
+    language. Popularity of Python has grown steadily in the Earth Sciences
+    due to its simplicity and powerful set of scientific libraries. However,
+    there is still great need for the geospatial processing and mapping
+    capabilities of GMT. The GMT/Python library integrates with the
+    scientific Python ecosystem through the support of common Python data
+    types: numpy "ndarrays" and Pandas "DataFrames" for tabular data and
+    xarray "Datasets" for grids. We have also implemented support for the
+    Jupyter notebooks, a web-based interactive computing environment. These
+    features will help make GMT more accessible to students and professional
+    geoscientists who lack an extensive background in Unix tools and shell
+    scripting. GMT/Python is an open-source project in early stages of
+    development. The current focus is on the implementation of a robust set
+    of core routines that implement the bridge between Python and GMT. Later,
+    we will expand the library to cover the entire functionality of GMT. A
+    first release is predicted for the late 2018. The latest documentation
+    and source code can be accessed through the website
+    <a href="http://www.pygmt.org/">www.pygmt.org</a>.
+
+- title: "A modern Python interface for the Generic Mapping Tools"
+  authors: [Me, Paul]
+  year: 2017
+  conference: AGU Fall Meeting
+  doi: 10.6084/m9.figshare.5662411
+  github: leouieda/agu2017
+  poster: https://doi.org/10.6084/m9.figshare.5662411
+  poster_img: ../images/agu2017.jpg
+  about: |
+    This is the second conference presentation about my work on GMT/Python.
+    The first was my talk at SciPy 2017. I mostly made progress establishing
+    the basis for the software: documentation build, CIs, and the code to
+    talk to the C API. I hadn't presented a poster in 3 years and I really
+    enjoyed designing this one. The background image was generated using
+    GMT/Python (see the code in the poster). It's a clean design and I like
+    how it turned out.
+  abstract: |
+    Figures generated by The Generic Mapping Tools (GMT) are present in
+    countless publications across the Earth sciences. The command-line
+    interface of GMT lends the tool its flexibility but also creates a
+    barrier to entry for beginners. Meanwhile, adoption of the Python
+    programming language has grown across the scientific community. This
+    growth is largely due to the simplicity and low barrier to entry of the
+    language and its ecosystem of tools. Thus, it is not surprising that
+    there have been at least three attempts to create Python interfaces for
+    GMT: gmtpy, pygmt, and PyGMT. None of these projects are currently active
+    and, with the exception of pygmt, they do not use the GMT Application
+    Programming Interface (API) introduced in GMT 5.  The two main Python
+    libraries for plotting data on maps are the matplotlib Basemap toolkit
+    (matplotlib.org/basemap) and Cartopy (scitools.org.uk/cartopy), both of
+    which rely on matplotlib (matplotlib.org) as the backend for generating
+    the figures. Basemap is known to have limitations and is being
+    discontinued.  Cartopy is an improvement over Basemap but is still bound
+    by the speed and memory constraints of matplotlib. We present a new
+    Python interface for GMT (GMT/Python) that makes use of the GMT API and
+    of new features being developed for the upcoming GMT 6 release. The
+    GMT/Python library is designed according to the norms and styles of the
+    Python community. The library integrates with the scientific Python
+    ecosystem by using the “virtual files” from the GMT API to implement
+    input and output of Python data types (numpy “ndarray” for tabular data
+    and xarray “Dataset” for grids). Other features include an
+    object-oriented interface for creating figures, the ability to display
+    figures in the Jupyter notebook, and descriptive aliases for GMT
+    arguments (e.g., “region” instead of “R” and “projection” instead of
+    “J”). GMT/Python can also serve as a backend for developing new
+    high-level interfaces, which can help make GMT more accessible to
+    beginners and more intuitive for Python users. GMT/Python is an
+    open-source project hosted on GitHub and is in early stages of
+    development. A first release will accompany the release of  GMT 6, which
+    is expected for early 2018.
+
+- title: "Bringing the Generic Mapping Tools to Python"
+  authors: [Me, Paul]
+  year: 2017
+  conference: SciPy 2017
+  doi: 10.6084/m9.figshare.7635833
+  github: GenericMappingTools/scipy2017
+  recording: 93M4How7R24
+  slides: https://doi.org/10.6084/m9.figshare.7635833
+  about: |
+    This was the first talk I gave about GMT/Python, a wrapper that
+    <a href="/blog/hawaii-gmt-postdoc.html" >I'm building for the Generic
+    Mapping Tools</a>. I didn't have that much implemented yet but was able
+    to give a quick demo.
+  abstract: |
+    The Generic Mapping Tools (GMT) is an open-source software package widely
+    used in the geosciences to process and visualize time series and gridded
+    data. Maps generated by GMT are ubiquitous in scientific publications in
+    areas such as seismology and oceanography. We present a new GMT Python
+    wrapper library built by the GMT team. We will show the design plans,
+    internal implementations, and demonstrate an initial prototype of the
+    library. Our wrapper connects to the GMT C API using ctypes and allows
+    input and output using data from numpy ndarrays and xarray Datasets. The
+    library is still in early stages of design and implementation and we are
+    eager for contributions and feedback from the SciPy community.
+
+- title: "Using Fatiando a Terra to solve inverse problems in geophysics"
+  authors: [Me, Bi, Val]
+  year: 2014
+  conference: SciPy 2014
+  doi: 10.6084/m9.figshare.1089987
+  github: leouieda/scipy2014
+  poster: https://doi.org/10.6084/m9.figshare.1089987
+  poster_img: ../images/scipy2014.jpg
+  about: |
+    This was my second time at SciPy presenting about Fatiando a Terra (see
+    my SciPy2013 talk). The poster is about some of the work me and Vanderlei
+    had been doing on a general purpose inverse problems framework.
+    As a bonus, I made this gif for the Twitter hashtag
+    <a href="https://twitter.com/leouieda/status/486917338092929024">#scipy2014</a>
+    using Fatiando to model seismic wave propagation.
+  abstract: |
+    Inverse problems haunt the nightmares of geophysics graduate students.
+    I'll demonstrate how to conquer them using Fatiando a Terra. The new
+    machinery in Fatiando contains many ready-to-use components and automates
+    as much of the process as possible. You can go from zero to regularized
+    gravity inversion with as little as 30 lines of code. I'll walk through
+    an example to show you how.
+
+- title: "Gravity inversion in spherical coordinates using tesseroids"
+  authors: [Me, Val]
+  year: 2014
+  conference: EGU General Assembly
+  doi: 10.6084/m9.figshare.1155457
+  github: leouieda/egu2014
+  slides: https://doi.org/10.6084/m9.figshare.1155457
+  abstract: |
+    Satellite observations of the gravity field have provided geophysicists
+    with exceptionally dense and uniform coverage of data over vast areas.
+    This enables regional or global scale high resolution geophysical
+    investigations. Techniques like forward modeling and inversion of gravity
+    anomalies are routinely used to investigate large geologic structures,
+    such as large igneous provinces, suture zones, intracratonic basins, and
+    the Moho. Accurately modeling such large structures requires taking the
+    sphericity of the Earth into account. A reasonable approximation is to
+    assume a spherical Earth and use spherical coordinates.
+    In recent years, efforts have been made to advance forward modeling in
+    spherical coordinates using tesseroids, particularly with respect to
+    speed and accuracy. Conversely, traditional space domain inverse modeling
+    methods have not yet been adapted to use spherical coordinates and
+    tesseroids. In the literature there are a range of inversion methods that
+    have been developed for Cartesian coordinates and right rectangular
+    prisms. These include methods for estimating the relief of an interface,
+    like the Moho or the basement of a sedimentary basin. Another category
+    includes methods to estimate the density distribution in a medium. The
+    latter apply many algorithms to solve the inverse problem, ranging from
+    analytic solutions to random search methods as well as systematic search
+    methods.
+    We present an adaptation for tesseroids of the systematic search method
+    of "planting anomalous densities". This method can be used to estimate
+    the geometry of geologic structures. As prior information, it requires
+    knowledge of the approximate densities and positions of the structures.
+    The main advantage of this method is its computational efficiency,
+    requiring little computer memory and processing time. We demonstrate the
+    shortcomings and capabilities of this approach using applications to
+    synthetic and field data. Performing the inversion of gravity and gravity
+    gradient data, simultaneously or separately, is straight forward and
+    requires no changes to the existing algorithm. Such feature makes it
+    ideal for inverting the multicomponent gravity gradient data from the
+    GOCE satellite.
+
+- title: "Modeling the Earth with Fatiando a Terra"
+  authors: [Me, Bi, Val]
+  year: 2013
+  conference: SciPy 2013
+  doi: 10.25080/Majora-8b375195-010
+  github: leouieda/scipy2013
+  recording: Ec38h1oB8cc
+  slides: http://www.leouieda.com/scipy2013/?theme=night#/
+  about: |
+    This was the first presentation that I made about Fatiando a Terra, a
+    Python library for modeling and inversion in geophysics. The proceedings
+    paper that accompanies this talk became the second chapter of my PhD
+    thesis.
+  abstract: |
+    Solid Earth geophysics is the science of using physical observations of
+    the Earth to infer its inner structure. Generally, this is done with a
+    variety of numerical modeling techniques and inverse problems. The
+    development of new algorithms usually involves copy and pasting of code,
+    which leads to errors and poor code reuse. Added to this is a modeling
+    pipeline composed of various tools that don't communicate with each other
+    (Fortran/C for computations, large complicated I/O files, Matlab/VTK for
+    visualization, etc). Fatiando a Terra is a Python library that aims to
+    unify the modeling pipeline inside of the Python language. This allows
+    users to replace the traditional shell scripting with more versatile and
+    powerful Python scripting. Together with the new IPython notebook,
+    Fatiando a Terra can integrate all stages of the geophysical modeling
+    process, like data pre-processing, inversion, statistical analysis, and
+    visualization. However, the library can also be used for quickly
+    developing stand-alone programs that can be integrated into existing
+    pipelines. Plus, because functions inside Fatiando a Terra use a common
+    data and mesh format, existing algorithms can be combined and new ideas
+    can build upon existing functionality. This flexibility facilitates
+    reproducible computations, prototyping of new algorithms, and interactive
+    teaching exercises. Although the project has so far focused on potential
+    field methods (gravity and magnetics), some numerical tools for other
+    geophysical methods have been developed as well. The library already
+    contains: fast implementations of forward modeling algorithms (using
+    Numpy and Cython), generic inverse problem solvers, unified geometry
+    classes (prism meshes, polygons, etc), functions to automate repetitive
+    plotting tasks with Matplotlib (automatic griding, simple GUIs, picking,
+    projections, etc) and Mayavi (automatic conversion of geometry classes to
+    VTK, drawing continents, etc). In the future, we plan to continuously
+    implement classic and state-of-the-art algorithms as well as sample
+    problems to help teach geophysics.
+
+- title: "3D magnetic inversion by planting anomalous densities"
+  authors: [Me, Val]
+  year: 2013
+  conference: AGU Meeting of the Americas
+  doi: 10.6084/m9.figshare.703651
+  github: leouieda/agu-cancun2013
+  slides: http://doi.org/10.6084/m9.figshare.703651
+  about: |
+    As you may have noticed, there is an error in the title. We do not, in
+    fact, invert magnetic data using density anomalies. This illustrates the
+    perils of copy-pasting combined with a looming deadline.
+    This talk presents an adaptation of the gravity-gradient inversion method
+    I developed for my Masters degree dissertation "Robust 3D gravity
+    gradient inversion by planting anomalous densities" to invert magnetic
+    data.
+  abstract: |
+    We present a new 3D magnetic inversion algorithm based on the
+    computationally efficient method of planting anomalous densities. The
+    algorithm consists of an iterative growth of the anomalous bodies around
+    prismatic elements called "seeds". These seeds are user-specified and
+    have known magnetizations. Thus, the seeds provide a way for the
+    interpreter to specify the desired skeleton of the anomalous bodies. The
+    inversion algorithm is computationally efficient due to various
+    optimizations made possible by the iterative nature of the growth
+    process. The control provided by the use of seeds allows one to test
+    different hypothesis about the geometry and magnetization of targeted
+    anomalous bodies. To demonstrate this capability, we applied our
+    inversion method to the Morro do Engenho (ME) and A2 magnetic anomalies,
+    central Brazil (Figure 1a). ME is an outcropping alkaline intrusion
+    formed by dunites, peridotites and pyroxenites with known magnetization.
+    A2 is a magnetic anomaly to the Northeast of ME and is thought to be a
+    similar intrusion that is not outcropping. Therefore, a plausible
+    hypothesis is that A2 has the same magnetization as ME. We tested this
+    hypothesis by performing an inversion using a single seed for each body.
+    Both seeds had the same magnetization. Figure 1b shows that the inversion
+    produced residuals up to 2000 nT over A2 (i.e., a poor fit) and less than
+    400 nT over ME (i.e., an acceptable fit). Figure 1c shows that ME is a
+    compact outcropping body with bottom at approximately 5 km, which is in
+    agreement with previous interpretations. However, the estimate produced
+    by the inversion for A2 is outcropping and is not compact. In summary,
+    the estimate for A2 provides a poor fit to the observations and is not in
+    accordance with the geologic information. This leads to the conclusion
+    that A2 does not have the same magnetization as ME. These results
+    indicate the usefulness and capabilities of the inversion method here
+    proposed.
+
+- title: "Iron ore interpretation using gravity-gradient inversions in the Carajás, Brazil"
+  authors: [Dio, Me, YLi, Val, BragaVale, Angeli, Peres]
+  year: 2012
+  conference: SEG Annual Meeting
+  doi: 10.1190/segam2012-0525.1
+  github: leouieda/seg2012
+  slides: http://doi.org/10.6084/m9.figshare.156865
+  about: |
+    This presentation is about the work Dionisio U. Carlos did for his PhD.
+    He used my planting inversion method on data from his research area in
+    central Brazil. He couldn't make it to the meeting so I ended up giving
+    the talk on his behalf.
+  abstract: |
+    We have interpreted the airborne gravity gradiometry data from Carajás
+    Mineral Province (CMP), Brazil, by using two different 3D inversion
+    methods. Both inversion methods parameterized the Earth's subsurface into
+    prismatic cells and estimate the 3D density-contrast distribution that
+    retrieves an image of geologic sources subject to an acceptable data
+    misfit. The first inversion method imposes smoothness on the solution by
+    solving a linear system that minimizes an depth weighted L2 model
+    objective function of density-contrast distribution. The second imposes
+    compactness on the solution by using an iterative growth algorithm solved
+    by a systematic search algorithm that accretes mass around user-specified
+    prisms called “seeds”. Using these two inversion methods, the
+    interpretation of full tensor gravity gradiometry data from an iron ore
+    deposit in the area named N1 at CMP shows the consistent geometry and the
+    depth of iron orebody. To date, the maximum depth of the iron orebody is
+    assumed to be 200 m based on the maximum depth attained by the deepest
+    well drilled in this study area. However, both inversion results exhibit
+    a source whose maximum bottom depth is greater than 200 m. These
+    results give rise two interpretations: i) the iron orebody may present
+    its depth to the bottom greater than the maximum depth of 200 m attained
+    by the deepest borehole; or ii) the iron orebody may be 200 m deep and
+    the rocks below may be jaspilite whose density is close to that of soft
+    hematite.
+
+- title: |
+    Use of the "shape-of-anomaly" data misfit in 3D inversion by planting
+    anomalous densities
+  authors: [Me, Val]
+  year: 2012
+  conference: SEG Annual Meeting
+  doi: 10.1190/segam2012-0383.1
+  github: leouieda/seg2012
+  slides: http://doi.org/10.6084/m9.figshare.156864
+  about: |
+    This talk is about an improvement to the method described in the paper
+    "Robust 3D gravity gradient inversion by planting anomalous densities".
+  abstract: |
+    We present an improvement to the method of 3D gravity gradient inversion
+    by planting anomalous densities. This method estimates a density-contrast
+    distribution defined on a grid of right-rectangular prisms. Instead of
+    solving large equation systems, the method uses a systematic search
+    algorithm to grow the solution, one prism at a time, around
+    user-specified prisms called "seeds". These seeds have known density
+    contrasts and the solution is constrained to be concentrated around the
+    seeds as well as have their density contrasts. Thus, prior geologic and
+    geophysical information are incorporated into the inverse problem through
+    the seeds. However, this leads to a strong dependence of the solution on
+    the correct location, density contrast, and number of seeds used. Our
+    improvement to this method consists of using the "shape-of-anomaly"
+    data-misfit function in conjunction with the l2-norm data-misfit
+    function. The shape-of-anomaly function measures the different in shape
+    between the observed and predicted data and is insensitive to differences
+    in amplitude. Tests on synthetic and real data show that the improved
+    method not only has an increased robustness with respect to the number of
+    seeds and their locations, but also provides a better fit of the observed
+    data.
+
+- title: |
+    Rapid 3D inversion of gravity and gravity gradient data to test geologic
+    hypotheses
+  authors: [Me, Val]
+  year: 2012
+  conference: International Symposium on Gravity, Geoid and Height Systems
+  doi: 10.6084/m9.figshare.156859
+  github: leouieda/gghs2012
+  slides: http://doi.org/10.6084/m9.figshare.156859
+  abstract: |
+    Forward modeling of potential fields is a useful way to incorporate the
+    interpreter's knowledge about the geology of the interpretation area into
+    the model. However, this can be a very tedious task. This is specially
+    true when modeling in 3D and trying to fit multiple components, e.g., in
+    gravity gradiometry. The interpreter is required to simultaneously
+    supervise the data fit and the construction of geologically realistic 3D
+    bodies. This problem is partially solved by methods of geophysical
+    inversion, which automatically fit the data. Conversely, inverse problems
+    introduce other challenges of their own. Most geophysical inverse
+    problems are ill-posed because their solutions are neither unique nor
+    stable. Thus, they require the introduction of prior information, usually
+    through regularizing functions. Moreover, 3D inverse problems are very
+    computationally expensive. Recent developments in potential field
+    inversion have proposed different regularizing functions to transform the
+    ill-posed problem into a well-posed one. Also, several techniques, like
+    data compression and parallel computation, have been applied to overcome
+    the computational complexity. We call attention to the method of
+    potential field inversion by planting anomalous densities. This method
+    uses an iterative algorithm to automatically grow the anomalous bodies
+    around user-specified prismatic elements called "seeds", which have fixed
+    density contrasts and positions. These seeds provide a first estimate of
+    the skeletal outlines of the presumed anomalous bodies. Then, the
+    inversion iteratively concentrates mass around this "skeleton" in a way
+    that both fits the observed data and yields compact bodies. Therefore,
+    the interpreter can easily impose prior information on the inversion
+    through the seeds. The interpreter needs only to supply a few seeds that
+    specify the sources' skeleton, eliminating the exhaustive task of
+    specifying the complete geometry of multiple sources. Moreover, the
+    interpreter is liberated from the time- consuming procedure of yielding a
+    reasonable fit to the data. Due to its high computational efficiency, the
+    method of planting anomalous densities can be used to quickly test
+    geologic hypothesis of different locations and density contrasts for
+    presumed sources. To test a hypothesis, one would choose the locations
+    and density contrasts of the seeds accordingly and verify if the
+    inversion result is able to fit the observed data. If it is not able,
+    then the hypothesis can be rejected and a new one can be formulated and
+    tested. Otherwise, there is no reason to reject the hypothesis on the
+    basis of the geophysical data. Thus, the method can be viewed as a an
+    enhanced forward modeling. The method of planting anomalous densities can
+    be used with both gravity and gravity gradient data. This makes it an
+    ideal tool to interpret compact geologic bodies using the new generation
+    GOCE data. We present applications to synthetic and real data that
+    illustrate the usefulness of our method.
+
+- title: |
+    Robust 3D gravity gradient inversion by planting anomalous densities
+  authors: [Me, Val]
+  year: 2011
+  conference: SEG Annual Meeting
+  doi: 10.1190/1.3628201
+  github: leouieda/seg2011
+  slides: http://doi.org/10.6084/m9.figshare.156863
+  about: |
+    This talk and expanded abstract present the second version of what would
+    eventually become my first publication "Robust 3D gravity gradient
+    inversion by planting anomalous densities" and Masters dissertation.
+  abstract: |
+    We present a new gravity gradient inversion method for estimating a 3D
+    density-contrast distribution defined on a grid of prisms. Our method
+    consists of an iterative algorithm that does not require the solution of
+    a large equation system. Instead, the solution grows systematically
+    around user-specified prismatic elements called "seeds". Each seed can be
+    assigned a different density contrast, allowing the interpretation of
+    multiple bodies with different density contrasts and that produce
+    interfering gravitational effects. The compactness of the solution around
+    the seeds is imposed by means of a regularizing function. The solution
+    grows by the accretion of neighboring prisms of the current solution. The
+    prisms for the accretion are chosen by systematically searching the set
+    of current neighboring prisms. Therefore, this approach allows that the
+    columns of the Jacobian matrix be calculated on demand, which greatly
+    reduces the demand of computer memory and processing time. Tests on
+    synthetic data and on real data collected over an iron ore province of
+    Quadrilátero Ferrífero, southeastern Brazil, confirmed the ability of our
+    method in detecting sharp and compact bodies.
+
+- title: |
+    3D gravity inversion by planting anomalous densities
+  authors: [Me, Val]
+  year: 2011
+  conference: Internation Congress of the Brazilian Geophysical Society
+  doi: 10.1190/sbgf2011-179
+  github: leouieda/sbgf2011
+  slides: http://doi.org/10.6084/m9.figshare.156861
+  about: |
+    This talk and expanded abstract are a branch of my Masters degree
+    research. It presents an adaptation of the gravity-gradient inversion to
+    gravity data.
+  abstract: |
+    This paper presents a novel gravity inversion method for estimating a 3D
+    density-contrast distribution defined on a grid of prisms. Our method
+    consists of an iterative algorithm that does not require the solution of
+    a large equation system. Instead, the solution grows systematically
+    around user-specified prismatic elements called "seeds". Each seed can
+    have a different density contrast, allowing the interpretation of
+    multiple bodies with different density contrasts and interfering
+    gravitational effects. The compactness of the solution around the seeds
+    is imposed by means of a regularizing function. The solution grows by the
+    accretion of neighboring prisms of the current solution. The prisms for
+    the accretion are chosen by systematically searching the set of current
+    neighboring prisms. Therefore, this approach allows that the columns of
+    the Jacobian matrix be calculated on demand. This is a known technique
+    from computer science called "lazy evaluation", which greatly reduces the
+    demand of computer memory and processing time. Test on synthetic data and
+    on real data collected over the ultramafic Cana Brava complex, central
+    Brazil, confirmed the ability of our method in detecting sharp and
+    compact bodies.
+
+- title: |
+    Optimal forward calculation method of the Marussi tensor due to a
+    geologic structure at GOCE height
+  authors: [Me, Everton, Carla, Eder]
+  year: 2011
+  conference: 4th International GOCE User Workshop
+  doi: 10.6084/m9.figshare.92624
+  github: leouieda/goce2011
+  poster: http://doi.org/10.6084/m9.figshare.92624
+  poster_img: ../images/goce2011.png
+  about: |
+    This poster and conference proceedings present the results and methods
+    after the 1.0 release of Tesseroids. Version 1.0 was a complete re-write
+    of the original Python code in the C language. This work was made
+    possible by professor Carla Braitenberg. She funded me to spend a month
+    at the University of Trieste, Italy, and re-write the software from
+    scratch. What followed was a much faster and more robust
+    program.
+    This version also featured the first iteration of the adaptive
+    discretization presented in the paper "Tesseroids: forward modeling
+    gravitational fields in spherical coordinates" and my PhD thesis.
+  abstract: |
+    The new observations of GOCE present a challenge to develop new
+    calculation methods that take into account the sphericity of the Earth.
+    We address this problem by using a discretization with a series of
+    tesseroids. There is no closed formula giving the gravitational fields of
+    the tesseroid and numerical integration methods must be used, such as the
+    Gauss Legendre Cubature (GLC). A problem that arises is that the
+    computation times with the tesseroids are high. Therefore, it is
+    important to optimize the computations while maintaining the desired
+    accuracy. This optimization was done using an adaptive computation scheme
+    that consists of using a fixed GLC order and recursively subdividing the
+    tesseroids. We have obtained an optimum ratio between the size of the
+    tesseroid and its distance from the computation point. Furthermore, we
+    show that this size-to-distance ratio is different for the gravitational
+    attraction than for the gravity gradient tensor.
+
+- title: |
+    3D gravity gradient inversion by planting density anomalies
+  authors: [Me, Val]
+  year: 2011
+  conference: 73th EAGE Conference and Exhibition incorporating SPE EUROPEC
+  doi: 10.3997/2214-4609.20149567
+  github: leouieda/eage2011
+  poster: http://doi.org/10.6084/m9.figshare.91511
+  poster_img: ../images/eage2011.png
+  about: |
+    This poster and expanded abstract present the first version of what would
+    be my first publication "Robust 3D gravity gradient inversion by planting
+    anomalous densities" and eventually Masters dissertation.
+  abstract: |
+    We present a new gravity gradient tensor inversion for estimating a 3D
+    density-contrast distribution defined on a user-specified grid of prisms.
+    Our method consists of an iterative algorithm that does not require the
+    solution of large equation system. Instead, the solution grows
+    systematically around user-specified prismatic elements called “seeds”.
+    Each seed can have a different density contrast, allowing the
+    interpretation of multiples bodies with different density contrasts. The
+    compactness of the solution is imposed by means of a regularizing
+    function that favors compact bodies closest to the priorly specified
+    seeds. The solution grows by accreting neighboring prisms of the current
+    solution. The prisms for the accretion are chosen by systematically
+    searching the set of current neighboring prisms. Therefore, this approach
+    allows that the columns of the Jacobian matrix be calculated on demand.
+    This is a known technique from computer science called “lazy evaluation”,
+    which greatly reduces the demand of computer memory and processing time.
+    Test on synthetic data from multiple buried sources at different depths
+    and on real data collected over iron deposits located in the Quadrilátero
+    Ferrífero, southeastern region of Brazil, confirmed the ability of our
+    method in detecting sharp and compact bodies.
+
+- title: |
+    Computation of the gravity gradient tensor due to topographic masses
+    using tesseroids
+  authors: [Me, Naomi, Carla]
+  year: 2010
+  conference: AGU Meeting of the Americas
+  doi: 10.6084/m9.figshare.156858
+  github: leouieda/agu2010
+  slides: http://doi.org/10.6084/m9.figshare.156858
+  about: |
+    This is a presentation of the methods behind the open-source software
+    Tesseroids. The algorithms implemented in the software have since been
+    updated (see the paper "Tesseroids: forward modeling gravitational fields
+    in spherical coordinates") and have become a part of my PhD thesis. The
+    content of this presentation is a summary of my Bachelor's degree thesis.
+  abstract: |
+    The GOCE satellite mission has the objective of measuring the Earth's
+    gravitational field with an unprecedented accuracy through the
+    measurement of the gravity gradient tensor (GGT). One of the several
+    applications of this new gravity data set is to study the geodynamics of
+    the lithospheric plates, where the flat Earth approximation may not be
+    ideal and the Earth's curvature should be taken into account. In such a
+    case, the Earth could be modeled using tesseroids, also called spherical
+    prisms, instead of the conventional rectangular prisms. The GGT due to a
+    tesseroid is calculated using numerical integration methods, such as the
+    Gauss-Legendre Quadrature (GLQ), as already proposed by Asgharzadeh et
+    al. (2007) and Wild-Pfeiffer (2008). We present a computer program for
+    the direct computation of the GGT caused by a tesseroid using the GLQ.
+    The accuracy of this implementation was evaluated by comparing its
+    results with the result of analytical formulas for the special case of a
+    spherical cap with computation point located at one of the poles. The GGT
+    due to the topographic masses of the Parana basin (SE Brazil) was
+    estimated at 260km altitude in an attempt to quantify this effect on the
+    GOCE gravity data. The digital elevation model ETOPO1 (Amante and Eakins,
+    2009) between 40º W and 65º W and 10º S and 35º S, which includes the
+    Paraná Basin, was used to generate a tesseroid model of the topography
+    with grid spacing of 10' x 10' and a constant density of 2670 kg/m3. The
+    largest amplitude observed was on the second vertical derivative
+    component (-0.05 to 1.20 Eötvos) in regions of rough topography, such as
+    that along the eastern Brazilian continental margins. These results
+    indicate that the GGT due to topographic masses may have amplitudes of
+    the same order of magnitude as the GGT due to density anomalies within
+    the crust and mantle.
+
+- title: |
+    Utilização de tesseróides na modelagem de dados de gradiometria
+    gravimétrica
+  authors: [Me, Naomi]
+  year: 2008
+  conference: XIII Simpósio de Iniciação Científica do IAG-USP
+  doi: 10.6084/m9.figshare.4779760
+  github: leouieda/simposio-iag-2008
+  poster: http://doi.org/10.6084/m9.figshare.4779760
+  poster_img: ../images/simposio-iag-2008.jpg
+  about: |
+    This is the first poster I presented about my undergraduate research on
+    forward modeling with tesseroids (spherical prisms). This would
+    eventually become the software Tesseroids and a part of my PhD thesis.
+  abstract: |
+    A ESA (European Space Agency) planeja lançar no outono de 2008 a missão
+    GOCE (Gravity field and steady-state Ocean Circulation Explorer). A
+    missão foi planejada para medir o campo gravitacional da Terra com
+    acurácia e resolução sem precedentes. Para isso, fará uso de um
+    gradiômetro de gravidade eletrostático que consiste de três pares de
+    acelerômetros idênticos mutuamente ortogonais. O GOCE fornecerá dados do
+    tensor gradiente da gravidade (TGG) a uma altitude de órbita de
+    aproximadamente 250 km.
+    Está sendo desenvolvido um programa computacional para analisar dados do
+    TGG sobre as bacias sedimentares brasileiras. O programa utilizará o
+    método da Quadratura Gauss-Legendre para efetuar a modelagem direta do
+    TGG gerado por feições ou corpos geológicos com geometria esférica. A
+    modelagem será feita discretizando o corpo por tesseróides, também
+    denominados prismas esféricos. Os tesseróides são segmentos de uma casca
+    esférica de espessura finita limitados por linhas de grade geográficas. A
+    geometria dos tesseróides possibilita a construção de modelos levando em
+    conta a curvatura da Terra. Isto se torna importante na modelagem de
+    corpos geológicos com grande extensão lateral, como por exemplo, a bacia
+    do Paraná. Será criado um modelo de densidade desta bacia a partir de
+    dados de poços e dados sísmicos e utilizaremos o programa desenvolvido
+    para obter estimativas do TGG. As estimativas serão comparadas com os
+    futuros dados do GOCE na tentativa de separar o componente gravimétrico
+    associado às variações de densidade na parte mais profunda da bacia.
+
+- title: |
+    Paleomagnetismo e mineralogia magnética dos diques cambrianos de
+    Maravilhas e Prata (PB)
+  authors: [Me, Manoel]
+  year: 2006
+  conference: XI Simpósio de Iniciação Científica do IAG-USP
+  doi: 10.6084/m9.figshare.4779769
+  poster: http://doi.org/10.6084/m9.figshare.4779769
+  poster_img: ../images/simposio-iag-2006.jpg
+  about: |
+    This is the first poster I ever made. It was about my first undergraduate
+    research project at the paleomagnetism lab at the Universidade de São
+    Paulo. The project lasted for a year and I was able to go to the field
+    and collect samples from Cambrian dikes in Northeastern Brazil.
+  abstract: |
+    I can't even find an abstract for this but I like to share it anyway.
+    It's kind of nostalgic.

@@ -1,0 +1,126 @@
+- title: "Geo+Code UK"
+  funder: Software Sustainbility Institute
+  authors: [Me, MTso]
+  year: 2022
+  about: |
+    This was a 1-day workshop/sprint that I organized as part of my SSI
+    Fellowship. Our goal was to connect geoscientists from around the UK who
+    were interested in open-source and open-science so that we could start
+    building something together. I wrote a
+    <a href="https://www.software.ac.uk/blog/2023-05-29-geocode-uk-lessons-organizing-sprints-mixed-audience">blog post about the event on the SSI website</a>.
+
+- title: "EOS5.3 - The evolving open-science landscape in geosciences: open data, software, publications and community initiatives"
+  authors: [RNijzink, NDrost, JFarquharson, AKushnir, FPianosi, SSchymanski, Me, FWadsworth]
+  conference: EGU General Assembly
+  year: 2021
+  abstract: |
+    In recent years, the geoscience community has been making strides towards
+    making our science more open, inclusive, and accessible, driven both by
+    individual- or community-led initiatives and by broader-scale regulatory
+    changes. Open-source software, accessible codebases and open online
+    collaboration resources (such as GitHub, VHub, etc.) are becoming the norm
+    in many disciplines. The open-access publishing landscape has been changing
+    too: several geoscience journals have defined data availability policies,
+    and many publishers have introduced green and gold open-access options to
+    their journal collections. Pre-print servers and grassroots diamond
+    open-access journals are changing the readiness with which scholarly
+    content can be accessed beyond the traditional paywall model.
+    However, good scientific practice requires research results to be
+    reproducible, experiments to be repeatable and methods to be reusable. This
+    can be a challenge in geosciences, with available data sets that are
+    becoming more complex and constantly superseded by new, improved releases.
+    Similarly, new models and computational tools keep emerging in different
+    versions and programming languages, with a large variability in the quality
+    of the documentation. Moreover, how data and models are linked together
+    towards scientific output is very rarely documented in a reproducible way.
+    As a result, very few published results are reproducible for the general
+    reader. These challenges especially apply to hydrology, which is
+    highlighted here as an example in the general geosciences.
+    This session is designed to gain a community overview of the current
+    open-science landscape and how this is expected to evolve in the future. It
+    aims to foster a debate on open science, lower the bar for engaging in open
+    science and showcase examples, including software and other instruments for
+    assisting open research. This may include software and tools, open science
+    dissemination platforms (such as pre-print servers and journals), the teams
+    driving the development of open-science resources and practices, and
+    discussion on the regulatory moves towards standardising open access in the
+    scientific community and what those policies mean in practice. The session
+    has a focus on hydrological sciences, as an example within the geosciences.
+    This session should advance the discussion on open and reproducible
+    science, highlight its advantages and also provide the means to bring this
+    into practice.
+
+- title: "G4.3 - Acquisition and processing of gravity and magnetic field data and their integrative interpretation"
+  authors: [JEbbing, Carla, AGuy, MKaban, Me]
+  conference: EGU General Assembly
+  year: 2021
+  abstract: |
+    Gravity and magnetic field data contribute to a wide range of
+    geo-scientific research, from imaging the structure of the earth and
+    geodynamic processes (e.g. mass transport phenomena or deformation
+    processes) to near surface investigations. The session is dedicated to
+    contributions related to spatial and temporal variations of the Earth
+    gravity and magnetic field at all scales. Contributions to modern potential
+    field research are welcome, including instrumental issues, data processing
+    techniques, interpretation methods, innovative applications of the results
+    and data collected by modern satellite missions (e.g. GOCE, GRACE, Swarm),
+    potential theory, as well as case histories.
+
+- title: "Townhall TH25I - Update and Future Directions of the Open-Source Software Initiative"
+  authors: [Me, Lindsey, Lion, Rene, Bane]
+  conference: AGU Fall Meeting
+  year: 2019
+  abstract: |
+    Open-source software is ubiquitous in modern scientific research and is
+    only becoming more critical as the Earth Sciences move into the era of data
+    science and cloud computing. Last year, we held a town hall on “The role of
+    an open-source software initiative within the AGU” in which we discussed
+    some of the technical and social challenges facing software developers and
+    maintainers. We collectively identified 3 action-items: (1) work with AGU
+    to have “software submissions” at the Fall Meeting, so that authors can
+    submit a first-author science-focused abstract and a first-author
+    software-focused abstract, (2) assemble resources on best-practices for
+    modern research software development, (3) find mechanisms to elevate the
+    role of software maintenance and development in AGU outlets, such as blogs
+    and EOS articles. In this year’s community town hall, we will share our
+    progress, provide trajectories for new contributors to get involved, and
+    discuss priorities and new action-items for the Open Source Software
+    Initiative in 2020.
+
+- title: "NS21A - A Tour of Open-Source Software Packages for the Geosciences"
+  authors: [Lindsey, Rene, Me, Jens]
+  conference: AGU Fall Meeting
+  year: 2019
+  abstract: |
+    This session will be a rapid-fire tour (5 min) of open source tools freely
+    available for researchers in the geosciences. The fast-growing open source
+    software ecosystem is creating new tools and changing paradigms for how
+    computers and collaborations are used to study Earth processes. If you have
+    written open-source software that could be useful to others, we look
+    forward to seeing your submission. This session will not only be an
+    opportunity to showcase your own packages and learn  about other available
+    tools, we also hope it will be an opportunity to connect with others
+    working on related problems and lead to opportunities to form new
+    collaborations. The session will be accompanied by a posters where the
+    audience can engage individually with the presenters. We welcome
+    submissions from all domains.
+
+- title: "Townhall TH25E - The role of an open-source software initiative within the AGU"
+  authors: [Lindsey, Lion, Me]
+  conference: AGU Fall Meeting
+  year: 2018
+  abstract: |
+    Software is now an essential part of almost any scientific research
+    conducted. The spectrum of software used by scientists on a daily basis
+    ranges from “mundane” data parsers, to numerical simulations, which solve a
+    partial differential equation, to highly domain-specific tools for data
+    analysis. The growth of the open-source software ecosystem has increased
+    the availability of tools. Importantly, as more researchers open-source
+    their software, there is less duplication of efforts in the development of
+    routine tasks, strides are being made to improve reproducibility of
+    results, and the ability of other researchers to build upon and extend work
+    is greatly accelerated. As such, we see that open-source software is
+    critical to the future of research in the geosciences. Therefore, we
+    propose to start an Open-Source Software Initiative (OSSI) within the AGU.
+    In this community forum, we would like to present our vision for the role
+    of the OSSI and solicit feedback and ideas from the wider community.

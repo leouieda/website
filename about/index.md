@@ -4,7 +4,6 @@ banner_image: images/hawaii-lava-photoshoot.jpg
 banner_position: top left
 banner_title: About me
 banner_subtitle: More about me and what I do
-thumbnail: images/thumbnail/about.png
 template: base.html
 ---
 
@@ -27,7 +26,7 @@ I work as Lecturer in Geophysics at the University of Liverpool's
 [Department of Earth, Ocean and Ecological Sciences][deoes] in the UK,
 where I started the [Computer-Oriented Geoscience Lab]({{ config.links.compgeolab }}).
 Before coming to Liverpool, I was a visiting research scholar at the
-University of Hawaiʻi at Mānoa, where I worked with the
+[University of Hawaiʻi at Mānoa][uh], where I worked with the
 [Generic Mapping Tools]({{ config.links.gmt }}) team to create
 [PyGMT]({{ config.links.pygmt }}), a widely-used Python library for processing
 and visualizing geophysical data.
@@ -48,3 +47,4 @@ Python libraries for the Geosciences.
 [sanderson]: https://en.wikipedia.org/wiki/Brandon_Sanderson
 [cosmere]: https://coppermind.net/
 [avatar]: https://en.wikipedia.org/wiki/Avatar%3A_The_Last_Airbender
+[uh]: (https://www.soest.hawaii.edu/earthsciences/)
