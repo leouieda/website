@@ -18,11 +18,6 @@
   {%- endif %}
 
   <!-- OpenGraph social media card -->
-  {%- if page.thumbnail is defined -%}
-    {% set thumbnail = page.thumbnail %}
-  {%- else -%}
-    {% set thumbnail = config.thumbnail %}
-  {%- endif -%}
   {%- if page.description is defined -%}
     {% set description = page.description|striptags|trim  %}
   {%- elif page.banner_subtitle -%}
@@ -38,7 +33,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ ogtitle }}" />
   <meta property="og:description" content="{{ description }}" />
-  <meta property="og:image" content="{{ config.url }}/{{ thumbnail }}" />
+  <meta property="og:image" content="{{ config.url }}/{{ config.thumbnail }}" />
   <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
 
   <!-- FontAwsome -->
@@ -199,11 +194,5 @@
       });
     });
   </script>
-
-  <!-- Dimensions badge -->
-  {%- if page.enable_alm is defined and page.enable_alm %}
-    <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-  {%- endif %}
-
 </body>
 </html>

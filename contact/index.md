@@ -4,7 +4,6 @@ banner_image: images/amazon-delta.jpg
 banner_position: center
 banner_title: Contact
 banner_subtitle: How to reach me online and offline
-thumbnail: images/thumbnail/contact.png
 template: base.html
 ---
 

@@ -4,7 +4,6 @@ banner_image: images/teaching-git-at-agu2019.jpg
 banner_position: center right
 banner_title: Curriculum Vitæ
 banner_subtitle: A list of pretty much everything I've done so far in my career
-thumbnail: images/thumbnail/default.png
 template: base.html
 sections:
     - [work, Professional appointments]
