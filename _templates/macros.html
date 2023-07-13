@@ -28,16 +28,6 @@
 {%- endmacro -%}
 
 
-{%- macro youtube_link(id) -%}
-  {%- if id[:5] == "list:" %}
-    {%- set link = "https://www.youtube.com/playlist?list=" ~ id[5:] %}
-  {%- else %}
-    {%- set link = "https://www.youtube.com/watch?v=" ~ id %}
-  {%- endif %}
-  {{ link }}
-{%- endmacro -%}
-
-
 {%- macro author_list(authors, config) -%}
   {%- for author in authors %}
     {%- if author == "Me" %}
@@ -47,6 +37,16 @@
     {%- endif %}
     {%- if not loop.last -%},{%- endif -%}
   {%- endfor %}
+{%- endmacro -%}
+
+
+{%- macro youtube_link(id) -%}
+  {%- if id[:5] == "list:" %}
+    {%- set link = "https://www.youtube.com/playlist?list=" ~ id[5:] %}
+  {%- else %}
+    {%- set link = "https://www.youtube.com/watch?v=" ~ id %}
+  {%- endif %}
+  <a href="{{ link }}" target="_blank">{{ link }}</a>
 {%- endmacro -%}
 
 

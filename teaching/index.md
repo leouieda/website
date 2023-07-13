@@ -40,7 +40,6 @@ more reusable teaching resources. See [my CV](/about#cv) for a full list.
     {{ macros.button_link("https://github.com/" ~ item.github, "Teaching resources", type="btn-primary", icon="fab fa-github") }}
   {%- endif %}
   {%- if item.recording is defined %}
-    {{ macros.button_link(macros.youtube_link(item.recording)|trim, "Recording", type="btn-light", icon="fab fa-youtube") }}
   {%- endif %}
   <div id="collapse-{{ id }}" class="collapse paper-info mt-2 overflow-hidden">
     {%- if item.note is defined %}

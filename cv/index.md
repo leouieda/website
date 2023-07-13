@@ -11,12 +11,16 @@ sections:
     - [community, Community service]
     - [edu, Education]
     - [grants, Grants & fellowships]
+    - [awards, Awards & honors]
     - [preprints, Preprints]
     - [papers, Papers]
-    - [other-publications, Other publications]
     - [proceedings, Conference proceedings]
+    - [other-publications, Other publications]
+    - [presentations-invited, Invited talks]
+    - [presentations-department, Department seminars]
+    - [presentations-conference, Conference presentations]
+    - [presentations-other, Other presentations]
     - [media, Media & outreach]
-    - [awards, Awards & honors]
     - [examiner-thesis, Thesis examination]
     - [convener, Conference sessions and events]
     - [supervision-phd, PhD students]
@@ -77,6 +81,9 @@ It's typeset in LaTeX and the source is available from the
         {%- if item.github is defined %}
           <p><strong>GitHub:</strong> {{ macros.github_link(item.github) }}</p>
         {%- endif %}
+        {%- if item.recording is defined %}
+          <p><strong>Recording:</strong> {{ macros.youtube_link(item.recording) }}</p>
+        {%- endif %}
         {%- if item.data is defined %}
           <p><strong>Data and code archive DOI:</strong> {{ macros.doi_link(item.data) }}</p>
         {%- endif %}
@@ -85,6 +92,9 @@ It's typeset in LaTeX and the source is available from the
         {%- endif %}
         {%- if item.slides is defined %}
           <p><strong>Slides:</strong> <a href="{{ item.slides }}" target="_blank">{{ item.slides }}</a></p>
+        {%- endif %}
+        {%- if item.poster is defined %}
+          <p><strong>Poster:</strong> <a href="{{ item.poster }}" target="_blank">{{ item.poster }}</a></p>
         {%- endif %}
         {%- if item.department is defined %}
           <p><strong>Department:</strong> {{ item.department }}</p>
@@ -129,6 +139,9 @@ It's typeset in LaTeX and the source is available from the
         {%- endif %}
         {%- if item.citation is defined %}
           <p><strong>Citation:</strong> {{ item.citation}}</p>
+        {%- endif %}
+        {%- if item.poster_img is defined %}
+          <img src="{{ item.poster_img }}" alt="Screenshot of the poster">
         {%- endif %}
         {%- if item.abstract is defined %}
           <p><strong>Abstract:</strong> {{ item.abstract }}</p>

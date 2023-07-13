@@ -16,7 +16,7 @@ I'll use this post to describe how things are currently implemented, what I
 learned from the feedback, and what changes I'm making to the code base.
 
 Before we dive in, you can watch my
-[talk on YouTube]({{ macros.youtube_link('93M4How7R24') }})
+[talk on YouTube](https://www.youtube.com/watch?v=93M4How7R24)
  or just take a quick look
 at [my slides](https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4BVnIxYBg/pub?start=false&loop=false&delayms=3000).
 
