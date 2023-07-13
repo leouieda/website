@@ -3,7 +3,7 @@ author: Leonardo Uieda
 email: uieda@liverpool.ac.uk
 url: "https://www.leouieda.com"
 site_name: Leonardo Uieda
-site_description: Geophysicist, scientist, programmer, teacher
+site_description: Geophysicist, Educator, Scientist, Programmer, Dad
 brand: LEONARDO UIEDA
 language: en
 keywords: 'science, geoscience, geophysics, software, open-source'
@@ -41,18 +41,14 @@ links:
 navigation:
   - name: Home
     id: index
-  - name: About
-    id: about/index
-  - name: CV
-    id: cv/index
   - name: Blog
     id: blog/index
-  - name: Presentations
-    id: presentations/index
-  - name: Teaching
-    id: teaching/index
+  - name: About
+    id: about/index
   - name: Software
     id: software/index
+  - name: CV
+    id: cv/index
   - name: Contact
     id: contact/index
 
