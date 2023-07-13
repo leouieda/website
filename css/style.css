@@ -448,6 +448,11 @@ hr.section-separator {
 .jupyter-notebook {
 }
 
+.xr-text-repr-fallback {
+  visibility: hidden;
+  height: 0;
+}
+
 
 /* Tweaks to KaTeX */
 /*****************************************************************************/
