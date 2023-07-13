@@ -262,7 +262,7 @@ nav a {
 /* Blocks */
 /*****************************************************************************/
 .content {
-  margin-top: var(--space-xl);
+  margin-top: var(--space-2xl);
   max-width: 65ch;
   margin-left: auto;
   margin-right: auto;
