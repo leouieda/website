@@ -1,18 +1,13 @@
 ---
 custom_page_title: Leonardo Uieda
 banner_image: images/valley-of-fire.jpg
-banner_title: 👋🏽 Olá! I'm Leo Uieda
+banner_title: 👋🏽 Olá! I'm Leo
 banner_position: top right
-banner_subtitle: |
-  Geophysicist,
-  Educator,
-  Scientist,
-  Programmer
+banner_subtitle: Geophysicist, Educator, Scientist, Programmer, Dad
 template: home.html
 ---
 
 {% import "macros.html" as macros %}
-
 
 ## A bit about me
 
@@ -26,7 +21,7 @@ template: home.html
   [PyGMT]({{ config.links.pygmt }}),
   and [more]({{ site["software/index"].path|relative_to(page.path) }})
 * Committed to open practices in teaching and research
-* Proud father and amateur baker
+* Proud father and amateur bread baker
 
 This website is my personal and professional portfolio, including a somewhat
 active blog, contact information, and links to find me around the internet.
