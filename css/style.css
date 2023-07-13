@@ -354,6 +354,13 @@ nav a {
   color: var(--color-primary);
 }
 
+.details-body {
+  border: 2px solid var(--color-neon);
+  border-radius: 5px;
+  padding: var(--space-2xs);
+  background-color: var(--color-medium);
+}
+
 
 /* Utilities */
 /*****************************************************************************/
@@ -377,7 +384,7 @@ nav a {
   font-weight: bold;
 }
 
-.flow-small {
+.flow-small > * + * {
   --flow-space: 0.5em;
 }
 

@@ -1,0 +1,83 @@
+- title: Hamed R. H. Al-Salehi
+  thesis: "Integration of ground and satellite gravity data at continental scales"
+  year: 2021 - 2023
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Junpeng Liu
+  thesis: "The CO2 emission cause by football spectators in the city of Liverpool"
+  year: 2022 - 2023
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Laura Nicholls
+  thesis: "An open-source Python implementation of the gravitational fields of ellipsoids"
+  year: 2021 - 2022
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Sarah Askevold
+  thesis: "An open-source Python implementation of k-nearest-neighbor interpolation"
+  year: 2021 - 2022
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Daniel P. Gilbert
+  thesis: "Automatic gridding of gravity and magnetic data"
+  year: 2020 - 2021
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Ali A. A. Alhazmi
+  thesis: "Ensemble learning methods for geophysical data interpolation"
+  year: 2020 - 2021
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Majed M. A. Abura
+  thesis: "An open-source implementation of spherical interpolation in Python"
+  year: 2020 - 2021
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Mustafa M. M. Alordowny
+  thesis: "An open-source implementation of gravity modeling with ellipsoidal prisms in Python"
+  year: 2020 - 2021
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Steven Heer
+  thesis: "Modelling of granitic intrusions associated with the Paraná-Etendeka Large Igneous Province using ground and satellite gravity data"
+  year: 2019 - 2020
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Charles Thomson
+  thesis: "Separating crustal gravity signals from the effects of the Moho"
+  year: 2019 - 2020
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Alexander Borges
+  thesis: "Refining the crustal thickness of Mars by optimizing the Bouguer correction"
+  year: 2019 - 2020
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
+
+- title: Lottie Cooper
+  thesis: "Depth estimation for large-scale anomalies in satellite gravity and gravity gradient data"
+  year: 2019 - 2020
+  institution: University of Liverpool
+  country: UK
+  advisor: Leonardo Uieda
