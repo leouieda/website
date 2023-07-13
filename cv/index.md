@@ -17,6 +17,7 @@ sections:
     - [proceedings, Conference proceedings]
     - [media, Media & outreach]
     - [awards, Awards & honors]
+    - [examiner-thesis, Thesis examiner]
     - [supervision-phd, PhD students]
     - [supervision-msc, MSc students]
     - [supervision-bsc, BSc students]
@@ -92,6 +93,9 @@ It's typeset in LaTeX and the source is available from the
         {%- endif %}
         {%- if item.funder is defined %}
           <p><strong>Funding agency:</strong> {{ item.funder }}</p>
+        {%- endif %}
+        {%- if item.committee is defined %}
+          <p><strong>Committee:</strong> {{ item.committee }}</p>
         {%- endif %}
         {%- if item.advisor is defined %}
           <p><strong>Advisor:</strong> {{ item.advisor }}</p>
