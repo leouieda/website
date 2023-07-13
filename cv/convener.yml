@@ -11,7 +11,7 @@
 
 - title: "EOS5.3 - The evolving open-science landscape in geosciences: open data, software, publications and community initiatives"
   authors: [RNijzink, NDrost, JFarquharson, AKushnir, FPianosi, SSchymanski, Me, FWadsworth]
-  institution: EGU General Assembly
+  conference: EGU General Assembly
   year: 2021
   abstract: |
     In recent years, the geoscience community has been making strides towards
@@ -52,7 +52,7 @@
 
 - title: "G4.3 - Acquisition and processing of gravity and magnetic field data and their integrative interpretation"
   authors: [JEbbing, Carla, AGuy, MKaban, Me]
-  institution: EGU General Assembly
+  conference: EGU General Assembly
   year: 2021
   abstract: |
     Gravity and magnetic field data contribute to a wide range of
@@ -68,7 +68,7 @@
 
 - title: "Townhall TH25I - Update and Future Directions of the Open-Source Software Initiative"
   authors: [Me, Lindsey, Lion, Rene, Bane]
-  institution: AGU Fall Meeting
+  conference: AGU Fall Meeting
   year: 2019
   abstract: |
     Open-source software is ubiquitous in modern scientific research and is
@@ -89,7 +89,7 @@
 
 - title: "NS21A - A Tour of Open-Source Software Packages for the Geosciences"
   authors: [Lindsey, Rene, Me, Jens]
-  institution: AGU Fall Meeting
+  conference: AGU Fall Meeting
   year: 2019
   abstract: |
     This session will be a rapid-fire tour (5 min) of open source tools freely
@@ -107,7 +107,7 @@
 
 - title: "Townhall TH25E - The role of an open-source software initiative within the AGU"
   authors: [Lindsey, Lion, Me]
-  institution: AGU Fall Meeting
+  conference: AGU Fall Meeting
   year: 2018
   abstract: |
     Software is now an essential part of almost any scientific research

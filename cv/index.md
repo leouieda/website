@@ -20,6 +20,8 @@ sections:
     - [presentations-department, Department seminars]
     - [presentations-conference, Conference presentations]
     - [presentations-other, Other presentations]
+    - [teaching-classes, University courses]
+    - [teaching-workshops, Workshops]
     - [media, Media & outreach]
     - [examiner-thesis, Thesis examination]
     - [convener, Conference sessions and events]
@@ -122,6 +124,9 @@ It's typeset in LaTeX and the source is available from the
         {%- endif %}
         {%- if item.journal is defined %}
           <p><strong>Journal:</strong> {{ item.journal }}</p>
+        {%- endif %}
+        {%- if item.event is defined %}
+          <p><strong>Event:</strong> {{ item.event }}</p>
         {%- endif %}
         {%- if item.conference is defined %}
           <p><strong>Conference:</strong> {{ item.conference }}</p>
