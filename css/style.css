@@ -162,6 +162,9 @@ time {
 
 details {
   font-size: var(--size--1);
+}
+
+summary {
   color: var(--color-secondary);
 }
 

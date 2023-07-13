@@ -19,7 +19,7 @@
         {{ item.title }}
       </a>
       <br>
-      <p class="font-small text-muted">{{ item.body|striptags|trim|truncate(200) }}</p>
+      <p class="font-small">{{ item.body|striptags|trim|truncate(200) }}</p>
     </li>
   {%- endfor %}
   </ul>

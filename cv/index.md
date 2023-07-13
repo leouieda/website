@@ -49,7 +49,7 @@ It's typeset in LaTeX and the source is available from the
 <nav aria-label="Page">
   <ul role="list" class="list-inline">
   {%- for data, title in page.sections %}
-    <li><a href="#{{ data }}">{{ title }}</a></li>
+    <li><a class="text-muted" href="#{{ data }}">{{ title }}</a></li>
   {%- endfor %}
   </ul>
 </nav>

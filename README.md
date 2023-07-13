@@ -1,7 +1,5 @@
 # Source code for leouieda.com
 
-[![build-html](https://github.com/leouieda/website/workflows/build-html/badge.svg?event=push)](https://github.com/leouieda/website/actions?query=workflow%3Abuild-html)
-
 This is the source code for my personal site
 [leouieda.com](http://www.leouieda.com).
 
@@ -31,10 +29,10 @@ nene -s
 
 ## The theme
 
-The website theme is made using [Bootstrap 5](http://getbootstrap.com/) and
-custom CSS.
+The website theme custom made with pure CSS.
 Icons are provided by [FontAwesome](http://fontawesome.io/) and
 [Academicons](http://jpswalsh.github.io/academicons/).
+The font used is [Atkinson Hyperlegible](https://brailleinstitute.org/freefont).
 
 The Jinja2 templates and CSS are located in the `_templates` and `css` folders.
 I really should make this theme more generic and provide it to the world.
