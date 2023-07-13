@@ -35,7 +35,7 @@ sections:
 
 **Looking for a career summary?**
 I keep a somewhat updated
-<a href="https://github.com/leouieda/cv/raw/pdf/leonardo_uieda_cv_summary.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">short-form CV in PDF format</a>.
+<a href="https://github.com/leouieda/cv/raw/pdf/cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">short-form CV in PDF format</a>.
 It's typeset in LaTeX and the source is available from the
 {{ macros.github_link("leouieda/cv") }} GitHub repository.
 
