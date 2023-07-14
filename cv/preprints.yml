@@ -3,6 +3,7 @@
   authors: [Gelson, Me, Ricardo, Janine, Roger]
   journal: EarthArXiv
   doi: 10.31223/X5QD5Z
+  github: compgeolab/micromag-euler-dipole
   abstract: |
     Very small magnetic particles in rocks and other materials can store
     information about what the Earth’s magnetic field was like in the past. But
