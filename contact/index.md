@@ -38,22 +38,3 @@ These are best ways to reach me online:
     <a href="../assets/leouieda.asc"><code>leouieda.asc</code></a>
   </li>
 </ul>
-
-## At the University of Liverpool
-
-My office is in the Jane Herdman Building - Room A1.08 (first floor of the
-annex).
-You probably want to **email me first** to make sure I'm in the office (I work
-from home some days of the week).
-
-Here is the full address:
-
-> Dr. Leonardo Uieda
-> <br>
-> Jane Herdman Building
-> <br>
-> 4 Brownlow Street
-> <br>
-> Liverpool, United Kingdom
-> <br>
-> L69 3GP
