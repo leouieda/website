@@ -29,14 +29,21 @@
 {%- endmacro -%}
 
 
+{%- macro pretty_relative_link(page, reference) -%}
+  {{ page.path|relative_to(reference.path)|replace('index.html', '') }}
+{%- endmacro -%}
+
+
 {%- macro nav_link(item, page, site) -%}
   {%- set aria = "" -%}
   {%- set class = "" -%}
+  {%- set href = pretty_relative_link(site[item.id], page) -%}
   {%- if page.id == item.id or page.parent == item.id|replace('/index', '') -%}
     {%- set class = "active" -%}
     {%- set aria = 'aria-current="page"' -%}
+    {%- set href = "." -%}
   {%- endif -%}
-  <a class="{{ class }}" {{ aria }} href="{{ site[item.id].path|relative_to(page.path) }}">{{ item.name }}</a>
+  <a class="{{ class }}" {{ aria }} href="{{ href }}">{{ item.name }}</a>
 {%- endmacro -%}
 
 
