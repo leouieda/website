@@ -38,3 +38,20 @@ These are best ways to reach me online:
     <a href="../assets/leouieda.asc"><code>leouieda.asc</code></a>
   </li>
 </ul>
+
+## In São Paulo
+
+Here is my full work address if you need to reach me by post or are looking to
+stop by in person:
+
+> Prof. Leonardo Uieda
+> <br>
+> Cidade Universitária
+> <br>
+> Rua do Matão, 1226
+> <br>
+> São Paulo - SP
+> <br>
+> Brasil
+> <br>
+> CEP: 05508-090
