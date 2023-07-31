@@ -39,21 +39,19 @@ These are best ways to reach me online:
   </li>
 </ul>
 
-## At the University of Liverpool
+## In São Paulo
 
-My office is in the Jane Herdman Building - Room A1.08 (first floor of the
-annex).
-You probably want to **email me first** to make sure I'm in the office (I work
-from home some days of the week).
+Here is my full work address if you need to reach me by post or are looking to
+stop by in person:
 
-Here is the full address:
-
-> Dr. Leonardo Uieda
+> Prof. Leonardo Uieda
 > <br>
-> Jane Herdman Building
+> Cidade Universitária
 > <br>
-> 4 Brownlow Street
+> Rua do Matão, 1226
 > <br>
-> Liverpool, United Kingdom
+> São Paulo - SP
 > <br>
-> L69 3GP
+> Brasil
+> <br>
+> CEP: 05508-090

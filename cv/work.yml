@@ -1,3 +1,16 @@
+- title: Professor Doutor
+  institution: Univeridade de São Paulo
+  department: Departmento de Geofísica - Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+  country: Brazil
+  year: 2023 - present
+  about: |
+    In April 2023, I applied and was selected for a Professor position at my
+    <em>alma mater</em>. As part of the selection process, I wrote an
+    <a href="https://github.com/leouieda/memorial2023">academic auto-biography (in Portuguese)</a>,
+    which provided an excellent opportunity to reflect back on my career, try
+    to find meaning in what I've accomplished, and plan where to invest my time
+    and energy going forward. On 21 August 2023, I start this new chapter.
+
 - title: Lecturer in Geophysics
   institution: University of Liverpool
   department: Department of Earth, Ocean and Ecological Sciences - School of Environmental Sciences
@@ -7,13 +20,18 @@
     After 2.5 years in Hawaiʻi, I was offered a position to join the Geophysics group
     of the University of Liverpool's
     <a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/">Department
-    of Earth, Ocean and Ecological Sciences</a>.
+    of Earth, Ocean and Ecological Sciences</a> on 19 August 2019.
     This was an exciting opportunity to start my own research group and
     navigate the UK system, which was entirely new to me.
+    I spent 4 years at Liverpool, with great friends and colleagues, and had
+    an overall good time.
+    But I felt that the time had come to return home to Brazil, to be closer
+    to family and also to once more be a part of a public university system
+    that has a strong social justice agenda, like we have in Brazil.
   roles:
-    - date: 2020 - 2023
+    - date: 2022 - 2023
       title: Programme Director for Geophysics
-    - date: 2020 - 2023
+    - date: 2022 - 2023
       title: Admissions Tutor for Geophysics
     - date: 2020 - 2023
       title: Early Career Academic (ECA) Representative for Earth Sciences
@@ -32,7 +50,7 @@
     geophysical data. After this first year was done, I quit my job at UERJ and
     stayed in this role, which was funded for 2.5 years.
 
-- title: Assistant Professor
+- title: Professor Assistente
   institution: Universidade do Estado do Rio de Janeiro
   department: Departamento de Geologia Aplicada - Faculdade de Geologia
   country: Brazil

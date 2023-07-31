@@ -11,7 +11,7 @@ template: home.html
 
 ## A bit about me
 
-* Brazilian geophysicist, currently living in the UK
+* Brazilian geophysicist
 * Leader of the [Computer-Oriented Geoscience Lab]({{ config.links.compgeolab }})
 * Creator of methods for imaging the inside of the Earth from measured
   disturbances in the planet's gravity and magnetic fields, from global to
