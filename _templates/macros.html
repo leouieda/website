@@ -30,7 +30,12 @@
 
 
 {%- macro pretty_relative_link(page, reference) -%}
-  {{ page.path|relative_to(reference.path)|replace('index.html', '') }}
+  {%- if page.id == reference.id -%}
+    {%- set href = "." -%}
+  {%- else -%}
+    {%- set href = page.path|relative_to(reference.path)|replace('index.html', '') -%}
+  {%- endif -%}
+  {{ href }}
 {%- endmacro -%}
 
 
