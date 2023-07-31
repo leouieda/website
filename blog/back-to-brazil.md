@@ -20,7 +20,7 @@ close family.
 It was an incredible experience and I learned so much about myself, the UK
 academic system, and many different and fascinating parts of the geosciences
 that I hadn't had contact with until now.
-It's sad to leave wonderful friends and colleagues behind and I hope to back
+It's sad to leave wonderful friends and colleagues behind and I hope to be back
 soon for a visit.
 
 <figure>
@@ -29,6 +29,8 @@ soon for a visit.
 Saying goodbye to my University of Liverpool office.
 Just when I had finished buying new furniture, nice 4k monitors, and a load of
 plants to make it look nice...
+Photo credit:
+<a href="https://www.acarolcolombo.com/">Ana Caroline Colombo</a>.
 </figcaption>
 </figure>
 
@@ -76,8 +78,8 @@ from scene 219/076 from 2022/09/02.
 </figure>
 
 The [CompGeoLab](https://www.compgeolab.org/) will relocate to Brazil (in
-spirit at least since we don't really have physical space/kit in Liverpool) but
-we already work virtually very well.
+spirit at least, since we don't really have physical space and kit in
+Liverpool) but we already work virtually very well.
 India will be staying at Liverpool to finish her PhD and we're looking forward
 to hosting her in São Paulo for some time.
 We'll also likely have some new students coming in from São Paulo in the near
