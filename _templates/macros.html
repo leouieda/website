@@ -11,8 +11,8 @@
 
 {%- macro social_icon(title, icon, url) -%}
   <!-- The rel="me" attribute verifies for these profiles that I own this domain -->
-  <a rel="me" aria-label="{{ title }}" href="{{ url }}" target="_blank">
-    <i class="{{ icon }} fa-lg" title="{{ title }}" aria-hidden="true"></i>
+  <a rel="me" href="{{ url }}" target="_blank">
+    <i class="{{ icon }} fa-lg" title="{{ title }}" aria-label="{{ title }}"></i>
   </a>
 {%- endmacro -%}
 
