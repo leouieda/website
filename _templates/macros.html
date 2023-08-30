@@ -24,7 +24,7 @@
     {%- else %}
       {{ config.coauthors[author] }}
     {%- endif %}
-    {%- if not loop.last -%},{%- endif -%}
+    {%- if not loop.last -%};{%- endif -%}
   {%- endfor %}
 {%- endmacro -%}
 
