@@ -44,18 +44,18 @@ It's typeset in LaTeX and the source is available from the
 <hr>
 <p id="navigation">
   <i class="fas fa-list" aria-hidden="true"></i>
-  CV sections
+  Navigation
 </p>
 <nav aria-label="Page">
-  <ul role="list" class="list-inline">
+  <ul role="list" class="list-inline font-small">
   {%- for data, title in page.sections %}
-    <li><a class="text-muted" href="#{{ data }}">{{ title }}</a></li>
+    <li><a class="text-muted" href="#{{ data }}">{{ loop.index }}. {{ title }}</a></li>
   {%- endfor %}
   </ul>
 </nav>
 
 {%- for data, title in page.sections %}
-  <h2 id="{{ data }}">{{ title }}</h2>
+  <h2 id="{{ data }}">{{ loop.index }}. {{ title }}</h2>
   {%- for item in page[data] %}
     <div>
       <p>
