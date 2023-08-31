@@ -41,13 +41,18 @@ These are best ways to reach me online:
 
 ## In São Paulo
 
-Here is my full work address if you need to reach me by post or are looking to
-stop by in person:
+Want to stop by for a chat? Here's where to find me at work:
 
-> Prof. Leonardo Uieda
+> Sala D-209
 > <br>
-> Cidade Universitária
+> Departamento de Geofísica
 > <br>
+> [Instituto de Astronomia, Geofísica e Ciências Atmosféricas](https://www.iag.usp.br/)
+> <br>
+> Universidade de São Paulo
+
+Here is the full address if you need to reach me by post:
+
 > Rua do Matão, 1226
 > <br>
 > São Paulo - SP
