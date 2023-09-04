@@ -395,7 +395,7 @@ nav a {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: var(--gutter);
   padding-left: 0;
   line-height: 1;
