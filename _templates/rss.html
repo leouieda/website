@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xml:base="{{ config.url }}" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>{{ config.site_name }}</title>
+<link>{{ config.url }}</link>
+<description>{{ config.site_description }}</description>
+<atom:link href="{{ site['rss'].path }}" rel="self" type="application/rss+xml" />
+
+{% for post in site['blog/index'].siblings|sort(attribute="date", reverse=True) %}
+  <item>
+    <title>{{ post.title }}</title>
+    <link>{{ config.url }}/{{ post.path }}</link>
+    <guid>{{ config.url }}/{{ post.path }}</guid>
+    <pubDate>{{ post.date.strftime('%a, %d %b %Y 12:00:00 GMT') }}</pubDate>
+    <dc:creator>{{ config.author }}</dc:creator>
+      <description><![CDATA[ {{ post.body }} ]]></description>
+  </item>
+{% endfor %}
+
+</channel>
+</rss>
+
