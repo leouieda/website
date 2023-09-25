@@ -43,8 +43,6 @@ navigation:
     id: index
   - name: Blog
     id: blog/index
-  - name: About
-    id: about/index
   - name: Software
     id: software/index
   - name: CV

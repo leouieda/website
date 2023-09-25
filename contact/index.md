@@ -1,7 +1,7 @@
 ---
 title: Contact
-banner_image: images/amazon-delta.jpg
-banner_position: center
+banner_image: images/hawaii-lava-photoshoot.jpg
+banner_position: top left
 banner_title: Contact
 banner_subtitle: How to reach me online and offline
 template: base.html
@@ -47,7 +47,7 @@ Want to stop by for a chat? Here's where to find me at work:
 > <br>
 > Departamento de Geofísica
 > <br>
-> [Instituto de Astronomia, Geofísica e Ciências Atmosféricas](https://www.iag.usp.br/)
+> Instituto de Astronomia, Geofísica e Ciências Atmosféricas
 > <br>
 > Universidade de São Paulo
 
