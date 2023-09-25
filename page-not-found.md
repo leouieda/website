@@ -13,8 +13,8 @@ Here is a picture of a rainbow over Mānoa Valley to brighten your day instead.
 
 <div class="callout">
 
-Looking for content related to my academic work (papers, talks,
-teaching material, etc)?
-Try here instead: {{ macros.page_link("cv/index", page, site) }}.
+**Looking for information on my academic work?**
+
+Most of it has moved here 👉🏾 {{ macros.page_link("cv/index", page, site) }}.
 
 </div>
