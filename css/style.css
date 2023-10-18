@@ -90,6 +90,8 @@ hr {
 blockquote {
   border-left: var(--block-border) solid var(--color-secondary);
   color: var(--color-secondary);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
 code {
@@ -97,6 +99,7 @@ code {
   line-height: 1;
   background-color: var(--color-medium);
   border-radius: 0.25em;
+  padding: 0.1em 0.25em;
 }
 
 pre {
@@ -104,17 +107,31 @@ pre {
   border-radius: 0.25em;
   overflow: auto;
   display: block;
+  padding: var(--gutter);
+  overflow: auto;
+}
+
+pre > code {
+  padding: 0;
+}
+
+img {
+  width: 100%;
 }
 
 figcaption {
   font-size: var(--size--1);
   color: var(--color-secondary);
   text-align: center;
+  margin-top: 1em;
+  line-height: 1.25;
 }
 
 footer {
   color: var(--color-secondary);
   box-shadow: 0 1em 5em var(--color-neon);
+  padding: var(--space-xl) var(--gutter);
+  margin-top: var(--space-3xl);
 }
 
 footer nav a {
@@ -122,14 +139,21 @@ footer nav a {
 }
 
 header {
+  padding: var(--gutter);
 }
 
 header a {
   color: var(--color-secondary);
+  text-decoration: none;
 }
 
 table {
   border-collapse: collapse;
+  width: 100%;
+}
+
+table th, table td {
+  padding: 0.25em 0.5em;
 }
 
 table thead {
@@ -168,6 +192,11 @@ summary {
   color: var(--color-secondary);
 }
 
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
 
 /* Flow and rythm */
 /*****************************************************************************/
@@ -192,14 +221,6 @@ blockquote > * + *, .callout > * + * {
   margin-block-start: 0.5em;
 }
 
-
-/* Widths, sizes, spaces for main tags */
-/*****************************************************************************/
-footer {
-  padding: var(--space-xl) var(--gutter);
-  margin-top: var(--space-3xl);
-}
-
 footer * + * {
   --flow-space: 2em;
 }
@@ -208,57 +229,12 @@ footer .footer-text {
   --flow-space: var(--space-xl);
 }
 
-.banner-text > * + * {
-  --flow-space: 1.5em;
-}
-
 .footer-text > * + * {
   --flow-space: 0.5em;
 }
 
-blockquote {
-  padding-left: var(--gutter);
-  padding-right: var(--gutter);
-}
-
-iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
-
-img {
-  width: 100%;
-}
-
-code {
-  padding: 0.1em 0.25em;
-}
-
-pre {
-  padding: var(--gutter);
-  overflow: auto;
-}
-
-pre > code {
-  padding: 0;
-}
-
-figcaption {
-  margin-top: 1em;
-  line-height: 1.25;
-}
-
-table {
-  width: 100%;
-}
-
-table th, table td {
-  padding: 0.25em 0.5em;
-}
-
-nav a {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+.banner-text > * + * {
+  --flow-space: 1.5em;
 }
 
 
@@ -273,7 +249,7 @@ nav a {
   padding-right: var(--gutter);
 }
 
-.wrapper {
+.content-wide {
   max-width: 90ch;
   margin-left: auto;
   margin-right: auto;
@@ -309,10 +285,6 @@ nav a {
 
 .blockquote-footer::before {
   content: "— ";
-}
-
-.header-nav {
-  padding: var(--gutter);
 }
 
 .banner {
