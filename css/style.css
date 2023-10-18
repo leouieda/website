@@ -49,11 +49,11 @@ body {
 
 a {
   color: var(--color-primary);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--color-secondary);
 }
 
 h1,
