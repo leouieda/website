@@ -1,3 +1,17 @@
+- title: Magnetic fields and the flow of heat beneath Antarctica's ice sheets 
+  authors: [Me]
+  year: 2023
+  conference: IAG Science Day
+  github: leouieda/iag-science-day-2023
+  slides: https://www.leouieda.com/iag-science-day-2023
+  recording: i9SW5p01Pvs&t=3240
+  about: |
+    Quick 4-minute talk about some of my research interests for the 
+    2023 IAG Science Day at Universidade de São Paulo.
+    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+    using my <a href="https://github.com/leouieda/talk-template">open-source
+    HTML talk template</a>.
+
 - title: Getting started with Open Science
   authors: [Me]
   year: 2022

@@ -1,4 +1,33 @@
-- title: " Open-science for gravimetry: tools, challenges, and opportunities"
+- title: "Campos magnéticos, de escala microscópica a continental"
+  authors: [Me]
+  year: 2023
+  institution: Universidade de São Paulo
+  country: Brazil
+  github: leouieda/por-dentro-geofisica-2023
+  recording: 66J0KxmwRLM
+  slides: https://www.leouieda.com/por-dentro-geofisica-2023
+  about: |
+    This talk was given at a seminar series called "Por Dentro da Geofísica",
+    which is organized by the Geophysics students and aimed at a general
+    audience.
+    The slides were made with <a href="https://revealjs.com/">reveal.js</a>
+    using my <a href="https://github.com/leouieda/talk-template">open-source
+    HTML talk template</a>.
+  abstract: |
+    Os campos magnético e gravitacional da Terra nos fornecem uma janela para a
+    estrutura interna da crosta terrestre. Através dos pequenos distúrbios que
+    observamos nesses campos, somos capazes de inferir variações na densidade e
+    magnetização da crosta. Por sua vez, essas variações estão associadas a
+    bacias sedimentares, recursos minerais e geotermais, fluxo de calor,
+    espessura da crosta, entre outros. Nessa palestra, brevemente resumirei minha
+    trajetória na geofĩsica e no estudo do campo gravitacional e magnético da
+    Terra. Em seguida, irei descrever os temas de pesquisa que tenho abordado
+    recentemente utilizando dados do campo magnético: 1) em escala microscópica,
+    mesclando a geofĩsica aplicada com o paleomagnetismo através da microscopia
+    magnética; 2) em escala continental, aprimorando as formas de estimar o
+    fluxo de calor geotermal da Antárctica através de dados aeromagnéticos.
+
+- title: "Open-science for gravimetry: tools, challenges, and opportunities"
   authors: [Me, Santiago, Agustina]
   year: 2021
   institution: GFZ Helmholtz Centre Potsdam
