@@ -24,12 +24,7 @@ These are best ways to reach me online:
   </li>
   <li>
     <i class="fa-li fas fa-comment fa-fw" aria-hidden="true"></i>
-    Matrix:
-    <a target="_blank" href="https://matrix.to/#/{{ config.matrix }}">{{ config.matrix }}</a>
-  </li>
-  <li>
-    <i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
-    Slack:
+    Chat:
     @leouieda on the <a target="_blank" href="{{ config.links.swung }}">Software Underground</a>
   </li>
   <li>
