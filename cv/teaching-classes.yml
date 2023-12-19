@@ -1,3 +1,39 @@
+- title: "AGG5954 - Modelagem e Interpretação de Dados de Gravimetria e Magnetometria"
+  year: 2024 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is a new condensed graduate course on potential-field data modeling
+    and interpretation. The first iteration of this course in 2024 was taught
+    along side the Geophysics Summer School.
+
+- title: "AGG0669 - Gravimetria e Magnetometria Aplicadas à Prospecção de Bens Minerais e Estruturas Crustais"
+  year: 2023 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is a fourth year module in the Geophysics BSc degree. It's their only
+    potential-fields focused module and aims to introduce the theory and
+    practical implemenation of potential-field methods in geophysics.
+    I co-taught this module with Eder Molina in 2023.
+
+- title: "AGG0110 - Elementos de Geofísica"
+  year: 2023 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is a first year module in the "Licenciatura em Geociências e Educação
+    Ambiental" degree, a teaching focused degree. It's main purpose is to
+    introduce the students to geophysics at a very high level (seismology,
+    geomagnetism, and gravimetry). I co-taught this module with Marcelo Bianchi
+    and Daniele Brandt in 2023.
+
+- title: "AGG0011 - Problemas Integrados em Ciências da Terra I"
+  year: 2023 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is a first year module in the Geophysics BSc degree. It's meant to 
+    integrate with the other modules and teach students how to approach problems
+    from a quantitative and computational angle. I co-taught this module with 
+    Marcelo Bianchi and Eder Molina in 2023.
+
 - title: "ENVS398 Global Geophysics and Geodynamics"
   year: 2020 - 2023
   github: leouieda/lithosphere
