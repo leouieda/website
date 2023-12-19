@@ -23,6 +23,7 @@ sections:
     - [teaching-workshops, Workshops]
     - [media, Media & outreach]
     - [examiner-thesis, Thesis examination]
+    - [examiner-jobs, Hiring committees]
     - [convener, Conference sessions and events]
     - [supervision-phd, PhD students]
     - [supervision-msc, MSc students]
