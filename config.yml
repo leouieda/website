@@ -33,9 +33,12 @@ figshare: https://figshare.com/authors/Leonardo_Uieda/97471
 links:
   compgeolab: https://www.compgeolab.org
   fatiando: https://www.fatiando.org
+  tesseroids: https://tesseroids.leouieda.com
+  nene: https://nene.leouieda.com
   pygmt: https://www.pygmt.org
   gmt: https://www.generic-mapping-tools.org
   swung: https://softwareunderground.org
+  iag: https://www.iag.usp.br
 
 # Menu
 navigation:
@@ -45,8 +48,6 @@ navigation:
     id: about/index
   - name: Blog
     id: blog/index
-  - name: Software
-    id: software/index
   - name: CV
     id: cv/index
   - name: Contact
