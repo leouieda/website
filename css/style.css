@@ -22,7 +22,7 @@
   --size-4: clamp(2.75rem, calc(2.64rem + 0.53vw), 3.05rem);
   --size-5: clamp(3.43rem, calc(3.30rem + 0.66vw), 3.82rem);
 
-  /* Space scale calculated using https://utopia.fyi/space/calculator/ */
+  /* Space scale calculated using https://utopia.fyi/space/calculator/?c=320,18,1.2,1920,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|9|12,s-l&g=s,l,xl,12 */
   --space-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
   --space-2xs: clamp(0.56rem, calc(0.54rem + 0.10vw), 0.63rem);
   --space-xs: clamp(0.88rem, calc(0.85rem + 0.10vw), 0.94rem);
