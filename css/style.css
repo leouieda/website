@@ -33,6 +33,7 @@
   --space-2xl: clamp(4.50rem, calc(4.33rem + 0.83vw), 5.00rem);
   --space-3xl: clamp(6.75rem, calc(6.50rem + 1.25vw), 7.50rem);
   --space-4xl: clamp(10.13rem, calc(9.75rem + 1.88vw), 11.25rem);
+  --space-5xl: clamp(13.5rem, 13.2rem + 1.5vi, 15rem);
 
   /* Spaces and other sizes */
   --gutter: var(--space-s);
@@ -305,8 +306,8 @@ footer .footer-text {
 .banner-text {
   z-index: 3;
   position: relative;
-  padding-top: var(--space-4xl);
-  padding-bottom: var(--space-4xl);
+  padding-top: var(--space-5xl);
+  padding-bottom: var(--space-5xl);
   padding-left: var(--gutter);
   padding-right: var(--gutter);
   font-size: var(--size-1);

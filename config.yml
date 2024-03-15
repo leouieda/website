@@ -41,6 +41,8 @@ links:
 navigation:
   - name: Home
     id: index
+  - name: About
+    id: about/index
   - name: Blog
     id: blog/index
   - name: Software
