@@ -59,26 +59,26 @@ Here are some of the open-source source software develop:
   to [Urubu](https://github.com/jandecaluwe/urubu), which I used to build my
   website before, and the [unforgettable time I spent in
   Hawai'i](/blog/hawaii-gmt-postdoc.html).
+* [**xlandsat**](https://www.compgeolab.org/xlandsat): A Python library for
+  loading Landsat multi-spectral remote sensing data downloaded from [USGS
+  EarthExplorer](https://earthexplorer.usgs.gov/). It started as code I wrote
+  for my [remote sensing class at
+  Liverpool](https://github.com/leouieda/remote-sensing). It's also what I used
+  to make some [pretty images of the 2022 Mauna Loa volcano
+  eruption](../blog/mauna-loa.html) and [some nice
+  wallpapers](https://github.com/leouieda/landsat-wallpapers).
 
-## xlandsat
+## Non-work interests
 
-<i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
-Website: <a href="https://www.compgeolab.org/xlandsat" target="_blank">www.compgeolab.org/xlandsat</a>
+Here are some things I enjoy in my limited free time:
 
-A small Python library for loading Landsat multi-spectral remote sensing scenes
-from downloaded from [USGS EarthExplorer](https://earthexplorer.usgs.gov/) into
-``xarray.Dataset`` containers. It takes care of reading the metadata and
-organizing the bands into a single data structure for easier manipulation,
-processing, and visualization.
-
-`xlandsat` started as code I wrote for my
-[remote sensing class at Liverpool](../teaching) which I made into a package to
-make sure students can get started manipulating data with as little overhead as
-possible.
-It's also what I used to make some
-[pretty images of the 2022 Mauna Loa volcano eruption](../blog/mauna-loa.html).
-
-
+* Cooking for my family and friends
+* Reading and watching sci-fi and [fantasy][cosmere]
+* Playing Incineroar in [Super Smash Bros Ultimate][smash]
+* Failing to finish [Tears of the Kingdom][zelda]
+* Baking sourdough [bread][bread] (my starter is from 2017 and has moved continents twice)
+* Making noise with my ukulele and off-tune baritone
+* Choir singing (I'm actually back in the same choir I sang in back in 2005-2007)
 
 ## Personal
 
@@ -86,16 +86,39 @@ I was raised in [Botucatu][botucatu], a small town about 200 km from São Paulo,
 Brazil.
 I've lived in many places: Ithaca (USA), São Paulo (Brazil), Toronto (Canada),
 Rio de Janeiro (Brazil), Honolulu (Hawai'i/USA), and Liverpool (UK).
+Currently, I'm back in São Paulo with my wife and daughter.
 
-**Things I enjoy:**
-  playing Incineroar in [Super Smash Bros Ultimate][smash],
-  failing to finish [Tears of the Kingdom][zelda],
-  baking [bread][bread],
-  making noise with my ukulele and off-tune baritone,
-  sci-fi and [fantasy][cosmere]
+Both of my parents were zoology professors at
+[UNESP](https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_State_University), so I've
+been immersed in academic life from early on. This gave a head start in the
+academic job market, particularly so because I got to learn English at an early
+age during my parents postdoc at Cornell University in Ithaca, USA. I now
+realize what an incredible advantage this was for me and I'm eternally grateful
+to my parents for the opportunity.
+
+<figure>
+<img src="../images/1997-06-ithaca-creek.jpg" alt="Photo of a 10 year-old boy, a middle aged woman, and a 6 year-old girl standing in a creek and all looking at a rock, with the woman pointing to it.">
+<figcaption>
+Me, my sister, and my mom looking at some invertebrate hiding under a rock in a creek in Ithaca, USA. Photo taken some time in 1997.
+</figcaption>
+</figure>
+
+I was a bit of a nerdy kid. I had a Magic The Gathering phase and briefly had a
+table-top RPG group. I liked playing video games, bike riding, and playing with
+friends on the street.
+As a teenager, I was the lead singer in an indie rock band called Jeca Tatu. We
+weren't very good but we had loads of fun playing mostly covers at local
+festivals and parties at our friends houses.
+
+<figure>
+<img src="../images/jeca-tatu-2004.jpg" alt="Photo of a guy with curly hair playing the base guitar, me (half-asian guy with short hair playing guitar), a drummer in th background, and another guitar player with brown curly hair.">
+<figcaption>
+Jeca Tatu performing at a small festival put together by us and another local band some time in 2004.
+</figcaption>
+</figure>
 
 [smash]: https://en.wikipedia.org/wiki/Super_Smash_Bros._Ultimate
 [zelda]: https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Tears_of_the_Kingdom
 [cosmere]: https://coppermind.net/
-[break]: https://github.com/leouieda/bread
+[bread]: https://github.com/leouieda/bread
 [botucatu]: https://en.wikipedia.org/wiki/Botucatu
