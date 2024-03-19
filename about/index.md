@@ -9,15 +9,21 @@ template: base.html
 
 ## Work
 
-* Committed to **open practices** in teaching and research
+I am **Professor of Geophysics** at [Universidade de São Paulo]({{
+config.links.iag }}) (USP), Brazil, since August 2023.
+My main specialities are in potential field methods (the study of the Earth's
+gravity and magnetic fields), inverse problems (determining the Earth's inner
+structure from surface observations), and research software engineering.
+I've been working in these topics since 2008, when I started a research
+internship under Prof. [Naomi Ussami](http://lattes.cnpq.br/6704246490515612)
+during my time as an undergraduate student at USP.
+Most of my career has revolved around the development of open-source software
+for geophysics, mainly [Fatiando a Terra]({{ config.links.fatiando }}) and
+[PyGMT]({{ config.links.pygmt }}).
 
-<figure>
-<img src="../images/timeline.svg" alt="Photo of me, facing the camera at a slight angle and smiling, wearing a stripped white shirt and blue jacket">
-<figcaption>
-Photo of me taken at the University of Liverpool's Central Teaching
-Laboratories back in 2019.
-</figcaption>
-</figure>
+
+Committed to **open practices** in teaching and research
+
 
 <div class="callout">
 
