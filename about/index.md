@@ -1,7 +1,7 @@
 ---
 title: About
 banner_image: images/amazon-delta.jpg
-banner_position: center
+banner_position: center right
 banner_title: About
 banner_subtitle: Some information about who I am and what I do
 template: base.html
@@ -10,6 +10,14 @@ template: base.html
 ## Work
 
 * Committed to **open practices** in teaching and research
+
+<figure>
+<img src="../images/timeline.svg" alt="Photo of me, facing the camera at a slight angle and smiling, wearing a stripped white shirt and blue jacket">
+<figcaption>
+Photo of me taken at the University of Liverpool's Central Teaching
+Laboratories back in 2019.
+</figcaption>
+</figure>
 
 <div class="callout">
 
@@ -56,9 +64,9 @@ Here are some of the open-source source software develop:
 * [**Nēnē**]({{ config.links.nene }}): A no-frills static site generator. It's
   the side project that I use to blow off steam and experiment with new Python
   features. It's also what I **use to build this website**. The name is a nod
-  to [Urubu](https://github.com/jandecaluwe/urubu), which I used to build my
-  website before, and the [unforgettable time I spent in
-  Hawai'i](/blog/hawaii-gmt-postdoc.html).
+  to the [unforgettable time I spent in Hawai'i](/blog/hawaii-gmt-postdoc.html)
+  and [Urubu](https://github.com/jandecaluwe/urubu), which I used to build my
+  website before.
 * [**xlandsat**](https://www.compgeolab.org/xlandsat): A Python library for
   loading Landsat multi-spectral remote sensing data downloaded from [USGS
   EarthExplorer](https://earthexplorer.usgs.gov/). It started as code I wrote
@@ -84,17 +92,16 @@ Here are some things I enjoy in my limited free time:
 
 I was raised in [Botucatu][botucatu], a small town about 200 km from São Paulo,
 Brazil.
-I've lived in many places: Ithaca (USA), São Paulo (Brazil), Toronto (Canada),
+Since then, I've lived in: Ithaca (USA), São Paulo (Brazil), Toronto (Canada),
 Rio de Janeiro (Brazil), Honolulu (Hawai'i/USA), and Liverpool (UK).
 Currently, I'm back in São Paulo with my wife and daughter.
 
 Both of my parents were zoology professors at
 [UNESP](https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_State_University), so I've
-been immersed in academic life from early on. This gave a head start in the
-academic job market, particularly so because I got to learn English at an early
-age during my parents postdoc at Cornell University in Ithaca, USA. I now
-realize what an incredible advantage this was for me and I'm eternally grateful
-to my parents for the opportunity.
+been around academia from an early age. A large benefit from this is that I got
+to learn English in the USA during my parents postdoc at Cornell University. I
+now realize what an incredible advantage this was for me and I'm eternally
+grateful to my parents for the opportunity.
 
 <figure>
 <img src="../images/1997-06-ithaca-creek.jpg" alt="Photo of a 10 year-old boy, a middle aged woman, and a 6 year-old girl standing in a creek and all looking at a rock, with the woman pointing to it.">
@@ -116,6 +123,9 @@ festivals and parties at our friends houses.
 Jeca Tatu performing at a small festival put together by us and another local band some time in 2004.
 </figcaption>
 </figure>
+
+I still enjoy playing games and music during my free time, only now I get to do
+it with my daughter, which is quite an improvement!
 
 [smash]: https://en.wikipedia.org/wiki/Super_Smash_Bros._Ultimate
 [zelda]: https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Tears_of_the_Kingdom
