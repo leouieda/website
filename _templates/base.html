@@ -67,7 +67,7 @@
 <body>
   <header>
     <div class="spread content-wide">
-      <a class="font-bold font-large" href="{{ macros.pretty_relative_link(site['index'], page) }}">{{ config.brand }}</a>
+      <a aria-label="Home" class="font-bold" href="{{ macros.pretty_relative_link(site['index'], page) }}">{{ config.brand }}</a>
       <nav aria-label="Main">
         <ul class="list-inline" role="list">
           {%- for item in config.navigation %}

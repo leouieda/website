@@ -22,7 +22,7 @@
   --size-4: clamp(2.75rem, calc(2.64rem + 0.53vw), 3.05rem);
   --size-5: clamp(3.43rem, calc(3.30rem + 0.66vw), 3.82rem);
 
-  /* Space scale calculated using https://utopia.fyi/space/calculator/ */
+  /* Space scale calculated using https://utopia.fyi/space/calculator/?c=320,18,1.2,1920,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|9|12,s-l&g=s,l,xl,12 */
   --space-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
   --space-2xs: clamp(0.56rem, calc(0.54rem + 0.10vw), 0.63rem);
   --space-xs: clamp(0.88rem, calc(0.85rem + 0.10vw), 0.94rem);
@@ -33,6 +33,7 @@
   --space-2xl: clamp(4.50rem, calc(4.33rem + 0.83vw), 5.00rem);
   --space-3xl: clamp(6.75rem, calc(6.50rem + 1.25vw), 7.50rem);
   --space-4xl: clamp(10.13rem, calc(9.75rem + 1.88vw), 11.25rem);
+  --space-5xl: clamp(13.5rem, calc(13.2rem + 1.5vw), 15rem);
 
   /* Spaces and other sizes */
   --gutter: var(--space-s);
@@ -73,7 +74,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--size-2);
+  font-size: var(--size-1);
 }
 
 ul,
@@ -131,7 +132,7 @@ footer {
   color: var(--color-secondary);
   box-shadow: 0 1em 5em var(--color-neon);
   padding: var(--space-xl) var(--gutter);
-  margin-top: var(--space-3xl);
+  margin-top: var(--space-4xl);
 }
 
 footer nav a {
@@ -292,6 +293,7 @@ footer .footer-text {
   background-size: cover;
   z-index: 1;
   width: 100%;
+  box-shadow: inset 0px 30px 15px -15px rgba(0, 0, 0, 0.30), inset 0px -30px 15px -15px rgba(0, 0, 0, 0.30);
 }
 
 .banner-overlay {
@@ -305,12 +307,14 @@ footer .footer-text {
 .banner-text {
   z-index: 3;
   position: relative;
-  padding-top: var(--space-4xl);
-  padding-bottom: var(--space-4xl);
+  padding-top: var(--space-5xl);
+  padding-bottom: var(--space-5xl);
   padding-left: var(--gutter);
   padding-right: var(--gutter);
   font-size: var(--size-1);
   text-align: center;
+  max-width: 65ch;
+  margin: 0 auto;
 }
 
 .banner-text h1 {
