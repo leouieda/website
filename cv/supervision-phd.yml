@@ -1,11 +1,3 @@
-- title: India Uppal
-  thesis: "Improving estimates of Antarctic geothermal heat flow from geophysical data"
-  year: 2021 - present
-  institution: University of Liverpool
-  country: UK
-  advisor: Leonardo Uieda
-  coadvisor: Vanderlei C. Oliveira Jr., Richard Holme
-
 - title: Gelson Ferreira de Souza Junior
   thesis: "Micropaleomagnetismo"
   year: 2021 - present
@@ -14,6 +6,14 @@
   funder: FAPESP
   advisor: Leonardo Uieda
   coadvisor: Ricardo I. F. Trindade
+
+- title: India Uppal
+  thesis: "Improving estimates of Antarctic geothermal heat flow from geophysical data"
+  year: 2021 - present
+  institution: University of Liverpool
+  country: UK
+  advisor: Richard Holme
+  coadvisor: Leonardo Uieda, Vanderlei C. Oliveira Jr.
 
 - title: Santiago Rubén Soler
   thesis: "Modelos de Inversión Conjunta de Datos Gravimétricos y Función del Receptor a través del Uso de Tesseroides"

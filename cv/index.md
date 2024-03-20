@@ -35,20 +35,19 @@ sections:
 <div class="callout">
 
 **Looking for a career summary?**
-Here is an up-to-date
+Here is a
 <a href="https://github.com/leouieda/cv/raw/pdf/cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer"><i class="fa fa-file-pdf" aria-label="PDF file"></i> short CV</a>.
-It's typeset in LaTeX and the source is available from the
-{{ macros.github_link("leouieda/cv") }} GitHub repository.
+(the LaTeX source code is in the {{ macros.github_link("leouieda/cv") }} GitHub
+repository).
 
 </div>
 
-<hr>
-<p id="navigation">
+<h2 id="navigation">
   <i class="fas fa-list" aria-hidden="true"></i>
-  Navigation
-</p>
+  Contents
+</h2>
 <nav aria-label="Page">
-  <ul role="list" class="list-inline font-small">
+  <ul role="list" class="list-inline">
   {%- for data, title in page.sections %}
     <li><a class="text-muted" href="#{{ data }}">{{ loop.index }}. {{ title }}</a></li>
   {%- endfor %}
@@ -69,7 +68,7 @@ It's typeset in LaTeX and the source is available from the
         {%- endif %}
       </p>
     <details>
-      <summary>More information</summary>
+      <summary>Click for more information</summary>
       <div class="details-body flow flow-small">
         {%- if item.authors is defined %}
           <p><strong>Authors:</strong> {{ macros.author_list(item.authors, config) }}</p>
@@ -158,7 +157,7 @@ It's typeset in LaTeX and the source is available from the
   <p class="">
     <a href="#navigation">
       <i class="far fa-arrow-alt-circle-up" aria-hidden="true"></i>
-      Back to the top
+      Back to Contents
     </a>
   </p>
 {%- endfor %}
