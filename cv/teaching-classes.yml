@@ -1,3 +1,10 @@
+- title: "AGG0204 - Computação para Geofísicos"
+  year: 2024 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is an optional module of the Geophysics BSc that aims to build on the
+    coding knowledge the students have gained throughout their degree.
+
 - title: "AGG5954 - Modelagem e Interpretação de Dados de Gravimetria e Magnetometria"
   year: 2024 - present
   institution: Universidade de São Paulo
@@ -29,9 +36,9 @@
   year: 2023 - present
   institution: Universidade de São Paulo
   about: |
-    This is a first year module in the Geophysics BSc degree. It's meant to 
+    This is a first year module in the Geophysics BSc degree. It's meant to
     integrate with the other modules and teach students how to approach problems
-    from a quantitative and computational angle. I co-taught this module with 
+    from a quantitative and computational angle. I co-taught this module with
     Marcelo Bianchi and Eder Molina in 2023.
 
 - title: "ENVS398 Global Geophysics and Geodynamics"
