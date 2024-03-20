@@ -4,7 +4,7 @@
   award_link: https://www.compgeolab.org/news/rsoc-mag-microscopy-2022.html
   award_amount: GBP 10,500
   authors: [Me, Ricardo]
-  year: 2022 - 2024
+  year: 2022 - present
   abstract: |
     The magnetization that is locked in certain minerals at the time of their
     formation is one of the few gateways we have to the Earth's distant past.
@@ -25,32 +25,13 @@
     scale paleomagnetism to explore the possibilities and help define future
     directions of research.
 
-- title: Software Sustainability Institute Fellowship
-  funder: Software Sustainability Institute
-  award: 2020 Fellow
-  award_link: https://www.software.ac.uk/about/fellows/leonardo-uieda
-  award_amount: GBP 3,000
-  authors: [Me]
-  year: 2020
-  abstract: |
-    The SSI has a yearly fellowship program to fund the organization of
-    communities around scientific software (creating of local user groups,
-    workshops, hackathons, etc).
-    My original plan for the Fellowship was to run some Software Carpentry
-    workshops in Liverpool and to develop lesson material for transitioning
-    from coder to open-source software maintainer (based on our AGU workshops).
-    Due to the COVID19 pandemic, I wasn't able to execute these plans.
-    Instead, in 2022 I organized the
-    <a href="https://hackmd.io/@leouieda/uk-geo-code-meetup">Geo+Code</a> event
-    as part of my Fellowship.
-
 - title: A Sustainable Plan for the Future of the Generic Mapping Tools
   funder: National Science Foundation (NSF-EAR)
   award: 1948602
   award_link: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1948602
   award_amount: USD 757,597
   authors: [Paul, Me]
-  year: 2020 - 2023
+  year: 2020 - present
   doi: 10.6084/m9.figshare.12235727
   abstract: |
     The Generic Mapping Tools (GMT) is open source software infrastructure used
@@ -84,6 +65,25 @@
     sustainable environment that results in lower maintenance, greater
     confidence in GMT products, and a more engaged community of users and
     developers.
+
+- title: Software Sustainability Institute Fellowship
+  funder: Software Sustainability Institute
+  award: 2020 Fellow
+  award_link: https://www.software.ac.uk/about/fellows/leonardo-uieda
+  award_amount: GBP 3,000
+  authors: [Me]
+  year: 2020 - 2023
+  abstract: |
+    The SSI has a yearly fellowship program to fund the organization of
+    communities around scientific software (creating of local user groups,
+    workshops, hackathons, etc).
+    My original plan for the Fellowship was to run some Software Carpentry
+    workshops in Liverpool and to develop lesson material for transitioning
+    from coder to open-source software maintainer (based on our AGU workshops).
+    Due to the COVID19 pandemic, I wasn't able to execute these plans.
+    Instead, in 2022 I organized the
+    <a href="https://hackmd.io/@leouieda/uk-geo-code-meetup">Geo+Code</a> event
+    as part of my Fellowship.
 
 - title: "The EarthScope/GMT Analysis and Visualization Toolbox"
   funder: National Science Foundation (NSF-EAR)
