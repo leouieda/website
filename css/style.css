@@ -313,7 +313,7 @@ footer .footer-text {
   padding-right: var(--gutter);
   font-size: var(--size-1);
   text-align: center;
-  max-width: 65ch;
+  max-width: 55ch;
   margin: 0 auto;
 }
 
