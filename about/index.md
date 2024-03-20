@@ -81,7 +81,7 @@ Laboratories back in 2019.
 
 ## Software
 
-Here are some of the open-source source software develop:
+Here are some of the open-source software develop:
 
 * [**Fatiando a Terra**]({{ config.links.fatiando }}): Collection of Python
   libraries for Geophysics built by a community of geoscientists and software
