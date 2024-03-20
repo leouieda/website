@@ -6,28 +6,52 @@ banner_title: Curriculum Vitæ
 banner_subtitle: A list of pretty much everything I've done so far in my career
 template: base.html
 sections:
-    - [work, Professional appointments]
-    - [community, Community service]
-    - [edu, Education]
-    - [grants, Grants & fellowships]
-    - [awards, Awards & honors]
-    - [preprints, Preprints]
-    - [papers, Papers]
-    - [proceedings, Conference proceedings]
-    - [other-publications, Other publications]
-    - [presentations-invited, Invited talks]
-    - [presentations-department, Department seminars]
-    - [presentations-conference, Conference presentations]
-    - [presentations-other, Other presentations]
-    - [teaching-classes, University courses]
-    - [teaching-workshops, Workshops]
-    - [media, Media & outreach]
-    - [examiner-thesis, Thesis examination]
-    - [examiner-jobs, Hiring committees]
-    - [convener, Conference sessions and events]
-    - [supervision-phd, PhD students]
-    - [supervision-msc, MSc students]
-    - [supervision-bsc, BSc students]
+  - title: Professional
+    numbered: False
+    entries:
+      - [work, Appointments]
+      - [community, Community service]
+      - [edu, Education]
+  - title: Distinctions
+    numbered: False
+    entries:
+      - [grants, Grants & fellowships]
+      - [awards, Awards & honors]
+  - title: Publications
+    numbered: True
+    entries:
+      - [preprints, Preprints]
+      - [papers, Papers]
+      - [proceedings, Conference proceedings]
+      - [other-publications, Other publications]
+  - title: Presentations
+    numbered: True
+    entries:
+      - [presentations-invited, Invited talks]
+      - [presentations-department, Department seminars]
+      - [presentations-conference, Conference presentations]
+      - [presentations-other, Other presentations]
+  - title: Teaching
+    numbered: True
+    entries:
+      - [teaching-classes, University courses]
+      - [teaching-workshops, Workshops]
+  - title: Supervision
+    numbered: True
+    entries:
+      - [supervision-phd, PhD students]
+      - [supervision-msc, MSc students]
+      - [supervision-bsc, BSc students]
+  - title: Service
+    numbered: True
+    entries:
+      - [examiner-thesis, Thesis examination]
+      - [examiner-jobs, Hiring committees]
+      - [convener, Conference sessions and events]
+  - title: Other
+    numbered: True
+    entries:
+      - [media, Media & outreach]
 ---
 
 {% import "macros.html" as macros %}
@@ -48,116 +72,25 @@ repository).
 </h2>
 <nav aria-label="Page">
   <ul role="list" class="list-inline">
-  {%- for data, title in page.sections %}
-    <li><a class="text-muted" href="#{{ data }}">{{ loop.index }}. {{ title }}</a></li>
+  {%- for section in page.sections %}
+    <li><a class="text-muted" href="#{{ loop.index }}">{{ loop.index }}. {{ section.title }}</a></li>
   {%- endfor %}
   </ul>
 </nav>
 
-{%- for data, title in page.sections %}
-  <h2 id="{{ data }}">{{ loop.index }}. {{ title }}</h2>
-  {%- for item in page[data] %}
-    <div>
-      <p>
-        <span class="text-muted font-small">{{ item.year }}.</span>
-        {{ item.title|trim }}.
-        {%- if item.institution is defined %}
-          <span class="text-muted">
-          {{ item.institution|trim }}{%- if item.country is defined %}, {{ item.country }}{%- endif %}.
-          </span>
-        {%- endif %}
-      </p>
-    <details>
-      <summary>Click for more information</summary>
-      <div class="details-body flow flow-small">
-        {%- if item.authors is defined %}
-          <p><strong>Authors:</strong> {{ macros.author_list(item.authors, config) }}</p>
-        {%- endif %}
-        {%- if item.doi is defined %}
-          <p><strong>DOI:</strong> {{ macros.doi_link(item.doi) }}</p>
-        {%- endif %}
-        {%- if item.preprint is defined %}
-          <p><strong>Preprint DOI (open access):</strong> {{ macros.doi_link(item.preprint) }}</p>
-        {%- endif %}
-        {%- if item.github is defined %}
-          <p><strong>GitHub:</strong> {{ macros.github_link(item.github) }}</p>
-        {%- endif %}
-        {%- if item.recording is defined %}
-          <p><strong>Recording:</strong> {{ macros.youtube_link(item.recording) }}</p>
-        {%- endif %}
-        {%- if item.data is defined %}
-          <p><strong>Data and code archive DOI:</strong> {{ macros.doi_link(item.data) }}</p>
-        {%- endif %}
-        {%- if item.pdf is defined %}
-          <p><strong>PDF download:</strong> <a href="{{ item.pdf }}" target="_blank">{{ item.pdf[7:] }}</a></p>
-        {%- endif %}
-        {%- if item.slides is defined %}
-          <p><strong>Slides:</strong> <a href="{{ item.slides }}" target="_blank">{{ item.slides }}</a></p>
-        {%- endif %}
-        {%- if item.poster is defined %}
-          <p><strong>Poster:</strong> <a href="{{ item.poster }}" target="_blank">{{ item.poster }}</a></p>
-        {%- endif %}
-        {%- if item.department is defined %}
-          <p><strong>Department:</strong> {{ item.department }}</p>
-        {%- endif %}
-        {%- if item.thesis is defined %}
-          <p><strong>Thesis:</strong> {{ item.thesis }}</p>
-        {%- endif %}
-        {%- if item.funder is defined %}
-          <p><strong>Funding agency:</strong> {{ item.funder }}</p>
-        {%- endif %}
-        {%- if item.committee is defined %}
-          <p><strong>Committee:</strong> {{ item.committee }}</p>
-        {%- endif %}
-        {%- if item.advisor is defined %}
-          <p><strong>Advisor:</strong> {{ item.advisor }}</p>
-        {%- endif %}
-        {%- if item.coadvisor is defined %}
-          <p><strong>Co-advisor(s):</strong> {{ item.coadvisor }}</p>
-        {%- endif %}
-        {%- if item.award is defined %}
-          <p><strong>Award:</strong> <a href="{{ item.award_link }}" target="_blank">{{ item.award }}</a></p>
-        {%- endif %}
-        {%- if item.award_amount is defined %}
-          <p><strong>Amount:</strong> {{ item.award_amount }}</p>
-        {%- endif %}
-        {%- if item.journal is defined %}
-          <p><strong>Journal:</strong> {{ item.journal }}</p>
-        {%- endif %}
-        {%- if item.event is defined %}
-          <p><strong>Event:</strong> {{ item.event }}</p>
-        {%- endif %}
-        {%- if item.conference is defined %}
-          <p><strong>Conference:</strong> {{ item.conference }}</p>
-        {%- endif %}
-        {%- if item.about is defined %}
-          <p><strong>About:</strong> {{ item.about }}</p>
-        {%- endif %}
-        {%- if item.roles is defined %}
-          <p><strong>Roles:</strong>
-          <ul>
-          {%- for role in item.roles %}
-            <li>{{ role.date }}: {{ role.title }}</li>
-          {%- endfor %}
-          </ul>
-        {%- endif %}
-        {%- if item.citation is defined %}
-          <p><strong>Citation:</strong> {{ item.citation}}</p>
-        {%- endif %}
-        {%- if item.poster_img is defined %}
-          <img src="{{ item.poster_img }}" alt="Screenshot of the poster">
-        {%- endif %}
-        {%- if item.abstract is defined %}
-          <p><strong>Abstract:</strong> {{ item.abstract }}</p>
-        {%- endif %}
-      </div>
-    </details>
-  </div>
+{%- for section in page.sections %}
+  {% set section_id = loop.index %}
+  <h2 id="{{ section_id }}">{{ section_id }}. {{ section.title }}</h2>
+  {%- for data, title in section.entries %}
+    <h3 id="{{ data }}">{{ section_id }}.{{ loop.index }} {{ title }}</h3>
+    {{ macros.list_cv_items(page[data], config, numbered=section.numbered) }}
+    {%- if not loop.last %}
+    {%- endif %}
   {%- endfor %}
-  <p class="">
-    <a href="#navigation">
-      <i class="far fa-arrow-alt-circle-up" aria-hidden="true"></i>
-      Back to Contents
-    </a>
-  </p>
+    <p class="text-center">
+      <a href="#navigation">
+        <i class="far fa-arrow-alt-circle-up" aria-hidden="true"></i>
+        Back to Contents
+      </a>
+    </p>
 {%- endfor %}

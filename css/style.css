@@ -352,6 +352,10 @@ footer .footer-text {
   text-align: right;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-small {
   font-size: var(--size--1);
 }
