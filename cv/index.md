@@ -35,8 +35,8 @@ sections:
 <div class="callout">
 
 **Looking for a career summary?**
-I keep a somewhat updated
-<a href="https://github.com/leouieda/cv/raw/pdf/cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">short-form CV in PDF format</a>.
+Here is an up-to-date
+<a href="https://github.com/leouieda/cv/raw/pdf/cv.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer"><i class="fa fa-file-pdf" aria-label="PDF file"></i> short CV</a>.
 It's typeset in LaTeX and the source is available from the
 {{ macros.github_link("leouieda/cv") }} GitHub repository.
 

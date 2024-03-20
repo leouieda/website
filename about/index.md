@@ -9,20 +9,57 @@ template: base.html
 
 ## Work
 
-I am **Professor of Geophysics** at [Universidade de São Paulo]({{
-config.links.iag }}) (USP), Brazil, since August 2023.
-My main specialities are in potential field methods (the study of the Earth's
-gravity and magnetic fields), inverse problems (determining the Earth's inner
-structure from surface observations), and research software engineering.
+I have been working as **Professor of Geophysics** at [Universidade de São
+Paulo]({{ config.links.iag }}) (USP), Brazil, since August 2023.
+I use tiny disturbances in the Earth's gravity and magnetic fields to
+investigate the inner structure of the Earth and it's evolution through time.
+These disturbances can be measured on the ground using [specialized
+equipment][gravimeter], onboard [dedicated satellites][grace], and even in very
+small sections of rocks using [magnetic microscopes][qdm].
+I also develop new mathematical and computational methods for extracting as
+much information from these data as we can.
+
+<figure>
+<img src="../images/south-american-moho-zoom.jpg" alt="Map of northern South American with green to yellow color gradient showing mostly yellows in the west, going through greens and finally blues in the ocean">
+<figcaption>
+Map of the thickness of the Earth's crust in South America derived from
+satellite gravity data and seismological data. Yellow means thick crust of
+60-70 km, green means moderate thickness of 25-50 km, and blue means thin crust
+of 8-15 km. From <a href="https://doi.org/10.1093/gji/ggw390">Uieda & Barbosa
+(2017)</a>.
+</figcaption>
+</figure>
+
+In more technical terms, my main specialities are:
+
+* Potential field methods (the study of the Earth's gravity and magnetic
+  fields)
+* Inverse problems (determining the Earth's inner structure from surface
+  observations)
+* Research software engineering (building quality software for science)
+
 I've been working in these topics since 2008, when I started a research
-internship under Prof. [Naomi Ussami](http://lattes.cnpq.br/6704246490515612)
-during my time as an undergraduate student at USP.
+internship under Prof. [Naomi Ussami][naomi] during my time as an undergraduate
+student at USP.
+For more **information on my research**, see the
+[Computer-Oriented Geoscience Lab]({{ config.links.compgeolab }}) website.
+
 Most of my career has revolved around the development of open-source software
 for geophysics, mainly [Fatiando a Terra]({{ config.links.fatiando }}) and
 [PyGMT]({{ config.links.pygmt }}).
+These software underpins and shapes all of my research and teaching.
+My approach to science in general is also heavily influenced by the **open
+source** and **open science** movements.
+All of the papers, code, figures, slides, and teaching resources I create are
+freely available under permissive **open licences**, like [CC-BY][cc-by] and
+[BSD][bsd].
 
-
-Committed to **open practices** in teaching and research
+Before my current position at USP, I was a **Lecturer in Geophysics** at the
+[University of Liverpool][liverpool], UK, **Visiting Researcher** at the
+[University of Hawaiʻi at Mānoa][hawaii], USA, and **Professor of Geophysics**
+at the [Universidade do Estado do Rio de Janeiro][uerj], Brazil.
+I am and have been involved with several community-led organizations, like the
+[Software Underground]({{ config.links.swung }}) and [EarthArXiv][eartharxiv].
 
 
 <div class="callout">
@@ -62,17 +99,14 @@ Here are some of the open-source source software develop:
 * [**Tesseroids**]({{ config.links.tesseroids }}): Command-line programs for
   modelling the gravitational attraction of spherical prisms (tesseroids). This
   was my **first open-source project**, which I started during my BSc
-  dissertation project with [Naomi
-  Ussami](http://lattes.cnpq.br/6704246490515612) and [Carla
-  Braitenberg](https://www2.units.it/braitenberg/). Through Tesseroids, I
-  learned about documentation, unit tests, cross-compilation, version control,
-  and more.
+  dissertation project with [Naomi Ussami][naomi] and [Carla
+  Braitenberg][carla]. Through Tesseroids, I learned about documentation, unit
+  tests, cross-compilation, version control, and more.
 * [**Nēnē**]({{ config.links.nene }}): A no-frills static site generator. It's
   the side project that I use to blow off steam and experiment with new Python
   features. It's also what I **use to build this website**. The name is a nod
   to the [unforgettable time I spent in Hawai'i](/blog/hawaii-gmt-postdoc.html)
-  and [Urubu](https://github.com/jandecaluwe/urubu), which I used to build my
-  website before.
+  and [Urubu][urubu], which I used to build my website before.
 * [**xlandsat**](https://www.compgeolab.org/xlandsat): A Python library for
   loading Landsat multi-spectral remote sensing data downloaded from [USGS
   EarthExplorer](https://earthexplorer.usgs.gov/). It started as code I wrote
@@ -131,10 +165,22 @@ Jeca Tatu performing at a small festival put together by us and another local ba
 </figure>
 
 I still enjoy playing games and music during my free time, only now I get to do
-it with my daughter, which is quite an improvement!
+it with my daughter!
 
 [smash]: https://en.wikipedia.org/wiki/Super_Smash_Bros._Ultimate
 [zelda]: https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Tears_of_the_Kingdom
 [cosmere]: https://coppermind.net/
 [bread]: https://github.com/leouieda/bread
 [botucatu]: https://en.wikipedia.org/wiki/Botucatu
+[naomi]: http://lattes.cnpq.br/6704246490515612
+[carla]: https://www2.units.it/braitenberg/
+[liverpool]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/
+[uerj]: https://www.uerj.br/
+[hawaii]: https://www.soest.hawaii.edu/earthsciences/
+[cc-by]: https://creativecommons.org/licenses/by/4.0/
+[bsd]: https://opensource.org/license/BSD-3-clause
+[eartharxiv]: https://eartharxiv.org/
+[urubu]: https://github.com/jandecaluwe/urubu
+[gravimeter]: https://en.wikipedia.org/wiki/Gravimetry#Gravimeters
+[grace]: https://en.wikipedia.org/wiki/GRACE_and_GRACE-FO
+[qdm]: https://qdm.io/

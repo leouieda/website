@@ -132,7 +132,7 @@ footer {
   color: var(--color-secondary);
   box-shadow: 0 1em 5em var(--color-neon);
   padding: var(--space-xl) var(--gutter);
-  margin-top: var(--space-3xl);
+  margin-top: var(--space-4xl);
 }
 
 footer nav a {
