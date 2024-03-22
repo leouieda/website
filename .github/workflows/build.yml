@@ -25,12 +25,12 @@ jobs:
       - name: Build the website
         run: nene
 
-      - name: Clone the
+      - name: Clone the leouieda.github.io repository
         uses: actions/checkout@v4
         with:
           repository: leouieda/leouieda.github.io
           ref: 'main'
-          token:  ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          ssh-key:  ${{ secrets.ACTIONS_DEPLOY_KEY }}
           # Checkout to this folder instead of the current one
           path: deploy
           # Download the entire history
