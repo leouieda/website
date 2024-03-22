@@ -68,12 +68,16 @@ I am and have been involved with several community-led organizations, like the
 
 If you need a photo of me for promotional material
 (for talks or interviews, for example), use this one.
+Feel free to crop it however you see fit.
 
 <figure>
 <img src="../images/profile-picture.jpg" alt="Photo of me, facing the camera at a slight angle and smiling, wearing a stripped white shirt and blue jacket">
 <figcaption>
+
 Photo of me taken at the University of Liverpool's Central Teaching
-Laboratories back in 2019.
+Laboratories back in 2019. You may use this photo under the terms of the
+[CC-BY][cc-by] license.
+
 </figcaption>
 </figure>
 
@@ -134,7 +138,14 @@ I was raised in [Botucatu][botucatu], a small town about 200 km from São Paulo,
 Brazil.
 Since then, I've lived in: Ithaca (USA), São Paulo (Brazil), Toronto (Canada),
 Rio de Janeiro (Brazil), Honolulu (Hawai'i/USA), and Liverpool (UK).
-Currently, I'm back in São Paulo with my wife and daughter.
+Currently, I'm back in São Paulo.
+
+My wife [Carol][paper] is a biologist and science writer. After quite a few
+career shifts after her PhD, she now works with outreach and event organization
+at the [Society for Experimental Biology][seb]. I'm very lucky that she puts up
+with me and was willing to go half-way around the world with me throughout this
+winding career path. We have a wonderful, smart, and strong-willed daughter. I
+couldn't be prouder of both of them!
 
 Both of my parents were zoology professors at
 [UNESP](https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_State_University), so I've
@@ -153,9 +164,12 @@ Me, my sister, and my mom looking at some invertebrate hiding under a rock in a 
 I was a bit of a nerdy kid. I had a Magic The Gathering phase and briefly had a
 table-top RPG group. I liked playing video games, bike riding, and playing with
 friends on the street.
-As a teenager, I was the lead singer in an indie rock band called Jeca Tatu. We
-weren't very good but we had loads of fun playing mostly covers at local
-festivals and parties at our friends houses.
+As a teenager, I had a punk rock phase (yes, that included a mohawk) and I was
+the lead singer in an indie rock band called Jeca Tatu. We weren't very good
+but we had loads of fun playing mostly covers at local festivals and parties at
+our friends houses.
+I still enjoy playing games and music during my free time, only now I get to do
+it with my daughter!
 
 <figure>
 <img src="../images/jeca-tatu-2004.jpg" alt="Photo of a guy with curly hair playing the base guitar, me (half-asian guy with short hair playing guitar), a drummer in th background, and another guitar player with brown curly hair.">
@@ -164,8 +178,6 @@ Jeca Tatu performing at a small festival put together by us and another local ba
 </figcaption>
 </figure>
 
-I still enjoy playing games and music during my free time, only now I get to do
-it with my daughter!
 
 [smash]: https://en.wikipedia.org/wiki/Super_Smash_Bros._Ultimate
 [zelda]: https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Tears_of_the_Kingdom
@@ -184,3 +196,5 @@ it with my daughter!
 [gravimeter]: https://en.wikipedia.org/wiki/Gravimetry#Gravimeters
 [grace]: https://en.wikipedia.org/wiki/GRACE_and_GRACE-FO
 [qdm]: https://qdm.io/
+[paper]: https://www.acarolcolombo.com/
+[seb]: https://www.sebiology.org/
