@@ -41,8 +41,13 @@ In more technical terms, my main specialities are:
 I've been working in these topics since 2008, when I started a research
 internship under Prof. [Naomi Ussami][naomi] during my time as an undergraduate
 student at USP.
-For more **information on my research**, see the
+
+<div class="callout">
+
+**Interested in my research or joining my lab?** See the
 [Computer-Oriented Geoscience Lab]({{ config.links.compgeolab }}) website.
+
+</div>
 
 Most of my career has revolved around the development of open-source software
 for geophysics, mainly [Fatiando a Terra]({{ config.links.fatiando }}) and
