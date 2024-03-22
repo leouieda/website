@@ -52,6 +52,19 @@ navigation:
     id: cv/index
   - name: Contact
     id: contact/index
+navigation_footer:
+  - name: Home
+    id: index
+  - name: About
+    id: about/index
+  - name: Blog
+    id: blog/index
+  - name: CV
+    id: cv/index
+  - name: Contact
+    id: contact/index
+  - name: Links
+    id: links/index
 
 # Don't copy or process these files
 ignore:

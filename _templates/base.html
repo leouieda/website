@@ -115,9 +115,9 @@
 
   <footer class="flow">
     <div class="content-wide flow">
-      <nav aria-label="Main">
+      <nav aria-label="Footer">
         <ul class="list-inline" role="list">
-        {%- for item in config.navigation %}
+        {%- for item in config.navigation_footer %}
           <li>
             {{ macros.nav_link(item, page, site) }}
           </li>
