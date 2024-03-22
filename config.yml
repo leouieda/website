@@ -65,6 +65,8 @@ navigation_footer:
     id: contact/index
   - name: Links
     id: links/index
+  - name: Now
+    id: now/index
 
 # Don't copy or process these files
 ignore:
