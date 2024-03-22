@@ -47,7 +47,7 @@ jobs:
           echo -e "\nRemoving old files from previous builds:"
           rm -rvf *
           echo -e "\nCopying HTML files:"
-          cp -Rvf ../_build/ .
+          cp -Rvf ../_build/* .
           # Stage the commit
           git add -A .
           echo -e "\nChanges to be applied:"
