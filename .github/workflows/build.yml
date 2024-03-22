@@ -41,7 +41,7 @@ jobs:
         run: |
           # Make the new commit message. Needs to happen before cd into deploy
           # to get the right commit hash.
-          message="Deploy $version from $(git rev-parse --short HEAD)"
+          message="Deploy from ${GITHUB_REPOSITORY}@$(git rev-parse --short HEAD)"
           cd deploy
           # Delete all the files and replace with our new set
           echo -e "\nRemoving old files from previous builds:"
