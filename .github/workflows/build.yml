@@ -25,16 +25,41 @@ jobs:
       - name: Build the website
         run: nene
 
+      - name: Clone the
+        uses: actions/checkout@v4
+        with:
+          repository: leouieda/leouieda.github.io
+          ref: 'main'
+          token:  ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          # Checkout to this folder instead of the current one
+          path: deploy
+          # Download the entire history
+          fetch-depth: 0
+
       - name: Push to leouieda.github.io
         if: success() && github.event_name == 'push'
-        # Don't use tags: https://julienrenaux.fr/2019/12/20/github-actions-security-risk/
-        uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: leouieda/leouieda.github.io
-          publish_branch: master
-          publish_dir: ./_build
-          # Only keep the latest commit to avoid bloating the repository
-          force_orphan: true
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+        run: |
+          # Make the new commit message. Needs to happen before cd into deploy
+          # to get the right commit hash.
+          message="Deploy $version from $(git rev-parse --short HEAD)"
+          cd deploy
+          # Delete all the files and replace with our new set
+          echo -e "\nRemoving old files from previous builds:"
+          rm -rvf *
+          echo -e "\nCopying HTML files:"
+          cp -Rvf ../_build/ .
+          # Stage the commit
+          git add -A .
+          echo -e "\nChanges to be applied:"
+          git status
+          # Configure git to be the GitHub Actions account
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          # Amend the previous commit to avoid having a long history
+          echo -e "\nAmending last commit:"
+          git commit --amend --reset-author -m "$message"
+          # Make the push quiet just in case there is anything that could leak
+          # sensitive information.
+          echo -e "\nPushing changes:"
+          git push -fq origin main 2>&1 >/dev/null
+          echo -e "\nFinished uploading generated files."
