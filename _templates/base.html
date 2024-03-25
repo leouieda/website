@@ -58,7 +58,7 @@
   <link rel="stylesheet" href="{{ "css/style.css"|relative_to(page.path) }}" />
 
   <!-- Plausible analytics for anonymous usage statistics -->
-  <script defer data-domain="leouieda.com" src="https://plausible.io/js/plausible.js"></script>
+  <script defer data-domain="{{ config.domain }}" src="https://plausible.io/js/plausible.js"></script>
 
   {%- block extrahead %}{% endblock %}
 
@@ -163,13 +163,22 @@
         <p>
           Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
           from source code at
+          <i class="fab fa-github" aria-label="GitHub"></i>
           <a href="https://github.com/{{ config.repository }}">{{ config.repository }}</a>
           (<a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}">{{ build.commit }}</a>).
+          <strong>
           Found a typo/mistake?
           <a target="_blank" href="https://github.com/{{ config.repository }}/edit/{{ config.repository_branch }}/{{ page.source }}">
             Send a fix through GitHub
             <i class="fa fa-code-branch" aria-hidden="true"></i>
           </a>
+          </strong>
+        </p>
+        <p>
+          Visitor statistics are gathered anonymously by
+          <a href="https://plausible.io">Plausible</a> and can be viewed
+          at
+          <a href="https://plausible.io/{{ config.domain }}">plausible.io/{{ config.domain }}</a>.
         </p>
         <p>
           Copyright &copy; {{ build.today.year }} {{ config.author }}.
