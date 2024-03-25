@@ -22,3 +22,5 @@ template: home.html
 
 This website is my personal and professional portfolio, including a somewhat
 active [blog](blog), [contact](contact) information, and my [full CV](cv).
+Here, you can also find out more [about me](about), what I'm up to [now](now),
+and some [links to interesting websites](links).
