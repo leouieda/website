@@ -66,7 +66,7 @@ repository).
 
 **Want to read a narrative version?**
 I wrote an
-<a href="https://github.com/leouieda/memorial2023/raw/gh-pages/memorial.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer"><i class="fa fa-file-pdf" aria-label="PDF file"></i> academic autobiography</a>
+<a href="https://github.com/leouieda/memorial2023/raw/gh-pages/memorial.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer"><i class="fa fa-file-pdf" aria-label="PDF file"></i> academic autobiography</a> (in Portuguese)
 as part of my application for my current job at USP (LaTeX source code is in
 the {{ macros.github_link("leouieda/memorial2023") }} GitHub repository).
 
