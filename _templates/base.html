@@ -163,8 +163,7 @@
         <p>
           Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
           from source code at
-          <i class="fab fa-github" aria-label="GitHub"></i>
-          <a href="https://github.com/{{ config.repository }}">{{ config.repository }}</a>
+          {{ macros.github_link(config.repository) }}
           (<a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}">{{ build.commit }}</a>).
           <strong>
           Found a typo/mistake?
