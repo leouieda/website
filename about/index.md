@@ -16,8 +16,8 @@ investigate the inner structure of the Earth and it's evolution through time.
 These disturbances can be measured on the ground using [specialized
 equipment][gravimeter], onboard [dedicated satellites][grace], and even in very
 small sections of rocks using [magnetic microscopes][qdm].
-I also develop new mathematical and computational methods for extracting as
-much information from these data as we can.
+I also create new mathematical and computational methods for extracting as
+much information as we can from these datasets.
 
 <figure>
 <img src="../images/south-american-moho-zoom.jpg" alt="Map of northern South American with green to yellow color gradient showing mostly yellows in the west, going through greens and finally blues in the ocean">
@@ -52,7 +52,7 @@ student at USP.
 Most of my career has revolved around the development of open-source software
 for geophysics, mainly [Fatiando a Terra]({{ config.links.fatiando }}) and
 [PyGMT]({{ config.links.pygmt }}).
-These software underpins and shapes all of my research and teaching.
+These software underpin and shape all of my research and teaching.
 My approach to science in general is also heavily influenced by the **open
 source** and **open science** movements.
 All of the papers, code, figures, slides, and teaching resources I create are
