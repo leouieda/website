@@ -60,7 +60,7 @@ freely available under permissive **open licences**, like [CC-BY][cc-by] and
 [BSD][bsd].
 
 <figure>
-<img src="../images/liverpool-oss-seminar-2019.jpg" alt="Photo with a projection screen at the center (slide has a hands-up emoji and the phrase "I am a self-taugh coder") and a slightly tan man in a red shirt standing in front of the screen.">
+<img src="../images/liverpool-oss-seminar-2019.jpg" alt="Photo with a projection screen at the center (slide has a hands-up emoji and the phrase 'I am a self-taugh coder') and a slightly tan man in a red shirt standing in front of the screen.">
 <figcaption>
 Photo of me during my first seminar as a new Lecturer at the University of
 Liverpool, sometime in late 2019.
