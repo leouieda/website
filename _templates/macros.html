@@ -163,7 +163,7 @@
           <p><strong>Roles:</strong>
           <ul>
           {%- for role in item.roles %}
-            <li>{{ role.date }}: {{ role.title }}</li>
+            <li><span class="text-muted font-small">{{ role.date }}.</span> {{ role.title }}</li>
           {%- endfor %}
           </ul>
         {%- endif %}
