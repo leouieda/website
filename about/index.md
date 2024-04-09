@@ -124,7 +124,7 @@ Here are some of the open-source software develop:
   features. It's also what I **use to build this website**. The name is a nod
   to the [unforgettable time I spent in Hawai'i](/blog/hawaii-gmt-postdoc.html)
   and [Urubu][urubu], which I used to build my website before.
-* [**xlandsat**](https://www.compgeolab.org/xlandsat): A Python library for
+* [**xlandsat**]({{ config.links.xlandsat }}): A Python library for
   loading Landsat multi-spectral remote sensing data downloaded from [USGS
   EarthExplorer](https://earthexplorer.usgs.gov/). It started as code I wrote
   for my [remote sensing class at
@@ -152,6 +152,15 @@ Brazil.
 Since then, I've lived in: Ithaca (USA), São Paulo (Brazil), Toronto (Canada),
 Rio de Janeiro (Brazil), Honolulu (Hawai'i/USA), and Liverpool (UK).
 Currently, I'm back in São Paulo.
+
+<figure>
+<img src="../images/rio-oahu-liverpool.jpg" alt="Satellite photo with 3 panels: left is a city with mountains and beaches at the South, middle is a slice of an island with green mountains at the center, right is a brown river delta leading to a murky sea with a city.">
+<figcaption>
+Satellite images of Rio de Janeiro (left), Honolulu (middle), and Liverpool
+(right). Created using <a href="{{ config.links.xlandsat }}">xlandsat</a> and
+public domain data from the Landsat 8 and 9 satellites.
+</figcaption>
+</figure>
 
 My wife [Carol][paper] is a biologist and science writer. After quite a few
 career shifts after her PhD, she now works with outreach and event organization
