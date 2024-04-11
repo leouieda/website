@@ -9,11 +9,9 @@ template: base.html
 
 ## Academic
 
-* [Experimental History](https://www.experimental-history.com/): Blog by
-  [Adam Mastroianni](https://www.adammastroianni.com/). A must read for anyone
-  pursuing science as a profession or hobby.
-* [Matt Might's Blog](https://matt.might.net/): Author of the famous
-  [Illustrated guide to a PhD](https://matt.might.net/articles/phd-school-in-pictures).
+* [Experimental History](https://www.experimental-history.com/): Blog by [Adam Mastroianni](https://www.adammastroianni.com/). A must read for anyone pursuing science as a profession or hobby.
+* [Matt Might's Blog](https://matt.might.net/): Author of the famous [Illustrated guide to a PhD](https://matt.might.net/articles/phd-school-in-pictures).
+* [Voices of Academia](https://voicesofacademia.com): Blog posts about academic life from various different authors.
 
 ## Computers
 
