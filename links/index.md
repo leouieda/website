@@ -19,4 +19,20 @@ template: base.html
 
 ## Web
 
-* [Utopia](https://utopia.fyi/): Geneate fluid CSS font sizes and spacings.
+* [Utopia](https://utopia.fyi/): Generate fluid CSS font sizes and spacings.
+
+## Personal websites
+
+These are some nice examples of personal websites to use for inspiration:
+
+* [Daniel Saunders](https://daniel-saunders.com/)
+* [Robin Rendle](https://robinrendle.com/)
+* [Dave Smyth](https://davesmyth.com/)
+* [Ryan Mulligan](https://ryanmulligan.dev/)
+* [Oscar Otero](https://oscarotero.com/)
+
+## Lab websites
+
+Same as above but for research labs:
+
+* [Neural Reckoning](https://neural-reckoning.org/)
