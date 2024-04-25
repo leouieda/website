@@ -31,8 +31,10 @@ These are some nice examples of personal websites to use for inspiration:
 * [Ryan Mulligan](https://ryanmulligan.dev/)
 * [Oscar Otero](https://oscarotero.com/)
 
-## Lab websites
+## Academic and lab websites
 
 Same as above but for research labs:
 
 * [Neural Reckoning](https://neural-reckoning.org/)
+* [SPAMLab](https://spamlab.github.io/)
+* [Carlos Grohmann](http://carlosgrohmann.com/)
