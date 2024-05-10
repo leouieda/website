@@ -4,3 +4,10 @@ _build
 .env
 __pycache__
 *.pyc
+# From the Rio Grande do Sul floods blog post
+blog/LC08_L1TP_221081_20240406_20240412_02_T1.tar
+blog/LC08_L1TP_221081_20240508_20240508_02_RT.tar
+blog/rio-grande-do-sul-floods-2024-04-06-lowres.jpg
+blog/rio-grande-do-sul-floods-2024-04-06.jpg
+blog/rio-grande-do-sul-floods-2024-05-08-lowres.jpg
+blog/rio-grande-do-sul-floods-2024-05-08.jpg
