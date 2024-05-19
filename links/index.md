@@ -17,9 +17,13 @@ template: base.html
 
 * [Learn vim progressively](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/): How I learned how to use the vim text editor.
 
-## Web
+## Web development
 
 * [Utopia](https://utopia.fyi/): Generate fluid CSS font sizes and spacings.
+
+## Indie web
+
+* [The Forest](https://theforest.link/): Random links to personal sites and other indie websites. 
 
 ## Personal websites
 
