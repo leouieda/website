@@ -23,7 +23,6 @@ sections:
       - [preprints, Preprints]
       - [papers, Papers]
       - [proceedings, Conference proceedings]
-      - [other-publications, Other publications]
   - title: Presentations
     numbered: True
     entries:
