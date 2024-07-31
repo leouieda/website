@@ -271,13 +271,6 @@ footer .footer-text {
   border-color: var(--color-note);
 }
 
-.comments {
-  text-align: center;
-  color: var(--color-secondary);
-  font-size: var(--size--1);
-  --flow-space: 2em;
-}
-
 .blockquote-footer {
   text-align: right;
   font-size: var(--size--1);

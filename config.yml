@@ -80,7 +80,6 @@ ignore:
   - requirements.txt
   - Makefile
   - css/academicons/README.md
-  - giscus.json
 
 # My co-authors
 coauthors:
