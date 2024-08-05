@@ -38,9 +38,12 @@ In more technical terms, my main specialities are:
   observations)
 * Research software engineering (building quality software for science)
 
-I've been working in these topics since 2008, when I started a research
-internship under Prof. [Naomi Ussami][naomi] during my time as an undergraduate
-student at USP.
+I started working on these topics in 2008 during a research internship under
+Prof. [Naomi Ussami][naomi] during my time as an undergraduate student at USP,
+and have continued throughout graduate school at the
+[Observatório Nacional][on] with Prof. [Valéria C. F. Barbosa][valeria] and
+a postdoc with Prof. [Paul Wessel][paul] at the
+[University of Hawaiʻi at Mānoa][hawaii].
 
 <div class="callout">
 
@@ -220,3 +223,6 @@ Jeca Tatu performing at a small festival put together by us and another local ba
 [qdm]: https://qdm.io/
 [paper]: https://www.acarolcolombo.com/
 [seb]: https://www.sebiology.org/
+[paul]: https://en.wikipedia.org/wiki/P%C3%A5l_Wessel
+[on]: https://www.gov.br/observatorio/pt-br
+[valeria]: https://www.pinga-lab.org/people/barbosa.html
