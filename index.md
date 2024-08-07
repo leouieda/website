@@ -5,7 +5,7 @@ banner_subtitle: |
     I study the Earth using tiny disturbances in its <strong>gravity and
     magnetic fields</strong>, from global 🌎 to microscopic 🔬 scale
 banner_image: images/hawaii-lava-photoshoot.jpg
-banner_position: 30% 10%
+banner_position: 30% 30%
 template: home.html
 ---
 
