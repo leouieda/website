@@ -11,7 +11,7 @@ couldn't see how this would be useful in their future career.
 
 It was a fair question since, by that point, all we had seen were variables and
 basic data types and operations.
-Day 2 of the workshop covers loading that
+Day 2 of the workshop covers loading data
 with numpy and making plots (following the excellent
 [Software Carpentry "Programming with Python" lesson](https://swcarpentry.github.io/python-novice-inflammation/)),
 which is less abstract and luckily helped show them how this skill is useful,
