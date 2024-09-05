@@ -38,8 +38,10 @@ These are some nice examples of personal websites to use for inspiration:
 
 ## Academic and lab websites
 
-Same as above but for research labs:
+Same as above but for research labs and academics:
 
 * [Neural Reckoning](https://neural-reckoning.org/)
 * [SPAMLab](https://spamlab.github.io/)
 * [Carlos Grohmann](http://carlosgrohmann.com/)
+* [Maurício Vancine](https://mauriciovancine.github.io/)
+* [Integrative Ecology Lab at Temple University](https://www.iecolab.org/)
