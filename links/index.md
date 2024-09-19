@@ -45,3 +45,4 @@ Same as above but for research labs and academics:
 * [Carlos Grohmann](http://carlosgrohmann.com/)
 * [Maurício Vancine](https://mauriciovancine.github.io/)
 * [Integrative Ecology Lab at Temple University](https://www.iecolab.org/)
+* [Sam Harrison](https://samharrison.science/)
