@@ -46,3 +46,4 @@ Same as above but for research labs and academics:
 * [Maurício Vancine](https://mauriciovancine.github.io/)
 * [Integrative Ecology Lab at Temple University](https://www.iecolab.org/)
 * [Sam Harrison](https://samharrison.science/)
+* [Alek Petty](https://www.alekpetty.com/)
