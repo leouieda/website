@@ -7,9 +7,9 @@ banner_subtitle: A summary of where my time and energy are focused at the moment
 template: base.html
 ---
 
-Last updated: 2024-03-22.
+Last updated: 2024-09-25.
 
-## Writing a grant for Antarctica magnetics
+## Research
 
 Last year, I decided that this would be the main focus when I got back to
 Brazil.
@@ -22,6 +22,16 @@ everything works at FAPESP and come up with activities and things to fund with
 the project.
 I'm also just now adjusting to life back in Brazil and getting settled in my
 role.
+
+My research productivity hit a slump during the pandemic and the worse of times
+in Liverpool and is only now picking back up. This means that I have a gap in
+my publication for 2022 and 2023, which grant reviewers have picked up on
+(and ignored the extenuating circumstances that I stated...). So I decided to
+focus on wrapping up some old and current ongoing papers and get them submitted
+as soon as I can before I try to submit anything big to FAPESP. This will
+increase my chances of getting the grant. I'm also hoping to get more motivated
+by science, focusing on the interesting bits and leaving the pointless search
+for money and numbers aside for a bit.
 
 ## Getting back into Fatiando
 
@@ -51,6 +61,12 @@ because the barriers to entry are small (or I wouldn't be in it) and they take
 songs from many different cultures from around the world. I want to reconnect
 with music and people who aren't work colleagues and this has been a wonderful
 way to do it. It means time away from home but we're managing.
+
+I'm also hoping to pick up my guitar and ukulele more often. It's not always
+easy when I want to be in bed by 21:00 but I think it's worth it. Part of this
+also needs me listening to more music so I don't get bore of playing the same
+tunes for the past 20 years. I'm even considering signing up for some music
+lessons if I can find the time.
 
 <hr>
 
