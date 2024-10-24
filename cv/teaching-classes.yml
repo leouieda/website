@@ -1,9 +1,19 @@
-- title: "AGG0204 - Computação para Geofísicos"
-  year: 2024 - present
+- title: "AGG5740 - Teoria de Inversão em Geofísica"
+  year: 2025 - present
   institution: Universidade de São Paulo
   about: |
-    This is an optional module of the Geophysics BSc that aims to build on the
-    coding knowledge the students have gained throughout their degree.
+    This graduate-level class on the theory and applications of inverse
+    problems in geophysics. I took over teaching of this module from my
+    colleague Carlos M. Chaves starting in 2025.
+
+- title: "AGG0669 - Gravimetria e Magnetometria Aplicadas à Prospecção de Bens Minerais e Estruturas Crustais"
+  year: 2023 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is a fourth year module in the Geophysics BSc degree. It's their only
+    potential-fields focused module and aims to introduce the theory and
+    practical implemenation of potential-field methods in geophysics.
+    I teach this module with my colleagues Eder Molina and Renata Constantino.
 
 - title: "AGG5954 - Modelagem e Interpretação de Dados de Gravimetria e Magnetometria"
   year: 2024 - present
@@ -13,14 +23,22 @@
     and interpretation. The first iteration of this course in 2024 was taught
     along side the Geophysics Summer School.
 
-- title: "AGG0669 - Gravimetria e Magnetometria Aplicadas à Prospecção de Bens Minerais e Estruturas Crustais"
+- title: "AGG0011 - Problemas Integrados em Ciências da Terra I"
   year: 2023 - present
   institution: Universidade de São Paulo
   about: |
-    This is a fourth year module in the Geophysics BSc degree. It's their only
-    potential-fields focused module and aims to introduce the theory and
-    practical implemenation of potential-field methods in geophysics.
-    I co-taught this module with Eder Molina in 2023.
+    This is a first year module in the Geophysics BSc degree. It's meant to
+    integrate with the other modules and teach students how to approach problems
+    from a quantitative and computational angle.
+
+- title: "AGG5949 - Tópicos Gerais de Geofísica"
+  year: 2024 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is a graduate-level course for PhD students. The goal is to get them
+    to dive deep into topics of geophysics that they haven't studied
+    extensively in the past. I teach this module with my colleague Andrea
+    Ustra.
 
 - title: "AGG0110 - Elementos de Geofísica"
   year: 2023 - present
@@ -29,17 +47,16 @@
     This is a first year module in the "Licenciatura em Geociências e Educação
     Ambiental" degree, a teaching focused degree. It's main purpose is to
     introduce the students to geophysics at a very high level (seismology,
-    geomagnetism, and gravimetry). I co-taught this module with Marcelo Bianchi
-    and Daniele Brandt in 2023.
+    geomagnetism, and gravimetry). I teach this module with my colleagues
+    Marcelo Bianchi and Daniele Brandt.
 
-- title: "AGG0011 - Problemas Integrados em Ciências da Terra I"
-  year: 2023 - present
+- title: "AGG0204 - Computação para Geofísicos"
+  year: 2024 - 2024
   institution: Universidade de São Paulo
   about: |
-    This is a first year module in the Geophysics BSc degree. It's meant to
-    integrate with the other modules and teach students how to approach problems
-    from a quantitative and computational angle. I co-taught this module with
-    Marcelo Bianchi and Eder Molina in 2023.
+    This is an optional module of the Geophysics BSc that aims to build on the
+    coding knowledge the students have gained throughout their degree. My
+    colleague Renata Constantino took over the module from 2025 onwards.
 
 - title: "ENVS398 Global Geophysics and Geodynamics"
   year: 2020 - 2023
