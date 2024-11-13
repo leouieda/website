@@ -47,3 +47,6 @@ Same as above but for research labs and academics:
 * [Integrative Ecology Lab at Temple University](https://www.iecolab.org/)
 * [Sam Harrison](https://samharrison.science/)
 * [Alek Petty](https://www.alekpetty.com/)
+* [Advanced Reactors and Fuel Cycles](http://arfc.github.io/)
+* [Srikrishnan Research Group](https://viveks.bee.cornell.edu/)
+* [Doss-Gollin Lab](https://dossgollin-lab.github.io/)
