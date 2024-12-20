@@ -1,12 +1,26 @@
+- title: "Aline Montenegro Araújo (BSc)"
+  year: 2024
+  thesis: "Análise da anisotropia sı́smica do manto superior sob o Brasil a partir de medições da divisão de ondas XKS"
+  institution: Universidade de São Paulo
+  country: Brazil
+  committee: Uieda, L; França, GS
+
+- title: "Julia Lullis Malvar Fortes (BSc)"
+  year: 2024
+  thesis: "Convecção Térmica no manto terrestre: Soluções analíticas e numéricas"
+  institution: Universidade de São Paulo
+  country: Brazil
+  committee: Uieda, L; Constantino, RR
+
 - title: "Larissa da Silva Piauilino (PhD)"
   year: 2023
   thesis: "Camadas equivalentes rápidas para o processamento de dados de campos potenciais"
   institution: Observatório Nacional
   country: Brazil
-  committee: Barbosa, VCF; Ponte-Neto, CF; Ferreira, DSR; Uieda, L; Oliveira, SP 
+  committee: Barbosa, VCF; Ponte-Neto, CF; Ferreira, DSR; Uieda, L; Oliveira, SP
   about: |
-    I served as one of the external reviewers. Larissa was a PhD student with in the 
-    <a href="https://www.pinga-lab.org">PINGA Lab</a> supervised by Valéria and 
+    I served as one of the external reviewers. Larissa was a PhD student with in the
+    <a href="https://www.pinga-lab.org">PINGA Lab</a> supervised by Valéria and
     Vanderlei. Very interesting work on making some of the equivalent source
     problems developed by the group faster and more general.
 

@@ -1,16 +1,20 @@
-- title: Ellen Fernandes Marcos
-  thesis: "Analysis of block cross-validation for equivalent source processing of gravity data"
-  year: 2024 - present
-  institution: Universidade de São Paulo
-  country: Brazil
-  advisor: Leonardo Uieda
-
 - title: Gabriel Aparecido das Chagas Silva
   thesis: "Mesh refinement in the inversion of gravity data through the planting algorithm"
   year: 2024 - present
   institution: Universidade de São Paulo
   country: Brazil
   advisor: Leonardo Uieda
+  about: |
+    Gabriel's scientific iniciation project is funded by a PIBIC scholarship from CNPq from September 2024 until August 2025.
+
+- title: Ellen Fernandes Marcos
+  thesis: "Analysis of block cross-validation for equivalent source processing of gravity data"
+  year: 2024 - 2024
+  institution: Universidade de São Paulo
+  country: Brazil
+  advisor: Leonardo Uieda
+  about: |
+    Ellen did her final year project under my supervision and highly praised for her work.
 
 - title: Hamed R. H. Al-Salehi
   thesis: "Integration of ground and satellite gravity data at continental scales"

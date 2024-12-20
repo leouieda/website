@@ -1,3 +1,15 @@
+- title: "Euler inversion: Locating sources of potential-field data through inversion of Euler's homogeneity equation"
+  year: 2024
+  authors: [Me, Gelson, India, Bi]
+  journal: EarthArXiv
+  doi: 10.31223/X5T41M
+  abstract: |
+    Earth scientists can estimate the depth of certain rocks beneath Earth's surface by measuring the small disturbances that they cause in the Earth's gravity and magnetic fields. A popular method for this is Euler deconvolution, which is widely available in geoscience software and can be run quickly on a standard computer. Unfortunately, Euler deconvolution has some shortcomings: 1) the approximate shape of the rocks must be known, for example, a sphere or a wide flat slab, represented by the structural index 2) the depth of the rocks is not well estimated when there is noise in our data, which is a common occurrence. We propose a new method, Euler inversion, which fixes some of the shortcomings of Euler deconvolution by using more adequate (and complex) mathematics. Our method is less sensitive to noise in the data and is also able to determine the approximate shape of the source (the structural index). Euler inversion is also fast to execute on a standard computer, making it a practical alternative to Euler deconvolution on an Earth scientists toolbox.
+  about: |
+    The main idea for this paper came about during an potential-field methods class which Leo took in 2012 with his then PhD supervisor Prof. Valéria C. F. Barbosa. While learning about the Euler deconvolution method, which is a speciality of Valéria, Leo connected it with the geodetic network adjustment theory he had been taught by Prof. Spiros Pagiatakis during an exchange program at York University, Canada, in 2008. An initial prototype was developed in 2012 but there were still some rough edges and the project was shelved to make way for other more urgent projects at the time. Leo returned to this every few years, making slow progress, and involving Vanderlei in the planning and discussion of the theory. In 2024, co-authors Gelson, India, and Vanderlei joined Leo for a sprint to finish the method and produce this paper. The paper was submitted to Geophysical Journal International in December 2024.
+  citation: |
+    Uieda, L., Souza-Junior, G. F., Uppal, I., Oliveira Jr., V. C. (2024). Euler inversion: Locating sources of potential-field data through inversion of Euler’s homogeneity equation. EarthArXiv. doi:10.31223/X5T41M.
+
 - title: Giving software its due through community-driven review and publication
   year: 2019
   authors: [LBarba, JBazan, JBrown, RGuimera, MGymrek, AHanna, Lindsey, KHuff, DKatz, CMadan, KMoerman, KNiemeyer, JPoulson, PPrins, KRam, ARokem, Arfon, GThiruvathukal, KThyng, Me, BWilson, Yehudi]
