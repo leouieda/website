@@ -51,3 +51,4 @@ Same as above but for research labs and academics:
 * [Srikrishnan Research Group](https://viveks.bee.cornell.edu/)
 * [Doss-Gollin Lab](https://dossgollin-lab.github.io/)
 * [Crowther Lab](https://crowtherlab.com/)
+* [Complex Interface Team](https://complexinterface.com)
