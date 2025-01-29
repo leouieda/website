@@ -1,3 +1,13 @@
+- title: Embaixador
+  institution: Rede Brasileira de Reprodutibilidade
+  year: 2024 - present
+  about: |
+    The <a target="_blank" href="https://www.reprodutibilidade.org/">Brazilian
+    Reproducibility Network</a> started an ambassador program in 2024, for
+    which I was selected. Our roles involves helping with the RBR's activities,
+    advising, and undertaking a project in 2025 involving open science and
+    reproducibility at our host institutions.
+
 - title: Board Member
   institution: Software Underground
   year: 2022 - present
@@ -16,6 +26,16 @@
     non-profit preprint server for the Earth Sciences.
     After serving a full term on their Advisory Council, I signed up for
     another term to help advise newer members.
+
+- title: Fellow
+  institution: Software Sustainability Institute
+  year: 2020 - present
+  abstract: |
+    The SSI has a yearly fellowship program to fund the organization of
+    communities around scientific software (creating of local user groups,
+    workshops, hackathons, etc).
+    I was selected for the 2020 cohort of fellows and we remain fellows of the
+    institute going forward.
 
 - title: Advisory Council Member
   institution: pyOpenSci
