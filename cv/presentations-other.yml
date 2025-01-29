@@ -1,4 +1,18 @@
-- title: Magnetic fields and the flow of heat beneath Antarctica's ice sheets 
+- title: How lab handbooks can help shape research culture in your team
+  authors: [Me]
+  year: 2025
+  conference: Prosper PI Network
+  about: |
+    The <a target="_blank" href="https://prosper.liverpool.ac.uk/">Prosper
+    project</a>, a multi-institution training project in the UK, hosts a series
+    of online events called the "PI Network" which offers discussion and
+    training for early career researchers. I was invited to be a panelist and
+    presenter in this session about lab handbooks because of my work on the <a
+    target="_blank" href="https://www.compgeolab.org/manual/">CompGeoLab
+    manual</a>. It was a fun experience and I got to learn about other people
+    who make these types of guides for their research groups.
+
+- title: Magnetic fields and the flow of heat beneath Antarctica's ice sheets
   authors: [Me]
   year: 2023
   conference: IAG Science Day
@@ -6,7 +20,7 @@
   slides: https://www.leouieda.com/iag-science-day-2023
   recording: i9SW5p01Pvs&t=3240
   about: |
-    Quick 4-minute talk about some of my research interests for the 
+    Quick 4-minute talk about some of my research interests for the
     2023 IAG Science Day at Universidade de São Paulo.
     The slides were made with <a href="https://revealjs.com/">reveal.js</a>
     using my <a href="https://github.com/leouieda/talk-template">open-source
