@@ -1,3 +1,32 @@
+- title: Fellow of the Higher Education Academy
+  institution: University of Liverpool
+  country: UK
+  thesis: A review of peer-observation in higher education
+  github: leouieda/pgcap
+  doi: 10.6084/m9.figshare.28401473
+  year: 2020 - 2022
+  about: |
+    During my time as Lecturer at the University of Liverpool, UK, I took the
+    Postgraduate Certificate in Academic Practice (PGCAP) course between
+    November 2020 and May 2022. The course was composed of 2 modules ADEV700
+    2020/21 and ADEV701 2021/22 totaling about 600h of study.
+    I build a <a target="_blank" href="https://www.leouieda.com/pgcap">Portfolio
+    of Activity</a> for the modules, which includes a review of
+    peer-observation strategies as my research project.
+    Completing the course granted me the title of <a target="_blank"
+    href="https://www.advance-he.ac.uk/fellowship/fellowship">Fellow of Higher
+    Education Academy</a> (reference number PR242069).
+
+- title: Instructor training
+  institution: The Carpentries
+  country: USA
+  year: 2018
+  about: |
+    In person training for certification as an instructor of <a target="_blank"
+    href="https://software-carpentry.org/">Software Carpentry</a>. The training
+    covers various aspects of the theory and practice of teaching computing.
+    Done at the 2018 Scipy Conference.
+
 - title: PhD in Geophysics
   institution: Observatório Nacional
   country: Brazil
