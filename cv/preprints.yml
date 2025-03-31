@@ -1,3 +1,35 @@
+- title: "Robust directional analysis of magnetic microscopy images using non-linear inversion and iterative Euler deconvolution"
+  year: 2025
+  authors: [Gelson, Me, Ricardo, Roger, Ualisson, Yago]
+  journal: EarthArXiv
+  doi: 10.31223/X5N42F
+  data: 10.6084/m9.figshare.28560872
+  github: compgeolab/micromag-interfering-sources
+  abstract: |
+    Scientists often study entire samples to understand their overall
+    properties, but this approach can miss important details. To get a clearer
+    picture, researchers are improving methods that focus on smaller regions of
+    a sample. In paleomagnetism, a field that studies the Earth's ancient
+    magnetic field, magnetic microscopy allows scientists to examine tiny areas
+    with high precision. In this study, we use magnetic microscopy data to
+    determine the direction of magnetization in samples. To do this, we apply
+    a mathematical method called Euler deconvolution, which helps solve complex
+    calculations and reduce uncertainty. We also refine our results with an
+    additional step that improves accuracy and removes unwanted signals. We
+    tested this approach on both simulated and real data. Our results show that
+    this new method can detect weaker magnetic sources and accurately determine
+    the direction of magnetization. When applied to real samples, it
+    successfully identified their original magnetic direction. This represents
+    an important step in using magnetic microscopy for paleomagnetic research.
+  about: |
+    This is the second contribution from Gelson's PhD thesis. We improved our
+    <a href"https://doi.org/10.1029/2023GC011082">original method</a> using an
+    iterative scheme to strip the effects of larger dipoles from the signal and
+    a non-linear inversion step. The result is that the new method is able to
+    cope with much denser distributions of magnetic particles.
+  citation: |
+    Souza-Junior, G. F., Uieda, L., Trindade, R. I. F., Fu, R. R., Bellon, U. D., and Castro, Y. M. (2025). Robust directional analysis of magnetic microscopy images using non-linear inversion and iterative Euler deconvolution. EarthArXiv. doi:10.31223/X5N42F
+
 - title: "Efficiency of thermoremanent magnetization acquisition in vortex-state particle assemblies"
   year: 2025
   authors: [Ualisson, Wyn, Muxworthy, Gelson, Les, Me, Ricardo]
@@ -10,20 +42,6 @@
     This came about from discussions between myself, Ricardo, Ualisson, and Gelson about deriving the number of particles that are needed to realistically recover the bias field of the Earth. The motivation was to provide a guideline for our magnetic microscopy work so we know how many measurements are needed to get a statistically reasonable estimate of the field. Ualisson took leadership of the project and produced this great bit of research.
   citation: |
     Bellon, U. D., Williams, W., Muxworthy, A. R., Souza-Junior, G. F., Nagy, L., Uieda, L., & Trindade, R. I. (2025). Efficiency of thermoremanent magnetization acquisition in vortex-state particle assemblies. ESS Open Archive. https://doi.org/10.22541/essoar.173870862.24424739/v1
-
-- title: "Euler inversion: Locating sources of potential-field data through inversion of Euler's homogeneity equation"
-  year: 2024
-  authors: [Me, Gelson, India, Bi]
-  journal: EarthArXiv
-  doi: 10.31223/X5T41M
-  github: compgeolab/euler-inversion
-  data: 10.6084/m9.figshare.26384140
-  abstract: |
-    Earth scientists can estimate the depth of certain rocks beneath Earth's surface by measuring the small disturbances that they cause in the Earth's gravity and magnetic fields. A popular method for this is Euler deconvolution, which is widely available in geoscience software and can be run quickly on a standard computer. Unfortunately, Euler deconvolution has some shortcomings: 1) the approximate shape of the rocks must be known, for example, a sphere or a wide flat slab, represented by the structural index 2) the depth of the rocks is not well estimated when there is noise in our data, which is a common occurrence. We propose a new method, Euler inversion, which fixes some of the shortcomings of Euler deconvolution by using more adequate (and complex) mathematics. Our method is less sensitive to noise in the data and is also able to determine the approximate shape of the source (the structural index). Euler inversion is also fast to execute on a standard computer, making it a practical alternative to Euler deconvolution on an Earth scientists toolbox.
-  about: |
-    The main idea for this paper came about during an potential-field methods class which Leo took in 2012 with his then PhD supervisor Prof. Valéria C. F. Barbosa. While learning about the Euler deconvolution method, which is a speciality of Valéria, Leo connected it with the geodetic network adjustment theory he had been taught by Prof. Spiros Pagiatakis during an exchange program at York University, Canada, in 2008. An initial prototype was developed in 2012 but there were still some rough edges and the project was shelved to make way for other more urgent projects at the time. Leo returned to this every few years, making slow progress, and involving Vanderlei in the planning and discussion of the theory. In 2024, co-authors Gelson, India, and Vanderlei joined Leo for a sprint to finish the method and produce this paper. The paper was submitted to Geophysical Journal International in December 2024.
-  citation: |
-    Uieda, L., Souza-Junior, G. F., Uppal, I., Oliveira Jr., V. C. (2024). Euler inversion: Locating sources of potential-field data through inversion of Euler’s homogeneity equation. EarthArXiv. doi:10.31223/X5T41M.
 
 - title: Giving software its due through community-driven review and publication
   year: 2019
