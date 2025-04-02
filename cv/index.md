@@ -64,8 +64,8 @@ Here is a
 
 **Want to read a narrative version?**
 I wrote an
-<a href="https://github.com/leouieda/memorial2023/raw/gh-pages/memorial.pdf" target="_blank" type="application/pdf" rel="external noopener noreferrer">academic autobiography</a>
-(in Portuguese) in 2023 (LaTeX source at {{ macros.github_link("leouieda/memorial2023") }}).
+<a href="https://github.com/leouieda/memorial" target="_blank" type="application/pdf" rel="external noopener noreferrer">academic autobiography</a>
+(in Portuguese) as part of my last job application. The LaTeX source is at {{ macros.github_link("leouieda/memorial") }}.
 
 </div>
 
