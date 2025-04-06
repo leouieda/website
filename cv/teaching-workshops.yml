@@ -1,3 +1,15 @@
+- title: "Kit de sobrevivência digital para cientistas"
+  year: 2025
+  authors: [Me, Arthur, Yago]
+  event: XXVII Escola de Verão de Geofísica do IAG - USP
+  github: compgeolab/kit
+  abstract: |
+    Short-course teaching the tools every digital scientist needs to produce
+    reliable and reproducible research. This course was first designed under my
+    activities as Ambassador for the
+    <a href="https://www.reprodutibilidade.org/">Brazilian Reproducibility
+    Network</a>.
+
 - title: "Crafting beautiful maps with PyGMT"
   year: 2022
   authors: [WeiJi, Me, Max, ABelem]
