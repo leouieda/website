@@ -35,6 +35,7 @@ These are some nice examples of personal websites to use for inspiration:
 * [Ryan Mulligan](https://ryanmulligan.dev/)
 * [Oscar Otero](https://oscarotero.com/)
 * [Andy Carolan](https://www.andycarolan.com/)
+* [Karolina Szczur](https://karolinaszczur.com/)
 
 ## Academic and lab websites
 
