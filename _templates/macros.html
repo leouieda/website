@@ -67,6 +67,12 @@
 {%- endmacro -%}
 
 
+{%- macro vimeo_link(id) -%}
+  {%- set link = "https://vimeo.com/" ~ id %}
+  <a href="{{ link }}" target="_blank">{{ link }}</a>
+{%- endmacro -%}
+
+
 {%- macro doi_link(doi) -%}
   <a href="https://doi.org/{{ doi }}" target="_blank">{{ doi }}</a>
 {%- endmacro -%}
@@ -110,6 +116,9 @@
         {%- endif %}
         {%- if item.recording is defined %}
           <p><strong>Recording:</strong> {{ youtube_link(item.recording) }}</p>
+        {%- endif %}
+        {%- if item.recording_vimeo is defined %}
+          <p><strong>Recording:</strong> {{ vimeo_link(item.recording_vimeo) }}</p>
         {%- endif %}
         {%- if item.data is defined %}
           <p><strong>Data and code archive DOI:</strong> {{ doi_link(item.data) }}</p>
