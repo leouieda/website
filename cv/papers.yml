@@ -1,3 +1,17 @@
+- title: "Efficiency of thermoremanent magnetization acquisition in vortex-state particle assemblies"
+  year: 2025
+  authors: [Ualisson, Wyn, Muxworthy, Gelson, Les, Me, Ricardo]
+  journal: Geophysical Research Letters
+  doi: 10.1029/2025GL114771
+  preprint: 10.22541/essoar.173870862.24424739/v1
+  data: 10.5281/zenodo.14051069
+  abstract: |
+    Magmatic rocks record ambient magnetic fields during cooling, preserving them for billions of years through thermoremanent magnetization (TRM). TRM accuracy depends on particle size, shape, magnetic properties, and the number of particles available to record the field. While traditionally interpreted via Neél’s single-domain theory, most particles exist in a vortex state, where complex magnetic structures require numerical modeling. We show that in strong fields (>10 μT), a few thousand nanoscopic vortex-state particles can record TRM with less than 1% error, regardless of shape. For weaker fields, morphology plays a crucial role, with spherical and oblate particles performing best. These findings challenge assumptions about particle requirements for faithful TRM recording and highlight the influence of grain shape in paleomagnetic studies. Our results justify using smaller geological samples and magnetic microscopy to reconstruct ancient magnetic fields with precision.
+  about: |
+    This came about from discussions between myself, Ricardo, Ualisson, and Gelson about deriving the number of particles that are needed to realistically recover the bias field of the Earth. The motivation was to provide a guideline for our magnetic microscopy work so we know how many measurements are needed to get a statistically reasonable estimate of the field. Ualisson took leadership of the project and produced this great bit of research.
+  citation: |
+    Bellon, U. D., Williams, W., Muxworthy, A. R., Souza-Junior, G. F., Nagy, L., Uieda, L., & Trindade, R. I. (2025). Efficiency of thermoremanent magnetization acquisition in vortex-state particle assemblies. Geophysical Research Letters, 52(8), e2025GL114771. doi:10.1029/2025GL114771
+
 - title: "Euler inversion: Locating sources of potential-field data through inversion of Euler's homogeneity equation"
   year: 2025
   authors: [Me, Gelson, India, Bi]
