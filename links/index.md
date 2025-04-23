@@ -53,3 +53,4 @@ Same as above but for research labs and academics:
 * [Doss-Gollin Lab](https://dossgollin-lab.github.io/)
 * [Crowther Lab](https://crowtherlab.com/)
 * [Complex Interface Team](https://complexinterface.com)
+* [Ink and Switch](https://www.inkandswitch.com/)
