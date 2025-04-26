@@ -10,10 +10,10 @@
 {%- block content %}
   {{ page.body }}
 
-  <h2>Latest blog posts</h2>
+  <h2>Some blog posts</h2>
 
   <ul class="flow" role="list">
-  {%- for item in (site["blog/index"]["siblings"]|sort(attribute="date", reverse=True))[:5] %}
+  {%- for item in (site["blog/index"]["siblings"]|sort(attribute="date", reverse=True))[:3] %}
     <li>
       <a class="font-large" href="{{ item.path|relative_to(page.path) }}">{{ item.title }}</a>
       <p class="font-small text-muted">{{ item.date }}</p>
