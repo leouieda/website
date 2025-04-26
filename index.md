@@ -20,7 +20,7 @@ template: home.html
 * Dedicated involved loving **father**
 * Pronouns: **He/Ele/Él**
 
-This website is my personal and professional portfolio, including a somewhat
-active [blog](blog), [contact](contact) information, and my [full CV](cv).
+This website is my personal space on the internet, including an infrequently
+updated [blog](blog), [contact](contact) information, and my [full CV](cv).
 Here, you can also find out more [about me](about), what I'm up to [now](now),
 and some [links to interesting websites](links).
