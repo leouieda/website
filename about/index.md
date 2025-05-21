@@ -87,11 +87,10 @@ If you need a photo of me for promotional material
 Feel free to crop it however you see fit.
 
 <figure>
-<img src="../images/profile-picture.jpg" alt="Photo of me, facing the camera at a slight angle and smiling, wearing a stripped white shirt and blue jacket">
+<img src="../images/profile-picture.jpg" alt="Photo of a man with slight southeast asian features, tan skin, short black hair, a short black beard with some gray hairs, black-rimmed glasses, and a checkered shirt.">
 <figcaption>
 
-Photo of me taken at the University of Liverpool's Central Teaching
-Laboratories back in 2019. You may use this photo under the terms of the
+Photo of me taken in May 2025. You may use this photo under the terms of the
 [CC-BY][cc-by] license.
 
 </figcaption>
