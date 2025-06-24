@@ -1,6 +1,6 @@
 ---
 title: Blog
-banner_image: images/mauna-loa.jpg
+banner_image: images/banners/mauna-loa.jpg
 banner_position: center
 banner_title: Blog
 banner_subtitle: Random thoughts, opinions, updates, and tutorials

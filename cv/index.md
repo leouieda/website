@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitæ
-banner_image: images/teaching-git-at-agu2019.jpg
+banner_image: images/banners/teaching-git-at-agu2019.jpg
 banner_position: center right
 banner_title: Curriculum Vitæ
 banner_subtitle: A list of pretty much everything I've done so far in my career

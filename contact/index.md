@@ -1,6 +1,6 @@
 ---
 title: Contact
-banner_image: images/valley-of-fire.jpg
+banner_image: images/banners/valley-of-fire.jpg
 banner_position: top right
 banner_title: Contact
 banner_subtitle: How to reach me online and offline

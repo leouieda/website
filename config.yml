@@ -10,8 +10,8 @@ language: en
 keywords: 'science, geoscience, geophysics, software, open-source'
 repository: leouieda/website
 repository_branch: main
-favicon: images/favicon.png
-thumbnail: images/thumbnail.jpg
+favicon: assets/favicon.png
+thumbnail: assets/thumbnail.jpg
 license_notice: |
   Except where otherwise noted, all content is licensed
   <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.

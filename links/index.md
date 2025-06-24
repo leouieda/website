@@ -1,7 +1,7 @@
 ---
 title: Links
-banner_image: images/merseyside-panchromatic.jpg
-banner_position: center
+banner_image: images/banners/amazon-delta.jpg
+banner_position: center right
 banner_title: Links
 banner_subtitle: A collection of links to websites that I like
 template: base.html
@@ -23,7 +23,7 @@ template: base.html
 
 ## Indie web
 
-* [The Forest](https://theforest.link/): Random links to personal sites and other indie websites. 
+* [The Forest](https://theforest.link/): Random links to personal sites and other indie websites.
 
 ## Personal websites
 

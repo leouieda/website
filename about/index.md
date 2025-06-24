@@ -1,7 +1,7 @@
 ---
 title: About
-banner_image: images/amazon-delta.jpg
-banner_position: center right
+banner_image: images/banners/self-taught-coder.jpg
+banner_position: center
 banner_title: About
 banner_subtitle: Some information about who I am and what I do
 template: base.html

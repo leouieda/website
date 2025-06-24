@@ -1,6 +1,6 @@
 ---
 title: What I’m doing now
-banner_image: images/roraima.jpg
+banner_image: images/banners/roraima.jpg
 banner_position: center
 banner_title: What I’m doing now
 banner_subtitle: A summary of where my time and energy are focused at the moment
