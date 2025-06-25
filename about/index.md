@@ -100,7 +100,7 @@ Photo of me taken in May 2025. You may use this photo under the terms of the
 
 ## Software
 
-Here are some of the open-source software develop:
+Here are some of the open-source software projects that I develop:
 
 * [**Fatiando a Terra**]({{ config.links.fatiando }}): Collection of Python
   libraries for Geophysics built by a community of geoscientists and software
