@@ -45,12 +45,6 @@
   <!-- Atkinson Hyperlegible font -->
   <link rel="stylesheet" href="{{ "pkg/atkinson-hyperlegible/fonts.css"|relative_to(page.path) }}" />
 
-  <!-- Ubuntu Mono font -->
-  <link rel="stylesheet" href="{{ "pkg/ubuntu-mono/fonts.css"|relative_to(page.path) }}" />
-
-  <!-- KaTeX -->
-  <link rel="stylesheet" href="{{ "pkg/katex-0.15.3/katex.min.css"|relative_to(page.path) }}" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" />
-
   <!-- Andy Bell's CSS reset -->
   <link rel="stylesheet" href="{{ "css/reset.css"|relative_to(page.path) }}" />
 
@@ -60,7 +54,11 @@
   <!-- Plausible analytics for anonymous usage statistics -->
   <script defer data-domain="{{ config.domain }}" src="https://plausible.io/js/plausible.js"></script>
 
-  {%- block extrahead %}{% endblock %}
+  {%- block extrahead %}
+    {%- if page.extrahead is defined %}
+      {{ page.extrahead }}
+    {%- endif %}
+  {% endblock %}
 
 </head>
 
@@ -193,22 +191,11 @@
     </div>
   </footer>
 
-  <!-- KaTeX -->
-  <script defer src="{{ "pkg/katex-0.15.3/katex.min.js"|relative_to(page.path) }}" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
-  <script defer src="{{ "pkg/katex-0.15.3/auto-render.min.js"|relative_to(page.path) }}" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      renderMathInElement(document.body, {
-        delimiters: [
-          {left: '$$', right: '$$', display: true},
-          {left: '$', right: '$', display: false},
-        ],
-      });
-    });
-  </script>
-
-  <!-- Dimensions -->
-  <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+  {%- block extrafoot %}
+    {%- if page.extrafoot is defined %}
+      {{ page.extrafoot }}
+    {%- endif %}
+  {%- endblock %}
 
 </body>
 </html>

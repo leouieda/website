@@ -5,6 +5,9 @@ banner_position: center right
 banner_title: Curriculum Vitæ
 banner_subtitle: A list of pretty much everything I've done so far in my career
 template: base.html
+extrafoot: |
+  <!-- Dimensions badge -->
+  <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 sections:
   - title: Professional
     numbered: False

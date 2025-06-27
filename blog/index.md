@@ -4,7 +4,7 @@ banner_image: images/banners/mauna-loa.jpg
 banner_position: center
 banner_title: Blog
 banner_subtitle: Random thoughts, opinions, updates, and tutorials
-template: blog.html
+template: blog-index.html
 ---
 
 {# Source code for generating the blog index is in _templates/blog.html because
