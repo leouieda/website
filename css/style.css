@@ -214,7 +214,7 @@ hr {
   --flow-space: 2em;
 }
 
-:is(ul, ol), .fa-ul {
+:is(ul, ol) {
   --flow-space: 1em;
 }
 

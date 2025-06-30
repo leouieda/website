@@ -50,7 +50,6 @@ career, the things that I value most in an academic job, and from where some of
 the roots of my way of doing science came.
 If you'd like to read it (or use it as a template to write your own), it's
 available on the GitHub repository
-<i class="fab fa-github" aria-hidden="true"></i>
 [`leouieda/memorial2023`](https://github.com/leouieda/memorial2023)
 as both a PDF and the LaTeX source code (under a
 [CC-BY license](http://creativecommons.org/licenses/by/4.0/)).

@@ -9,14 +9,6 @@
 {%- endmacro -%}
 
 
-{%- macro social_icon(title, icon, url) -%}
-  <!-- The rel="me" attribute verifies for these profiles that I own this domain -->
-  <a rel="me" href="{{ url }}" target="_blank">
-    <i class="{{ icon }} fa-lg" title="{{ title }}" aria-label="{{ title }}"></i>
-  </a>
-{%- endmacro -%}
-
-
 {%- macro author_list(authors, config) -%}
   {%- for author in authors %}
     {%- if author == "Me" %}
@@ -79,7 +71,6 @@
 
 
 {%- macro github_link(repo) -%}
-  <i class="fab fa-github" aria-label="GitHub"></i>
   <a href="https://github.com/{{ repo }}" target="_blank">{{ repo }}</a>
 {%- endmacro -%}
 

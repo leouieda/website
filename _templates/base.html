@@ -36,12 +36,6 @@
   <meta property="og:image" content="{{ config.url }}/{{ config.thumbnail }}" />
   <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
 
-  <!-- FontAwsome -->
-  <link rel="stylesheet" href="{{ "pkg/fontawesome/css/all.css"|relative_to(page.path) }}" />
-
-  <!-- Academicons -->
-  <link rel="stylesheet" href="{{ "pkg/academicons-1.9.1/css/academicons.min.css"|relative_to(page.path) }}" />
-
   <!-- Atkinson Hyperlegible font -->
   <link rel="stylesheet" href="{{ "pkg/atkinson-hyperlegible/fonts.css"|relative_to(page.path) }}" />
 
@@ -123,42 +117,43 @@
         {%- endfor %}
         </ul>
       </nav>
-      <ul class="list-inline social-icons" role="list">
+      <ul class="list-inline" role="list">
+        <li><strong>Social:</strong></li>
         <li>
-          {{ macros.social_icon("Mastodon", "fab fa-mastodon", "https://" + config.mastodon_server + "/@" + config.mastodon) }}
+          <a href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}" target="_blank">Mastodon</a>
         </li>
         <li>
-          {{ macros.social_icon("LinkedIn", "fab fa-linkedin", "https://www.linkedin.com/in/" + config.linkedin) }}
+          <a href="https://www.linkedin.com/in/{{ config.linkedin }}" target="_blank">LinkedIn</a>
         </li>
         <li>
-          {{ macros.social_icon("GitHub", "fab fa-github", "https://github.com/" + config.github) }}
+          <a href="https://github.com/{{ config.github }}" target="_blank">GitHub</a>
         </li>
         <li>
-          {{ macros.social_icon("YouTube", "fab fa-youtube", "https://www.youtube.com/@" + config.youtube) }}
+          <a href="https://www.youtube.com/@{{ config.youtube }}" target="_blank">YouTube</a>
+        </li>
+      </ul>
+      <ul class="list-inline" role="list">
+        <li><strong>Academic:</strong></li>
+        <li>
+          <a href="https://orcid.org/{{ config.orcid }}" target="_blank">ORCID</a>
         </li>
         <li>
-          {{ macros.social_icon("ORCID", "ai ai-orcid", "https://orcid.org/" + config.orcid) }}
+          <a href="https://lattes.cnpq.br/{{ config.lattes }}" target="_blank">Lattes</a>
         </li>
         <li>
-          {{ macros.social_icon("ImpactStory", "ai ai-impactstory", "https://profiles.impactstory.org/u/" + config.orcid) }}
+          <a href="http://scholar.google.com/citations?user={{ config.googlescholar }}" target="_blank">Google Scholar</a>
         </li>
         <li>
-          {{ macros.social_icon("ResearchGate", "ai ai-researchgate", config.researchgate) }}
+          <a href="https://www.researchgate.net/profile/{{ config.researchgate }}" target="_blank">ResearchGate</a>
         </li>
         <li>
-          {{ macros.social_icon("figshare", "ai ai-figshare", config.figshare) }}
+          <a href="https://figshare.com/authors/{{ config.figshare }}" target="_blank">figshare</a>
         </li>
         <li>
-          {{ macros.social_icon("ResearcherID", "ai ai-researcherid", "https://www.webofscience.com/wos/author/rid/" + config.researcherid) }}
+          <a href="https://www.webofscience.com/wos/author/rid/{{ config.researcherid }}" target="_blank">Web of Science</a>
         </li>
         <li>
-          {{ macros.social_icon("Scopus", "ai ai-scopus", "https://www.scopus.com/authid/detail.uri?authorId=" + config.scopus) }}
-        </li>
-        <li>
-          {{ macros.social_icon("Currículo Lattes", "ai ai-lattes", "https://lattes.cnpq.br/" + config.lattes) }}
-        </li>
-        <li>
-          {{ macros.social_icon("Google Scholar", "ai ai-google-scholar", config.googlescholar) }}
+          <a href="https://www.scopus.com/authid/detail.uri?authorId={{ config.scopus }}" target="_blank">Scopus</a>
         </li>
       </ul>
       <section class="footer-text flow">
@@ -166,13 +161,10 @@
           Built on {{ build.today.strftime('%Y/%m/%d') }} with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
           from source code at
           {{ macros.github_link(config.repository) }}
-          / <i class="fas fa-history fa-sm"></i> <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>.
+          (<a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>).
           <strong>
           Found a typo/mistake?
-          <a target="_blank" href="https://github.com/{{ config.repository }}/edit/{{ config.repository_branch }}/{{ page.source }}">
-            Send a fix through GitHub
-            <i class="fa fa-code-branch" aria-hidden="true"></i>
-          </a>
+          <a target="_blank" href="https://github.com/{{ config.repository }}/edit/{{ config.repository_branch }}/{{ page.source }}">Send a fix through GitHub</a>.
           </strong>
         </p>
         <p>

@@ -67,13 +67,13 @@ Here is a
 
 **Want to read a narrative version?**
 I wrote an
-<a href="https://github.com/leouieda/memorial" target="_blank" type="application/pdf" rel="external noopener noreferrer">academic autobiography</a>
-(in Portuguese) as part of my last job application. The LaTeX source is at {{ macros.github_link("leouieda/memorial") }}.
+<a href="https://doi.org/10.6084/m9.figshare.28737800" target="_blank">academic autobiography</a>
+(in Portuguese) as part of my last job application.
+The LaTeX source is at {{ macros.github_link("leouieda/memorial") }}.
 
 </div>
 
 <h2 id="navigation">
-  <i class="fas fa-list" aria-hidden="true"></i>
   Contents
 </h2>
 <nav aria-label="Page">
@@ -95,8 +95,7 @@ I wrote an
   {%- endfor %}
     <p class="text-center">
       <a href="#navigation">
-        <i class="far fa-arrow-alt-circle-up" aria-hidden="true"></i>
-        Back to Contents
+        ↑ Back to Contents
       </a>
     </p>
 {%- endfor %}
