@@ -43,7 +43,7 @@
 body {
   background: var(--color-dark);
   color: var(--color-light);
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
   font-size: var(--size-0);
   line-height: 1.6;
 }
@@ -96,7 +96,7 @@ blockquote {
 }
 
 code {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "Atkinson Hyperlegible Mono", monospace;
   line-height: 1;
   background-color: var(--color-medium);
   border-radius: 0.25em;
@@ -204,6 +204,10 @@ details summary {
 /*****************************************************************************/
 .flow > * + * {
   margin-block-start: var(--flow-space, 1em);
+}
+
+.flow-small > * + * {
+  --flow-space: 0.5em;
 }
 
 :is(h1, h2, h3, blockquote, hr) {
@@ -358,10 +362,6 @@ footer .footer-text {
 
 .font-bold {
   font-weight: bold;
-}
-
-.flow-small > * + * {
-  --flow-space: 0.5em;
 }
 
 .list-inline {
