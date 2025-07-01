@@ -1,13 +1,20 @@
 ---
 title: What I’m doing now
-banner_image: images/banners/roraima.jpg
+banner_image: images/banners/merseyside-panchromatic.webp
 banner_position: center
 banner_title: What I’m doing now
 banner_subtitle: A summary of where my time and energy are focused at the moment
 template: base.html
 ---
 
-Last updated: 2024-09-25.
+<div class="callout">
+
+**Last updated on 2024-09-25.**
+
+This is <a href="https://nownownow.com/about">a now page</a>.
+If you like it and have a website, you may want to build one too.
+
+</div>
 
 ## Research
 
@@ -67,11 +74,3 @@ easy when I want to be in bed by 21:00 but I think it's worth it. Part of this
 also needs me listening to more music so I don't get bore of playing the same
 tunes for the past 20 years. I'm even considering signing up for some music
 lessons if I can find the time.
-
-<hr>
-
-> This is <a href="https://nownownow.com/about">a now page</a>.
-> If you like it and have a website, you should build one too.
-
-
-

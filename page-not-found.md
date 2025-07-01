@@ -1,6 +1,6 @@
 ---
 title: Page not found
-banner_image: images/banners/rainbow-from-uh-office.jpg
+banner_image: images/banners/rainbow-from-uh-office.webp
 banner_title: Page not found 😟
 banner_position: center
 template: base.html

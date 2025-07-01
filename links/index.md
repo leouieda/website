@@ -1,6 +1,6 @@
 ---
 title: Links
-banner_image: images/banners/amazon-delta.jpg
+banner_image: images/banners/amazon-delta.webp
 banner_position: center right
 banner_title: Links
 banner_subtitle: A collection of links to websites that I like
