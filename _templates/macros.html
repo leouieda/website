@@ -26,6 +26,9 @@
     {%- set href = "." -%}
   {%- else -%}
     {%- set href = page.path|relative_to(reference.path)|replace('index.html', '') -%}
+    {%- if href == "" -%}
+      {%- set href = "." -%}
+    {%- endif -%}
   {%- endif -%}
   {{ href }}
 {%- endmacro -%}
