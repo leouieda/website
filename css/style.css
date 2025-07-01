@@ -322,11 +322,11 @@ footer .footer-text {
   font-size: var(--size--1);
 }
 
-.social-icons a {
+.social-links a {
   color: var(--color-secondary);
 }
 
-.social-icons a:hover {
+.social-links a:hover {
   color: var(--color-primary);
 }
 
