@@ -2,10 +2,10 @@
 /*****************************************************************************/
 :root {
   /* Colors */
-  --color-dark: #0b141d;
-  --color-medium: #122130;
+  --color-dark: #080f15;
+  --color-medium: #0d1823;
   --color-light: #f5f5f5;
-  --color-primary: #459cff;
+  --color-primary: #52a3ff;
   --color-secondary: #b1d6ff;
   --color-note: var(--color-primary);
   --color-info: #ffc107;
@@ -231,11 +231,11 @@ footer * + * {
   --flow-space: 2em;
 }
 
-footer .footer-text {
+footer section {
   --flow-space: var(--space-xl);
 }
 
-.footer-text > * + * {
+footer section > * + * {
   --flow-space: 0.5em;
 }
 
@@ -318,10 +318,6 @@ footer .footer-text {
   font-size: var(--size-5);
 }
 
-.footer-text {
-  font-size: var(--size--1);
-}
-
 .social-links a {
   color: var(--color-secondary);
 }
@@ -380,6 +376,19 @@ footer .footer-text {
   flex-wrap: wrap;
   gap: var(--gutter);
   justify-content: space-between;
+}
+
+.button-link {
+  border: 2px solid var(--color-neon);
+  border-radius: 20px;
+  padding: var(--space-3xs) var(--space-xs);
+  background-color: var(--color-medium);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-link:hover {
+  border-color: var(--color-info);
 }
 
 

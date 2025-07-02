@@ -58,7 +58,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="top">
     <div class="spread content-wide">
       <a aria-label="Home" class="font-bold" href="{{ macros.pretty_relative_link(site['index'], page) }}">{{ config.brand }}</a>
       <nav aria-label="Main">
@@ -111,6 +111,7 @@
     <div class="content-wide flow">
       <nav aria-label="Footer">
         <ul class="list-inline" role="list">
+          <li><strong>CONTENTS:</strong></li>
         {%- for item in config.navigation_footer %}
           <li>
             {{ macros.nav_link(item, page, site) }}
@@ -118,8 +119,8 @@
         {%- endfor %}
         </ul>
       </nav>
-      <ul class="list-inline social-links" role="list">
-        <li><strong>Social:</strong></li>
+      <ul class="list-inline" role="list">
+        <li><strong>SOCIAL:</strong></li>
         <li>
           <a href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}" target="_blank">Mastodon</a>
         </li>
@@ -133,8 +134,8 @@
           <a href="https://www.youtube.com/@{{ config.youtube }}" target="_blank">YouTube</a>
         </li>
       </ul>
-      <ul class="list-inline social-links" role="list">
-        <li><strong>Academic:</strong></li>
+      <ul class="list-inline" role="list">
+        <li><strong>ACADEMIC:</strong></li>
         <li>
           <a href="https://orcid.org/{{ config.orcid }}" target="_blank">ORCID</a>
         </li>
@@ -157,7 +158,7 @@
           <a href="https://www.scopus.com/authid/detail.uri?authorId={{ config.scopus }}" target="_blank">Scopus</a>
         </li>
       </ul>
-      <section class="footer-text flow">
+      <section class="flow font-small">
         <p>
           Built on {{ build.today.strftime('%Y/%m/%d') }} with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
           from source code at
@@ -180,6 +181,9 @@
             {{ config.license_notice }}
           {%- endif %}
         </p>
+      </section>
+      <section class="font-small text-center">
+        <a href="#top" class="button-link">↑ Back to top</a>
       </section>
     </div>
   </footer>
