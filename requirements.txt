@@ -1,1 +1,2 @@
-nene[jupyter]==0.9.*
+nene[jupyter]==0.10.*
+accessible-pygments==0.0.5

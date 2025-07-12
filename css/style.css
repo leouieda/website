@@ -104,7 +104,7 @@ code {
 }
 
 pre {
-  background-color: var(--color-medium);
+  font-family: "Atkinson Hyperlegible Mono", monospace;
   border-radius: 0.25em;
   overflow: auto;
   display: block;

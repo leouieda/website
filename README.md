@@ -30,9 +30,11 @@ nene -s
 ## The theme
 
 The website theme custom made with pure CSS.
-Icons are provided by [FontAwesome](http://fontawesome.io/) and
-[Academicons](http://jpswalsh.github.io/academicons/).
-The font used is [Atkinson Hyperlegible](https://brailleinstitute.org/freefont).
+The font used is
+[Atkinson Hyperlegible Next](https://brailleinstitute.org/freefont) as well as
+its monospace variant.
+Syntax highlighting theme is
+[Pitaya Smoothie](https://github.com/trallard/pitaya_smoothie).
 
 The Jinja2 templates and CSS are located in the `_templates` and `css` folders.
 I really should make this theme more generic and provide it to the world.

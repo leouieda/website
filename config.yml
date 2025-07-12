@@ -82,6 +82,7 @@ ignore:
   - requirements.txt
   - Makefile
   - css/academicons/README.md
+  - get_pygments_stylesheet.py
 
 # My co-authors
 coauthors:
