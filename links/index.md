@@ -38,6 +38,7 @@ These are some nice examples of personal websites to use for inspiration:
 * [Karolina Szczur](https://karolinaszczur.com/)
 * [Sharlene Yap](https://www.sharyap.com/)
 * [Tania Allard](https://www.trallard.dev)
+* [Joe Hart](https://joehart.co.uk)
 
 ## Academic and lab websites
 
