@@ -1,11 +1,41 @@
+- title: Felipe Nascimento Hong
+  thesis: "Correção topográficas utilizando soluções analíticas para o campo gravitacional de tesseroides"
+  year: 2025 - present
+  institution: Universidade de São Paulo
+  country: Brazil
+  advisor: Leonardo Uieda
+  about: |
+    Felipe started working with the group in 2025. He is working as a volunteer
+    and will be researching a way to use analytical solutions of the
+    gravitational field of a tesseroid for topographic correction. It's a very
+    exciting project for us and it may open up a range of applications that we
+    currently can't do on the the sphere.
+
+- title: Paulo Eduardo Crystal
+  thesis: "Modelagem da propagação de ondas elásticas em Python para ensino de geofísica"
+  year: 2025 - present
+  institution: Universidade de São Paulo
+  country: Brazil
+  advisor: Leonardo Uieda
+  about: |
+    Paulo started working with the group in 2025. His project is funded by
+    a PUB-EDU scholarship from USP. We'll be updating and developing <a
+    href="https://www.fatiando.org/tremelique/">Tremelique</a>, a library for
+    seismic wave modeling, and testing it in the introduction to seismology
+    class.
+
 - title: Gabriel Aparecido das Chagas Silva
-  thesis: "Mesh refinement in the inversion of gravity data through the planting algorithm"
+  thesis: "Aprimorando a análise de regressão entre topografia e distúrbios da gravidade para estudos tectônicos"
   year: 2024 - present
   institution: Universidade de São Paulo
   country: Brazil
   advisor: Leonardo Uieda
   about: |
-    Gabriel's scientific iniciation project is funded by a PIBIC scholarship from CNPq from September 2024 until August 2025.
+    Gabriel started working with us during his second year of a BSc degree in
+    Geophysics. His first project "Mesh refinement in the inversion of gravity
+    data through the planting algorithm" was funded by a PIBIC scholarship from
+    CNPq from September 2024 until August 2025. After that, he decided to
+    switch themes on a new project funded by a PUB-IC scholarship from USP.
 
 - title: Ellen Fernandes Marcos
   thesis: "Analysis of block cross-validation for equivalent source processing of gravity data"
