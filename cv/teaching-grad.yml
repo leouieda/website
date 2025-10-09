@@ -1,0 +1,35 @@
+- title: "AGG5957 - Gravimetria e Magnetometria"
+  year: 2025 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is a graduate-level class on potential-field methods in geophysics. It
+    introduces the fundamental of gravimetry and magnetometry, including
+    potential theory and applications. I teach this course with my colleagues
+    Renata Constantino and Eder Molina. It is taught jointly with the
+    undergraduate version of this module AGG0669.
+
+- title: "AGG5740 - Teoria de Inversão em Geofísica"
+  year: 2025 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is graduate-level class on the theory and applications of inverse
+    problems in geophysics. I took over teaching of this module from my
+    colleague Carlos M. Chaves starting in 2025.
+
+- title: "AGG5949 - Tópicos Gerais de Geofísica"
+  year: 2024 - present
+  institution: Universidade de São Paulo
+  about: |
+    This is a graduate-level course for PhD students. The goal is to get them
+    to dive deep into topics of geophysics that they haven't studied
+    extensively in the past. I teach this module with my colleague Andrea
+    Ustra.
+
+- title: "AGG5954 - Modelagem e Interpretação de Dados de Gravimetria e Magnetometria"
+  year: 2024
+  institution: Universidade de São Paulo
+  about: |
+    This is a condensed graduate course on potential-field data modeling and
+    interpretation. The first iteration of this course in 2024 was taught along
+    side the Geophysics Summer School. In the end, we added a graduate level
+    course in potential fields so this one became obsolete.

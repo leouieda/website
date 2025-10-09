@@ -1,11 +1,3 @@
-- title: "AGG5740 - Teoria de Inversão em Geofísica"
-  year: 2025 - present
-  institution: Universidade de São Paulo
-  about: |
-    This graduate-level class on the theory and applications of inverse
-    problems in geophysics. I took over teaching of this module from my
-    colleague Carlos M. Chaves starting in 2025.
-
 - title: "AGG0669 - Gravimetria e Magnetometria Aplicadas à Prospecção de Bens Minerais e Estruturas Crustais"
   year: 2023 - present
   institution: Universidade de São Paulo
@@ -15,14 +7,6 @@
     practical implemenation of potential-field methods in geophysics.
     I teach this module with my colleagues Eder Molina and Renata Constantino.
 
-- title: "AGG5954 - Modelagem e Interpretação de Dados de Gravimetria e Magnetometria"
-  year: 2024 - present
-  institution: Universidade de São Paulo
-  about: |
-    This is a new condensed graduate course on potential-field data modeling
-    and interpretation. The first iteration of this course in 2024 was taught
-    along side the Geophysics Summer School.
-
 - title: "AGG0011 - Problemas Integrados em Ciências da Terra I"
   year: 2023 - present
   institution: Universidade de São Paulo
@@ -30,15 +14,6 @@
     This is a first year module in the Geophysics BSc degree. It's meant to
     integrate with the other modules and teach students how to approach problems
     from a quantitative and computational angle.
-
-- title: "AGG5949 - Tópicos Gerais de Geofísica"
-  year: 2024 - present
-  institution: Universidade de São Paulo
-  about: |
-    This is a graduate-level course for PhD students. The goal is to get them
-    to dive deep into topics of geophysics that they haven't studied
-    extensively in the past. I teach this module with my colleague Andrea
-    Ustra.
 
 - title: "AGG0110 - Elementos de Geofísica"
   year: 2023 - present
@@ -51,7 +26,7 @@
     Marcelo Bianchi and Daniele Brandt.
 
 - title: "AGG0204 - Computação para Geofísicos"
-  year: 2024 - 2024
+  year: 2024
   institution: Universidade de São Paulo
   about: |
     This is an optional module of the Geophysics BSc that aims to build on the

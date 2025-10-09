@@ -36,7 +36,8 @@ sections:
   - title: Teaching
     numbered: True
     entries:
-      - [teaching-classes, University courses]
+      - [teaching-grad, Graduate-level courses]
+      - [teaching-undergrad, Undergraduate-level courses]
       - [teaching-workshops, Workshops]
   - title: Supervision
     numbered: True
