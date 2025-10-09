@@ -14,7 +14,7 @@ sections:
     entries:
       - [work, Appointments]
       - [community, Community service]
-      - [edu, Education]
+      - [edu, Degrees awarded]
   - title: Distinctions
     numbered: False
     entries:

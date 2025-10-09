@@ -1,3 +1,32 @@
+- title: Livre Docente (Dr. habil.)
+  institution: Universidade de São Paulo
+  country: Brazil
+  thesis: Modeling of magnetic field observations from continental to microscopic scale
+  github: leouieda/livre-docencia
+  doi: 10.6084/m9.figshare.28791908
+  year: 2025
+  slides: https://www.leouieda.com/livre-docencia
+  about: |
+    The title of "Livre Docente" is a form <a
+    href="https://en.wikipedia.org/wiki/Habilitation">habilitation</a>, which
+    is the highest degree that can be earned after a PhD. At Universidade de
+    São Paulo, this involves written and teaching exams and the defense of
+    a thesis (see the DOI link) and a <a
+    href="https://doi.org/10.6084/m9.figshare.28737800">"memorial"</a> (in
+    portuguese), which is a long form narrative CV that includes reflections on
+    our experiences. My examination committee was composed of <a
+    href="https://lattes.cnpq.br/2170299963939072">Walter Eugênio de
+    Medeiros</a> (UFRN), <a
+    href="https://lattes.cnpq.br/8572311134832725">Roberta Mary Vidotti</a>
+    (UnB), <a href="https://lattes.cnpq.br/6186195219221290">Gelvam André
+    Hartmann</a> (UNICAMP), <a href="https://lattes.cnpq.br/8918399592544099">
+    Mauricio de Souza Bologna</a> (USP), and <a
+    href="https://lattes.cnpq.br/9384664464941402">Carlos Alberto Mendonça</a>
+    (USP). Gaining this title is a requirement for promotion to "Professor
+    Associado" at USP. It was a very exhausting experience, with two full days
+    of exams, but also very rewarding to see all of my effort being recognized
+    by my peers and seniors.
+
 - title: Fellow of the Higher Education Academy
   institution: University of Liverpool
   country: UK
@@ -17,15 +46,15 @@
     href="https://www.advance-he.ac.uk/fellowship/fellowship">Fellow of Higher
     Education Academy</a> (reference number PR242069).
 
-- title: Instructor training
+- title: Instructor
   institution: The Carpentries
   country: USA
   year: 2018
   about: |
-    In person training for certification as an instructor of <a target="_blank"
-    href="https://software-carpentry.org/">Software Carpentry</a>. The training
-    covers various aspects of the theory and practice of teaching computing.
-    Done at the 2018 Scipy Conference.
+    I went through the in person training for certification as an instructor of
+    <a target="_blank" href="https://software-carpentry.org/">Software
+    Carpentry</a>. The training covers various aspects of the theory and
+    practice of teaching computing. Done at the 2018 Scipy Conference.
 
 - title: PhD in Geophysics
   institution: Observatório Nacional
