@@ -1,24 +1,17 @@
-- title: Professor Doutor
+- title: Professor Associado
   institution: Univeridade de São Paulo
   department: Departamento de Geofísica - Instituto de Astronomia, Geofísica e Ciências Atmosféricas
   country: Brazil
-  year: 2023 - present
+  year: 2025 - present
   about: |
-    In April 2023, I applied and was selected for a Professor position at my
-    <em>alma mater</em>. As part of the selection process, I wrote an
-    <a href="https://github.com/leouieda/memorial">academic auto-biography (in Portuguese)</a>,
-    which provided an excellent opportunity to reflect back on my career, try
-    to find meaning in what I've accomplished, and plan where to invest my time
-    and energy going forward. On 21 August 2023, I started this new chapter.
+    As of 19 November 2025, I have attained the degree of Dr. Habil. (Livre
+    Docente) and have been promoted to Professor Associado.
+    The admin roles listed below continue on from my previous appointment.
   roles:
     - date: 03/2025 - present
       title: Representante da categoria MS-3 no Conselho do Departamento de Geofísica
     - date: 04/2024 - present
       title: Presidente da Comissão de Cooperação Nacional e Internacional
-    - date: 04/2024 - present
-      title: Membro Suplente da Comissão da Biblioteca
-    - date: 01/2024 - present
-      title: Membro da Comissão de Qualificações do Programa de Geofísica
     - date: 12/2023 - present
       title: Coordenador do Ciclo de Seminários do Departamento de Geofísica do IAG/USP
     - date: 10/2023 - present
@@ -27,6 +20,24 @@
       title: Membro Titular da Comissão de Cooperação Nacional e Internacional
     - date: 10/2023 - present
       title: Membro Suplente da Comissão de Informática
+    - date: 04/2024 - present
+      title: Membro Suplente da Comissão da Biblioteca
+    - date: 01/2024 - 12/2025
+      title: Membro da Comissão de Qualificações do Programa de Geofísica
+
+- title: Professor Doutor
+  institution: Univeridade de São Paulo
+  department: Departamento de Geofísica - Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+  country: Brazil
+  year: 2023 - 2025
+  about: |
+    In April 2023, I applied and was selected for a Professor position at my
+    <em>alma mater</em>. As part of the selection process, I wrote an
+    <a href="https://github.com/leouieda/memorial">academic auto-biography (in Portuguese)</a>,
+    which provided an excellent opportunity to reflect back on my career, try
+    to find meaning in what I've accomplished, and plan where to invest my time
+    and energy going forward. On 21 August 2023, I started this new chapter.
+    My admin roles are listed under the latest appointment at IAG.
 
 - title: Lecturer in Geophysics
   institution: University of Liverpool
