@@ -1,3 +1,39 @@
+- title: "Distance-dependent stray field decay in magnetically stable remanence carriers: implications for magnetic microscopy"
+  year: 2025
+  authors: [Ualisson, Gelson, Wyn, Me, Muxworthy, Les, Greig, Carolzinha, Roger, Ricardo]
+  journal: ESS Open Archive
+  doi: 10.22541/essoar.176071652.24509178/v1
+  data: 10.5281/zenodo.17256342
+  abstract: |
+    Micropaleomagnetic analysis offers a path to high-precision reconstructions
+    of ancient magnetic fields from terrestrial and space-returned samples by
+    inverting the vertical stray field of individual particles to recover their
+    magnetic moments through the use of magnetic microscopes. Constraining such
+    inversions requires a detailed understanding of how domain state influences
+    the dipolar and non-dipolar components of the stray field with distance.
+    Here, we use micromagnetic solutions of remanent states in real, irregular
+    sub- to near-micron magnetite particle morphologies to calculate vertical
+    stray fields at various heights, evaluating how dipolar and non-dipolar
+    signals can be recovered with both simple Cartesian dipole and multidipolar
+    models in the presence and absence of noise. Our results show that
+    single-domain and single-vortex state (SV) grains produce strong dipolar
+    anomalies that attenuate rapidly, limiting reliable detection to
+    observation heights below ∼1μm for 5nT noise or ∼0.5μm for 50nT noise.
+    Larger SV or multivortex grains remain detectable to ∼5-10μm but with
+    reduced moment fidelity. Multipolar components decay orders of magnitude
+    faster than the dipole and are quickly lost in noise at practical
+    distances. Dipole-only inversions yield stable, accurate results beyond
+    ∼2μm, while multipolar fits can improve near-surface accuracy but add
+    significant uncertainty in noisy data. Because strongly non-dipolar
+    anomalies observed at heights ≥1-2μm may arise from large multidomain
+    grains or from the combined response of short- and long-wave signals of
+    clusters of particles, they should be interpreted with caution. We
+    highlight the need to minimize sensor noise, optimize stand-off distance,
+    and carefully interpret signals for robust micropaleomagnetic measurement.
+  citation: |
+    Bellon, U. D., Souza-Junior, G. F., Williams, W., Uieda, L., Muxworthy, A. R., Nagy, L., et al. (2025). Distance-Dependent Stray Field Decay in Magnetically Stable Remanence Carriers: Implications for Magnetic Microscopy. ESS Open Archive. doi:10.22541/essoar.176071652.24509178/v1
+
+
 - title: "Robust directional analysis of magnetic microscopy images using non-linear inversion and iterative Euler deconvolution"
   year: 2025
   authors: [Gelson, Me, Ricardo, Roger, Ualisson, Yago]
