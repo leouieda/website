@@ -32,6 +32,7 @@ sections:
       - [presentations-invited, Invited talks]
       - [presentations-department, Department seminars]
       - [presentations-conference, Conference presentations]
+      - [presentations-students, Student presentations]
       - [presentations-other, Other presentations]
   - title: Teaching
     numbered: True

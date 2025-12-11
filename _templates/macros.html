@@ -159,6 +159,9 @@
         {%- if item.conference is defined %}
           <p><strong>Conference:</strong> {{ item.conference }}</p>
         {%- endif %}
+        {%- if item.link is defined %}
+          <p><strong>Link:</strong> <a href="{{ item.link }}" target="_blank">{{ item.link }}</a></p>
+        {%- endif %}
         {%- if item.doi is defined %}
           <p><strong>Citations:</strong>
             <span class="__dimensions_badge_embed__" data-doi="{{ item.doi }}" data-legend="always" data-style="small_circle"></span>
