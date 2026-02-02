@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> This repository has moved to Codeberg and will no longer be updated on GitHub: https://codeberg.org/leouieda/website
+
+
 # Source code for leouieda.com
 
 This is the source code for my personal site
